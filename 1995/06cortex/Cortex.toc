@@ -1,9 +1,0 @@
-\contentsline {chapter}{\numberline {1}The Cortical Representation}{5}
-\contentsline {section}{\numberline {1.1}Overview of the Visual Cortex}{5}
-\contentsline {section}{\numberline {1.2}The Architecture of Primary Visual Cortex}{7}
-\contentsline {paragraph}{Eye of origin. }{10}
-\contentsline {paragraph}{Ganglion cell classification. }{13}
-\contentsline {paragraph}{Retinotopic organization}{13}
-\contentsline {section}{\numberline {1.3}Receptive Fields in Primary Visual Cortex}{20}
-\contentsline {section}{\numberline {1.4}Visual Streams in the Cortex}{40}
-\contentsline {section}{\numberline {1.5}Cortical Representations and Perception}{47}

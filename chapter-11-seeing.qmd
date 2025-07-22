@@ -1,6 +1,6 @@
 # Seeing {#sec-seeing}
 
-## Seeing Overview
+## Seeing overview
 Seeing is a collection of inferences about the world. Motion, color and depth are important individual judgments. To see, however, we must connect these inferences into a unified explanation of the image. Until we integrate the separate inferences of pattern, color, motion and depth into a description of objects and surfaces, the world remains a disconcerting jumble of unconnected events.
 
 It is easy to recognize the importance of integrating our visual inferences into a coherent view of the scene, but it is much harder to understand the process by which we perceive objects and surfaces. Because there is no current consensus on a theoretical approach to this topic, I have chosen to spend this chapter reviewing phenomena that I believe will be important in defining a computational theory of seeing.

@@ -1,7 +1,6 @@
 # Color {#sec-color}
 
-## Color Overview
-
+## Color overview
 Edwin Land was one of the great inventors and entrepreneurs in US history; he created instant developing film and founded the Polaroid Corporation. The first instant developing film made black and white reproductions, and after a few years Land decided to create a color version of the film. In order to learn about color appearance, Land returned to his laboratory to experiment with color. He was so surprised by his observations that he decided to write a paper summarizing his observations. In a paper published in the Proceedings of the National Academy of Sciences (USA), Land startled many people by arguing that there are only two, not three, types of cones. He further went on to dismiss the significance of the color-matching experiments. He wrote: “We have come to the conclusion that the classical laws of color mixing conceal great basic laws of color vision (@land1959-pnas).” Land’s sharp words, an arrow aimed at the heart of color science, provoked heated rejoinders from two leading scientists, @judd1960-land and @walls1960-landland.
 
 What was it that Land, a brilliant man, found so objectionable about color-matching? It seems to me that Land’s reading of the literature led him to believe that the curves we measure in the color-matching experiment can be used to predict color appearance. When he set the textbooks down and began to experiment with color, he was sorely disappointed. He found that the color-matching measurements do not answer many important questions about color appearance.
@@ -188,11 +187,11 @@ Efficiency is useful; but, if efficiency were our only objective we could find m
 Suppose we have a device with three color sensors, whose spectral responsivities are, say, $r_i(\lambda),\ i = 1 \ldots 3$. The three sensor responses will be
 
 $$
-\begin{eqnarray*}
+\begin{aligned}
 r_1 & = & \sum_\lambda R_1(\lambda)\, e(\lambda) \\
 r_2 & = & \sum_\lambda R_2(\lambda)\, e(\lambda) \\
 r_3 & = & \sum_\lambda R_3(\lambda)\, e(\lambda)
-\end{eqnarray*}
+\end{aligned}
 $$ {#eq-sensor-responses}
 
 We can group these three linear equations into a single matrix equation
@@ -281,11 +280,11 @@ Before returning to experimental measurements of color appearance, let’s perfo
 First, let’s write down the general expression that shows how the surface and illuminant functions combine to yield the cone absorption rates. The three equations for the three cone types, $L$, $M$, and $S$, are
 
 $$
-\begin{align}
+\begin{aligned}
 r_{1} & = \sum_{\lambda} R_{1}(\lambda) E(\lambda) S(\lambda)  \\
 r_{2} & = \sum_{\lambda} R_{2}(\lambda) E(\lambda) S(\lambda)  \\
 r_{3} & = \sum_{\lambda} R_{3}(\lambda) E(\lambda) S(\lambda) .
-\end{align}
+\end{aligned}
 $$ {#eq-cone-absorptions}
 
 Next, we replace the illuminant and surface functions in @eq-cone-absorptions with their linear model approximations. This yields a new relationship between the coefficients of the surface reflectance linear model, $\mathbf{\sigma}$, and the three-dimensional vector of cone absorptions, $\mathbf{r}$,
@@ -331,10 +330,10 @@ Imagine, now the following way in which the visual system might compensate for i
 The cone absorptions from a single surface under the two illuminants can be written as
 
 $$
-\begin{align}
+\begin{aligned}
 \mathbf{r} & \approx \mathbf{\Lambda}_{e} \mathbf{\sigma}, \text{and} \\
 \mathbf{r}^\prime & \approx \mathbf{\Lambda}_{e'} \mathbf{\sigma} .
-\end{align}
+\end{aligned}
 $$ 
 
 By inverting the lighting matrices and recombining terms, we find that the cone absorptions under the two illuminants should be related linearly as,
@@ -485,7 +484,7 @@ In the hue cancellation experiment, the observer is asked to judge whether a tes
 
 To what extent can we generalize from red-green measurements using monochromatic lights to other lights? The answer to this question we must evaluate the linearity of the hue cancellation experiment. If the experiment is linear, we can use the data in @fig-hue-cancellation to predict whether any test light will appear red or green (blue-yellow) since all lights are the sum of monochromatic lights. If the experiment is not linear, then the data represent only an interesting collection of observations.
 
-To evaluate the linearity of the hue cancellation experiment, one can perform the following experiment: Suppose the test light $ \testi{1} $ appears neither red nor green, and the test light $ \testi{2} $ appears neither red nor green. Does the superposition of these two test lights, $ \testi{1} + \testi{2} $, also appear neither red nor green? In general, the hue cancellation experiment fails this test of linearity. If we superimpose two lights, neither of which appears red or green, the result can appear red. If we add two lights neither of which appears blue or yellow, the result can appear yellow. Hence, the hue cancellation studies are a useful benchmark. But, we need a more complete (nonlinear) model before we can apply the hue cancellation data in @fig-lg-opponent-signals to predict the opponent-colors appearance of polychromatic test lights (@larimer1975-opponentprocessadditivity; @burns1984-abneyeffect; @ayama1989; @chichilnisky1995).
+To evaluate the linearity of the hue cancellation experiment, one can perform the following experiment: Suppose the test light $t_{1}$ appears neither red nor green, and the test light $t_{2}$ appears neither red nor green. Does the superposition of these two test lights, $t_{1} + t_{2}$, also appear neither red nor green? In general, the hue cancellation experiment fails this test of linearity. If we superimpose two lights, neither of which appears red or green, the result can appear red. If we add two lights neither of which appears blue or yellow, the result can appear yellow. Hence, the hue cancellation studies are a useful benchmark. But, we need a more complete (nonlinear) model before we can apply the hue cancellation data in @fig-lg-opponent-signals to predict the opponent-colors appearance of polychromatic test lights (@larimer1975-opponentprocessadditivity; @burns1984-abneyeffect; @ayama1989; @chichilnisky1995).
 
 ### Opponent-colors measurements at threshold
 
@@ -541,17 +540,16 @@ As described in @sec-multiresolution, we decorrelate the signals derived from th
 % This is the matrix u in the decor sensor analysis in decorrelate.m
 
 $$
-\begin{eqnarray*}
+\begin{aligned}
 O_1(\lambda) & = & 1.0L(\lambda) + 0.0M(\lambda) + 0.0S(\lambda) \\
 O_2(\lambda) & = & -0.59L(\lambda) + 0.80M(\lambda) + -0.12S(\lambda) \\
 O_3(\lambda) & = & -0.34L(\lambda) + -0.11M(\lambda) + 0.93S(\lambda)
-\end{eqnarray*}
+\end{aligned}
 $$ {#eq-decor-opponent-signals}
 
 or, written in matrix form,
 
 $$
-\begin{equation*}
 \left (
     \begin{array}{ccc}
         & O_1(\lambda) & \\
@@ -574,7 +572,6 @@ $$
         & S(\lambda) & \\
     \end{array}
 \right )
-\end{equation*}
 $$ {#eq-decor-opponent-matrix}
 
 The new signals, $O_i(\lambda)$, are related to the cone absorptions by a linear transformation. These three signals are decorrelated with respect to this particular collection of surfaces and illuminant.
@@ -582,25 +579,22 @@ The new signals, $O_i(\lambda)$, are related to the cone absorptions by a linear
 <a name="id1335888271"></a>
 
 $$
-\begin{eqnarray*}
+\begin{aligned}
 O_1(\lambda) & = & 1.0L(\lambda) + 0.0M(\lambda) + 0.0S(\lambda) \\
 O_2(\lambda) & = & -0.59L(\lambda) + 0.80M(\lambda) + -0.12S(\lambda) \\
 O_3(\lambda) & = & -0.34L(\lambda) + -0.11M(\lambda) + 0.93S(\lambda)
-\end{eqnarray*}
+\end{aligned}
 $$
 {#eq-decor-opponent-signals}
 
 or, written in matrix form,
 
-<a name="id3809662214"></a>
-
 $$
-\begin{equation*}
 \left (
-    \begin{array}{ccc}
-        & O_1(\lambda) & \\
-        & O_2(\lambda) & \\
-        & O_3(\lambda) & \\
+    \begin{array}{c}
+        O_1(\lambda) \\
+        O_2(\lambda) \\
+        O_3(\lambda) \\
     \end{array}
 \right )
 =
@@ -612,15 +606,13 @@ $$
     \end{array}
 \right )
 \left (
-    \begin{array}{ccc}
-        & L(\lambda) & \\
-        & M(\lambda) & \\
-        & S(\lambda) & \\
+    \begin{array}{c}
+        L(\lambda) \\
+        M(\lambda) \\
+        S(\lambda) \\
     \end{array}
 \right )
-\end{equation*}
-$$
-{#eq-decor-opponent-matrix}
+$$ {#eq-decor-opponent-matrix}
 
 The new signals, $O_i(\lambda)$, are related to the cone absorptions by a linear transformation. These three signals are decorrelated with respect to this particular collection of surfaces and illuminant.
 

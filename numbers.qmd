@@ -3,9 +3,9 @@
 ## Units
 
 1.  Radiometric units represent physical energy (e.g., radiance has units of watts $sr^{-1}~m^{-2}$)
-2.  Colorimetric units adjust radiometric units for visual wavelength sensitivity (e.g. luminance has units of cd $m^{-2}$; scotopic units are proportional to rod absorptions; photopic luminance units are proportional to a weighted sum of the L and M cone absorptions
-3.  Typical ambient luminance levels (in cd m\sup{-2}): starlight $10^{-3}$; moonlight $10^{-1}$; indoor lighting $10^{2}$; sunlight $10^{5}$; max intensity of common CRT monitors, $10^{2}$
-4.  One Troland (Td) of retinal illumination is produced on the retina when the eye looks at a surface of 1 cd / $m^{2}$ through a pupil of area 1~mm\sup{2}.
+2.  Colorimetric units adjust radiometric units for visual wavelength sensitivity (e.g. luminance has units of $\text{cd m}^{-2}$ scotopic units are proportional to rod absorptions; photopic luminance units are proportional to a weighted sum of the L and M cone absorptions
+3.  Typical ambient luminance levels (in $\text{cd m}^{-2}$): starlight $10^{-3}$; moonlight $10^{-1}$; indoor lighting $10^{2}$; sunlight $10^{5}$; max intensity of common CRT monitors, $10^{2}$
+4.  One Troland (Td) of retinal illumination is produced on the retina when the eye looks at a surface of 1 $\text{cd m}^{-2}$ through a pupil of area $1~mm^{2}$.
 5.  Lens focal length: f (meters); lens power $=1/f$ (diopters)
 6.  Conversion of linear units (X) to decibels: $Y=20~log~10(X)$; a change of 0.3 log10 units is a factor of 2, or 6 dB
 

@@ -281,11 +281,8 @@ Since any one-dimensional time-varying stimulus is the sum of a set of briefly f
 
 ### Spatio-Temporal Measurements: Harmonic Functions
 
-It is also possible to measure receptive field properties using harmonic functions, though in this case, we need to use harmonic functions in space and time. We can create space-time harmonic functions by multiplying cosinusoidal contrast patterns in space and time, creating a stimulus called a *contrast-reversing grating*. Such a pattern is the product of a spatial harmonic with frequency ![f_x](https://foundationsofvision.vista.su.domains/wp-content/ql-cache/quicklatex.com-3bcda67db202bde80916b57d737d9cde_l3.png "Rendered by QuickLaTeX.com") cycles per degree and a temporal harmonic with frequency ![f_t](https://foundationsofvision.vista.su.domains/wp-content/ql-cache/quicklatex.com-fb84fe93d5e5409f88cf56fb672918b0_l3.png "Rendered by QuickLaTeX.com") Hz. The formula for a contrast-reversing grating made from cosinusoids is
+It is also possible to measure receptive field properties using harmonic functions, though in this case, we need to use harmonic functions in space and time. We can create space-time harmonic functions by multiplying cosinusoidal contrast patterns in space and time, creating a stimulus called a *contrast-reversing grating*. Such a pattern is the product of a spatial harmonic with frequency $f_x$ cycles per degree and a temporal harmonic with frequency $f_t$ Hz. The formula for a contrast-reversing grating made from cosinusoids is
 
-<a name="id232126817"></a>
-
-<span class="ql-right-eqno"> (3) </span><span class="ql-left-eqno"> </span>
 $$
 I(x) = \left[1.0 + \cos(2\pi f_t t)\cos(2\pi f_x x)\right]\mu.
 $$

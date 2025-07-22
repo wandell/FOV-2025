@@ -1,6 +1,6 @@
 # Motion and Depth {#sec-motion-depth}
 
-## Motion and Depth Overview
+## Motion and depth overview
 
 The perception of motion, like the perception of color, is a visual inference. The images encoded by the photoreceptors are merely changing two-dimensional patterns of light intensity. Our visual pathways *interpret* these two-dimensional images to create our perception of objects moving in a three-dimensional world. How it is possible, even in principle, to infer three-dimensional motion from the two-dimensional retinal image is one important puzzle of motion; how our visual pathways actually make this inference is a second.
 

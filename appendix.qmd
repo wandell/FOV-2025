@@ -35,7 +35,7 @@ The extended functions $\hat{\mathbf{l}}$ and $\hat{\mathbf{p}}$ agree with our 
 
 $$
 (\ldots, \hat{l}_{-1} = \hat{l}_{N-1}, ~\hat{l}_{0} = \hat{l}_{N}, ~\hat{l}_{1}, \ldots, \hat{l}_{N},~ \hat{l}_{N+1} = \hat{l}_{1}, \ldots ) .
-$$ {#eq-periodic-example}
+$$
 
 
 ### Convolution
@@ -101,10 +101,10 @@ $$ {#eq-sin-angle-sum}
 Substitute @eq-sin-angle-sum into @eq-convolution-shift, remembering that $\sin (-k) = - \sin (k)$ and $\cos (-k) = \cos (k)$.
 
 $$
-\begin{align}
+\begin{aligned}
 \hat{r}_{i} & = \sum_{k=<N>} \hat{l}_{k} \sin(\frac{2 \pi f i}{N}) \cos(\frac{2 \pi f k}{N}) + \sum_{k=<N>} \hat{l}_{k} \sin(\frac{2 \pi f k}{N}) \cos(\frac{2 \pi f i}{N})  \\
 & = \sin(\frac{2 \pi f i}{N}) \sum_{k=<N>} \hat{l}_{k} \cos(\frac{2 \pi f k}{N}) - \cos(\frac{2 \pi f i}{N}) \sum_{k=<N>} \hat{l}_{k} \sin(\frac{2 \pi f k}{N})
-\end{align}
+\end{aligned}
 $$ {#eq-sinusoid-response}
 
 We can simplify this expression to the form
@@ -115,10 +115,11 @@ $$ {#eq-sinusoid-output}
 
 where
 
-$$\begin{align}
+$$
+\begin{aligned}
 a & = \sum_{k=<N>} \hat{l}_{k} \cos(\frac{2 \pi f k}{N})  \\
 b & = \sum_{k=<N>} \hat{l}_{k} \sin(\frac{2 \pi f k}{N})
-\end{align}
+\end{aligned}
 $$ {#eq-sinusoid-coeffs}
 
 We have shown that when the input to the system is a sinusoidal function at frequency $f$, the output of the system is the weighted sum of a sinusoid and a cosinusoid, both at frequency $f$. This is equivalent to showing that when the input is a sinusoid at frequency $f$, the output will be a scaled and shifted copy of the input, $s_f \sin (\frac{\pi f i}{N} + \phi_f )$ (see @eq-sinusoid-expansion). As we shall see below, it is easy to generalize this result to all harmonic functions.
@@ -156,9 +157,9 @@ The DFS represents the original stimulus as the weighted sum of a set of harmoni
 
 ### The Discrete Fourier Series: Properties
 
-![The basis functions of the Discrete Fourier Series. The cosinusoidal (a) and sinusoidal (b) basis functions of the discrete Fourier series representation when N=8 are shown. Notice the redundancy between the functions at symmetrically placed frequencies.](../wp-content/uploads/2012/02/sincos.png){#fig-dfs-basis width="70%"}
+![The basis functions of the Discrete Fourier Series. The cosinusoidal (a) and sinusoidal (b) basis functions of the discrete Fourier series representation when N=8 are shown. Notice the redundancy between the functions at symmetrically placed frequencies.](wp-content/uploads/2012/02/sincos.png){#fig-dfs-basis width="70%"}
 
-Figure A1.1 shows the sampled sine and cosine functions for a period of $N = 8$. The functions are arrayed in a circle to show how they relate to one another. There are a total of 16 basis functions. But, as you can see from Figure A1.1, they are redundant. The sampled cosinusoids in the columns of $\mathbf{C}$ repeat themselves (in reverse order); for example, when $N=8$ the cosinusoids for $f = 1,2,3$ are the same as the cosinusoids for $f= 7,6,5$. The sampled sinusoids in the columns of $\mathbf{S}$ also repeat themselves except for a sign reversal (multiplication by negative one). There are only four independent sampled cosinusoids, and four independent sampled sinusoids. As a result of this redundancy, neither the $\mathbf{S}$ nor the matrix $\mathbf{C}$ is invertible.
+@fig-dfs-basis shows the sampled sine and cosine functions for a period of $N = 8$. The functions are arrayed in a circle to show how they relate to one another. There are a total of 16 basis functions. But, as you can see from @fig-dfs-basis, they are redundant. The sampled cosinusoids in the columns of $\mathbf{C}$ repeat themselves (in reverse order); for example, when $N=8$ the cosinusoids for $f = 1,2,3$ are the same as the cosinusoids for $f= 7,6,5$. The sampled sinusoids in the columns of $\mathbf{S}$ also repeat themselves except for a sign reversal (multiplication by negative one). There are only four independent sampled cosinusoids, and four independent sampled sinusoids. As a result of this redundancy, neither the $\mathbf{S}$ nor the matrix $\mathbf{C}$ is invertible.
 
 Nevertheless, the properties of these harmonic basis functions make it simple to calculate the vectors containing the weights of the harmonic functions from the original stimulus, $\mathbf{p}$. To compute $\mathbf{a}$ and $\mathbf{b}$, we multiply the input by the basis functions, as in
 
@@ -172,18 +173,18 @@ $$
 \mathbf{H}^{-1} = \frac{1}{N} \mathbf{H}^{T} = \frac{1}{N} (\mathbf{S} + \mathbf{C})^T .
 $$ {#eq-dfs-inverse}
 
-[^hartley-transform]: This observation is the basis of another useful linear transform method called the *Hartley Transform* (Bracewell, 1986).
+[^hartley-transform]: This observation is the basis of another useful linear transform method called the *Hartley Transform* (@bracewell1986-hartleytransform).
 
 Second, the columns of the matrices $\mathbf{C}$ and $\mathbf{S}$ are perpendicular to one another: $\mathbf{0} = \mathbf{C} \mathbf{S}^{T}$. This observation should not be surprising since continuous sinusoids and cosinusoids are also orthogonal to one another.
 
 We can use these two observations to derive @eq-dfs-coefficients as follows. Express the fact that $\mathbf{H}$ and $\frac{1}{N} \mathbf{H}^{T}$ are inverses as follows:
 
 $$
-\begin{align}
-{{\bf I}_{N \times N}} & = \mathbf{H} \left(\frac{1}{N} \mathbf{H}^T \right) \\ 
+\begin{aligned}
+{{\mathbf{I}}_{N \times N}} & = \mathbf{H} \left(\frac{1}{N} \mathbf{H}^T \right) \\ 
 & = \frac{1}{N} (\mathbf{C} + \mathbf{S}) (\mathbf{C} + \mathbf{S})^T \\
 & = \frac{1}{N} (\mathbf{C} \mathbf{C}^T + \mathbf{S} \mathbf{S}^T)
-\end{align}
+\end{aligned}
 $$ {#eq-dfs-inverse-proof}
 
 where ${\mathbf{I}_{N \times N}}$ is the identity matrix. Then, multiply both sides of @eq-dfs-inverse-proof by $\mathbf{p}$,
@@ -200,15 +201,15 @@ Compare @eq-dfs-reconstruction and @eq-dfs-tableau. Notice that the Equations be
 
 Finally, we show how to predict the response of a shift-invariant linear system to any stimulus using only the responses to unit amplitude cosinusoidal inputs. This result is the logical basis for describing system performance from measurements of the response to harmonic functions. When the system is linear and shift-invariant, its responses to harmonic functions is a complete description of the system; but, this is not true for arbitrary linear systems.
 
-Because cosinusoids and sinusoids are shifted copies of one another, the response of a shift-invariant linear system to these functions is the same except for a shift. From a calculation like the one in Equation~[8](#id2187188570), except using a cosinusoidal input, we can calculate the following result: If the response to a cosinusoid at frequency $f$ is a sum of cosinusoid and sinusoid with weights, $(a_f, b_f)$, then, the response to a sinusoid at frequency $f$ will have weights $(b_f, -a_f)$. Hence, if we know the response to a cosinusoid at $f$, we also know the response to a sinusoid at $f$.
+Because cosinusoids and sinusoids are shifted copies of one another, the response of a shift-invariant linear system to these functions is the same except for a shift. From a calculation like the one in @eq-sin-angle-sum, except using a cosinusoidal input, we can calculate the following result: If the response to a cosinusoid at frequency $f$ is a sum of cosinusoid and sinusoid with weights, $(a_f, b_f)$, then, the response to a sinusoid at frequency $f$ will have weights $(b_f, -a_f)$. Hence, if we know the response to a cosinusoid at $f$, we also know the response to a sinusoid at $f$.
 
 Next, we can use our knowledge of the response to sinusoids and cosinusoids at $f$ to predict the response to any harmonic function at $f$. Suppose that the input is a harmonic function $a \cos(\frac{2 \pi f i}{N}) + b \sin(\frac{2 \pi f i}{N})$, and the output is, say $a^\prime \cos(\frac{2 \pi f i}{N}) + b^\prime \sin(\frac{2 \pi f i}{N})$. If the response to a unit amplitude cosinusoid is $u_f \cos(\frac{2 \pi f i}{N}) + v_f \sin(\frac{2 \pi f i}{N})$, then the response to a unit amplitude sinusoid is $v_f \cos(\frac{2 \pi f i}{N}) - u_f \sin(\frac{2 \pi f i}{N})$. Using these two facts and linearity we calculate the coefficients of the response,
 
 $$
-\begin{eqnarray*}
+\begin{aligned}
 a^\prime & = & a u_f + b v_f \nonumber \\
 b^\prime & = & a v_f - b u_f .
-\end{eqnarray*}
+\end{aligned}
 $$ {#eq-dfs-output-coeffs}
 
 We have shown that if we measure the system response to unit amplitude cosinusoidal inputs, we can compute the system response to an arbitrary input stimulus as follows.
@@ -227,15 +228,15 @@ The design of the color CRT is one of the most important applications of vision 
 
 ### An Overview of a CRT Display
 
-![Overview of a cathode ray tube display. (a) A side view of the display showing the cathode, which is the source of electrons, and a method of focusing the electrons into a beam that is deflected in a raster pattern across the faceplate of the display. (b) The geometrical arrangement of the electron beams, shadow-mask, and phosphor allows each electron beam to stimulate only one of the three phosphors.](../wp-content/uploads/2012/02/crtShadow.png){#fig-crt-shadow width="70%"}
+![Overview of a cathode ray tube display. (a) A side view of the display showing the cathode, which is the source of electrons, and a method of focusing the electrons into a beam that is deflected in a raster pattern across the faceplate of the display. (b) The geometrical arrangement of the electron beams, shadow-mask, and phosphor allows each electron beam to stimulate only one of the three phosphors.](wp-content/uploads/2012/02/crtShadow.png){#fig-crt-shadow width="70%"}
 
-Figure A2.1a shows the main components of a color CRT display. The display contains a *cathode*, or *electron gun*, that provides a source of electrons. The electrons are focused into a beam whose direction is deflected back and forth in a raster pattern so that it scans the faceplate of the display.
+@fig-crt-shadow (a) shows the main components of a color CRT display. The display contains a *cathode*, or *electron gun*, that provides a source of electrons. The electrons are focused into a beam whose direction is deflected back and forth in a raster pattern so that it scans the faceplate of the display.
 
 Light is emitted by a process of absorption and emission that occurs at the faceplate of the display. The faceplate consists of a phosphor painted onto a glass substrate. The phosphor absorbs electrons from the scanning beam and emits light. A signal, generally controlled from a computer, modulates the intensity of the electron beam as it scans across the faceplate. The intensity of the light emitted by the phosphor at each point on the faceplate depends on the intensity of the electrons beam as it scans past that point.
 
 Monochrome CRTs have a single electron beam and a single type of phosphor. In monochrome systems the control signal only influences the intensity of the phosphor emissions. Color CRTs use three electron beams; each stimulates one of three phosphors. Each of the phosphors emits light of a different spectral power distribution. By separately controlling the emissions of the three types of phosphors, the user can vary the spectral composition of the emitted light. The light emitted from the CRT is always the mixture of three primary lights from the three phosphors, usually called the red, green and blue phosphors.
 
-In order that each electron beam stimulate emissions from only one of the three types of phosphors, a metal plate, called a *shadow-mask*, is interposed between the three electron guns and the faceplate. A conventional shadow-mask is a metal plate with a series of finely spaced holes. The relative positions of the holes and the electron guns are arranged, as shown in Figure A2.1b, so that as the beam sweeps across the faceplate the electrons from a single gun that pass through a hole are absorbed by only one of the three types of phosphors; electrons from that gun that would have stimulated the other phosphors are absorbed or scattered by the shadow-mask.
+In order that each electron beam stimulate emissions from only one of the three types of phosphors, a metal plate, called a *shadow-mask*, is interposed between the three electron guns and the faceplate. A conventional shadow-mask is a metal plate with a series of finely spaced holes. The relative positions of the holes and the electron guns are arranged, as shown in @fig-crt-shadow (b), so that as the beam sweeps across the faceplate the electrons from a single gun that pass through a hole are absorbed by only one of the three types of phosphors; electrons from that gun that would have stimulated the other phosphors are absorbed or scattered by the shadow-mask.
 
 ### The frame-buffer
 
@@ -249,9 +250,9 @@ Calibrating a visual display means measuring the relationship between the frame-
 
 We can measure the relationship between the value of a frame-buffer entry and the intensity of the light emitted from the display as follows: Set the frame buffer entries controlling one of the three hosphor display intensities, say within a rectangular region, to a single value. Measure the intensity of the light emitted from the displayed rectangle. Repeat this measurement at many different frame-buffer values for this phosphor, and then for the other two phosphors.
 
-![Frame-buffer value and display intensity. (a) The dashed curve measures the intensity of the emitted light relative to the maximum intensity. The data shown are for the green phosphor. The insets in the graph show the complete spectral power distribution of the light at two different frame-buffer levels. (b) The dashed curve describing the relative intensities is replotted, using Stevens' Power Law, to show the linear relationship between the frame-buffer value and perceived brightness.](../wp-content/uploads/2012/02/displayGamma.png){#fig-display-gamma width="70%"}
+![Frame-buffer value and display intensity. (a) The dashed curve measures the intensity of the emitted light relative to the maximum intensity. The data shown are for the green phosphor. The insets in the graph show the complete spectral power distribution of the light at two different frame-buffer levels. (b) The dashed curve describing the relative intensities is replotted, using Stevens' Power Law, to show the linear relationship between the frame-buffer value and perceived brightness.](wp-content/uploads/2012/02/displayGamma.png){#fig-display-gamma width="70%"}
 
-The dashed curve in Figure A2.2 measures the ratio of the intensity at the highest frame-buffer level to the intensity at each of the other frame-buffer levels for the green phosphor. We can summarize the difference using this single ratio, the *relative intensity* because for over most of the range the spectral power distribution of the light emitted at one frame-buffer level is the same as the spectral power distribution of the light emitted from the monitor at maximum except for a scale factor. The insets in the graph show two examples of the spectral power distribution, measured when the frame-buffer was set to 255 and 190. These two curves have the same overall shape; they differ by a scale factor of one half.
+The dashed curve in @fig-display-gamma measures the ratio of the intensity at the highest frame-buffer level to the intensity at each of the other frame-buffer levels for the green phosphor. We can summarize the difference using this single ratio, the *relative intensity* because for over most of the range the spectral power distribution of the light emitted at one frame-buffer level is the same as the spectral power distribution of the light emitted from the monitor at maximum except for a scale factor. The insets in the graph show two examples of the spectral power distribution, measured when the frame-buffer was set to 255 and 190. These two curves have the same overall shape; they differ by a scale factor of one half.
 
 We can approximate the curve relating the relative intensity of the light emitted from this CRT display, $I$, and the frame-buffer value, $v$, by a function of the form
 
@@ -259,15 +260,15 @@ $$
 I = \alpha v^\gamma + \beta
 $$ {#eq-crt-intensity}
 
-where $\alpha$ and $\beta$ are two fitting parameters. For most CRTs, the exponent of the power function, $\gamma$, has a value near $2.2$ (see Brainard, 1989; Berns et al., 1993ab).
+where $\alpha$ and $\beta$ are two fitting parameters. For most CRTs, the exponent of the power function, $\gamma$, has a value near $2.2$ (see @brainard1989-calibration; @berns1993-theory, @berns1993-metrology).
 
-The nonlinear function relating the frame-buffer values and the relative intensity is due to the physics of the CRT display. While nonlinear functions are usually viewed with some dread, this particular nonlinear relationship is desirable because most users want the frame-buffer values to be linear with the brightness; they don’t care how the frame-buffer values relate to intensity. As it turns out, perceived brightness, $B$, is related to intensity through a power law relationship called *Stevens’ Power Law* (Stevens, 1962; Goldstein, 1989; Sekuler and Blake, 1985), namely,
+The nonlinear function relating the frame-buffer values and the relative intensity is due to the physics of the CRT display. While nonlinear functions are usually viewed with some dread, this particular nonlinear relationship is desirable because most users want the frame-buffer values to be linear with the brightness; they don’t care how the frame-buffer values relate to intensity. As it turns out, perceived brightness, $B$, is related to intensity through a power law relationship called *Stevens’ Power Law* (@stevens1962-powerlaw; @goldstein1989-sensationperception; @sekuler1985-perception), namely,
 
 $$
 B = a I^{0.4}
 $$ {#eq-stevens-law}
 
-where $a$ is a fitting parameter. Somewhat fortuitously, the nonlinear relationship between frame-buffer values and intensity compensates for the nonlinear relationship between intensity and brightness. To show this, I have replotted Figure 2.2a on a graph whose vertical scale is brightness, that is relative intensity raised to the $0.4$ power. This graph shows that the relationship between the frame-buffer value and brightness is nearly linear. This has the effect of equalizing the perceptual steps between different levels of the frame-buffer and simplifying certain aspects of controlling the appearance of the display.
+where $a$ is a fitting parameter. Somewhat fortuitously, the nonlinear relationship between frame-buffer values and intensity compensates for the nonlinear relationship between intensity and brightness. To show this, I have replotted @fig-display-gamma (a) on a graph whose vertical scale is brightness, that is relative intensity raised to the $0.4$ power. This graph shows that the relationship between the frame-buffer value and brightness is nearly linear. This has the effect of equalizing the perceptual steps between different levels of the frame-buffer and simplifying certain aspects of controlling the appearance of the display.
 
 ### Display Spectral Power Distribution
 
@@ -287,9 +288,9 @@ $$
 \mathbf{t} = {e_r} \mathbf{m}_{1} + {e_g} \mathbf{m}_{2} + {e_b} \mathbf{m}_{3}
 $$ {#eq-monitor-weighted-sum}
 
-Figure A2.3 is a matrix tableau that illustrates how to compute the spectral power distribution of light emitted from a CRT display. The vector $\mathbf{e}$ contains the relative intensity of each of the three phosphors. The three columns of a matrix, call it $\mathbf{M}$, contain the spectral power distributions of the light emitted by the red, green and blue phosphors at maximum intensity. The spectral power distribution of light emitted from the monitor is the product $\mathbf{M} \mathbf{e}$.
+@fig-monitor-matrix is a matrix tableau that illustrates how to compute the spectral power distribution of light emitted from a CRT display. The vector $\mathbf{e}$ contains the relative intensity of each of the three phosphors. The three columns of a matrix, call it $\mathbf{M}$, contain the spectral power distributions of the light emitted by the red, green and blue phosphors at maximum intensity. The spectral power distribution of light emitted from the monitor is the product $\mathbf{M} \mathbf{e}$.
 
-![The spectral power distribution of light emitted from a CRT. The entries e = (er, eg, eb) are the relative intensity of the three phosphors. The columns of M contain the spectral power distributions at maximum intensity. The vector calculated by Me is the spectral power distribution of the light emitted by the CRT. The output shown in the figure was calculated for e = (0.5, 0.6,0.7)T.](../wp-content/uploads/2012/02/monitor.mat_.png){#fig-monitor-matrix width="70%"}
+![The spectral power distribution of light emitted from a CRT. The entries e = (er, eg, eb) are the relative intensity of the three phosphors. The columns of M contain the spectral power distributions at maximum intensity. The vector calculated by Me is the spectral power distribution of the light emitted by the CRT. The output shown in the figure was calculated for e = (0.5, 0.6,0.7)T.](wp-content/uploads/2012/02/monitor.mat_.png){#fig-monitor-matrix width="70%"}
 
 The light emitted from a CRT is different from lights we encounter in natural scenes. For example, the spectral power distribution of the red phosphor, with its sharp and narrow peaks, is unlike the light we see in natural images. Nonetheless, we can adjust the three intensities of the three phosphors on a color CRT to match the appearance of most spectral power distributions, just as we can match appearance in the color-matching experiment by adjusting the intensity of three primary lights (see @sec-wavelength-encoding).
 
@@ -305,7 +306,7 @@ $$ {#eq-calibration-matrix}
 
 We call the matrix $\mathbf{H} = \mathbf{B}^T \mathbf{M}$, the monitor’s *calibration matrix.* This matrix relates the linear phosphor intensities to the relative cone absorption rates.
 
-As an example, I have calculated the calibration matrix for the monitor whose phosphor spectral power distributions are shown in Figure A2.3, and for the cone absorption spectra listed in Table~??. The resulting calibration matrix is
+As an example, I have calculated the calibration matrix for the monitor whose phosphor spectral power distributions are shown in @fig-monitor-matrix, and for the cone absorption spectra listed in Table~??. The resulting calibration matrix is
 
 $$
 \left ( \begin{array}{ccc} 0.2732 & 0.9922 & 0.1466 \\ 0.1034 & 0.9971 & 0.2123 \\ 0.0117 & 0.1047 & 1.0000 \end{array} \right )
@@ -315,14 +316,14 @@ Each column of the calibration matrix describes the relative cone absorptions ca
 
 Suppose the red phosphor stimulated only the $L$ cones, the green the $M$ cones, and the blue the $S$ cones. In that case, the calibration matrix would be diagonal, and we could control the absorptions in a single cone class by adjusting only one of the phosphor emissions. In practice, the light from each of the CRT phosphors is absorbed in all three cone types and the calibration matrix is never diagonal. As a result, to control the cone absorptions we must take into account the effect each phosphor has on each of the three cone types. This complexity is unavoidable because of the overlap of the cone absorption curves and the need to use phosphors with broadband emissions to create a bright display. Consequently, the calibration matrix is never diagonal.
 
-[^uniform-display]: This calculation applies to spatially uniform regions of a display, in which we can ignore the complications of chromatic aberration. Marimont and Wandell (1994) describe how to include the effects of chromatic aberration.
+[^uniform-display]: This calculation applies to spatially uniform regions of a display, in which we can ignore the complications of chromatic aberration. @marimont1993-matchingcolorimages describe how to include the effects of chromatic aberration.
 
 
 ### Example Calculations
 
 Now, we consider two ways we might use the calibration matrix. First, we might wish to calculate the receptor absorptions to a particular light from the CRT. Second, we might wish to know how to adjust the relative intensities of the CRT in order to achieve a particular pattern of cone absorptions.
 
-Using the methods described so far, you can calculate the relative cone absorption rates for any triplet of frame-buffer entries. Suppose the frame-buffer values are set to $ (128,128,0) $. The pattern will look yellow since only the red and green phosphors are excited. Assuming that the curves relating relative intensity to frame-buffer level are the same for all three phosphors (Figure A2.2), we find that the relative intensities will be $ \mathbf{e} = (0.1524,0.1524,0.0)^T $. The product $ \mathbf{H} \mathbf{e} $ yields the relative cone absorption rates $ \mathbf{r} =(0.1929, 0.1677, 0.0177)^T $. If we set the frame-buffer to $ (128,128,128) $, which appears gray, the relative intensities are $ (0.1524,0.1524,0.1524) $ and the relative cone absorption rates are $ \mathbf{r} = (0.2152,0.2001,0.1702)^T $.
+Using the methods described so far, you can calculate the relative cone absorption rates for any triplet of frame-buffer entries. Suppose the frame-buffer values are set to $ (128,128,0) $. The pattern will look yellow since only the red and green phosphors are excited. Assuming that the curves relating relative intensity to frame-buffer level are the same for all three phosphors (@fig-display-gamma), we find that the relative intensities will be $\mathbf{e} = (0.1524,0.1524,0.0)^T$. The product $\mathbf{H} \mathbf{e}$ yields the relative cone absorption rates $\mathbf{r} =(0.1929, 0.1677, 0.0177)^T$. If we set the frame-buffer to $(128,128,128)$, which appears gray, the relative intensities are $(0.1524,0.1524,0.1524)$ and the relative cone absorption rates are $\mathbf{r} = (0.2152,0.2001,0.1702)^T$.
 
 A second common type of calculation is used in behavioral experiments in which the experimenter wants to create a particular pattern of cone absorptions. To infer the relative display intensities necessary to achieve a desired effect on the cone absorptions, we must use the inverse of the calibration matrix, since
 
@@ -336,16 +337,16 @@ $$
 \mathbf{H}^{-1} = \left ( \begin{array}{ccc} 5.8677 & -5.8795 & 0.3876 \\ -0.6074 & 1.6344 & -0.2579 \\ -0.0049 & -0.1025 & 1.0225 \end{array} \right )
 $$ {#eq-calibration-inverse}
 
-Suppose we wish to display a pair of stimuli that differ only in their effects on the $ S $ cones. Let’s begin with a stimulus whose relative intensities are $ \mathbf{e} = (0.5,0.5,0.5)^T $. Using the calibration matrix, we calculate that the relative cone absorption rates from this stimulus: they are $ (.706, .656, .558) $. Now, let’s create a second stimulus with a slightly higher rate of $ S $ cone absorptions: say, $ \mathbf{r} = (.706, .656, .700) $. Using the inverse calibration matrix, we can calculate the relative display intensities needed to produce the second stimulus: they are $ (0.555, 0.4634, 0.645) $.
+Suppose we wish to display a pair of stimuli that differ only in their effects on the $ S $ cones. Let’s begin with a stimulus whose relative intensities are $\mathbf{e} = (0.5,0.5,0.5)^T$. Using the calibration matrix, we calculate that the relative cone absorption rates from this stimulus: they are $(.706, .656, .558)$. Now, let’s create a second stimulus with a slightly higher rate of $ S $ cone absorptions: say, $\mathbf{r} = (.706, .656, .700)$. Using the inverse calibration matrix, we can calculate the relative display intensities needed to produce the second stimulus: they are $(0.555, 0.4634, 0.645)$.
 
-Notice that to create a stimulus difference seen only by the $ S $ cones, we needed to adjust the intensities of all three phosphor emissions. For example, to increase the $ S $ cone absorptions we need to increase the intensity of the blue phosphor emissions. This will also cause some increases in the $ L $ and $ M $ cone absorptions, and we must compensate for this by decreasing the emissions from the red and green phosphors.
+Notice that to create a stimulus difference seen only by the $S$ cones, we needed to adjust the intensities of all three phosphor emissions. For example, to increase the $S$ cone absorptions we need to increase the intensity of the blue phosphor emissions. This will also cause some increases in the $L$ and $M$ cone absorptions, and we must compensate for this by decreasing the emissions from the red and green phosphors.
 
 
 #### Color Calibration Tips
 
 For most of us calibration is not, in itself, the point. Rather, we calibrate displays to describe and control experimental stimuli. If your experiments only involve a small number of stimuli, then it is best to calibrate those stimuli exhaustively. This strategy avoids making a lot of unnecessary assumptions, and your accuracy will be limited only by the quality of your calibration instrument.
 
-In some experiments, and in most commercial applications, the number of stimuli is too large for exhaustive calibration. Brainard (1989) calculates that for the most extreme case, in which one has a $512 \times 512$ spatial array with RGB buffers at $8$ bits of resolution there are $10 ^{1,893,917}$ different stimulus patterns. So many patterns, so little time.
+In some experiments, and in most commercial applications, the number of stimuli is too large for exhaustive calibration. @brainard1989-calibration calculates that for the most extreme case, in which one has a $512 \times 512$ spatial array with RGB buffers at $8$ bits of resolution there are $10 ^{1,893,917}$ different stimulus patterns. So many patterns, so little time.
 
 Because of the large number of potential stimuli, we need to build a model of the relationship between the frame-buffer entries and the monitor output. The discussion of calibration in this appendix is based on an implicit model of the display. To perform a high quality calibration, you should check some of these assumptions. What are these implicit assumptions, and how close will they be to real performance?
 
@@ -354,19 +355,19 @@ Because of the large number of potential stimuli, we need to build a model of th
 
 First, we have assumed that the transfer function from the frame buffer values to the monitor output is independent of the spatial pattern in the frame buffer. Specifically, we have assumed that the light measurements we obtain from a region are the same if the surrounding area were set to zero or set to any other intensity level.
 
-In fact, the intensity in a region is not always independent of the spatial pattern in nearby regions (see e.g. Lyons and Farrell, 1989, Naiman and Makous, 1992). It can be very difficult and impractical to calibrate this aspect of the display. As an experimenter, you should choose your calibration conditions to match the conditions of your experiment as closely as possible so you don’t need to model the variations with spatial pattern. For example, if your experiments will use rectangular patches on a gray background, then calibrate the display properties for rectangular patches on a gray background, not on a black or white background.
+In fact, the intensity in a region is not always independent of the spatial pattern in nearby regions (see e.g. @lyons-farrell1989, @naiman-makous1992). It can be very difficult and impractical to calibrate this aspect of the display. As an experimenter, you should choose your calibration conditions to match the conditions of your experiment as closely as possible so you don’t need to model the variations with spatial pattern. For example, if your experiments will use rectangular patches on a gray background, then calibrate the display properties for rectangular patches on a gray background, not on a black or white background.
 
 If you are interested in a harsh test to evaluate spatial independence of a display, try displaying a square pattern consisting of alternating pixels with $0$ and $255$. When you step away from the monitor, the pattern will blur; in principle, the brightness of this pattern should match the brightness of a uniform square of the same size all of whose values are set to the frame-buffer value whose relative intensity is $0.5$. You can try the test using alternating horizontal lines, or alternating vertical lines, or random dot arrays.
 
 #### Phosphor Independence
 
-Brainard (1989) points out that the spatial independence assumption reduces the number of measurements to approximately $1.6 \times 10^{7}$. Still too many measurements to make; but, at least we have reduced the problem so that there are fewer measurements than the number of atoms in the universe.
+@brainard1989-calibration points out that the spatial independence assumption reduces the number of measurements to approximately $1.6 \times 10^{7}$. Still too many measurements to make; but, at least we have reduced the problem so that there are fewer measurements than the number of atoms in the universe.
 
 It is our second assumption, *phosphor independence*, that makes calibration practical. We have assumed that the signals emitted from three phosphors can be measured independently of one another. For example, we measured the relative intensities for the red phosphor and assumed that this curve is the same no matter what the state of the green and blue phosphor emissions. The phosphor independence assumption implies that we need to make only $3 \times 256$ measurements, the relative intensities of each of the three phosphors, to calibrate the display. (Once the spectral power distributions of the phosphors are known; or equivalently, the entries of the calibration matrix).
 
 Before performing your experiments, it is important to verify phosphor independence. Measure the intensity of the monitor output to a range of, say, red phosphor values when green frame-buffer is set to zero. Then measure again when the green frame-buffer is set to its maximum value. The relative intensities of the red phosphor you measure should be the same after you correct for the additive constant from the green phosphor. In my experience, this property does fail on some CRT displays; when it fails your calibration measurements are in real trouble. I suspect that phosphor independence fails when the power supply of the monitor is inadequate to supply the needs of the three electron guns. Thus, when all three electron guns are being driven at high levels, the load on the power supply exceeds the compliance range and produces a dependence between the output levels of the different phosphors. This dependence violates the assumptions of our calibration procedure and makes calibration of such a monitor very unpleasant. Get a new monitor.
 
-For further discussion of calibration, consult some papers in which authors have described their experience with specific display calibration projects (e.g. Brainard, 1989; Cowan and Rowell, 1986; Post, 1989; Berns et al., 1993ab).
+For further discussion of calibration, consult some papers in which authors have described their experience with specific display calibration projects (e.g. @brainard1989-calibration; @cowan-rowell1986; @post-calhoun1989; @berns1993-theory, @berns1993-metrology).
 
 ## Classification {#sec-appendix-classification}
 
@@ -435,15 +436,15 @@ $$ {#eq-poisson-prob}
 
 The value $\mu$ is called the *rate-parameter* of the Poisson distribution. The variance of the Poisson distribution is also $\mu$.
 
-Figure A3.1 shows the probability distributions of the number of cone absorptions from the two stimuli, $A$ and $B$. For this illustration, I have assumed that the mean absorptions from the two stimuli are $\mu_{A} = 8$ and $\mu_{B} = 12$, respectively. Since the a priori stimulus probabilities are equal, the observer will select stimulus $A$ whenever $P(d \mid A)$ exceeds $P(d \mid B)$. For this pair of distributions, this occurs whenever the observation is less than 9.
+@fig-bayes-intensity shows the probability distributions of the number of cone absorptions from the two stimuli, $A$ and $B$. For this illustration, I have assumed that the mean absorptions from the two stimuli are $\mu_{A} = 8$ and $\mu_{B} = 12$, respectively. Since the a priori stimulus probabilities are equal, the observer will select stimulus $A$ whenever $P(d \mid A)$ exceeds $P(d \mid B)$. For this pair of distributions, this occurs whenever the observation is less than 9.
 
 ![Bayes classifier for an intensity discrimination. The Poisson distributions of stimulus A with rate parameter muA = 8 (x's) and B with rate parameter muB = 12 (o's) are shown. When the a priori probabilities of seeing the stimuli are equal, the Bayes classifier selects B when the absorptions exceed the dashed line drawn through the graph. When the a priori probabilities are P(A) = 0.75 and P(B) = 0.25, the Bayes classifier selects B when the absorptions exceed the solid line drawn through the graph.](/wp-content/uploads/2012/02/sdt.png){#fig-bayes-intensity width="70%"}
 
-Now, suppose the experimenter presents $A$ with probability $0.75$ and $B$ with probability $0.25$. In this case, the subject can be right three quarters of the time simply by always guessing $A$. Given the strong a priori odds for $A$, the Bayes classifier will only choose $B$ if the likelihood exceeds three to one. From the distributions in Figure A3.1 we find this occurs when there are at least 13 absorptions. The Bayes classifier uses the data and the a priori probabilities to make a decision.[^hecht-photon-detection]
+Now, suppose the experimenter presents $A$ with probability $0.75$ and $B$ with probability $0.25$. In this case, the subject can be right three quarters of the time simply by always guessing $A$. Given the strong a priori odds for $A$, the Bayes classifier will only choose $B$ if the likelihood exceeds three to one. From the distributions in @fig-bayes-intensity we find this occurs when there are at least 13 absorptions. The Bayes classifier uses the data and the a priori probabilities to make a decision.[^hecht-photon-detection]
 
-[^hecht-photon-detection]: In a classic paper, Hecht, Schlaer and Pirenne (1942) measured the smallest number of quanta necessary to reliably detect a signal. In the most sensitive region of the retina, under the optimized viewing conditions, they found that 100 quanta at the cornea, which corresponds to about 10 absorptions, are sufficient. The quanta are absorbed in an area covered by several hundred rods; hence, it is quite unlikely that two quanta will be absorbed by the same rod. They concluded, quite correctly, that a single photon of light can produce a measurable response in a single rod.
+[^hecht-photon-detection]: In a classic paper, @hechtenergyquantavision1942 measured the smallest number of quanta necessary to reliably detect a signal. In the most sensitive region of the retina, under the optimized viewing conditions, they found that 100 quanta at the cornea, which corresponds to about 10 absorptions, are sufficient. The quanta are absorbed in an area covered by several hundred rods; hence, it is quite unlikely that two quanta will be absorbed by the same rod. They concluded, quite correctly, that a single photon of light can produce a measurable response in a single rod.
 
-To find further support for their observation, Hecht et al. analyzed how the subject’s responses varied across trials. They assumed that all of the observed variability was due to the stimulus, and none was due to the observer. Their account is repeated in a wonderful didactic style in Cornsweet’s book. I don’t think this assumption is justified; a complete treatment of the data must take into account variability intrinsic to the human observer (e.g., Nachmias and Kocher, 1970).
+To find further support for their observation, Hecht et al. analyzed how the subject’s responses varied across trials. They assumed that all of the observed variability was due to the stimulus, and none was due to the observer. Their account is repeated in a wonderful didactic style in Cornsweet’s book. I don’t think this assumption is justified; a complete treatment of the data must take into account variability intrinsic to the human observer (e.g., @nachmias-kocher1970).
 
 
 ### A Bayes classifier for a Pattern Discrimination Task
@@ -508,17 +509,17 @@ This term acts as a normalizing criterion to correct for the overall response to
 
 We have learned that a Bayes classifier for pattern discrimination can be implemented using the results of simple linear calculations, like the calculations represented in the outputs of some peripheral neurons. In fact, making a decision like a Bayes classifier is equivalent to comparing the response of a linear neuron with a criterion value. If response of the linear neuron with receptive field defined by $w_i$ exceeds the criterion value, then choose stimulus $A$, otherwise choose $B$.
 
-![Bayes classifier for a spatial discrimination task. (a) The mean retinal image of a line. The grid lines are separated by 30 sec of arc, approximately the spacing of the cone inner segments in the fovea. (b) The mean retinal image of an image formed by a pair of lines separated by 30 sec of arc. The intensity of each line is one half the intensity of the line in panel (a). (c) The weights of the Bayes classifier that should be used to discriminate the stimuli in (a) and (b), given the assumptions of independent Poisson noise. (After: Geisler, 1989).](../wp-content/uploads/2012/02/geisler.png){#fig-bayes-classifier width="70%"}
+![Bayes classifier for a spatial discrimination task. (a) The mean retinal image of a line. The grid lines are separated by 30 sec of arc, approximately the spacing of the cone inner segments in the fovea. (b) The mean retinal image of an image formed by a pair of lines separated by 30 sec of arc. The intensity of each line is one half the intensity of the line in panel (a). (c) The weights of the Bayes classifier that should be used to discriminate the stimuli in (a) and (b), given the assumptions of independent Poisson noise. (After: @geisler1989-sequentialidealobserveranalysis).](wp-content/uploads/2012/02/geisler.png){#fig-bayes-classifier width="70%"}
 
-Figure A3.2 shows an example of a Bayes classifier computed for a simple pattern discrimination task. The two spatial patterns to be discriminated are shown in panels (a) and (b). The image in (a) is the retinal image of a line segment. Figure A3.2b shows the retinal image of a pair of line segments, separated by 30 sec of arc. The grid marks on the image are spaced by 30 sec of arc, essentially the same spacing as the cone inner segments. The curves below the images measure the intensity of the stimuli across a horizontal section.
+@fig-bayes-classifier shows an example of a Bayes classifier computed for a simple pattern discrimination task. The two spatial patterns to be discriminated are shown in panels (a) and (b). The image in (a) is the retinal image of a line segment. @fig-bayes-classifier (b) shows the retinal image of a pair of line segments, separated by 30 sec of arc. The grid marks on the image are spaced by 30 sec of arc, essentially the same spacing as the cone inner segments. The curves below the images measure the intensity of the stimuli across a horizontal section.
 
-Figure A3.2c shows the weights of the Bayes classifier for discriminating the two images; the weights were computing using @eq-bayes-classifier-weighted-sum. In this image the gray level represents the value of the weight that should be applied to the individual cone absorptions: a medium gray intensity corresponds to a zero weight, lighter values are positive weights, and darker values are negative weights. The spatial pattern of weights bears an obvious resemblance to the spatial patterns of receptive fields in the visual cortex.
+@fig-bayes-classifier (c) shows the weights of the Bayes classifier for discriminating the two images; the weights were computing using @eq-bayes-classifier-weighted-sum. In this image the gray level represents the value of the weight that should be applied to the individual cone absorptions: a medium gray intensity corresponds to a zero weight, lighter values are positive weights, and darker values are negative weights. The spatial pattern of weights bears an obvious resemblance to the spatial patterns of receptive fields in the visual cortex.
 
-The Bayes classifier specifies how to obtain the optimal discrimination performance when we know the signal and the noise. Apart from the optimality of the Bayes classifier itself, observers in behavioral experiments can never know the true signal and noise perfectly. The performance of the Bayes classifier, therefore, must be equal or superior to human performance. In nearly all cases where a Bayes classifier analysis has been carried out, the Bayesian classifier performance is vastly better than human observer performance. Human observers usually fail to extract a great deal of information available in the stimulus. In general, then, the Bayes classifier does not model human performance (Banks et al., 1987).
+The Bayes classifier specifies how to obtain the optimal discrimination performance when we know the signal and the noise. Apart from the optimality of the Bayes classifier itself, observers in behavioral experiments can never know the true signal and noise perfectly. The performance of the Bayes classifier, therefore, must be equal or superior to human performance. In nearly all cases where a Bayes classifier analysis has been carried out, the Bayesian classifier performance is vastly better than human observer performance. Human observers usually fail to extract a great deal of information available in the stimulus. In general, then, the Bayes classifier does not model human performance (@banks1987-physicallimitsgrating).
 
 Why, then, is the Bayes classifier analysis important? The Bayes classifier analysis defines what information is available to the observer. Defining the stimulus is an essential part of a good experimental design. The Bayes classifier defines what the observer can potentially do, and this serves as a good standard to use in evaluating performance. The Bayes classifier helps us to understand the task; only if we understand the task, can we understand the observer’s performance.
 
-> The real power of this approach is that the ideal discriminator \[Bayes classifier\] measures all the information available to the later stages of the visual system. I would like to suggest that measuring the information available in discrimination stimuli with a model of the sort I have described here should be done as routinely as measuring the luminances of the stimuli with a photometer. In other words, we should not only use a light meter but we should also use the appropriate information meter. It is simply a matter of following the first commandment of psychophysics: “know thy stimulus.” (Geisler, 1987, p. 30)
+> The real power of this approach is that the ideal discriminator \[Bayes classifier\] measures all the information available to the later stages of the visual system. I would like to suggest that measuring the information available in discrimination stimuli with a model of the sort I have described here should be done as routinely as measuring the luminances of the stimuli with a photometer. In other words, we should not only use a light meter but we should also use the appropriate information meter. It is simply a matter of following the first commandment of psychophysics: “know thy stimulus.” (@geisler1987-idealobserveranalysis, p. 30)
 
 ## Signal Estimation: A Geometric View {#sec-appendix-signal-estimation}
 
@@ -546,21 +547,21 @@ $$ {#eq-dot-product}
 
 where $\| \cdot \|$ is the vector length and $\theta$ is the angle between the vectors. To simplify the discussion in the remainder of this section, we will assume that the vector $\mathbf{a}$ has unit length.
 
-![A geometric interpretation of the two-dimensional dot product. (a) A geometrical view of the dot product of two vectors is shown. The dashed line is a perpendicular from the tip of vector $\mathbf{x}$ to the unit-length vector $\mathbf{a}$. (b) Any vector whose endpoint falls along the dashed line yields the same scalar value when we compute the vector's dot product with $\mathbf{a}$.](../wp-content/uploads/2012/02/dotProduct.png){#fig-dot-product width="70%"}
+![A geometric interpretation of the two-dimensional dot product. (a) A geometrical view of the dot product of two vectors is shown. The dashed line is a perpendicular from the tip of vector $\mathbf{x}$ to the unit-length vector $\mathbf{a}$. (b) Any vector whose endpoint falls along the dashed line yields the same scalar value when we compute the vector's dot product with $\mathbf{a}$.](wp-content/uploads/2012/02/dotProduct.png){#fig-dot-product width="70%"}
 
-Figure A4.1a is a geometric representation of the dot product operation. The unit vector $\mathbf{a}$ and the signal vector $\mathbf{x}$ are drawn as arrows extending from the origin. A dashed line is drawn from the tip of $\mathbf{x}$ (the signal) at right angles to the vector $\mathbf{a}$ (the sensor). The length of the vector from the origin to point of intersection between the perpendicular dashed line and $\mathbf{a}$ is called the *projection* of $\mathbf{x}$ onto $\mathbf{a}$. Because we have assumed $\mathbf{a}$ has unit length, the length of the projection, $\| \mathbf{x} \| \cos ( \theta )$, is equal to the dot product, $\mathbf{a} \cdot \mathbf{x} = \| \mathbf{a} \| \| \mathbf{x} \| \cos (\theta)$.
+@fig-dot-product (a) is a geometric representation of the dot product operation. The unit vector $\mathbf{a}$ and the signal vector $\mathbf{x}$ are drawn as arrows extending from the origin. A dashed line is drawn from the tip of $\mathbf{x}$ (the signal) at right angles to the vector $\mathbf{a}$ (the sensor). The length of the vector from the origin to point of intersection between the perpendicular dashed line and $\mathbf{a}$ is called the *projection* of $\mathbf{x}$ onto $\mathbf{a}$. Because we have assumed $\mathbf{a}$ has unit length, the length of the projection, $\| \mathbf{x} \| \cos ( \theta )$, is equal to the dot product, $\mathbf{a} \cdot \mathbf{x} = \| \mathbf{a} \| \| \mathbf{x} \| \cos (\theta)$.
 
-By inspecting Figure A4.1b, you can see that there are many signal vectors, $\mathbf{x}$, that have the same dot product with $\mathbf{a}$. Specifically, all of the vectors whose endpoints fall along a line that is perpendicular to $\mathbf{a}$, have the same dot product with $\mathbf{a}$. Hence, any signal represented by a vector whose endpoint is on this line will cause the same response in the sensor represented by the vector $\mathbf{a}$.
+By inspecting @fig-dot-product (b), you can see that there are many signal vectors, $\mathbf{x}$, that have the same dot product with $\mathbf{a}$. Specifically, all of the vectors whose endpoints fall along a line that is perpendicular to $\mathbf{a}$, have the same dot product with $\mathbf{a}$. Hence, any signal represented by a vector whose endpoint is on this line will cause the same response in the sensor represented by the vector $\mathbf{a}$.
 
-![A geometric representation of the three-dimensional dot product. (a) The perpendicular from x to a is indicated by the dashed line. When a is a unit vector, the distance from the origin to the intersection of the dashed line with a is the scalar value of the dot product. (b) Any vector whose endpoint falls within the indicated plane yields the same scalar value when we compute the vector's dot with a.](../wp-content/uploads/2012/02/dotProduct3.png){#fig-dot-product-3d width="70%"}
+![A geometric representation of the three-dimensional dot product. (a) The perpendicular from x to a is indicated by the dashed line. When a is a unit vector, the distance from the origin to the intersection of the dashed line with a is the scalar value of the dot product. (b) Any vector whose endpoint falls within the indicated plane yields the same scalar value when we compute the vector's dot with a.](wp-content/uploads/2012/02/dotProduct3.png){#fig-dot-product-3d width="70%"}
 
-The geometric intuition extends smoothly to vectors with more than two dimensions. Figure A4.2a shows the dot product between a pair of three-dimensional vectors. In three-dimensions, all of the vectors whose endpoints fall on a plane perpendicular to the unit-length vector $\mathbf{a}$ have the same dot product with that vector (Figure A4.2b). In four or more dimensions the set of signals with a common dot product value fall on a *hyperplane*.
+The geometric intuition extends smoothly to vectors with more than two dimensions. @fig-dot-product-3d (a) shows the dot product between a pair of three-dimensional vectors. In three-dimensions, all of the vectors whose endpoints fall on a plane perpendicular to the unit-length vector $\mathbf{a}$ have the same dot product with that vector (@fig-dot-product-3d (b)). In four or more dimensions the set of signals with a common dot product value fall on a *hyperplane*.
 
-Figures A4.1b and A4.2b illustrate the information that is preserved and that is lost in a dot product calculation. When we measure the dot product of a pair of two-dimensional vectors, we learn that the signal must have fallen along a particular line; when we measure a three-dimensional dot-product, we learn that the signal must have fallen within a certain plane. Hence, each dot product helps to define the set of possible input signals.
+@fig-dot-product (b) and @fig-dot-product-3d (b) illustrate the information that is preserved and that is lost in a dot product calculation. When we measure the dot product of a pair of two-dimensional vectors, we learn that the signal must have fallen along a particular line; when we measure a three-dimensional dot-product, we learn that the signal must have fallen within a certain plane. Hence, each dot product helps to define the set of possible input signals.
 
-By combining the results from several dot products, we can estimate the input signal. We can use the geometric representation of the dot product in Figure A4.1 to develop some intuitions about how to estimate the signal from a collection of sensor responses. This is a *signal estimation* problem.
+By combining the results from several dot products, we can estimate the input signal. We can use the geometric representation of the dot product in @fig-dot-product to develop some intuitions about how to estimate the signal from a collection of sensor responses. This is a *signal estimation* problem.
 
-![Signal estimation from multiple linear sensors. (a) We can infer the location of a two-dimensional signal vector from the responses of two linear sensors. (b) When the vectors representing the sensors are orthogonal, the estimation error is small. (c) When the vectors representing the sensors are nearly aligned, the estimation error tends to be quite large in the direction perpendicular to the sensor vectors.](../wp-content/uploads/2012/02/estimation.png){#fig-signal-estimation width="70%"}
+![Signal estimation from multiple linear sensors. (a) We can infer the location of a two-dimensional signal vector from the responses of two linear sensors. (b) When the vectors representing the sensors are orthogonal, the estimation error is small. (c) When the vectors representing the sensors are nearly aligned, the estimation error tends to be quite large in the direction perpendicular to the sensor vectors.](wp-content/uploads/2012/02/estimation.png){#fig-signal-estimation width="70%"}
 
 First, imagine that the response of each linear neuron is equal to the dot product of a vector describing the spatial contrast pattern of a stimulus with a vector describing the neuron’s receptive field. Further, suppose that the input stimuli are drawn from a set of simple spatial patterns, namely the weighted sums of two cosinusoidal gratings,
 
@@ -570,11 +571,11 @@ $$ {#eq-cosine-sum}
 
 We can represent each of these spatial contrast patterns using a two-dimensional vector, $\mathbf{x} = (w_1, w_2)$, whose entries are the weights of the cosinusoids. We can represent the sensitivity of each linear neuron to these spatial patterns using a two-dimensional vector, $\mathbf{a}_i$, whose two entries define the neuron’s sensitivity to each of the cosinusoidal terms. Because the neurons are linear, we can compute the $i^{th}$ neuron’s response to any pattern in the set from the linear calculation in the dot product, namely, ${\mathbf{a}_i}^T \mathbf{x}$.
 
-Figure A4.3a shows geometrically how to use two responses to identify uniquely the two-dimensional input stimulus. Suppose that the response of the neuron with receptive field $\mathbf{a}_1$ is $r_1$. Then, we can infer that the stimulus must fall along a line perpendicular to the vector $\mathbf{a}_1$ and intersecting $\mathbf{a}_1$ at a distance $r_1 = \| \mathbf{x} \| \cos ( \theta_1 )$ from the origin.[^projection-distance] If the response to the second neuron is $r_2$, we can draw a second line that describes a second set of possible stimulus locations. The true stimulus must be on both lines, so it is located at the intersection of the two dashed lines.
+@fig-signal-estimation (a) shows geometrically how to use two responses to identify uniquely the two-dimensional input stimulus. Suppose that the response of the neuron with receptive field $\mathbf{a}_1$ is $r_1$. Then, we can infer that the stimulus must fall along a line perpendicular to the vector $\mathbf{a}_1$ and intersecting $\mathbf{a}_1$ at a distance $r_1 = \| \mathbf{x} \| \cos ( \theta_1 )$ from the origin.[^projection-distance] If the response to the second neuron is $r_2$, we can draw a second line that describes a second set of possible stimulus locations. The true stimulus must be on both lines, so it is located at the intersection of the two dashed lines.
 
-When the sensor responses have some added noise, which is always the case in real measurements, some sensor combinations provide more precise estimates than others. Figure A4.3b shows a pair of sensors whose vectors are nearly orthogonal to one another. Because of the sensor noise, the true identity of the signal is uncertain. The lightly shaded bands drawn around the perpendicular dashed lines show the effect of sensor noise on the estimated region from the individual measurements. The darkly shaded region is the intersection of the bands, showing the likely region containing the signal. For these orthogonal sensors, the dark band that is likely to contain the signal is fairly small.
+When the sensor responses have some added noise, which is always the case in real measurements, some sensor combinations provide more precise estimates than others. @fig-signal-estimation (b) shows a pair of sensors whose vectors are nearly orthogonal to one another. Because of the sensor noise, the true identity of the signal is uncertain. The lightly shaded bands drawn around the perpendicular dashed lines show the effect of sensor noise on the estimated region from the individual measurements. The darkly shaded region is the intersection of the bands, showing the likely region containing the signal. For these orthogonal sensors, the dark band that is likely to contain the signal is fairly small.
 
-Figure A4.3c shows the same representation but for a pair of sensors represented nearly parallel vectors. Such a pair of sensors is said to be *correlated*. When the sensors are correlated in this way, the shaded region can be quite large in the direction perpendicular to the sensor vectors. In the presence of noise, correlated sensors provide a poor estimate of the signal.
+@fig-signal-estimation (c) shows the same representation but for a pair of sensors represented nearly parallel vectors. Such a pair of sensors is said to be *correlated*. When the sensors are correlated in this way, the shaded region can be quite large in the direction perpendicular to the sensor vectors. In the presence of noise, correlated sensors provide a poor estimate of the signal.
 
 > [^projection-distance]: In general, we would place the perpendicular line at a distance of $\| \mathbf{x} \| \cos ( \theta_i ) / \| \mathbf{a}_i\|$, but we have assumed that $\mathbf{a}_i$ has unit length.
 
@@ -599,7 +600,7 @@ $$
 \left ( \begin{array}{c} x_1 \\ x_2 \\ \end{array} \right ) ,
 $$ {#eq-matrix-tableau}
 
-where $a_{i\cdot}$ is a vector that represents the sensitivity of the $i^{th}$ sensor. In the usual signal estimation problem, we know the properties of the sensors represented in the rows of the matrix and we know the responses in $\mathbf{r}$. We wish to estimate the signal in $\mathbf{x}$. The pair of sensor vectors represented in the rows of the matrix, call it $\mathbf{A}$, are the counterpart of the vectors shown in Figure A4.3a. Our ability to estimate the signal from the responses depends on the correlation between the rows of the matrix.
+where $a_{i\cdot}$ is a vector that represents the sensitivity of the $i^{th}$ sensor. In the usual signal estimation problem, we know the properties of the sensors represented in the rows of the matrix and we know the responses in $\mathbf{r}$. We wish to estimate the signal in $\mathbf{x}$. The pair of sensor vectors represented in the rows of the matrix, call it $\mathbf{A}$, are the counterpart of the vectors shown in @fig-signal-estimation (a). Our ability to estimate the signal from the responses depends on the correlation between the rows of the matrix.
 
 The matrix tableau in @eq-matrix-tableau shows a special case in which there are two sensors and two unknown values of the signal. In general, we might have more sensors or more unknowns in the signal. Having more sensors would force us to add more rows to the matrix; having more unknowns in the signal would force us to change the lengths of the sensor and signal vectors. Each of these changes might change the general shape of the matrix tableau. We can write the general case, without specifying the number of sensors or unknowns, using the concise representation
 
@@ -678,30 +679,30 @@ The shape of the tableau makes it plain that there are more responses in the vec
 
 In general, the best solution will depend on the noise properties and the error criterion. In some cases, say when the noise is Gaussian and the error is the sum of the squared difference between the observed and predicted responses, there are good closed form solutions to the linear estimation problem. That is, one can find an estimate of the signal without using any search algorithms, but by direct computation. If one has other error criteria or noise, a search may be necessary.
 
-A full discussion of the problems involved in signal estimation and matrix algebra would take us far beyond the scope of this book, but there are several excellent textbooks that explain these ideas (Strang, 1993; Lawson and Hanson, 1974, Vetterling, et al., 1992). Also, the manuals for several computer packages, such as *Matlab* and *Mathematica*, contain useful information about using these methods and further references. To see how some of these tools have been applied to vision science, you might consult some of the following references (Brainard, 1994, Heeger and Jepson, 1992; Marimont and Wandell,1992; Nielsen and Wandell, 1988; Thomas et al., 1994; Tomasi and Kanade, 1991, Wandell, 1987)
+A full discussion of the problems involved in signal estimation and matrix algebra would take us far beyond the scope of this book, but there are several excellent textbooks that explain these ideas (@strang1993-introlinearalgebra; @lawson-hanson1974-leastsquares, @vetterli1992-multires). Also, the manuals for several computer packages, such as *Matlab* and *Mathematica*, contain useful information about using these methods and further references. To see how some of these tools have been applied to vision science, you might consult some of the following references (@brainard1994-bayesian, @heeger1992-subspacealgorithm; @marimont1992-linearmodelssurface; @nielsenwandell1988-discreteanalysis; @thomas1994; @tomasi-kanade1992, @wandell1987-synthesisanalysis)
 
 ## Motion Flow Field Calculation {#sec-appendix-flow-field}
 
 The motion flow field describes how an image point changes position from one moment in time to the next, say, as an observer changes viewpoint. I reviewed several properties of the motion flow field in @sec-motion-depth, and I also reviewed how to use the information in a motion flow field to estimate scene properties, including observer motion and depth maps.
 
-In this appendix I describe how to compute a motion flow field. There are various reasons one might need to calculate a motion flow field. For example, motion flow fields are used as experimental stimuli to analyze human performance (e.g., Royden et al., 1992; Warren and Hannon, 1990). Also, algorithms designed to estimate depth maps from motion flow fields must be tested using artificial motion flow fields (e.g., Tomasi and Kanade, 1992, Heeger and Jepson, 1992).
+In this appendix I describe how to compute a motion flow field. There are various reasons one might need to calculate a motion flow field. For example, motion flow fields are used as experimental stimuli to analyze human performance (e.g., @royden1992; @warren-hannon1990). Also, algorithms designed to estimate depth maps from motion flow fields must be tested using artificial motion flow fields (e.g., @tomasi-kanade1992, @heeger1992-subspacealgorithm).
 
 To calculate the motion flow field, we will treat the eye as a pinhole camera and we will define the position of the points in space relative to the pinhole. Based on this framework, we will derive two formulae. First, we will derive the *perspective projection* formula. This formula describes how points in space project onto locations in the image plane of the pinhole camera. Second, we will derive how translating and rotating the pinhole camera position, i.e., the *viewpoint*, changes the point coordinates in space. Finally, we combine these two formulae to predict how changing the viewpoint changes the point locations in the image plane, thus creating the motion flow field.
 
 ### Imaging Geometry and Perspective Projection
 
-We base our calculations on ray-tracing from points in the world onto an image plane in a pinhole camera (see @sec-image-formation). To simplify some of the graphics calculations, it is conventional to place the pinhole at the origin of the coordinate frame and the imaging plane in the positive quadrant of the coordinate frame. Figure A5.1a shows the geometric relationship between a point in space, the pinhole, and the image plane.
+We base our calculations on ray-tracing from points in the world onto an image plane in a pinhole camera (see @sec-image-formation). To simplify some of the graphics calculations, it is conventional to place the pinhole at the origin of the coordinate frame and the imaging plane in the positive quadrant of the coordinate frame. @fig-perspective (a) shows the geometric relationship between a point in space, the pinhole, and the image plane.
 
 We define the pinhole to be the origin of the imaging coordinate frame. The image plane is parallel to the X-Y plane at a distance $f$ along the Z axis. A ray from $\mathbf{p} = ({p}_{1},{p}_{2},{p}_{3})$ passes towards the pinhole and intersects the image plane location $(u,v,f)$. Since the third coordinate, $f$, is the same for all points in the image plane, we can describe the image plane location using only the first two coordinates, $(u,v)$.
 
-Figures A5.1bc show the geometric relationship between a point in space and its location in the image plane from two different views: looking down the Y axis and X axis, respectively. From both views, we can identify a pair of similar triangles that relate the position of the point in three space and the image point position. There are two equations that relate the point coordinates, $\mathbf{p} = ({p}_{1},{p}_{2},{p}_{3})$, the distance from the pinhole to the image plane $f$, and the image plane coordinates $(u,v)$,
+@fig-perspective (b,c) show the geometric relationship between a point in space and its location in the image plane from two different views: looking down the Y axis and X axis, respectively. From both views, we can identify a pair of similar triangles that relate the position of the point in three space and the image point position. There are two equations that relate the point coordinates, $\mathbf{p} = ({p}_{1},{p}_{2},{p}_{3})$, the distance from the pinhole to the image plane $f$, and the image plane coordinates $(u,v)$,
 
 $$
 u = ( {p}_{1} / {p}_{3}) f ~~~\mbox{and}~~~ v = ({p}_{2} / {p}_{3} ) f .
 $$ {#eq-perspective-projection}
 
 
-![Perspective calculations of a pinhole camera. The coordinate frame is centered at the pinhole, and the image plane is located at a distance $f$ in front of the pinhole parallel to the X-Y plane. (a) A ray from a point $(p_1, p_2, p_3)$ that passes through the pinhole will intersect the image plane at location $(u,v)$. (b) From a view along the Y axis we find a pair of similar triangles. These triangles define an equation that relates the image plane coordinate, $u$, the point coordinates, and the distance from the pinhole to the image plane, $f$. (c) From a view along the X axis, we find an analogous pair of similar triangles and an analogous equation for $v$.](../wp-content/uploads/2012/02/perspective.png){#fig-perspective width="70%"}
+![Perspective calculations of a pinhole camera. The coordinate frame is centered at the pinhole, and the image plane is located at a distance $f$ in front of the pinhole parallel to the X-Y plane. (a) A ray from a point $(p_1, p_2, p_3)$ that passes through the pinhole will intersect the image plane at location $(u,v)$. (b) From a view along the Y axis we find a pair of similar triangles. These triangles define an equation that relates the image plane coordinate, $u$, the point coordinates, and the distance from the pinhole to the image plane, $f$. (c) From a view along the X axis, we find an analogous pair of similar triangles and an analogous equation for $v$.](wp-content/uploads/2012/02/perspective.png){#fig-perspective width="70%"}
 
 ### Imaging Geometry, Camera Translation and Rotation
 
@@ -723,9 +724,9 @@ These formulae apply when the rotation and translation are small quantities, mea
 
 
 ### Motion Flow
-Finally, we compute motion flow by using @eq-coordinate-change to specify how the change in position in space maps into a change in image position. The original point $\mathbf{p}$ mapped into an image position $(u,v)$; after the observer moves, the new coordinate, $\mathbf{p} + {\bf \Delta} \mathbf{p}$, maps into a new image position, $(u',v')$. The resulting motion flow is the difference in the two image positions, $\mathbf{m}(u,v) = (u-u',v-v')^T$.
+Finally, we compute motion flow by using @eq-coordinate-change to specify how the change in position in space maps into a change in image position. The original point $\mathbf{p}$ mapped into an image position $(u,v)$; after the observer moves, the new coordinate, $\mathbf{p} + {\mathbf{\Delta}} \mathbf{p}$, maps into a new image position, $(u',v')$. The resulting motion flow is the difference in the two image positions, $\mathbf{m}(u,v) = (u-u',v-v')^T$.
 
-@eq-motion-flow defines how the motion of the pinhole camera and the depth map combine to create the motion flow field (Heeger and Jepson, 1992).
+@eq-motion-flow defines how the motion of the pinhole camera and the depth map combine to create the motion flow field (@heeger1992-subspacealgorithm).
 
 $$
 \mathbf{m}(u,v) = \frac{1}{{p}_{3}(u,v)} \mathbf{A}(u,v) \mathbf{t} + \mathbf{B}(u,v) \mathbf{r} .

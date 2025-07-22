@@ -1,9 +1,10 @@
 # Cortical Representation {#sec-cortical-representation}
 <!-- Computational Modeling of Responses in Human Visual Cortex Encyclopedia article from 2015 is good for this chapter.  Both figures and the summary text. -->
 
-## Visual cortex {#sec-visual-cortex}
-
+## Cortical representation overview
 In this chapter we will review the representation of information in visual cortex. There have been many advances in our understanding of visual cortex over the last twenty-five years. Even today, our view of visual cortex is changing rapidly; new results that change our overall view sometimes seem to arrive weekly. In the beginning of this chapter, I will review what is commonly accepted concerning visual cortex. Towards the end, I will introduce some of the broader claims that have been made about the relationship between visual cortex and perception. We will take up the issue of connecting cortex, computation, and seeing again in the later chapters.
+
+## Visual cortex {#sec-visual-cortex}
 
 ![The cortex is shown in lateral view. Based on its overall shape, anatomists divide the human brain into four regions called the occipital, temporal, parietal and frontal lobes. Based on its internal connections, the cortex can be further divided into many anatomically distinct areas. Visual input to the brain arrives in primary visual cortex, area V1, which is located in the occipital lobe.](/wp-content/uploads/2012/02/brain.png){#fig-brain width="60%"}
 

@@ -1,6 +1,0 @@
-\contentsline {chapter}{\numberline {1}Color}{5}
-\contentsline {section}{\numberline {1.1}Color Constancy: Theory}{5}
-\contentsline {section}{\numberline {1.2}Color Constancy: Experiments}{31}
-\contentsline {section}{\numberline {1.3}The Perceptual Organization of Color}{39}
-\contentsline {section}{\numberline {1.4}The Cortical Basis of Color Appearance}{56}
-\contentsline {section}{\numberline {1.5}Summary and Conclusions}{65}

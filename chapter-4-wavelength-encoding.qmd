@@ -1,6 +1,6 @@
 # Wavelength Encoding {#sec-wavelength-encoding}
 
-## Wavelength Encoding Overview
+## Wavelength encoding overview
 Sir Isaac Newton’s sketch in @fig-newton summarizes his investigations into the properties of light. In these experiments, Newton separated daylight into its fundamental components by passing it through a prism and creating a rainbow. Newton’s demonstration that light can be decomposed into rays of different wavelength is at the foundation of our understanding of light and color.
 
 To perform these experiments, Newton placed a shutter containing a small hole in the window in his room at Cambridge. The light emerging from the hole in the window shutter served as a point source to illuminate his apparatus. The key elements of the apparatus are featured prominently in the center of the figure: the lens and prism. Newton’s drawing shows that when the daylight passed through the prism, it formed an image of a rainbow on his wall. With two experimental manipulations, he showed that the components of the rainbow were fundamental constituents of light. In the upper left of the sketch, we see a series of holes that Newton drilled in the wall permitting part of the rainbow to continue through to a second prism. This ray of light was cast upon a second surface, but the new image did not produce a second rainbow; rather, as Newton wrote:
@@ -33,7 +33,7 @@ Suppose we wish to measure the spectral power distribution of a light source. Ho
 
 The answer to this sampling question depends on the same set of issues as the sampling questions we addressed in @sec-photoreceptor-mosaic on the spatial sampling of the retinal image by the photoreceptor mosaics. If the energy in the light varies rapidly as a function of wavelength, then we may have to sample quite finely to measure accurately; if the functions vary slowly, then only a few measurements are necessary. Also, the precision of the representation requires that we know how sensitive the photopigments in the are to rapid changes in the energy as a function of wavelength.
 
-![The spectral power distribution of two important light sources are shown: blue skylight (a) and the yellow disk of the sun (b).](/wp-content/uploads/2012/02/spectra1){#fig-spectra1 width="60%" }
+![The spectral power distribution of two important light sources are shown: blue skylight (a) and the yellow disk of the sun (b).](/wp-content/uploads/2012/02/spectra1.png){#fig-spectra1 width="60%" }
 
 It is difficult to make accurate generalizations about how spectral power distributions vary as a function of wavelength, but it is believed widely that for practical purposes we can approximate spectral power distributions using smooth, regular functions as shown in @fig-spectra1. Also, it is known that the photopigments integrate broadly across the wavelength spectrum. Consequently, international standards organizations suggest making measurements every 5 nm to achieve an excellent representation of the signal. Practical measurements often rely on measurements spaced every 10 or 20 nm. We will consider this issue much more completely when we review color appearance, in @sec-color.
 
