@@ -1,0 +1,8 @@
+# The use of decoding for understanding
+
+There are tons of papers that think they are learning something about the brain because they can decode the fMRI signal to make an inference about the image. The 2nd edition MR section needs a principled discussion about the value of decoding.
+
+Also, there is something interesting about RSA (representational similarity analysis).  In that case, the idea is that the similarity in the neural signals match some kind of similarity in the image space.  When those appear to align, we again believe that we have learned something about the brain.
+
+(In the RSA case, there was that early paper by Dave Heeger matching color similarity.)
+
