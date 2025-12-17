@@ -9,29 +9,29 @@ book:
     - index.qmd
     - part: "Image Encoding"
       chapters:
-       - part-1-image-encoding-v2.qmd
-       - chapter-2-image-formation-v2.qmd
-       - chapter-3-the-photoreceptor-mosaic.qmd
-       - chapter-4-wavelength-encoding.qmd
+       - chapters/part-1-image-encoding-v2.qmd
+       - chapters/chapter-2-image-formation-v2.qmd
+       - chapters/chapter-3-the-photoreceptor-mosaic-v2.qmd
+       - chapters/chapter-4-wavelength-encoding-v2.qmd
     - part:  "Image Representation"
       chapters:
-      - part-2-image-representation.qmd
-      - chapter-5-the-retinal-representation.qmd
-      - chapter-6-the-cortical-representation.qmd
-      - chapter-7-pattern-sensitivity.qmd
-      - chapter-8-multiresolution-image-representations.qmd
+      - chapters/part-2-image-representation-v2.qmd
+      - chapters/chapter-5-the-retinal-representation-v2.qmd
+      - chapters/chapter-6-the-cortical-representation-v2.qmd
+      - chapters/chapter-7-pattern-sensitivity-v2.qmd
+      - chapters/chapter-8-multiresolution-image-representations-v2.qmd
     - part: "Image Interpretation"
       chapters:
-       - part-3-image-interpretation.qmd
-       - chapter-9-color.qmd
-       - chapter-10-motion-and-depth.qmd
-       - chapter-11-seeing.qmd
+       - chapters/part-3-image-interpretation-v2.qmd
+       - chapters/chapter-9-color-v2.qmd
+       - chapters/chapter-10-motion-and-depth-v2.qmd
+       - chapters/chapter-11-seeing-v2.qmd
     - references.qmd
     - part: "Appendix"
       chapters:
-       - appendix.qmd
-       - computational-examples.qmd
-       - online-teaching-resources.qmd
+       - chapters/appendix-v2.qmd
+       - chapters/appendix-computational-examples-v2.qmd
+       - chapters/appendix-online-teaching-resources-v2.qmd
 
 bibliography: paperpile.bib
 
