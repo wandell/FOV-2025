@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; Image Formation – Foundations of Vision (2nd Edition)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter-3-the-photoreceptor-mosaic.html" rel="next">
+<link href="./part-1-image-encoding-v2.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating slimcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part-1-image-encoding-v2.html">Image Encoding</a></li><li class="breadcrumb-item"><a href="./chapter-2-image-formation-v2.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Image Formation</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Foundations of Vision (2nd Edition)</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How to study vision</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Image Encoding</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./part-1-image-encoding-v2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Image Encoding</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-2-image-formation-v2.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Image Formation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-3-the-photoreceptor-mosaic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Photoreceptor Mosaic</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-4-wavelength-encoding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Wavelength Encoding</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Image Representation</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./part-2-image-representation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Image Representation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-5-the-retinal-representation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Retina</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-6-the-cortical-representation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Cortical Representation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-7-pattern-sensitivity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Pattern Vision</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-8-multiresolution-image-representations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Multiresolution Representations</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Image Interpretation</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./part-3-image-interpretation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Image Interepretation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-9-color.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Color</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-10-motion-and-depth.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Motion and Depth</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-11-seeing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Seeing</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendix</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Appendix</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./computational-examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Computational examples</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./online-teaching-resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Online Teaching Resources</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-optical-components" id="toc-sec-optical-components" class="nav-link active" data-scroll-target="#sec-optical-components"><span class="header-section-number">2.1</span> Studying reflections from the eye</a></li>
+  <li><a href="#sec-linear-systems" id="toc-sec-linear-systems" class="nav-link" data-scroll-target="#sec-linear-systems"><span class="header-section-number">2.2</span> Linear Systems Methods</a>
+  <ul class="collapse">
+  <li><a href="#homogeneity" id="toc-homogeneity" class="nav-link" data-scroll-target="#homogeneity"><span class="header-section-number">2.2.1</span> Homogeneity</a></li>
+  <li><a href="#superposition" id="toc-superposition" class="nav-link" data-scroll-target="#superposition"><span class="header-section-number">2.2.2</span> Superposition</a></li>
+  <li><a href="#implications-of-homogeneity-and-superposition" id="toc-implications-of-homogeneity-and-superposition" class="nav-link" data-scroll-target="#implications-of-homogeneity-and-superposition"><span class="header-section-number">2.2.3</span> Implications of Homogeneity and Superposition</a></li>
+  <li><a href="#why-linear-methods-are-useful" id="toc-why-linear-methods-are-useful" class="nav-link" data-scroll-target="#why-linear-methods-are-useful"><span class="header-section-number">2.2.4</span> Why Linear Methods are Useful</a></li>
+  </ul></li>
+  <li><a href="#sec-shift-invariant" id="toc-sec-shift-invariant" class="nav-link" data-scroll-target="#sec-shift-invariant"><span class="header-section-number">2.3</span> Shift-Invariant Linear Transformations</a>
+  <ul class="collapse">
+  <li><a href="#sec-si-Definition" id="toc-sec-si-Definition" class="nav-link" data-scroll-target="#sec-si-Definition"><span class="header-section-number">2.3.1</span> Shift-Invariant Systems: Definition</a></li>
+  <li><a href="#shift-invariant-systems-properties" id="toc-shift-invariant-systems-properties" class="nav-link" data-scroll-target="#shift-invariant-systems-properties"><span class="header-section-number">2.3.2</span> Shift-Invariant Systems: Properties</a></li>
+  </ul></li>
+  <li><a href="#sec-adaptive-optics" id="toc-sec-adaptive-optics" class="nav-link" data-scroll-target="#sec-adaptive-optics"><span class="header-section-number">2.4</span> Adaptive optics</a></li>
+  <li><a href="#sec-optical-quality" id="toc-sec-optical-quality" class="nav-link" data-scroll-target="#sec-optical-quality"><span class="header-section-number">2.5</span> The Optical Quality of the Eye</a>
+  <ul class="collapse">
+  <li><a href="#sec-linespread" id="toc-sec-linespread" class="nav-link" data-scroll-target="#sec-linespread"><span class="header-section-number">2.5.1</span> The Linespread Function</a></li>
+  </ul></li>
+  <li><a href="#sec-lensesdiffractionandaberrations" id="toc-sec-lensesdiffractionandaberrations" class="nav-link" data-scroll-target="#sec-lensesdiffractionandaberrations"><span class="header-section-number">2.6</span> Lenses, Diffraction and Aberrations</a>
+  <ul class="collapse">
+  <li><a href="#sec-lensesaccommodation" id="toc-sec-lensesaccommodation" class="nav-link" data-scroll-target="#sec-lensesaccommodation"><span class="header-section-number">2.6.1</span> Lenses and Accommodation</a></li>
+  <li><a href="#sec-PinholeOpticsandDiffraction" id="toc-sec-PinholeOpticsandDiffraction" class="nav-link" data-scroll-target="#sec-PinholeOpticsandDiffraction"><span class="header-section-number">2.6.2</span> Pinhole Optics and Diffraction</a></li>
+  <li><a href="#sec-ThePointspreadFunctionandAstigmatism" id="toc-sec-ThePointspreadFunctionandAstigmatism" class="nav-link" data-scroll-target="#sec-ThePointspreadFunctionandAstigmatism"><span class="header-section-number">2.6.3</span> The Point Spread Function and Astigmatism</a></li>
+  <li><a href="#sec-ChromaticAberration" id="toc-sec-ChromaticAberration" class="nav-link" data-scroll-target="#sec-ChromaticAberration"><span class="header-section-number">2.6.4</span> Chromatic Aberration</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part-1-image-encoding-v2.html">Image Encoding</a></li><li class="breadcrumb-item"><a href="./chapter-2-image-formation-v2.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Image Formation</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-image-formation" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Image Formation</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>The cornea and lens serve as the interface between the physical world of light and the visual system. They focus incoming light onto the retina, where light-sensitive photoreceptors initiate the neural processes that underlie vision.</p>
+<p>This initial encoding of light at the retina is the first in a series of visual transformations: the stimulus at the cornea is transformed into an image at the retina; the retinal image is converted into neural signals by the photoreceptors; these signals are relayed via the optic nerve and further processed in the brain. Because all visual experience is fundamentally limited by the quality of image formation in the eye, we begin by describing this transformation.</p>
+<p>Many important aspects of these optical and neural transformations can be approximated using linear systems theory (<a href="#sec-linear-systems" class="quarto-xref"><span class="quarto-unresolved-ref">sec-linear-systems</span></a>). This framework provides a useful introduction to linear methods, including the important case of shift-invariant linear systems (<a href="#sec-shift-invariant" class="quarto-xref"><span class="quarto-unresolved-ref">sec-shift-invariant</span></a>).</p>
+<p>Historically, instruments to study the eye relied on lenses, beam splitters, and mirrors, as described in the first edition of this book. Since then, new experimental technologies—especially <strong>adaptive optics</strong>—have enabled much more precise measurements of the eye’s properties. Adaptive optics methods are now used to image individual cells in the living human retina and to deliver precisely defined stimuli in perceptual studies. We describe adaptive optics technology in a new section (<a href="#sec-adaptive-optics" class="quarto-xref"><span class="quarto-unresolved-ref">sec-adaptive-optics</span></a>), and we update the measurements of the optical quality of the eye (<a href="#sec-optical-quality" class="quarto-xref"><span class="quarto-unresolved-ref">sec-optical-quality</span></a>) based on these advances.</p>
+<section id="sec-optical-components" class="level2 page-columns page-full" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sec-optical-components"><span class="header-section-number">2.1</span> Studying reflections from the eye</h2>
+<div id="fig-eyeball" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-eyeball-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/eyeball.png" class="img-fluid figure-img" style="width:40.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-eyeball-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: The image formation components of the eye. The cornea and lens focus the image onto the retina. The cornea initiates the bending of the light rays from the source. The rays must pass through the pupil which is bordered by the iris. The flexible lens then further bends the rays. In this image, the rays are focused near the fovea, a region that is specialized for high visual acuity. The retinal output fibers come together to form a bundle that exits through a hole in the retina at the optic disk (or blindspot). The fiber bundle is the optic nerve.
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-eyeball" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-eyeball</span></a> is an overview of the imaging components of the eye. Light from a source arrives at the cornea and is focused by the cornea and lens onto the photoreceptors, a collection of light sensitive neurons. The photoreceptors are part of a thin layer of neural tissue, called the retina. The photoreceptor signals are communicated through the several layers of retinal neurons to the neurons whose output fibers makes up the optic nerve. The optic nerve fibers exit through a hole in the retina called the optic disk. The optical imaging of light incident at the cornea into an image at the retinal photoreceptors is the first visual transformation. Since all of our visual experiences are influenced by this transformation, we begin the study of vision by analyzing the properties of image formation.</p>
+<p>When we study transformations, we must specify their inputs and outputs. As an example, we will consider how simple one-dimensional intensity patterns displayed on a video display monitor are imaged onto the retina (<a href="#fig-imgfor-monitor-retina" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-imgfor-monitor-retina</span></a> (a)). In this case the input is the light signal incident at the cornea. One-dimensional patterns have a constant intensity along the, say, horizontal dimension and varies along the perpendicular (vertical) dimension. We will call the pattern of light intensity we measure at the monitor screen the monitor image. We can measure the intensity of the one-dimensional image by placing a light-sensitive device called a photodetector at different positions on the screen. The vertical graph in <a href="#fig-imgfor-monitor-retina" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-imgfor-monitor-retina</span></a> (b) shows a measurement of the intensity of the monitor image at all screen locations.</p>
+<p>The output of the optical transformation is the image formed at the retina. When the input image is one-dimensional, the retinal image will be one-dimensional, too. Hence, we can represent it using a curve as in <a href="#fig-imgfor-monitor-retina" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-imgfor-monitor-retina</span></a> (c). We will discuss the optical components of the visual system in more detail later in this chapter, but from simply looking at a picture of the eye in <a href="#fig-eyeball" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-eyeball</span></a> we can see that the monitor image passes through a lot of biological material before arriving at the retina. Because the optics of the eye are not perfect, the retinal image is not an exact copy of the monitor image: The retinal image is a blurred copy of the input image.</p>
+<p>The image in <a href="#fig-imgfor-monitor-retina" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-imgfor-monitor-retina</span></a> (b) shows one example of an infinite array of possible input images. Since there is no hope of measuring the response to every possible input, to characterize optical blurring completely we must build a model that specifies how any input image is transformed into a retinal image. We will use linear systems methods to develop a method of predicting the retinal image from any input image.</p>
+<div id="fig-imgfor-monitor-retina" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-imgfor-monitor-retina-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/monitor.to_.retina1.png" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-imgfor-monitor-retina-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.2: Retinal image formation illustrated with a single-line input image. (a) A one-dimensional monitor image consists of a set of lines at different intensities. The image is brought to focus on the retina by the cornea and lens. (b) We can represent the intensity of a one-dimensional image using a simple graph that shows the light as a function of horizontal screen position. Only a single value is plotted since the one- dimensional image is constant along the vertical dimension. (c) The retinal image is a blurred version of the one-dimensional input image. The retinal image is also one-dimensional and is also represented by a single curve.monitor.to.retina
+</figcaption>
+</figure>
+</div>
+<p>To study the optics of a human eye you will need an experimental eye, so you might invite a friend to dinner. In addition, you will need a light source, such as a candle, as a stimulus to present to your friend’s eye. If you look directly into your friend’s eye, you will see a mysterious darkness that has beguiled poets and befuddled visual scientists. The reason for the darkness can be understood by considering the problem of ophthalmoscope design illustrated in <a href="#fig-imgfor-opthalmoscope" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-imgfor-opthalmoscope</span></a>(a).</p>
+<div id="fig-imgfor-opthalmoscope" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-imgfor-opthalmoscope-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/ophthalmoscope2.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-imgfor-opthalmoscope-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.3: An ophthalmoscope is used to see an image reflected from the interior of the eye. (a) When we look directly into the eye, we cast a shadow making it impossible to see light reflected from the interior of the eye. (b) The ophthalmoscope permits us to see light reflected from the interior of the eye. Helmholtz invented the first ophthalmoscope. (After Cornsweet, 1970)
+</figcaption>
+</figure>
+</div>
+<p>If the light source is behind you, so that your head is between the light source and the eye you are studying, then your head will cast a shadow that interferes with the light from the point source arriving at your friend’s eye. As a result, when you look in to measure the retinal image you see nothing beyond what is in your heart. If you move to the side of the light path, the image at the back of your friend’s eye will be reflected towards the light source, following a reversible path. Since you are now on the side, out of the path of the light source, no light will be sent towards your eye.</p>
+<div id="fig-imgfor-cgapparatus" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-imgfor-cgapparatus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/cg.apparatus1.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-imgfor-cgapparatus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.4: A modified opthalmoscope measures the human retinal image. Light from a bright source passes through a slit and into the eye. A fraction of the light is reflected from the retina and is imaged. The intensity of the reflected light is measured at dif- ferent spatial positions by varying the location of the analyzing slit. (After Campbell and Gubisch, 1967)
+</figcaption>
+</figure>
+</div>
+<p>Flamant (1955) first measured the retinal image using a modified ophthalmoscope. She modified the instrument by placing a light sensitive recording, a photodetector, at the position normally reserved for the ophthalmologist’s eye. In this way, she measured the intensity pattern of the light reflected from the back of the observer’s eye. Campbell and Gubisch (1967) used Flamant’s method to build their apparatus, which is sketched in <a href="#fig-imgfor-cgapparatus" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-imgfor-cgapparatus</span></a>. Campbell and Gubisch measured the reflection of a single bright line, that served the input stimulus in their experiment. As shown in the Figure, a beam-splitter placed between the input light and the observer’s eye divides the input stimulus into two parts. The beam-splitter causes some of the light to be turned away from the observer and lost; this stray light is absorbed by a light baffle. The rest of the light continues toward the observer. When the light travels in this direction, the beam-splitter is an annoyance, serving only to lose some of the light; it will accomplish its function on the return trip.</p>
+<div id="fig-imgfor-retinalcross" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-imgfor-retinalcross-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/retinalCrossSection1.png" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-imgfor-retinalcross-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.5: The retina contains the light sensitive photoreceptors where light is fo- cussed. This cross-section of a monkey retina outside the fovea shows there are sev- eral layers of neurons in the optical path between the lens and the photoreceptors. As we will see later, in the central fovea these neurons are displaced to leaving a clear optical path from the lens to the photoreceptors (Source: Boycott and Dowling, 1969).
+</figcaption>
+</figure>
+</div>
+<p>The light that enters the observer’s eye is brought to a good focus on the retina by a lens. A small fraction of the light incident on the retina is reflected and passes – a second time – through the optics of the eye. On the return path of the light, the beam-splitter now plays its functional role. The reflected image would normally return to a focus at the light source. But the beam-splitter divides the returning beam so that a portion of it is brought to focus in a measurement plane to one side of the apparatus. Using a very fine slit in the measurement plane, with a photodetector behind it, Campbell and Gubisch measured the reflected light and used the measurements of the reflected light to infer the shape of the image on the retinal surface.</p>
+<p>What part of the eye reflects the image? In <a href="#fig-imgfor-retinalcross" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-imgfor-retinalcross</span></a> we see a cross-section of the peripheral retina. In normal vision, the image is focused on the retina at the level of the photoreceptors. The light measured by Campbell and Gubisch probably contains components from several different planes at the back of the eye. Thus, their measurements probably underestimate the quality of the image at the level of the photoreceptors <a href="#fig-imgfor-cg-data" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-imgfor-cg-data</span></a> shows several examples of Campbell and Gubisch’s measurements of the light reflected from the eye when the observer is looking at a very fine line. The different curves show measurements for different pupil sizes. When the pupil was wide open (top, 6.6mm diameter) the reflected light is blurred more strongly than when the pupil is closed (middle, 2.0mm). Notice that the measurements made with a large pupil opening are less noisy; when the pupil is wide open more light passes into the eye and more light is reflected, improving the quality of the measurements. The light measured in <a href="#fig-imgfor-cg-data" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-imgfor-cg-data</span></a> passed through the optical elements of the eye twice, while the retinal image passes through the optics only once. It follows that the spread in these curves is wider than the spread we would observe had we measured at the retina. How can we use these doublepass measurements to estimate the blur at the retina? To solve this problem, we must understand the general features of their experiment. It is time for some theory.</p>
+<div id="fig-imgfor-cg-data" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-imgfor-cg-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/cg.data_.png" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-imgfor-cg-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.6: Experimental measurements of light that has been reflected from a human eye looking at a fine line. The reflected light has been blurred by double passage through the optics of the eye. (Source: Campbell and Gubisch, 1966).
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-linear-systems" class="level2 page-columns page-full" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="sec-linear-systems"><span class="header-section-number">2.2</span> Linear Systems Methods</h2>
+<p>A good theoretical account of a transformation, such as the mapping from monitor image to retinal image, should have two important features. First, the theoretical account should suggest to us which measurements we should make to characterize the transformation fully. Second, the theoretical account should tell us how to use these measurements to predict the retinal image distribution for all other monitor images.</p>
+<p>In this section we will develop a set of general tools, referred to as linear systems methods. These tools will permit us to solve the problem of estimating the optical transformation from the monitor to the retinal image. The tools are sufficiently general, however, that we will be able to use them repeatedly throughout this book.</p>
+<p>There is no single theory that applies to all measurement situations. But, linear systems theory does apply to many important experiments. Best of all, we have a simple experimental test that permits us to decide whether linear systems theory is appropriate to our measurements. To see whether linear systems theory is appropriate, we must check to see that our data satisfy the two properties of homogeneity and superposition.</p>
+<section id="homogeneity" class="level3 page-columns page-full" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="homogeneity"><span class="header-section-number">2.2.1</span> Homogeneity</h3>
+<div id="fig-imgfor-homogeneity" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-imgfor-homogeneity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/homogeneity.png" class="img-fluid figure-img" style="width:40.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-imgfor-homogeneity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.7: The principle of homogeneity. An input stimulus and corresponding retinal image are shown in each part of the figure. The three input stimuli are the same except for a scale factor. Homogeneity is satisfied when the corresponding retinal images are scaled by the same factor. Part (a) shows an input image at unit intensity, while (b) and (c) show the image scaled by 0.5 and 2.0 respectively
+</figcaption>
+</figure>
+</div>
+<p>A test of <em>homogeneity</em> is illustrated in <a href="#fig-imgfor-homogeneity" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-imgfor-homogeneity</span></a>. The left-hand panels show a series of monitor images, and the right-hand panels show the corresponding measurements of reflected light. Suppose we represent the intensities of the lines in the one-dimensional monitor image using the vector <span class="math inline">\(\mathbf{p}\)</span> (upper left) and we represent the retinal image measurements by the vector <span class="math inline">\(\mathbf{r}\)</span>. Now, suppose we scale the input signal by a factor <span class="math inline">\(a\)</span>, so that the new input is <span class="math inline">\(a \mathbf{p}\)</span>. We say that the system satisfies homogeneity if the output signal is also scaled by the same factor of <span class="math inline">\(a\)</span>, and thus the new output is <span class="math inline">\(a \mathbf{r}\)</span>. For example, if we halve the input intensity, then the reflected light measured at their photodetector should be one-half the intensity (middle panel). If we double the light intensity, the response should double (bottom panel). Campbell and Gubisch’s measurements of light reflected from the human eye satisfy homogeneity.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vector notation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We will use vectors and matrices in our calculations to eliminate burdensome notation. Matrices will be denoted by boldface, upper case Roman letters, <span class="math inline">\(\mathbf{M}\)</span>. Column vectors will be denoted using lower case boldface Roman letters, <span class="math inline">\(\mathbf{v}\)</span>. The transpose operation will be denoted by a superscript <span class="math inline">\(T\)</span>, <span class="math inline">\(\mathbf{v}^T\)</span>. Scalar values will be in normal typeface, and they will usually be denoted using Roman characters (<span class="math inline">\(a\)</span>) except when tradition demands the use of Greek symbols (<span class="math inline">\(\alpha\)</span>). The <span class="math inline">\(i^{th}\)</span> entry of a vector, <span class="math inline">\(\mathbf{v}\)</span>, is a scalar and will be denoted as <span class="math inline">\(v_i\)</span>. The <span class="math inline">\(i^{th}\)</span> column of a matrix, <span class="math inline">\(\mathbf{M}\)</span>, is a vector that we denote as <span class="math inline">\(\mathbf{m}_i\)</span>. The scalar entry in the <span class="math inline">\(i^{th}\)</span> row and <span class="math inline">\(j^{th}\)</span> column of the matrix <span class="math inline">\(\mathbf{M}\)</span> will be denoted <span class="math inline">\(m_{ij}\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="superposition" class="level3 page-columns page-full" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="superposition"><span class="header-section-number">2.2.2</span> Superposition</h3>
+<p><em>Superposition</em>, used as both an experimental procedure and a theoretical tool, is probably the single most important idea in this book. You will see it again and again in many forms. We describe it here for the first time.</p>
+<div id="fig-imgfor-superposition" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-imgfor-superposition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/superposition.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-imgfor-superposition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.8: The principle of superposition. Each of the three parts of the picture shows an input stimulus and the corresponding retinal image. The stimulus in part (a) is a single-line image and in part (b) the stimulus is a second line displaced from the first. The stimulus in part (c) is the sum of the first two lines. Superposition holds if the retinal image in part (c) is the sum of the retinal images in parts (a) and (b).
+</figcaption>
+</figure>
+</div>
+<p>Suppose we measure the response to two different input stimuli. For example, suppose we find that input pattern <span class="math inline">\(\mathbf{p}\)</span> (top left) generates the response <span class="math inline">\(\mathbf{r}\)</span> (top right), and input pattern <span class="math inline">\(\mathbf{p}'\)</span> (middle left) generates response <span class="math inline">\(\mathbf{r}'\)</span> (middle right). Now we measure the response to a new input stimulus equal to the sum of <span class="math inline">\(\mathbf{p}\)</span> and <span class="math inline">\(\mathbf{p}'\)</span>. If the response to the new stimulus is the sum of the responses measured singly, <span class="math inline">\(\mathbf{r} + \mathbf{r}'\)</span>, then the system is a <em>linear system</em>. By measuring the responses to stimuli individually and then the response to the sum of the stimuli, we test superposition. When the response to the sum of the stimuli equals the sum of the individual responses, then we say the system satisfies superposition. Campbell and Gubisch’s measurements of light reflected from the eye satisfy this principle.</p>
+<p>We can summarize homogeneity and superposition succinctly using two equations. Write the linear optical transformation that maps the input image to the light intensity at each of the receptors as</p>
+<p><span id="eq-linear-transform"><span class="math display">\[
+\mathbf{r} = L(\mathbf{p})
+\tag{2.1}\]</span></span></p>
+<p>Homogeneity and superposition are defined by the pair of equations:</p>
+<p><span id="eq-homogeneity-superposition"><span class="math display">\[
+\begin{aligned}
+L(a\,\mathbf{p}) &amp;= a\,L(\mathbf{p}) \quad &amp;\text{(Homogeneity)} \\
+L(\mathbf{p} + \mathbf{p}') &amp;= L(\mathbf{p}) + L(\mathbf{p}') \quad &amp;\text{(Superposition)}
+\end{aligned}
+\tag{2.2}\]</span></span></p>
+</section>
+<section id="implications-of-homogeneity-and-superposition" class="level3 page-columns page-full" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="implications-of-homogeneity-and-superposition"><span class="header-section-number">2.2.3</span> Implications of Homogeneity and Superposition</h3>
+<p><a href="#fig-imgfor-homsup" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-imgfor-homsup</span></a> illustrates how we will use linear systems methods to characterize the relationship between the input signal from a monitor, light reflected from the eye (we analyze a one-dimensional monitor image to simplify the notation. The principles remain the same, but the notation becomes cumbersome when we consider two-dimensional images.). First, we make an initial set of measurements of the light reflected from the eye for each single-line monitor image, with the line set to unit intensity. If we know the images from single-line images, and we know the system is linear, then we can calculate the light reflected from the eye from any monitor image: Any one-dimensional image is the sum of a collection of lines.</p>
+<div id="fig-imgfor-homsup" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-imgfor-homsup-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/app.hom_.sup_1.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-imgfor-homsup-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.9: A one-dimensional monitor image is the weighted sum of a set of lines. An example of a one-dimensional image is shown on the left and the individual monitor lines comprising the monitor image are shown separately on the right. (b) Each line in the component monitor image contributes to the retinal image. The retinal images created by the individual lines are shown below the individual monitors. The sum of the retinal images is shown on the left. (c) The retinal image generated by the $i^{th} monitor line at unit intensity is <span class="math inline">\(\mathbf{r}_i\)</span>. The intensity of the <span class="math inline">\(i\text{th}\)</span> monitor line is <span class="math inline">\(p_i\)</span>. By homogeneity, the retinal image of the <span class="math inline">\(i^{th}\)</span> monitor line is <span class="math inline">\(p_i \mathbf{r}_i\)</span>. By superposition, the retinal image of the collection of mointor lines is the sum of the individual retinal images, <span class="math inline">\(\sum_{i} p_i \mathbf{r}_i\)</span>
+</figcaption>
+</figure>
+</div>
+<p>Consider an arbitrary one-dimensional image, as illustrated at the top of <a href="#fig-imgfor-homsup" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-imgfor-homsup</span></a>. We can conceive of this image as the sum of a set of single-line monitor images, each at its own intensity, <span class="math inline">\(p_i\)</span>. We have measured the reflected light from each single-line image alone, call this <span class="math inline">\(\mathbf{r}_i\)</span> for the <span class="math inline">\(i^{th}\)</span> line. By homogeneity it follows that the reflected light from the <span class="math inline">\(i^{th}\)</span> line will be a scaled version of this response, namely <span class="math inline">\(p_i \mathbf{r}_i\)</span>. Next, we combine the light reflected from the single-line images. By superposition, we know that the light reflected from the original monitor image, <span class="math inline">\(\mathbf{r}\)</span>, is the sum of the light reflected from the single-line images,</p>
+<p><span id="eq-weighted-sum"><span class="math display">\[
+\mathbf{r} = \sum_{i}^{N} p_i \mathbf{r}_i .
+\tag{2.3}\]</span></span></p>
+<p>The above equation defines a transformation that maps the input stimulus, <span class="math inline">\(\mathbf{p}\)</span>, into the measurement, <span class="math inline">\(\mathbf{r}\)</span>. Because of the properties of homogeneity and superposition, the transformation is the weighted sum of a fixed collection of vectors: When the monitor image varies, only the weights in the formula, <span class="math inline">\(p_i\)</span>, vary but the vectors <span class="math inline">\(\mathbf{r}_i\)</span>, the reflections from single-line stimuli, remain the same. Hence, the reflected light will always be the weighted sum of these reflections.</p>
+<p>To represent the weighted sum of a set of vectors, we use the mathematical notation of <em>matrix multiplication</em>. As shown in <a href="#fig-matrix-mult" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-matrix-mult</span></a>, multiplying a matrix times a vector computes the weighted sum of the matrix columns; the entries of the vector define the weights. Matrix multiplication and linear systems methods are closely linked. In fact, the set of all possible matrices define the set of all possible linear transformations of the input vectors.</p>
+<div id="fig-matrix-mult" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-matrix-mult-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/02_mat.mult_.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-matrix-mult-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.10: Matrix multiplication – is a convenient notation for linear systems methods. For example, the weighted sum of a set of vectors, as in part (c) of <a href="#fig-imgfor-homsup" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-imgfor-homsup</span></a>, can be represented using matrix multiplication. The matrix product equals the sum of the columns of … weighted by the entries of …. When the matrix describes the responses of a linear system, we call it a system matrix.
+</figcaption>
+</figure>
+</div>
+<p>Matrix multiplication has a shorthand notation to replace the explicit sum of vectors in Equation 3. In the example here, we define a matrix, <span class="math inline">\(\mathbf{R}\)</span>, whose columns are the responses to individual monitor lines at unit intensity, <span class="math inline">\(\mathbf{r}_i\)</span>. The matrix <span class="math inline">\(\mathbf{R}\)</span> is called the system matrix. Matrix multiplication of the input vector, <span class="math inline">\(\mathbf{p}\)</span>, times the system matrix <span class="math inline">\(\mathbf{R}\)</span>, transforms the input vector into the output vector. Matrix multiplication is written using the notation</p>
+<p><span id="eq-matrix-mult"><span class="math display">\[
+\mathbf{r} = \mathbf{R} \mathbf{p}
+\tag{2.4}\]</span></span></p>
+<p>Matrix multiplication follows naturally from the properties of homogeneity and superposition. Hence, if a system satisfies homogeneity and superposition, we can describe the system response by creating a <em>system matrix</em> that transforms the input to the output.</p>
+</section>
+<section id="why-linear-methods-are-useful" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="why-linear-methods-are-useful"><span class="header-section-number">2.2.4</span> Why Linear Methods are Useful</h3>
+<p>Let’s use a specific numerical example to illustrate the principle of matrix multiplication. This will also help explain why the method is so useful.</p>
+<p>Suppose we measure a monitor that displays only three lines. We can describe the monitor image using a column vector with three entries, <span class="math inline">\(\mathbf{p} = (p_1, p_2, p_3)^T\)</span>. The three lines of unit intensity are <span class="math inline">\((1,0,0)^T\)</span>, <span class="math inline">\((0,1,0)^T\)</span>, and <span class="math inline">\((0,0,1)^T\)</span>.</p>
+<p>We measure the response to these input vectors to build the <em>system matrix</em>. Suppose the measurements for these three lines are <span class="math inline">\((0.1,0.2,0.5,0.3,0,0)^T\)</span>, <span class="math inline">\((0,0.1,0.2,0.5,0.1,0)^T\)</span>, and <span class="math inline">\((0,0,0.2,0.5,0.3,0)^T\)</span> respectively. We place these responses into the columns of the system matrix:</p>
+<p><span class="math display">\[
+\mathbf{R} = \begin{pmatrix}
+0.1 &amp; 0 &amp; 0 \\
+0.2 &amp; 0.1 &amp; 0 \\
+0.5 &amp; 0.2 &amp; 0.2 \\
+0.3 &amp; 0.5 &amp; 0.5 \\
+0   &amp; 0.1 &amp; 0.3 \\
+0   &amp; 0   &amp; 0
+\end{pmatrix}
+\]</span></p>
+<p>Because the system is linear, we can predict the response to any monitor image using the system matrix. For example, if the monitor image is <span class="math inline">\(\mathbf{p} = (0.5,1.0,0.2)^T\)</span> we multiply the input vector and the system matrix to obtain the response, on the left side of Equation 6.</p>
+<p><span id="eq-matrix-mult-example"><span class="math display">\[
+\begin{pmatrix}
+0.05 \\
+0.20 \\
+0.49 \\
+0.75 \\
+0.16 \\
+0
+\end{pmatrix}
+=
+\begin{pmatrix}
+0.1 &amp; 0 &amp; 0 \\
+0.2 &amp; 0.1 &amp; 0 \\
+0.5 &amp; 0.2 &amp; 0.2 \\
+0.3 &amp; 0.5 &amp; 0.5 \\
+0   &amp; 0.1 &amp; 0.3 \\
+0   &amp; 0   &amp; 0
+\end{pmatrix}
+\begin{pmatrix}
+0.5 \\
+1.0 \\
+0.2
+\end{pmatrix}
+\tag{2.5}\]</span></span></p>
+<p>From this example we see why linear systems methods are a good starting point for answering an essential scientific question: How can we generalize from the results of measurements using a few stimuli to predict the results we will obtain when we measure using novel stimuli? Linear systems methods tell us to examine homogeneity and superposition. If these empirical properties hold in our experiment, then we will be able to measure responses to a few stimuli and predict responses to many other stimuli.</p>
+<p>This is very important advice. Quantitative scientific theories are attempts to <em>characterize</em> and then <em>explain</em> systems with many possible input stimuli. Linear systems methods tell us how to organize experiments to characterize our system: measure the responses to a few individual stimuli, and then measure the responses to mixtures of these stimuli. If superposition holds, then we can obtain a good characterization of the system we are studying. If superposition fails, your work will not be wasted since you will need to explain the results of superposition experiments to obtain a complete characterization of the measurements.</p>
+<p>To explain a system, we need to understand the general organizational principles concerning the system parts and how the system works in relationship to other systems. Achieving such an explanation is a creative act that goes beyond simple characterization of the input and output relationships. But, any explanation must begin with a good characterization of the processing the system performs.</p>
+</section>
+</section>
+<section id="sec-shift-invariant" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="sec-shift-invariant"><span class="header-section-number">2.3</span> Shift-Invariant Linear Transformations</h2>
+<section id="sec-si-Definition" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="sec-si-Definition"><span class="header-section-number">2.3.1</span> Shift-Invariant Systems: Definition</h3>
+<p>Since homogeneity and superposition are well satisfied by Campbell and Gubisch’s experimental data, we can predict the result of any input stimulus by measuring the system matrix that describes the mapping from the input signal to the measurements at the photodetector. But the experimental data are measurements of light that has passed through the optical elements of the eye twice, and we want to know the transformation when we pass through the optics once. To correct for the effects of double passage, we will take advantage of a special property of optics of the eye, <em>shift-invariance</em>. Shift-invariant linear systems are an important class of linear systems, and they have several properties that make them simpler than general linear systems. The following section briefly describes these properties and how we take advantage of them. The mathematics underlying these properties is not hard; I sketch proofs of these properties in the Appendix.</p>
+<p>Suppose we start to measure the system matrix for the Campbell and Gubisch experiment by measuring responses to different lines near the center of the monitor. Because the quality of the optics of our eye is fairly uniform near the fovea, we will find that our measurements, and by implication the retinal images, are nearly the same for all single-line monitor images. The only way they will differ is that as the position of the input translates, the position of the output will translate by a corresponding amount. The shape of the output, however, will not change. An example of two measurements we might find when we measure using two lines on the monitor is illustrated in the top two rows of <a href="#fig-imgfor-homsup" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-imgfor-homsup</span></a> . As we shift the input line, the measured output shifts. This shift is a good feature for a lens to have, because as an object’s position changes, the recorded image should remain the same (except for a shift). When we shift the input and the form of the output is invariant, we call the system shift-invariant.</p>
+</section>
+<section id="shift-invariant-systems-properties" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="shift-invariant-systems-properties"><span class="header-section-number">2.3.2</span> Shift-Invariant Systems: Properties</h3>
+<p><strong>We can define the system matrix of a shift-invariant system from the response to a single stimulus.</strong> Ordinarily, we need to build the system matrix by combining the responses to many individual lines. The system matrix of a linear shift-invariant system is simple to estimate since these responses are all the same except for a shift. Hence, if we measure a single column of the matrix, we can fill in the rest of the matrix. For a shift-invariant system, there is only one response to a line. This response is called the linespread of the system. We can use the linespread function to fill in the entire system matrix.</p>
+<p><strong>The response to a harmonic function at frequency</strong> <span class="math inline">\(f\)</span> is a harmonic function at the same frequency. Sinusoids and cosinusoids are called <em>harmonics</em> or <em>harmonic functions</em>. When the input to shift-invariant system is a harmonic at frequency <span class="math inline">\(f\)</span>, the output will be a harmonic at the same frequency. The output may be scaled in amplitude and shifted in position, but it still will be a harmonic at the input frequency.</p>
+<p>For example, when the input stimulus is defined at <span class="math inline">\(N\)</span> points and at these points its values are sinusoidal, <span class="math inline">\(S_f(i, N)\)</span>. Then, the response of a shift-invariant system will be a scaled and shifted sinusoid, <span class="math inline">\(s_f \sin ( \frac{2 \pi f i}{N} + \phi_f )\)</span>. There is some uncertainty concerning the output because there are two unknown values, the scale factor, <span class="math inline">\(s_f\)</span>, and phase shift, <span class="math inline">\(\phi_f\)</span>. But, for each sinusoidal input we know a lot about the output; the output will be a sinusoid of the same frequency as the input.</p>
+<p>We can express this same result another useful way. Expanding the sinusoidal output using the summation rule we have</p>
+<p><span id="eq-sinusoid-expansion"><span class="math display">\[
+s_f \sin (\frac{2 \pi f i}{N} + \phi_f ) = a_f \cos (\frac{2 \pi f i}{N}) + b_f \sin (\frac{2 \pi f i}{N})
+\tag{2.6}\]</span></span></p>
+<p>where</p>
+<p><span id="eq-af-bf-def"><span class="math display">\[
+\begin{aligned}
+a_f &amp;= s_f \sin(\phi_f) \\
+b_f &amp;= s_f \cos(\phi_f)
+\end{aligned}
+\tag{2.7}\]</span></span></p>
+<p>In other words, when the input is a sinusoid at frequency <span class="math inline">\(f\)</span> the output is the weighted sum of a sinusoid and a cosinusoid, both at the same frequency as the input. In this representation, the two unknown values are the weights of the sinusoid and the cosinusoid:</p>
+<p><span id="eq-sf-sinphif"><span class="math display">\[
+s_f \sin (\frac{2 \pi f i}{N} + \phi_f ) = a_f \cos (\frac{2 \pi f i}{N}) + b_f \sin (\frac{2 \pi f i}{N})
+\tag{2.8}\]</span></span></p>
+<p>For many optical systems, such as the human eye, the relationship between harmonic inputs and the output is even simpler. When the input is a harmonic function at frequency <img src="https://foundationsofvision.vista.su.domains/wp-content/ql-cache/quicklatex.com-8f51d5769daf4c908ad99156b65e83f1_l3.png" title="Rendered by QuickLaTeX.com" class="img-fluid" alt="f">, the output is a scaled copy of the function and there is no shift in spatial phase. For example, when the input is <span class="math inline">\(\sin(\frac{2 \pi f i}{N})\)</span>, the output will be</p>
+<p><span class="math display">\[
+s_f \sin(\frac{2 \pi f i}{N})
+\]</span></p>
+</section>
+</section>
+<section id="sec-adaptive-optics" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="sec-adaptive-optics"><span class="header-section-number">2.4</span> Adaptive optics</h2>
+<p>New figures and text here describing the instrumentation and its principles.</p>
+</section>
+<section id="sec-optical-quality" class="level2 page-columns page-full" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="sec-optical-quality"><span class="header-section-number">2.5</span> The Optical Quality of the Eye</h2>
+<!-- Update this section with the newer measurements -->
+<p>We are now ready to correct the measurements for the effects of double passage through the optics of the eye. To make the method easy to understand, we will analyze how to do the correction by first making the assumption that the optics introduce no phase shift into the retinal image; this means, for example, that a cosinusoidal stimulus creates a cosinusoidal retinal image, scaled in amplitude. It is not necessary to assume that there is no phase shift but the assumption is reasonable and the main principles of the analysis are easier to see if we assume there is no phase shift.</p>
+<div id="fig-doublepass" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-doublepass-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/doublepass.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-doublepass-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.11: Sinusoids and Double Passage (a) The amplitude, A, of an input cosinusoid stimulus is scaled by a factor, s, after passing through even-symmetric shift-invariant symmetric optics as shown in part (b). (c) Passage through the optics a second time scales the amplitude again, resulting in a signal with amplitude s^2 A.
+</figcaption>
+</figure>
+</div>
+<p>To understand how to correct for double passage, consider a hypothetical alternative experiment Campbell and Gubisch might have done (<a href="#fig-doublepass" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-doublepass</span></a>). Suppose Campbell and Gubisch had used input stimuli equal to cosinusoids at various spatial frequencies, <span class="math inline">\(f\)</span>. Because the optics are shift-invariant and there is no frequency-dependent phase shift, the retinal image of a cosinusoid at frequency <span class="math inline">\(f\)</span> is a cosinusoid scaled by a factor <span class="math inline">\(s_f\)</span>. The retinal image passes back through the optics and is scaled again, so that the measurement would be a cosinusoid scaled by the factor <span class="math inline">\(s_f^2\)</span>. Hence, had Campbell and Gubisch used a cosinusoidal input stimulus, we could deduce the retinal image from the measured image easily: The retinal image would be a cosinusoid with an amplitude equal to the square root of the amplitude of the measurement.</p>
+<p>Campbell and Gubisch used a single line, not a set of cosinusoidal stimuli. But, we can still apply the basic idea of the hypothetical experiment to their measurements. Their input stimulus, defined over <span class="math inline">\(N\)</span> locations, is</p>
+<p><span id="eq-single-line-stimulus"><span class="math display">\[
+\mathbf{p}_{i} = \left\{
+\begin{array}{ll}
+1 &amp; \text{if } i=0 \\
+0 &amp; \text{if } 1 \leq i &lt; N
+\end{array}
+\right.
+\tag{2.9}\]</span></span></p>
+<p>As I describe in the appendix, we can express the stimulus as the weighted sum of harmonic functions by using the <em>discrete Fourier series</em>. The representation of a single line is equal to the sum of cosinusoidal functions</p>
+<p><span id="eq-fourier-single-line"><span class="math display">\[
+\mathbf{p}_{i} = 0.5 + \sum_{f=1}^{N-1} \cos\left( 2 \pi f \frac{i}{N} \right)
+\tag{2.10}\]</span></span></p>
+<p>Because the system is shift-invariant, the retinal image of each cosinusoid was a scaled cosinusoid, say with scale factor <span class="math inline">\(s_f\)</span>. The retinal image was scaled again during the second pass through the optics, to form the cosinusoidal term they measured.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Using the discrete Fourier series, we also can express the measurement as the sum of cosinusoidal functions,</p>
+<p><span id="eq-measurement"><span class="math display">\[
+\text{Measurement} = 0.5 + \sum_{f=1}^{N-1} (s_f)^2 \cos\left( 2 \pi f \frac{i}{N} \right)
+\tag{2.11}\]</span></span></p>
+<p>We know the values of <span class="math inline">\(s_f^2\)</span>, since this was Campbell and Gubisch’s measurement. The image of the line at the retina, then, must have been</p>
+<p><span id="eq-retinal-image"><span class="math display">\[
+\mathbf{l}_{i} = 0.5 + \sum_{f=1}^{N-1} s_f \cos\left( 2 \pi f \frac{i}{N} \right)
+\tag{2.12}\]</span></span></p>
+<div id="fig-linespread" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-linespread-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/cg.linespread.png" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-linespread-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.12: The linespread function of the human eye: The solid line in each panel is a measurement of the linespread. The dotted lines are the diffraction-limited linespread for a pupil of that diameter. (Diffraction is explained later in the text). The different panels show measurements for a variety of pupil diameters (From Campbell and Gubisch, 1967).
+</figcaption>
+</figure>
+</div>
+<p>The values <span class="math inline">\(\mathbf{l}_{i}\)</span> define the linespread function of the eye’s optics. We can correct for the double passage and estimate the linespread because the system is linear and shift-invariant.</p>
+<p>As you read further about experimental and computational methods in vision science, remember that there is nothing inherently important about sinusoids as visual stimuli; we must not confuse the stimulus with the system or with the theory we use to analyze the system. When the system is a shift-invariant linear system, sinusoids can be helpful in simplifying our calculations and reasoning, as we have just seen. The sinusoidal stimuli are important only insofar as they help us to measure or clarify the properties of the system. And if the system is not shift-invariant, the sinusoids may not be important at all.</p>
+<section id="sec-linespread" class="level3 page-columns page-full" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="sec-linespread"><span class="header-section-number">2.5.1</span> The Linespread Function</h3>
+<p><a href="#fig-linespreadcontains" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-linespreadcontains</span></a> Campbell and Gubisch’s estimates of the linespread functions of the eye. Notice that as the pupil size increases, the width of the linespread function increases which indicates that the focus is worse for larger pupil sizes. As the pupil size increases, light reaches the retina through larger and larger sections of the lens. As the area of the lens affecting the passage of light increases, the amount of blurring increases.</p>
+<p>The measured linespread functions, <span class="math inline">\(\mathbf{l}_{i}\)</span>, along with our belief that we are studying a shift-invariant linear system, permit us to predict the retinal image for any one-dimensional input image. To calculate these predictions, it is convenient to have a function that describes the linespread of the human eye. G. Westheimer (1986) suggested the following formula to describe the measured linespread function of the human eye, when in good focus, and when the pupil diameter is near 3mm.</p>
+<p><span id="eq-westheimer-linespread"><span class="math display">\[
+\mathbf{l}_{i} = 0.47 e^{ - 3.3 i ^ {2} } + 0.53 e ^ { -0.93 | i | }
+\tag{2.13}\]</span></span></p>
+<div id="fig-westheimer-linespread" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-westheimer-linespread-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/westheimer.ls_.png" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-westheimer-linespread-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.13: Westheimer’s Linespread Function. Analytic approximation of the human linespread function for an eye with a 3.0mm diameter pupil (Westheimer, 1986).
+</figcaption>
+</figure>
+</div>
+<p>The linespread function is given by:</p>
+<p><span id="eq-westheimer-linespread-inline"><span class="math display">\[
+\mathbf{l}_{i} = 0.47 e^{ - 3.3 i ^ {2} } + 0.53 e ^ { -0.93 | i | }
+\tag{2.14}\]</span></span></p>
+</section>
+</section>
+<section id="sec-lensesdiffractionandaberrations" class="level2 page-columns page-full" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="sec-lensesdiffractionandaberrations"><span class="header-section-number">2.6</span> Lenses, Diffraction and Aberrations</h2>
+<section id="sec-lensesaccommodation" class="level3 page-columns page-full" data-number="2.6.1">
+<h3 data-number="2.6.1" class="anchored" data-anchor-id="sec-lensesaccommodation"><span class="header-section-number">2.6.1</span> Lenses and Accommodation</h3>
+<p>What prevents the optics of our eye from focusing the image perfectly? To answer this question we should consider why a lens is useful in bringing objects to focus at all.</p>
+<div id="fig-snell-law" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-snell-law-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/snell2.png" class="img-fluid figure-img" style="width:40.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-snell-law-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.14: Snell’s law. The solid lines indicate surface normals and the dashed lines indicate the light ray. (a) When a light ray passes from one medium to another, the ray can be refracted so that the angle of incidence (phi) does not equal the angle of refraction (phi ‘). Instead, the angle of refraction depends on the refractive indices of the new media (n and n’) a relationship called Snell’s law that is defined in Equation :snell (after Jenkins and White figures 1H page 15 and 2H page 30.) (b) A prism causes two refractions of the light ray and can reverse the ray’s direction from upward to downward. (c) A lens combines the effect of many prisms in order to converge the rays diverging from a point source. (After Jenkins and White figure 1F, page 12.)
+</figcaption>
+</figure>
+</div>
+<p>As a ray of light is reflected from an object, it will travel along along a straight line until it reaches a new material boundary. At that point, the ray may be either absorbed by the new medium, reflected, or refracted. The latter two possibilities are illustrated in part (a) of <a href="#fig-snell-law" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-snell-law</span></a>. We call the angle between the incident ray of light and the perpendicular to the surface the <em>angle of incidence</em>. The angle between the reflected ray and the perpendicular to the surface is called the <em>angle of reflection</em>, and it equals the angle of incidence. Of course, reflected light is not useful for image formation at all.</p>
+<p>The useful rays for imaging must pass from the first medium into the second. As they pass from between the two media, the ray’s direction is <em>refracted</em>. The angle between the refracted ray and the perpendicular to the surface is called the <em>angle of refraction</em>.</p>
+<p>The relationship between the angle of incidence and the angle of refraction was first discovered by a Dutch astronomer and mathematician, Willebrord Snell in 1621. He observed that when <span class="math inline">\(\phi\)</span> is the angle of incidence, and <span class="math inline">\(\phi'\)</span> is the angle of refraction, then</p>
+<p><span id="eq-snell"><span class="math display">\[
+\frac{ \sin \phi } { \sin \phi' } = \frac{\nu'}{\nu}
+\tag{2.15}\]</span></span></p>
+<p>The terms <span class="math inline">\(\nu'\)</span> and <span class="math inline">\(\nu\)</span> in <a href="#eq-snell" class="quarto-xref">Equation&nbsp;<span class="quarto-unresolved-ref">eq-snell</span></a> are the <em>refractive indices</em> of the two media. The refractive index of an optical medium is the ratio of the speed of light in a vacuum to the speed of light in the optical medium. The refractive index of glass is <span class="math inline">\(1.520\)</span>, for water the refractive index is <span class="math inline">\(1.333\)</span> and for air it is nearly <span class="math inline">\(1.000\)</span>. The refractive index of the human cornea is <span class="math inline">\(1.376\)</span>, which is quite similar to water, the main content of our eyes.</p>
+<p>Now, consider the consequence of applying Snell’s law twice in a row as light passes into and then out of a prism, as illustrated in part (b) of <a href="#fig-snell-law" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-snell-law</span></a>. We can draw the path of the ray as it enters the prism using Snell’s law. The symmetry of the prism and the reversibility of the light path makes it easy to draw the exit path. Passage through the prism bends the ray’s path downward. The prism causes the light to deviate significantly from a straight path; the amount of the deviation depends upon the angle of incidence and the angle between the two sides of the prism.</p>
+<p>We can build a lens by smoothly combining many infintesimally small prisms to form a convex lens, as illustrated in part (c) of <a href="#fig-snell-law" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-snell-law</span></a>. In constructing such a lens, any deviations from the smooth shape, or imperfections in the material used to build the lens, will cause the individual rays to be brought to focus at slightly different points in the image plane. These small deviations of shape or materials are a source of the imperfections in the image.</p>
+<p>Objects at different depths are focused at different distances behind the lens. The <em>lensmaker’s equation</em> relates the distance between the source and the lens with the distance between the image and the lens. The lensmaker’s equation relating these two distances depends on the <em>focal length</em> of the lens. Call the distance from the center of the lens to the source <span class="math inline">\(d_s\)</span>, the distance to the image <span class="math inline">\(d_i\)</span>, and the focal length of the lens, <span class="math inline">\(f\)</span>. Then the lensmaker’s equation is</p>
+<p><span id="eq-lensmaker"><span class="math display">\[
+\frac{1}{d_s} + \frac{1}{d_i} = \frac{1}{f}
+\tag{2.16}\]</span></span></p>
+<p>From this equation, notice that we can measure the focal length of a convex thin lens by using it to image a very distant object. In that case, the term <span class="math inline">\(\frac{1}{d_s}\)</span> is zero so that the image distance is equal to the focal length. When I first moved to California, I spent a lot of time measuring the focal length of the lenses in my laboratory by going outside and imaging the sun on a piece of paper behind the lens; the sun was a convenient source at optical infinity. It had been a less reliable source for me in my previous home.</p>
+<div id="fig-accommodation" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-accommodation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/accommodation.png" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-accommodation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.15: Figure 2.17: Depth of Field in the Human Eye. Image distance is shown as a function of source distance. The bar on the vertical axis shows the distance of the retina from the lens center. A lens power of 60 diopters brings distant objects into focus, but not nearby objects; to bring nearby objects into focus the power of the lens must increase. The depth of field, namely the distance over which objects will continue to be in reasonable focus, can be estimated from the slope of the curve.
+</figcaption>
+</figure>
+</div>
+<p>The optical <em>power</em> of a lens is a measure of how strongly the lens bends the incoming rays. Since a short focal length lens bends the incident ray more than a long focal length lens, the optical power is inversely related to focal length. The optical power is defined as the reciprocal of the focal length measured in meters and is specified in units of <em>diopters</em>. When we view far away objects, the distance from the middle of the cornea and the flexible lens to the retina is <span class="math inline">\(0.017\,\mathrm{m}\)</span>. Hence, the optical power of the human eye is <span class="math inline">\(\frac{1}{0.017} = 58.8\)</span>, or roughly <span class="math inline">\(60\)</span> diopters.</p>
+<p>From the optical power of the eye (<span class="math inline">\(1/f\)</span>) and the lensmaker’s equation, we can calculate the image distance of a source at distance. For example, the top curve in <a href="#fig-accommodation" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-accommodation</span></a> shows the relationship between image distance <span class="math inline">\(d_i\)</span> and source distance <span class="math inline">\(d_s\)</span> for a 60 diopter lens. Sources beyond 1.0m are imaged at essentially the same distance behind the optics. Sources closer than 1.0m are imaged at a longer distance, so that the retinal image is blurred.</p>
+<p>To bring nearby sources into focus on the retina, muscles attached to the lens change its shape and thus change the power of the lens. The bottom two curves in <a href="#fig-accommodation" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-accommodation</span></a> illustrate that sources closer than 1.0m can be focused onto the retina by increasing the power of the lens. The process of adjusting the focal length of the lens is called <em>accommodation</em>. You can see the effect of accommodation by first focusing on your finger placed near your noise and noticing that objects in the distance appear blurred. Then, while leaving your finger in place, focus on the distant objects. You will notice that your finger now appears blurred.</p>
+</section>
+<section id="sec-PinholeOpticsandDiffraction" class="level3 page-columns page-full" data-number="2.6.2">
+<h3 data-number="2.6.2" class="anchored" data-anchor-id="sec-PinholeOpticsandDiffraction"><span class="header-section-number">2.6.2</span> Pinhole Optics and Diffraction</h3>
+<p>The only way to remove lens imperfections completely is to remove the lens. It is possible to focus images without any lens at all by using <em>pinhole</em> optics, as illustrated in <a href="#fig-pinhole-optics" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-pinhole-optics</span></a>.</p>
+<div id="fig-pinhole-optics" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-pinhole-optics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/pinhole.png" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-pinhole-optics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.16: Pinhole Optics. Using ray-tracing, we see that only a small pencil of rays passes through a pinhole. (a) If we widen the pinhole, light from the source spread across the image, making it blurry. (b) If we narrow the pinhole, only a small amount of light is let in. The image is sharp; the sharpness is limited by diffraction.
+</figcaption>
+</figure>
+</div>
+<p>A pinhole serves as a useful focusing element because only the rays passing within a narrow angle are used to form the image. As the pinhole is made smaller, the angular deviation is reduced. Reducing the size of the pinhole serves to reduce the amount of blur due to the deviation amongst the rays. Another advantage of using pinhole optics is that no matter how distant the source point is from the pinhole, the source is rendered in sharp focus. Since the focusing is due to selecting out a thin pencil of rays, the distance of the point from the pinhole is irrelevant and accommodation is unnecessary.</p>
+<p>But the pinhole design has two disadvantages. First, as the pinhole aperture is reduced, less and less of the light emitted from the source is used to form the image. The reduction of signal has many disadvantages for sensitivity and acuity.</p>
+<p>A second fundamental limit to the pinhole design is a physical phenomenon. When light passes through a small aperture, or near the edge of an aperture, the rays do not travel in a single straight line. Instead, the light from a single ray is scattered into many directions and produces a blurry image. The dispersion of light rays that pass by an edge or narrow aperture is called <em>diffraction</em>. Diffraction scatters the rays coming from a small source across the retinal image and therefore serves to defocus the image. The effect of diffraction when we take an image using pinhole optics is shown in <a href="#fig-diffraction-pinhole" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-diffraction-pinhole</span></a>.</p>
+<div id="fig-diffraction-pinhole" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-diffraction-pinhole-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/filament.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-diffraction-pinhole-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.17: Diffraction limits the quality of pinhole optics. The three images of a bulb filament were imaged using pinholes with decreasing size. (a) When the pinhole is relatively large, the image rays are not properly converged and the image is blurred. (b) Reducing the pinhole improves the focus. (c) Reducing the pinhole further worsens the focus due to diffraction.
+</figcaption>
+</figure>
+</div>
+<p>Diffraction can be explained in two different ways. First, diffraction can be explained by thinking of light as a wave phenomenon. A wave exiting from a small aperture expands in all directions; a pair of coherent waves from adjacent apertures create an interference pattern. Second diffraction can be understood in terms of quantum mechanics; indeed, the explanation of diffraction is one of the important achievements of quantum mechanics. Quantum mechanics supposes that there are limits to how well we may know both the position and direction of travel of a photon of light. The more we know about a photon’s position, the less we can know about its direction. If we know that a photon has passed through a small aperture, then we know something about the photon’s position and we must pay a price in terms of our uncertainty concerning its direction of travel. As the aperture becomes smaller, our certainty concerning the position of the photon becomes greater; this uncertainty takes the form of the scattering of the direction of travel of the photons as they pass through the aperture. For very small apertures, for which our position certainty is high, the photon’s direction of travel is very broad producing a very blurry image.</p>
+<p>There is a close relationship between the uncertainty in the direction of travel and the shape of the aperture (<a href="#fig-diffraction" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-diffraction</span></a>). In all cases, however, when the aperture is relatively large, our knowledge of the spatial position of the photons is insignificant and diffraction does not contribute to defocus. As the pupil size decreases, and we know more about the position of the photons, the diffraction pattern becomes broader and spoils the focus.</p>
+<div id="fig-diffraction" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-diffraction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/diffraction.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-diffraction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.18: Diffraction: Diffraction pattern caused by a circular aperture. (a) The image of a diffraction pattern measured through a circular aperture. (b) A graph of the cross-sectional intensity of the diffraction pattern. (After Goodman, 1968).
+</figcaption>
+</figure>
+</div>
+<p>In the human eye diffraction occurs because light must pass through the circular aperture defined by the pupil. When the ambient light intensity is high, the pupil may become as small as <span class="math inline">\(2\,\mathrm{mm}\)</span> in diameter. For a pupil opening this small, the optical blurring in the human eye is due only to the small region of the cornea and lens near the center of our visual field. With this small an opening of the pupil, the quality of the cornea and lens is rather good and the main source of image blur is diffraction. At low light intensities, the pupil diameter is as large as <span class="math inline">\(8\,\mathrm{mm}\)</span>. When the pupil is open quite wide, the distortion due to cornea and lens imperfections is large compared to the defocus due to diffraction.</p>
+<p>One way to evaluate the quality of the optics is to compare the blurring of the eye to the blurring from diffraction alone. The dashed lines in <a href="#fig-imgfor-cg-data" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-imgfor-cg-data</span></a> plot the blurring expected from diffraction for different pupil widths. Notice that when the pupil is 2.4~mm, the observed linespread is about equal to the amount expected by diffraction alone; the lens causes no further distortion. As the pupil opens, the observed linespread is worse than the blurring expected by diffraction alone. For these pupil sizes the defocus is due mainly to imperfections in the optics<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+</section>
+<section id="sec-ThePointspreadFunctionandAstigmatism" class="level3 page-columns page-full" data-number="2.6.3">
+<h3 data-number="2.6.3" class="anchored" data-anchor-id="sec-ThePointspreadFunctionandAstigmatism"><span class="header-section-number">2.6.3</span> The Point Spread Function and Astigmatism</h3>
+<div id="fig-pointspread" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-pointspread-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/pointspread1.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-pointspread-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.19: Point spread Function: A point spread function. (a) and the sum of two point spreads (b). The point spread function is the image created by a source consisting of a small point of light. When the optics shift-invariant, the image to any stimulus can be predicted from the point spread function.
+</figcaption>
+</figure>
+</div>
+<p>Most images, of course, are not composed of weighted sums of lines. The set of images that can be formed from sums of lines oriented in the same direction are all one-dimensional patterns. To create more complex images, we must either use lines with different orientations or use a different fundamental stimulus: the point.</p>
+<p>Any two-dimensional image can be described as the sum of a set of points. If the system we are studying is linear and shift-invariant, we can use the response to a point and the principle of superposition to predict the response of a system to any two-dimensional image. The measured response to a point input is called the {\em point spread} function. A point spread function and the superposition of two nearby point spreads are illustrated in <a href="#fig-pointspread" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-pointspread</span></a>.</p>
+<p>Since lines can be formed by adding together many different points, we can compute the system’s linespread function from the point spread. In general, we cannot deduce the point spread function from the linespread because there is no way to add a set of lines, all oriented in the same direction, to form a point. If it is know that a point spread function is circularly symmetric, however, a unique point spread function can be deduced from the linespread function. The calculation is described in the beginning of Goodman (1968) and in Yellott, Wandell and Cornsweet (1981).</p>
+<div id="fig-astigmatism" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-astigmatism-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/astigmatism.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-astigmatism-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.20: Astigmatism: Astigmatism implies an asymmetric point spread function. The point spread shown here is narrow in one direction and wide in another. The spatial resolution of an astigmatic system is better in the narrow direction than the wide direction.
+</figcaption>
+</figure>
+</div>
+<p>When the point spread functions is not circularly symmetric, measurements of the linespread function will vary with the orientation of the test line (<a href="#fig-astigmatism" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-astigmatism</span></a>). It may be possible to adjust the accommodation of this type of system so that any single orientation is in good focus, but it will be impossible to bring all orientations into good focus at the same time. For the human eye, astigmatism can usually be modeled by describing the defocus as being derived from the contributions of two one-dimensional systems at right angles to one another. The defocus in intermediate angles can be predicted from the defocus of these two systems.</p>
+</section>
+<section id="sec-ChromaticAberration" class="level3 page-columns page-full" data-number="2.6.4">
+<h3 data-number="2.6.4" class="anchored" data-anchor-id="sec-ChromaticAberration"><span class="header-section-number">2.6.4</span> Chromatic Aberration</h3>
+<!-- New claims that measured in individuals there is more variance than presented here -->
+<p>The light incident at the eye is usually a mixture of different wavelengths. When we measure the system response, there is no guarantee that the linespread or point spread function we measure with different wavelengths will be the same. Indeed, for most biological eyes the point spread function is very different as we measure using different wavelengths of light. When the point spread function of different wavelengths of light is quite different, then the lens is said to exhibit <em>chromatic aberration</em>.</p>
+<div id="fig-chromatic-aberration" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-chromatic-aberration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/c.aberration.png" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-chromatic-aberration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.21: Chromatic Aberration: Chromatic aberration of the human eye. (a) The data points are from Wald and Griffin (1947), and Bedford and Wyszecki (1957). The smooth curve plots the formula used by Thibos et al.&nbsp;(1992), <span class="math inline">\(D(\lambda) = p – q / (\lambda – c )\)</span> where <span class="math inline">\(\lambda\)</span> is wavelength in micrometers, <span class="math inline">\(D(λ)\)</span> is the defocus in diopters, p =1.7312, q = 0.63346, and c = 0.21410. This formula implies an in-focus wavelength of 578 nm. (b) The power of a thin lens is the reciprocal of its focal length, which is the image distance from a source at infinity. (After Marimont and Wandell, 1993).
+</figcaption>
+</figure>
+</div>
+<p>When the incident light is the mixture of many different wavelengths, say white light, then we can see a chromatic fringe at edges. The fringe occurs because the different wavelength components of the white light are focused more or less sharply. <a href="#fig-chromatic-aberration" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-chromatic-aberration</span></a> a plots one measure of the chromatic aberration. The smooth curve plots the lens power, measured in units of <em>em diopters</em> needed to bring each wavelength into focus along with a 578nm light.</p>
+<p>fig-chromatic-aberration@ shows the optical power of a lens necessary to correct for the chromatic aberration of the eye. When the various wavelengths pass through the correcting lens, the optics will have the same power as the eye’s optics at 578nm. The two sets of measurements agree well with one another and are similar to what would be expected if the eye were simply a bowl of water. The smooth curve through the data is a curve used by Thibos et al.&nbsp;(1992) to predict the data.</p>
+<p>An alternative method of representing the axial chromatic aberration of the eye is to plot the modulation transfer function at different wavelengths. The two surface plots in <a href="#fig-chromatic-aberration-otf" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-chromatic-aberration-otf</span></a> shows the modulation transfer function at a series of wavelengths. The plots show the same data, but seen from different points of view so that you can see around the hill. The calculation in the figure is based on an eye with a pupil diameter of 3.0mm, the same chromatic aberration as the human eye, and in perfect focus except for diffraction at 580nm.</p>
+<div id="fig-chromatic-aberration-otf" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-chromatic-aberration-otf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./wp-content/uploads/2012/02/acOTF.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-chromatic-aberration-otf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.22: OTF of Chromatic Aberration: Two views of the modulation transfer function of a model eye at various wavelengths. The model eye has the same chromatic aberration as the human eye (<a href="#fig-chromatic-aberration" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-chromatic-aberration</span></a>) and a 3.0mm pupil diameter. The eye is in focus at 580nm; the curve at 580nm is diffraction limited. The retinal image has no contrast beyond four cycles per degree at short wavelengths.(From Marimont and Wandell, 1993).
+</figcaption>
+</figure>
+</div>
+<p>The retinal image contains very poor spatial information at wavelengths that are far from the best plane of focus. By accommodation, the human eye can place any wavelength into good focus, but it is impossible to focus all wavelengths simultaneously<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
+
+
+
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Be bothered by the fact that the discrete Fourier series approximation is an infinite set of pulses, rather than a single line. To understand why, consult the Appendix.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Helmholtz calculated that this was so long before any precise measurements of the optical quality of the eye were possible. He wrote, “The limit of the visual capacity of the eye as imposed by diffraction, as far as it can be calculated, is attained by the visual acuity of the normal eye with a pupil of the size corresponding to a good illumination.” From Helmholtz, Phys. Optics I, page 442 (Helmholtz, 1909, p.&nbsp;442).<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>A possible method of improving the spatial resolution of the eye to different wavelengths of light is to place the different classes of photoreceptors in slightly different image planes. Ahnelt et al.&nbsp;(1987) and Curcio et al.&nbsp;(1991) have observed that the short-wavelength photoreceptors have a slightly different shape and length from the middle- and long-wavelength photoreceptors. In principle, this difference could play a role to compensate for the chromatic aberration of the eye. But, the difference is very small, and it is unlikely that it plays any significant role in correcting for axial chromatic aberration.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./part-1-image-encoding-v2.html" class="pagination-link" aria-label="Introduction to Image Encoding">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction to Image Encoding</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter-3-the-photoreceptor-mosaic.html" class="pagination-link" aria-label="The Photoreceptor Mosaic">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Photoreceptor Mosaic</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
