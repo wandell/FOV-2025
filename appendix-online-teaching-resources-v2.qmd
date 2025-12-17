@@ -1,4 +1,4 @@
-# Online Teaching Resources {#sec-online-resources .unnumbered}
+# Online Teaching Resources {#sec-online-resources}
 The links below take you to class lectures and online tutorials. These are related to topics Joyce Farrell and I teach in Psych 221, Image Systems Engineering. The collection, like the Programming Examples, is a work in progress.
 
 ## Lectures
