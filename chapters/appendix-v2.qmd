@@ -7,6 +7,8 @@ appendix: true
 
 The appendix consists of five sections. In @sec-appendix-shift-invariant I review several properties of shift-invariant linear systems and outline proofs of these properties. This appendix also includes a brief discussion of the Discrete Fourier Series, a method for representing functions as the weighted sum of harmonic functions. @sec-appendix-display-calibration contains a review of the main aspects of visual display calibration for psychophysical experiments. @sec-appendix-classification contains a description of the basic results in classification theory, Bayes Rule and linear discriminant functions. @sec-appendix-signal-estimation provides a geometric interpretation of vector and matrix multiplication as well as a brief introduction to signal estimation. @sec-appendix-flow-field outlines how to compute a motion flow field that arises when an observer moves through a fixed environment.
 
+Adding a section: @sec-appendix-mri-overview
+
 ## Shift-Invariant Linear Systems {#sec-appendix-shift-invariant}
 
 Many of the ideas in this book rely on properties of shift-invariant linear systems. In the text, I introduced these properties without any indication of how to prove that they are true. I have two goals for this section. First, I will sketch proofs of several important properties of shift-invariant linear systems. Second, I will describe *convolution* and the *Discrete Fourier Series*, two tools that help us take advantage of these properties.[^convolution]

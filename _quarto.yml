@@ -30,6 +30,7 @@ book:
     - part: "Appendix"
       chapters:
        - chapters/appendix-v2.qmd
+       - chapters/appendix-mri-methods-v2.md
        - chapters/appendix-computational-examples-v2.qmd
        - chapters/appendix-online-teaching-resources-v2.qmd
 
