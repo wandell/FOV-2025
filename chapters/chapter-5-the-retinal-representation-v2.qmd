@@ -1,3 +1,6 @@
+---
+date: last-modified
+---
 # Retina {#sec-retinal-representation}
 
 ## Retinal overview

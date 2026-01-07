@@ -1,3 +1,6 @@
+---
+date: last-modified
+---
 # Cortical Representation {#sec-cortical-representation}
 footnotes:
     - '["id":"e8e15f97-7113-4078-9c80-b4a6c821a86c"},{"content":"A frequently suggested alternative is that these disparity cues serve to converge the two eyes. Since the same cues are used to converge the eyes and estimate depth, this alternative hypothesis is virtually impossible to rule out.","id":"e610291f-f7a6-4ea7-b808-3e727c09e031"},{"content":"See Hubel''s Nobel lecture for a marvelous description of the paradigm prior to their work. ","id":"9e2b8379-b8d7-4b72-8e6f-7be5d7ef9543"}]'

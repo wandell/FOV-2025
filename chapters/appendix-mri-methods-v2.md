@@ -5,7 +5,7 @@ date: last-modified
 # MRI methods {#sec-appendix-mri}
 {{< include "includes/WIP-callout.qmd" >}}
 
-## Seeing overview {#sec-appendix-mri-overview}
+## MRI methods overview {#sec-appendix-mri-overview}
 Magnetic Resonance Imaging (MRI) is a non-invasive imaging technique that uses strong magnetic fields and radio waves to generate detailed images of the internal structures of the body, particularly the brain. MRI is widely used in neuroscience research to study brain anatomy, function, and connectivity.
 
 Alex Huth comment on this controversial article that we will review in Vision Brunch.

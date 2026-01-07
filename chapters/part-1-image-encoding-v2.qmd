@@ -1,3 +1,7 @@
+---
+date: last-modified
+---
+
 # Introduction to Image Encoding {.unnumbered}
 
 The first section of this book describes the initial encoding of light by the eye.  [Chapter @sec-image-formation] reviews the image formation process, that is, the process by which light incident at the eye is focused onto the retina. [Chapters @sec-photoreceptor-mosaic] and [@sec-wavelength-encoding] review the basic properties of the conversion of light into a neural signal by the light-sensitive elements of the eye, the *photoreceptors*. This image encoding establishes essential limits on vision; the consequences of the image formation process can be found in many parts of the visual neural representation.

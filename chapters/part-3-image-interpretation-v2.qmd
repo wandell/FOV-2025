@@ -1,3 +1,6 @@
+---
+date: last-modified
+---
 # Introduction to Image Interepretation  {.unnumbered}
 
 Helmholtz wrote:

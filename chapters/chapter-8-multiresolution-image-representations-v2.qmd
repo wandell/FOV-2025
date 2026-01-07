@@ -1,3 +1,6 @@
+---
+date: last-modified
+---
 # Multiresolution Representations {#sec-multiresolution}
 
 ## Multiresolution overview

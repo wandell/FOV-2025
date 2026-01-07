@@ -1,6 +1,11 @@
-# Image Formation {#sec-image-formation}
+---
+date: last-modified
+---
 
-## Image Formation Overview
+# Image Formation {#sec-image-formation}
+{{< include "includes/WIP-callout.qmd" >}}
+
+## Image Formation Overview {#sec-image-formation-overview}
 
 The cornea and lens are the interface between the physical world of light and the visual encoding. The cornea and lens bring light into focus at the light sensitive receptors in the retina. These cells initiate a series of visual events that result in our visual experience.
 

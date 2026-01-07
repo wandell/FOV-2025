@@ -1,4 +1,11 @@
+---
+date: last-modified
+---
+
 # Wavelength Encoding {#sec-wavelength-encoding}
+{{< include "includes/WIP-callout.qmd" >}}
+
+## Wavelength Encoding Overview {#sec-wavelength-encoding-overview}
 Sir Isaac Newton’s sketch in @fig-newton summarizes his investigations into the properties of light. In these experiments, Newton separated daylight into its fundamental components by passing it through a prism and creating a rainbow. Newton’s demonstration that light can be decomposed into rays of different wavelength is at the foundation of our understanding of light and color.
 
 To perform these experiments, Newton placed a shutter containing a small hole in the window in his room at Cambridge. The light emerging from the hole in the window shutter served as a point source to illuminate his apparatus. The key elements of the apparatus are featured prominently in the center of the figure: the lens and prism. Newton’s drawing shows that when the daylight passed through the prism, it formed an image of a rainbow on his wall. With two experimental manipulations, he showed that the components of the rainbow were fundamental constituents of light. In the upper left of the sketch, we see a series of holes that Newton drilled in the wall permitting part of the rainbow to continue through to a second prism. This ray of light was cast upon a second surface, but the new image did not produce a second rainbow; rather, as Newton wrote:

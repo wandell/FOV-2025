@@ -17,13 +17,11 @@ Note: For this page, clicking on a link generally opens the link in a new TAB or
 
 ## ISETBIO Programming
 
-The links below use the ISETBIO programming tools and explain the philosophy of the software organization. If you plan to use ISETBIO, these links should be useful to you. You should know that (a) ISETBIO is derived from a more general tool built by Imageval Consulting, LLC, called the [Image Systems Engineering Toolbox (ISET)](http://imageval.com/), and (b) ISET does more, is appropriate for industry use, and costs money. ISETBIO is a subset of ISET that is appropriate for modeling the front-end of the human visual system and is free. Some of the links below refer to ISET and some to ISETBIO because, well, I haven’t developed a great plan for separating the two in the documentation.
+The links below use the [ISETBIO](https://github.com/isetbio/isetbio/wiki) programming tools and explain the philosophy of the software organization. If you plan to use ISETBIO for simulating the visual system, these links may be useful to you. 
 
-[ISETBIO Scene object](http://white.stanford.edu/~brian/FOV/tutorials/t_IntroductionScene.html)
+ISETBIO is built as an extension of [Image Systems Engineering Toolbox for Cameras (ISETCam)](https://github.com/iset/isetcam/wiki), with many additions specifically designed for simulation the front end of the human visual system (physiological optics, photoreceptor sampling, retinal ganglion cell signaling).  Both toolboxes are open-source and freely available.
 
 ISETBIO input is a spectral radiance description of the scene. Various types of scenes can be constructed automatically, hyper spectral images can be read in and turned into scenes, and RGB scenes can be read in and converted to scenes based on a display model calibration.
-
-[ISETBIO Optical Image object](http://white.stanford.edu/~brian/FOV/tutorials/t_IntroductionOI.html)
 
 The transformation of a scene spectral radiance image to a spectral irradiance image at the sensor (or retinal) surface depends on the properties of the optics. The ISETBIO object representing the spectral irradiance image is called the optical image (OI). The OI structure includes a definition of the optics, which can be based either on diffraction limited optics, shift-invariant optics, or a shift-variant ray tracing model.
 
