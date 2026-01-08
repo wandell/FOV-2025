@@ -64,6 +64,8 @@ format:
     fig-caption: true
     number-sections: true
     number-depth: 2
+    keep-tex: false
+    latex-clean: true
     math:
       number-equations: true
 
