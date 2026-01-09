@@ -1,12 +1,13 @@
 ---
 title: "Appendix"
 appendix: true
+date: last-modified
 ---
 
 # Appendix {.unnumbered #sec-appendix}
 {{< include "includes/WIP-callout.qmd" >}}
 
-## Appendix overview {.unnumbered #sec-appendix}
+## Appendix Overview {.unnumbered #sec-appendix-overview}
 
 The appendix consists of five sections. In @sec-appendix-shift-invariant I review several properties of shift-invariant linear systems and outline proofs of these properties. This appendix also includes a brief discussion of the Discrete Fourier Series, a method for representing functions as the weighted sum of harmonic functions. @sec-appendix-display-calibration contains a review of the main aspects of visual display calibration for psychophysical experiments. @sec-appendix-classification contains a description of the basic results in classification theory, Bayes Rule and linear discriminant functions. @sec-appendix-signal-estimation provides a geometric interpretation of vector and matrix multiplication as well as a brief introduction to signal estimation. @sec-appendix-flow-field outlines how to compute a motion flow field that arises when an observer moves through a fixed environment.
 
@@ -162,7 +163,7 @@ The DFS represents the original stimulus as the weighted sum of a set of harmoni
 
 ### The Discrete Fourier Series: Properties
 
-![The basis functions of the Discrete Fourier Series. The cosinusoidal (a) and sinusoidal (b) basis functions of the discrete Fourier series representation when N=8 are shown. Notice the redundancy between the functions at symmetrically placed frequencies.](wp-content/uploads/2012/02/sincos.png){#fig-dfs-basis width="70%"}
+![The basis functions of the Discrete Fourier Series. The cosinusoidal (a) and sinusoidal (b) basis functions of the discrete Fourier series representation when N=8 are shown. Notice the redundancy between the functions at symmetrically placed frequencies.](images/sincos.png){#fig-dfs-basis width="70%"}
 
 @fig-dfs-basis shows the sampled sine and cosine functions for a period of $N = 8$. The functions are arrayed in a circle to show how they relate to one another. There are a total of 16 basis functions. But, as you can see from @fig-dfs-basis, they are redundant. The sampled cosinusoids in the columns of $\mathbf{C}$ repeat themselves (in reverse order); for example, when $N=8$ the cosinusoids for $f = 1,2,3$ are the same as the cosinusoids for $f= 7,6,5$. The sampled sinusoids in the columns of $\mathbf{S}$ also repeat themselves except for a sign reversal (multiplication by negative one). There are only four independent sampled cosinusoids, and four independent sampled sinusoids. As a result of this redundancy, neither the $\mathbf{S}$ nor the matrix $\mathbf{C}$ is invertible.
 
@@ -233,7 +234,7 @@ The design of the color CRT is one of the most important applications of vision 
 
 ### An Overview of a CRT Display
 
-![Overview of a cathode ray tube display. (a) A side view of the display showing the cathode, which is the source of electrons, and a method of focusing the electrons into a beam that is deflected in a raster pattern across the faceplate of the display. (b) The geometrical arrangement of the electron beams, shadow-mask, and phosphor allows each electron beam to stimulate only one of the three phosphors.](wp-content/uploads/2012/02/crtShadow.png){#fig-crt-shadow width="70%"}
+![Overview of a cathode ray tube display. (a) A side view of the display showing the cathode, which is the source of electrons, and a method of focusing the electrons into a beam that is deflected in a raster pattern across the faceplate of the display. (b) The geometrical arrangement of the electron beams, shadow-mask, and phosphor allows each electron beam to stimulate only one of the three phosphors.](images/crtShadow.png){#fig-crt-shadow width="70%"}
 
 @fig-crt-shadow (a) shows the main components of a color CRT display. The display contains a *cathode*, or *electron gun*, that provides a source of electrons. The electrons are focused into a beam whose direction is deflected back and forth in a raster pattern so that it scans the faceplate of the display.
 
@@ -255,7 +256,7 @@ Calibrating a visual display means measuring the relationship between the frame-
 
 We can measure the relationship between the value of a frame-buffer entry and the intensity of the light emitted from the display as follows: Set the frame buffer entries controlling one of the three hosphor display intensities, say within a rectangular region, to a single value. Measure the intensity of the light emitted from the displayed rectangle. Repeat this measurement at many different frame-buffer values for this phosphor, and then for the other two phosphors.
 
-![Frame-buffer value and display intensity. (a) The dashed curve measures the intensity of the emitted light relative to the maximum intensity. The data shown are for the green phosphor. The insets in the graph show the complete spectral power distribution of the light at two different frame-buffer levels. (b) The dashed curve describing the relative intensities is replotted, using Stevens' Power Law, to show the linear relationship between the frame-buffer value and perceived brightness.](wp-content/uploads/2012/02/displayGamma.png){#fig-display-gamma width="70%"}
+![Frame-buffer value and display intensity. (a) The dashed curve measures the intensity of the emitted light relative to the maximum intensity. The data shown are for the green phosphor. The insets in the graph show the complete spectral power distribution of the light at two different frame-buffer levels. (b) The dashed curve describing the relative intensities is replotted, using Stevens' Power Law, to show the linear relationship between the frame-buffer value and perceived brightness.](images/displayGamma.png){#fig-display-gamma width="70%"}
 
 The dashed curve in @fig-display-gamma measures the ratio of the intensity at the highest frame-buffer level to the intensity at each of the other frame-buffer levels for the green phosphor. We can summarize the difference using this single ratio, the *relative intensity* because for over most of the range the spectral power distribution of the light emitted at one frame-buffer level is the same as the spectral power distribution of the light emitted from the monitor at maximum except for a scale factor. The insets in the graph show two examples of the spectral power distribution, measured when the frame-buffer was set to 255 and 190. These two curves have the same overall shape; they differ by a scale factor of one half.
 
@@ -295,7 +296,7 @@ $$ {#eq-monitor-weighted-sum}
 
 @fig-monitor-matrix is a matrix tableau that illustrates how to compute the spectral power distribution of light emitted from a CRT display. The vector $\mathbf{e}$ contains the relative intensity of each of the three phosphors. The three columns of a matrix, call it $\mathbf{M}$, contain the spectral power distributions of the light emitted by the red, green and blue phosphors at maximum intensity. The spectral power distribution of light emitted from the monitor is the product $\mathbf{M} \mathbf{e}$.
 
-![The spectral power distribution of light emitted from a CRT. The entries e = (er, eg, eb) are the relative intensity of the three phosphors. The columns of M contain the spectral power distributions at maximum intensity. The vector calculated by Me is the spectral power distribution of the light emitted by the CRT. The output shown in the figure was calculated for e = (0.5, 0.6,0.7)T.](wp-content/uploads/2012/02/monitor.mat_.png){#fig-monitor-matrix width="70%"}
+![The spectral power distribution of light emitted from a CRT. The entries e = (er, eg, eb) are the relative intensity of the three phosphors. The columns of M contain the spectral power distributions at maximum intensity. The vector calculated by Me is the spectral power distribution of the light emitted by the CRT. The output shown in the figure was calculated for e = (0.5, 0.6,0.7)T.](images/monitor.mat_.png){#fig-monitor-matrix width="70%"}
 
 The light emitted from a CRT is different from lights we encounter in natural scenes. For example, the spectral power distribution of the red phosphor, with its sharp and narrow peaks, is unlike the light we see in natural images. Nonetheless, we can adjust the three intensities of the three phosphors on a color CRT to match the appearance of most spectral power distributions, just as we can match appearance in the color-matching experiment by adjusting the intensity of three primary lights (see @sec-wavelength-encoding).
 
@@ -443,7 +444,7 @@ The value $\mu$ is called the *rate-parameter* of the Poisson distribution. The 
 
 @fig-bayes-intensity shows the probability distributions of the number of cone absorptions from the two stimuli, $A$ and $B$. For this illustration, I have assumed that the mean absorptions from the two stimuli are $\mu_{A} = 8$ and $\mu_{B} = 12$, respectively. Since the a priori stimulus probabilities are equal, the observer will select stimulus $A$ whenever $P(d \mid A)$ exceeds $P(d \mid B)$. For this pair of distributions, this occurs whenever the observation is less than 9.
 
-![Bayes classifier for an intensity discrimination. The Poisson distributions of stimulus A with rate parameter muA = 8 (x's) and B with rate parameter muB = 12 (o's) are shown. When the a priori probabilities of seeing the stimuli are equal, the Bayes classifier selects B when the absorptions exceed the dashed line drawn through the graph. When the a priori probabilities are P(A) = 0.75 and P(B) = 0.25, the Bayes classifier selects B when the absorptions exceed the solid line drawn through the graph.](/wp-content/uploads/2012/02/sdt.png){#fig-bayes-intensity width="70%"}
+![Bayes classifier for an intensity discrimination. The Poisson distributions of stimulus A with rate parameter muA = 8 (x's) and B with rate parameter muB = 12 (o's) are shown. When the a priori probabilities of seeing the stimuli are equal, the Bayes classifier selects B when the absorptions exceed the dashed line drawn through the graph. When the a priori probabilities are P(A) = 0.75 and P(B) = 0.25, the Bayes classifier selects B when the absorptions exceed the solid line drawn through the graph.](images/sdt.png){#fig-bayes-intensity width="70%"}
 
 Now, suppose the experimenter presents $A$ with probability $0.75$ and $B$ with probability $0.25$. In this case, the subject can be right three quarters of the time simply by always guessing $A$. Given the strong a priori odds for $A$, the Bayes classifier will only choose $B$ if the likelihood exceeds three to one. From the distributions in @fig-bayes-intensity we find this occurs when there are at least 13 absorptions. The Bayes classifier uses the data and the a priori probabilities to make a decision.[^hecht-photon-detection]
 
@@ -514,7 +515,7 @@ This term acts as a normalizing criterion to correct for the overall response to
 
 We have learned that a Bayes classifier for pattern discrimination can be implemented using the results of simple linear calculations, like the calculations represented in the outputs of some peripheral neurons. In fact, making a decision like a Bayes classifier is equivalent to comparing the response of a linear neuron with a criterion value. If response of the linear neuron with receptive field defined by $w_i$ exceeds the criterion value, then choose stimulus $A$, otherwise choose $B$.
 
-![Bayes classifier for a spatial discrimination task. (a) The mean retinal image of a line. The grid lines are separated by 30 sec of arc, approximately the spacing of the cone inner segments in the fovea. (b) The mean retinal image of an image formed by a pair of lines separated by 30 sec of arc. The intensity of each line is one half the intensity of the line in panel (a). (c) The weights of the Bayes classifier that should be used to discriminate the stimuli in (a) and (b), given the assumptions of independent Poisson noise. (After: @geisler1989-sequentialidealobserveranalysis).](wp-content/uploads/2012/02/geisler.png){#fig-bayes-classifier width="70%"}
+![Bayes classifier for a spatial discrimination task. (a) The mean retinal image of a line. The grid lines are separated by 30 sec of arc, approximately the spacing of the cone inner segments in the fovea. (b) The mean retinal image of an image formed by a pair of lines separated by 30 sec of arc. The intensity of each line is one half the intensity of the line in panel (a). (c) The weights of the Bayes classifier that should be used to discriminate the stimuli in (a) and (b), given the assumptions of independent Poisson noise. (After: @geisler1989-sequentialidealobserveranalysis).](images/geisler.png){#fig-bayes-classifier width="70%"}
 
 @fig-bayes-classifier shows an example of a Bayes classifier computed for a simple pattern discrimination task. The two spatial patterns to be discriminated are shown in panels (a) and (b). The image in (a) is the retinal image of a line segment. @fig-bayes-classifier (b) shows the retinal image of a pair of line segments, separated by 30 sec of arc. The grid marks on the image are spaced by 30 sec of arc, essentially the same spacing as the cone inner segments. The curves below the images measure the intensity of the stimuli across a horizontal section.
 
@@ -552,13 +553,13 @@ $$ {#eq-dot-product}
 
 where $\| \cdot \|$ is the vector length and $\theta$ is the angle between the vectors. To simplify the discussion in the remainder of this section, we will assume that the vector $\mathbf{a}$ has unit length.
 
-![A geometric interpretation of the two-dimensional dot product. (a) A geometrical view of the dot product of two vectors is shown. The dashed line is a perpendicular from the tip of vector $\mathbf{x}$ to the unit-length vector $\mathbf{a}$. (b) Any vector whose endpoint falls along the dashed line yields the same scalar value when we compute the vector's dot product with $\mathbf{a}$.](wp-content/uploads/2012/02/dotProduct.png){#fig-dot-product width="70%"}
+![A geometric interpretation of the two-dimensional dot product. (a) A geometrical view of the dot product of two vectors is shown. The dashed line is a perpendicular from the tip of vector $\mathbf{x}$ to the unit-length vector $\mathbf{a}$. (b) Any vector whose endpoint falls along the dashed line yields the same scalar value when we compute the vector's dot product with $\mathbf{a}$.](images/dotProduct.png){#fig-dot-product width="70%"}
 
 @fig-dot-product (a) is a geometric representation of the dot product operation. The unit vector $\mathbf{a}$ and the signal vector $\mathbf{x}$ are drawn as arrows extending from the origin. A dashed line is drawn from the tip of $\mathbf{x}$ (the signal) at right angles to the vector $\mathbf{a}$ (the sensor). The length of the vector from the origin to point of intersection between the perpendicular dashed line and $\mathbf{a}$ is called the *projection* of $\mathbf{x}$ onto $\mathbf{a}$. Because we have assumed $\mathbf{a}$ has unit length, the length of the projection, $\| \mathbf{x} \| \cos ( \theta )$, is equal to the dot product, $\mathbf{a} \cdot \mathbf{x} = \| \mathbf{a} \| \| \mathbf{x} \| \cos (\theta)$.
 
 By inspecting @fig-dot-product (b), you can see that there are many signal vectors, $\mathbf{x}$, that have the same dot product with $\mathbf{a}$. Specifically, all of the vectors whose endpoints fall along a line that is perpendicular to $\mathbf{a}$, have the same dot product with $\mathbf{a}$. Hence, any signal represented by a vector whose endpoint is on this line will cause the same response in the sensor represented by the vector $\mathbf{a}$.
 
-![A geometric representation of the three-dimensional dot product. (a) The perpendicular from x to a is indicated by the dashed line. When a is a unit vector, the distance from the origin to the intersection of the dashed line with a is the scalar value of the dot product. (b) Any vector whose endpoint falls within the indicated plane yields the same scalar value when we compute the vector's dot with a.](wp-content/uploads/2012/02/dotProduct3.png){#fig-dot-product-3d width="70%"}
+![A geometric representation of the three-dimensional dot product. (a) The perpendicular from x to a is indicated by the dashed line. When a is a unit vector, the distance from the origin to the intersection of the dashed line with a is the scalar value of the dot product. (b) Any vector whose endpoint falls within the indicated plane yields the same scalar value when we compute the vector's dot with a.](images/dotProduct3.png){#fig-dot-product-3d width="70%"}
 
 The geometric intuition extends smoothly to vectors with more than two dimensions. @fig-dot-product-3d (a) shows the dot product between a pair of three-dimensional vectors. In three-dimensions, all of the vectors whose endpoints fall on a plane perpendicular to the unit-length vector $\mathbf{a}$ have the same dot product with that vector (@fig-dot-product-3d (b)). In four or more dimensions the set of signals with a common dot product value fall on a *hyperplane*.
 
@@ -566,7 +567,7 @@ The geometric intuition extends smoothly to vectors with more than two dimension
 
 By combining the results from several dot products, we can estimate the input signal. We can use the geometric representation of the dot product in @fig-dot-product to develop some intuitions about how to estimate the signal from a collection of sensor responses. This is a *signal estimation* problem.
 
-![Signal estimation from multiple linear sensors. (a) We can infer the location of a two-dimensional signal vector from the responses of two linear sensors. (b) When the vectors representing the sensors are orthogonal, the estimation error is small. (c) When the vectors representing the sensors are nearly aligned, the estimation error tends to be quite large in the direction perpendicular to the sensor vectors.](wp-content/uploads/2012/02/estimation.png){#fig-signal-estimation width="70%"}
+![Signal estimation from multiple linear sensors. (a) We can infer the location of a two-dimensional signal vector from the responses of two linear sensors. (b) When the vectors representing the sensors are orthogonal, the estimation error is small. (c) When the vectors representing the sensors are nearly aligned, the estimation error tends to be quite large in the direction perpendicular to the sensor vectors.](images/estimation.png){#fig-signal-estimation width="70%"}
 
 First, imagine that the response of each linear neuron is equal to the dot product of a vector describing the spatial contrast pattern of a stimulus with a vector describing the neuron’s receptive field. Further, suppose that the input stimuli are drawn from a set of simple spatial patterns, namely the weighted sums of two cosinusoidal gratings,
 
@@ -707,7 +708,7 @@ u = ( {p}_{1} / {p}_{3}) f ~~~\mbox{and}~~~ v = ({p}_{2} / {p}_{3} ) f .
 $$ {#eq-perspective-projection}
 
 
-![Perspective calculations of a pinhole camera. The coordinate frame is centered at the pinhole, and the image plane is located at a distance $f$ in front of the pinhole parallel to the X-Y plane. (a) A ray from a point $(p_1, p_2, p_3)$ that passes through the pinhole will intersect the image plane at location $(u,v)$. (b) From a view along the Y axis we find a pair of similar triangles. These triangles define an equation that relates the image plane coordinate, $u$, the point coordinates, and the distance from the pinhole to the image plane, $f$. (c) From a view along the X axis, we find an analogous pair of similar triangles and an analogous equation for $v$.](wp-content/uploads/2012/02/perspective.png){#fig-perspective width="70%"}
+![Perspective calculations of a pinhole camera. The coordinate frame is centered at the pinhole, and the image plane is located at a distance $f$ in front of the pinhole parallel to the X-Y plane. (a) A ray from a point $(p_1, p_2, p_3)$ that passes through the pinhole will intersect the image plane at location $(u,v)$. (b) From a view along the Y axis we find a pair of similar triangles. These triangles define an equation that relates the image plane coordinate, $u$, the point coordinates, and the distance from the pinhole to the image plane, $f$. (c) From a view along the X axis, we find an analogous pair of similar triangles and an analogous equation for $v$.](images/perspective.png){#fig-perspective width="70%"}
 
 ### Imaging Geometry, Camera Translation and Rotation
 

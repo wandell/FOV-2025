@@ -1,0 +1,768 @@
+---
+date: last-modified
+---
+
+# Color {#sec-color}
+{{< include "includes/WIP-callout.qmd" >}}
+
+## Color Overview {#sec-color-overview}
+Edwin Land was one of the great inventors and entrepreneurs in US history; he created instant developing film and founded the Polaroid Corporation. The first instant developing film made black and white reproductions, and after a few years Land decided to create a color version of the film. In order to learn about color appearance, Land returned to his laboratory to experiment with color. He was so surprised by his observations that he decided to write a paper summarizing his observations. In a paper published in the Proceedings of the National Academy of Sciences (USA), Land startled many people by arguing that there are only two, not three, types of cones. He further went on to dismiss the significance of the color-matching experiments. He wrote: “We have come to the conclusion that the classical laws of color mixing conceal great basic laws of color vision (@land1959-pnas).” Land’s sharp words, an arrow aimed at the heart of color science, provoked heated rejoinders from two leading scientists, @judd1960-land and @walls1960-landland.
+
+What was it that Land, a brilliant man, found so objectionable about color-matching? It seems to me that Land’s reading of the literature led him to believe that the curves we measure in the color-matching experiment can be used to predict color appearance. When he set the textbooks down and began to experiment with color, he was sorely disappointed. He found that the color-matching measurements do not answer many important questions about color appearance.
+
+Land’s observation is consistent with our review of color-matching in @sec-wavelength-encoding. The results from the color-matching experiment can be used to predict when two lights will look the same, but they cannot be used to tell us what the two lights look like. As Color Plate 2 (Albers) illustrates, the experimental results in the color-matching experiment can be explained by the matches between the cone photopigment absorptions at a point, while color appearance forces us to think about the pattern of photopigment absorptions spread across the cone mosaics. @fig-contrast-illusion illustrates this point again. The two squares in the image reflect the same amount of light to your eye. Yet, because the squares are embedded in different surroundings, we interpret the squares very differently, seeing one as light and the other as dark.
+
+![Color appearance in a region depends on the spatial pattern of cone absorptions, not just the absorptions within the region. The two square regions are physically identical and thus create the same local rate of photopigment absorption. Yet, they appear to have different lightness because of the difference in their relative absorptions compared to nearby areas.](images/contrast1.png ){width="70%" #fig-contrast-illusion}
+
+Land’s paper contained a set of interesting qualitative demonstrations that illustrate these same points. While the limitations of the color-matching experiment were new to Land and the reviewers of his paper, they were not new to most color scientists. For example, @judd1940 had worked for years trying to understand these effects. Later in this chapter I will review work at Kodak and in academic laboratories, contemporaneous with that of Land, that was designed to elucidate the mechanisms of color appearance. This episode in the history of color science remains important, however, because it reminds us that the phenomena of color appearance are very significant and very compelling, enough so to motivate Edwin Land to challenge whether the color establishment had answered the right questions. As to Land’s additional and extraordinary claim in those papers, that there are two not three types of photoreceptors, well, we all have off days[^land-off-days].
+
+[^land-off-days]: Of course, even on his off days, Land was worth a billion dollars.
+
+## Color Constancy: Theory
+
+If the absolute rates of photopigment absorptions don’t explain color appearance, what does? The illusions in Color Plate 2 (Albers) and @fig-contrast-illusion both suggest that color appearance is related to the *relative* cone absorption rates. Within an image, bright objects generate more cone absorptions than dark objects; red objects create more $L$ cone absorptions and blue objects more $S$ cone absorptions. Hence, one square in @fig-contrast-illusion appears light because it is associated with more cone absorptions than its neighboring region, while the other appears dark because it is associated with fewer cone absorptions. The relative absorption rate is very closely connected to the idea of the stimulus contrast that has been so important in this book. Color appearance depends more on the local contrast of the cone absorptions than on the absolute level of cone absorptions.
+
+
+The dependence on relative, rather than absolute, absorption rates is a general phenomenon, not something that is restricted to a few textbook illusions. Consider a simple thought experiment that illustrates the generality of the phenomenon. Suppose you read this book indoors. The white part of the page reflects about 90 percent of the light towards your eye, while the black ink reflects only about 2 percent. Hence, if the ambient illumination inside a reading room is 100 units, the white paper reflects 90 units and the black ink 2 units. When you take the book outside, the illumination level can be 100 times greater, or 10,000 units. Outside the black ink reflects 200 units towards your eye, which far exceeds the level of the white paper when you were indoors. Yet, the ink continues to look black. As we walk about the environment, then, we must constantly be inferring the lightness and color of objects by comparing the spatial pattern of cone absorptions[^hering-example].
+
+[^hering-example]: This example was used by @hering1964-outlinestheorylight.
+
+This thought experiment also illustrates us that the color we perceive informs us mainly about objects. The neural computation of color is structured so that objects retain their color appearance whether we encounter them in shade or sun. When the color appearance of an object changes, we think that the object itself has changed. The defining property of an object is not the absolute amount of light it reflects, but rather how much light it reflects relative to other objects. From our thought experiment, it follows that the color of an object imaged at a point on the retina should be inferred from the relative level of cone absorptions caused by an object. To compute the relative level of cone absorptions, we must take into account the spatial pattern of cone absorptions, not just the cone absorptions at a single point.
+
+On this view, color appearance is a mental explanation of why an object causes relatively more absorptions in one cone type than another object. The physical attribute of an object that describes how well the object reflects light at different wavelengths is called the object’s  *surface reflectance*. Generally, objects that reflect light mainly in the long-wavelength part of the spectrum usually appear red; objects that reflect mainly short-wavelength light usually appear blue. Yet, as we shall explore in the next few pages, interpreting the cone absorption rates in terms of the surface reflectance functions is not trivial. How the nervous system makes this interpretation is an essential question in color appearance. A natural place to begin our analysis of color appearance, then, is with the question: how can the central nervous system can infer an object’s surface reflectance function from the mosaic of cone absorptions?
+
+## Spectral Image Formation
+
+To understand the process of inferring surface reflectance from the light incident at our eyes, we must understand a little about how images are formed. The light incident at our corneas and absorbed by our cones depends in part on the properties of the objects that reflect the light and in part on the wavelength composition of the ambient illumination. We must understand each of these components, and how they fit together, to see what information we might extract from the retinal image about the surface reflectance function. A very simple description of the imaging process is shown in @fig-spectral-image-formation (a).
+
+![A description of spectral image formation. (a) Light from a source arrives at a surface and is reflected towards an observer. The light at the observer is absorbed by the cones and ultimately leads to a perception of color. (b) The functions associated with the imaging process include the spectral power distribution of the light source, the surface reflectance function of the object, the result of multiplying these two functions to create the color signal incident at the eye, and the cone absorptions caused by the incident signal.]( images/imaging.png){width="70%" #fig-spectral-image-formation}
+
+Ordinarily, image formation begins with a light source. We can describe the spectral properties of the light source in terms of the relative amount of energy emitted at each wavelength, namely the  *spectral power distribution* of the light source (see @sec-wavelength-encoding). The light from the source is either absorbed by the surface or reflected. The fraction of the light reflected by the surface defines the  *surface reflectance* function. As a first approximation, we can calculate the light reflected towards the eye by multiplying the spectral power distribution and the surface reflectance function together (@fig-spectral-image-formation (b)). We will call this light the  *color signal* because it serves as the signal that ultimately leads to the experience of color. The color signal leads to different amounts of absorptions in the three cone classes, and the interpretation of these cone absorptions by the nervous system is the basis of our color perception.
+
+![The surface reflectance function measures the proportion of light scattered from a surface at each wavelength. The panels show the surface reflectance functions of various colored papers along with the color name associated with the paper. Surface reflectance correlates with the color appearance; as Newton wrote “colors in the object are nothing but a disposition to reflect this or that sort of ray more copiously than the rest.”](images/surfR1.png){width="70%" #fig-surface-reflectance}
+
+In @sec-wavelength-encoding I reviewed some properties of illuminants and sensors. But, this is the first time we have considered the surface reflectance function; it is worth spending time thinking about some of the properties of how surfaces reflect light. @fig-surface-reflectance shows the reflectance function of four matte papers, that is papers with a smooth even surface free from shine or highlights. Because these curves describe the fraction of light reflected, they range between zero and one. While it is common to refer to an object as having a surface reflectance function, as I have just done, in a certain sense, the notion of a surface reflectance function is a ruse. If you look about the room you are in, you will probably see some surfaces that are shiny or glossy. As you move around these surfaces, changing the geometrical relationship between yourself, the lighting, and the surface, the light reflected to your eye changes considerably. Hence, the tendency of the surface to reflect light towards your eye does not depend only on the surface; the light scattered to your eye also depends on the viewing geometry, too[^surface-geometry]. 
+
+[^surface-geometry]: Also, some types of materials fluoresce, which is to say they absorb light at one wavelength and emit light at another (longer) wavelength. This is also a linear process, but too complex to consider in this discussion.
+
+The surface reflectance dependence on viewing geometry because the reflected light arises from several different physical processes that occur when light is incident at the surface. Each of these processes contributes simultaneously to the light scattered from a surface, and each has its own unique properties. The full model describing reflectance appears to be be complex; but, @shafer1985 has created a simple approximation of the reflection process, called the  *dichromatic reflection model*, that captures several important features of surface reflectance. @fig-dichromatic-reflection (a) sketches the model, which applies to a broad collection of materials called  *dielectric* surfaces[^dielectric-def] (@klinker1988-highlights; @shafer1985; @nayar1993-reflectance, @wolff1994-relative).
+
+[^dielectric-def]: Dielectrics are non-conducting materials.
+
+According to the dichromatic reflection model, dielectric material consists of a clear substrate with embedded colorant particles. One way light is scattered from the surface is by a mirror-like reflection at the interface of the surface. This process is called  *interface* reflections. A second scattering process takes place when the rays enter the material. These rays are reflected randomly between the colorant particles. A fraction of the incident light is absorbed by the material, heating it up, and part of the light emerges. This process is called  *body* reflection.
+
+The spatial distributions of light scattered by these two mechanisms are quite different (@fig-dichromatic-reflection (b)). Light scattered by interface reflection is quite restricted in angle, much as a mirror reflects incident rays. Conversely, the light scattered by body reflection emerges equally in all directions. When a surface has no interface reflections, but only body reflections, it is called a  *matte* or  *Lambertian* surface. Interface reflection is commonly called  *specular* reflection and is the reason why some objects appear  *glossy*.
+
+![The dichromatic reflection model of surface reflectance in inhomogeneous materials. (a) Light is scattered from a surface by two different mechanisms. Some incident light is reflected at the interface (interface reflection). Other light enters the material, interacts with the embedded particles, and then emerges as reflected light (body reflection). (b) Rays of light reflected by interface reflections is likely to be concentrated in one direction. Rays of light reflected by body reflection are reflected with nearly equal likelihood in many different directions. Because interface reflections are concentrated in certain directions, light reflected by this process can be much more intense than light reflected by body reflection.]( images/refProcess1.png){width="70%" #fig-dichromatic-reflection}
+
+The different geometrical distribution in how body and interface reflections are reflected is the reason why specular highlights on a surface appear much brighter than diffuse reflection. Nearly all of the specular scattering is confined to a small angle; the body reflection is divided among many directions. The interface reflections provide a strong signal, but because they can only be seen from certain angles they are not a reliable source of information. As the object and observer change their geometric relationship the specular highlight moves along the surface of the object, or it may disappear altogether.
+
+For many types of materials, interface reflection is not selective for wavelength. The spectral power distribution of the light scattered at the interface is the same as the spectral power distribution of the incident light. This is the reason specular highlights take on the color of the illumination source. Body reflection, on the other hand, does not return all wavelengths uniformly. The particles in the medium absorb light selectively, and it is this property of the material that distinguishes objects in terms of their color appearance. Ordinarily, when people refer to the surface reflectance of an object, they mean to refer to the body reflection of the object.
+
+![The light reflected from objects changes as the illuminant changes. (a) The shaded panel on the left shows the spectral power distributions of a light source similar to a tungsten bulb. The three graphs on the right show the light reflected from the red, green and yellow papers in @fig-surface-reflectance when illuminated by this source. The bar plots above the graphs show the three cone absorption rates caused by the color signal. (b) When the light source is similar to the blue sky, as in the shaded panel on the left, the light reflected from the same papers is quite different. These change considerably, too, and are thus an unreliable cue to the surface reflectance of the object.]( images/colorSig.png){width="70%" #fig-color-signal}
+
+We can describe the reflection of light by a matte surface with a simple mathematical formula. Suppose that the illuminant spectral power distribution is $ e(\lambda) $. We suppose that the body reflectance is $s(\lambda) $. Then the color signal, that is the light arriving at the eye, is
+
+$$
+c(\lambda) = s(\lambda) e(\lambda) .
+$$ {#eq-color-signal}
+
+
+@fig-color-signal shows several examples of the light reflected from matte surfaces. The shaded graph in @fig-color-signal (a) is the spectral power distribution of an illuminant similar to a tungsten bulb. The other panels show the spectral power distribution of light that would be reflected from the red, green and yellow papers in @fig-surface-reflectance. The shaded graph in @fig-color-signal (b) shows the spectral power distribution similar to blue sky illumination and the light reflected from the same three papers. Plainly, the spectral composition of the reflected light changes when the illuminant changes.
+
+We can calculate the cone absorption rates caused by each of these color signals (see @sec-wavelength-encoding). These rates are shown in the bar plots inset within the individual graphs of reflected light. By comparing the insets in the top and bottom, you can see that the cone absorption rates from each surface changes dramatically when the illumination changes. This observation defines a central problem in understanding color appearance. Color is a property of objects; but, the reflected light, and thus the cone absorptions, varies with the illumination. If color must describe a property of an object, the nervous system must  *interpret* the mosaic of photopigment absorptions and estimate something about the surface reflectance function. This is an estimation problem. How can the nervous system use the information in the cone absorptions to infer the surface reflectance function?
+
+### Surface reflectance estimation
+
+There are some very strong limitations on what we can achieve when we set out to estimate surface reflectance from cone absorptions. First, notice that the color signal depends on two spectral functions that are continuous functions of wavelength: the spectral power distribution of the ambient illumination and the surface reflectance function. The light incident at the eye is the product of these two functions. So, any illuminant and surface combination that produces this same light will be indistinguishable to the eye.
+
+One easy mathematical way to see why this is so is to consider the color signal. Recall that the color signal is equal to the product of the illuminant spectral power distribution $ e(\lambda) $ and the surface reflectance function $ s(\lambda) $,
+
+$$
+c(\lambda) = s(\lambda) e(\lambda) .
+$$ {#eq-color-signal-example}
+
+Suppose we replace the illuminant with a new illuminant, $ f(\lambda) e(\lambda) $ and all of the surfaces with new functions $ s(\lambda) / f(\lambda) $. This change has no effect on the color signal,
+
+$$
+c(\lambda) = \frac{s(\lambda)}{f(\lambda)} f(\lambda) e(\lambda) = s(\lambda) e(\lambda)
+$$ {#eq-color-signal-invariance}
+
+
+and thus no effect on the photopigment absorption rates. Hence, there is no way the visual system can discriminate between these two illuminant and surface pairs.
+
+Now, consider a second limitation to the estimation problem. The visual system does not measure the spectral power distribution directly. Rather, the visual system only encodes the absorption rates of the three different cones. Hence, the nervous system cannot be certain which of the many metameric spectral power distributions is responsible for causing the observed cone absorption rates (see @sec-wavelength-encoding) for a definition of metameric). This creates even more uncertainty for the estimation problem.
+
+In the introduction to this part of the book, I quoted Helmholtz’ suggestion: the visual system imagines those objects being present that could give rise to the retinal image. We now find that the difficulty we have in following this advice is not that are no solutions, but rather that there are too many. We encode so little about the color signal that many different objects could all have given rise to the retinal image.
+
+Which of the many possible solutions should we select? The general strategy we should adopt is straightforward: Pick the most likely one. Will this be a helpful estimate, or are there so many likely signals that encoding the most likely one is hardly better than guessing with no information?
+
+Perhaps the most important point that we have learned from color constancy calculations over the last ten years is this: the set of surface and illuminant functions we encounter is not so diverse as to make estimation from the cone catches useless. Some surface reflectance functions and some illuminants are much more likely than others, even with only three types of cones, it is possible to make educated guesses that do more good than harm.
+
+The surface reflectance estimation algorithms we will review are all based on this principle. They differ only in the set of assumptions they make concerning what the observer knows and what we mean by most likely. I review them now because some of the tools are useful and interesting, and some of the summaries of the data are very helpful in practical calculations and experiments.
+
+### Linear Models
+
+To estimate which lights and surfaces are more probable, we need to do two things. First, we need to measure the spectral data from lights and surfaces. Second, we need a way to represent the likelihood of observing different surface and illuminant functions.
+
+Since the early part of the 1980s,  *linear models* of surface and illuminant functions have been used widely to represent our best guess about the most likely surface and illuminant functions. A linear model of a set of spectral functions, such as surface reflectances, is a method of efficiently approximating the measurements. There are several ways to build linear models, including  *principal components analysis*,  *centroid analysis*, or  *one mode analysis*. These methods have much in common, but they differ slightly in their linear model formulation and error measures (@cohen1964; @judd1964-daylight; @maloney1986-linearmodels-surface; @marimont1992-linearmodelssurface).
+
+As an example of how to build a linear model, we will review a classic paper by @judd1964-daylight. These authors built a linear model of an important source of illumination, daylight spectral power distributions. They collected more than six hundred measurements of the spectral power distribution of daylights at different times of day and under different weather conditions and on different continents. To measure the spectral power distribution of daylight we place an object with a known reflectance outside. It is common to use blocks of pressed magnesium oxide as a standard object because such blocks reflect light of all wavelengths nearly equally. Moreover, the material is essentially a pure diffuser: a quantum of light incident on the surface from any angle is reflected back with equal probability in all other directions above the surface.
+
+Since they were interested in the relative spectral composition, not the absolute level, Judd et al. normalized their measurements so that they were all equal to the value 100 at 560nm. Their main interest was in the wavelength regime visible to the human eye, so they made measurements roughly from 400nm to 700nm. Their measurements were spaced every 10 nm. Hence, they could represent each daylight measurement by a set of thirty-one numbers. Three example daylight spectral power distributions, normalized to coincide at 560nm, are shown in @fig-daylight-spectra.
+
+![The relative spectral power distribution of three typical daylights. The curves drawn here are typical daylight measured by @judd1964-daylight. The curves are normalized to coincide at 560nm (Source: @judd1964-daylight).](images/illExample.png){width="70%" #fig-daylight-spectra}
+
+The data plotted in @fig-daylight-spectra show that measured daylight relative spectral power distributions can differ depending on the time of day and the weather conditions. But, after examining many daylight functions, Judd et al. found that the curves do not vary wildly and unpredictably; the data are fairly regular. Judd et al. captured the regularities in the data by building a linear model of the observed spectral power distributions. They designed their linear model, a *principal components model*, using the following logic.
+
+First, they decided that they wanted to approximate their observations in the *squared-error sense*. That is, suppose $e(\lambda)$ is a measurement, and $\hat{e}(\lambda)$ is the linear model estimate of the measurement. Then, they decided to select the approximation in order to minimize the *squared error*
+$$
+\sum_{\lambda} (e(\lambda) - \hat{e}(\lambda) )^2 .
+$$
+
+When we consider the collection of observations as a whole, the function that approximates the entire data set with the smallest squared error is the mean. The mean observation from Judd et al.’s data set, $ e_{0}(\lambda) $, is the bold curve in @fig-linear-model-daylight.
+
+Once we know the mean, we need only to approximate the difference between the mean and each individual measurement. We build the linear model to explain these differences as follows. First, we select a fixed set of *basis functions*. Basis functions, like the mean, are descriptions of the measurements. We approximate a measurement’s difference from the mean as the weighted sum of the basis functions. For example, suppose $\Delta e_{j}(\lambda)$ is the difference between the $j^{th}$ daylight measurement and the mean daylight. Further, suppose we select a set of $N$ basis functions, $E_{i}(\lambda)$. Then, we approximate the differences from the mean as the weighted sum of these basis functions, namely
+
+$$
+\Delta e_{j}(\lambda) \approx \sum_{i=1}^{i=N} w_{i} E_{i}(\lambda) .
+$$ {#eq-linear-model-diff}
+
+The basis functions are chosen to make the sum of the squared errors between the *collection* of measurements and their approximations as small as possible. The number of basis functions, $N$, is called the *dimension* of the linear model. The values $w_{i}$ are called the linear model *weights*, or *coefficients*. They are chosen to make the squared error between an *individual* measurement and its approximation as small as possible. They serve to describe the properties of the specific measurement.
+
+As the dimension of the linear model increases, the precision of the linear model approximation improves. The dimension one chooses for an application depends on the required precision[^linear-model-basis]. 
+
+[^linear-model-basis]: The basis functions that minimize the squared error can be found in several ways, most of which are explained in widely available statistical packages. If the data are in the columns of a matrix, one can apply the singular value decomposition to the data matrix and use the left singular vectors. Equivalently, one can find the eigenvectors of the covariance matrix of the data.
+
+Judd et al. found an excellent approximation of the daylight measurements using the mean and two basis functions. The linear model representation expresses the measurements efficiently. The mean and two basis functions are fixed, side conditions of the model. Their linear model approximation of each measurement uses only two weights. The empirical results have been confirmed by other investigators and the results have been adopted by the international color standards organization to create a model of daylights (@dixon1978-daylight; @sastri1966-spectral). The mean and two basis terms from the international standard are plotted in @fig-linear-model-daylight.
+
+![A linear model for daylight spectral power distributions. The curve labeled mean is the mean spectral power distribution of a set of daylights whose spectral power distributions were normalized to a value of 100 at 560nm. The curves labeled 1st and 2nd show the two basis curves used to define a linear model of daylights. By adding together the mean and weighted sums of the two basis functions, one can generate examples of typical relative spectral power distributions of daylight. (Source: @judd1964-daylight).](images/linearModDay1.png){width="70%" #fig-linear-model-daylight}
+
+Because daylights vary in their absolute spectral power distributions, not just their relative distributions, we should extend Judd et al.’s linear model to a three-dimensional linear model that includes absolute intensity. A three dimensional linear model we might use consists of the mean and the two derived curves. In this case the three-dimensional linear model approximation becomes[^linear-basis]
+
+[^linear-basis]: It is possible to improve on this model slightly, but as a practical matter these three curves do quite well as basis functions.
+
+$$
+e(\lambda) = \sum_{i=1}^{3} w_{i} E_{i}(\lambda) .
+$$ {#eq-illuminant-linear-model}
+
+We can express the linear model in @eq-illuminant-linear-model as a matrix equation, $\mathbf{e} = \mathbf{B}_{\mathbf{e}} \mathbf{w}$ in which $\mathbf{e}$ is a vector representing the illuminant spectral power distribution, the three columns of $\mathbf{B}_{\mathbf{e}}$ contain the basis functions $E_{i}(\lambda)$, and $\mathbf{w}$ is a three dimensional vector containing the linear model coefficients $w_{i}$.
+
+We can see why linear models are efficient by writing @eq-illuminant-linear-model as a matrix tableau.
+
+$$
+\left (
+    \begin{array}{ccc}
+        & . & \\
+        & . & \\
+        & . & \\
+        & e(\lambda) & \\
+        & . & \\
+        & . & \\
+        & . & \\
+    \end{array}
+\right )
+=
+\left (
+    \begin{array}{ccc}
+        . & . & . \\
+        . & . & . \\
+        . & . & . \\
+        E_{1}(\lambda) & E_{2}(\lambda) & E_{3}(\lambda) \\
+        . & . & . \\
+        . & . & . \\
+        . & . & . \\
+    \end{array}
+\right )
+\left (
+    \begin{array}{ccc}
+        & w_{1} & \\
+        & w_{2} & \\
+        & w_{3} & \\
+    \end{array}
+\right )
+$$
+
+The single spectral power distribution, the vector on the left, consists of measurements at many different wavelengths. The linear model summarizes each measurement as the weighted sum of the basis functions, which are the same for all measurements, and a few weights, $\mathbf{w}$, which are unique to each measurement. The linear model is efficient because we represent each additional measurement using only three weights, $\mathbf{w}$, rather than the full spectral power distribution.
+
+### Simple Illuminant Estimation
+
+Efficiency is useful; but, if efficiency were our only objective we could find more efficient algorithms. The linear models are also important because they lead to very simple estimation algorithms. As an example, consider how we might use a device with three color sensors, like the eye, to estimate the spectral power distribution of daylight. Such a device is vastly simpler than the spectroradiometer Judd et al. needed to make many measurements of the light.
+
+Suppose we have a device with three color sensors, whose spectral responsivities are, say, $r_i(\lambda),\ i = 1 \ldots 3$. The three sensor responses will be
+
+$$
+\begin{aligned}
+r_1 & = & \sum_\lambda R_1(\lambda)\, e(\lambda) \\
+r_2 & = & \sum_\lambda R_2(\lambda)\, e(\lambda) \\
+r_3 & = & \sum_\lambda R_3(\lambda)\, e(\lambda)
+\end{aligned}
+$$ {#eq-sensor-responses}
+
+We can group these three linear equations into a single matrix equation
+
+$$
+r = \mathbf{S}\, e
+$$ {#eq-sensor-matrix}
+
+where the column vector $r$ contains the sensor responses, the rows of the matrix $R$ are the sensor spectral responsivities, and $e$ is the illuminant spectral power distribution.
+
+Before the Judd et al. study, one might have thought that three sensor responses are insufficient to estimate the illumination. But, from their data we have learned that we can approximate $e$ with a three-dimensional linear model, $e \approx E\, \mathbf{w}$. This reduces the equation to
+
+$$
+r \approx (\mathbf{S} \mathbf{B}_{\mathbf{e}})\, \mathbf{w}
+$$ {#eq-sensor-linear-model}
+
+The matrix $(\mathbf{S} \mathbf{B}_{\mathbf{e}})$ is $3 \times 3$, and its entries are all known. The sensor responses, $r$, are also known. The only unknown is $w$. Hence, we can estimate $w$, and use these weights to calculate the spectral power distribution, $\mathbf{B}_\mathbf{e}\, \mathbf{w}$.
+
+This calculation illustrates two aspects of the role of linear models. First, linear models represent a priori knowledge about the likely set of inputs. Using this information permits us to convert underdetermined linear equations (@eq-sensor-matrix) into equations we can solve (@eq-sensor-linear-model). Linear models are a blunt but useful tool for representing probabilities. Using linear models, it becomes possible to use measurements from only three color sensors to estimate the full relative spectral power distribution of daylight illumination.
+
+Second, linear models work smoothly with the imaging equations. Since the imaging equations are linear, the estimation methods remain linear and simple.
+
+### Surface Reflectance Models
+
+The daylights are an important class of signals for vision. For most of the history of the earth, daylight was the only important light source. There is no similar set of surface reflectance functions. I was reminded by this once by the brilliant color scientist, G. Wyszecki. When I was just beginning my study of these issues, I asked him why he had not undertaken a study of surfaces similar to daylight study. He shrugged at me and answered, “How do you sample the universe?”
+
+Wyszecki was right, of course. The daylight measurement study could begin and end in a single paper. There is no specific set of surfaces that of equal importance to the daylights, so we have no way to perform a similar analysis on surfaces. But, there are two related questions we can make some progress on. First, we can ask what the properties are of certain collections of surfaces that are of specific interest to us, say for practical applications. Second, we can ask what the visual system, with only three types of cones, can infer about surfaces.
+
+Over the years linear models for special sets of materials can be used in many applications. Printer and scanner manufacturers may be interested in the reflectance functions of inks. Computer graphics programmers may be interested in the reflectance factors of geological materials, or tea pots. Color scientists have repeatedly measured the reflectance functions of standard color samples used in industry, such as the Munsell chips. These cases can be of practical value and interest in printing and scanning applications (e.g. @marimont1992-linearmodelssurface; @farrell1992; @vrhel-trussell1994; @drew1992-interreflection). To discover the regularities in surface functions, then, we should measure the body reflection terms. From the studies that have taken place over the last several years, it has become increasingly clear that in the visible wavelength region the surface reflectance functions tend to be quite smooth, and thus exhibit a great deal of regularity. Hence, linear models serve to describe the reflectance functions quite well.
+
+For example, @cohen1964, @maloney1986-linearmodels-surface and @parkkinen1989-spectra studied the reflectance properties of a variety of surfaces including special samples and some natural objects. For each of the sets studied by these authors the data can be modeled nearly perfectly using a linear model with less than six dimensions. Excellent approximations, though not quite perfect, can be obtained by three-dimensional approximations.
+
+As an example, I have built a linear model to approximate a small collection surface reflectance functions for a color target, the  *Macbeth ColorChecker*, that is used widely in industrial applications. The target consists of 24 square patches laid out in a 4 by 6 array. The surfaces in this target were selected to have reflectance functions similar to a range of naturally occurring surfaces. They include reflectances similar to human skin, flora, and other materials (@mccamy1976-chart).
+
+![A linear model to approximate the surface reflectances in the Macbeth ColorChecker. The panels in each row of this figure show the surface reflectance functions of six colored surfaces (dashed line) and the approximation to these functions using a linear model (solid lines). The approximations using linear models with three (a), two (b) and one (c) dimension respectively are shown.](images/macbethApprox.png){width="70%" #fig-macbeth-approx}
+
+To create the linear model, I measured the surface reflectance functions of these patches with a spectral radiometer in my laboratory. The original data set, then, consisted of measurements from 370nm to 730nm in 1 nm steps for each of the 24 patches. Then, using conventional statistical packages, I calculated a three-dimensional linear model to fit all of these surface reflectance functions. The linear model basis functions, $S_{i}(\lambda)$, were selected to minimize the squared error[^svd-basis].
+
+[^svd-basis]: I calculated the singular value decomposition of the matrix whose columns consist of the surface reflectance vectors. I used the left singular vectors as the basis functions.
+
+$$
+\left (s(\lambda) - \sum_{i=1}^{N} \sigma_{i} S_{i}(\lambda) \right ) ^2 .
+$$ {#eq-surface-linmodel-error}
+
+The values $\sigma_{i}$ are called the  *surface coefficients*, and we will represent them as a vector, $\mathbf{\sigma} = (\sigma_{1}, \ldots , \sigma_{N})$. There are fewer surface coefficients than data measurements. If we create a matrix whose columns are are the basis functions, ${\mathbf{B}_\mathbf{s}}$, then we can express the linear model approximation as ${\mathbf{B}_\mathbf{s}} \mathbf{\sigma}$.
+
+The dashed lines in @fig-macbeth-approx show the reflectance functions of six of the twenty-four surfaces. The smooth curves within each row of the figure contain the approximations using linear models with different dimensionality. The bottom row shows a one-dimensional linear model; in this case the approximations are scaled copies of one another. As we increase the dimensionality of the linear model the approximations become very similar to the originals. The 3-dimensional model the approximations are quite close to the true functions.
+
+The low-dimensional linear model approximates these surface reflectance functions because the functions vary smoothly as a function of wavelength. The linear model consists of a few, slowly varying basis functions shown in @fig-macbeth-basis. The first basis function captures the light-dark variation of the surfaces. The second basis function captures a red-green variation, and the third a blue-yellow variation.
+
+![Basis functions of the linear model for the Macbeth ColorChecker. The surface reflectance functions in the collection vary smoothly with wavelength, as do the basis functions. The first basis function is all positive and explains the most variance in the surface reflectance functions. The basis functions are ordered in terms of their relative significance for reducing the error in the linear model approximation to the surfaces.](images/macbethBasis.png){width="70%" #fig-macbeth-basis}
+
+![**Color Plate 4.** Color renderings of the linear model approximations to the Macbeth ColorChecker. The linear model approximations are shown rendered under a blue sky illumination. The dimension of the linear model approximation is shown above each image. The one-dimensional approximation the surfaces appear achromatic, varying only in lightness. For this illuminant, and using three or more dimensions in the linear model, the rendering is visually indistinguishable from a complete rendering of the surfaces.](images/macbethRender.png){width="70%"}
+
+Although the approximations are quite good, there are still differences between the surface reflectance functions and the three dimensional linear model. We might ask whether these differences are visually salient. This question is answered by the renderings of these surface approximations in Color Plate 4. The one-dimensional model looks like a collection of surfaces in various shades of gray. For the blue sky illumination used in the rendering, linear models with three or more dimensions are visually indistinguishable from a rendering using the complete set of data.
+
+### Sensor-based error measures
+
+I have described linear models that minimize the squared error between the approximation and the original spectral function. As the last analysis showed, however, when we choose linear models to minimize the spectral error we are not always certain whether we have done a good job in minimizing the visual error. In some applications, the spectral error may not be the objective function that we care most about minimizing. When the final consumer of the image is a human, we may only need to capture that part of the reflectance function that is seen by the sensors.
+
+If we are modeling reflectance functions for a computer graphics application, for example, there is no point in modeling the reflectance function at 300nm since the human visual system cannot sense light in that part of the spectrum anyway. For these applications, we should be careful to model accurately those parts of the function that are most significant for vision. In these cases, one should select a linear model of the surface reflectance by minimizing a different error measure, one that takes into account the selectivity of the eye.
+
+@marimont1992-linearmodelssurface describe how to create linear models that are appropriate for the eye. They consider how to define linear models that minimize the root mean squared error in the photopigment absorption rates, rather than the root mean squared error of the spectral curves. Their method is called  *one-mode analysis*. For many applications, the error measure minimized by one-mode analysis is superior to root mean squared error of the spectral curves.
+
+### Surface and Illuminant Estimation Algorithms
+
+There is much regularity in daylight and surface functions; so, it makes sense to evaluate how well we estimate spectral functions from sensor responses. Estimation algorithms rely on two essential components.
+
+First, we need a method of representing our knowledge about the likely surface and illuminant functions. For example, linear models can be used encode our a priori knowledge[^bayesian-estimation]. Second, all modern estimation methods assume that the illumination varies either slowly or not at all across the image. This assumption is important because it means that the illumination adds very few new parameters to estimate.
+
+[^bayesian-estimation]: More sophisticated methods are based on using Bayesian estimation as part of the calculation. For example, see @brainard1994-bayesian and @dzmura1993-basic; @dzmura1993-results; @dzmura1994-general.
+
+Consider an example of an image with $p$ points. We expect to obtain $3$ cone absorption rates at each image point, so there are $3p$ measurements. If we can use a surface 3 dimensional model for the surfaces, then there are $3p$ unknown surface coefficients. And, there is a linear relationship between the measurements and the unknown quantities. If the illuminant is known, then the problem is straightforward to solve.
+
+
+The additional unknown illuminant parameters make the problem a challenge. If the illuminant can vary from point to point, there will be $6p$ unknown parameters and the mismatch between known and unknown parameters will be very great. But, if the illuminant is constant across the image, we only have $3$ additional parameters. In this case, by making some modest assumptions about the image, we can find ways to infer these three parameters and then proceed to estimate the surface parameters.
+
+Modern estimation algorithms work by find a method to overcome the mismatch between the measurements and the unknowns. We can divide existing estimation algorithms into two groups. The majority of estimation algorithms infer the illumination parameters by making one additional assumption about the image contents. For example, suppose we know the reflectance function of one surface. Then, we can use the sensor responses from that surface to measure the illuminant parameters. Knowing the reflectance function of one surface in the image compensates for the three unknown illuminant parameters. There are several implementations of this principle. The most important is the assumption that the average of all the surfaces in the image is gray, which is called the  *gray-world* assumption (@buchsbaum1980-gray; @land1977-retinex). Other algorithms are based on the assumption that the brightest surface in the image is a uniform, perfect reflector (@mccann1976-retinex). An interesting variant on both of these assumptions is the idea that we can identify specular or glossy surfaces in the image. Since specularities reflect the illumination directly, often without altering the illuminant’s spectral power distribution, the sensor responses to glossy surfaces provide information about the illuminant (@lee1986-highlights; @dzmura1986-sharedrodcone; @tominaga1989-model, @tominaga1990-surfacespectralreflectance).
+
+A second group of estimation algorithms compensates for the mismatch in measurements and parameters by suggesting ways to acquire more data. For example, Maloney and I showed that if one adds a fourth sensor (at three spatial locations), one can also estimate the surface and illuminants. @dzmura1993-basic and @dzmura1993-results explored an interesting variant of this idea. They asked what information is available if we observe the same surface under several illuminants. Changing the illumination on a surface is conceptually equivalent to seeing the surfaces with additional sensors. Pooling information about the same object seen under different illuminants, is much like acquiring additional information from extra sensors (e.g., see @wandell1987-synthesisanalysis).
+
+### Illuminant correction: An example calculation
+
+Before returning to experimental measurements of color appearance, let’s perform an example calculation that is of some practical interest as well as of some interest in understanding how the visual system might compensate for illumination changes. By working this example, we will start to consider what neural operations might permit the visual pathways to compensate for changes in the ambient illumination.
+
+First, let’s write down the general expression that shows how the surface and illuminant functions combine to yield the cone absorption rates. The three equations for the three cone types, $L$, $M$, and $S$, are
+
+$$
+\begin{aligned}
+r_{1} & = \sum_{\lambda} R_{1}(\lambda) E(\lambda) S(\lambda)  \\
+r_{2} & = \sum_{\lambda} R_{2}(\lambda) E(\lambda) S(\lambda)  \\
+r_{3} & = \sum_{\lambda} R_{3}(\lambda) E(\lambda) S(\lambda) .
+\end{aligned}
+$$ {#eq-cone-absorptions}
+
+Next, we replace the illuminant and surface functions in @eq-cone-absorptions with their linear model approximations. This yields a new relationship between the coefficients of the surface reflectance linear model, $\mathbf{\sigma}$, and the three-dimensional vector of cone absorptions, $\mathbf{r}$,
+
+$$
+\mathbf{r} \approx \mathbf{\Lambda}_{e} \mathbf{\sigma} .
+$$ {#eq-lighting-matrix}
+
+We call the matrix $\mathbf{\Lambda}_{e}$ that relates these two vectors the  *lighting* matrix. The entries of this matrix depend upon the illumination, $\mathbf{e}$. The $ij^{th}$ entry of the lighting matrix is
+
+$$
+\sum_{\lambda} \left ( \sum_k w_{k} E_{k}(\lambda) \right ) R_{i}(\lambda) S_{j}(\lambda) .
+$$ {#eq-lighting-matrix-entry}
+
+We can compute two lighting matrices (@eq-lighting-matrix) from the spectral curves we have been using as examples. For one lighting matrix I used the mean daylight spectral power distribution, and for the other I used the spectral power distribution of a tungsten bulb. I used the linear model of the Macbeth ColorChecker for the surface basis functions and the Stockman and MacLeod cone absorption functions (see the appendix to @sec-wavelength-encoding). The lighting matrix for the blue sky illumination is
+
+$$
+\left (
+\begin{array}{ccc}
+591.48& 223.05 & -643.05 \\
+477.62 & 376.93 & -564.48 \\
+267.61 & 487.46 & 350.39 \\
+\end{array}
+\right )
+$$ 
+
+and the lighting matrix for the tungsten bulb is
+
+$$
+\left (
+\begin{array}{ccc}
+593.45 & 168.37 & -646.71 \\
+445.79 & 312.79 & -564.33 \\
+152.46 & 278.51 & 185.47 \\
+\end{array}
+\right ) .
+$$ 
+
+Notice that the largest differences between the matrices are in the third row. This is the row that describes the effect of each surface coefficient on the $S$ cone absorptions. The blue sky lighting matrix contains much larger values than matrix for the tungsten bulb. This makes sense because that is the region of the spectrum where these two illuminant spectral power distributions differ the most (see @fig-color-signal).
+
+Imagine, now the following way in which the visual system might compensate for illumination changes. Suppose that the cortical analysis of color is based upon the assumption that the illumination is always that of a blue sky. When the illumination is different from the blue sky, the retina must try to provide a neural signal that is similar to the one that would have been observed under a blue sky. What computation does the retina need to perform in order to transform the cone absorptions obtained under the tungsten bulb illuminant into the cone absorption that would have occurred under the blue sky?
+
+The cone absorptions from a single surface under the two illuminants can be written as
+
+$$
+\begin{aligned}
+\mathbf{r} & \approx \mathbf{\Lambda}_{e} \mathbf{\sigma}, \text{and} \\
+\mathbf{r}^\prime & \approx \mathbf{\Lambda}_{e'} \mathbf{\sigma} .
+\end{aligned}
+$$ 
+
+By inverting the lighting matrices and recombining terms, we find that the cone absorptions under the two illuminants should be related linearly as,
+
+$$
+\mathbf{r} \approx \mathbf{\Lambda}_{e} ~ {\mathbf{\Lambda}^{-1}_{e'}} ~ \mathbf{r}^\prime .
+$$ {#eq-linear-relation-cone-absorptions}
+
+Hence, we can transform the cone absorptions from a surface illuminated by the tungsten bulb into the cone absorptions of the same surface illuminated by the blue sky by the following:
+
+$$
+\mathbf{r} = \left (
+\begin{array}{ccc}
+0.8119 & 0.2271 & 0.0550 \\
+-0.0803 & 1.1344 & 0.1282 \\
+0.0429 & -0.0755 & 1.8091 \\
+\end{array}
+\right ) \mathbf{r}^\prime.
+$$ {#eq-tungsten-to-blue-sky}
+
+The retina can compensate for the illumination change by linearly transforming the observed cone absorptions, $\mathbf{r}^\prime$, into a new signal, $\mathbf{r}$.
+
+Now, what does it mean for the retina to compute a linear transformation? The linear transformation consists of a simple series of multiplications and additions. For example, consider the third row of the matrix in @eq-tungsten-to-blue-sky. This row defines how the new $S$ cone absorptions should be computed from the observed absorptions. When we write this transformation as a single linear equation we see that the observed and transformed signals are related as
+
+$$
+S = .0429~L^\prime + -0.0755~M^\prime + 1.8091~S^\prime .
+$$ {#eq-blue-transform}
+
+The transformed $S$ cone absorption is mainly a scaled version of the observed absorptions. Because the tungsten bulb emits much less energy in the short-wavelength part of the spectrum, the scale factor is larger than one. In addition, to be absolutely precise, we should add in a small amount of the observed $L$ cone signal and subtract out a small amount of the observed $M$ cone signal. But, these contributions are relatively small compared to the contribution from the $S$ cones. In general, for each of the cone types, the largest contributions to the transformed signal are scaled copies of the same signal type.
+
+In this matrix, and in many practical examples, the only additive term that is not negligible is the contribution of the $M$ cone response to the transformed $L$ signal. As a rough rule, because the diagonal terms are much larger than the off-diagonal terms, we can obtain good first order approximation to the proper transformation by simply scaling the the observed cone absorptions (e.g., @foster1994).
+
+Compensating for the illumination change by a purely diagonal scaling of the cone absorptions is called *von Kries Coefficient Law*. The correction is not as precise as the best linear correction, but it frequently provides a good approximation. And, as we shall see in the next section, the von Kries Coefficient Law describes certain aspects of human color appearance measurements as well.
+
+## Color Constancy: Experiments
+
+> In woven and embroidered stuffs the appearance of colors is profoundly affected by their juxtaposition with one another (purple, for instance, appears different on white than on black wool), and also by differences of illumination. Thus embroiderers say that they often make mistakes in their colors when they work by lamplight, and use the wrong ones. \[Aristotle, c. 350 B.C.E. Meteorologica\].
+
+### Asymmetric Color-matching Experiments
+
+To formulate some ideas about how the visual pathways compute color appearance, we adopted the view that color appearance is a psychological estimate of the surface reflectance function (body reflectance). By thinking about computational methods of estimating body reflectance, we have discovered how the cone absorptions from an object vary with illuminant changes. Finally, we have seen that it is possible compensate approximately for these changes by a applying linear transformation to the cone absorptions.
+
+From the computational analysis, we have discovered a good principle to examine in experimental studies of color appearance: What is the relationship between the cone absorptions of objects that appear the same under different illuminants? The computational analysis suggests that the cone absorptions of lights with the same color appearance, but seen under different illuminants, are related by a linear transformation.
+
+![**Color Plate 5.** Two experimental methods for measuring asymmetric color-matches. (a) In a memory matching method, the observer sees a target under one illumination, remembers it, and then identifies a matching target after adapting to a second illumination. (b) In a haploscopic experiment the observer adapts the two eyes separately and makes a simultaneous appearance match. The basic findings from these two types of experiments are the same.](images/matchingMethods.png){width="70%"}
+
+It is up to the experimentalist, then, to find an experimental method to use for measuring the cone absorptions that correspond to the same color appearance when seen in different viewing contexts. Color Plate 5 illustrates two methods of making such measurements. Panel (a) shows a  *memory matching* method. In this method, the subject studies the color of a target that is presented under one illumination source and then must select a target that looks the same under a second illumination source. These measurements identify the stimuli, and thus the cone absorptions, of targets that appear the same under the two illuminants. The drawback of the method is that making such matches is very time-consuming because the subject must adapt to the two illumination sources completely, a process which can take two minutes or more.
+
+Color Plate 5 (b) shows a second method called  *dichoptic matching*. In this experiment the observer views the two scenes simultaneously in different eyes. One eye is exposed to a large neutral surface illuminated by, say, a daylight lamp. The other eye is exposed to an equivalent large neutral surface illuminated by, say, a tungsten lamp. These surfaces define a background stimulus that is different to each eye. The two backgrounds fuse in appearance, and appear as a single large background. To establish the asymmetric color-matches, the experimenter places a test object on top of the standard background seen by one eye. The observer selects a matching object from an array of choices seen by the second eye. The color appearance mapping is defined by measuring the cone absorptions of the  *test* and  *matching* objects, usually small colored papers, seen under their respective illuminants.
+
+The dichoptic method has the advantage that the matches may be set quickly, avoiding the tedious delays required for visual adaptation in memory matches. The method has the disadvantage of making the assumption that adaptation occurs independently, prior to binocular combination[^dichoptic-method]. 
+
+[^dichoptic-method]: This binocular method makes sense if one accepts the view that the adjustment for the illumination is mediated primarily before the signals from the two eyes are combined, in the superficial layers of area V1. The coherence of the experimental method can be tested psychophysically by examining transitivity. The observer matches a test on backgrounds L and $R_1$, and then on backgrounds L and $R_2$. The experimenter then places $R_1$ in the left eye and $R_2$ in the right eye and verifies that the matching lights match one another. There is no guarantee, of course, that these measurements are governed by precisely the same visual mechanisms that govern adaptation under normal viewing conditions.
+
+The experimental methods illustrated in Color Plate 5 generalize conventional usual color-matching experiment. These methods are called *asymmetric* color-matching because, unlike conventional color-matching, in these experiments the matches are set between stimuli presented in different contexts. As we have already seen, because color appearance discounts estimated changes of the illumination, matches set in the asymmetric color-matching experiment are **not** cone absorption matches. Rather, the observer is establishing a match at a more central site following the correction for the properties of the scene.
+
+The asymmetric color-matching experiment is directly relevant to the questions raised by our computational analysis of color appearance. Moreover, the experiment has a central place in the study of color appearance simply for practical experimental reasons. There are many general questions we might ask about color appearance. For example, we would like to be able to measure which colors are similar to one another; which colors have a common hue, saturation or brightness, and so forth. If we had to study these questions separately under each illuminant, the task would be overwhelming. By beginning with the asymmetric color-matching experiment, we can divide color appearance measurements into two parts and reduce our experimental burden. The asymmetric matches define a mapping between the cone absorptions of objects with the same color appearance seen under different illuminants. From these experiments, we learn how to convert a target seen under one illuminant into an equivalent target under a standard illuminant. This transformations saves a great deal of experimental effort since we can focus most of our questions about color appearance on studies using just one standard illuminant.
+
+### The linearity of asymmetric color-matches
+
+We have seen measurements of superposition to test linearity throughout this volume. Tests of linearity in asymmetric color matching appear very early in the color appearance literature. When @vonkries1905 introduced the coefficient law, he listed several testable empirical results. Among the predictions of the basic law he listed the basic test of linearity, namely
+
+> … there exist several very simple laws, which also appear to be specially adapted for experimental test. Namely, it must be that if $L_1$ on one retinal region causes the same result as $L_2$ on another, and similarly $M_1$, working on the first, causes the same effect as $M_2$ on the other, in every case also $L_1 + M_1$ must have here the same effect as $L_2 + M_2$ there.  
+> … The extended studies of Wirth (1900-1903) show that the law can be considered as nearly valid for reacting lights that are not too weak.
+
+Evidently, von Kries not only raised the question of linearity of asymmetric color-matching, but by 1905 he considered it answered affirmatively.
+
+While von Kries considered the question settled, not everyone was persuaded. Over the years, there have been many separate experimental tests of linearity in the asymmetric color-matching experiment. I am particularly impressed by a series of papers by Elaine Wassef, working first in London and then at the University College for Girls in Cairo. Wassef wrote at roughly the same time E. H. Land was working at Polaroid. In her papers, she reports on new studies and a review of the experimental test of asymmetric color-matching linearity[^wassef-kodak]. Like von Kries, Wassef asked whether one could predict asymmetric color-matches using the principle of superposition. And, like von Kries, she concluded that the weight of the experimental evidence supported the linearity hypothesis: When the illumination changes, the cone absorptions of the test and matching lights are related by a linear transformation.
+
+[^wassef-kodak]: Interestingly, one of the largest sets of data she reviewed was a series of experiments performed at the Kodak research laboratories, Polaroid’s competitor. (@wassef1952-binocularmatching, @wassef1958, @wassef1959)
+
+I have replotted some of Wassef’s data to illustrate the nature of the measurements and the size of the effect (@fig-wassef-shift). The illuminant spectral power distributions she used in her dichoptic matching experiment are plotted in @fig-wassef-shift (a). To plot her results, I have converted Wassef’s reported measurements into one absorptions. I have plotted the cone absorptions of the surfaces that matched in color appearance when seen under the two illuminants. @fig-wassef-shift (b) shows the $L$ and $M$ cone absorptions of the surfaces under the two illuminants, and @@fig-wassef-shift (c) shows the $L$ and $S$ cone absorptions. The cone absorptions for objects seen under a tungsten illuminant are plotted as open circles; the cone absorptions for objects seen under a blue sky illumination are plotted as filled squares. The size of the effect is quite substantial. Two sets of points show the cone absorptions of targets that look identical in their respective contexts. Yet, the cone absorption values from the surfaces under these illuminants don’t even overlap in their values.
+
+![Data from an asymmetric color-matching experiment using the dichoptic method. The test and matching lights are viewed in different contexts and appear identical. But, the two lights have very different cone absorption rates. Hence, appearance matches made across an illuminant change are not cone absorption matches. The spectral power distributions of two illuminants, one approximating mean daylight and the other a tungsten illuminant are shown in panel a. Cone absorptions for targets that appear identical to one another in these two contexts are shown as scatterplots in (b) for the (L, M) cones, and (c) for the (L, S) cones. The points plotted as open circles are cone absorptions for tests seen under the first illuminant; matches seen under the second illuminant are plotted as filled squares. The stimuli represented by the absorptions have the same color appearance, but they correspond to very different cone absorptions (Source: @wassef1959).](images/wassefShift.png){width="70%" #fig-wassef-shift}
+
+Taken together, the color matching and asymmetric color-matching show the following. When the objects are in the same context, equating the cone absorptions equate appearance. But, when the two objects are seen under different illuminants, equating cone absorptions does not equate for appearance. Within each context the observer uses the pattern of cone absorptions to infer color appearance, probably by comparing the relative cone absorption rates. Color appearance is an interpretation of the physical properties of the objects in the image.
+
+### Von Kries Coefficient Law: Experiments
+
+Through his Coefficient Law, J. Von Kries sought to explain these asymmetric color matches by a simple physiological mechanism. He suggested that the visual pathways adjust to the illumination by scaling the signals from the individual cone classes. This hypothesis has a simple experimental prediction: If we plot, say, the $S$ cone absorptions of the test and match surfaces on a single graph, the data should fall along a straight line through the origin. The slope of the predicted line is the scale factor for the illuminant change.
+
+Neither von Kries or Wassef knew the photopigment spectral curves; hence, they could not create the graph they needed to test the von Kries Coefficient Law directly. But, using an indirect measurement based on estimation of the eigenvectors of the measured linear transformations, @burnham1957-predictioncolorappearance and @wassef1959 rejected von Kries scaling. Despite this rejection, von Kries’ hypothesis continued to be used widely to explain how color appearance varies with illumination. Among theorists, for example, E. H. Land relied entirely on von Kries scaling as the foundation of his retinex theory (@brewer1954; @brainard1986-analysisretinextheory; @land1986-recentretinex, @land1986-retinexalt).
+
+![The cone absorptions of the test and match surfaces fall close to a straight line. These appearance matches were made by presenting the test and match objects to different eyes. The illuminant for one eye was similar to a tungsten bulb and the other eye was blue skylight. The Von Kries coefficient law predicts that the line should pass through the origin of the graph; while not precisely correct, the rule is a helpful starting point (Source: @wassef1959](images/wassefVK.png){width="70%" #fig-wassef-vk}
+
+Today, we have good estimates of the spectral sensitivities of the cone photopigments and it is possible convert Wassef’s data into cone absorptions and analyze von Kries coefficient law directly. @fig-wassef-vk shows a graphical evaluation of von Kries hypothesis for the data in @fig-wassef-shift. Each panel plots the cone absorptions of corresponding test and match targets for one of the three cone types. As predicted by Von Kries, the cone absorptions of the test and match targets fall along a line. Moreover, the slope of the lines relating the cone absorptions also make sense. The slope is largest for the $S$ cones where illuminant change has its largest effect. The data are not perfectly consistent with von Kries scaling, however, because the lines through the data do not pass through the origin, as required by the theory[^vk-origin-failure].
+
+[^vk-origin-failure]: Indeed, this is equally a failure of the simple linearity that Wassef uses to summarize the data, and more in line with some of the conclusions that @burnham1957-predictioncolorappearance drew about their data.
+
+There is an emerging consensus in many branches of color science that the von Kries coefficient law explains much about how color appearance depends on the illumination. J. von Kries simple hypothesis is important partly because of its practical utility, and partly because of its implications for the representation of color appearance within the brain. The hypothesis explains the major adjustments for color constancy to in terms of the photoreceptor signal, and the photoreceptor signals combine within the retina (@sec-wavelength-encoding). Hence, von Kries hypothesis implies that either (a) the main adjustment takes place very early, or (b) the photoreceptor signals can be separated in the central representation. This topic will come up again later, when we review some of the phenomena concerning color appearance in the central nervous system.
+
+
+### How Color Constant Are We?
+
+Finally, let’s consider how well the visual pathways correct for illumination change. On this point there is some consensus: The asymmetric color-matches do not compensate completely for the illumination change. The visual pathways compensate for only part of the illuminant change (@helson1938; @judd1940).
+
+Brainard and Wandell (@brainard1991-bilinearmodel, @brainard1992-asymmetriccolormatching) described this phenomenon using results from a recent experiment. We used an experimental apparatus consisting of simulated surfaces and illuminants and an asymmetric color-matching experiment based on memory-matches. We presented subjects with images of simulated colored papers, rendered under a diffuse daylight illuminant, on a CRT display. The subjects memorized the color appearance of one of the surfaces. Next, we changed the the simulated illuminant, slowly over a period of two minutes, giving subjects a chance to adapt to the new illuminant. Then, the subject adjusted the appearance of a simulated surface to match the color appearance of the surface they had memorized.
+
+![A comparison of the illuminant change and the subjective illuminant change, as inferred from an asymmetric matching experiment. The simulated illuminant change and subjective illuminant changes are shown by the filled squares and open squares respectively. Subjects behave as if the illuminant change is about half of the true illuminant change (Source: @brainard1991-bilinearmodel).](images/equivIll.png){width="70%" #fig-illuminant-change-vs-subjective}
+
+We can represent the difference between the two simulated illuminants by plotting the illuminant change. The filled symbols in @fig-illuminant-change-vs-subjective show the illuminant changes in two experimental conditions. The top panel shows an illuminant change that increased the short-wavelength light and decreased the long-wavelength light. The bottom panel shows an illuminant change that increased the energy at all wavelengths.
+
+Suppose that subjects equated the perceived surface reflectance, but that the illuminant change they estimated was different from the true illuminant change. In that case, we can use the observed matches to infer the the subjects’ illuminant estimates, which are plotted as the open symbols in two panels of @fig-illuminant-change-vs-subjective. Subjects are acting as if the illuminant change they are correcting for is similar to the simulated illuminant change but, smaller. Subjects’ performance is conservative, correcting for about half the true illuminant change.
+
+Brainard and Wandell's experiments were conducted on display monitors, and the images were far less interesting than full natural scenes (@brainard1991-bilinearmodel @brainard1992-asymmetriccolormatching). It is possible that given additional clues, subjects may come closer to true illuminant estimation. But, in most laboratory experiments to date, subjects do not compensate fully for changes in the illumination. When the illumination changes color appearance changes less than it might if color was defined by the cone absorptions; but, it changes more than it would if the nervous system used the best possible computational algorithms. The performance of biological systems often seems to fall in this regime. Very poor behavior is forced to change towards a better solution. But, the evolutionary pressure does not force our nervous system to solve estimation problems perfectly. When the marginal return for additional improvements is not great, pretty well seems to do.
+
+## The Perceptual Organization of Color
+
+In this section, I will review some of the methods for describing the perceptual organization of color appearance. Specifically, we will review the relationship between different colors and some of the systems for describing color appearance. In addition to the implications this organization has for understanding the neural representation of color appearance, there are also many practical needs for descriptive systems of color appearance. Artists and designers need ways to identify and specify the color appearance of a design. Further, they need ways of organizing colors and finding interesting color harmonies. Engineers need to assess the appearance and discriminability of colors used to highway signs and to label parts, packaging, and software icons.
+
+Language provides us with a useful start at organizing color appearance. Spoken English in the U.S. consists of eleven color terms that are widely and consistently used[^basic-color-terms]. While the number of terms used differs across cultures, there is a remarkable hierarchical organization to the order in which color names appear. Cultures with a small number of basic color names always include white, black and red. Color terms such as purple and pink enter later (@berlinkay1969-basiccolorterms; @boynton1987-basiccolors).
+
+[^basic-color-terms]: White, black, red, green, yellow, blue, brown, purple, pink, orange, gray.
+
+Color names are a coarse description of color experience. Moreover, names list, but do not organize, color experience. Thus, they are not helpful when we consider issues such as color similarity or color harmony. A more complete organization of color experience is based on the three perceptual attributes called:  *hue, saturation*, and  *brightness*. Hue is the attribute that permits a color to be classified as red, yellow, green, and so forth. Saturation describes a color’s similarity to a neutral gray or white. A gray object with a small reddish tint has little saturation, while a red object, with little white or gray, is very saturated. An object’s brightness tells us about the relative ordering of the object on the dark to light scale.
+
+Based on psychological studies of the similarity of colored patches with many different hues, saturations and brightnesses, the artist Albert Munsell created a book of colored samples. The appearance of the samples is organized with respect to hue, saturation and brightness. Furthermore, the colored samples are spaced in equal perceptual steps. Munsell organized the samples within his book in terms using a cylindrical organization as shown in @fig-munsell-book. The  *Munsell Book of Colors* is published and used as a reference in many design and engineering applications.
+
+![The Munsell Book of Colors is a collection of colored samples organized in terms of three perceptual attributes of color. The samples are arranged using a cylindrical geometry with respect to these attributes. The main axis of the cylinder codes lightness; the distance from the center of the cylinder to the edge codes the Munsell property called value (saturation); the position around the circumference of the cylinder codes the Munsell property called chroma (hue).](images/munsell.png){width="70%" #fig-munsell-book}
+
+Perceptually, both saturation and brightness can be arranged using a linear ordering from small to large; hue, however, does not follow a linear ordering. So, Munsell organized lightness along the main axis of the cylinder, and saturation as the distance from the center of the cylinder to the edge. The circular hue dimension was mapped around the circumference of the cylinder. The Munsell Book of Colors notation is widely used in industry and science.
+
+Munsell developed a special notation to refer to each of the samples in his book. To distinguish his notation from the colloquial usage, Munsell substituted the word  *value* for lightness and the word  *chroma* for saturation. He retained the word hue, apparently finding no adequate substitute. In the Munsell notation, the words hue, chroma and value have specific and technical meanings. Each colored paper is described using a three-part syntax of hue chroma/value. For example, 3YR 5/3 refers to a colored paper with the hue called 3YR, the chroma level 5, and the value level 3.
+
+The Munsell Book was created before the CIE color standards described in @sec-wavelength-encoding. With the advent of the CIE measurement standard, based on the color-matching functions, there was a need for a method to convert the Munsell representation into the CIE standard representation. A committee of the Optical Society, led by Nickerson, Newhall and Evans, measured the CIE values of the Munsell samples in the published book, and the Munsell Corporation agreed to produce the colored samples to measurement standards defined by the Optical Society of America. The new standard for the Munsell Book, based on CIE values rather than pigment formulae, is called the  *Munsell Renotation System*. Calibration tables that describe the color measurements of the Munsell Book samples are tabulated, for example, @wyszeckicolorscienceconcepts1982.
+
+### Opponent-Colors
+
+One of the most remarkable and important insights about color appearance is the concept of  *opponent-colors*, first described by E. Hering (1878). Hering pointed out that there is a powerful psychological relationship between the different hues. While some pairs of hues can coexist in a single color sensation, others cannot. For example, orange is composed of red and yellow while cyan is composed of blue and green. But, we never experience a hue that is simultaneously red and green. Nor do we experience a color sensation that is simultaneously blue and yellow. These two hue pairs, red-green and blue-yellow, are called  *opponent-colors*.
+
+There is no physical reason why these two opponent-colors pairs must exist. That we never perceive red and green, while we easily perceive red and yellow, must be due to the neural representation of colors. Hering argued that opponent-colors exist because the sensations of red and green are encoded in the visual pathways by a single pathway. The excitation of the pathway causes us to perceive one of the opponent-colors; inhibition of the pathway causes us to perceive the other.
+
+Hering made his point forcefully, and extended his theory to explain various other aspects of color appearance, as well. But, his insights were not followed by a set of quantitative studies. Perhaps for this reason, his ideas languished while the colorimetrists used color-matching to set standards for all of modern technology. This is not to say Hering’s work was forgotten. Colorimetrists who thought about color appearance invariably turned to Hering’s insights. In a well-known review article, the eminent scientist D. B. Judd, wrote
+
+> The Hering (1905) theory of opponent colors has come to be fairly well accepted as the most likely description of color processes in the optic nerve and cortex. Thus this theory reappears in the final stage in the stage theories of von Kries-Schrodinger (von Kries (1905); Schrodinger, 1925), Adams (1923, 1942) and Muller (1924, 1930). By far the most completely worked out of these stage theories is that of Muller. … There is slight chance that all of the conjectures are correct, but, even if some of the solutions proposed by Muller prove to be unacceptable, he has nevertheless made a start toward the solution of important problems that will eventually have to be faced by other theorists. \[(@judd1951a-visualstimulus, pg. 836)].
+
+### Hue Cancellation
+
+Several experimental observations, beginning in the mid-1950s, catapulted opponent-colors theory from a special-purpose model, known only to to color specialists, to a central idea in vision science.
+
+The first was a behavioral experiment that defined a procedure for measuring opponent-colors, the  *hue cancellation* experiment. The hue cancellation experiment was developed in a series of papers by Jameson and Hurvich (@jamesonhurvich1955; @hurvichjameson1957). By providing a method of quantifying the opponent-colors insight, Hurvich and Jameson made the idea accessible to other scientists, opening a major line of inquiry.
+
+In the hue cancellation experiment, the observer is asked to judge whether a test light appears to be, say, reddish or greenish. If the test light appears reddish, the subject adds green light in order to cancel precisely the red appearance of the test. If the light appears greenish, then the subject adds red light to cancel the green appearance. The added light is called the  *canceling* light. Once the red or green hue of the test light is canceled, the test plus canceling light appear yellow, blue, or gray. The same experiment can be performed to measure the blue-yellow opponent-colors pairing. In this case the subject is asked whether the test light appears blue or yellow, and the canceling lights also appear blue and yellow.
+
+@fig-hue-cancellation shows a set of hue cancellation measurements obtained by Jameson and Hurvich (@jamesonhurvich1955; @hurvichjameson1957). Subjects canceled the red-green or blue-yellow color appearance of a series of spectral lights. The vertical axis shows the relative intensity of the canceling lights, scaled so that when equal amounts of these lights are superimposed the result did not appear, say, red or green. The canceling lights always have positive intensity, but the intensity of the green and blue canceling lights are plotted as negative to permit you to distinguish which canceling light was used.
+
+![Measurements from the hue cancellation experiment. An observer is presented with a monochromatic test light. If the light appears red then some amount of a green canceling light is added to cancel the redness. If the light appears green, then a red canceling light is added to cancel the greenness. The horizontal axis of the graph measures the wavelength of the monochromatic test light, and the vertical axis measures the relative intensity of the canceling light. The entire curve represents the red-green appearance of all monochromatic lights. A similar procedure is used to measure blue-yellow. (Source: @hurvichjameson1957).](images/hueCancel.png){width="70%" #fig-hue-cancellation}
+
+To what extent can we generalize from red-green measurements using monochromatic lights to other lights? The answer to this question we must evaluate the linearity of the hue cancellation experiment. If the experiment is linear, we can use the data in @fig-hue-cancellation to predict whether any test light will appear red or green (blue-yellow) since all lights are the sum of monochromatic lights. If the experiment is not linear, then the data represent only an interesting collection of observations.
+
+To evaluate the linearity of the hue cancellation experiment, one can perform the following experiment: Suppose the test light $t_{1}$ appears neither red nor green, and the test light $t_{2}$ appears neither red nor green. Does the superposition of these two test lights, $t_{1} + t_{2}$, also appear neither red nor green? In general, the hue cancellation experiment fails this test of linearity. If we superimpose two lights, neither of which appears red or green, the result can appear red. If we add two lights neither of which appears blue or yellow, the result can appear yellow. Hence, the hue cancellation studies are a useful benchmark. But, we need a more complete (nonlinear) model before we can apply the hue cancellation data in @fig-lg-opponent-signals to predict the opponent-colors appearance of polychromatic test lights (@larimer1975-opponentprocessadditivity; @burns1984-abneyeffect; @ayama1989; @chichilnisky1995).
+
+### Opponent-colors measurements at threshold
+
+In addition to color appearance judgments, one can also demonstrate the presence of essential opponent-colors signals behaviorally by  *color test-mixture experiments*. These color experiments are direct analogues of the pattern-mixture experiments I reviewed in
+
+![Color test-mixture experiments demonstrate opponent-colors processes. The axes measure percent change in cone absorption rates for the L and M cones. The points show the cone absorptions rates at detection threshold measured using different colored test lights. The smooth curve is an ellipse fit through the data points. The mixture experiment shows that the L and M cone signals cancel one another, so that lights that excite a mixture of L and M cones are harder to see than lights that stimulate just one of these two cone class (Source: @wandell1987-synthesisanalysis).](images/opponentB.png){width="70%" #fig-opponent-mixture}
+
+The intersection of the ellipse with the horizontal axis, shows the relative $L$ cone absorption rate at detection threshold. The intersection of the ellipse with the vertical axis shows the relative $M$ cone absorption rate at detection threshold. The shape of the ellipse shows that signals that stimulate the $L$ and $M$ cones simultaneously are less visible than signals that stimulate only one or the other. At the most extreme points on the ellipse, the cone absorptions of the $L$ and $M$ cones are more than five times the rate required to detect a signal when each cone class is stimulated alone. The poor sensitivity to mixtures of signals from these two cone types shows that the signals must oppose one another. The cancellation of threshold level signals from the $L$ and $M$ cones, as well as between the $S$ cones and the other two classes (not shown), have been observed in many different laboratories and under many different experimental conditions (e.g., @boynton1964-huewavelength; @mollon1977-shortwave; @pugh1976, @pugh-mollon1979; @stromeyer1985-secondsite; @sternheim1979-flicker; @wandellpugh1980a, @wandellpugh1980b).
+
+In addition to demonstrating opponent-colors, these threshold data reveal a second interesting and surprising feature of visual encoding. Two neural signals that are visible when they are seen singly become invisible when they are superimposed. It seems odd that the visual system should be organized so that plainly visible signals can be made invisible. From the figure we can see that this is a powerful effect, suppressing a signal that is more than five times threshold. This observation tells us that in many operating conditions absolute sensitivity is not the dominant criterion. The visual pathways can sacrifice target visibility in order to achieve the goals of the opponent-colors encoding.
+
+### Opponent Signals in the Visual Pathways
+
+In addition to these two types of behavioral evidence, there is also considerable physiological evidence that demonstrates the existence of opponent-colors signals in the visual pathway.
+
+In a report that gained widespread attention, @svaetichin1956 measured the responses of three types of retinal neurons in a fish. He reported that the electrical responses were qualitatively consistent with Hering’s notion of the opponent-colors representation. In two types of neurons, the electrical response increased to certain wavelengths of light and decreased in response to other wavelengths, paralleling the red-green and blue-yellow opponency in color perception[^horizontal-cells]. The electrical response of a third set of neurons increased to all wavelengths of light, as in a black-white representation. Shortly after Svaetichin’s report, De Valois and his colleagues established the existence of opponent-colors neurons in the lateral geniculate nucleus of nonhuman primates. There is now a substantial literature documenting the presence of color opponent-signals in the visual pathways (e.g. @devalois1958, @devalois1965; @devalois1966-lgn; @wiesel-hubel1966; @gouras1968; @derrington1984-chromaticmechanisms; @lennie1990-cortex).
+
+[^horizontal-cells]: At first, it was thought that these responses reflected the activity of the cones. Subsequent investigations showed that the responses were from horizontal cells (@svaetichin1958).
+
+The resemblance between the psychological organization of opponent-colors measured in the hue cancellation experiment and the neural opponent-signals suggests a link from the neural responses to the perceptual organization. To make a convincing argument for the specific connection between opponent-colors and a specific set of neural opponent-signals, we must identify a linking hypothesis. The hypothesis should tell us how we can predict appearance from the activity of cells, and conversely how we can predict the activity of these cells from appearance.
+
+A natural starting place is to suppose that there is a population of neurons whose members are excited when we perceive red and inhibited when we perceive green. From the linking hypothesis, we predict that neurons in this population will be unresponsive to lights that appear neither red nor green. There are two spectral regions that appear neither red nor green to human observers: one near 570nm and a second near 470nm. To forge a strong link between appearance and neural response, we can ask whether the candidate neural population fails to respond to lights that appear neither red nor green. Then, we might search for a second population that fails to respond to lights that appear neither blue nor yellow.
+
+This question was studied by DeValois and his collaborators in the lateral geniculate nucleus of the monkey. In their studies, DeValois and his colleagues studied the response of neurons to monochromatic stimuli presented on a zero background. They found a weak correspondence between the neutral points of individual neurons and the perceptual neutral points (@devalois1966-lgn). More recently, @derrington1984-chromaticmechanisms measured the responses of lateral geniculate neurons using contrast stimulus presented on a moderate, neutral background. They estimated the input to these neurons from the different cone classes and confirmed the basic observations made by DeValois and his colleagues.
+
+Derrington et al. reported that parvocellular neurons could be classified into two groups of neurons. One population of neurons receives opposing input from the $L$ and $M$ cones. The panel on the left of @fig-lg-opponent-signals shows my estimate of the spectral sensitivity of this group of parvocellular neurons. For these neurons wavelengths near 570nm are quite ineffective. But, there is a great deal of variation within this cell population making it difficult to be confident in the connection. Moreover, these neurons do not show a second zero-crossing near 470nm that would parallel the human opponent-colors judgments in the hue cancellation experiment.
+
+A second population of lateral geniculate neurons receives input from the $S$ cones and an opposing signal from a combination of the $L$ and $M$ cones. For these neurons, wavelengths near 500nm are quite ineffective. The panel on the right of @fig-lg-opponent-signals shows my estimate of the spectral sensitivity of this group of parvocellular neurons.
+
+
+![Opponent-signals measured in lateral geniculate nucleus neurons. These spectral response curves are inferred from the measured responses of lateral geniculate neurons to many different colored stimuli presented on a monitor. The vast majority of lateral geniculate neurons in the parvocellular layers can be divided into two groups based on their response to modulations colored lights. One group of neurons receives an opponent contribution from the L and M cones alone (panel a). The second group of neurons receives a signal of like sign from the L and M cones, and an opposing signal from the S cones (panel b) (Source: @derrington1984-chromaticmechanisms).](images/dkl.png){width="70%" #fig-lg-opponent-signals}
+
+There was less order in the opponent-color signals of the magnocellular neurons. Many magnocellular units seemed to be driven by a difference between the $L$ and $M$ cones. A few parvocellular units and a few magnocellular units were driven by a positive sum of the two signals from these two cone types.
+
+The spectral responses of these neural populations suggest that there is only a loose connection between the signals coded by these neurons and the perceptual coding into opponent-hues; it is unlikely that the excitation and inhibition causes our perception of red-green and blue-yellow. One difficulty is the imperfect correspondence between the neural responses and the hue cancellation measurements. The second difficulty is that there is no substantial population of neurons representing a white-black signal. This is a very important perceptual dimension which must be carried in the lateral geniculate nucleus signals. Yet, no clearly identified group of neurons can be assigned this role[^lgn-white-black].
+
+[^lgn-white-black]: Some authors have suggested that a single group of lateral geniculate neurons codes a white-black sensation for high spatial frequency patterns and a red-green sensation for low spatial frequency patterns. While this is an interesting hypothesis, notice that the authors have abandoned the idea that there is a specific color sensation associated with the response of lateral geniculate neurons. Instead, they suppose that the perceived hue depends on the pattern of neural activation (Ingling and Martinez, 1984; @derrington1984-chromaticmechanisms).
+
+### Decorrelation of the Cone Absorptions
+
+opponent-signals measured in the lateral geniculate nucleus probably represent a code used by the visual pathways because of its properties in communicating information from the retina to the brain. The psychological opponent-colors coding may be a consequence of the coding strategy used to communicate information from the retina to the cortex. What reason might there be for using an opponent-signals coding?
+
+One reason to use an opponent-signal representation has to do with the efficiency of the visual encoding. Because of the overlap of the $L$ and $M$ cone spectral sensitivities, the absorption rates of these two cone types are highly correlated. This correlation represents an inefficiency in the visual coding of spectral information. As I described in @sec-multiresolution, decorrelating the signals can improve the efficiency of the neural representation.
+
+We can illustrate this principle by working an example, parallel to the one in @sec-multiresolution. Consider the cone absorptions to a set of surfaces. Because of the overlap in spectral sensitivities, the cone absorptions between, say, the $L$ and $M$ cones will be correlated. To remove the correlation, we create a new representation of the signals consisting of the $L$ cone absorptions alone, and a weighted combination of the the $L$, $M$, and $S$ cone absorptions. We will choose the weighted combination of signals so that the new signal is independent of the $L$ cone absorptions. As we reviewed in the earlier chapter, by decorrelating the cone absorptions before they travel to the brain, we make effective use of the dynamic range of the neurons transmitting the information (@buchsbaum-gottschalk1984).
+
+The graphs in @fig-cone-correlogram (a,b) show examples of the correlation of the cone absorptions for a particular set of surfaces and illuminant. These plots represent the cone absorptions from light reflected by a Macbeth ColorChecker viewed under mean daylight illumination. The correlations shown in these two plots are typical of natural images: the $L$ and $M$ cone absorptions are highly correlated (panel a); the $M$ and $S$ cone absorptions are also correlated (panel b).
+
+![Absorptions in the three cone classes are highly correlated. The correlation between cone absorptions can be measured using correlograms. In this figure, correlograms are shown of the cone absorptions from the surfaces in the Macbeth ColorChecker illuminated by average daylight. (a) A correlogram of the L and M cone absorptions. (b) A correlogram of the L cone absorptions plotted versus a weighted sum of the cone absorptions that is decorrelated from the L cone absorptions, -.59L + 0.8M- .12S.]( images/decor.png){width="70%" #fig-cone-correlogram}
+
+As described in @sec-multiresolution, we decorrelate the signals derived from the cone absorptions by forming new signals that are weighted combinations of the cone absorptions. There are many linear transforms of the cone absorptions that could serve to decorrelate these absorptions. One such transformation is represented by the following three linear equations[^decor-svd],
+
+% This is the matrix u in the decor sensor analysis in decorrelate.m
+
+$$
+\begin{aligned}
+O_1(\lambda) & = & 1.0L(\lambda) + 0.0M(\lambda) + 0.0S(\lambda) \\
+O_2(\lambda) & = & -0.59L(\lambda) + 0.80M(\lambda) + -0.12S(\lambda) \\
+O_3(\lambda) & = & -0.34L(\lambda) + -0.11M(\lambda) + 0.93S(\lambda)
+\end{aligned}
+$$ {#eq-decor-opponent-signals}
+
+or, written in matrix form,
+
+$$
+\left (
+    \begin{array}{ccc}
+        & O_1(\lambda) & \\
+        & O_2(\lambda) & \\
+        & O_3(\lambda) & \\
+    \end{array}
+\right )
+=
+\left (
+    \begin{array}{rrr}
+        1.00 & 0.00 & 0.00 \\
+        -0.59 & 0.80 & -0.12 \\
+        -0.34 & -0.11 & 0.93 \\
+    \end{array}
+\right )
+\left (
+    \begin{array}{ccc}
+        & L(\lambda) & \\
+        & M(\lambda) & \\
+        & S(\lambda) & \\
+    \end{array}
+\right )
+$$ {#eq-decor-opponent-matrix}
+
+The new signals, $O_i(\lambda)$, are related to the cone absorptions by a linear transformation. These three signals are decorrelated with respect to this particular collection of surfaces and illuminant.
+
+<a name="id1335888271"></a>
+
+$$
+\begin{aligned}
+O_1(\lambda) & = & 1.0L(\lambda) + 0.0M(\lambda) + 0.0S(\lambda) \\
+O_2(\lambda) & = & -0.59L(\lambda) + 0.80M(\lambda) + -0.12S(\lambda) \\
+O_3(\lambda) & = & -0.34L(\lambda) + -0.11M(\lambda) + 0.93S(\lambda)
+\end{aligned}
+$$
+{#eq-decor-opponent-signals}
+
+or, written in matrix form,
+
+$$
+\left (
+    \begin{array}{c}
+        O_1(\lambda) \\
+        O_2(\lambda) \\
+        O_3(\lambda) \\
+    \end{array}
+\right )
+=
+\left (
+    \begin{array}{rrr}
+        1.00 & 0.00 & 0.00 \\
+        -0.59 & 0.80 & -0.12 \\
+        -0.34 & -0.11 & 0.93 \\
+    \end{array}
+\right )
+\left (
+    \begin{array}{c}
+        L(\lambda) \\
+        M(\lambda) \\
+        S(\lambda) \\
+    \end{array}
+\right )
+$$ {#eq-decor-opponent-matrix}
+
+The new signals, $O_i(\lambda)$, are related to the cone absorptions by a linear transformation. These three signals are decorrelated with respect to this particular collection of surfaces and illuminant.
+
+
+The spectral sensitivity of the three decorrelated signals are shown in @fig-decor-sensors. The two opponent spectral sensitivities are reminiscent of the hue cancellation measurements and the opponent-signals measured in the lateral geniculate nucleus. One of the sensors has two zero-crossings, near 570nm and 470nm. A second sensor has one zero-crossing near 490nm. The third sensor has no zero-crossings, as required for a white-black pathway. The similarity between the decorrelated signals, the opponent-signals in the lateral geniculate nucleus, and the hue cancellation experiment suggest a purpose for opponent-colors organization. Opponent-colors may exist to decorrelate the cone absorptions and provide an efficient neural representation of color (@buchsbaum-gottschalk1984; @derrico1991-compmodel).
+
+![The spectral responsivity of a set of color sensors whose responses to the Macbeth ColorChecker under mean daylight are decorrelated. The spectral sensitivities of these sensors resemble the spectral sensitivities of lateral geniculate neurons and the color appearance judgments measured in the hue cancellation experiment.]( images/decorSensors.png){width="70%" #fig-decor-sensors}
+
+The opponent-colors representation is a universal property of human color appearance, just as the need for efficient coding is a simple and universal idea. We should expect to find a precise connection between opponent-colors appearance and neural organization in the central visual pathways. The hue cancellation experiment provides us with a behavioral method of quantifying opponent-colors organization. Hue cancellation measurements establish a standard for neurophysiologists to use when evaluating opponent-signals in the visual pathways as candidates for the opponent-colors representation. Opponent-colors organization is a simple and important idea; pursuing its neural basis will lead us to new ideas about the encoding of visual information.
+
+### Spatial Pattern and Color
+
+Color Plate 2 (Albers) and @fig-contrast-illusion show that the color appearance at a location depends on the local image contrast, that is, the relationship between the local cone absorptions and the mean image absorptions. The targets we used to demonstrate this dependence are very simple spatial patterns, squares or lines, with no internal spatial structure of their own. In this section, we will review how color appearance can also depend on the spatial structure, such as the texture or spatial frequency, of the target itself.
+
+Color Plate 6 shows two squarewaves composed of alternating blue and yellow bars. One squarewave is at a higher spatial frequency than the other. The average signal reflected from the regions containing the squarewaves is the same, that is, these are pure contrast modulations about a common mean field. If you examine the squarewaves from a close distance, you will see that bars in the squarewave patterns are drawn with the same ink. If you place this book a few meters away from you, say across the room, the color of the bars in the high spatial frequency pattern will appear different from the color of the bars in the low spatial frequency pattern. The bars in the high spatial frequency pattern will appear to be light and dark modulations about the green average. The bars in the low spatial frequency pattern will continue to look a distinct blue and yellow[^squarewave-motion].
+
+[^squarewave-motion]: You can also alter the relative color appearance of the patterns by moving the book rapidly up and down. You will see that the low frequency squarewave retains its appearance while the high frequency squarewave becomes a green blur.
+
+![**Color Plate 6.** Color appearance covaries with spatial pattern. The bars printed in these two squarewaves are the same. Yet, whether the bars appear the same or not depends on their spatial frequency which you can control by altering the viewing distance. Also, you can influence the color appearance in the two patterns by moving the book rapidly up and down while you look at the patterns. (Source: @poirson1993-colorpatterns).](images/squarewave.png){width="70%"}
+
+@poirson1993-colorpatterns used an asymmetric color-matching task to study how color appearance changes with spatial frequency of the squarewave pattern. Subjects viewed squarewave patterns whose bars were colored modulations about a neutral gray background; that is, the average of the two bars comprising the pattern was equal to the mean background level. Subjects adjusted the appearance of a 2 degree square patch to have the same color appearance as each of the bars in the pattern.
+
+Two qualitative observations stood out in this study. First, spatial patterns of moderate and high spatial frequency patterns (above 8 cpd) appear mainly light-dark, with little saturation. Thus, no matter what the relative cone absorptions of a high spatial frequency target, the target appeared to be a light dark variation about the mean level. Second, the spatially asymmetric color appearance matches are not photopigment matches. This can be deduced from the first observation: Because of axial chromatic aberration, moderate frequency squarewave contrast patterns (4 and 8 cpd) cannot stimulate the $S$ cones significantly. Yet, subjects match the bars in these high frequency patterns using a 2 deg patch with considerable $S$ cone contrast. The asymmetric color-matches are established at neural sites central to the photoreceptors.
+
+Poirson and I explained the asymmetric spatial color matches using a pattern-color separable model. In this model, we supposed that the color appearance of the target was determined by the response of three color mechanisms, and that the response of each mechanisms was separable with respect to pattern and color. We derived the spatial and spectral responsivities of these pathways from the observers color-matches; the estimated sensitivities are shown in @fig-pattern-color-sensitivity.
+
+Interestingly, the three color pathways that we derived from the asymmetric matching experiment correspond quite well to the opponent-color mechanisms derived from the hue cancellation experiment. One pathway is sensitive mainly to light-dark variation; this pathway has the best spatial resolution. The other two pathways are sensitive to red-green and blue-yellow variation. The blue-yellow pathway has the worst spatial resolution. @granger1973, @mullen1985,  @sekiguchi1993a, and @sekiguchi1993b made measurements that presupposed the existence of opponent-color pathways and estimated similar pattern sensitivities of the three mechanisms. Notice that the derivation of the opponent-colors representation in this experiment did not involve asking the observers any questions about the hue or saturation of the targets. The observers simply set color appearance matches; the opponent-colors mechanisms were needed to predict the color matches.
+
+![Estimates of the pattern-color separable sensitivity of pathways mediating color appearance. By measuring spatially asymmetric color-matches, it is possible to deduce the pattern and color sensitivity of three visual mechanisms that mediate color appearance judgments. The pattern and wavelength sensitivity of a light-dark, red-green, and blue-yellow mechanism derived from experimental measurements are shown here. (Source: @poirson1993-colorpatterns).](images/colorCsf.png){width="70%" #fig-pattern-color-sensitivity}
+
+One of the more striking aspects of opponent-colors representations is that the apparent spatial sharpness, or focus, of a color image depends mainly on the sharpness of the light-dark component the image; apparent sharpness depends very little on the spatial structure of the opponent-color image components. This is illustrated in the three images shown in Color Plate 7. These images were created by converting the original image, represented as three spatial patterns of cone absorptions, into three new images corresponding to a light-dark representation and two opponent-colors representations. The image in Color Plate 7 (a) shows the result of spatially blurring the light-dark component and then reconstructing the image; the result appears defocussed. The images in Color Plate 7 (b,c) show the result of applying the same spatial blurring to the red-green and blue-yellow opponent-colors representations and then reconstructing. These images look spatially focused, though their color appearance has been changed somewhat.
+
+![**Color Plate 7.** The apparent spatial sharpness (focus) of a color image depends mainly on the light-dark component of the image, not the opponent-colors components. A colored image was converted to a light-dark, red-green and blue-yellow representation. To create the three images, the light-dark (a), red-green (b), or blue-yellow (c) components were spatially blurred and then the image was reconstructed. The light-dark image looks defocused, but the same amount of blurring does not make the other two images look defocused. (Source: H. Hel-Or, personal communication).](images/compress.png){width="100%"}
+
+We can take advantage of the poor spatial resolution of the opponent-colors representations when we code color images for image storage and transmission. We can allocate much less information about the opponent-colors components of color images without changing the apparent spatial sharpness of the image. This property of human perception was important in shaping broadcast television standards and digital image compression algorithms. As a quantitative prediction, we should expect to find that neurons in the central visual pathways that represent light-dark information should be able to represent spatial information at much higher resolution than neurons that code opponent-colors information. Consequently, we should expect that the largest fraction of central neurons encode light-dark, rather than the other two opponent-colors signals.
+
+The differences between the light-dark encoding and the opponent-colors encoding are of great perceptual significance. Consequently, several authors have studied hypotheses based on the idea that opponent-colors signals and light-dark signals are found in separate areas of the brain. In the final section of this chapter, we will consider some of the evidence concerning the representation of color information in the visual cortex.
+
+## The Cortical Basis of Color Appearance
+
+### Clinical studies
+
+In 1974 J.C. Meadows reviewed case studies of fourteen patients who had lost their ability to see colors due to a brain injury. For some patients, the colors of objects appeared wrong. Other patients saw the world entirely in shades of gray. Yet, these patients still had good visual acuity.
+
+The syndrome Meadows reviewed, which I will call  *cerebral dyschromatopsia*, had been described in reports spanning a century[^cerebral-dyschromatopsia-terminology] (@zeki1990). But, the cases were rare, poor methods were used to study the patients, and the color loss was not well-dissociated from other visual deficits. Consequently, at the time Meadows wrote his review, several well-known investigators had expressed doubt about even the existence of cerebral dyschromatopsia[^cerebral-dyschromatopsia-skepticism](e.g. @teuber1960). By bringing together a number of new cases and studying them with much better methods, @critchley1965, @meadows1974, @zeki1990 and others (e.g. @greenlessell1977-cerebraldyschromatopsia; @damasio1980-centralachromatopsia; @victor1987-centraldyschromatopsia; @mollon1980; @heywood1987; @heywood1992) have removed any doubt about the existence and significance of the syndrome.
+
+[^cerebral-dyschromatopsia-terminology]: Some of the terms used to describe color loss vary between authors. The terms trichromacy, dichromacy and monochromacy are precise, referring to the number of primary lights necessary to complete the color matching experiment. Some authors use the phrase *cerebral achromatopsia*, meaning “without color vision”, to describe a loss of color vision while others use cerebral dyschromatopsia. I prefer the second term because in these cases insensitivity to hue is often not complete and because these patients still distinguish the colors white and black. When the behavioral evidence warrants it, one might append a modifier, such as *monochromatic* dyschromatopsia, to describe the the color loss more precisely.
+
+[^cerebral-dyschromatopsia-skepticism]: In his book and in a long article, Zeki argued that the skepticism concerning cerebral dyschromatopsia was caused by their acceptance of a profoundly misguided theory concerning the significance of visual area V1. I agree with Meadows’ gentler assessment; the early evidence in support of cerebral dyschromatopsia is spotty and poorly argued. There was room for some skepticism.
+
+### Congenital Monochromacy
+
+Usually, observers are dichromats or monochromats because they are missing one of the cone photopigments (see e.g. @alpern1974-worldwithoutcolor; @smith1972-spectralsensitivitycolorblind). There are also reports of congenital cone monochromacy of central origin. In a thorough and fascinating study, R. A. @weale1953 searched England for individuals who (a) could not tell color photographs from black and white, (b) were not photophobic, and (c) had good visual acuity. (Requirements (b) and (c) eliminated rod monochromats). Weale found three cone monochromats, that is individuals who could adjust the intensity of a single primary light to match the appearance of any other test light. Yet, based on direct measurements of the photopigment in the eye of one of the observers, as well as behavioral measurements, some of these cone monochromats were shown to have more than one cone photopigment (@weale1959; @gibson1962; see also @alpern1974-worldwithoutcolor). Hence, Weale’s subjects had a congenital dyschromatopsia caused by deficiencies central to the photopigments. At present, we know little more about them.
+
+### Regularities of the Cerebral Dyschromatopsia Syndrome
+
+When color loss arises from damage to the brain, the distortion of color appearance can take several forms. In some cases, patients report that colors have completely lost their saturation and hue and the world becomes gray. In other cases, color appearance may become desaturated. Some observer can perform some simple color discrimination tasks, but they report that the colors of familiar objects do not appear right. In many cases the loss is permanent, but there are also reports of transient dyschromatopsia. For example, @lawden1993-achromatopsia recently reported on the case of a woman who suffers from migraines. During the migraine attacks, her world becomes transiently colorless.
+
+The variability in the case studies suggest that there are a variety of mechanisms that may disturb color appearance. Across this variability, however, there are also some regularities. First, @meadows1974 observed that every patient with dyschromatopsia was blind in some portion of the upper visual field.
+
+Second, Meadows examined the reverse correlation: do patients with purely upper visual field losses tend to have cerebral dyschromatopsia? In the literature, he found twelve patients with a purely upper visual field loss, seven had dyschromatopsia. Of sixteen patients with a purely lower visual field loss, none had dyschromatopsia. In humans, the upper visual field is represented along the lower part of the calcarine sulcus (@sec-cortical-representation). The correlation between field loss and dyschromatopsia suggests that the damage that leads to dyschromatopsia is either near the lower portion of the calcarine or somewhere along the path traced out by the nerve fibers whose signal enters the lower portion of the calcarine cortex.
+
+Third, many of the patients suffer from a syndrome called  *prosopagnosia*, the inability to recognize familiar faces. Twelve of the fourteen patients described by Meadows had this syndrome. The patient with migraines also has transient prosopagnosia (@lawden1993-achromatopsia). The co-occurrence of dyschromatopsia and prosopagnosia suggests that the neural mechanisms necessary for recall of familiar faces and color are located close to one another or that they rely on the same visual signal.
+
+Based on his review of the literature, Meadows concluded that
+
+> The evidence on localization in cases of cerebral achromatopsia points to the importance of bilateral, inferiorly placed, posterior lesions of both cerebral hemispheres. (@meadows1974, p. 622) [^meadows-verrey]
+
+[^meadows-verrey]: As S. Zeki points out, Meadows’ conclusion echoes a disputed suggestion made a century earlier. While studying a patient who reported a loss of color vision, the French physician, Verrey concluded, 
+> Le centre du sense chromatique se trouverait dans la partie la plus inferieure du lobe occipital, probablement dans la partie posterieure des plis lingual et fusiforme. (Verry, 1888, cited in @zeki1990, p. 1722) *Translation: The center of the chromatic sense will be found in the inferior part of the occipital lobe, probably in the posterior part of the lingual and fusiform gyrus*.
+
+### Behavioral studies of patients with cerebral dyschromatopsia
+
+Patients with cerebral dyschromatopsia often fail to identify any of the test patterns on the Ishihara plates[^dyschromatopsia-ishihara-failure]. @mollon1980 reported on a patient who failed to identify the targets on the Ishihara plates (@sec-wavelength-encoding) at reading distance, but who could distinguish the targets when the plates were viewed from 2 meters. At the 2 meter viewing distance, the neutral areas separating the target and background are barely visible and the target and background appear contiguous. Twelve years after the original study, @heywood1992 replicated the finding on the same patient. They also showed that the patient can discriminate contiguous colors, but not colors separated by a gray stripe. Hence, in this patient cerebral dyschromatopsia involves color and pattern together (see also @victor1987-centraldyschromatopsia).
+
+[^dyschromatopsia-ishihara-failure]: But, @meadows1974 and @victor1987-centraldyschromatopsia describe patients who could read all of the plates.
+
+![Results of the Farnsworth test measured on a patient suffering cerebral dyschromatopsia. The patients error scores are high in all hue directions. This pattern of scores is not consistent with any of the usual pattern of errors observed by cone dichromats who are missing one of their cone photopigments (Source: @meadows1974).](images/meadows.png){width="70%" #fig-farnsworth-dyschromatopsia}
+
+Cerebral dyschromatopsics score quite poorly on the Farnsworth-Munsell hue test (see @sec-wavelength-encoding). The pattern of errors does not correspond to the errors made by any class of dichromat. The results of the test of one such patient is shown in @fig-farnsworth-dyschromatopsia. The errors are large in all directions though there is some hint that the errors may be somewhat larger in the blue and yellow portions of the hue circle.
+
+### How many cone types are functional?
+
+The patients’ errors on the Ishihara color plates and the Farnsworth-Munsell hue test are not consistent with a visual pigment loss. Nonetheless, we cannot tell from their performance on these tests whether the separate cone classes are functioning or whether the loss of color perception is due, in part, to cone dysfunction.
+
+Gibson (@gibson1962; @alpern1974-worldwithoutcolor; @mollon1980) developed a behavioral test to infer whether the patients with cerebral dyschromatopsia had more than a single class of functioning cones. The logic of their behavioral test is based on the fact the cone signals are scaled to correct for changes in the ambient lighting conditions. For example, in the presence of a long-wavelength background, the sensitivity of the $L$ cones is suppressed while the sensitivity of the $S$ cones remains unchanged.
+
+Now, suppose a subject has only a single type of cone. For this observer wavelength sensitivity is determined by the spectral sensitivity a single cone photopigment. Changes of the background illumination will not change the observer’s relative wavelength sensitivity. This is the situation for normal observers under scotopic viewing conditions when we see only through the rods. Under scotopic conditions wavelength sensitivity is determined by the rhodopsin photopigment; changing the background does not change in the relative sensitivity to different test wavelengths[^stiles-pi-mechanisms].
+
+[^stiles-pi-mechanisms]: In a beautiful series of experiments, W.S. Stiles (@stiles1939-directionalsensitivityretina; @stiles1959-colorvision; @stiles1978-mechanismscolorvision) studied how sensitivity varies as one changes the wavelength and intensity of a test and background lights. He developed a penetrating analysis of this experimental paradigm and identified candidate processes which he believed might describe photoreceptor adaptation. He referred to these processes as $\pi$-mechanisms, “p” for process and $\pi$ for p.
+
+
+If an individual has two functional cone classes, however, changes in the sensitivity of one cone class relative to the other will change the behavioral wavelength sensitivity. Hence, we can detect the presence of two cone classes by measuring wavelength sensitivity on two different backgrounds and noting a change in the observer’s relative wavelength sensitivity.
+
+@mollon1980 measured a cerebral dyschromatopsic’s relative wavelength sensitivity to test wavelengths (510nm and 640nm) on two different backgrounds (510nm and 650nm). I have replotted their data in @fig-mollon-dyschromatopsia. When the background changes, the relative test wavelength sensitivity changes showing that the subject has at least two functional cone classes, like Weale’s and Alpern’s congenital monochromats.
+
+![Experimental demonstration that a patient with cerebral dyschromatopsia has more than a single functioning cone class. (a) The patient’s threshold sensitivity was measured to two monochromatic test lights on two different backgrounds. The change in background illumination changed the patient’s relative wavelength sensitivity. (b) The results of performing the same experiment on a normal observer are shown. The results from the normal observer and the patient are quite similar (Source: @mollon1980).](images/mollon.png){width="70%" #fig-mollon-dyschromatopsia}
+
+Clinical studies of cerebral dyschromatopsia shows that central lesions can disturb color vision severely, while sparing many other aspects of visual performance. This clinical syndrome suggests that some of the neural mechanisms essential to the sensation of color appearance may be anatomically separate from the mechanisms required for other visual tasks, such as acuity, motion and depth perception. But, clinical lesions are not neat and orderly, and the syndrome of cerebral dyschromatopsia is quite varied. Alternative hypotheses, for example that neurons carrying color information are more susceptible to stroke damage than other neurons, are also consistent with the clinical observations (@mollon1980). To pursue the question of the neural representation of color information, we need to consider other forms of evidence concerning the localization of color appearance.
+
+### Physiological studies of color appearance
+
+Much of the agenda for modern research on the cortical representation of color appearance has been set by Zeki via a hypothesis he calls  *functional segregation* (@zeki1974, @zeki1993; [@sec-cortical-representation].
+
+Zeki argues that there is a direct correlation between the neural responses in cortical areas beyond V1 and various perceptual features, such as color, motion and form. This is not the only hypothesis we might entertain for the relationship between brain structures and perceptual function. An alternative view has been expressed by Livingstone and Hubel (@livingstonehubel1984a-anatomy, @livingstonehubel1984b-specificity; @hubel-livingstone1987-singleneurons) who argued that perceptual function can be localized to groups of neurons residing within single visual areas. Specifically, they have argued that differences in the density of the enzyme cytochrome oxidase within cell bodies serves as a clue to the localization of perceptual processing (see @sec-cortical-representation). This criterion for identifying neural segregation of function seems relevant in areas V1 and V2 since the the anatomical interconnections between these areas appear to respect the differences in cytochrome oxidase density (@burkhalter1989).
+
+Livingstone and Hubel’s hypothesis need not conflict with Zeki’s since information may be interwined within peripheral visual areas only to be segregated later. But, the presence of subdivisions within areas V1 and V2 raise the question of whether more detailed study might not reveal functional subdivisions within areas V4 and MT as well (see e.g. @born-tootell1992).
+
+The principle line of evidence used to support Zeki’s hypothesis of functional segregation is Barlow’s neuron doctrine: namely, that the receptive field of a neuron corresponds to the perceptual experience the animal will have when the neuron is excited (@sec-cortical-representation). Based on this doctrine, neurophysiologists frequently assume that neurons with spatially oriented receptive fields are responsible for the perception of form; neurons that are inhibited by some wavelengths and excited by others are responsible for opponent-color percepts; neurons with motion selective receptive fields are responsible for motion perception.
+
+Zeki’s suggestion that monkey area V4 is a color center and area MT is a motion center is based on differences in the receptive field properties of neurons in these two areas. The overwhelming majority of neurons in area MT show motion direction selectivity. Zeki reported that many neurons in area V4 reported an unusual wavelength selectivity (@zeki1974, @zeki1980, @zeki1990).
+
+As we have already seen, qualitative observations concerning receptive neural wavelength selectivity is not a firm basis to establish these neurons as being devoted mainly to color. For example, the vast majority of neurons in the lateral geniculate nucleus respond with opponent-signals, and these neurons have no orientation selectivity. Yet, we know that these neurons surely represent color, form and motion information.
+
+Moreover, the quality of the receptive field measurements in area V4 has not achieved the same level of precision as measurements in the retina or area V1. Because these cells appear to be highly nonlinear, there are no widely agreed upon methods for fully characterizing their responses. And, there have been disputes concerning even the qualitative properties of area V4 receptive fields. For example, @desimone1987-v4 report that many cells are selective to orientation, direction of motion, and spatial frequency. Like Zeki, these authors too accept the basic logic of the neuron doctrine. They conclude from the variation of receptive field properties that “V4 is not specialized to analyze one particular attribute of a stimulus; rather, V4 appears to process both spatial and spectral information in parallel.” They then develop an alternative notion of the role of area V4 and later visual areas.
+
+<!-- \\nocite{Desimone1985} -->
+
+### Reasoning about Cortex and Perception
+
+While hypotheses about the role of different cortical areas in perception are being debated, and experiments have begun, we are at quite an early stage in our understanding of cortical function. This should not be too surprising, after all the scientific investigation of the relationship between cortical responses and perception is a relatively new scientific endeavor, perhaps less than 100 years old. At this point in time we should expect some controversy and uncertainty regarding the status of early hypotheses. Much of the controversy stems from is due to our field’s inexperience in judging which experimental measurements will prove to be a reliable source of information and which will not.
+
+In thinking about what we have learned about cortical function, I find it helpful to consider these two questions:
+
+- What do we want to know about cortical function?
+- What are the logical underpinnings of the experimental methods we have available to determine the relationship between cortical responses and perception?
+
+When one discovers a new structure in the brain, it is almost impossible to refrain from asking: what does this part of the brain do? Once one poses this question, the answer is naturally formulated in terms of the  *localization* of perceptual function. Our mindset becomes one of asking what happens here, rather than asking what happens. Hypotheses concerning the localization of function are the usual way to begin a research program on brain function. Moreover, I think any fair reading of the historical literature will show that hypotheses about what functions are localized within the brain region serve the useful purpose of organizing early experiments and theory.
+
+On the other hand, in those portions of the visual pathways where our understanding is relatively mature, localization is rarely the central issue. We know that the retina is involved in visual function, and we know that some features of the retinal encoding are important for acuity, adaptation, wavelength encoding, and so forth. Our grasp of retinal function is sufficiently powerful so that we no longer frame questions about retinal function as a problem of localization. Instead, we pose problems in terms of the flow of information; we try to understand how information is represented and transformed within the retina.
+
+For example, we know that information about the stimulus wavelength is represented by the relative absorption rates of the three cone photopigments. The information is not localized in any simple anatomical sense: no single neuron contains all the necessary information, nor are the neurons that represent wavelength information grouped together. Perhaps, one might argue that acuity is localized since acuity is greatest in the fovea. Even so, acuity depends on image formation, proper spacing of the photoreceptors, and appropriate representation of the photoreceptors on the optic tract. Without all of these others components in place, the observer will not have good visual acuity. The important questions about visual acuity are questions about the nature of the information and how the information is encoded and transmitted. That the fovea is the region of highest acuity is important, but not a solution to the question of how we resolve fine detail.
+
+The most important questions about vision are those that Helmholtz posed: What are the principles that govern how the visual pathways make inferences from the visual image? How do we use image information to compute these perceptual inferences? We seek to understand these principles of behavior and neural representations with the same precision as we understand color-matching and the cone photopigments. We begin with spatial localization of brain function so that we can decide where to begin our work, not how to end it.
+
+Thus, as our understanding becomes more refined we no longer formulate hypotheses based on localization of function alone. Instead, we use quantitative methods to compare neural responses and and behavioral measurements. Mature areas of vision science relate perception and neural response by demonstrating correlations between the information in the neural signals and the computations applied to those signals. The information contained in the neural response, and the transformations applied to that information, is the essence of perception.
+
+## Summary and Conclusions
+
+Color appearance, like so much of vision, is an inference. Mainly, color is a perceptual representation of the surface reflectance of that object. There are two powerful obstacles that make it difficult to infer surface reflectance from the light incident at the eye. First, the reflected light confounds information about the surface and illuminant. Second, the human eye has only three types of cones to encode a spectral signal consisting of many different wavelengths.
+
+We began this chapter by asking what aspects of color imaging might make it feasible to perform this visual inference. Specifically, we studied how surface reflectance might be estimated from the light incident at the eye. We concluded that it is possible to draw accurate inferences about surface reflectance functions when the surface and illuminant spectral curves are regular functions that can be well-approximated by low dimensional linear models. When the input signals are constrained, it is possible to design simple algorithms that use the cone absorptions to estimate accurately surface reflectance.
+
+Next, we considered whether human judgments of color appearance share some of the properties used by algorithms that estimate surface reflectance. As a test of the correspondence between these abstract algorithms and human behavior, we reviewed how judgments of color appearance vary with changes in the illumination. Experimental results using the asymmetric color-matching method show that color appearance judgments of targets seen under different illuminants can be predicted by matches between scaled responses of the human cones. The scale factor depends on the difference in illumination. To a large degree, these results are consistent with the general principle we have observed many times: judgments of color appearance are described mainly by the local contrast of the cone signals, not their absolute level. By basing color appearance judgments on the scaled signal, which approximates the local cone contrast, color appearance correlates more closely with surface reflectance than with the light incident at the eye.
+
+Then, we turned to a more general review of the organizational principles of color appearance. There are two important means of organizing color experience. Many color representations, like the Munsell representation, emphasize the properties of hue, saturation and lightness. A second organizational theme is based on Hering’s observation that red-green and blue-yellow are opponent-colors pairs, and that we never experience these hues together in a single color. The opponent-colors organization has drawn considerable attention with the discovery that many neurons carry opponent-signals, increasing their response to some wavelengths of light and decreasing in response to others.
+
+In recent years, there have been many creative and interesting attempts to study the representation of color information in visual cortex. Most prominent amongst the hypotheses generated by this work is the notion that opponent-colors signals are spatially localized in the cortex. The evidence in support of this view comes from two types of experiments. First, clinical observations show that certain individuals lose their ability to perceive color although they still retina high visual acuity. Second, studies of the receptive fields of individual neurons suggest that opponent-colors signals are represented in spatially localized brain areas. These hypotheses are new and unproven. But, whether they are ultimately right or wrong, these hypotheses are the important opening steps in the modern scientific quest to understand the neural basis of conscious experience.

@@ -1,5 +1,5 @@
 ## Work in Progress
-*The 2nd edition is in its initial stages of development. The 1st edition is freel available on line as [Foundations of Vision](https://wandell.github.io/FOV-1995/)*
+*The 2nd edition is in its initial stages of development. The 1st edition is freely available on line as [Foundations of Vision](https://wandell.github.io/FOV-1995/)*
 
 *Suggestions of all kinds are welcome — whether it’s fixing small errors, raising bigger questions, or offering new perspectives. Please share comments through [GitHub Issues](https://github.com/wandell/FOV-2025/issues){target=_blank}. To make feedback easier to address, please point to the section you have in mind — by section number or a short snippet of text.*
 <!--

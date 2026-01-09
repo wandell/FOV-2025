@@ -1,22 +1,8 @@
----
-date: last-modified
----
-
 # Introduction to Image Encoding {.unnumbered}
 
-{{< include "includes/WIP-callout.qmd" >}}
+The first section of this book describes the initial encoding of light by the eye. [Chapter @sec-image-formation] reviews the image formation process, that is, the process by which light incident at the eye is focused onto the retina. [Chapter @sec-photoreceptor-mosaic] and [Chapter @sec-wavelength-encoding] review the basic properties of the conversion of light into a neural signal by the light-sensitive elements of the eye, the *photoreceptors*. This image encoding establishes essential limits on vision; the consequences of the image formation process can be found in many parts of the visual neural representation.
 
-The first section of this book describes the initial encoding of light by the eye.  [Chapter @sec-image-formation] reviews the image formation process, that is, the process by which light incident at the eye is focused onto the retina. [Chapters @sec-photoreceptor-mosaic] and [@sec-wavelength-encoding] review the basic properties of the conversion of light into a neural signal by the light-sensitive elements of the eye, the *photoreceptors*. This image encoding establishes essential limits on vision; the consequences of the image formation process can be found in many parts of the visual neural representation.
-
-The early chapters introduce and make use of the principles of linear systems. Linear methods are fundamental to vision science, as they are to much of science[^linear-systems]. The well-designed experiment provides a method of extrapolating beyond the experimental measurements, and linear systems methods provide such a method. A notion of how to extrapolate beyond the experimental measurements is necessary because we can rarely measure the response to every important stimulus. The significance of linear systems methods is that they permit us to evaluate whether we can use the response to a few stimuli to predict the responses to other stimuli.
-
-Since the linear methods apply well to image formation, it seems natural to introduce linear systems as a solution to the problem of measuring the properties of eye. The principles come up again in multiple sections, including analyses of the properties of color, pattern, and motion perception. Thus the reader will have several opportunities to see the application of these ideas.
-
-Since the first edition of this book, new technologies to measure image encoding, and new facts about the image encoding, have been discovered. A particularly impactful technology, adaptive optics, has enabled measurements in the living human eye that were not possible at the time of the 1<sup>st</sup> edition. In this edition I explain the principles of adaptive optics and describe how it is used both to measure the properties of image formation and to use this knowledge to deliver stimuli with remarkable precision.
-
-In addition, a new class of photosensitive cells was discovered. These cells are not photoreceptors, rather they are ganglion cells that contain a light sensitive pigment distributed across their entire extent. The discovery of these intrinsically photosensitive retinal ganglion cells (ipRGCs) is an important development with implications for vision and other behaviors that depend on light sensitivity.
-
-Finally, this 2<sup>nd</sup> edition is more firmly connected to computational methods. As we introduce many of the concepts of optics and encoding, we provide the reader with a set of software methods that can be used to calculat the encoding and responses quantitatively.
+In addition to the properties of image formation, the early chapters introduce and make use of the principles of linear systems. Linear methods are fundamental to vision science, as they are to much of science. Since the linear methods apply well to image formation, it seems natural to introduce linear systems as a solution to the problem of measuring the properties of eye. I describe the principles of linear systems in the text, but I have placed most of the mathematical notation and derivations in Appendix A.
 
 ## Image formation
 
@@ -33,5 +19,3 @@ The visual streams initiated by the cone mosaic ordinarily operate at high light
 ## Wavelength Encoding
 
 [Chapter @sec-wavelength-encoding] reviews how the visual pathways encode the wavelength of light, a process that greatly influences color appearance. The behavioral predictions that the eye contains three types of cones, as well as behavioral predictions of the way these cones encode wavelength, have been confirmed in a stunning set of experiments that represent an intellectual collaboration between very different disciplines. The nexus of results from physics, psychology, and biology concerning wavelength encoding form one of most beautiful and satisfying stories in science. The successful interactions between these disciplines is a remarkable intellectual achievement. The facts concerning how the visual pathways encode wavelength has been important for all color imaging technologies. The scientific methods that link the color matching experiment to the cone photocurrents are important for all of us who wish to relate behavior and brain.
-
-[^linear-systems]: I describe the principles in the text, and place most of the mathematical notation and derivations in the first appendix.

@@ -1,9 +1,4 @@
----
-date: last-modified
----
 # Introduction to Image Interepretation  {.unnumbered}
-
-{{< include "includes/WIP-callout.qmd" >}}
 
 Helmholtz wrote:
 
