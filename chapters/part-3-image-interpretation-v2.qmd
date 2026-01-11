@@ -5,6 +5,8 @@ date: last-modified
 
 {{< include "includes/WIP-callout.qmd" >}}
 
+---
+
 Helmholtz wrote:
 
 > The general rule determining the ideas of vision that are formed whenever an impression is made on the eye, is that *such objects are always imagined as being present in the field of vision as would have to be there in order to produce the same impression on the nervous mechanism* <small>\[Italics in the original; Southall, Physiological Optics, Vol. III, p. 2, 1865\]</small>

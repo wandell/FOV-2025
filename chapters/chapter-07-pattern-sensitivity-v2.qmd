@@ -5,6 +5,8 @@ date: last-modified
 # Pattern Vision {#sec-pattern-vision}
 {{< include "includes/WIP-callout.qmd" >}}
 
+---
+
 ## Pattern Vision Overview {#sec-pattern-vision-overview}
 
 In this chapter we will consider measurements and models of human visual sensitivity to spatial and temporal patterns. We have covered topics relevant to pattern sensitivity in earlier chapters as we reviewed image formation and the receptor mosaic. Here, we will extend our analysis by reviewing a collection of behavioral studies designed to reveal how the visual system as a whole detects and discriminates spatio-temporal patterns.

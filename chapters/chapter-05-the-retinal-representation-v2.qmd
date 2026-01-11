@@ -5,6 +5,8 @@ date: last-modified
 # Retina {#sec-retinal-representation}
 {{< include "includes/WIP-callout.qmd" >}}
 
+---
+
 ## Retina Overview {#sec-retinal-representation-overview}
 In this chapter we will review the structure of the retina and its role in organizing visual information. The retina is a thin layer of neural tissue that lines the eye. After the retinal image is encoded by the photoreceptors, neurons within the retina transform the photoreceptor signals into a new representation that is carried by the optic nerve to a variety of locations in the brain. The retina is important for several reasons. First, the retina is important to neuroscientists because it is a very accessible part of the central nervous system making it an important site for scientific study Second, the retina is important to clinicians since it is the only part of the central nervous system that can be examined directly, by using an opthalmoscope. Third, the retina is important to vision scientists because it has several important visual functions, including encoding the image and transforming it into a collection of separate pathways that send information about the entire retinal image to the brain. Since retinal neurons develop from the same progenitor cells that give rise to the brain, the organization of information within these retinal pathways is also an important clue about the organization within the brain as well.
 

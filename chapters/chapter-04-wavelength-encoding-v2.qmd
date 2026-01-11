@@ -5,6 +5,8 @@ date: last-modified
 # Wavelength Encoding {#sec-wavelength-encoding}
 {{< include "includes/WIP-callout.qmd" >}}
 
+---
+
 ## Wavelength Encoding Overview {#sec-wavelength-encoding-overview}
 Sir Isaac Newton’s sketch in @fig-newton summarizes his investigations into the properties of light. In these experiments, Newton separated daylight into its fundamental components by passing it through a prism and creating a rainbow. Newton’s demonstration that light can be decomposed into rays of different wavelength is at the foundation of our understanding of light and color.
 

@@ -6,13 +6,17 @@ date: last-modified
 
 {{< include "includes/WIP-callout.qmd" >}}
 
+---
+
 The first section of this book describes the initial encoding of light by the eye.  [Chapter @sec-image-formation] reviews the image formation process, that is, the process by which light incident at the eye is focused onto the retina. [Chapters @sec-photoreceptor-mosaic] and [@sec-wavelength-encoding] review the basic properties of the conversion of light into a neural signal by the light-sensitive elements of the eye, the *photoreceptors*. This image encoding establishes essential limits on vision; the consequences of the image formation process can be found in many parts of the visual neural representation.
 
 The early chapters introduce and make use of the principles of linear systems. Linear methods are fundamental to vision science, as they are to much of science[^linear-systems]. The well-designed experiment provides a method of extrapolating beyond the experimental measurements, and linear systems methods provide such a method. A notion of how to extrapolate beyond the experimental measurements is necessary because we can rarely measure the response to every important stimulus. The significance of linear systems methods is that they permit us to evaluate whether we can use the response to a few stimuli to predict the responses to other stimuli.
 
 Since the linear methods apply well to image formation, it seems natural to introduce linear systems as a solution to the problem of measuring the properties of eye. The principles come up again in multiple sections, including analyses of the properties of color, pattern, and motion perception. Thus the reader will have several opportunities to see the application of these ideas.
 
-Since the first edition of this book, new technologies to measure image encoding, and new facts about the image encoding, have been discovered. A particularly impactful technology, adaptive optics, has enabled measurements in the living human eye that were not possible at the time of the 1<sup>st</sup> edition. In this edition I explain the principles of adaptive optics and describe how it is used both to measure the properties of image formation and to use this knowledge to deliver stimuli with remarkable precision.
+There are two major changes since the first edition of this book.  First, new technologies to measure the optical properties of the eye have been invented. A particularly impactful technology, adaptive optics, has enabled measurements in the living human eye that were not possible at the time of the 1^st^ edition. In this edition I explain the principles of adaptive optics.  In another online book, [Foundations of Image Systems Engineering](https://wandell.github.io/FISE-git/), I describe the method in more detail.
+
+ The invention of these adaptive methods have led to many new measurements of human physiological optics. In this book, but particularly [Chapter @sec-image-formation], I describe the new findings.  In the Appendix image formation and to use this knowledge to deliver stimuli with remarkable precision.
 
 In addition, a new class of photosensitive cells was discovered. These cells are not photoreceptors, rather they are ganglion cells that contain a light sensitive pigment distributed across their entire extent. The discovery of these intrinsically photosensitive retinal ganglion cells (ipRGCs) is an important development with implications for vision and other behaviors that depend on light sensitivity.
 

@@ -5,6 +5,8 @@ date: last-modified
 # Color {#sec-color}
 {{< include "includes/WIP-callout.qmd" >}}
 
+---
+
 ## Color Overview {#sec-color-overview}
 Edwin Land was one of the great inventors and entrepreneurs in US history; he created instant developing film and founded the Polaroid Corporation. The first instant developing film made black and white reproductions, and after a few years Land decided to create a color version of the film. In order to learn about color appearance, Land returned to his laboratory to experiment with color. He was so surprised by his observations that he decided to write a paper summarizing his observations. In a paper published in the Proceedings of the National Academy of Sciences (USA), Land startled many people by arguing that there are only two, not three, types of cones. He further went on to dismiss the significance of the color-matching experiments. He wrote: “We have come to the conclusion that the classical laws of color mixing conceal great basic laws of color vision (@land1959-pnas).” Land’s sharp words, an arrow aimed at the heart of color science, provoked heated rejoinders from two leading scientists, @judd1960-land and @walls1960-landland.
 

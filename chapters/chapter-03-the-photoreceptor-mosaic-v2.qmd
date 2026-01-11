@@ -5,6 +5,8 @@ date: last-modified
 # The Photoreceptor Mosaic {#sec-photoreceptor-mosaic}
 {{< include "includes/WIP-callout.qmd" >}}
 
+---
+
 ## The Photoreceptor Mosaic Overview {#sec-photoreceptor-mosaic-overview}
 
 In @sec-image-formation we reviewed @campbell1966-gubisch measurements of the optical linespread function. Their data are presented in @fig-imgfor-cg-data, as smooth curves, but the actual measurements must have taken place at a series of finely spaced intervals called sample points. In designing their experiment, Campbell and Gubisch must have considered carefully how to space their sample points because they wanted to space their measurement samples only finely enough to capture the intensity variations in the measurement plane. Had they positioned their samples too widely, then they would have missed significant variations in the data. On the other hand, spacing the sample positions too closely would have made the measurement process wasteful of time and resources.

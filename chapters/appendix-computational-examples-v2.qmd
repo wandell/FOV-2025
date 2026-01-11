@@ -1,19 +1,17 @@
 ---
-id: 1657
-title: 'Example Programs'
-date: '2012-06-21T12:27:00-07:00'
-author: wandell
-layout: page
-guid: 'http://www.stanford.edu/group/vista/cgi-bin/FOV/?page_id=1657'
+date: last-modified
 ---
 
-The links on this page explain specific computations from the book. At present, these computations include image formation, cone absorption characteristics, and color matching and discrimination. Other topics will be added over time.
+# Simulations {#sec-appendix-simulation}
+{{< include "includes/WIP-callout.qmd" >}}
 
-The computations are written in Matlab and rely on a set of integrated tools for modeling visual encoding and early visual system processing ([ISETBIO](https://github.com/isetbio/isetbio)) The code is freely available on [gitub](https://github.com/isetbio/isetbio).
+---
 
-There is a brief description of each computation on this page. The code and comments on the linked pages are much more extensive.
+This section of the appendix describes many simulations of the properties of the human visual system and neural responses.  These include simulations of image formation, cone absorption characteristics, and color matching and discrimination.  
 
-Note: For this page, clicking on a link generally opens the link in a new TAB or WINDOW.
+The simulations, written in Matlab, rely on two toolboxes.  The base toolbox is [ISETCam](), which is also described in the textbook [Foundations of Image Systems Engineering](https://wandell.github.io/FISE-git/), particularly in [this appendix](https://wandell.github.io/FISE-git/chapters/appendix-03-isetcam.html).
+
+The ([ISETBIO](https://github.com/isetbio/isetbio)) toolbox extends ISETCam with many specializations for the human visual system.  Both toolboxes are open-source and freely available.
 
 ## ISETBIO Programming
 

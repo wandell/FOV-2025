@@ -5,6 +5,8 @@ date: last-modified
 # Cortical Representation {#sec-cortical-representation}
 {{< include "includes/WIP-callout.qmd" >}}
 
+---
+
 ## Cortical Representation Overview {#sec-cortical-representation-overview}
 <!-- Computational Modeling of Responses in Human Visual Cortex Encyclopedia article from 2015 is good for this chapter.  Both figures and the summary text. -->
 

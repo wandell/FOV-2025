@@ -5,6 +5,8 @@ date: last-modified
 
 {{< include "includes/WIP-callout.qmd" >}}
 
+---
+
 Our understanding of how the visual pathways represent images is based upon a diverse collection of methods, drawn from several different fields. Four broad principles emerge from the studies in these different disciplines.
 
 - Anatomical studies show that the neurons in the visual pathway are segregated into different *visual streams*. The functional role of the visual streams must be inferred from the anatomical properties along with the way the neurons in these separate streams respond to light stimulation.

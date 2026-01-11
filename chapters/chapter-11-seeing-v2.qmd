@@ -5,6 +5,8 @@ date: last-modified
 # Seeing {#sec-seeing}
 {{< include "includes/WIP-callout.qmd" >}}
 
+---
+
 ## Seeing Overview {#sec-seeing-overview}
 Seeing is a collection of inferences about the world. Motion, color and depth are important individual judgments. To see, however, we must connect these inferences into a unified explanation of the image. Until we integrate the separate inferences of pattern, color, motion and depth into a description of objects and surfaces, the world remains a disconcerting jumble of unconnected events.
 
