@@ -1,0 +1,29 @@
+---
+date: last-modified
+---
+
+# Human cortical representations - MRI {#sec-cortical-representation-objects}
+{{< include "includes/WIP-callout.qmd" >}}
+
+---
+## Face processing
+
+These are notes
+
+### Rossion
+
+Summary
+Rossion and colleagues argue that macaque face perception differs qualitatively from human face perception, based primarily on behavioral evidence with some neural evidence.
+
+Behavioral data
+Rossion, B. (2014). Understanding face perception by means of prosopagnosia and neuroimaging. Frontiers in Bioscience (Landmark Edition), 19, 104–134.
+
+Humans show a large and selective face inversion effect (FIE): inverting faces causes a disproportionate impairment in identity recognition and sensitivity to spatial relations among features, far exceeding inversion effects for other object categories. Humans also exhibit strong holistic processing, as demonstrated by robust composite-face effects and high sensitivity to second-order configural relations—effects that largely disappear with inversion.
+In contrast, macaques show weak, inconsistent, or non–face-specific inversion effects, often comparable to those observed for non-face objects. Evidence for holistic processing in macaques (e.g., composite effects) is limited, fragile, or requires extensive training, suggesting a more part-based or feature-driven strategy. While macaques can learn to discriminate individual faces, their performance typically resembles object discrimination rather than the automatic, holistic identity recognition characteristic of humans. Rossion concludes that these behavioral signatures—especially the magnitude and selectivity of inversion and composite effects—indicate that macaque face perception lacks the specialized holistic mechanisms that define human face recognition, limiting the macaque’s value as a model for core aspects of human face perception.
+
+Neural analysis
+Rossion, B., Jacques, C., & Jonas, J. (2024). The anterior fusiform gyrus: The ghost in the cortical face machine. Neuroscience and Biobehavioral Reviews, 158(105535), 105535.
+• Neural Scale: There is a vast difference in the number of neurons between the two species. The human brain contains approximately 86 billion neurons, which is about 13.5 times more than the macaque brain, which has roughly 6.3 billion. (Generic argument).
+• Network Localization: In macaques, face-selective regions are essentially located in the Superior Temporal Sulcus (STS).  In contrast, humans possess face-selective regions in both the STS and the VOTC.  (Such a big anatomical difference is worth remembering)
+• Lack of Posterior VOTC Face-Selectivity: Because macaques do not show face-selective activity in their posterior VOTC, the authors argue that electrophysiological recordings in these primates cannot address specific questions regarding the human face-processing network, such as the role of the anterior fusiform gyrus.
+
