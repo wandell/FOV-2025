@@ -20,6 +20,43 @@ This chapter provides a very brief overview of the MR instrumentation and algori
 
 ## MRI instrumentation
 
+### Big iron
+
+### Gradients
+
+### Machine amplifiers
+
+### RF coils
+
+## MR signals
+
+## Free induction decay
+
+## Echoes
+
+
+## Image formation
+
+### Anatomical images T1 and T2 and FLAIR
+
+## Functional MRI
+
+### Flow, Volume, Oxygenation 
+
+Relevant to mapping.
+
+Relevant to section on VTC
+
+## Diffusion MRI
+
+### Tensor estimation
+
+### Streamline estimation
+
+Relevant to white matter anatomical measures
+
+## Notes
+
 <!---
 
 Josh and I wrote a lot of slides in Psych 204a class discussion.  I also added a Google doc in docs (explanations) in that directory.
@@ -39,20 +76,3 @@ https://bsky.app/profile/vavatin.bsky.social/post/3mbtn6sj6xk2h
 And Alex’s follow-up rebuttal:
 https://bsky.app/profile/alexanderhuth.bsky.social/post/3mbub4b7z6s2m
  --->
-
-## Free induction decay
-
-
-## MR signals
-
-
-## Image formation
-
-
-## Functional MRI
-
-
-## Advantages and limitations
-
-
-

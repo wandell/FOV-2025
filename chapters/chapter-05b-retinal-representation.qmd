@@ -1,0 +1,40 @@
+
+
+## Summary of ipRGCs
+
+From Irene Lim:  Here are some of the notes I've been collecting in the last few days organized into bullet points. 
+
+In 1927, Clyde Keeler discovered that mice bred without rods and cones could only respond to light stimuli by constricting their pupils (no other reaction and virtually otherwise blind) (Keeler 1927, 1928). Keeler’s work suggests that rods and cones are not the only cells that detect and cause a response to light in mammals. This idea remained unexplored until the 1990s, when Russell Foster, Ignacio Provencio, and colleagues at Imperial College London found that neither rods nor cones were necessary for the regulation of circadian rhythms in mice, backing Keeler’s observations and the long-ignored idea of a different mechanism for light detection (Foster et al 1991; Freedman et al 1999; Lucas et al 1999). At the same time, Provencio et al (1998) identified the opsin, or photopigment, called melanopsin in the non-photoreceptor cells of the retina in frogs. 
+David Berson and colleagues at Brown University are widely credited with the discovery of intrinsically photosensitive retinal ganglion cells (ipRGCs). 
+
+Influential People/Groups/Studies: 
+Clyde Keeler (Harvard)
+Keeler C.E. Iris movements in blind mice. Am J Physiol. 1927;81:107–112.
+Keeler C.E., Sutcliffe E., Chaffee E.L. Normal and "Rodless" retinae of the house mouse with respect to the electromotive force generated through stimulation by light. Proc Natl Acad Sci U S A. 1928;14(6):477–84.
+Original work was in studying genetics in the context of supporting eugenics
+He bred mice with genetic deficiencies for the outer retina (no photoreceptors)
+Also contributed to studying retinitis pigmentosa through simulation with blind mice
+Found mice without rods and cones were virtually blind except for pupil dilation in response to light stimuli
+Ignacio Provencio in Mark Rollag’s lab (Uniformed Services University)
+Melanopsin discovery in the photosensitive skin melanophores of frogs (1998)
+Provencio I., Jiang G., De Grip W.J., Hayes W.P., Rollag M.D. Melanopsin: An opsin in melanophores, brain, and eye. Proc Natl Acad Sci U S A. 1998;95(1):340–5.
+Melanopsin discovery in mammals (2000)
+Provencio, I; Rodriguez, IR; Jiang, G; Hayes, WP; Moreira, EF; Rollag, MD (2000). "A novel human opsin in the inner retina". The Journal of Neuroscience. 20 (2): 600–5. doi:10.1523/jneurosci.20-02-00600.2000. PMC 6772411. PMID 10632589.
+Satchidananda Panda in Steve Kay’s lab (Scripps Research Institute, Genomics Institute of the Novartis Research Foundation)
+Melanopsin function in mammals (2002-2003)
+Panda, S.; Sato, TK; Castrucci, AM; Rollag, MD; Degrip, WJ; Hogenesch, JB; Provencio, I; Kay, SA (2002). "Melanopsin (Opn4) Requirement for Normal Light-Induced Circadian Phase Shifting". Science. 298 (5601): 2213–6. Bibcode:2002Sci...298.2213P. doi:10.1126/science.1076848. PMID 12481141. S2CID 20602808.
+Panda, S.; Provencio, I; Tu, DC; Pires, SS; Rollag, MD; Castrucci, AM; Pletcher, MT; Sato, TK; et al. (2003). "Melanopsin is Required for Non-Image-Forming Photic Responses in Blind Mice". Science. 301 (5632): 525–7. Bibcode:2003Sci...301..525P. doi:10.1126/science.1086179. PMID 12829787. S2CID 37600812.
+Russell Foster’s lab (Imperial College London)
+Non-rod, non-cone regulation of circadian rhythms (1999)
+Freedman M.S., Lucas R.J., Soni B., von Schantz M., Munoz M., David-Gray Z., Foster R. Regulation of mammalian circadian behavior by non-rod, non-cone, ocular photoreceptors. Science. 1999;284(5413):502–4.
+Lucas R.J., Freedman M.S., Munoz M., Garcia-Fernandez J.M., Foster R.G. Regulation of the mammalian pineal by non-rod, non-cone, ocular photoreceptors. Science. 1999;284(5413):505–7.
+Robert J. Lucas, Russell G. Foster, Neither Functional Rod Photoreceptors nor Rod or Cone Outer Segments Are Required for the Photic Inhibition of Pineal Melatonin, Endocrinology, Volume 140, Issue 4, 1 April 1999, Pages 1520–1524, https://doi.org/10.1210/endo.140.4.6672
+Melanopsin necessary for light responses (2003-2005)
+Lucas R.J., Hattar S., Takao M., Berson D.M., Foster R.G., Yau K.W. Diminished pupillary light reflex at high irradiances in melanopsin-knockout mice. Science. 2003;299(5604):245–7.
+Melyan Z., Tarttelin E.E., Bellingham J., Lucas R.J., Hankins M.W. Addition of human melanopsin renders mammalian cells photoresponsive. Nature. 2005;433(7027):741–5.
+David Berson (Brown University)
+ipRGC discovery (2002)
+Berson DM, Dunn FA, Takao M (February 2002). "Phototransduction by retinal ganglion cells that set the circadian clock". Science. 295 (5557): 1070–3. Bibcode:2002Sci...295.1070B. doi:10.1126/science.
+Samer Hattar in King-Wai Yau’s lab (post-doc at Johns Hopkins University School of Medicine)
+ipRGC discovery (2002)
+Hattar S., Liao H.W., Takao M., Berson D.M., Yau K.W. Melanopsin-containing retinal ganglion cells: architecture, projections, and intrinsic photosensitivity. Science. 2002;295(5557):1065–70.
