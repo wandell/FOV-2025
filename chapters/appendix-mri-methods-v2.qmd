@@ -8,9 +8,18 @@ date: last-modified
 ---
 
 ## MRI methods overview {#sec-appendix-mri-overview}
-Magnetic Resonance Imaging (MRI) is a non-invasive imaging technique that uses strong magnetic fields and radio waves to generate detailed images of the internal structures of the body, particularly the brain. MRI is widely used in neuroscience research to study brain anatomy, function, and connectivity.
+Magnetic Resonance Imaging (MRI) is a non-invasive imaging technique that uses magnetic fields and radio waves to generate images of the internal structures of the body, particularly the brain.  MRI instruments are widely used in neuroscience to study a range of brain properties, including anatomy, function, and connectivity.  The MR scanner can be used for this range of topics because it can be programmed in a variety of ways that enable it to measure many different types of signals from the brain substrate.
+
+MRI has become an increasingly important tool in visual neuroscience for several reason.  First, it can be used to make measurements in the living human brain, while participants are performing a range of tasks.  Second, the technique is safe to use repeatedly so that one person can be studied in detail.  Third, the method can make measurements of small volumes (voxels) that are less than 1 cubic millimeter. This spatial resolution is finer than the resolution obtained from other methods in the living human brain.  Functional MRI measurements have relatively slow dynamics, with an impulse response lasting 5-10 seconds.  This makes the method appropriate for certain experimental designs, but not others.
+
+Depending on how the MR scanner is programmed, the signal it receives can be sensitive to a variety of different factors. The classical methods provide signals that enable us to make static images that distinguish between different substrates, including gray matter, white matter, and cerebrospinal fluid (CSF). Other methods of programming the instrument enables us to make time-varying measurements that depend on the local blood flow and oxygenation, a dynamic response that is impacted by neural activity.  Programmed in other ways, MR can measure how molecules diffuse in different directions; this information can be used to estimate the properties of white matter tracts.
+
+In the sections below I provide an overview of the instrument, which comprises a collection of tightly connected systems.  I then describe the fundamental signal (free induction decay).  I then describe how the signal can be programmed to be sensitive to different aspects of the brain substrate. The measurements from the MR scanner require significant signal processing to account for the scanner's imperfections (calibration) and to convert the signals from their native format into the image format we use for scientific and clinical investigations.  The final section of this appendix describes
+
+This chapter provides a very brief overview of the MR instrumentation and algorithms.  It is intended to help the visual neuroscientist understand the basic properties of this important instrumentation, but it cannot go into great detail about the instrument, physics, and algorithms.  I recommend the following books and tutorials to the reader who wishes to learn more. *** Textbooks.  Online tutorials.  References from my class ***
 
 ## MRI instrumentation
+
 <!---
 
 Josh and I wrote a lot of slides in Psych 204a class discussion.  I also added a Google doc in docs (explanations) in that directory.
