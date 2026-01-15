@@ -12,6 +12,9 @@ Magnetic Resonance Imaging (MRI) is a non-invasive imaging technique that uses s
 
 ## MRI instrumentation
 <!---
+
+Josh and I wrote a lot of slides in Psych 204a class discussion.  I also added a Google doc in docs (explanations) in that directory.
+
 Alex Huth comment on this controversial article that we will review in Vision Brunch.
 
 https://bsky.app/profile/alexanderhuth.bsky.social/post/3mboxb3jtz22j
