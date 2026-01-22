@@ -72,6 +72,8 @@ Information from different classes of retinal ganglion cells remains segregated 
 
 #### Retinotopic organization
 
+**MRI Maps to go here. Clusters.**
+
 The spatial position of the ganglion cell within the retina is preserved by the spatial organization of the neurons within the lateral geniculate nucleus layers. The back of the nucleus contains neurons whose receptive fields are near the fovea. As we measure towards the front of the nucleus, the receptive field locations become increasingly peripheral. This spatial layout is called *retinotopic* organization because the topological organization of the receptive fields in the lateral geniculate parallels the organization in the retina.
 
 The signals in area V1 are also retinotopically arranged. From electrophysiology in monkeys, one can measure the location of receptive fields with an electrode that penetrates tangentially through layer 4C, traversing through the ocular dominance columns. The receptive field centers of neurons along this path are located systematically from the fovea to the periphery. This trend is interrupted locally by small, abrupt jumps at the ocular dominance borders. Within the first ocular dominance column the receptive field center positions change smoothly; as one passes into the next ocular dominance region there is an abrupt shift of the receptive field positions equal to about half of the space spanned by receptive fields in the first column. @hubel1977-functionalarchitecture describe this organization and refer to it as “two steps forward and one step back.”

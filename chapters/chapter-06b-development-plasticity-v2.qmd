@@ -1,0 +1,22 @@
+---
+date: last-modified
+---
+
+# Human cortical plasticity - MRI {#sec-cortical-development-plasticity}
+{{< include "includes/WIP-callout.qmd" >}}
+
+---
+
+MR images of the infant brain and how it changes in the first six months.  The development of white matter.
+
+Also, what we think is already there.  What scale is changing? What scale is largely in place?  Coarse to fine is the obvious point to make.
+
+Some plasticity throughout the lifespan.  What is stable?  What is plastic.
+
+Bring up the recent somatosensory studies.
+
+Get the Baseler work on rod monochromats, showing the limitations of our first study, in here.  We had special cases and few studies.  The later study overturned what we believed.
+"Achromatopsia—Visual Cortex Stability and Plasticity in the Absence of Functional Cones"
+
+Stable cortical body maps before and after arm amputation. Nature Neuroscience
+Commentary:  https://www.sciencedirect.com/science/article/pii/S1364661325002426?via%3Dihub

@@ -6,11 +6,26 @@ date: last-modified
 {{< include "includes/WIP-callout.qmd" >}}
 
 ---
+
+## Human cortical representations {#sec-cortical-representation-objects-overview}
+
+Beyond retinotopy.  What do we know for sure?
+
+Motion selectivity?  Object specializations?
+
 ## Face processing
 
-These are notes
+History of face specialization.   Meadows is in the chapter, no?
+
+Yale studies.
+
+Kanwisher contribution
+
+Haxby-Kanwisher divide?  Or maybe some other formulation?
 
 ### Rossion
+
+Don't forget his summaries!
 
 Summary
 Rossion and colleagues argue that macaque face perception differs qualitatively from human face perception, based primarily on behavioral evidence with some neural evidence.
