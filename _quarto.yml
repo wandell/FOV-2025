@@ -18,6 +18,7 @@ book:
       - chapters/part-2-image-representation-v2.qmd
       - chapters/chapter-05-the-retinal-representation-v2.qmd
       - chapters/chapter-06-the-cortical-representation-v2.qmd
+      - chapters/chapter-06a-mri-cortex-v2.qmd
       - chapters/chapter-07-pattern-sensitivity-v2.qmd
       - chapters/chapter-08-multiresolution-image-representations-v2.qmd
     - part: "Image Interpretation"

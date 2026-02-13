@@ -1,0 +1,73 @@
+---
+date: last-modified
+---
+
+# Human cortical representations - MRI {#sec-cortical-representation-objects}
+{{< include "includes/WIP-callout.qmd" >}}
+
+---
+
+## Human cortical representations {#sec-cortical-representation-objects-overview}
+Since the publication of the first volume of this book, our knowledge about human visual cortex has expanded dramatically. New methods for measuring brain activity non-invasively in humans, primarily functional magnetic resonance imaging (fMRI), have played a central role in this progress. In this chapter, I review key findings about the anatomy and functional responses in human visual cortex. Because fMRI is a relatively new technology, I have also added an appendix on MRI methods(@sec-appendix-mri-overview} that explains core concepts of magnetic resonance signals and image formation, with a discussion of what the technology can and cannot measure.
+
+### Visual field maps in human cortex
+The discovery of the location of primary visual cortex - the locations where the input signals initiated in the retina first drive responses in cortex - can be traced to a distinct historical moment. In 1876 the British neurologist David Ferrier reported that the removal of a region in the parietal lobe known as the angular gyrus blinded monkeys. He suggested that the region is the seat of vision. Hermann Munk, a German physiologist, strenuously disagreed; his studies, which he discussed in an 1881 publication, indicated that the occipital lobe is responsible for vision. Munk was correct.
+
+::: {.callout-note collapse="false" title="Historical note: Munk vs. Ferrier"}
+Munk quotation about Ferrier here.  Ferrier's rebuttal.
+
+@gross-1998brain-book is the source of the Munk quotation; Chapter 2, titled "The Discovery of the Visual Cortex."
+
+Munk:  "In my first communication on the physiology of the cortex which I made iii March of last year I did not say anything about Ferrier’s work on the monkey because there was nothing good to be said about it. But asked in the subsequent session I had to say that Mr. Ferrier's declarations that the visual center in the monkey was situated in the angular gyrus [… and other claims …] that all these statements and what followed from them as far as the character and restitution of disturbances set by the operation are concerned, are worthless and gratuitous constructions since the operated animals were examined by Mr. Ferrier in quite an insufficient manner and only at the time of general depression of brain function. 
+
+If I have gone too far in this statement which is based on a general survey of Mr. Ferrier’s experiments it was up to me to restore the injury, the sooner the better.  However, as the experiments show now I have said at that time rather too little than too much, Mr. Ferrier had not made one correct guess, all his statements have turned out to be wrong."
+
+@ferrier1876-functions
+Ferrier:  Formerly, I localized the visual centres in the angular gyrus, to the exclusion of the occipital lobes.  This being a partial truth is an error.  … Complete destruction of the angular gyri on both sides causes for a time total blindness, succeeded by a lasting visual impairment in both eyes. The only lesion which causes complete and permanent blindness is total destruction of the occipital lobes and angular gyri on both sides. (He still insisted the Munk’s conclusions were ‘totally erroneous’) (R.S. Fishman).
+
+William James:  @james1890-principles
+"The quarrel is very acrimonious; indeed the subject of localization of functions in the brain seems to have a peculiar effect on the temper of those who cultivate it experimentally..."
+
+Maybe a question.
+
+@fishman1995-mistake
+
+
+:::
+
+### Retinotopic mapping with fMRI
+Engel and colleagues introduced an fMRI method for measuring visual field maps in human visual cortex (@engel1994-fmri, @engelRetinotopicOrganizationHuman1997,@engelDevelopmentUsePhaseencoded2012). Their study demonstrated that fMRI could resolve the orderly mapping from retinal position to the cortical surface, a property known as retinotopy. Prior to the development of this fMRI method, Hoyt and Horton could write authoritatively that ‘Little is known about the organization of extrastriate visual areas in the human brain. Therefore, to construct our proposal we must draw upon data from experimental work in monkeys. Our argument hinges upon the topographic arrangement of the first three cortical visual areas: V1, V2 and V3. (@horton1991-quadraticdefects, p 1709)." The ability to make fMRI measurements of the maps changed that situation dramatically. 
+
+The organization of retinotopic maps in human visual cortex is now well established, and it provides a foundation for understanding how visual information is represented and processed in the human brain.  The early fMRI studies confirmed that the basic organization of visual field maps in humans is similar to that in non-human primates, including the presence of multiple visual areas with distinct retinotopic organizations. It is worth remembering how difficult it was to make measurements of these maps using invasive methods, typically single unit recordings, in non-human primates. 
+
+However, the human visual cortex also exhibits some unique features, such as the presence of additional visual areas not found in non-human primates, and differences in the size and organization of certain maps. These differences may reflect adaptations to the specific visual demands of humans, such as the importance of reading and fine object recognition.
+
+## Face processing
+
+History of face specialization.   Meadows is in the chapter, no?
+
+Yale studies.
+
+Kanwisher contribution
+
+Haxby-Kanwisher divide?  Or maybe some other formulation?
+
+### Rossion
+
+Don't forget his summaries!
+
+Summary
+Rossion and colleagues argue that macaque face perception differs qualitatively from human face perception, based primarily on behavioral evidence with some neural evidence.
+
+Behavioral data
+Rossion, B. (2014). Understanding face perception by means of prosopagnosia and neuroimaging. Frontiers in Bioscience (Landmark Edition), 19, 104–134.
+
+Humans show a large and selective face inversion effect (FIE): inverting faces causes a disproportionate impairment in identity recognition and sensitivity to spatial relations among features, far exceeding inversion effects for other object categories. Humans also exhibit strong holistic processing, as demonstrated by robust composite-face effects and high sensitivity to second-order configural relations—effects that largely disappear with inversion.
+In contrast, macaques show weak, inconsistent, or non–face-specific inversion effects, often comparable to those observed for non-face objects. Evidence for holistic processing in macaques (e.g., composite effects) is limited, fragile, or requires extensive training, suggesting a more part-based or feature-driven strategy. While macaques can learn to discriminate individual faces, their performance typically resembles object discrimination rather than the automatic, holistic identity recognition characteristic of humans. Rossion concludes that these behavioral signatures—especially the magnitude and selectivity of inversion and composite effects—indicate that macaque face perception lacks the specialized holistic mechanisms that define human face recognition, limiting the macaque’s value as a model for core aspects of human face perception.
+
+Neural analysis
+Rossion, B., Jacques, C., & Jonas, J. (2024). The anterior fusiform gyrus: The ghost in the cortical face machine. Neuroscience and Biobehavioral Reviews, 158(105535), 105535.
+• Neural Scale: There is a vast difference in the number of neurons between the two species. The human brain contains approximately 86 billion neurons, which is about 13.5 times more than the macaque brain, which has roughly 6.3 billion. (Generic argument).
+• Network Localization: In macaques, face-selective regions are essentially located in the Superior Temporal Sulcus (STS).  In contrast, humans possess face-selective regions in both the STS and the VOTC.  (Such a big anatomical difference is worth remembering)
+• Lack of Posterior VOTC Face-Selectivity: Because macaques do not show face-selective activity in their posterior VOTC, the authors argue that electrophysiological recordings in these primates cannot address specific questions regarding the human face-processing network, such as the role of the anterior fusiform gyrus.
+
