@@ -67,6 +67,12 @@ Relevant to white matter anatomical measures
 
 ## Notes
 
+Notes:  There are many different connections from the world to neurons (microbiome, stimuli, tumors) and the many ways neurons communicate (ionotropic, metabotropic, volume transmission, neuromodulators, neurotransmitters, spikes, sub-threshold activity, ephaptic not even mentioned!), and the way these are coupled to the vasculature through glia and the NVU.
+
+For many years there was an emphasis on whether the fMRI signal was directly coupled to spikes.  That, in itself, was limiting and unlikely to ever be true.  The more general picture must analyze whether the fMRI signal is coupled to metabolic activity because, after all, the blood supply doesn’t measure spikes.  It measures the metabolic demand, as assessed by astrocytes at the synapse.  The coupling to spikes specifically would only make sense if spikes were the principal cause of metabolic demand.
+
+We are going to have a look at that hypothesis here.  Experimental measurements show that spikes are not tightly coupled to metabolic demand. They are in some cases, but in other cases that probably depend on the local circuitry, the metabolic demand is not proportional to the number of spikes in the output circuitry, and perhaps not equal to the number of spikes at all.  This is a critical point for interpreting fMRI data.  If the metabolic demand is not tightly coupled to spikes, what is it coupled to? And how does that coupling varies across different brain regions and different conditions? This is the question that the Epp et al. paper addresses, and it is a critical question for interpreting fMRI data in visual neuroscience and beyond.
+
 <!---
 
 Josh Wilson and I wrote a lot of slides in Psych 204a class discussion about this.  I also added a Google doc in docs (explanations) in that directory.

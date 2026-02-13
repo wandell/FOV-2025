@@ -9,9 +9,14 @@ date: last-modified
 
 ## Human cortical representations {#sec-cortical-representation-objects-overview}
 
-Beyond retinotopy.  What do we know for sure?
+Since the publication of the first volume of this book, our knowledge about human visual cortex has expanded dramatically. New methods for measuring brain activity non-invasively in humans, especially functional magnetic resonance imaging (fMRI), have played a central role in this progress. In this chapter, I review key findings about the anatomy and functional responses in human visual cortex. Because so many of these findings arise from this relatively new technology, I have also added an appendix on MRI methods (@sec-appendix-mri-overview}.  That appendix explains core concepts of magnetic resonance signals and image formation, including a discussion of what the technology can and cannot measure.
 
-Motion selectivity?  Object specializations?
+### Visual field maps in human cortex
+Engel and colleagues published the first widely adopted method for using fMRI to measure visual field maps in human visual cortex (@engel1994-fmri, @engelRetinotopicOrganizationHuman1997,@engelDevelopmentUsePhaseencoded2012). Their study demonstrated that fMRI could resolve the orderly mapping from retinal position to the cortical surface, a property known as retinotopy. Prior to the development of this fMRI method, Hoyt and Horton could write authoritatively that ‘Little is known about the organization of extrastriate visual areas in the human brain. Therefore, to construct our proposal we must draw upon data from experimental work in monkeys. Our argument hinges upon the topographic arrangement of the first three cortical visual areas: V1, V2 and V3. (@horton1991-quadraticdefects, p 1709)." The ability to make fMRI measurements of the maps changed that situation dramatically. 
+
+The organization of retinotopic maps in human visual cortex is now well established, and it provides a foundation for understanding how visual information is represented and processed in the human brain.  The early fMRI studies confirmed that the basic organization of visual field maps in humans is similar to that in non-human primates, including the presence of multiple visual areas with distinct retinotopic organizations. It is worth remembering how difficult it was to make measurements of these maps using invasive methods, typically single unit recordings, in non-human primates. 
+
+However, the human visual cortex also exhibits some unique features, such as the presence of additional visual areas not found in non-human primates, and differences in the size and organization of certain maps. These differences may reflect adaptations to the specific visual demands of humans, such as the importance of reading and fine object recognition.
 
 ## Face processing
 
