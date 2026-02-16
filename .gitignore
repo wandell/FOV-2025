@@ -20,7 +20,6 @@ __pycache__/
 Thumbs.db
 
 # Editor specific
-.vscode/
 *.sublime-workspace
 *.sublime-project
 
