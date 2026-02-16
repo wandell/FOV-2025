@@ -1,0 +1,82 @@
+# Critique of the FACT Definition of Cortical Areas
+
+Thank you for the kind words.  I look forward to meeting you some day.  Do let me know if you are in the SF Bay Area in the future.
+
+Regards,
+Brian
+
+From: 성균관대학교유승범 <sbyoo@g.skku.edu>
+Date: Friday, January 2, 2026 at 6:01 AM
+To: Brian A Wandell <wandell@stanford.edu>
+Subject: Re: Regarding your Nature Neuroscience piece on cortical organization
+
+Dear Dr. Wandell,
+
+Thank you for your generous New Year's message. It is an unexpected and deeply meaningful start to the year. I still remember beginning my master’s program in visual neuroscience in 2013 and receiving a “must-read” list that included several of your papers, including your 2007 Neuron review. At the time I first read your paper, I was very early in my training and did not yet have the comprehensive perspective to appreciate it fully, which led me to omit your 2007 Neuron review in our recent manuscript. My limited insight then kept me from connecting my previous training to the present perspective. I sincerely apologize for the oversight.
+
+For context, my co-authors and I wondered whether one reviewer might have been David Van Essen, given the references to specific anatomical regions. After a constructive discussion led by the editor, we were able to bring the manuscript to publication. I hope this is a promising sign to begin the revolution.
+
+Since my 2018 Neuron perspective, I have wrestled with doubts and encountered resistance from colleagues (even from ones whom I admired). Your note was a timely and genuine encouragement—especially meaningful because you were someone I aspired to become when I first started my journey in neuroscience. At any time in the future, I would be grateful for the opportunity to meet you and continue our conversation. Your perspective would enrich my own and give me greater confidence to pursue this direction. 
+
+With great respect,
+Michael
+
+Seng Bum Michael Yoo, Ph.D
+Assistant Professor
+Department of Biomedical Engineering
+Sungkyunkwan University
+Lab website: myoolab.com 
+Email: sbyoo@g.skku.edu   
+
+
+
+On Jan 1, 2026, at 5:18 AM, Brian A Wandell <wandell@stanford.edu> wrote:
+
+Dear Dr. Yoo,
+
+I was very pleased to see your recent article, “Rethinking the centrality of ‘areas’ in systems neuroscience,” in this month’s Nature Neuroscience. While I am still digesting the details, my initial reading suggests that your arguments align closely with the principles I’ve shared in my neuroimaging courses for many years.
+
+I wanted to reach out to offer my encouragement to you and your co-authors. Many of my colleagues (and good friends!) have remained deeply committed to the FACT definition popularized by David Van Essen and others, but I have long found that framework to be troubling and, in many cases, unhelpful for describing human cortical organization. I detailed my concerns regarding the inherent contradictions of the "area" concept in a 2007 Neuron review, and as a result, I moved away from using the term entirely in the context of visual maps nearly two decades ago.
+
+Extending this critique beyond the visual system is a significant and necessary step for the field. You may encounter some resistance—or perhaps even silence—but please know that your perspective is shared. I look forward to following the impact of your work.
+
+Best regards,
+
+Brian Wandell
+____________________________
+Brian A. Wandell
+Stein Family Professor
+Cognitive and Neurobiological Imaging
+Stanford University, Stanford, CA 94305
+Phone: 1-650-725 2466
+
+
+Concerning: "Visual Field Maps in Human Cortex", published by Brian A. Wandell, Serge O. Dumoulin, and Alyssa A. Brewer in the journal Neuron in 2007 (Volume 56, Issue 2, pages 366–383).
+
+In this review article, Wandell explains that while the term "visual area" is a cornerstone of systems neuroscience, its standard definition—often referred to as the FACT criteria—is logically problematic and difficult to apply consistently.
+
+The FACT Definition and Its Problems
+
+The FACT acronym stands for:
+
+Function (response properties of neurons)
+
+Architecture (cyto- and myelo-architecture)
+
+Connectivity (patterns of inputs and outputs)
+
+Topography (retinotopic or visual field maps)
+
+Wandell argues that the "notion of an area is imprecise" because these four criteria often do not align perfectly. He notes several specific issues:
+
+Potential Contradictions: Different criteria can yield different boundaries. For example, a topographic map might end at one point, while a change in architecture or connectivity occurs elsewhere. Defining an "area" as the intersection of these properties can lead to a definition that describes no actual part of the brain.
+
+Imprecision: While we can precisely measure a map (the spatial arrangement of visual field representations on the cortex) using fMRI, we lack the tools to measure "architecture" or "connectivity" with the same resolution and reliability in the living human brain.
+
+Stability of Maps: Wandell posits that because a visual field map is a concrete, measurable property of the cortical surface, it is a more stable and useful unit of analysis than the abstract "area."
+
+Why He Prefers "Visual Field Maps"
+
+Because of these "potential inherent contradictions" in the FACT definition, Wandell advocates for using the term "visual field map" as the primary organizational unit. He argues that even if we don't know the full "FACT" profile of a region, we can agree on the presence of a topographic map. This shift in terminology allows researchers to communicate clearly about identified structures (like hV4, VO-1, or LO-1) without being burdened by the historical and often conflicting baggage associated with the word "area."
+
+This paper is highly cited for its introduction of the "cluster" concept, suggesting that these maps are organized into groups (clusters) that share a common foveal representation.
