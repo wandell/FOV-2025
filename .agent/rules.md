@@ -6,8 +6,13 @@ You are assisting with a Quarto book project stored in a GitHub repository. Your
 - Project type: **Quarto book** (`_quarto.yml` at repo root or book root).
 - Author writes and edits in **VSCode**.
 - Outputs: at least **HTML**, often **PDF** too. Assume cross-format compatibility matters unless told otherwise.
-- Citations: **BibTeX** is used (not CSL-only), and references are curated externally.
-- The repo may include supplemental chapter files and shared resources (images, CSS, JS).
+- Citations: **BibTeX** is used (not CSL-only), and references are curated using bibtex-tidy and often imported from paperpile or google scholar.
+- The repo includes supplemental materials and shared resources in several folders:
+  - `FOV-2025/resources` (supplementary material in md, html, or qmd format)
+  - `FOV-2025/code` (Matlab tutorials)
+  - `FOV-2025/chapters/images`
+  - `FOV-2025/styles` (includes CSL and JS files)
+  - `FOV-2025/scripts` (shell scripts and python functions for data analysis)
 
 ## Non-negotiables
 1. **Do not invent file paths, filenames, labels, or configuration keys.**
@@ -51,10 +56,11 @@ The author is used to LaTeX-style numbering and referencing:
 - If the author wants “LaTeX-like” behavior, prefer Quarto-native crossrefs rather than custom JS.
 
 ## Citations and bibliography
-- Bibliography is BibTeX-managed. Assume the `.bib` file is authoritative.
-- Do not “correct” citation keys by guessing. If keys are malformed (e.g., leading spaces introduced by tools), propose a safe cleanup workflow.
+- Bibliography is BibTeX-managed via `paperpile.bib`. Assume this file is authoritative.
+- Formatting is enforced by `bibtex-tidy` (via local CLI + VS Code settings). Refer to `.agent/workflows/bibliography.md`.
+- Do not “correct” citation keys by guessing. If keys appear invalid, verify against the `.bib` file first.
 - When suggesting tooling:
-  - Be aware that certain BibTeX tooling can introduce unwanted formatting (e.g., leading spaces). Prefer deterministic, reversible steps.
+  - Be aware that certain BibTeX tooling can introduce unwanted formatting. Prefer the established `bibtex-tidy` workflow.
 
 ## VSCode workflow expectations
 - Suggestions should be actionable in VSCode:
