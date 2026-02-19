@@ -8,7 +8,7 @@ date: last-modified
 ---
 
 ## MRI methods overview {#sec-appendix-mri-overview}
-It still seems miraculous that we can place a living human head in a strong magnetic field, apply carefully timed radiofrequency (RF) pulses and magnetic-field gradients, and reconstruct images that reflect brain structure and function. I have taught a course on the physics of MRI for nearly twenty years, but the basic idea continues to thrill me. As Arthur C. Clarke put it in his third law, “Any sufficiently advanced technology is indistinguishable from magic.”
+It still seems miraculous to me that we can place a living human head in a strong magnetic field, apply carefully timed radiofrequency (RF) pulses and magnetic-field gradients, and reconstruct images that reflect brain structure and and brain function. Even having taught the physics of MRI for nearly twenty years, the basic idea continues to thrill me. As Arthur C. Clarke put it in his third law, “Any sufficiently advanced technology is indistinguishable from magic.”
 
 MRI was first adopted as a clinical tool, and it has also become essential in visual neuroscience for several reasons. First, MRI can be used to measure signals related to neural activity in the living human brain, including while participants perform visual tasks (functional MRI, or fMRI). Second, the method is considered safe for repeated measurements under standard clinical and research guidelines, allowing the same individual to be studied in depth across multiple sessions. Third, MRI can resolve structure and function at the scale of small volume elements (“voxels”) that are often around a cubic millimeter or less, providing finer spatial detail than many other noninvasive methods for studying the living human brain.
 

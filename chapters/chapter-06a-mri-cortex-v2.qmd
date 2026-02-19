@@ -8,10 +8,12 @@ date: last-modified
 ---
 
 ## Human cortical representations {#sec-cortical-representation-objects-overview}
-Since the publication of the first volume of this book, our knowledge about human visual cortex has expanded dramatically. New methods for measuring brain activity non-invasively in humans, primarily functional magnetic resonance imaging (fMRI), have played a central role in this progress. In this chapter, I review key findings about the anatomy and functional responses in human visual cortex. Because fMRI is a relatively new technology, I have also added an appendix on MRI methods(@sec-appendix-mri-overview} that explains core concepts of magnetic resonance signals and image formation, with a discussion of what the technology can and cannot measure.
+Since the publication of the first volume of this book, knowledge about human visual cortex has expanded dramatically. New methods for non-invasively measuring brain activity  in humans, with functional magnetic resonance imaging (fMRI), have played a central role in this progress. In this chapter, I review key findings about the anatomy and functional responses in human visual cortex. 
+
+Because fMRI is a relatively new technology, many investigators are still not familiar with how it works and thus what it can and cannot measure. Thus, I added an appendix on MRI methods(@sec-appendix-mri-overview} that explains core concepts of magnetic resonance signals and image formation, with a discussion of the technology's strengths and limitations.
 
 ### Visual field maps in human cortex
-The discovery of the location of primary visual cortex - the locations where the input signals initiated in the retina first drive responses in cortex - can be traced to a distinct historical moment. In 1876 the British neurologist David Ferrier reported that the removal of a region in the parietal lobe known as the angular gyrus blinded monkeys. He suggested that the region is the seat of vision. Hermann Munk, a German physiologist, strenuously disagreed; his studies, which he discussed in an 1881 publication, indicated that the occipital lobe is responsible for vision. Munk was correct.
+The discovery of the location of primary visual cortex - the locations where the input signals initiated in the retina first drive responses in cortex - can be traced to a distinct historical moment. In 1876 the British neurologist David Ferrier reported that the removal of a region in the parietal lobe - the angular gyrus - blinded monkeys. He suggested that the region is the 'seat of vision' @ferrier1876-functions. Hermann Munk, a German physiologist, strenuously disagreed; his studies, which he discussed in an 1881 publication @munk1881-functionen, indicated that the occipital lobe is responsible for vision. Munk was correct.
 
 ::: {.callout-note collapse="false" title="Historical note: Munk vs. Ferrier"}
 Munk quotation about Ferrier here.  Ferrier's rebuttal.
@@ -31,6 +33,7 @@ William James:  @james1890-principles
 Maybe a question.
 
 @fishman1995-mistake
+
 
 
 :::
