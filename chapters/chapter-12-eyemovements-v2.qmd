@@ -1,0 +1,19 @@
+---
+date: last-modified
+---
+
+# Eye movements {#sec-eye-movements}
+{{< include "includes/WIP-callout.qmd" >}}
+
+---
+
+## Eye movements Overview {#sec-eye-movements-overview}
+
+This will be a new chapter on principles, and computations of eye movement.  The strong foveation of the retina makes eye movements a critical component of vision.  We will review the different types of eye movements, and their functions.  We will also consider the computational principles that underlie eye movement control.  Finally, we will consider how eye movements interact with visual perception.  The last bit might go mainly in the Seeing chapter.
+
+I regret not having included this chapter in the first edition.  Eye movements are so central to vision that it seems a glaring omission.
+
+
+* Richard Gregory Eye and Brain
+* David Hubel's book is called Eye, Brain and Vision.
+* Zeki's book?  A Vision of the Brain

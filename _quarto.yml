@@ -13,12 +13,14 @@ book:
        - chapters/chapter-02-image-formation-v2.qmd
        - chapters/chapter-03-the-photoreceptor-mosaic-v2.qmd
        - chapters/chapter-04-wavelength-encoding-v2.qmd
+       - chapters/chapter-12-eyemovements-v2.qmd
     - part:  "Image Representation"
       chapters:
       - chapters/part-2-image-representation-v2.qmd
       - chapters/chapter-05-the-retinal-representation-v2.qmd
       - chapters/chapter-06-the-cortical-representation-v2.qmd
       - chapters/chapter-06a-mri-cortex-v2.qmd
+      - chapters/chapter-13-plasticity-v2.qmd
       - chapters/chapter-07-pattern-sensitivity-v2.qmd
       - chapters/chapter-08-multiresolution-image-representations-v2.qmd
     - part: "Image Interpretation"
@@ -33,6 +35,7 @@ book:
        - chapters/appendix-v2.qmd
        - chapters/appendix-mri-methods-v2.qmd
        - chapters/appendix-computational-examples-v2.qmd
+       - chapters/appendix-adaptive-optics-v2.qmd
        - chapters/appendix-online-teaching-resources-v2.qmd
 
 bibliography: paperpile.bib

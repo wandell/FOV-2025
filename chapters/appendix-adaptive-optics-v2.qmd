@@ -1,0 +1,12 @@
+---
+date: last-modified
+---
+
+# Adaptive optics {#sec-appendix-ao}
+{{< include "includes/WIP-callout.qmd" >}}
+
+# Adaptive optics overview {#sec-appendix-ao-overview}
+
+I am not sure how much goes here and how much goes in the FISE book appendix on adaptive optics.  Probably a summary here and details in FISE.
+
+Adaptive optics (AO) is a technology that corrects for the optical aberrations introduced by the eye's cornea and lens. By using a deformable mirror and a wavefront sensor, AO systems can measure and compensate for these aberrations in real-time, resulting in sharper retinal images. This technology has revolutionized retinal imaging, allowing for unprecedented resolution and detail in visualizing the retina's cellular structure.

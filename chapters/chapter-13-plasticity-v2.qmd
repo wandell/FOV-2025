@@ -1,0 +1,40 @@
+---
+date: last-modified
+---
+
+# Visual plasticity {#sec-visual-plasticity}
+{{< include "includes/WIP-callout.qmd" >}}
+
+---
+
+## Visual plasticity Overview {#sec-visual-plasticity-overview}
+
+The achiasmic individual provides a striking example of neural plasticity in the visual system. In this chapter we will consider several other examples of plasticity in the visual pathways. Plasticity is a general property of the nervous system, and it is especially prominent during early development. The visual pathways are no exception.
+
+The Michael May story and papers is another cool example.
+
+The background about plasticity and stability with Merzenich, Kaas, and others and the push back from Logothetis and Wandell.
+
+## Retinal diseases and remapping
+The Baseler work, starting with the original rod monochromats and the refutation.  Then there is the matter of the Basler work with MD subjects, I think, also showing a lot of stability.  @baseler2011-LargescaleRemappingVisual
+
+Many of the ophthalmology papers with Masuda and Ogawa.  The sequence with Yoichiro in particular works well with the computational thrust of the book. Masuda 2021 paper. Masuda 2010 RP paper
+
+## Deafness and remapping
+Also deaf and remapping?
+@levine-2020-retinotopicRemappingVisual
+
+## Rod monochromats and remapping
+This one is for the rod monochromats, and called achromatopsia. It shows very little remapping.
+@molz2023-achromatopsiavisualCortexStability2023
+
+...the present study strictly excluded ACHM individuals with residual cone responses. In contrast, Baseler et al.31  explicitly stated that two out of the three participants, including the one with the most prominent effects, did have residual cone function. Given the absence of V1 remapping in our group of 17 ACHM patients selected for the absence of cone responses, the critical feature of residual cone function in the previous study now appears a potential cause of the  discrepancy in study outcomes.
+
+Review?
+@morland2021-cortical-reorganization
+
+Distinction of developmental plasticity and adult plasticity.
+We will consider several examples of plasticity in the visual pathways. Some of these examples involve changes that occur during early development, while others involve changes that occur in adulthood. The examples will illustrate several principles of plasticity, including the interaction of plasticity and stability in the visual pathways.
+
+## Michael May story
+
