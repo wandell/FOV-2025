@@ -4,5 +4,12 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"chat.tools.terminal.autoApprove": {
+			"mv": true
+		},
+		"files.associations": {
+			"*.bib": "bibtex"
+		}
+	}
 }
