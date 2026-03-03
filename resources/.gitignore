@@ -1,0 +1,2 @@
+# Ignore Quarto rendering folders that only contain local copy/paste or supporting JS
+*_files/
