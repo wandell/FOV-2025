@@ -4,15 +4,15 @@ format: html
 ---
 
 ## Overview
+
 This page tracks Gemini and Claude conversations used to develop the *Foundations of Vision (2nd Edition)* book.
 
 ## MRI topics
 
-- [**Physics of Gaussian Diffusion**](https://gemini.google.com/share/71610c478980): See the section on "Statistical Foundations of Diffusion." Covers 3D Gaussian displacement and the derivation of $\sigma^2 = 2D\Delta t$.
-- [**Resting State fMRI**](https://gemini.google.com/share/71610c478980): See the section on "rs-fMRI Signal Cleaning." Discussion of the Buckner/Fox figures, Global Signal Regression, and why $r$-values are often inflated by preprocessing.  Also includes definition of the DMN.
-
+-   [**Physics of Gaussian Diffusion**](https://gemini.google.com/share/71610c478980): See the section on "Statistical Foundations of Diffusion." Covers 3D Gaussian displacement and the derivation of $\sigma^2 = 2D\Delta t$.
+-   [**Resting State fMRI**](https://gemini.google.com/share/71610c478980): See the section on "rs-fMRI Signal Cleaning." Discussion of the Buckner/Fox figures, Global Signal Regression, and why $r$-values are often inflated by preprocessing. Also includes definition of the DMN.
 
 ## Technical & Math Queries
-- [Link to Chat: Quarto Bibliography Setup](https://gemini.google.com/share/07a336b9f81f) - Debugging Paperpile.bib integration.
-- [Link to Chat: Matrix Affine Transforms](https://gemini.google.com/share/...) - Logic for the `affinitymath` subdirectory.
 
+-   [Link to Chat: Quarto Bibliography Setup](https://gemini.google.com/share/07a336b9f81f) - Debugging Paperpile.bib integration.
+-   [Link to Chat: Matrix Affine Transforms](https://gemini.google.com/share/...) - Logic for the `affinitymath` subdirectory.
