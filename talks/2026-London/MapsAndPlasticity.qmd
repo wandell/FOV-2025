@@ -1,0 +1,37 @@
+---
+title: "Visual maps and adult cortical plasticity"
+subtitle: "Learnings from human MRI"
+author: "Brian Wandell"
+date: "today"
+format:
+  html:
+    theme: cosmo
+    toc: true
+  pdf:
+    keep-tex: false
+    number-sections: true
+    colorlinks: true
+# Pointing to the main project bibliography
+bibliography: ../../paperpile.bib
+---
+
+# Introduction
+
+This is a draft for an upcoming conference in London. The text and images generated here will eventually be transitioned into the core *Foundations of Vision (2nd Edition)* text. 
+
+Creating this document in a subdirectory allows us to use Quarto to generate a standalone PDF presentation or paper without prematurely altering the main book build.
+
+## Example Concept Area
+
+Describe a new idea here...
+
+## Initial Figure Drafts
+
+Any images placed in `talks/2026-London/images/` can be freely edited and refined for the presentation. Once the idea is mature, we'll move the final asset into the root `chapters/images/` folder for the main book.
+
+:::{.column-margin}
+<!-- ![Draft Figure Title](images/draft-fig1.png){#fig-draft-1} -->
+*(Placeholder for margin figure)*
+:::
+
+# References

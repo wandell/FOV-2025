@@ -1,8 +1,13 @@
 # Figure, Margin, and Layout Workflow
 
-This document describes how to manage figures, sizing, and margin contents in the FOV-2025 Quarto book.
+This document describes how to manage figures, sizing, and margin contents in the FOV-2025 Quarto book. It serves as the primary agent instruction set for layout-related tasks.
 
-## Figures and Cross-references
+## 1. General Principles
+- **Quarto-Native First**: Always use Quarto's native cross-referencing system (`@fig-label`) and code-block execution parameters before resorting to HTML/LaTeX hacks.
+- **Cross-Format Compatibility**: Always consider both **HTML** and **PDF** targets. If a layout technique is format-specific (e.g., HTML text wrapping), explicitly state the limitation and provide a PDF-safe fallback.
+- **Minimal Diffs**: Prefer localized fixes over large-scale document restyling.
+
+## 2. Figures and Cross-references
 - Use Quarto’s native crossref system consistently.
 - Figures: use stable labels with the `fig-` prefix (e.g., `#fig-myplot`).
 - Quarto-native syntax is preferred:

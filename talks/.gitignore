@@ -1,0 +1,3 @@
+# Ignore Quarto generated HTML outputs and assets for all present and future talks
+*.html
+*_files/

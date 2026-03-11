@@ -6,7 +6,8 @@
 	],
 	"settings": {
 		"chat.tools.terminal.autoApprove": {
-			"mv": true
+			"mv": true,
+			"mkdir": true
 		},
 		"files.associations": {
 			"*.bib": "bibtex"
