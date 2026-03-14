@@ -16,15 +16,17 @@ format:
 bibliography: ../../paperpile.bib
 ---
 
-# Preface
+*This is a draft document of a talk I will present in London. The text and images presented here will eventually be transitioned into the core **Foundations of Vision (2nd Edition)** text. Your comments and suggestions are very welcome.*
 
-This is a draft document of a talk I will present in London. The text and images presented here will eventually be transitioned into the core *Foundations of Vision (2nd Edition)* text. Your comments and suggestions are very welcome.
+# Introduction
 
-# Introduction [^book]
+I will review two main ideas in this talk, each of them well known to most members of the audience. The first is that the famous picture from Dan Felleman and Dave Van Essen that many of you have probably presented in your own talks and classes.
 
-I will review two principal ideas in this talk, each of them well known to most members of the audience. The first is that the visual cortex contains multiple maps of the visual field, and that we should conceive of these maps as being organized in a hierarchical manner. The second is that the adult visual cortex retains a high degree of plasticity, allowing for functional reorganization in response to changes in sensory input or damage. Each of these ideas has been influential in shaping our understanding of visual processing and cortical organization. However, recent evidence - largely from human MRI studies - has prompted a re-evaluation of these concepts. First, specifying the organization of visual maps as independent structures may not be the right way to think about them. Second, the extent of adult cortical plasticity may be more limited than some of our colleagues - and endless number of commercials on television - have proposed.
+![Felleman and Van Essen's hierarchical model of visual cortex](images/01-felleman-vanessen.png){#fig-felleman-vanessen}
 
+visual cortex contains multiple maps of the visual field, and that we should conceive of these maps as being organized in a hierarchical manner. 
 
+The second is the principle that adult visual cortex retains a high degree of plasticity, allowing for functional reorganization in response to changes in sensory input or damage. Each of these ideas has been influential in shaping our understanding of visual processing and cortical organization. However, recent evidence - largely from human MRI studies - has prompted a re-evaluation of these concepts. First, specifying the organization of visual maps as independent structures may not be the right way to think about them. Second, the extent of adult cortical plasticity may be more limited than some of our colleagues - and endless number of commercials on television - have proposed.
 
 I am particularly happy to have the chance to explore these ideas here, for the visual system, because some of the key papers that motivated me to write this talk were published by Tamar Makin a young colleague - whom I have never met - who is nearby in Cambridge. One of her papers - Against Cortical Reorganization - has received a great deal of attention. That paper and subsequent work is largely based on non-visual parts of cortex. 
 
