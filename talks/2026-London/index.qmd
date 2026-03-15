@@ -18,6 +18,11 @@ bibliography: ../../paperpile.bib
 
 *This is a draft document of a talk I will present in London. The text and images presented here will eventually be transitioned into the core **Foundations of Vision (2nd Edition)** text. Your comments and suggestions are very welcome.*
 
+* Should I open up by mentioning the ISETBio project?
+* Try making a revised Felleman and Van Essen figure that segregates maps from 'areas', shows clusters, reflects human, and includes multiple specializations for 'face', color and perhaps other categories.
+* Make a figure that shows the many different types of visual stability measurements for rod monochromats, AMD, RP, Michael May, and maybe others.  Put the Tessa Dekker hierarchical paper in context for connectivity maps
+
+
 # Introduction
 
 I will review two main ideas in this talk, each of them well known to most members of the audience. The first is that the famous picture from Dan Felleman and Dave Van Essen that many of you have probably presented in your own talks and classes.
