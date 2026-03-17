@@ -44,7 +44,30 @@ bibliography: ../../paperpile.bib
 
 # Introduction
 
-I will review two main ideas in this talk, each of them well known to most members of the audience. The first is that the famous picture from Dan Felleman and Dave Van Essen that many of you have probably presented in your own talks and classes.
+I will tell two brief stories today, one about our understanding of the retinotopic maps in human visual cortex and the second about adult cortical plasticity within these maps. Each topic has elements that are probably well-known to most of you, or at least those of you who have studied visual neuroscience.
+
+I have written this talk up online and posted it so that I can enlist your help. I hope to use this material in the second edition of my book *Foundations of Vision*, which is currently in preparation. I want to make sure that the ideas and data I present are clear and accurate, and that I have not missed important papers or perspectives. I also want to make sure that the figures are clear and informative. So please feel free to send me comments on any aspect of this talk, including the text, the figures, and the references.
+
+# Visual Field Maps
+
+The discovery of visual field maps in human cortex is a fun history to read about. As I am pressed for time, I won't stop repeat it in this oral presentation but I can't help but note that the debates between Ferrier and Munk in the late 19th century were quite heated, and that the disagreements between these two scientists were not just about the data, but also about the interpretation of the data and the implications for our understanding of brain function. The debates were intense and led to personal attacks and accusations of incompetence (@fishman1995-mistake, @glickstein1985-ferrier-mistake,  @wandell2011-ImagingRetinotopicMaps).
+
+::: callout-note
+Ferrier performed lesion studies in monkeys and proposed that primary visual cortex was located in the angular gyrus. The German physiologist, Hermann Munk, disagreed with Ferrier's anatomical localization and argued that visual cortex was in the calcarine region — a critical correction that set the stage for more accurate understanding of retinotopic organization. His comments on Ferrier's work were what one call fairly direct
+
+> In my first communication on the physiology of the cortex which I made iii March of last year I did not say anything about Ferrier’s work on the monkey because there was nothing good to be said about it. But asked in the subsequent session I had to say that Mr. Ferrier's declarations that the visual center in the monkey was situated in the angular gyrus [… and other claims …] that all these statements and what followed from them as far as the character and restitution of disturbances set by the operation are concerned, are worthless and gratuitous constructions since the operated animals were examined by Mr. Ferrier in quite an insufficient manner and only at the time of general depression of brain function. 
+>
+> If I have gone too far in this statement which is based on a general survey of Mr. Ferrier’s experiments it was up to me to restore the injury, the sooner the better.  However, as the experiments show now I have said at that time rather too little than too much, Mr. Ferrier had not made one correct guess, all his statements have turned out to be wrong.
+
+The heated exchanges between Ferrier and Munk caused William James to write "the quarrel is very acrimonious; indeed the subject of localization of functions in the brain seems to have a peculiar effect on the temper of those who cultivate it experimentally. Each observer is sure that he is right, and is ready to explain away the adverse results of his rivals (@james1890-principles, p. 46)”.  
+
+> But he did two things of permanent value. He was the first todistinguish in these vivisections between sensorial andpsychic blindness, and to describe the phenomenon of restitution of the visual function after its first impairment byan operation ; and the first to notice the hemiopic characterof the visual disturbances which result when only onehemisphere is injured. Sensorial blindness is absoluteinsensibility to light ; psychic blindness is inability to recognize the meaning of the optical impressions, as when we see a page of Chinese print but it suggests nothing to us.A hemiopic disturbance of vision is one in which neitherretina is affected in its totality, but in which, for example,the left portion of each retina is blind, so that the animalsees nothing situated in space towards its right (Page 41 in the downloaded PDF from mpg.de).
+
+:::
+
+![Images of Ferrier, Munk, Inouye, and Holmes](images/01-ferrier-munk-holmes.png){#fig-ferrier-munk-inouye-holmes} The first is that the famous picture from Dan Felleman and Dave Van Essen that many of you have probably presented in your own talks and classes.
+
+
 
 ![Felleman and Van Essen's hierarchical model of visual cortex](images/01-felleman-vanessen.png){#fig-felleman-vanessen}
 
