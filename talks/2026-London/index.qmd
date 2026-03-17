@@ -18,10 +18,29 @@ bibliography: ../../paperpile.bib
 
 *This is a draft document of a talk I will present in London. The text and images presented here will eventually be transitioned into the core **Foundations of Vision (2nd Edition)** text. Your comments and suggestions are very welcome.*
 
-* Should I open up by mentioning the ISETBio project?
-* Try making a revised Felleman and Van Essen figure that segregates maps from 'areas', shows clusters, reflects human, and includes multiple specializations for 'face', color and perhaps other categories.
-* Make a figure that shows the many different types of visual stability measurements for rod monochromats, AMD, RP, Michael May, and maybe others.  Put the Tessa Dekker hierarchical paper in context for connectivity maps
+-   Two stories, soann. Visual field maps. Adult cortical plasticity
 
+-   Visual field maps
+
+    -   Historical - refer to earliest Munk et al.
+    -   Horton/Hoyt quotation
+    -   Go up to Felleman and Van Essen - emphasize 'areas' and 'hierarchy' and macaque
+    -   Start to list differences with human; v3a, v3, hv4
+    -   Clusters
+    -   Multiple human multiple specializations for 'face', color and perhaps other categories.
+    -   Rethinking the centrality of ‘areas’ in systems neuroscience paper by Michael Yoo
+    -   Create a new image
+
+-   Adult cortical plasticity
+
+    -   Merzenich, and Gilbert and Wiesel, Collins, Lyon and Kass and others.
+    -   Human Experiments
+        -   Baker/Dilks
+        -   Smirnakis and Logothetis
+        -   Rod monochromats, AMD, RP, Michael May
+    -   Get to perineuronal nets and their role in limiting plasticity.
+    -   Put the Tessa Dekker hierarchical paper in context for connectivity maps
+    -   Schone paper on somatsensory cortex and perineuronal nets.
 
 # Introduction
 
@@ -29,15 +48,15 @@ I will review two main ideas in this talk, each of them well known to most membe
 
 ![Felleman and Van Essen's hierarchical model of visual cortex](images/01-felleman-vanessen.png){#fig-felleman-vanessen}
 
-visual cortex contains multiple maps of the visual field, and that we should conceive of these maps as being organized in a hierarchical manner. 
+visual cortex contains multiple maps of the visual field, and that we should conceive of these maps as being organized in a hierarchical manner.
 
 The second is the principle that adult visual cortex retains a high degree of plasticity, allowing for functional reorganization in response to changes in sensory input or damage. Each of these ideas has been influential in shaping our understanding of visual processing and cortical organization. However, recent evidence - largely from human MRI studies - has prompted a re-evaluation of these concepts. First, specifying the organization of visual maps as independent structures may not be the right way to think about them. Second, the extent of adult cortical plasticity may be more limited than some of our colleagues - and endless number of commercials on television - have proposed.
 
-I am particularly happy to have the chance to explore these ideas here, for the visual system, because some of the key papers that motivated me to write this talk were published by Tamar Makin a young colleague - whom I have never met - who is nearby in Cambridge. One of her papers - Against Cortical Reorganization - has received a great deal of attention. That paper and subsequent work is largely based on non-visual parts of cortex. 
+I am particularly happy to have the chance to explore these ideas here, for the visual system, because some of the key papers that motivated me to write this talk were published by Tamar Makin a young colleague - whom I have never met - who is nearby in Cambridge. One of her papers - Against Cortical Reorganization - has received a great deal of attention. That paper and subsequent work is largely based on non-visual parts of cortex.
 
-In this talk, I want to bring to everyone's attention data in support of the relative stability of the adult human visual cortex.  The findings are quite extensive, but due to their technical nature rather less known. These findings, too, come from investigators based in England and Europe. I believe that by reviewing their findings here, and joining them to the findings from Makin, Krakauer, and others, we can see that these principles span much of human neuroscience. 
+In this talk, I want to bring to everyone's attention data in support of the relative stability of the adult human visual cortex. The findings are quite extensive, but due to their technical nature rather less known. These findings, too, come from investigators based in England and Europe. I believe that by reviewing their findings here, and joining them to the findings from Makin, Krakauer, and others, we can see that these principles span much of human neuroscience.
 
-Finally, I want to make a connection to the MRI work in human with relatively new ideas - say twenty-five years old - to certain specific cellular but non-neural actors. This is a bit risky for someone like me, and I am glad for the opportunity to raise the issues informally here with an audience that includes experts in cellular neuroscience. I will suggest that the limits on adult plasticity - and against large scale cortical reorganization in the adult - are consistent with the properties of the perineuronal networks.  These cellular properties make the likelihood of large scale cortical organization in the adult - without active intervention - quite unlikely. 
+Finally, I want to make a connection to the MRI work in human with relatively new ideas - say twenty-five years old - to certain specific cellular but non-neural actors. This is a bit risky for someone like me, and I am glad for the opportunity to raise the issues informally here with an audience that includes experts in cellular neuroscience. I will suggest that the limits on adult plasticity - and against large scale cortical reorganization in the adult - are consistent with the properties of the perineuronal networks. These cellular properties make the likelihood of large scale cortical organization in the adult - without active intervention - quite unlikely.
 
 For those of you who already agree with the ideas, I hope that this review with its figures and references will be useful for your teaching. I plan to incorporate much of this material, using a tutorial approach, into the second edition of my book *Foundations of Vision*, which is currently in preparation. For those of you who disagree with my comments, please visit with me during this meeting so I can understand what you and why the roughly fifty papers I am drawing upon are missing something important.
 
@@ -49,8 +68,9 @@ Describe a new idea here...
 
 Any images placed in `talks/2026-London/images/` can be freely edited and refined for the presentation. Once the idea is mature, we'll move the final asset into the root `chapters/images/` folder for the main book.
 
-:::{.column-margin}
+::: column-margin
 <!-- ![Draft Figure Title](images/draft-fig1.png){#fig-draft-1} -->
+
 *(Placeholder for margin figure)*
 :::
 
