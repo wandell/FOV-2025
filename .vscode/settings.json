@@ -5,6 +5,9 @@
     "files.associations": {
         "*.bib": "bibtex"
     },
+    "bibtex-tidy.sort": [
+        "key"
+    ],
     "[bibtex]": {
         "editor.defaultFormatter": "xrimson.bibtex-tidy",
         "editor.formatOnSave": true,
