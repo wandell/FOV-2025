@@ -71,15 +71,34 @@ The heated exchanges between Ferrier and Munk caused William James to write "the
 > But he did two things of permanent value. He was the first to distinguish in these vivisections between sensorial and psychic blindness, and to describe the phenomenon of restitution of the visual function after its first impairment by an operation ; and the first to notice the hemiopic character of the visual disturbances which result when only one hemisphere is injured. Sensorial blindness is absolute insensibility to light ; psychic blindness is inability to recognize the meaning of the optical impressions, as when we see a page of Chinese print but it suggests nothing to us. A hemiopic disturbance of vision is one in which neither retina is affected in its totality, but in which, for example, the left portion of each retina is blind, so that the animal sees nothing situated in space towards its right (Page 41 in the downloaded PDF from mpg.de).
 :::
 
-The discovery that visual cortex includes can contain multiple retinotopic maps was first reported by the Wisconsin group and then Hubel and Wiesel (for a review of this history see @wandell2011-ImagingRetinotopicMaps). This was followed by a large collection of studies, summarized in Zeki's book, revealing multiple distinct anatomical and functional regions in macaque that came to be known as 'visual areas' @zeki1993-book. How to define a visual area has been challenged repeatedly (@wandell2007-VisualFieldMaps, @hayden2025-rethinking-areas), and at this point in time there seems to be good reason to clarify when we are describing a retinotopic map or a region identified by another criterion such as cellular properties or functional responses or connectivity.
+The discovery that visual cortex includes can contain multiple retinotopic maps was first reported by Talbot, Marshall and colleagues in the Wisconsin group. Subsequently, Cowey reported a second visual map in a non-human primate, and Hubel and Wiesel reported two extrastriate maps in cat (see @wandell2011-ImagingRetinotopicMaps). This was followed by a large collection of studies, summarized in Zeki's book (@zeki1993-book), revealing multiple distinct anatomical and functional regions in macaque that came to be known as 'visual areas' @zeki1993-book. 
+
+A generation of scientists were brought up with David Van Essen's definition of what it means to be a visual area.  He used the acronym FACT to say that a region of cortex was an area based on measurements of its
+
+F — Function
+Neurons in the region share distinctive response properties (e.g., motion selectivity, color bias, disparity tuning).
+
+A — Anatomy (architectonics)
+The region has distinguishable microstructure (e.g., cytoarchitecture, myeloarchitecture, laminar patterns).
+
+C — Connections
+It has a characteristic pattern of inputs and outputs (afferent/efferent connectivity distinct from neighboring cortex).
+
+T — Topography
+It contains an orderly map of the visual field (retinotopy), often with clear field boundaries (e.g., meridian reversals).
+
+DVE suggested that a cortical “visual area” is a region that can be distinguished from its neighbors by a convergence of evidence across function, anatomy, connectivity, and topographic organization (FACT), rather than by any single criterion alone.
+
+This was an arbitrary and potentially incoherent way to define a visual area, and the value of the term visual area has been challenged over the years(@wandell2007-VisualFieldMaps, @hayden2025-rethinking-areas). At this point in time there seems to be good reason to clarify when we are describing a retinotopic map or a region identified by another specific criterion such as cellular properties or functional responses or connectivity.
 
 ::: {#multiple-maps .callout-note}
 The effort to discover and map multiple visual areas in animal models expanded enormously between the 1940s and the 1990s. The major milestones include:
 
-- **The 1940s (V2 in cats and rabbits)**: The discovery of multiple visual field maps began when electrophysiological measurements revealed a second visual map (V2) adjacent to the primary visual cortex (V1) in the rabbit and cat. These early discoveries were spearheaded by Talbot, Marshall, Thompson, and a major laboratory group in Wisconsin led by Woolsey.
-- **The 1960s (V2 and V3 in monkeys and cats)**: Mapping efforts successfully extended to non-human primates when Cowey identified a second map in the squirrel monkey in 1964. The following year, Hubel and Wiesel described a third map (V3) in the cat.
-- **The 1970s–1990s (V4, MT/V5, and beyond)**: During this period, investigators focused heavily on parcellating the extrastriate cortex of non-human primates, causing the number of identified maps to grow rapidly. A major breakthrough was the discovery of V4 and the motion-sensitive MT/V5 maps in the owl monkey by Allman and Kaas in 1971. Around the same time, Semir Zeki conducted pioneering anatomical and single-unit studies that established a framework for the concentric organization of these maps in macaques.
-- **Methodological challenges**: Identifying these early maps relied heavily on single-unit electrophysiology. Because the field of view for these technologies is so small, establishing the existence of a map was a notoriously difficult process that Hubel and Wiesel famously likened to "a dismaying exercise in tedium, like trying to cut the back lawn with a pair of nail scissors".
+- **The 1940s (V2 in cats and rabbits)**: The discovery of multiple visual field maps began when electrophysiological measurements revealed a second visual map (V2) adjacent to the primary visual cortex (V1) in the rabbit and cat. These early discoveries were spearheaded by Talbot, Marshall, Thompson (see review @thompson1950-visual-maps) from the Wisconsin laboratory established by Woolsey.
+- **The 1960s (V2 and V3 in monkeys and cats)**: Mapping efforts successfully extended to non-human primates when Cowey identified a second map in the squirrel monkey (@cowey1964-v2). The following year, Hubel and Wiesel described a third map in the cat (@hubel1965-cat-v2-v3).
+- **The 1970s–1990s (V4, MT/V5, and beyond)**: During this period, investigators focused heavily on parcellating the extrastriate cortex of non-human primates, causing the number of identified maps to grow rapidly. A major breakthrough was the discovery of V4 and the motion-sensitive MT/V5 maps in the owl monkey by Allman and Kaas in 1971. 
+- **Non-human primates** Around the same time, Semir Zeki conducted pioneering anatomical and single-unit studies that established a framework for the concentric organization of these maps in macaques (@zeki1969-multiple-maps, @zeki1974-mt). It was during this period that he made an effort to associate specific functional (perceptual) properties to individual maps (@zeki1978-functional, @zeki1993-book).
+- **Methodological challenges**: Identifying these early maps relied heavily on single-unit electrophysiology and very detailed anatomical work. Because the field of view for these technologies is relatively small, establishing the existence of a map was a notoriously difficult process that Hubel and Wiesel famously likened to "a dismaying exercise in tedium, like trying to cut the back lawn with a pair of nail scissors".
 :::
 
 But even as late as 1991, Horton and Hoyt  observed that there was no proof of multiple maps in human visual cortex.   @horton1991-quadraticdefects @horton1991-representationvisualfield
