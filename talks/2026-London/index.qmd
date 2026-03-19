@@ -18,30 +18,6 @@ bibliography: ../../paperpile.bib
 
 *This is a draft document of a talk I will present in London. The text and images presented here will eventually be transitioned into the core **Foundations of Vision (2nd Edition)** text. Your comments and suggestions are very welcome.*
 
--   Two stories, soann. Visual field maps. Adult cortical plasticity
-
--   Visual field maps
-
-    -   Historical - refer to earliest Munk et al.
-    -   Horton/Hoyt quotation
-    -   Go up to Felleman and Van Essen - emphasize 'areas' and 'hierarchy' and macaque
-    -   Start to list differences with human; v3a, v3, hv4
-    -   Clusters
-    -   Multiple human multiple specializations for 'face', color and perhaps other categories.
-    -   Rethinking the centrality of ‘areas’ in systems neuroscience paper by Michael Yoo
-    -   Create a new image
-
--   Adult cortical plasticity
-
-    -   Merzenich, and Gilbert and Wiesel, Collins, Lyon and Kass and others.
-    -   Human Experiments
-        -   Baker/Dilks
-        -   Smirnakis and Logothetis
-        -   Rod monochromats, AMD, RP, Michael May
-    -   Get to perineuronal nets and their role in limiting plasticity.
-    -   Put the Tessa Dekker hierarchical paper in context for connectivity maps
-    -   Schone paper on somatsensory cortex and perineuronal nets.
-
 # Introduction
 
 I will tell two brief stories today. One story concerns our understanding of the retinotopic maps in human visual cortex; the second concerns the question of adult cortical plasticity within these maps. It is likely that each story has elements that are well-known to most of you, or at least those of you who have studied visual neuroscience. I suspect that many of the details I describe, and the ongoing back-and-forth between different groups of investigators, will be less familiar.
@@ -53,6 +29,19 @@ Second, I will suggest that the idea of large-scale adult cortical plasticity, w
 I have written this talk up online and posted it so that I can enlist your help. I hope to use this material in the second edition of my book *Foundations of Vision*, which is currently in preparation. I want to make sure that the ideas and data I present are clear and accurate, and that I have not missed important papers or perspectives. I also want to make sure that the figures are clear and informative. So please feel free to send me comments on any aspect of this talk, including the text, the figures, and the references.
 
 # Visual Field Maps - Historical Perspective
+
+-   Visual field maps
+    -   Historical - refer to earliest Munk et al.
+    -   Go up to Felleman and Van Essen - emphasize 'areas' and 'hierarchy' and macaque
+    -   Horton/Hoyt quotation
+    -   Start to list differences with human; v3a, v3, hv4
+    -   Clusters
+    -   Maybe some reference to the Markov/Kennedy advances in anatomy?
+    -   Human specializations for 'face', color and perhaps other categories.
+    -   Create a new image that distinguishes
+        - Maps from specializations
+        - Identifies clusters
+        - Less hierarchical
 
 The discovery of visual field maps in human cortex is a fun history to read about. As I am pressed for time, I won't stop repeat it in this oral presentation but I can't help but note that the debates between Ferrier and Munk in the late 19th century were quite heated, and that the disagreements between these two scientists were not just about the data, but also about the interpretation of the data and the implications for our understanding of brain function. The debates were intense and led to personal attacks and accusations of incompetence (@fishman1995-mistake, @glickstein1985-ferrier-mistake,  @wandell2011-ImagingRetinotopicMaps).
 
@@ -71,25 +60,20 @@ The heated exchanges between Ferrier and Munk caused William James to write "the
 > But he did two things of permanent value. He was the first to distinguish in these vivisections between sensorial and psychic blindness, and to describe the phenomenon of restitution of the visual function after its first impairment by an operation ; and the first to notice the hemiopic character of the visual disturbances which result when only one hemisphere is injured. Sensorial blindness is absolute insensibility to light ; psychic blindness is inability to recognize the meaning of the optical impressions, as when we see a page of Chinese print but it suggests nothing to us. A hemiopic disturbance of vision is one in which neither retina is affected in its totality, but in which, for example, the left portion of each retina is blind, so that the animal sees nothing situated in space towards its right (Page 41 in the downloaded PDF from mpg.de).
 :::
 
-The discovery that visual cortex includes can contain multiple retinotopic maps was first reported by Talbot, Marshall and colleagues in the Wisconsin group. Subsequently, Cowey reported a second visual map in a non-human primate, and Hubel and Wiesel reported two extrastriate maps in cat (see @wandell2011-ImagingRetinotopicMaps). This was followed by a large collection of studies, summarized in Zeki's book (@zeki1993-book), revealing multiple distinct anatomical and functional regions in macaque that came to be known as 'visual areas' @zeki1993-book. 
+The discovery that visual cortex includes can contain multiple retinotopic maps was first reported by Talbot, Marshall and colleagues in the Wisconsin group. Subsequently, Cowey reported a second visual map in a non-human primate, and Hubel and Wiesel reported two extrastriate maps in cat (see @wandell2011-ImagingRetinotopicMaps). This was followed by a large collection of studies, summarized in Zeki's book (@zeki1993-book).  Much of that work, and the many papers that followed, was concerned with revealing distinct anatomical regions that came to be known as 'visual areas' @zeki1993-book. 
 
-A generation of scientists were brought up with David Van Essen's definition of what it means to be a visual area.  He used the acronym FACT to say that a region of cortex was an area based on measurements of its
+::: {#visual-areas .callout-note}
+A generation of scientists were brought up with David Van Essen's definition of what it means to be a visual area.  He used the acronym FACT to say that a region of cortex was an area based on measurements of its:
 
-F — Function
-Neurons in the region share distinctive response properties (e.g., motion selectivity, color bias, disparity tuning).
-
-A — Anatomy (architectonics)
-The region has distinguishable microstructure (e.g., cytoarchitecture, myeloarchitecture, laminar patterns).
-
-C — Connections
-It has a characteristic pattern of inputs and outputs (afferent/efferent connectivity distinct from neighboring cortex).
-
-T — Topography
-It contains an orderly map of the visual field (retinotopy), often with clear field boundaries (e.g., meridian reversals).
+- **F — Function**: Neurons in the region share distinctive response properties (e.g., motion selectivity, color bias, disparity tuning).
+- **A — Anatomy (architectonics)**: The region has distinguishable microstructure (e.g., cytoarchitecture, myeloarchitecture, laminar patterns).
+- **C — Connections**: It has a characteristic pattern of inputs and outputs (afferent/efferent connectivity distinct from neighboring cortex).
+- **T — Topography**: It contains an orderly map of the visual field (retinotopy), often with clear field boundaries (e.g., meridian reversals).
 
 DVE suggested that a cortical “visual area” is a region that can be distinguished from its neighbors by a convergence of evidence across function, anatomy, connectivity, and topographic organization (FACT), rather than by any single criterion alone.
+:::
 
-This was an arbitrary and potentially incoherent way to define a visual area, and the value of the term visual area has been challenged over the years(@wandell2007-VisualFieldMaps, @hayden2025-rethinking-areas). At this point in time there seems to be good reason to clarify when we are describing a retinotopic map or a region identified by another specific criterion such as cellular properties or functional responses or connectivity.
+The visual area terminology was influential, but in my view an arbitrary and often incoherent term. This has been pointed out several times over the years [@wandell2007-VisualFieldMaps; @hayden2025-rethinking-areas]. It seems important to clarify the reason for identifying a region of cortex, whether it contains a retinotopic maps, neurons with common functional responses, similar cellular properties, or common input and output targets. 
 
 ::: {#multiple-maps .callout-note}
 The effort to discover and map multiple visual areas in animal models expanded enormously between the 1940s and the 1990s. The major milestones include:
@@ -101,11 +85,24 @@ The effort to discover and map multiple visual areas in animal models expanded e
 - **Methodological challenges**: Identifying these early maps relied heavily on single-unit electrophysiology and very detailed anatomical work. Because the field of view for these technologies is relatively small, establishing the existence of a map was a notoriously difficult process that Hubel and Wiesel famously likened to "a dismaying exercise in tedium, like trying to cut the back lawn with a pair of nail scissors".
 :::
 
-But even as late as 1991, Horton and Hoyt  observed that there was no proof of multiple maps in human visual cortex.   @horton1991-quadraticdefects @horton1991-representationvisualfield
+The burst of activity in identifying visual areas was summarized in an important article by @felleman1991-hierarchy. One of the iconic images from that paper, which estimates a large number of 'visual areas' and proposes that they are organized into a hierarchy with signals flowing from the bottom to the top, is shown in @fig-felleman-vanessen.  This image is still widely used in teaching and by speakers who wish to introduce visual cortex to a general audience.
 
 ![Felleman and Van Essen's hierarchical representation of areas in visual cortex.](images/01-felleman-vanessen.png){#fig-felleman-vanessen}
 
-visual cortex contains multiple maps of the visual field, and that we should conceive of these maps as being organized in a hierarchical manner.
+## Human retinopic maps
+Most scientists believed that the retinotopic maps, or even the 'visual areas', discovered in non-human primates would be a close model for what one might find in human. But even as late as 1991, Horton and Hoyt observed that there was no proof of even two maps maps in human visual cortex [@horton1991-quadraticdefects; @horton1991-representationvisualfield].  This all changed with the introduction of functional magnetic resonance imaging (fMRI).  That technology enabled investigators to identify retinotopic maps in the living human brain at the resolution of a few milimeters in experiments lasting less than an hour. Over time, the spatial precision and duration of the experiments has decreased dramatically.
+
+# Adult cortical plasticity
+
+-   Adult cortical plasticity
+    -   Merzenich, and Gilbert and Wiesel, Collins, Lyon and Kass and others.
+    -   Human Experiments
+        -   Baker/Dilks
+        -   Smirnakis and Logothetis
+        -   Rod monochromats, AMD, RP, Michael May
+    -   Connect to Makin papers (Against and Schone)
+    -   Get to perineuronal nets and their role in limiting plasticity.  Maffei, Hensch, other references
+    -   Maybe Tessa Dekker hierarchical paper, but maybe not
 
 The second is the principle that adult visual cortex retains a high degree of plasticity, allowing for functional reorganization in response to changes in sensory input or damage. Each of these ideas has been influential in shaping our understanding of visual processing and cortical organization. However, recent evidence - largely from human MRI studies - has prompted a re-evaluation of these concepts. First, specifying the organization of visual maps as independent structures may not be the right way to think about them. Second, the extent of adult cortical plasticity may be more limited than some of our colleagues - and endless number of commercials on television - have proposed.
 
