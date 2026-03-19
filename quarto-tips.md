@@ -69,3 +69,21 @@ Multiple citations: [@Wandell1999-ColorSignalsHuman; @Baseler2011-MD-plasticity]
 
 Narrative citation: @Wandell1999-ColorSignalsHuman showed that...
 ```
+
+### 5. Equations (LaTeX)
+
+**Inline Equations:**
+Use single dollar signs to include math inside a paragraph:
+```md
+We compute the difference $x_i - y_i$ and then square it.
+```
+
+**Display Equations:**
+Use double dollar signs for centered equations on their own line. Add a label with an `#eq-` prefix to cross-reference it later:
+```md
+$$
+\text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (\hat{y}_i - y_i)^2}
+$$ {#eq-rmse}
+
+As we can see in @eq-rmse, the error is calculated by...
+```
