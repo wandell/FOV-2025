@@ -43,15 +43,15 @@ I hope to incorporate the material from this presentation into the second editio
 
 The discovery of visual field maps in human cortex is a fun history to read about [@fishman1995-mistake; @glickstein1985-ferrier-mistake;  @wandell2011-ImagingRetinotopicMaps]. The debates between Ferrier and Munk in the late 19th century about the location of visual cortex were heated. The disagreements were not just about the data, but also about the interpretation of the data and the implications for our understanding of brain function. 
 
-![Nineteenth century neuroscientists, neurologists and opthalmologists who discovered the localization of visual signals in animal models (Ferrier, Munk) and the presence of a retinotopic map in human visual cortex (Henschen, Holmes, Inouye).](images/01-ferrier-munk-holmes.png){#fig-ferrier-munk-inouye-holmes width="80%"} 
+![Nineteenth century neuroscientists, neurologists and opthalmologists who discovered the localization of visual signals in animal models (Ferrier, Munk) and the presence of a retinotopic map in human visual cortex (Henschen, Holmes, Inouye).](images/ferrier-munk-inouye-holmes.png){#fig-ferrier-munk-inouye-holmes width="80%"} 
 
 Ferrier performed lesion studies in monkeys and proposed that primary visual cortex was located in the angular gyrus. The German physiologist, Hermann Munk, disagreed with Ferrier's anatomical localization and argued that visual cortex was in the calcarine region — a critical correction that set the stage for more accurate understanding of retinotopic organization.
 
 ::: {#fig-ferrier-munk}
 
-![A: Ferrier's location of visual cortex in the angular gyrus](images/Slide5.png){#ferrier-angular-gyrus width="80%"}
+![A: Ferrier's location of visual cortex in the angular gyrus](images/ferrier-angular-gyrus.png){#ferrier-angular-gyrus width="80%"}
 
-![B: Munk's location of visual cortex in the occipital lobe](images/Slide6.png){#munk-occipital-lobe width="80%"}
+![B: Munk's location of visual cortex in the occipital lobe](images/munk-occipital-lobe.png){#munk-occipital-lobe width="80%"}
 :::
 
 ::: {#ferrier-munk-james .callout-note}
@@ -69,19 +69,19 @@ Safely commenting on the debate from the other side of an ocean, William James w
 
 Ferrier and Munk did their work in animal models.  It is important to mention the work of the Swedish neurologist, Henschen, who carefully observed the visual loss in human patients with occipital lesions. He concluded that at least part of the visual field, the upper and lower portions, were represented in cortex in an orderly map with the lower visual field in the dorsal occipital lobe and upper visual field in the ventral occipital lobe. 
 
-![Henschen's findings on the upper and lower field representations.](images/Slide9.png){#fig-henschence width="80%"}
+![Henschen's findings on the upper and lower field representations.](images/henschen.png){#fig-henschen width="80%"}
 
-His work was confirmed and extended by two clinicians working at opposite ends of the world - Holmes and Inouye - who studied the visual field loss from soldiers injured in the wars in Europe and Japan, respectively.
+Henschen's observations were confirmed and extended by two clinicians, people working at opposite ends of the world: Gordon Holmes and Tatsuye Inouye.  Both were studying the visual field loss from soldiers injured in their countries' wars, Holmes in Europe and Inouye in Japan.  In that era, the guns were not always lethal, and the helmets would permit bullets to enter and exit the posterior skull, effectively lesioning a portion of occipital cortex.  Such lesions could cause a permanent but partial visual field loss.  The visual field maps these clinicians produced were used as training material for decades.
 
 ::: {#fig-inouye-holmes}
 
-![A: Inouye](images/Slide11.png){#inouye-map width="80%"}
+![A: Inouye](images/inouye-map.png){#inouye-map width="80%"}
 
-![B: Holmes](images/Slide12.png){#holmes-map width="80%"}
+![B: Holmes](images/holmes-map.png){#holmes-map width="80%"}
 :::
 
 ## Multiple maps
-The discovery that visual cortex includes can contain multiple retinotopic maps was first reported by Talbot, Marshall and colleagues in the Wisconsin group. Subsequently, Cowey reported a second visual map in a non-human primate, and Hubel and Wiesel reported two extrastriate maps in cat (see @wandell2011-ImagingRetinotopicMaps). This was followed by a large collection of studies, summarized in Zeki's book (@zeki1993-book).  Much of that work, and the many papers that followed, was concerned with revealing distinct anatomical regions that came to be known as 'visual areas' @zeki1993-book. 
+Talbot and colleagues in Wisconsin were the first to discover that visual cortex includes multiple retinotopic maps (in rabbit in their case). Subsequently, Cowey observed the presence of a second visual map in a non-human primate [@cowey1964-v2]; Hubel and Wiesel reported two extrastriate maps in cat [@hubel1965-cat-v2-v3]. This was followed by a large collection of studies, summarized with some passion and attention to history by @zeki1993-book. Much of that work, and the many papers that followed, was concerned with revealing distinct anatomical regions that came to be known as 'visual areas'. Jon Winawer and I also reviewed this history in [@wandell2011-ImagingRetinotopicMaps]. Everyone should enjoy a visit with Charlie Gross' book that is filled with interesting histories of neuroscience discovery, and he includes more information about the Ferrier-Munk (and Schaefer) exchanges [@gross1998-brain-book].
 
 ::: {#multiple-maps .callout-note}
 The effort to discover and map multiple visual areas in animal models expanded enormously between the 1940s and the 1990s. The major milestones include:
@@ -95,7 +95,7 @@ The effort to discover and map multiple visual areas in animal models expanded e
 
 The burst of activity in identifying visual areas was summarized in an important article by @felleman1991-hierarchy. One of the iconic images from that paper, which estimates a large number of 'visual areas' and proposes that they are organized into a hierarchy with signals flowing from the bottom to the top, is shown in @fig-felleman-vanessen.  This image is still widely used in teaching and by speakers who wish to introduce visual cortex to a general audience.
 
-![Felleman and Van Essen's hierarchical representation of areas in visual cortex.](images/01-felleman-vanessen.png){#fig-felleman-vanessen width="80%"}
+![Felleman and Van Essen's hierarchical representation of areas in visual cortex.](images/felleman-vanessen.png){#fig-felleman-vanessen width="80%"}
 
 
 ::: {#visual-areas .callout-note}
@@ -145,7 +145,7 @@ Describe a new idea here...
 Any images placed in `talks/2026-London/images/` can be freely edited and refined for the presentation. Once the idea is mature, we'll move the final asset into the root `chapters/images/` folder for the main book.
 
 ::: column-margin
-<!-- ![Draft Figure Title](images/draft-fig1.png){#fig-draft-1 width="80%"} -->
+<!-- ![Draft Figure Title](images/draft-1.png){#fig-draft-1 width="80%"} -->
 
 *(Placeholder for margin figure)*
 :::
