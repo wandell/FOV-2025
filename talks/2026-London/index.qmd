@@ -99,7 +99,7 @@ The burst of activity in identifying visual areas was summarized in an important
 
 
 ::: {#visual-areas .callout-note}
-A generation of scientists were brought up with David Van Essen's definition of what it means to be a visual area.  He used the acronym FACT to say that a region of cortex was an area based on measurements of its:
+A generation of scientists were taught David Van Essen's definition of a visual area.  He used the acronym FACT to say that a region of cortex was an area based on measurements of its:
 
 - **F — Function**: Neurons in the region share distinctive response properties (e.g., motion selectivity, color bias, disparity tuning).
 - **A — Anatomy (architectonics)**: The region has distinguishable microstructure (e.g., cytoarchitecture, myeloarchitecture, laminar patterns).
@@ -109,10 +109,19 @@ A generation of scientists were brought up with David Van Essen's definition of 
 DVE suggested that a cortical “visual area” is a region that can be distinguished from its neighbors by a convergence of evidence across function, anatomy, connectivity, and topographic organization (FACT), rather than by any single criterion alone.
 :::
 
-The visual area terminology was influential, but in my view an arbitrary and often incoherent term. This has been pointed out several times over the years [@wandell2007-VisualFieldMaps; @hayden2025-rethinking-areas]. It seems important to clarify the reason for identifying a region of cortex, whether it contains a retinotopic maps, neurons with common functional responses, similar cellular properties, or common input and output targets. 
+The visual area terminology was influential, but in my view and that of some others it is an arbitrary and often incoherent term.[@wandell2007-VisualFieldMaps; @hayden2025-rethinking-areas]. It is important to clarify the reason for identifying a region of cortex: it contains a retinotopic maps, neurons with common functional responses, similar cellular properties, or common input and output targets. The use of the concept of 'area', which could be any or some mixture of these without a clear rule, is less helpful than one might have thought in the early days.
 
 ## Human retinopic maps
-Most scientists believed that the retinotopic maps, or even the 'visual areas', discovered in non-human primates would be a close model for what one might find in human. But even as late as 1991, Horton and Hoyt observed that there was no proof of even two maps maps in human visual cortex [@horton1991-quadraticdefects; @horton1991-representationvisualfield].  This all changed with the introduction of functional magnetic resonance imaging (fMRI).  That technology enabled investigators to identify retinotopic maps in the living human brain at the resolution of a few milimeters in experiments lasting less than an hour. Over time, the spatial precision and duration of the experiments has decreased dramatically.
+Most scientists believed that the retinotopic maps, or even the 'visual areas', discovered in non-human primates would be a good model for human visual cortex. But even as late as 1991, Horton and Hoyt observed that there was no proof of even two maps maps in human visual cortex [@horton1991-quadraticdefects; @horton1991-representationvisualfield]. The need for guessing changed with the introduction of functional magnetic resonance imaging (fMRI). That technology enabled investigators to identify retinotopic maps in the living human brain at the resolution of a few milimeters in experiments lasting less than an hour. Over time, the spatial precision and duration of the experiments has decreased dramatically.
+
+Initially, Steve Engel and I along with many others developed a technique to measure eccentricity and angle maps using rings and wedges.  If you look at the video casually, you will see the wave from the occipital pole traveling in the anterior direction of the main map.  If you look a little more closely, you will also see a secondary ripple on the ventral occippital-temporal surface. That ripple starts when the stimulus is in the fovea and then fades out as the ring expands about half way (10 deg). The VOT eccentricity map is a second eccentricity map, confined mainly to the perifoveal visual field, that is distinct from the calcarine map.  
+
+![Eccentricity mapping using an expanding ring stimulus (20 deg) in the calcarine and ventral occipital region](../../chapters/videos/eccentricity-map-encyclopedia.mp4){#eccentricity-ring width="80%" loop="true" autoplay="true" muted="true"}
+
+We also made measurements using a rotating wedge stimulus to identify the angular representation. 
+
+
+With the large field of view available to the fMRI measurements, we could see multiple eccentricity maps distributed across the 
 
 # Adult cortical plasticity
 

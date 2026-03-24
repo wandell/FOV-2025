@@ -87,3 +87,11 @@ $$ {#eq-rmse}
 
 As we can see in @eq-rmse, the error is calculated by...
 ```
+
+### 6. Videos
+
+Insert a local video (e.g., MP4) just like an image, but append HTML video attributes in the curly braces to control playback. Most browsers require muted autoplay for videos to load automatically.
+
+```md
+![Caption for the video](path/to/video.mp4){#vid-label width="80%" loop="true" autoplay="true" muted="true"}
+```
