@@ -112,7 +112,7 @@ DVE suggested that a cortical “visual area” is a region that can be distingu
 The visual area terminology was influential, but in my view and that of some others it is an arbitrary and often incoherent term.[@wandell2007-VisualFieldMaps; @hayden2025-rethinking-areas]. It is important to clarify the reason for identifying a region of cortex: it contains a retinotopic maps, neurons with common functional responses, similar cellular properties, or common input and output targets. The use of the concept of 'area', which could be any or some mixture of these without a clear rule, is less helpful than one might have thought in the early days.
 
 ## Human retinopic maps
-Most scientists believed that the retinotopic maps, or even the 'visual areas', discovered in non-human primates would be a good model for human visual cortex. But even as late as 1991, Horton and Hoyt observed that there was no proof of even two maps maps in human visual cortex [@horton1991-quadraticdefects; @horton1991-representationvisualfield]. The need for guessing changed with the introduction of functional magnetic resonance imaging (fMRI). That technology enabled investigators to identify retinotopic maps in the living human brain at the resolution of a few milimeters in experiments lasting less than an hour. Over time, the spatial precision and duration of the experiments has decreased dramatically.
+Most scientists believed that the retinotopic maps and 'visual areas' found in non-human primates would be a good model for human visual cortex. But even as late as 1991, Horton and Hoyt observed that there was no proof of even two maps maps in human visual cortex [@horton1991-quadraticdefects; @horton1991-representationvisualfield]. The need for guessing changed with the introduction of functional magnetic resonance imaging (fMRI). That technology enabled investigators to identify retinotopic maps in the living human brain at the resolution of a few milimeters in experiments lasting less than an hour. Over time, the spatial precision and duration of the experiments has decreased dramatically.
 
 Steve Engel and I - helped by many others - developed a continuous technique to measure eccentricity and angle maps. The stimulus for measuring eccentricity is shown in the @fig-eccentricity-movie.  If you look at the video casually, you will see the wave from the occipital pole traveling in the anterior direction of the main map.  If you look a little more closely, you will also see a secondary ripple on the ventral occippital-temporal surface. That ripple starts when the stimulus is in the fovea and then fades out as the ring expands about half way (10 deg). The VOT eccentricity map is a second eccentricity map, confined mainly to the perifoveal visual field, that is distinct from the calcarine map.  
 
@@ -127,13 +127,16 @@ The data from the video are summarized in two pseudo-color maps showing the most
 ![A: Eccentricity map shows the most effective visual eccentricity (deg) for each location.](images/Slide23.png){#fig-eccentricity-map width ="80%"}
 
 ![B: Angle map shows the most effective wedge angle for each location.](images/Slide24.png){#fig-angle-map width="80%"}
+
+![C: V1-V3 shown on calcarine along with an eccentricity map emphasizing the cortical magnification.](images/Slide25.png){#fig-areas-magnification width="80%"}
+
 :::
 
-First cluster
+Alyssa Brewer noticed the secondary fovea on the ventral occipital surface and decided to explore it further [@brewer2005-visualFieldMaps-clusters]. To see the two clusters distinctly, she decided to use a much smaller field of view for the rings, expanding them slowly through the central 3 deg. You can see the two eccentricity maps - plainly distinct from one another in @fig-vo-cluster.
 
-![Eccentricity map emphasizing the central 3 deg.  This shows the two different eccentricity maps, one in calcarine and a second on the VOT.  Data from @brewer2005-visualFieldMaps-clusters.](images/Slide26.png){#fig-angle-map width="80%"}
+![Eccentricity map emphasizing the central 3 deg.  This shows the two different eccentricity maps, one in calcarine and a second on the VOT.  From @brewer2005-visualFieldMaps-clusters.](images/Slide26.png){#fig-vo-cluster width="80%"}
 
-More clusters.  Slides need reworking.
+Over time, it become clear to us that this pattern was found repeatedly.  There were separate eccentricity maps throughout much of posterior cortex. 
 
 ![Visual field map clusters in human cortex @wandell2005-visualFieldMap-clusters](images/Slide30.png){#fig-clusters-flatmap width="80%"}
 

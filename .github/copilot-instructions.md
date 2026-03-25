@@ -26,6 +26,7 @@ You are assisting with a Quarto book project stored in a GitHub repository. Your
 ## Quarto cross-references (book-scale)
 - Use Quarto’s native crossref system (commonly `@sec-*` and `@fig-*`).
 - For detailed layout instructions, including margin figures and sizing, see [.agent/workflows/layout.md](.agent/workflows/layout.md).
+- For converting image sequences into videos and looping crossfades, see [.agent/workflows/video-generation.md](.agent/workflows/video-generation.md).
 - Figure prefixes: use stable labels (`fig-...`, `tbl-...`, `eq-...`, `sec-...`).
 - When debugging refs:
   - Confirm the label exists and is unique.
