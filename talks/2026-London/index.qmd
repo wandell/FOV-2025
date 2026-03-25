@@ -139,7 +139,32 @@ More clusters.  Slides need reworking.
 
 Video bringing on the different clusters over time.
 
-![Timelapse of screenshots](images/screenshots.mp4){#vid-screenshots width="80%" loop="true" autoplay="true" muted="true"}
+![The visual field map clusters, as described in @wandell2005-visualFieldMap-clusters](images/clusters.mp4){#clusters-movie width="80%" loop="true" autoplay="true" muted="true"}
+
+Other important differences
+<!--
+Overall Size and Neuron Count: Human visual field maps are substantially larger overall than those in the macaque, with human V1 estimated to be roughly two to four times larger
+. Furthermore, the human visual cortex contains a much larger number of neurons, which is thought to reflect the increased processing required for human-specific cognitive demands, such as language and reading
+.
+Derived from: "Visual Field Maps in Human Cortex" (Wandell, Dumoulin, & Brewer, 2007) and "Imaging retinotopic maps in the human brain" (Wandell & Winawer, 2011).
+Anatomical Location of V1: In macaques, a large portion of the primary visual cortex (V1) is located on the operculum, extending posterior and lateral to the medial position of the calcarine sulcus
+. In humans, V1 is located largely within the calcarine sulcus; while it sometimes extends onto the lateral surface of the occipital pole, this lateral extension is not as large or typical as it is in the macaque
+.
+Derived from: "Imaging retinotopic maps in the human brain" (Wandell & Winawer, 2011).
+Proportional Size of Area V3: A highly salient difference between the species is the relative size of area V3. In macaques, V3 occupies a very small surface area compared to V1 and V2
+. In humans, V3 is proportionately much larger, meaning the scale factor difference between human and monkey V3 is even greater than the difference between their V1 maps
+. This difference in the V3/V1 surface area ratio likely reflects a functional divergence between the visual systems of the two species
+.
+Derived from: "Imaging retinotopic maps in the human brain" (Wandell & Winawer, 2011), "Visual field representations and locations of visual areas V1/2/3 in human visual cortex" (Dougherty et al., 2003), and "Visual field map clusters in human cortex" (Wandell, Brewer, & Dougherty, 2005).
+Motion Sensitivity in Area V3A: Although the map topographies of V3A are similar between humans and macaques, their functional sensitivities are completely different
+. Human V3A is highly responsive to motion, whereas macaque V3A is not strongly motion-selective
+.
+Derived from: "Visual Field Maps in Human Cortex" (Wandell, Dumoulin, & Brewer, 2007) and "Imaging retinotopic maps in the human brain" (Wandell & Winawer, 2011).
+V4 / hV4 and Color Processing Locations: In the macaque, area V4 spans both the dorsal and ventral portions of the occipital lobe, and color-exchange experiments produce responses in both components
+. In humans, investigators have not reliably found a dorsal component for the fourth visual map; instead, the human map (hV4) and the regions critical for color vision (and those associated with cerebral achromatopsia) are confined almost entirely to the ventral surface
+.
+Derived from: "Mapping hV4 and ventral occipital cortex: The venous eclipse" (Winawer et al., 2010), "Imaging retinotopic maps in the human brain" (Wandell & Winawer, 2011), and "Visual Field Maps in Human Cortex" (Wandell, Dumoulin, & Brewer, 2007).
+-->
 
 # Adult cortical plasticity
 
