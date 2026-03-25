@@ -138,7 +138,7 @@ Alyssa Brewer noticed the secondary fovea on the ventral occipital surface and d
 
 Over time, it become clear to us that this pattern was found repeatedly.  There were separate eccentricity maps throughout much of posterior cortex. 
 
-![Visual field map clusters in human cortex @wandell2005-visualFieldMap-clusters](images/Slide30.png){#fig-clusters-flatmap width="80%"}
+![Visual field map clusters in human cortex @wandell2005-visualFieldMap-clusters](images/clusters-flat.mp4){#fig-clusters-flatmap width="80%"}
 
 Video bringing on the different clusters over time.
 
@@ -168,6 +168,14 @@ V4 / hV4 and Color Processing Locations: In the macaque, area V4 spans both the 
 .
 Derived from: "Mapping hV4 and ventral occipital cortex: The venous eclipse" (Winawer et al., 2010), "Imaging retinotopic maps in the human brain" (Wandell & Winawer, 2011), and "Visual Field Maps in Human Cortex" (Wandell, Dumoulin, & Brewer, 2007).
 -->
+
+
+## Tools for maps
+
+Wang atlas should get in here, I think.
+
+Benson-Winawer work, deepRetinotopy citations
+
 
 # Adult cortical plasticity
 
