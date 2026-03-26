@@ -1,6 +1,10 @@
 {
     "chat.tools.terminal.autoApprove": {
-        "mv": true
+        "mv": true,
+        "/^python3 scripts/lowercase_bib_keys\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
     },
     "files.associations": {
         "*.bib": "bibtex"

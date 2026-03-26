@@ -260,7 +260,7 @@ As you read further about experimental and computational methods in vision scien
 
 The measured linespread functions, $\mathbf{l}_{i}$, along with our belief that we are studying a shift-invariant linear system, permit us to predict the retinal image for any one-dimensional input image. To calculate these predictions, it is convenient to have a function that describes the linespread of the human eye. G. Westheimer (@westheimer1986) suggested the following formula to describe the measured linespread function of the human eye, when in good focus, and when the pupil diameter is near 3mm[^westheimer-linespread].
 
-[^westheimer-linespread]: Westheimer’s linespread function is for an average observer under one set of viewing conditions. As the pupil changes size and as observer’s age, the linespread function can vary. Consult @IJspeert1993-jn and @williams1994-doublepass for alternatives to Westheimer’s formula.
+[^westheimer-linespread]: Westheimer’s linespread function is for an average observer under one set of viewing conditions. As the pupil changes size and as observer’s age, the linespread function can vary. Consult @iJspeert1993-jn and @williams1994-doublepass for alternatives to Westheimer’s formula.
 
 $$
 \mathbf{l}_{i} = 0.47 e^{ - 3.3 i ^ {2} } + 0.53 e ^ { -0.93 | i | }

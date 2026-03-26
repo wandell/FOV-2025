@@ -63,12 +63,23 @@ Use a standard markdown blockquote for quotations:
 ### 4. References & Citations (BibTeX)
 To cite papers from your `paperpile.bib` bibliography:
 ```md
-Standard citation in parentheses: [@Wandell1999-ColorSignalsHuman]
+Standard citation in parentheses: [@wandell1999-ColorSignalsHuman]
 
-Multiple citations: [@Wandell1999-ColorSignalsHuman; @Baseler2011-MD-plasticity]
+Multiple citations: [@wandell1999-ColorSignalsHuman; @baseler2011-MD-plasticity]
 
-Narrative citation: @Wandell1999-ColorSignalsHuman showed that...
+Narrative citation: @wandell1999-ColorSignalsHuman showed that...
 ```
+
+**Citation Keys and Case Sensitivity**
+Quarto's cross-referencing and search is strictly case-sensitive. While Paperpile exports references with the first author's letter capitalized (e.g., `Author2020-key`), standardizing to lowercase keys (e.g., `author2020-key`) ensures reliability.
+
+**Utility: Lowercase Citation Keys Script**
+We have a python script that will automatically enforce lowercased citation keys inside both `paperpile.bib` and any `.qmd` file in the workspace. If you import new citations from Paperpile missing the lowercase convention, run these commands in the terminal:
+```bash
+python3 scripts/lowercase_bib_keys.py
+npx bibtex-tidy paperpile.bib --sort=key --merge=combine
+```
+This single sweep makes sure your text citations match the newly formatted lowercased `.bib` keys, while `bibtex-tidy` simultaneously cleans up and alphabetizes the `.bib` file.
 
 ### 5. Equations (LaTeX)
 
