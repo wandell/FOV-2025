@@ -2,14 +2,19 @@
     "files.associations": {
         "*.bib": "bibtex"
     },
+    "bibtex-tidy.options": {
+        "sort": [
+            "key"
+        ]
+    },
     "[bibtex]": {
-        "editor.defaultFormatter": "xrimson.bibtex-tidy",
+        "editor.defaultFormatter": "Xrimson.bibtex-tidy",
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
             "source.fixAll": "explicit"
         }
     },
     "[bib]": {
-        "editor.defaultFormatter": "xrimson.bibtex-tidy"
+        "editor.defaultFormatter": "Xrimson.bibtex-tidy"
     }
 }

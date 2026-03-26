@@ -19,7 +19,7 @@ npm install -g bibtex-tidy
 
 ### 3. Install VS Code Extension
 Install the `Bibtex Tidy` extension for VS Code:
-- Extension ID: `xrimson.bibtex-tidy`
+- Extension ID: `Xrimson.bibtex-tidy`
 - Name: `Bibtex Tidy`
 
 ## Configuration
@@ -34,15 +34,20 @@ We use a workspace setting file (`.vscode/settings.json`) to force VS Code to us
     "files.associations": {
         "*.bib": "bibtex"
     },
+    "bibtex-tidy.options": {
+        "sort": [
+            "key"
+        ]
+    },
     "[bibtex]": {
-        "editor.defaultFormatter": "xrimson.bibtex-tidy",
+        "editor.defaultFormatter": "Xrimson.bibtex-tidy",
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
             "source.fixAll": "explicit"
         }
     },
     "[bib]": {
-        "editor.defaultFormatter": "xrimson.bibtex-tidy"
+        "editor.defaultFormatter": "Xrimson.bibtex-tidy"
     }
 }
 ```
