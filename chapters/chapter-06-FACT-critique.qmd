@@ -80,3 +80,20 @@ Why He Prefers "Visual Field Maps"
 Because of these "potential inherent contradictions" in the FACT definition, Wandell advocates for using the term "visual field map" as the primary organizational unit. He argues that even if we don't know the full "FACT" profile of a region, we can agree on the presence of a topographic map. This shift in terminology allows researchers to communicate clearly about identified structures (like hV4, VO-1, or LO-1) without being burdened by the historical and often conflicting baggage associated with the word "area."
 
 This paper is highly cited for its introduction of the "cluster" concept, suggesting that these maps are organized into groups (clusters) that share a common foveal representation.
+
+## Followup email to Emily Meyer and colleagues
+
+Links to the papers were included in the email.
+---
+
+Hi Emily,
+
+I was just reading your 2025 paper in PNAS.  It’s really very nice and interesting.   
+
+I know how much work must go into assembling all that data and thinking about it so clearly.  Very nicely done!
+
+There is one topic I look forward to discussing with you in the future.  I have long been suspicious of the concept of ‘visual area’, recently tackled by Ben Hayden and Michael Yoo in this paper “Rethinking the centrality of ‘areas’ in systems neuroscience”.  Given your experience at this point, I do wonder what you (and your cc’d colleagues) think about this.  In a 2007 review, I took a swing at the visual area concept, as well (section: Identifying Visual Field Maps).  Specifically, it was this sentence of yours about ‘areas’ that caught my eye:  “This variability likely stems from the use of different architectonic, anatomical connectivity, and functional techniques that are sensitive to different cortical features.”  The definition of an ‘area’ - Dave Van Essen’s FACT which you enumerate - seems to me to be a conceptual problem.  
+
+But mainly, your paper is a wonderful contribution!
+
+Regards,

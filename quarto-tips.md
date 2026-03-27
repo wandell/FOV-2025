@@ -52,6 +52,19 @@ This is the body text of the callout. You can also use `.callout-tip`, `.callout
 :::
 ```
 
+**Cross-referencing Callouts:**
+To number and cross-reference a callout, you must give it an ID that starts with a specific prefix. For notes, `nte` stands for **Note** (just like `fig` stands for Figure and `eq` stands for Equation). 
+
+By adding `#nte-` followed by your label, Quarto will automatically number it and allow you to cite it in the text using `@nte-label`:
+```md
+::: {#nte-my-callout .callout-note}
+## Cross-referenced Note
+This is a note that you can refer to!
+:::
+
+See @nte-my-callout for more info.
+```
+
 ### 3. Quotations
 Use a standard markdown blockquote for quotations:
 ```md
