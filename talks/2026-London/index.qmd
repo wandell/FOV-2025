@@ -213,11 +213,14 @@ Benson-Winawer work, deepRetinotopy citations
 
 @barsingerhorn2018-symbol @saber2015-saccade @masuda2008-maculardegenerationV1 @masuda2010-retinitispigmentosa @masuda2021-maculardepgeneration @rosenau2008-feedback
 
-PNN papers in human
+Parvalbumin cell development papers
+@yew1997-pnn-human-cerebellum
+@grateron2003-pnn-human-entorhinal
+@fung2010-pnn-human-dlpfc
 
+PNN papers in human
 @rogers2018-pnn-epilepsy
 @mauney2013-pnn-schizophrenia
-
 @nakayama2025-aggrecan-pnn - "Among the PNN-related genes examined, aggrecan alone exhibited strong activity-dependent transcriptional regulation"
 <!--
 The Nakayama (2025) paper you asked about is the most modern measure of this process. It shows that aggrecan expression is not just a "clock" that runs out; it is activity-triggered.The Measure: Using quantitative PCR and Western blots, Nakayama showed that as neurons begin to fire in response to visual input, the Acan gene is upregulated specifically in Parvalbumin (PV) interneurons.
