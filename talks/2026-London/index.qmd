@@ -51,13 +51,16 @@ No need to wonder what Munk thought about Ferrier's work.  Here are his own word
 >
 > If I have gone too far in this statement which is based on a general survey of Mr. Ferrier’s experiments it was up to me to restore the injury, the sooner the better. However, as the experiments show now I have said at that time rather too little than too much, Mr. Ferrier had not made one correct guess, all his statements have turned out to be wrong.
 
-Commenting on the debate from the other side of an ocean, William James wrote "the quarrel is very acrimonious; indeed the subject of localization of functions in the brain seems to have a peculiar effect on the temper of those who cultivate it experimentally. Each observer is sure that he is right, and is ready to explain away the adverse results of his rivals. ... Munk's absolute tone about his observations and his theoretic arrogance have led to his ruin as an authority. (@james1890-principles, p. 46)”.
+Commenting on the debate from the other side of an ocean, William James wrote "Munk's absolute tone about his observations and his theoretic arrogance have led to his ruin as an authority. (@james1890-principles)”.
 
 James went on to write about Munk:
 
 > But he did two things of permanent value. He was the first to distinguish in these vivisections between sensorial and psychic blindness, and to describe the phenomenon of restitution of the visual function after its first impairment by an operation ; and the first to notice the hemiopic character of the visual disturbances which result when only one hemisphere is injured. Sensorial blindness is absolute insensibility to light ; psychic blindness is inability to recognize the meaning of the optical impressions, as when we see a page of Chinese print but it suggests nothing to us. A hemiopic disturbance of vision is one in which neither retina is affected in its totality, but in which, for example, the left portion of each retina is blind, so that the animal sees nothing situated in space towards its right (Page 41 in the downloaded PDF from mpg.de).
 
-Finally, everyone should enjoy a visit with Charlie Gross' book that is filled with interesting histories of neuroscience discovery.  His book includes more information about the Ferrier-Munk (describing the role of Schaefer, for example) [@gross1998-brain-book].
+James also writes "the quarrel is very acrimonious; indeed the subject of localization of functions in the brain seems to have a peculiar effect on the temper of those who cultivate it experimentally. Each observer is sure that he is right, and is ready to explain away the adverse results of his rivals. ...".  
+
+Many of us have enjoyed Charlie Gross' book that is filled with interesting histories of neuroscience discovery [@gross1998-brain-book]. His book and James' book include more information about many other investigations of localization [; @james1950-principles].
+
 :::
 
 It was the Swedish neurologist, Henschen, who first carefully observed the visual loss in **human** patients with occipital lesions. He concluded that at least part of the visual field, the upper and lower portions, were represented in cortex in an orderly map with the lower visual field in the dorsal occipital lobe and upper visual field in the ventral occipital lobe.
@@ -143,6 +146,7 @@ Here the multiple eccentricity maps are represented on a flattened cortical surf
 ## Other groups using clusters
 This pattern of cortical retinotopic map clusters has been confirmed in both human and non-human primates by several groups in posterior and anterior cortex, [@mackey2017-clusters], non-human primates [@kolster2009-clusters; @kolster2014-macaque-mt; @barton2017-sts-cluster; @meyer2025-clusters-evolution] and also in the pulvinar [@arcaro2015-pulvinar-cluster]. The retinotopic map cluster seems to be a basic principle that is implemented to support local computational processing and may have implications for development and plasticity.
 
+![Comparative anatomy of the cluster surface areas (@meyer2025-clusters-evolution)](images/meyer2025-comparative.png){#fig-comparative width="80%"}
 
 ```{=html}
 <!--
