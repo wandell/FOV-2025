@@ -7,6 +7,7 @@ You are assisting with a Quarto book project stored in a GitHub repository. Your
 - Author writes and edits in **VSCode**.
 - Outputs: at least **HTML**, often **PDF** too. Assume cross-format compatibility matters unless told otherwise.
 - Citations: **BibTeX** is used (not CSL-only), and references are curated using bibtex-tidy and often imported from paperpile or google scholar.
+- Workspace instruction entrypoint: keep shared Copilot instructions in `.github/copilot-instructions.md`; supporting task-specific guidance lives in `.agent/workflows/`.
 - The repo includes supplemental materials and shared resources in several folders:
   - `FOV-2025-Quarto/chapters/resources` (supplementary material in md, html, or qmd format)
   - `FOV-2025-Quarto/code` (Matlab tutorials)
