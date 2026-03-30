@@ -89,7 +89,7 @@ The effort to discover and map multiple visual areas in animal models expanded e
 -   **Methodological challenges**: Identifying these early maps relied heavily on single-unit electrophysiology and very detailed anatomical work. Because the field of view for these technologies is relatively small, establishing the existence of a map was a notoriously difficult process that Hubel and Wiesel [@hubel1977] famously likened to "a dismaying exercise in tedium, like trying to cut the back lawn with a pair of nail scissors".
 :::
 
-The burst of activity reporting visual areas was summarized in an important article by [@felleman1991-hierarchy]. @fig-felleman-vanessen is an iconic image from that paper, which relies on the concept of a 'visual areas'. The authors propose that visual areas are organized into a hierarchy with signals flowing from the bottom (retina, LGN, V1) to the top (peri-hippocampal regions). The data supporting the specific organization were sparse, and they have been significantly augmented by measurements from Henry Kennedy's lab [@markov2013-hierarchicalanatomy; @markov2014-hierarchicalanatomy2]. I discuss a possible update at the end of this section.
+The burst of activity reporting visual areas was summarized in an important article by [@felleman1991-hierarchy]. @fig-felleman-vanessen is an iconic image from that paper, which relies on the concept of a 'visual areas'. The authors propose that visual areas are organized into a hierarchy with signals flowing from the bottom (retina, LGN, V1) to the top (peri-hippocampal regions). The data supporting the specific organization were sparse, and over the last decade the measurements have been significantly augmented by data from Henry Kennedy's lab [@markov2013-hierarchicalanatomy; @markov2014-hierarchicalanatomy2]. I discuss an update to this diagram at the end of this section.
 
 ![Felleman and Van Essen's hierarchical representation of areas in visual cortex. This image is still widely used in teaching and by speakers who wish to introduce visual cortex to a general audience. It might be time for an update.](images/felleman-vanessen.png){#fig-felleman-vanessen width="80%"}
 
@@ -144,7 +144,7 @@ Here the multiple eccentricity maps are represented on a flattened cortical surf
 ![Visual field map clusters shown for emphasis on the flattened representation of the posterior cortex @wandell2005-visualFieldMap-clusters](images/clusters-flat.mp4){#fig-clusters-flatmap width="80%" loop="true" autoplay="true" muted="true"}
 
 ## Other groups using clusters
-This pattern of cortical retinotopic map clusters has been confirmed in both human and non-human primates by several groups in posterior and anterior cortex, [@mackey2017-clusters], non-human primates [@kolster2009-clusters; @kolster2014-macaque-mt; @barton2017-sts-cluster; @meyer2025-clusters-evolution] and also in the pulvinar [@arcaro2015-pulvinar-cluster]. The retinotopic map cluster seems to be a basic principle that is implemented to support local computational processing and may have implications for development and plasticity.
+The clustering of cortical retinotopic maps has been confirmed in by multiple groups. The clusters have been identified in posterior and anterior cortex, [@mackey2017-clusters], non-human primates [@kolster2009-clusters; @kolster2014-macaque-mt; @barton2017-sts-cluster; @meyer2025-clusters-evolution] and also in the pulvinar [@arcaro2015-pulvinar-cluster]. The retinotopic map clusters appear to be a basic functional principle that may have implications for development and plasticity.
 
 ![Comparative anatomy of the cluster surface areas (@meyer2025-clusters-evolution)](images/meyer2025-comparative.png){#fig-comparative width="80%"}
 
@@ -169,45 +169,49 @@ As you noted, the Kolster and Vanduffel work is the primary reference for cluste
 ```
 
 ## Comparative anatomy
-In a very recent paper, researchers used fMRI to compare the visual cortex of humans and macaques, concluding that human cortical expansion results from the enlargement of a conserved visual map architecture (Meyer et al., 2025). They emphasize that the number of areas and their cluster-like organization are strikingly similar across species, suggesting that the "cluster" is an evolutionarily preserved unit (Meyer et al., 2025).
+A recent paper used fMRI for a comparative anatomical analysis of human and macaque visual cortex [@meyer2025-clusters-evolution]. They report that the number of maps and their cluster-like organization are strikingly similar across species, suggesting that the cluster is an evolutionarily preserved unit. 
 
-Initially, the human fMRI groups relied on the macaque model - almost slavishly - to guide our interpretation of the retinotopic maps. Over time, investigators developed more confidence in the human fMRI data, and it has become clear that there are clear differences. Some of the comparisons are listed in in the Some of the more obvious differences are these
+Initially, the human fMRI groups relied on the macaque model - almost slavishly - to guide our interpretation of the retinotopic maps. Over time, investigators developed more confidence in the human fMRI data, and it has become clear that there are clear differences. Some of the differences are discussed in @nte-comparative-organization. 
 
-* The surface area of human V3 is much larger than the surface area of macaque V3
-* In human the postion of the fourth visual map differs substantially from macaque; sufficiently so that I named it hV4 rather than V4
+Three clear differences 
+* Human visual cortex contains a much larger number of neurons and surface area, even though the human optic nerve contains fewer axons
+* Relative to the surface area of V1, human V3 is much larger than macaque V3
+* The postion of the nominal fourth visual map differs substantially between human and macaque; sufficiently so that I named it hV4 rather than V4 and spent years arguing about this others
 * The functional responses to motion in human and macaque V3 and V3A do not match
 
+This nice figure from @meyer2025-clusters-evolution shows a measurement of the relative size of the V2/V3 portion of the V1 cluster in human and macaque.
+
+![Meyer comparative anatomy @meyer2025-clusters-evolution](images/meyer2025-comparative.png){#fig-meyer-comparative width="80%"}
 
 ::: {#nte-comparative-organization .callout-note}
 
-Here is a summary of some of the more obvious differences between human and non-human primate clusters and retinotopic maps.
+This note is an expanded commentary on the more obvious differences between human and non-human primate clusters and retinotopic maps.
 
-**Overall Size and Neuron Count:** Human visual field maps are substantially larger overall than those in the macaque, with human V1 estimated to be roughly two to four times larger
-. Furthermore, the human visual cortex contains a much larger number of neurons, which is thought to reflect the increased processing required for human-specific cognitive demands, such as language and reading Derived from: "Visual Field Maps in Human Cortex" (Wandell, Dumoulin, & Brewer, 2007) and "Imaging retinotopic maps in the human brain" (Wandell & Winawer, 2011).
+**Overall Size and Neuron Count:** Human visual field maps are substantially larger overall than those in the macaque, with human V1 estimated to be roughly two to four times larger. The human visual cortex correspondingly contains a much larger number of neurons, which is thought to reflect the increased processing required for human-specific cognitive demands, such as language and reading Derived from: "Visual Field Maps in Human Cortex" [@wandell2007-VisualFieldMaps] and "Imaging retinotopic maps in the human brain" [@wandell2011-ImagingRetinotopicMaps]. The larger number of human cortical neurons contrasts with the similar number of ganglion cell axons in the human and macaque optic nerves [@fortune2014-optic-nerve; @mikelberg1989-optic-nerve; @kolb2011-webvision].
 
-**Anatomical Location of V1:** In macaques, a large portion of the primary visual cortex (V1) is located on the operculum, extending posterior and lateral to the medial position of the calcarine sulcus. In humans, V1 is located largely within the calcarine sulcus; while it sometimes extends onto the lateral surface of the occipital pole, this lateral extension is not as large or typical as it is in the macaque. Derived from: "Imaging retinotopic maps in the human brain" (Wandell & Winawer, 2011).
+**Anatomical Location of V1:** In macaques, a large portion of the primary visual cortex (V1) is located on the operculum, extending posterior and lateral to the medial position of the calcarine sulcus. In humans, V1 is located largely within the calcarine sulcus, extending partially onto the lateral surface of the occipital pole. The human lateral extension is not as large or typical as it is in the macaque. Derived from: "Imaging retinotopic maps in the human brain" [@wandell2011-ImagingRetinotopicMaps].
 
-**Proportional Size of Area V3:** A highly salient difference between the species is the relative size of area V3. In macaques, V3 occupies a very small surface area compared to V1 and V2
-. In humans, V3 is proportionately much larger, meaning the scale factor difference between human and monkey V3 is even greater than the difference between their V1 maps. This difference in the V3/V1 surface area ratio likely reflects a functional divergence between the visual systems of the two species
-Derived from: "Imaging retinotopic maps in the human brain" (Wandell & Winawer, 2011), "Visual field representations and locations of visual areas V1/2/3 in human visual cortex" (Dougherty et al., 2003), and "Visual field map clusters in human cortex" (Wandell, Brewer, & Dougherty, 2005). 
+**Proportional Size of Area V3:** A highly salient difference between the species is the relative size of area V3. In macaques, V3 occupies a very small surface area compared to V1 and V2. In humans, V3 is proportionately much larger, meaning the scale factor difference between human and monkey V3 is even greater than the difference between their V1 maps. This difference in the V3/V1 surface area ratio likely reflects a functional divergence between the visual systems of the two species. Derived from: "Imaging retinotopic maps in the human brain" [@wandell2011-ImagingRetinotopicMaps], "Visual field representations and locations of visual areas V1/2/3 in human visual cortex" [@dougherty2003-ob; @benson2022-surface-area], and "Visual field map clusters in human cortex" (@wandell2005-visualFieldMap-clusters) and [@meyer2025-clusters-evolution].
 
-**Motion Sensitivity in Area V3A:** Although the map topographies of V3A are similar between humans and macaques, their functional sensitivities are completely different
-. Human V3A is highly responsive to motion, whereas macaque V3A is not strongly motion-selective
-Derived from: "Visual Field Maps in Human Cortex" (Wandell, Dumoulin, & Brewer, 2007) and "Imaging retinotopic maps in the human brain" (Wandell & Winawer, 2011)
+**Motion Sensitivity in Area V3A:** Although the map topographies of V3A are similar between humans and macaques, their functional sensitivities are completely different. Human V3A is highly responsive to motion, whereas macaque V3A is not strongly motion-selective. Derived from: "Visual Field Maps in Human Cortex" [@tootell1997-v3a; @wandell2007-VisualFieldMaps] and "Imaging retinotopic maps in the human brain" [@wandell2011-ImagingRetinotopicMaps]
 
-**V4 / hV4 and Color Processing Locations:** In the macaque, area V4 spans both the dorsal and ventral portions of the occipital lobe, and color-exchange experiments produce responses in both components
-. In humans, investigators have not reliably found a dorsal component for the fourth visual map; instead, the human map (hV4) and the regions critical for color vision (and those associated with cerebral achromatopsia) are confined almost entirely to the ventral surface. Derived from: "Mapping hV4 and ventral occipital cortex: The venous eclipse" (Winawer et al., 2010), "Imaging retinotopic maps in the human brain" (Wandell & Winawer, 2011), and "Visual Field Maps in Human Cortex" (Wandell, Dumoulin, & Brewer, 2007).
+**V4 / hV4 and Color Processing Locations:** In the macaque, area V4 spans both the dorsal and ventral portions of the occipital lobe, and color-exchange experiments produce responses in both components. In humans, investigators have not reliably found a dorsal component for the fourth visual map; instead, the human map (hV4) and the regions critical for color vision (and those associated with cerebral achromatopsia) are confined almost entirely to the ventral surface. Derived from: "Mapping hV4 and ventral occipital cortex: The venous eclipse" [@winawer2010-venous-eclipse]. "Imaging retinotopic maps in the human brain" [@wandell2011-ImagingRetinotopicMaps], and "Visual Field Maps in Human Cortex" [@wandell2007-VisualFieldMaps].
 
+There is considerably variability within species in both the optic nerve axon count and the surface area of the visual field maps [@stensaas1974-v1-area; @dougherty2003-ob; @benson2022-surface-area]. 
 :::
 
 ## A non-hierarchical view
+
+
 @jacques2025-non-hierarchical
 
 ## Tools
 
 Wang atlas should get in here, I think.
 
-Benson-Winawer work, deepRetinotopy citations
+Benson-Winawer work
+
+deepRetinotopy citations
 
 # Adult cortical plasticity
 
@@ -239,6 +243,18 @@ In this talk, I want to bring to everyone's attention data in support of the rel
 Finally, I want to make a connection to the MRI work in human with relatively new ideas - say twenty-five years old - to certain specific cellular but non-neural actors. This is a bit risky for someone like me, and I am glad for the opportunity to raise the issues informally here with an audience that includes experts in cellular neuroscience. I will suggest that the limits on adult plasticity - and against large scale cortical reorganization in the adult - are consistent with the properties of the perineuronal networks. These cellular properties make the likelihood of large scale cortical organization in the adult - without active intervention - quite unlikely.
 
 For those of you who already agree with the ideas, I hope that this review with its figures and references will be useful for your teaching. I plan to incorporate much of this material, using a tutorial approach, into the second edition of my book *Foundations of Vision*, which is currently in preparation. For those of you who disagree with my comments, please visit with me during this meeting so I can understand what you and why the roughly fifty papers I am drawing upon are missing something important.
+
+<!--
+Gemini, after my exploration of Neeraj Jain (London section)
+
+Era,Leading Idea,Jain's Contribution / Influence
+1980s,Cortical Flux: Maps are dynamic and change with every experience.,(Pre-Jain) Focus was on the excitement of cortical remapping.
+1990s,"Brainstem Origins: ""Cortical"" change is actually subcortical.",Jain (1997): Proved the face-to-hand shift starts in the cuneate nucleus.
+2010s,Molecular Brakes: PNNs are the physical anchors.,Jain (2012): Used ChABC to prove the PNN is the barrier to brainstem plasticity.
+2025,Hard Lockout: Stability is a one-way developmental door.,"Jain (2025): Identified the 9-day ""Critical Period"" for spinal recovery."
+
+"Even the Kaas lab, the birthplace of cortical reorganization, discovered that the 'maps' themselves are remarkably stable anchors. As Neeraj Jain showed, the apparent plasticity we see in fMRI or microelectrode maps is often just the cortex faithfully reflecting a change that happened at the very first synapse in the brainstem."
+-->
 
 ## Example Concept Area
 
