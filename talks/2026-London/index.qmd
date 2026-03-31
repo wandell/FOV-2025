@@ -36,7 +36,7 @@ The discovery of visual field maps in human cortex is a fun history to read abou
 
 Ferrier performed lesion studies in monkeys and proposed that primary visual cortex was located in the angular gyrus. The German physiologist, Hermann Munk, disagreed with Ferrier's anatomical localization and argued that visual cortex was in the calcarine region — a critical correction that set the stage for more accurate understanding of retinotopic organization.
 
-::: {#fig-ferrier-munk layout-ncol=2}
+::: {#fig-ferrier-munk layout-ncol="2"}
 ![Ferrier's location of visual cortex in the angular gyrus](images/ferrier-angular-gyrus.png){#fig-sub-ferrier-angular-gyrus width="85%"}
 
 ![Munk's location of visual cortex in the occipital lobe](images/munk-occipital-lobe.png){#fig-sub-munk-occipital-lobe width="85%"}
@@ -44,8 +44,8 @@ Ferrier performed lesion studies in monkeys and proposed that primary visual cor
 A comparison of visual cortex localization from Ferrier and Munk.
 :::
 
-::: {#nte-ferrier-munk-james .callout-note}
-No need to wonder what Munk thought about Ferrier's work.  Here are his own words.
+::: {#nte-ferrier-munk-james .callout-note title="Ferrier and Munk"}
+No need to wonder what Munk thought about Ferrier's work. Here are his own words.
 
 > In my first communication on the physiology of the cortex which I made in March of last year I did not say anything about Ferrier’s work on the monkey because there was nothing good to be said about it. But asked in the subsequent session I had to say that Mr. Ferrier's declarations that the visual center in the monkey was situated in the angular gyrus \[… and other claims …\] that all these statements and what followed from them as far as the character and restitution of disturbances set by the operation are concerned, are worthless and gratuitous constructions since the operated animals were examined by Mr. Ferrier in quite an insufficient manner and only at the time of general depression of brain function.
 >
@@ -57,10 +57,9 @@ James went on to write about Munk:
 
 > But he did two things of permanent value. He was the first to distinguish in these vivisections between sensorial and psychic blindness, and to describe the phenomenon of restitution of the visual function after its first impairment by an operation ; and the first to notice the hemiopic character of the visual disturbances which result when only one hemisphere is injured. Sensorial blindness is absolute insensibility to light ; psychic blindness is inability to recognize the meaning of the optical impressions, as when we see a page of Chinese print but it suggests nothing to us. A hemiopic disturbance of vision is one in which neither retina is affected in its totality, but in which, for example, the left portion of each retina is blind, so that the animal sees nothing situated in space towards its right (Page 41 in the downloaded PDF from mpg.de).
 
-James also writes "the quarrel is very acrimonious; indeed the subject of localization of functions in the brain seems to have a peculiar effect on the temper of those who cultivate it experimentally. Each observer is sure that he is right, and is ready to explain away the adverse results of his rivals. ...".  
+James also writes "the quarrel is very acrimonious; indeed the subject of localization of functions in the brain seems to have a peculiar effect on the temper of those who cultivate it experimentally. Each observer is sure that he is right, and is ready to explain away the adverse results of his rivals. ...".
 
 Many of us have enjoyed Charlie Gross' book that is filled with interesting histories of neuroscience discovery [@gross1998-brain-book]. His book and James' book include more information about many other investigations of localization [; @james1950-principles].
-
 :::
 
 It was the Swedish neurologist, Henschen, who first carefully observed the visual loss in **human** patients with occipital lesions. He concluded that at least part of the visual field, the upper and lower portions, were represented in cortex in an orderly map with the lower visual field in the dorsal occipital lobe and upper visual field in the ventral occipital lobe.
@@ -69,17 +68,17 @@ It was the Swedish neurologist, Henschen, who first carefully observed the visua
 
 Henschen's observations were confirmed and extended by two clinicians working at opposite ends of the world: Gordon Holmes and Tatsuye Inouye. Both were studying visual field losses from soldiers injured in their countries' wars, Holmes in Europe and Inouye in Japan. In that era, the guns were not always lethal, and the helmets would permit bullets to enter and exit the posterior skull, effectively lesioning a portion of occipital cortex. Such lesions could cause a permanent but partial visual field loss. By accumulating data from a number of different cases, they could deduce the general organization of the human retinotopic organization. In addition to the upper-lower field representation, they both reported on the eccentricity map as well as the fact that the central portion of the visual field occupied more cortical territory (per square degree) than the peripheral portion. This phenomenon is called 'cortical magnification', and though perhaps it should be called 'foveal magnification'.
 
-::: {#fig-inouye-holmes layout-ncol=2}
+::: {#fig-inouye-holmes layout-ncol="2"}
 ![Inouye](images/inouye-map.png){#inouye-map width="80%"}
 
 ![Holmes](images/holmes-map.png){#holmes-map width="80%"}
 :::
 
-## Multiple maps
+# Discovery of multiple maps
 
 Talbot and colleagues in Wisconsin were the first to discover a second retinotopic maps (in rabbit). Cowey was the first to report a second visual map in a non-human primate [@cowey1964-v2]; Hubel and Wiesel reported two extrastriate maps in cat [@hubel1965-cat-v2-v3]. These reports were followed by a large collection of studies, identifying additional maps but also additional patches of cortex with distinct properties. Some of this history is summarized in the book by @zeki1993-book. Anatomical regions with visually responsive neurons and distinctive properties came to be known as 'visual areas', whether or not they were retinotopically organized.
 
-::: {#nte-multiple-maps .callout-note}
+::: {#nte-multiple-maps .callout-note title="Discovery of multiple maps"}
 The effort to discover and map multiple visual areas in animal models expanded enormously between the 1940s and the 1990s. The major milestones include:
 
 -   **The 1940s (V2 in cats and rabbits)**: The discovery of multiple visual field maps began when electrophysiological measurements revealed a second visual map (V2) adjacent to the primary visual cortex (V1) in the rabbit and cat. These early discoveries were spearheaded by Talbot, Marshall, Thompson (see review [@thompson1950-visual-maps]) from the Wisconsin laboratory established by Woolsey.
@@ -93,8 +92,8 @@ The burst of activity reporting visual areas was summarized in an important arti
 
 ![Felleman and Van Essen's hierarchical representation of areas in visual cortex. This image is still widely used in teaching and by speakers who wish to introduce visual cortex to a general audience. It might be time for an update.](images/felleman-vanessen.png){#fig-felleman-vanessen width="80%"}
 
-::: {#nte-FACT .callout-note}
-A generation of scientists were taught the definition of a visual area. Van Essen proposed that a cortical “visual area” is a region that can be distinguished from its neighbors by a convergence of evidence across function, anatomy, connectivity, and topographic organization (FACT), rather than by any single criterion alone.  These are the criteria:
+::: {#nte-FACT .callout-note title="FACT:  Definitions"}
+A generation of scientists were taught the definition of a visual area. Van Essen proposed that a cortical “visual area” is a region that can be distinguished from its neighbors by a convergence of evidence across function, anatomy, connectivity, and topographic organization (FACT), rather than by any single criterion alone. These are the criteria:
 
 -   **F — Function**: Neurons in the region share distinctive response properties (e.g., motion selectivity, color bias, disparity tuning).
 -   **A — Anatomy (architectonics)**: The region has distinguishable microstructure (e.g., cytoarchitecture, myeloarchitecture, laminar patterns).
@@ -105,7 +104,8 @@ A generation of scientists were taught the definition of a visual area. Van Esse
 
 The *visual area* terminology was influential, but in my view and that of some others it is an arbitrary and often incoherent term.[@wandell2007-VisualFieldMaps; @hayden2025-rethinking-areas]. It is important to clarify the reason for identifying a region of cortex: it contains a retinotopic maps, neurons with common functional responses, similar cellular properties, or common input and output targets. The use of the concept of 'area', which could be any or some mixture of these without a clear rule, is less helpful than one might have thought in the early days.
 
-## Human retinopic maps
+# Human retinopic maps
+
 Most scientists believed that the retinotopic maps found in non-human primates would be a good model for human visual cortex. But even as late as 1991, Horton and Hoyt observed that there was no proof of even two maps maps in human visual cortex [@horton1991-quadraticdefects; @horton1991-representationvisualfield]. The need for guessing changed with the introduction of functional magnetic resonance imaging (fMRI). That technology enabled investigators to identify retinotopic maps in the living human brain at the resolution of a few milimeters in experiments lasting less than an hour. Over time, the spatial precision and duration of the experiments has decreased dramatically.
 
 Steve Engel and I - helped by many others - developed a technique to measure eccentricity and angle maps that was widely adopted [@engel1994-fmri; @engelRetinotopicOrganizationHuman1997]. The stimulus and cortical responses (fMRI) for measuring eccentricity are shown in the @fig-eccentricity-movie. If you look at the video casually, you will see the wave from the occipital pole traveling in the anterior direction of the main map. If you look a little more closely, you will also see a secondary ripple on the ventral occippital-temporal surface. That ripple starts when the stimulus is in the fovea and then fades out as the ring expands about half way (10 deg). The VOT eccentricity map is a second eccentricity map, confined mainly to the perifoveal visual field, that is distinct from the calcarine map.
@@ -114,8 +114,7 @@ Steve Engel and I - helped by many others - developed a technique to measure ecc
 
 We also made measurements using a rotating wedge stimulus to measure the most effective angular position for each voxel. The angular responses subdivide the eccentricity map into different visual field maps. The data from the video are summarized in two pseudo-color maps showing the most effective visual field eccentricity for each cortical location
 
-::: {#fig-maps layout-ncol=2}
-
+::: {#fig-maps layout-ncol="2"}
 ![Eccentricity map shows the most effective visual eccentricity (deg) for each location.](images/Slide23.png){#fig-eccentricity-map width="85%"}
 
 ![Angle map shows the most effective wedge angle for each location.](images/Slide24.png){#fig-angle-map width="85%"}
@@ -123,9 +122,9 @@ We also made measurements using a rotating wedge stimulus to measure the most ef
 Eccentricity and angle measurements, combined, are used to define a retinotopic map.
 :::
 
-Summarizing the information from the maps, we can label an entire retinotopic map using a single color, as in @fig-areas-magnification. Notice that these maps are not simply adjacent to one another.  Rather, the V2 map surrounds V1, and it is surrounded, in turn by the V3 map.  Thus the dorsal and ventral portions of the V2 and V3 map - which represent the lower and upper visual field - are well-separated from one another.
+Summarizing the information from the maps, we can label an entire retinotopic map using a single color, as in @fig-areas-magnification. Notice that these maps are not simply adjacent to one another. Rather, the V2 map surrounds V1, and it is surrounded, in turn by the V3 map. Thus the dorsal and ventral portions of the V2 and V3 map - which represent the lower and upper visual field - are well-separated from one another.
 
-![A medial view of the locations of three visual field maps, V1-V3 on the calcarine.  The eccentricity map is overlaid to emphasize the relatively large portion of cortex devoted to the central visual field (cortical magnification).  This magnification matches fairly closely the larger number of cone photoreceptors in the fovea compared to the visual periphery.](images/Slide25.png){#fig-areas-magnification width="80%"}
+![A medial view of the locations of three visual field maps, V1-V3 on the calcarine. The eccentricity map is overlaid to emphasize the relatively large portion of cortex devoted to the central visual field (cortical magnification). This magnification matches fairly closely the larger number of cone photoreceptors in the fovea compared to the visual periphery.](images/Slide25.png){#fig-areas-magnification width="80%"}
 
 Get the Dougherty and Benson-Winawer surface area paper in here, too.
 
@@ -133,58 +132,54 @@ Alyssa Brewer noticed the secondary fovea on the ventral occipital surface and d
 
 ![Eccentricity map emphasizing the central 3 deg. This shows the two different eccentricity maps, one in calcarine and a second on the VOT. From @brewer2005-visualFieldMaps-clusters.](images/Slide26.png){#fig-vo-cluster width="80%"}
 
+## Clusters
 Over time, it become clear to us that there were multiple distinct eccentricity maps, illustrated in each of these two brief videos. These eccentricity maps can be subdivided into different individual maps by also considering the angle representations, just as V1-V3 can be separated from the unified eccentricity map around the posterior pole and calcarine cortex in human.
 
-Here are two different visualizations of the clusters.  First they are shown on a slightly inflated cortical surface.
+Here are two different visualizations of the clusters. In @fig-clusters-movie they are shown on a slightly inflated cortical surface.
 
-![The visual field map clusters shown on a the cortical surface (slightly inflated) @wandell2005-visualFieldMap-clusters](images/clusters.mp4){#clusters-movie width="80%" loop="true" autoplay="true" muted="true"}
+![The visual field map clusters shown on a the cortical surface (slightly inflated) @wandell2005-visualFieldMap-clusters](images/clusters.mp4){#fig-clusters-movie width="80%" loop="true" autoplay="true" muted="true"}
 
-Here the multiple eccentricity maps are represented on a flattened cortical surface; the video oscillates between the measured eccentricity and a cartoon overlay that emphasizes the pattern.
+In @fig-clusters-flatmap the eccentricity maps of the clusters are represented on a flattened cortical surface; the video oscillates between the measured eccentricity and a cartoon overlay that emphasizes the pattern.
 
 ![Visual field map clusters shown for emphasis on the flattened representation of the posterior cortex @wandell2005-visualFieldMap-clusters](images/clusters-flat.mp4){#fig-clusters-flatmap width="80%" loop="true" autoplay="true" muted="true"}
 
-## Other groups using clusters
+## Confirmation of clusters
+
 The clustering of cortical retinotopic maps has been confirmed in by multiple groups. The clusters have been identified in posterior and anterior cortex, [@mackey2017-clusters], non-human primates [@kolster2009-clusters; @kolster2014-macaque-mt; @barton2017-sts-cluster; @meyer2025-clusters-evolution] and also in the pulvinar [@arcaro2015-pulvinar-cluster]. The retinotopic map clusters appear to be a basic functional principle that may have implications for development and plasticity.
 
-![Comparative anatomy of the cluster surface areas (@meyer2025-clusters-evolution)](images/meyer2025-comparative.png){#fig-comparative width="80%"}
+::: {#nte-clusters .callout-note title="Clusters in the Human Brain"}
 
-```{=html}
-<!--
-Clusters in the Human Brain
-Frontoparietal Clusters (Mackey et al., 2017)
-Expanding the cluster model into higher-order cortex, this study identified multiple representations of polar angle and eccentricity in the human frontoparietal cortex (Mackey et al., 2017). They discovered that these maps are organized into clusters sharing a confluent fovea, mirroring the organization of the visual cortex to facilitate efficient sensorimotor and cognitive processing (Mackey et al., 2017).
+**Frontoparietal Clusters [@mackey2017-clusters]**
+Expanding the cluster model into higher-order cortex, this study identified multiple representations of polar angle and eccentricity in the human frontoparietal cortex. They discovered that these maps are organized into clusters sharing a confluent fovea, mirroring the organization of the visual cortex to facilitate efficient sensorimotor and cognitive processing.
 
-The Pulvinar Cluster (Arcaro et al., 2015)
-In a significant extension of the theory, Arcaro and colleagues identified two visual field maps in the human ventral pulvinar (vPul1 and vPul2) (Arcaro et al., 2015). They proposed that these maps form a distinct visual field map cluster because they share an eccentricity representation and exhibit similar cortical connectivity patterns with early extrastriate areas (Arcaro et al., 2015).
+**The Pulvinar Cluster [@arcaro2015-pulvinar-cluster]** In a significant extension of the theory, Arcaro and colleagues identified two visual field maps in the human ventral pulvinar (vPul1 and vPul2) . They proposed that these maps form a distinct visual field map cluster because they share an eccentricity representation and exhibit similar cortical connectivity patterns with early extrastriate areas.
 
-The pSTS "Cloverleaf" Cluster (Barton & Brewer, 2017)
-While Alyssa Brewer was a former member of your lab, this 2017 work with Brian Barton introduces a new cloverleaf cluster in the posterior superior temporal sulcus (pSTS) (Barton & Brewer, 2017). They characterized four distinct maps (pSTS-1 through pSTS-4) organized around a central foveal representation, suggesting this "radially orthogonal" structure is a fundamental principle for high-level visual and potentially multimodal processing (Barton & Brewer, 2017).
+**The pSTS "Cloverleaf" Cluster [@barton2017-sts-cluster]** This 2017 work with introduces a new cloverleaf cluster in the posterior superior temporal sulcus (pSTS). They characterized four distinct maps (pSTS-1 through pSTS-4) organized around a central foveal representation, suggesting this "radially orthogonal" structure is a fundamental principle for high-level visual and potentially multimodal processing.
 
-Probabilistic Map Atlases (Wang et al., 2015)
-The Kastner group developed a probabilistic atlas of the human visual system that largely validates the cluster-based organization for more than 20 maps (Wang et al., 2015). This work is often cited as a large-scale confirmation of the cluster model across a large subject population (Wang et al., 2015).
+**Macaque Motion Clusters [@{kolster2009-clusters]** The Kolster and Vanduffel work is the primary reference for clusters in non-human primates, specifically identifying the MT cluster (MT, MST, FST, and V4t). Their work demonstrated that the cluster principle—minimizing wiring length between processing modules—is not unique to humans but is a general feature of the Old World primate visual system.
 
-Macaque Motion Clusters (Kolster et al., 2009)
-As you noted, the Kolster and Vanduffel work is the primary reference for clusters in non-human primates, specifically identifying the MT cluster (MT, MST, FST, and V4t) (Kolster et al., 2009). Their work demonstrated that the cluster principle—minimizing wiring length between processing modules—is not unique to humans but is a general feature of the Old World primate visual system (Kolster et al., 2009).
--->
-```
+**Probabilistic Map Atlases [@wang2015-atlas-topography]** The Kastner group developed a probabilistic atlas of the human visual system that largely validates the cluster-based organization for more than 20 maps. This work is a large-scale confirmation of the cluster model across a large subject population in addition to being a very useful tool, widely used in neuroimaging.
+:::
 
-## Comparative anatomy
-A recent paper used fMRI for a comparative anatomical analysis of human and macaque visual cortex [@meyer2025-clusters-evolution]. They report that the number of maps and their cluster-like organization are strikingly similar across species, suggesting that the cluster is an evolutionarily preserved unit. 
 
-Initially, the human fMRI groups relied on the macaque model - almost slavishly - to guide our interpretation of the retinotopic maps. Over time, investigators developed more confidence in the human fMRI data, and it has become clear that there are clear differences. Some of the differences are discussed in @nte-comparative-organization. 
+# Comparative anatomy
 
-Three clear differences 
-* Human visual cortex contains a much larger number of neurons and surface area, even though the human optic nerve contains fewer axons
-* Relative to the surface area of V1, human V3 is much larger than macaque V3
-* The postion of the nominal fourth visual map differs substantially between human and macaque; sufficiently so that I named it hV4 rather than V4 and spent years arguing about this others
-* The functional responses to motion in human and macaque V3 and V3A do not match
+A recent paper used fMRI for a comparative anatomical analysis of human and macaque visual cortex [@meyer2025-clusters-evolution]. They report that the number of maps and their cluster-like organization are strikingly similar across species, suggesting that the cluster is an evolutionarily preserved unit.
+
+Initially, the human fMRI groups relied on the macaque model - almost slavishly - to guide our interpretation of the retinotopic maps. Over time, investigators developed more confidence in the human fMRI data, and it has become clear that there are clear differences. Some of the differences are discussed in @nte-comparative-organization.
+
+Here are some of the agreed upon differences 
+
+    * Human visual cortex contains a much larger number of neurons and surface area, even though the human optic nerve contains roughly the same number of axons as the macaque
+    * The ratio of the surface area of human V2/V3/V4 is much larger than the similar ratio in macaque (@fig-meyer-comparative); in general the visual cortical maps and clusters are all larger.
+    * The postion of the nominal fourth visual map differs substantially between human and macaque; sufficiently so that I named it hV4 rather than V4 and spent years arguing about this others 
+    * The functional responses to motion in human and macaque V3 and V3A do not match
 
 This nice figure from @meyer2025-clusters-evolution shows a measurement of the relative size of the V2/V3 portion of the V1 cluster in human and macaque.
 
-![Meyer comparative anatomy @meyer2025-clusters-evolution](images/meyer2025-comparative.png){#fig-meyer-comparative width="80%"}
+![Comparative anatomical sizes of maps and clusters [ @meyer2025-clusters-evolution]](images/meyer2025-comparative.png){#fig-meyer-comparative width="80%"}
 
-::: {#nte-comparative-organization .callout-note}
-
+::: {#nte-comparative-organization .callout-note title="Humans and monkeys"}
 This note is an expanded commentary on the more obvious differences between human and non-human primate clusters and retinotopic maps.
 
 **Overall Size and Neuron Count:** Human visual field maps are substantially larger overall than those in the macaque, with human V1 estimated to be roughly two to four times larger. The human visual cortex correspondingly contains a much larger number of neurons, which is thought to reflect the increased processing required for human-specific cognitive demands, such as language and reading Derived from: "Visual Field Maps in Human Cortex" [@wandell2007-VisualFieldMaps] and "Imaging retinotopic maps in the human brain" [@wandell2011-ImagingRetinotopicMaps]. The larger number of human cortical neurons contrasts with the similar number of ganglion cell axons in the human and macaque optic nerves [@fortune2014-optic-nerve; @mikelberg1989-optic-nerve; @kolb2011-webvision].
@@ -197,42 +192,34 @@ This note is an expanded commentary on the more obvious differences between huma
 
 **V4 / hV4 and Color Processing Locations:** In the macaque, area V4 spans both the dorsal and ventral portions of the occipital lobe, and color-exchange experiments produce responses in both components. In humans, investigators have not reliably found a dorsal component for the fourth visual map; instead, the human map (hV4) and the regions critical for color vision (and those associated with cerebral achromatopsia) are confined almost entirely to the ventral surface. Derived from: "Mapping hV4 and ventral occipital cortex: The venous eclipse" [@winawer2010-venous-eclipse]. "Imaging retinotopic maps in the human brain" [@wandell2011-ImagingRetinotopicMaps], and "Visual Field Maps in Human Cortex" [@wandell2007-VisualFieldMaps].
 
-There is considerably variability within species in both the optic nerve axon count and the surface area of the visual field maps [@stensaas1974-v1-area; @dougherty2003-ob; @benson2022-surface-area]. 
+There is considerably variability within species in both the optic nerve axon count and the surface area of the visual field maps [@stensaas1974-v1-area; @dougherty2003-ob; @benson2022-surface-area].
 :::
 
-## A non-hierarchical view
+# A new summary
 
+Why would I like to develop a replacement for the FVE image at this time.  Several reasons
 
-@jacques2025-non-hierarchical
+Emphasize the retinoptic maps, in part because the definition of 'visual area' is so fraught
 
-## Tools
+Not spoken about here, but we need a way to show the multiple functional specializations which are not part of the FVE.
 
-Wang atlas should get in here, I think.
+De-emphasize the hierarchy of maps in favor of the clusters, because some of the clusters receive a very early signal from the retina. @jacques2025-non-hierarchical @markov2013-hierarchicalanatomy
 
-Benson-Winawer work
-
-deepRetinotopy citations
+Incorporate pulvinar and other subcortical regions more clearly.
 
 # Adult cortical plasticity
 
 @barsingerhorn2018-symbol @saber2015-saccade @masuda2008-maculardegenerationV1 @masuda2010-retinitispigmentosa @masuda2021-maculardepgeneration @rosenau2008-feedback
 
-Parvalbumin cell development papers
-@yew1997-pnn-human-cerebellum
-@grateron2003-pnn-human-entorhinal
-@fung2010-pnn-human-dlpfc
+Parvalbumin cell development papers @yew1997-pnn-human-cerebellum @grateron2003-pnn-human-entorhinal @fung2010-pnn-human-dlpfc
 
-PNN papers in human
-@rogers2018-pnn-epilepsy
-@mauney2013-pnn-schizophrenia
-@nakayama2025-aggrecan-pnn - "Among the PNN-related genes examined, aggrecan alone exhibited strong activity-dependent transcriptional regulation"
-<!--
+PNN papers in human @rogers2018-pnn-epilepsy @mauney2013-pnn-schizophrenia @nakayama2025-aggrecan-pnn - "Among the PNN-related genes examined, aggrecan alone exhibited strong activity-dependent transcriptional regulation" <!--
 The Nakayama (2025) paper you asked about is the most modern measure of this process. It shows that aggrecan expression is not just a "clock" that runs out; it is activity-triggered.The Measure: Using quantitative PCR and Western blots, Nakayama showed that as neurons begin to fire in response to visual input, the Acan gene is upregulated specifically in Parvalbumin (PV) interneurons.
 
 The Feedback Loop: Increased activity $\rightarrow$ Increased Aggrecan $\rightarrow$ Stronger PNNs $\rightarrow$ Reduced Plasticity (Stability).
 -->
 
-gemini:  "A common misconception is that if you turn off the lights, the walls of the house disappear. But as our work in MD and the recent findings from the Dekker lab show, the visual map clusters are structurally persistent. Once the 'molecular armor' (Aggrecan/PNNs) is built, the absence of activity is not enough to dismantle it. The brain values the stability of the topographic blueprint more than the efficiency of re-using silent space."
+gemini: "A common misconception is that if you turn off the lights, the walls of the house disappear. But as our work in MD and the recent findings from the Dekker lab show, the visual map clusters are structurally persistent. Once the 'molecular armor' (Aggrecan/PNNs) is built, the absence of activity is not enough to dismantle it. The brain values the stability of the topographic blueprint more than the efficiency of re-using silent space."
 
 The second is the principle that adult visual cortex retains a high degree of plasticity, allowing for functional reorganization in response to changes in sensory input or damage. Each of these ideas has been influential in shaping our understanding of visual processing and cortical organization. However, recent evidence - largely from human MRI studies - has prompted a re-evaluation of these concepts. First, specifying the organization of visual maps as independent structures may not be the right way to think about them. Second, the extent of adult cortical plasticity may be more limited than some of our colleagues - and endless number of commercials on television - have proposed.
 
@@ -244,6 +231,7 @@ Finally, I want to make a connection to the MRI work in human with relatively ne
 
 For those of you who already agree with the ideas, I hope that this review with its figures and references will be useful for your teaching. I plan to incorporate much of this material, using a tutorial approach, into the second edition of my book *Foundations of Vision*, which is currently in preparation. For those of you who disagree with my comments, please visit with me during this meeting so I can understand what you and why the roughly fifty papers I am drawing upon are missing something important.
 
+```{=html}
 <!--
 Gemini, after my exploration of Neeraj Jain (London section)
 
@@ -255,6 +243,7 @@ Era,Leading Idea,Jain's Contribution / Influence
 
 "Even the Kaas lab, the birthplace of cortical reorganization, discovered that the 'maps' themselves are remarkably stable anchors. As Neeraj Jain showed, the apparent plasticity we see in fMRI or microelectrode maps is often just the cortex faithfully reflecting a change that happened at the very first synapse in the brainstem."
 -->
+```
 
 ## Example Concept Area
 
@@ -381,7 +370,6 @@ They explicitly cite [Baseler et al. (2011)](https://www.nature.com/articles/nn.
 
 ## Thoughts
 
-
 -   Visual field maps
     -   Historical - refer to earliest Munk et al.
     -   Go up to Felleman and Van Essen - emphasize 'areas' and 'hierarchy' and macaque
@@ -400,7 +388,7 @@ They explicitly cite [Baseler et al. (2011)](https://www.nature.com/articles/nn.
     -   Human Experiments
         -   Baker/Dilks
         -   Smirnakis and Logothetis
-    -  List of vision studies of adult cortical plasticity
+    -   List of vision studies of adult cortical plasticity
         -   Rod monochromats
         -   AMD
         -   RP
@@ -411,4 +399,3 @@ They explicitly cite [Baseler et al. (2011)](https://www.nature.com/articles/nn.
         -   Maffei, Hensch, other references to PNN
         -   
     -   Maybe Tessa Dekker hierarchical paper, but maybe not
-
