@@ -97,3 +97,24 @@ There is one topic I look forward to discussing with you in the future.  I have
 But mainly, your paper is a wonderful contribution!
 
 Regards,
+
+Hi Brian,
+ 
+Thank you very much for your kind note and for taking the time to read the paper so carefully. We really appreciate it!
+
+Yes, we think our view is quite aligned with the distinction you drew in your 2007 Neuron review between visual field maps and visual areas. In that paper, you were very careful not to treat those as interchangeable, and I think that distinction is exactly the right one. We see visual field maps as the clearest and most tractable way to parcel visual cortex. Other features such as cytoarchitecture, connectivity, and functional properties can certainly point to meaningful distinctions, but once one tries to combine them into a unified definition of an “area,” the conceptual and practical difficulties become substantial. As you note, FACT is appealing in principle, but in practice its criteria do not always converge.
+
+A concrete example Mike and I have discussed is LIPd and LIPv in macaque. They are often distinguished on the basis of connectivity, laminar organization, and functional properties, but those borders are orthogonal to the reversals in visual field maps rather than aligned with them (see examples in Figure 6 of Mike's 2011 paper). Even in early visual cortex, connectivity cuts across map-based boundaries: for example, foveal V1 is more strongly linked to foveal V2 than to peripheral V1, and vice versa (similarly in Figure 3 from Ungerleider et al. 2008 for V2-V4).
+
+That is part of why, in our paper, we operationalized “visual area” largely in retinotopic terms, even though that admittedly blurs the distinction between an area and visual field map. We see visual field maps as the closest thing we have to an objective and broadly comparable criterion for parceling visual cortex, even if they do not fully resolve the broader question of what should count as an “area.” Retinotopy gives us a principled foothold.
+
+We also appreciated the Hayden, Heilbronner, and Yoo paper as a useful critique of the privileged status often given to brain areas in explaining cortical function. At the same time, we are not sure that moving away from areas in favor of gradients, networks, and other organizing principles fully resolves the underlying problem, since those frameworks also require principled criteria for definition and delimitation. So while the paper is a valuable corrective to overly modular views, the distinctions grounded in multiple maps of sensory space still capture something real and useful, even if they do not exhaust the relevant organization.
+
+Thanks again for your generous note and for raising this. It is a really important issue, and one we would very much enjoy discussing further. Mike will be at VSS next month.
+ 
+Best,
+ 
+Emily Meyer
+Neuroscience PhD Candidate
+Arcaro Lab | University of Pennsylvania
+emily.meyer@pennmedicine.upenn.edu
