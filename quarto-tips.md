@@ -119,3 +119,21 @@ Insert a local video (e.g., MP4) just like an image, but append HTML video attri
 ```md
 ![Caption for the video](path/to/video.mp4){#vid-label width="80%" loop="true" autoplay="true" muted="true"}
 ```
+
+### 7. Footnotes
+
+You can add footnotes either inline or by reference.
+
+**Inline Footnotes:**
+Use a caret and square brackets immediately after the text:
+```md
+Here is a statement that needs a footnote^[This is the inline footnote text.].
+```
+
+**Reference Footnotes:**
+Use a numbered or named tag in the text, and define it elsewhere (usually at the bottom of the document):
+```md
+Here is another statement.[^1]
+
+[^1]: This is the footnote defined elsewhere.
+```

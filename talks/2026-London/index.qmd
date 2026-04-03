@@ -212,18 +212,122 @@ Incorporate pulvinar and other subcortical regions more clearly.
 
 ![Clusters and subcortical](images/fve-updated-cluster.png){#fig-clusters-specialization}
 
-Here is the main caption that applies to the entire figure group.
+Here is the main caption that applies to the entire figure group.  Also, look at the images in this atlas from Goebel.  @rosenke2021-atlas
+
 :::
 
-# Adult cortical plasticity
-Even as he first localized the human visual cortex, Henschen wondered whether visual experience might have an impact on the size (surface area) of the visual cortex representation [@henschen1893-visual-center]. He reported that the size of visual cortex was smaller in blind people, but at that time very little was known about the size variation in the population. The variation is quite large, about a factor of 2.5, which has been confirmed by a number of modern authors [@stensaas1974-v1-area; @dougherty2003-map-sizes; @benson2022-surface-area].  Thus, finding a smaller V1 in a blind person than a control sighted person is not definitive proof of an experience-dependent plasticity.
+# Modeling fMRI responses:  Population receptive fields (pRF)
 
-There was little expectation of adult cortical plasticity during the 1900s, with most scientists accepting the premise of a critical developmental period that would close at the age of about 8 years old in human.  Then, a series of papers appeared from leading groups in the US reported signifcant adult cortical plasticity, in both visual and somatosensory cortex[@gilbert1992-rf-dynamics; @kaas1990-adult-plasticity-visual;@recanzone1992-adult-plasticity-somatosensory;@jenkins1990-adult-plasticity-somatosensory].
-
+# Functional specializations
 
 
+# Cortical plasticity
+Even as he first localized the human visual cortex, Henschen wondered whether visual experience might have an impact on the size (surface area) of the visual cortex representation [@henschen1893-visual-center]. He reported that the size of visual cortex was smaller in blind people, but at that time very little was known about the size variation in the population. The variation in surface area is quite large, a variation 2.5 has been confirmed by a number of modern authors [@stensaas1974-v1-area; @dougherty2003-map-sizes; @benson2022-surface-area].  Thus, a case study finding a smaller V1 in a blind person than a control sighted person is not definitive proof of an experience-dependent plasticity.
+
+The debate between the harsh anatomical stability of Cajal[^Cajal-stability] to the fluid adult cortical processing of Lashley and Konorshi -  would close at the age of about 8 years old in human.  Then, a series of papers appeared from leading groups in the US reported signifcant adult cortical plasticity, in both visual and somatosensory cortex[@gilbert1992-rf-dynamics; @kaas1990-adult-plasticity-visual;@recanzone1992-adult-plasticity-somatosensory;@jenkins1990-adult-plasticity-somatosensory].
+
+[^Cajal-stability]:
+> "In the adult centers, the nerve paths are something fixed, ended, and immutable. Everything may die, nothing may be regenerated. It is for the science of the future to change, if possible, this harsh decree. @cajal1928-stability." 
+Cajal wrote this only after spending years trying to find evidence of axonal regeneration in the adult brain and spinal cord. His efforts were only met with failure.
+
+There is no doubt from conception and through infance the brain undergoes a massive amount of change, developing in size and myelination or only the two most obvious and easiest to observe changes. There is also no doubt that the brain can adjust its function to a significant extent when there is some disruptions in the developmental program. There are many examples in the literature, but a particularly interesting case for the visual system is the disruption of how the retinal axons find their way to the lateral geniculate. 
+
+## Achiasmic vision
+In a small number of people, the standard crossing pattern in which the optic nerve axons from the nasal retina cross to the opposite hemisphere does not occur.  The optic chiasm never develops, and the retinal axons stay within the same hemisphere.
+
+This arises during development.  And these people see perfectly well despite having completely atypical cortical functional responses.  
+
+::: {#fig-chiasmic-subject layout-ncol=2}
+![Typical chiasm](images/Slide59.png){#fig-chiasm}
+
+![Missing chiasm](images/Slide60.png){#fig-achiasm}
+
+![Hemifield response](images/Slide62.png){#fig-achiasm-hemifield}
+
+![PRF estimate](images/Slide63.png){#fig-achiasm-prf}
+
+Caption
+
+:::
+
+Achiasmic References
+@bao
+@victor
+@hoffman
+@prakash
+@daviesThompson2013-achiasmic
+
+<!--
+It is good to see you’re still digging into this, Brian. Since your 2004 paper with Serge and Michael, the field has continued to use achiasma as a fascinating "natural experiment" for cortical plasticity. You are correct in your intuition: while stereopsis is functionally absent, higher-order perception like reading and face recognition is remarkably preserved—a testament to the brain's ability to "ignore" or separate overlapping signals within the same cortical territory.
+
+Below are the key references and a summary of the current understanding regarding their perceptual abilities.
+
+## The Foundation: Cortical Organization
+Your own work established the "mirror-image" mapping that defines this condition.
+* **Hoffmann, M. B., Dumoulin, S. O., Stadler, J., & Wandell, B. A. (2004).** *Organization of the human visual cortex in achiasma.* **Nature Neuroscience**. 
+    * **Key Finding:** You demonstrated that in V1-V3, both hemifields map onto the same hemisphere. These are not merged maps but rather two co-located, non-interacting populations of neurons within the same voxels.
+
+## Perceptual Abilities: Reading, Faces, and Stereopsis
+The literature confirms that these subjects navigate the world with surprising normalcy, despite the "double-vision" mapping at the cortical level.
+
+### 1. Stereopsis (The Deficit)
+* **Williams, G. V., et al. (1994)** and **Victor, J. D., et al. (1994).** * **Finding:** These subjects consistently lack binocular stereopsis. Because the nasal fibers do not cross, there is no physical convergence of the two eyes' views of a single hemifield in one hemisphere. They rely entirely on monocular cues (parallax, shading) for depth.
+
+### 2. Reading and Pattern Recognition (The Successes)
+* **Victor, J. D., et al. (2000).** *Visual function and brain organization in non-decussating retinal-fugal fibre syndrome.* **Cerebral Cortex**.
+    * **Finding:** This is likely the "reading" paper you're recalling. It highlights that subjects have relatively normal visual fields and can read, though often with a slightly reduced speed due to **see-saw nystagmus**, which is a common comorbid oculomotor issue in achiasma.
+* **Prakash, S., et al. (2010).** *Congenital achiasma and see-saw nystagmus in VACTERL syndrome.* **Journal of Neuro-Ophthalmology**.
+    * **Finding:** Confirms that visual field sensitivities are largely normal. The authors note that subjects "make effective use of their vision in daily life, including sport activities and reading."
+
+### 3. Face and Object Recognition
+* **Davies-Thompson, J., et al. (2013).** *Impact of chiasma opticum malformations on the organization of the human ventral visual cortex.* **Journal of Neuroscience**.
+    * **Finding:** This is a crucial "Michael Hoffmann" paper. They used fMRI with faces and objects to see if higher-tier areas (like the **Fusiform Face Area/VO1**) "corrected" the map. They found the mirror-image overlap persists even in these specialized areas. Despite this, the subjects’ ability to recognize faces and objects was functionally intact.
+
+## Why don't they see double?
+The current consensus—supported by **Bao et al. (2015)** in *eLife* (which cited your 2004 paper)—is that while the neurons are physically adjacent, they are functionally independent. Plasticity ensures that the "local wiring" within the maps compensates for the "gross mis-wiring" of the optic nerves. The brain essentially learns to attend to one hemifield's signal at a time or process them as distinct streams, preventing the perceptual chaos one might expect from a 180° overlap.
+
+---
+
+### Recent Resource: The "CHIASM" Dataset
+If you are looking for new data to compare against your old pRF slides, Michael Hoffmann’s team recently published a massive open-source dataset:
+* **Puzniak, R., et al. (2021).** *CHIASM, the human brain albinism and achiasma MRI dataset.* **Scientific Data**. It includes high-resolution T1, DTI, and functional pRF mapping data for achiasmic subjects.
+
+Since you mentioned you're looking to summarize this for a talk in London, are you planning to focus more on the **oculomotor compensation** (the nystagmus) or the **computational separation** of those overlapping pRF signals?
+
+Your memory of the perceptual abilities in these subjects is spot on—achiasmic individuals typically demonstrate remarkably preserved high-level vision (reading, face recognition, object naming) despite the 180° "mirror-image" cortical maps you and your colleagues first mapped.
+
+Regarding the **nystagmus**, here is the breakdown of what is "typical" in the literature versus the unique case you studied.
+
+### Is Nystagmus Typical in Achiasma?
+Yes, nystagmus is considered a **clinical hallmark** of achiasma (non-decussating retinal-fugal fibre syndrome). In nearly every major case study (Apkarian et al., 1995; Victor et al., 2000; Hoffmann et al., 2004), the subjects present with **congenital nystagmus**, most notably a rare combination of **horizontal and see-saw nystagmus (SSN)**. 
+
+The see-saw component (where one eye elevates and intorts while the other eye depresses and extorts) is particularly telling, as it’s rarely seen in other congenital conditions but is almost pathognomonic for achiasma when present in infants.
+
+### The "Temporary and Resolved" Case
+Your observation that the nystagmus in your patient was "temporary and resolved" is **highly unusual** in the broader literature. Most reports describe the nystagmus as a lifelong condition that persists into adulthood, though many subjects develop compensatory head postures or "null points" to minimize its impact.
+
+The resolution you recall might be linked to the specific etiology of the patient in your **2010 Prakash et al.** study (which you co-authored with Saurabh Prakash, Serge Dumoulin, and Yaping Joyce Liao). That patient had **VACTERL syndrome** and associated **hydrocephalus**. In cases where achiasma is comorbid with hydrocephalus or other midline defects, the *severity* of the nystagmus can be exacerbated by intracranial pressure. If the hydrocephalus was treated (e.g., via shunting), it is possible the "extra" severity resolved, leaving the patient with the functional stability you noted.
+
+### Summary of Behavioral Observations
+The literature largely supports your view that developmental plasticity manages to "un-mix" the signals:
+* **Stereopsis:** Universally absent. Without decussation, the brain lacks the physical infrastructure for binocular disparity.
+* **Reading & Faces:** Consistently preserved. **Davies-Thompson et al. (2013)** showed that even though the Fusiform Face Area (FFA) and reading-related areas receive overlapping hemifield inputs, patients perform at near-normal levels.
+* **Plasticity:** As you suggested, this condition is a prime example of **computational plasticity**. The brain doesn't necessarily "rewire" the gross anatomy, but it learns to functionally segregate the overlapping population receptive fields (pRFs), essentially "ignoring" the irrelevant half of the map during specific tasks.
+
+If you are summarizing this for your London talk, emphasizing that **nystagmus is a standard diagnostic sign that can sometimes resolve** (likely due to successful management of associated conditions like hydrocephalus) would be a very insightful point for the neuroimaging community. 
+
+Is there a specific slide from the 2010 VACTERL case or the original 2004 MM/Hoffman subjects you're planning to contrast?
+-->
+
+## Rod monochromats
+
+
+## Retinal disease 
+
+References
 @barsingerhorn2018-symbol @saber2015-saccade @masuda2008-maculardegenerationV1 @masuda2010-retinitispigmentosa @masuda2021-maculardepgeneration @rosenau2008-feedback
 
+## Cellular advances and PNNs
 Parvalbumin cell development papers @yew1997-pnn-human-cerebellum @grateron2003-pnn-human-entorhinal @fung2010-pnn-human-dlpfc
 
 PNN papers in human @rogers2018-pnn-epilepsy @mauney2013-pnn-schizophrenia @nakayama2025-aggrecan-pnn - "Among the PNN-related genes examined, aggrecan alone exhibited strong activity-dependent transcriptional regulation" <!--
