@@ -197,7 +197,7 @@ There is considerably variability within species in both the optic nerve axon co
 
 # A new summary
 
-When I teach about visual cortex these days, I find the Felleman and Van Essen diagram less than helpful for several reasons.  It makes no distinction between retinoptic maps and 'visual areas', a concept I find to be fraught. It does not indicate the relationship to the multiple functional specializations that have been identified in the human visual cortex. The map also communicates the hierarchy concept very strongly, and I don't think we should be very confident about the flow of information, in part because of the anatomical work from the Kennedy lab.  Finally, as a vision scientist the importance of the subcortical systems has become increasingly important.  
+These days, when I teach, I find the Felleman and Van Essen diagram less than helpful.  There are several reasons.  First, the diagram makes no distinction between retinoptic maps and 'visual areas', a concept I find to be fraught. Second, it omits the modern functional specializations that have been identified in the human visual cortex. Third, the map emphasizes the hierarchy concept strongly, but I not confident about the flow of information. Finally, it omits the subcortical systems which have become become increasingly important in teaching with the discovery of the ipRGCs. 
 
 Maybe get the grill-spector and kevin weiner diagram up as a better alternative.  Or even start with the Zeki one and then get that one as the next generation.
 
@@ -205,7 +205,22 @@ De-emphasize the hierarchy of maps in favor of the clusters, because some of the
 
 Incorporate pulvinar and other subcortical regions more clearly.
 
+::: {#fig-multipane layout-ncol=2}
+![Zeki image](images/Slide32.png){#fig-zeki-specialization}
+
+![Grill-spector specialization](images/Slide34.png){#fig-weiner-specialization}
+
+![Clusters and subcortical](images/fve-updated-cluster.png){#fig-clusters-specialization}
+
+Here is the main caption that applies to the entire figure group.
+:::
+
 # Adult cortical plasticity
+Even as he first localized the human visual cortex, Henschen wondered whether visual experience might have an impact on the size (surface area) of the visual cortex representation [@henschen1893-visual-center]. He reported that the size of visual cortex was smaller in blind people, but at that time very little was known about the size variation in the population. The variation is quite large, about a factor of 2.5, which has been confirmed by a number of modern authors [@stensaas1974-v1-area; @dougherty2003-map-sizes; @benson2022-surface-area].  Thus, finding a smaller V1 in a blind person than a control sighted person is not definitive proof of an experience-dependent plasticity.
+
+There was little expectation of adult cortical plasticity during the 1900s, with most scientists accepting the premise of a critical developmental period that would close at the age of about 8 years old in human.  Then, a series of papers appeared from leading groups in the US reported signifcant adult cortical plasticity, in both visual and somatosensory cortex[@gilbert1992-rf-dynamics; @kaas1990-adult-plasticity-visual;@recanzone1992-adult-plasticity-somatosensory;@jenkins1990-adult-plasticity-somatosensory].
+
+
 
 @barsingerhorn2018-symbol @saber2015-saccade @masuda2008-maculardegenerationV1 @masuda2010-retinitispigmentosa @masuda2021-maculardepgeneration @rosenau2008-feedback
 
