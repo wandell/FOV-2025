@@ -62,11 +62,14 @@ James also writes "the quarrel is very acrimonious; indeed the subject of locali
 Many of us have enjoyed Charlie Gross' book that is filled with interesting histories of neuroscience discovery [@gross1998-brain-book]. His book and James' book include more information about many other investigations of localization [; @james1950-principles].
 :::
 
-It was the Swedish neurologist, Henschen, who first carefully observed the visual loss in **human** patients with occipital lesions. He concluded that at least part of the visual field, the upper and lower portions, were represented in cortex in an orderly map with the lower visual field in the dorsal occipital lobe and upper visual field in the ventral occipital lobe.
+It was the Swedish neurologist, Henschen, who first carefully observed the visual loss in **human** patients with occipital lesions. He concluded that at least part of the visual field, the upper and lower portions, were represented in cortex in an orderly map with the lower visual field in the dorsal occipital lobe and upper visual field in the ventral occipital lobe. His findings were met with objections by many, and subsequently confirmed by many more.  He expresses his feelings on the matter in the opening of a 1923 review paper[^Henschen1923] [@henschen1923-review].
 
 ![Henschen's findings on the upper and lower field representations.](images/henschen.png){#fig-henschen width="80%"}
 
-Henschen's observations were confirmed and extended by two clinicians working at opposite ends of the world: Gordon Holmes and Tatsuye Inouye. Both were studying visual field losses from soldiers injured in their countries' wars, Holmes in Europe and Inouye in Japan. In that era, the guns were not always lethal, and the helmets would permit bullets to enter and exit the posterior skull, effectively lesioning a portion of occipital cortex. Such lesions could cause a permanent but partial visual field loss. By accumulating data from a number of different cases, they could deduce the general organization of the human retinotopic organization. In addition to the upper-lower field representation, they both reported on the eccentricity map as well as the fact that the central portion of the visual field occupied more cortical territory (per square degree) than the peripheral portion. This phenomenon is called 'cortical magnification', and though perhaps it should be called 'foveal magnification'.
+In fact, Henschen's observations about the organization of the visual cortex in the human were confirmed and extended by two clinicians working at opposite ends of the world: Gordon Holmes and Tatsuye Inouye. Both were studying visual field losses from soldiers injured in their countries' wars, Holmes in Europe and Inouye in Japan. In that era, the guns were not always lethal, and the helmets would permit bullets to enter and exit the posterior skull, effectively lesioning a portion of occipital cortex. Such lesions could cause a permanent but partial visual field loss. By accumulating data from a number of different cases, they deduced the retinotopic organization of the human visual cortex. In addition to the upper-lower field representation, they both reported on the eccentricity map as well as the fact that the central portion of the visual field occupied more cortical territory (per square degree) than the peripheral portion. This phenomenon is called 'cortical magnification', and though perhaps it should be called 'foveal magnification'.
+
+[~Henschen1923]: 
+> "Only in my own country, at the Carolinian Institute, where from 1900 to 1912 I was Clinical Professor, leading men not only in Physiology but also in Anatomy, Pathology and Psychiatry (with the exception of my successor Israel Holmgren, the Editor of Acta  Medica Scandinavica), without deeper study of my works or facts and neglecting the scientific judgments pronounced abroad, endeavoured, on subjective grounds, to deny the originality and priority of my discoveries and depreciated the importance and value of these, notwithstanding their official duty to examine and (as members of the Nobel Committee 1) judge objectively about new medical discoveries. In consequence of these circumstances, I greatly regret the necessity to personally emphasize my own researches and discoveries in the following, at the same time giving a short review of my earlier works. @henschen1923-review"
 
 ::: {#fig-inouye-holmes layout-ncol="2"}
 ![Inouye](images/inouye-map.png){#inouye-map width="80%"}
@@ -251,11 +254,19 @@ Caption
 :::
 
 Achiasmic References
-@bao
-@victor
-@hoffman
-@prakash
+@victor2000-achiasma
+@prakash2010-achiasmic
+@hoffmann2012-achiasma
+> "The absence of the optic chiasm is an extraordinary and extreme abnormality in the nervous system. The abnormality produces highly atypical functional responses in the cortex, including overlapping hemifield representations and bilateral population receptive fields in both striate  znd extrastriate visual cortex. Even in the presence of these large functional abnormalities, the effect on visual perception and daily life is  not easily detected. @hoffmann2012-achiasma
+
+@bao2015-achiasmic
 @daviesThompson2013-achiasmic
+
+Albinism
+@hoffmann2012-albinism
+
+Reviews
+@hoffmann2015-TICS-review
 
 <!--
 It is good to see you’re still digging into this, Brian. Since your 2004 paper with Serge and Michael, the field has continued to use achiasma as a fascinating "natural experiment" for cortical plasticity. You are correct in your intuition: while stereopsis is functionally absent, higher-order perception like reading and face recognition is remarkably preserved—a testament to the brain's ability to "ignore" or separate overlapping signals within the same cortical territory.
