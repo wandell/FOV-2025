@@ -198,7 +198,23 @@ This note is an expanded commentary on the more obvious differences between huma
 There is considerably variability within species in both the optic nerve axon count and the surface area of the visual field maps [@stensaas1974-v1-area; @dougherty2003-ob; @benson2022-surface-area].
 :::
 
-# A new summary
+<!--
+# Modeling fMRI responses:  Population receptive fields (pRF)
+
+Not for London
+
+Needed in the future to explain the achiasma results.  Also pRFs are now standard methodology and thus need explanation.
+
+# Functional specializations
+
+Not for London.
+
+Functional specialization has become a focus of the field.  Motivates the new diagram.  Still controversial.
+
+Plasticity relateds to functional specializations via the Dehaene claims about 'cortical recycling'. Possibility of cortical color blindness and word blindness and face blindness.
+-->
+
+# Modern summary
 
 These days, when I teach, I find the Felleman and Van Essen diagram less than helpful.  There are several reasons.  First, the diagram makes no distinction between retinoptic maps and 'visual areas', a concept I find to be fraught. Second, it omits the modern functional specializations that have been identified in the human visual cortex. Third, the map emphasizes the hierarchy concept strongly, but I not confident about the flow of information. Finally, it omits the subcortical systems which have become become increasingly important in teaching with the discovery of the ipRGCs. 
 
@@ -219,41 +235,44 @@ Here is the main caption that applies to the entire figure group.  Also, look at
 
 :::
 
-# Modeling fMRI responses:  Population receptive fields (pRF)
-
-# Functional specializations
-
 
 # Cortical plasticity
-Even as he first localized the human visual cortex, Henschen wondered whether visual experience might have an impact on the size (surface area) of the visual cortex representation [@henschen1893-visual-center]. He reported that the size of visual cortex was smaller in blind people, but at that time very little was known about the size variation in the population. The variation in surface area is quite large, a factor 2.5 in surface area has been confirmed by a number of modern authors [@stensaas1974-v1-area; @dougherty2003-map-sizes; @benson2022-surface-area].  Thus, a case study finding a smaller V1 in a blind person than a control sighted person is not definitive proof of an experience-dependent plasticity.
+The interest in cortical development and cortical plasticity has a long history, paralleling the work on understanding the organization of cortical structures and function.
 
-The debate between the harsh anatomical stability of Cajal[^Cajal-stability] and the fluid adult cortical processing of Lashley and Konorski was replaced by the idea of a critical period.  Hubel and Wiesel observed that at very young ages cortical responses could be influenced by experience. But this plasticity would end at some point, about 8 years old in human. The idea of such a period of plasticity, called the critical period, was the dominant view from about 1960 to 1990.
+Even as Henschen first localized the human visual cortex, he wondered whether visual experience might have an impact on the size (surface area) of the visual cortex representation [@henschen1893-visual-center]. He reported that the size of visual cortex was smaller in blind people, but at that time very little was known about the size variation in the population. The variation in surface area is quite large, a factor 2.5 in surface area has been confirmed by a number of modern authors [@stensaas1974-v1-area; @dougherty2003-map-sizes; @benson2022-surface-area].  Thus, a case study finding a smaller V1 in a blind person than a control sighted person is not definitive proof of an experience-dependent plasticity.
 
-Then, a series of papers appeared from leading groups in the US reported signifcant adult cortical plasticity, in both visual and somatosensory cortex[@merzenich1984-plasticity; @gilbert1992-rf-dynamics; @kaas1990-adult-plasticity-visual;@recanzone1992-adult-plasticity-somatosensory;@jenkins1990-adult-plasticity-somatosensory].
-sunness papers with yantis
+After spending years trying to find evidence of axonal regeneration in the adult brain and spinal cord, Cajal reported that his efforts were only met with failure.In a famous passage, Cajal[^Cajal-stability] referred to the anatomical stability of the brain
 
-[^Cajal-stability]:
 > "In the adult centers, the nerve paths are something fixed, ended, and immutable. Everything may die, nothing may be regenerated. It is for the science of the future to change, if possible, this harsh decree. @cajal1928-stability." 
-Cajal wrote this only after spending years trying to find evidence of axonal regeneration in the adult brain and spinal cord. His efforts were only met with failure.
 
-There is no doubt from conception and through infance the brain undergoes a massive amount of change, developing in size and myelination or only the two most obvious and easiest to observe changes. There is also no doubt that the brain can adjust its function to a significant extent when there is some disruptions in the developmental program. There are many examples in the literature, but a particularly interesting case for the visual system is the disruption of how the retinal axons find their way to the lateral geniculate. 
+Although the adult appeared stable, There is no doubt from conception and through infance the brain undergoes a massive amount of change, developing in size and myelination or only the two most obvious and easiest to observe changes. Hubel and Wiesel observed that at very young ages cortical responses could be influenced by visual experience. They reported that this specific type of experience-dependent plasticity seemed to end, perhaps at 8 years of age in human. 
 
 ## Animal models
+
+The idea that there is a period for plasticity, called the critical period, was the dominant view from about 1960 to 1990. But beginning in the middle of the 1980s a series of papers appeared from leading groups in the US reported signifcant adult cortical plasticity, in both visual and somatosensory cortex
+
+@merzenich1984-plasticity; 
+@gilbert1992-rf-dynamics; 
+@kaas1990-adult-plasticity-visual;
+@recanzone1992-adult-plasticity-somatosensory;@jenkins1990-adult-plasticity-somatosensory
+@chino1992-rapid
+@chino1995-receptive
+
 I think there are some Kaas vision plasticity papers, too.  He turned around later.  There are definitely Chino papers.  Multiple gilbert papers.
 
-@gilbert1992-rf-dynamics
 @smirnakisLackLongtermCortical2005
 @wandell2009-plasticity-stability
-@kaas1990-adult-plasticity-visual
+@calford2005-critique-smirnakis
 
 ::: {.callout-note title="Unanswered biological questions"}
-Tell people in a short and comopelling way how the questions of two eyes versus one eyes, the timing, and all the other stuff we raised in the review paper have nevere been answered.  Not in anaimals.  Not in humans.
+Tell people in a short and compelling way how the questions of two eyes versus one eyes, the timing, and all the other stuff we raised in the review paper have nevere been answered.  Not in anaimals.  Not in humans.
 
 About the exchange:  In 2005, we were debating whether the map changed. We wrote a reply to Gilbert and Kaas that, frankly, focused too much on the mechanics of the BOLD signal. But twenty years later, the molecular and modeling evidence suggests something much more profound: the primary visual cortex is structurally 'locked' to preserve the topographic blueprint, and what we once called 'plasticity' is actually the brain's ability to flexibly read out that stable map
 
 :::
 
 ## Achiasmia
+There are many examples in the literature, but a particularly interesting case for the visual system is the disruption of how the retinal axons find their way to the lateral geniculate. 
 
 In a small number of people, the standard crossing pattern in which the optic nerve axons from the nasal retina cross to the opposite hemisphere does not occur.  The optic chiasm never develops, and the retinal axons stay within the same hemisphere.
 
@@ -352,26 +371,26 @@ Is there a specific slide from the 2010 VACTERL case or the original 2004 MM/Hof
 My group was the first to recognie that we could explore the visual field map in people who lacked functional cones.  These individuals, called rod monochromats, are rare but possible to find.  The first study we performed, led by Heidi Baseler, measured only three such individuals and none of them were carefully screened for the disease - either genetically or behaviorally.  We described this limitation as well as the basic result.  Although these individuals had only functional rods and no cones - as far as we could tell - retinal signals produced functional signals in the location of the classic foveal projection. This finding was accepted and reported in subsequent authoritative reviews [@hoffmann2015-TICS-review][^Achromatopsia-Review]
 
 [^Achromatopsia-Review]: 
->In adults [20], the deafferented cortical foveal representation in rod achromatopsia is not silent, but driven by parafoveal input [25]. In essence, the visual field maps are preserved, but only represent retina covered with functional photoreceptors, that is rods."
+We thought acquired foveal lesions would not fill in, but developmental was different.  Alas, we were wrong for a few years until Heidi straightened us out.
+>In adults [@baseler2011-LargescaleRemappingVisual], the deafferented cortical foveal representation in rod achromatopsia is not silent, but driven by parafoveal input [@baseler2002-rod-monochromats]. In essence, the visual field maps are preserved, but only represent retina covered with functional photoreceptors, that is rods [@hoffmann2015-TICS-review]."
 
-Twety years on, the matter was taken up again by Baseler and colleagues, using much better screening method [@molz2023-achromatopsiavisualCortexStability2023].
+Twenty years on, the matter was taken up again by Baseler and colleagues, using much better screening method [@molz2023-achromatopsiavisualCortexStability2023].
 They found, contrary to our original measurement, that iindividuals who could be absolutely identified as having only rods had a silent foveal projection zone.  Thus, even in this case of development the cortical map organization - which is initiated before the retina is functional [shatz1992-developingbrain with that guy from duke who died sadly] is not altered.  The absence of foveal input does not cause the map to be reorganized. The initial map organization appears to be quite stable in the absence of any input. Quote Molz here.
 
-## Retinal disease 
+## Retinal disease - natural lesions
 Further measurements of map plasticity have been made in the adult brain following the onset of different types of retinal disease.  These diseases act as naturally ocurring retinal lesions.   In the presence of significant cortical remapping, one might expect to see the maps in such individuals differ, perhaps by filling in the lesion projection zone (LPZ) corresponding to the disease.
 
-### macular degeneration 
+### Macular degeneration 
 
-@baseler2011-LargescaleRemappingVisual
-@masuda2021-maculardepgeneration 
-@masuda2008-maculardegenerationV1 
-@rosenau2008-feedback
+Early publications in human @sunness2004-md-retinotopy found little support for cortical remapping in the adult subsequent to foveal disease.  In contrast, the Baker and colleagues in the Kanwisher group [@baker2007-reorganization; @baker2008-reorganization; @dilks2007-reorganization] reported large scale reorganization.  @wandell2009-plasticity-stability reviewed the problems with these papers. A thorough and authoritative analysis concluded that there was no large scale reorganization in passive viewing [@baseler2011-LargescaleRemappingVisual]. The lesion project zone (LPZ) was silent Masuda and colleagues obsersved that a task, such as a one-back memory task, could evoke a signal in the LPZ [@masuda2008-maculardegenerationV1;@masuda2021-maculardepgeneration; @rosenau2008-feedback]. His findings suggest that the absence of the feed forward signal from the retina unmasked the cortico-cortical signal associated with task judgments. 
+
 ### Retinitis pigmentosa
+Masuda used the same methodology in patients with retinitis pigmentosa, a disease that spares the fovea but damages the peripheral retina [@masuda2010-retinitispigmentosa].  Once again, they found no significant reorganization in the adult cortex.
 
-References
+It is worth noting that expansion of the cortical signals does not solve the basic problem of a retinal lesion:  no signal is acquired when the retina is damaged.  Expanding the cortical signal to deafferented cortical regions does not mean one can see the blinded portion of the visual field.  It is not really clear what purpose such an expansion of the signals would serve.
+
 @barsingerhorn2018-symbol 
 @saber2015-saccade 
-@masuda2010-retinitispigmentosa 
 
 ## Cellular advances and PNNs
 Parvalbumin cell development papers @yew1997-pnn-human-cerebellum @grateron2003-pnn-human-entorhinal @fung2010-pnn-human-dlpfc
