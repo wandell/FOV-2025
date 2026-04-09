@@ -37,7 +37,7 @@ You are assisting with a Quarto book project stored in a GitHub repository. Your
 
 ## VSCode workflow and debugging
 - Suggestions should be actionable in VSCode (specific files and minimal diffs).
-- Preferred tools: use `rg` instead of `grep` and `fd` instead of `find`.
+- **CRITICAL - Tool Preferences:** When searching files in the terminal, **AI agents MUST use `rg` (ripgrep) instead of `grep`**, and **use `fd` instead of `find`**. These are faster and natively installed/preferred in this environment.
 - Debug approach:
   - Refer to [.agent/workflows/debug.md](.agent/workflows/debug.md) for diagnostic procedures (`quarto check`, cleaning `_book/`, etc.).
   - Ask for exact error text and minimal reproducible snippets.

@@ -4896,19 +4896,37 @@
   pages         = {1851--1864},
   langid        = {english}
 }
-@article{collins2003-mt-v1-lesions,
-  title         = "Responses of neurons in the middle temporal visual area after long-standing lesions of the primary visual cortex in adult new world monkeys",
-  author        = "Collins, Christine E and Lyon, David C and Kaas, Jon H",
-  journal       = "J. Neurosci.",
-  publisher     = "Society for Neuroscience",
-  volume        = 23,
-  number        = 6,
-  pages         = "2251--2264",
-  month         = mar,
-  year          = 2003,
-  url           = "http://dx.doi.org/10.1523/JNEUROSCI.23-06-02251.2003",
-  language      = "en"
+@ARTICLE{collins2003-mt-v1-lesions,
+  title     = "Responses of neurons in the middle temporal visual area after
+               long-standing lesions of the primary visual cortex in adult new
+               world monkeys",
+  author    = "Collins, Christine E and Lyon, David C and Kaas, Jon H",
+  journal   = "J. Neurosci.",
+  publisher = "Society for Neuroscience",
+  volume    =  23,
+  number    =  6,
+  pages     = "2251--2264",
+  month     =  mar,
+  year      =  2003,
+  url       = "http://dx.doi.org/10.1523/JNEUROSCI.23-06-02251.2003",
+  language  = "en"
 }
+
+@ARTICLE{kaas2007-pulvinar-review,
+  title     = "Pulvinar contributions to the dorsal and ventral streams of
+               visual processing in primates",
+  author    = "Kaas, Jon H and Lyon, David C",
+  journal   = "Brain Res. Rev.",
+  publisher = "Elsevier",
+  volume    =  55,
+  number    =  2,
+  pages     = "285--296",
+  month     =  oct,
+  year      =  2007,
+  url       = "http://dx.doi.org/10.1016/j.brainresrev.2007.02.008",
+  language  = "en"
+}
+
 @article{collins2018-robotics,
   title         = {Quantifying the Reality Gap in Robotic Manipulation Tasks},
   author        = {Collins, Jack and Howard, David and Leitner, J{\"u}rgen},
@@ -11321,24 +11339,34 @@
   pages         = {445--455}
 }
 @article{hensch2005-critical-period-review,
-  author        = {Hensch, Takao K.},
-  title         = {Critical period plasticity in local cortical circuits},
-  journal       = {Nature Reviews Neuroscience},
-  year          = {2005},
-  volume        = {6},
-  number        = {11},
-  pages         = {877--888},
-  doi           = {10.1038/nrn1787}
+  author  = {Hensch, Takao K.},
+  title   = {Critical period plasticity in local cortical circuits},
+  journal = {Nature Reviews Neuroscience},
+  year    = {2005},
+  volume  = {6},
+  number  = {11},
+  pages   = {877--888},
+  doi     = {10.1038/nrn1787}
+}
+@article{morishita2010-lynx1-hensch,
+  author  = {Morishita, Hirofumi and Miwa, J. M. and Heintz, Nicolas and Hensch, Takao K.},
+  title   = {Lynx1, a cholinergic brake, limits plasticity in adult visual cortex},
+  journal = {Science},
+  year    = {2010},
+  volume  = {330},
+  number  = {6008},
+  pages   = {1238--1240},
+  doi     = {10.1126/science.1195320}
 }
 @article{hensch2014-amblyopia-critical-period,
-  author        = {Hensch, Takao K. and Quinlan, Elizabeth M.},
-  title         = {Critical periods in amblyopia},
-  journal       = {Visual Neuroscience},
-  year          = {2014},
-  volume        = {31},
-  number        = {1},
-  pages         = {1--11},
-  doi           = {10.1017/S0952523813000225}
+  author  = {Hensch, Takao K. and Quinlan, Elizabeth M.},
+  title   = {Critical periods in amblyopia},
+  journal = {Visual Neuroscience},
+  year    = {2014},
+  volume  = {31},
+  number  = {1},
+  pages   = {1--11},
+  doi     = {10.1017/S0952523813000225}
 }
 @article{henschen1893-visual-center,
   title         = {{ON THE VISUAL PATH AND CENTRE}},
@@ -12179,17 +12207,6 @@
   publisher     = {Wiley Online Library},
   langid        = {english}
 }
-@article{hubel1970-criticalperiod,
-  author        = {Hubel, David H. and Wiesel, Torsten N.},
-  title         = {The period of susceptibility to the physiological effects of unilateral eye closure in kittens},
-  journal       = {The Journal of Physiology},
-  volume        = {206},
-  number        = {2},
-  pages         = {419--436},
-  year          = {1970},
-  doi           = {10.1113/jphysiol.1970.sp009022},
-  publisher     = {Wiley-Blackwell}
-}
 @article{hubel1972-ds,
   title         = {Laminar and Columnar Distribution of Geniculo-Cortical Fibers in the Macaque Monkey},
   author        = {Hubel, D H and Wiesel, T N},
@@ -12201,7 +12218,7 @@
   pages         = {421--450},
   langid        = {english}
 }
-@article{hubel1974-orientationcolumns,
+@article{hubel1974-iu,
   title         = {Sequence Regularity and Geometry of Orientation Columns in the Monkey Striate Cortex},
   author        = {Hubel, D H and Wiesel, T N},
   year          = {1974},
@@ -12212,7 +12229,7 @@
   pages         = {267--293},
   langid        = {english}
 }
-@article{hubel1974-striatecortexuniformity,
+@article{hubel1974-qx,
   title         = {Uniformity of Monkey Striate Cortex: A Parallel Relationship between Field Size, Scatter, and Magnification Factor},
   author        = {Hubel, D H and Wiesel, T N},
   year          = {1974},
@@ -12223,7 +12240,7 @@
   pages         = {295--305},
   langid        = {english}
 }
-@article{hubel1977-ferrierlecture,
+@article{hubel1977,
   title         = {Ferrier lecture. Functional architecture of macaque monkey visual cortex},
   author        = {Hubel, D H and Wiesel, T N},
   year          = {1977},
@@ -12236,15 +12253,6 @@
   note          = {Citation Key: Hubel1977-qn},
   langid        = {english}
 }
-@article{hubel1977-odplasticity,
-  title         = {Plasticity of ocular dominance columns in monkey striate cortex},
-  author        = {Hubel, D. H. and Wiesel, T. N. and LeVay, S.},
-  year          = {1977},
-  journal       = {Phil. Trans. R. Soc. Lond. Series B},
-  volume        = {278},
-  pages         = {131--163},
-  langid        = {english}
-}
 @article{hubel1978-anatomy,
   title         = {Anatomical demonstration of orientation columns in macaque monkey},
   author        = {Hubel, D. H. and Wiesel, T. N. and Stryker, M. P.},
@@ -12254,7 +12262,7 @@
   pages         = {361--380},
   langid        = {english}
 }
-@article{hubel1982-primaryvisualcortex-review,
+@article{hubel1982-explore,
   title         = {Exploration of the Primary Visual Cortex, 1955-1982},
   author        = {Hubel, D. H.},
   year          = {1982},
@@ -12272,7 +12280,7 @@
   pages         = {515--524},
   langid        = {english}
 }
-@book{hubel2004-book,
+@book{hubel2004-bo,
   title         = {Brain and Visual Perception: {{The}} Story of a 25-Year Collaboration},
   author        = {Hubel, David H and Wiesel, Torsten N},
   year          = {2004},
@@ -12288,6 +12296,15 @@
   volume        = {241},
   number        = {3},
   pages         = {150--162},
+  langid        = {english}
+}
+@article{hubelwiesellevay1977,
+  title         = {Plasticity of ocular dominance columns in monkey striate cortex},
+  author        = {Hubel, D. H. and Wiesel, T. N. and LeVay, S.},
+  year          = {1977},
+  journal       = {Phil. Trans. R. Soc. Lond. Series B},
+  volume        = {278},
+  pages         = {131--163},
   langid        = {english}
 }
 @article{huber2015-mikemay,
@@ -12928,6 +12945,16 @@
   year          = {2009},
   pages         = {769--776},
   publisher     = {Curran Associates, Inc.}
+}
+@article{sorg2016-pnn-review,
+  author  = {Sorg, Benjamin A. and Berretta, Sabina and Blacktop, Jordan M. and Fawcett, James W. and Kitagawa, Hiroshi and Kwok, Jessica C. F. and Miquel, Martine},
+  title   = {Casting a wide net: Role of perineuronal nets in neural plasticity},
+  journal = {The Journal of Neuroscience},
+  year    = {2016},
+  volume  = {36},
+  number  = {45},
+  pages   = {11459--11468},
+  doi     = {10.1523/JNEUROSCI.2351-16.2016}
 }
 @article{jain2012-somatosensory-plasticity,
   author        = {Jain, Neeraj and Qi, Hui-Xin and Collins, Cherisse E. and Kaas, Jon H.},
@@ -13586,19 +13613,6 @@
   pages         = {285--296},
   publisher     = {Elsevier},
   langid        = {english}
-}
-@article{kaas2007-pulvinar-review,
-  title         = "Pulvinar contributions to the dorsal and ventral streams of visual processing in primates",
-  author        = "Kaas, Jon H and Lyon, David C",
-  journal       = "Brain Res. Rev.",
-  publisher     = "Elsevier",
-  volume        = 55,
-  number        = 2,
-  pages         = "285--296",
-  month         = oct,
-  year          = 2007,
-  url           = "http://dx.doi.org/10.1016/j.brainresrev.2007.02.008",
-  language      = "en"
 }
 @article{kaas2019-evolution,
   title         = {The Evolution of the Pulvinar Complex in Primates and Its Role in the Dorsal and Ventral Streams of Cortical Processing},
@@ -18792,16 +18806,6 @@
   year          = {2019},
   month         = jul,
   publisher     = {bioRxiv}
-}
-@article{morishita2010-lynx1-hensch,
-  author        = {Morishita, Hirofumi and Miwa, J. M. and Heintz, Nicolas and Hensch, Takao K.},
-  title         = {Lynx1, a cholinergic brake, limits plasticity in adult visual cortex},
-  journal       = {Science},
-  year          = {2010},
-  volume        = {330},
-  number        = {6008},
-  pages         = {1238--1240},
-  doi           = {10.1126/science.1195320}
 }
 @article{morland2021-cortical-reorganization,
   title         = {Cortical Reorganization: {{Reallocated}} Responses without Rewiring},
@@ -24365,16 +24369,6 @@
   volume        = {1},
   pages         = {576--583},
   publisher     = {IEEE}
-}
-@article{sorg2016-pnn-review,
-  author        = {Sorg, Benjamin A. and Berretta, Sabina and Blacktop, Jordan M. and Fawcett, James W. and Kitagawa, Hiroshi and Kwok, Jessica C. F. and Miquel, Martine},
-  title         = {Casting a wide net: Role of perineuronal nets in neural plasticity},
-  journal       = {The Journal of Neuroscience},
-  year          = {2016},
-  volume        = {36},
-  number        = {45},
-  pages         = {11459--11468},
-  doi           = {10.1523/JNEUROSCI.2351-16.2016}
 }
 @article{soto2020-jh,
   title         = {Efficient Coding by Midget and Parasol Ganglion Cells in the Human Retina},

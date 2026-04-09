@@ -64,11 +64,16 @@ Just edit `paperpile.bib` and save the file (`Cmd+S` or `Ctrl+S`). The formatter
 ## Troubleshooting
 
 ### "Format Document" Fails Silently
-If formatting doesn't happen:
-1. **Check Syntax Errors**: The formatter will fail if the `.bib` file has syntax errors (e.g., extra braces, missing commas). Run the CLI tool to see the error message:
-   ```bash
-   bibtex-tidy --modify paperpile.bib
-   ```
-   Fix the reported error and try again.
+The `bibtex-tidy` extension does **not** show pop-up alerts or error toasts when it encounters parsing issues; instead, it simply ignores the file and fails silently on save. If formatting doesn't happen:
 
-2. **Verify Installation**: Ensure `bibtex-tidy` is in your PATH.
+1. **Check for BibTeX Syntax Errors**: The formatter will completely crash if the `.bib` file has syntax errors. Look specifically for:
+   - Extra braces or missing commas at the end of fields.
+   - **Unescaped quotes in author/title strings** containing accents (e.g., `author = "J\"{a}gle"` is technically a syntax error in concat; it should use curly braces like `{J\"{a}gle}`).
+   
+   To diagnose, run the CLI tool manually to see the exact error message and line number:
+   ```bash
+   npx bibtex-tidy paperpile.bib
+   ```
+   Fix the reported error on the exact line and save again.
+
+2. **Verify Installation**: Ensure `bibtex-tidy` is configured correctly in `.vscode/settings.json` and Node.js is active.
