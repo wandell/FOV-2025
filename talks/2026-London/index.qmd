@@ -189,7 +189,7 @@ This note is an expanded commentary on the more obvious differences between huma
 
 **Anatomical Location of V1:** In macaques, a large portion of the primary visual cortex (V1) is located on the operculum, extending posterior and lateral to the medial position of the calcarine sulcus. In humans, V1 is located largely within the calcarine sulcus, extending partially onto the lateral surface of the occipital pole. The human lateral extension is not as large or typical as it is in the macaque. Derived from: "Imaging retinotopic maps in the human brain" [@wandell2011-ImagingRetinotopicMaps].
 
-**Proportional Size of Area V3:** A highly salient difference between the species is the relative size of area V3. In macaques, V3 occupies a very small surface area compared to V1 and V2. In humans, V3 is proportionately much larger, meaning the scale factor difference between human and monkey V3 is even greater than the difference between their V1 maps. This difference in the V3/V1 surface area ratio likely reflects a functional divergence between the visual systems of the two species. Derived from: "Imaging retinotopic maps in the human brain" [@wandell2011-ImagingRetinotopicMaps], "Visual field representations and locations of visual areas V1/2/3 in human visual cortex" [@dougherty2003-ob; @benson2022-surface-area], and "Visual field map clusters in human cortex" (@wandell2005-visualFieldMap-clusters) and [@meyer2025-clusters-evolution].
+**Proportional Size of Area V3:** A highly salient difference between the species is the relative size of area V3. In macaques, V3 occupies a very small surface area compared to V1 and V2. In humans, V3 is proportionately much larger, meaning the scale factor difference between human and monkey V3 is even greater than the difference between their V1 maps. This difference in the V3/V1 surface area ratio likely reflects a functional divergence between the visual systems of the two species. Derived from: "Imaging retinotopic maps in the human brain" [@wandell2011-ImagingRetinotopicMaps], "Visual field representations and locations of visual areas V1/2/3 in human visual cortex" [@dougherty2003-map-sizes ; @benson2022-surface-area], and "Visual field map clusters in human cortex" (@wandell2005-visualFieldMap-clusters) and [@meyer2025-clusters-evolution].
 
 **Motion Sensitivity in Area V3A:** Although the map topographies of V3A are similar between humans and macaques, their functional sensitivities are completely different. Human V3A is highly responsive to motion, whereas macaque V3A is not strongly motion-selective. Derived from: "Visual Field Maps in Human Cortex" [@tootell1997-v3a; @wandell2007-VisualFieldMaps] and "Imaging retinotopic maps in the human brain" [@wandell2011-ImagingRetinotopicMaps]
 
@@ -309,7 +309,7 @@ The possibility that the adult human brain may regain or develop function follow
 -->
 
 Albinism
-@hoffmann2012-albinism
+@hoffmann2003-albinism
 
 Reviews
 @hoffmann2015-TICS-review
