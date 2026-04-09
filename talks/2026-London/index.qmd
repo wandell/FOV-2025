@@ -299,6 +299,15 @@ Caption
 @bao2015-achiasmic
 @daviesThompson2013-achiasmic
 
+@molz2023-achromatopsiavisualCortexStability2023 
+> Remapping of the cortical representation of the central visual field is not a general feature in achromatopsia.
+
+@mckytonCorticalVisualMapping2021
+Netta a co-author.  They focus on color.
+<!--
+The possibility that the adult human brain may regain or develop function following correction of congenital deafferentation has fired the imagination of scientists over the years. In the visual domain, cases of recovery from congenital deficits are rare. Gene therapy visual restoration for congenital  CNGA3-achromatopsia, a disease caused by cone photoreceptor dysfunction, gave us the opportunity to examine cortical function, to the best of our knowledge for the first time, both before and after restorative treatment. While behaviorally only minor improvements were observed post-treatment, fMRI analysis, including size algorithms of population-receptive fields, revealed cortical changes, specifically receptive field size decrease in the treated eyes. This suggests that, at least to some degree, the adult cortex is able to encode new input.
+-->
+
 Albinism
 @hoffmann2012-albinism
 
