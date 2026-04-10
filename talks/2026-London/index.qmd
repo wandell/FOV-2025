@@ -219,7 +219,7 @@ These days, when I teach, I find the Felleman and Van Essen diagram less than he
 
 Maybe get the grill-spector and kevin weiner diagram up as a better alternative. Or even start with the Zeki one and then get that one as the next generation.
 
-De-emphasize the hierarchy of maps in favor of the clusters, because some of the clusters receive a very early signal from the retina. @jacques2025-non-hierarchical @markov2013-hierarchicalanatomy
+De-emphasize the hierarchy of maps in favor of the clusters, because some of the clusters receive a very early signal from the retina. [@jacques2025-non-hierarchical; @markov2013-hierarchicalanatomy]
 
 Incorporate pulvinar and other subcortical regions more clearly.
 
