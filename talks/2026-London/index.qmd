@@ -62,14 +62,11 @@ James also writes "the quarrel is very acrimonious; indeed the subject of locali
 Many of us have enjoyed Charlie Gross' book that is filled with interesting histories of neuroscience discovery [@gross1998-brain-book]. His book and James' book include more information about many other investigations of localization [; @james1950-principles].
 :::
 
-It was the Swedish neurologist, Henschen, who first carefully observed the visual loss in **human** patients with occipital lesions. He concluded that at least part of the visual field, the upper and lower portions, were represented in cortex in an orderly map with the lower visual field in the dorsal occipital lobe and upper visual field in the ventral occipital lobe. His findings were met with objections by many, and subsequently confirmed by many more.  He expresses his feelings on the matter in the opening of a 1923 review paper[^Henschen1923] [@henschen1923-review].
+It was the Swedish neurologist, Henschen, who first carefully observed the visual loss in **human** patients with occipital lesions. He concluded that at least part of the visual field, the upper and lower portions, were represented in cortex in an orderly map with the lower visual field in the dorsal occipital lobe and upper visual field in the ventral occipital lobe. His findings were met with objections by many, and subsequently confirmed by many more. He expresses his feelings on the matter in the opening of a 1923 review paper\[\^Henschen1923\] [@henschen1923-review].
 
 ![Henschen's findings on the upper and lower field representations.](images/henschen.png){#fig-henschen width="80%"}
 
 In fact, Henschen's observations about the organization of the visual cortex in the human were confirmed and extended by two clinicians working at opposite ends of the world: Gordon Holmes and Tatsuye Inouye. Both were studying visual field losses from soldiers injured in their countries' wars, Holmes in Europe and Inouye in Japan. In that era, the guns were not always lethal, and the helmets would permit bullets to enter and exit the posterior skull, effectively lesioning a portion of occipital cortex. Such lesions could cause a permanent but partial visual field loss. By accumulating data from a number of different cases, they deduced the retinotopic organization of the human visual cortex. In addition to the upper-lower field representation, they both reported on the eccentricity map as well as the fact that the central portion of the visual field occupied more cortical territory (per square degree) than the peripheral portion. This phenomenon is called 'cortical magnification', and though perhaps it should be called 'foveal magnification'.
-
-[~Henschen1923]: 
-> "Only in my own country, at the Carolinian Institute, where from 1900 to 1912 I was Clinical Professor, leading men not only in Physiology but also in Anatomy, Pathology and Psychiatry (with the exception of my successor Israel Holmgren, the Editor of Acta  Medica Scandinavica), without deeper study of my works or facts and neglecting the scientific judgments pronounced abroad, endeavoured, on subjective grounds, to deny the originality and priority of my discoveries and depreciated the importance and value of these, notwithstanding their official duty to examine and (as members of the Nobel Committee 1) judge objectively about new medical discoveries. In consequence of these circumstances, I greatly regret the necessity to personally emphasize my own researches and discoveries in the following, at the same time giving a short review of my earlier works. @henschen1923-review"
 
 ::: {#fig-inouye-holmes layout-ncol="2"}
 ![Inouye](images/inouye-map.png){#inouye-map width="80%"}
@@ -136,6 +133,7 @@ Alyssa Brewer noticed the secondary fovea on the ventral occipital surface and d
 ![Eccentricity map emphasizing the central 3 deg. This shows the two different eccentricity maps, one in calcarine and a second on the VOT. From @brewer2005-visualFieldMaps-clusters.](images/Slide26.png){#fig-vo-cluster width="80%"}
 
 ## Clusters
+
 Over time, it become clear to us that there were multiple distinct eccentricity maps, illustrated in each of these two brief videos. These eccentricity maps can be subdivided into different individual maps by also considering the angle representations, just as V1-V3 can be separated from the unified eccentricity map around the posterior pole and calcarine cortex in human.
 
 Here are two different visualizations of the clusters. In @fig-clusters-movie they are shown on a slightly inflated cortical surface.
@@ -151,19 +149,16 @@ In @fig-clusters-flatmap the eccentricity maps of the clusters are represented o
 The clustering of cortical retinotopic maps has been confirmed in by multiple groups. The clusters have been identified in posterior and anterior cortex, [@mackey2017-clusters], non-human primates [@kolster2009-clusters; @kolster2014-macaque-mt; @barton2017-sts-cluster; @meyer2025-clusters-evolution] and also in the pulvinar [@arcaro2015-pulvinar-cluster]. The retinotopic map clusters appear to be a basic functional principle that may have implications for development and plasticity.
 
 ::: {#nte-clusters .callout-note title="Clusters in the Human Brain"}
-
-**Frontoparietal Clusters [@mackey2017-clusters]**
-Expanding the cluster model into higher-order cortex, this study identified multiple representations of polar angle and eccentricity in the human frontoparietal cortex. They discovered that these maps are organized into clusters sharing a confluent fovea, mirroring the organization of the visual cortex to facilitate efficient sensorimotor and cognitive processing.
+**Frontoparietal Clusters [@mackey2017-clusters]** Expanding the cluster model into higher-order cortex, this study identified multiple representations of polar angle and eccentricity in the human frontoparietal cortex. They discovered that these maps are organized into clusters sharing a confluent fovea, mirroring the organization of the visual cortex to facilitate efficient sensorimotor and cognitive processing.
 
 **The Pulvinar Cluster [@arcaro2015-pulvinar-cluster]** In a significant extension of the theory, Arcaro and colleagues identified two visual field maps in the human ventral pulvinar (vPul1 and vPul2) . They proposed that these maps form a distinct visual field map cluster because they share an eccentricity representation and exhibit similar cortical connectivity patterns with early extrastriate areas.
 
 **The pSTS "Cloverleaf" Cluster [@barton2017-sts-cluster]** This 2017 work with introduces a new cloverleaf cluster in the posterior superior temporal sulcus (pSTS). They characterized four distinct maps (pSTS-1 through pSTS-4) organized around a central foveal representation, suggesting this "radially orthogonal" structure is a fundamental principle for high-level visual and potentially multimodal processing.
 
-**Macaque Motion Clusters [@{kolster2009-clusters]** The Kolster and Vanduffel work is the primary reference for clusters in non-human primates, specifically identifying the MT cluster (MT, MST, FST, and V4t). Their work demonstrated that the cluster principle—minimizing wiring length between processing modules—is not unique to humans but is a general feature of the Old World primate visual system.
+**Macaque Motion Clusters \[\@{kolster2009-clusters\]** The Kolster and Vanduffel work is the primary reference for clusters in non-human primates, specifically identifying the MT cluster (MT, MST, FST, and V4t). Their work demonstrated that the cluster principle—minimizing wiring length between processing modules—is not unique to humans but is a general feature of the Old World primate visual system.
 
 **Probabilistic Map Atlases [@wang2015-atlas-topography]** The Kastner group developed a probabilistic atlas of the human visual system that largely validates the cluster-based organization for more than 20 maps. This work is a large-scale confirmation of the cluster model across a large subject population in addition to being a very useful tool, widely used in neuroimaging.
 :::
-
 
 # Comparative anatomy
 
@@ -171,16 +166,18 @@ A recent paper used fMRI for a comparative anatomical analysis of human and maca
 
 Initially, the human fMRI groups relied on the macaque model - almost slavishly - to guide our interpretation of the retinotopic maps. Over time, investigators developed more confidence in the human fMRI data, and it has become clear that there are clear differences. Some of the differences are discussed in @nte-comparative-organization.
 
-Here are some of the agreed upon differences 
+Here are some of the agreed upon differences
 
-    * Human visual cortex contains a much larger number of neurons and surface area, even though the human optic nerve contains roughly the same number of axons as the macaque
-    * The ratio of the surface area of human V2/V3/V4 is much larger than the similar ratio in macaque (@fig-meyer-comparative); in general the visual cortical maps and clusters are all larger.
-    * The postion of the nominal fourth visual map differs substantially between human and macaque; sufficiently so that I named it hV4 rather than V4 and spent years arguing about this others 
-    * The functional responses to motion in human and macaque V3 and V3A do not match
+```         
+* Human visual cortex contains a much larger number of neurons and surface area, even though the human optic nerve contains roughly the same number of axons as the macaque
+* The ratio of the surface area of human V2/V3/V4 is much larger than the similar ratio in macaque (@fig-meyer-comparative); in general the visual cortical maps and clusters are all larger.
+* The postion of the nominal fourth visual map differs substantially between human and macaque; sufficiently so that I named it hV4 rather than V4 and spent years arguing about this others 
+* The functional responses to motion in human and macaque V3 and V3A do not match
+```
 
 This nice figure from @meyer2025-clusters-evolution shows a measurement of the relative size of the V2/V3 portion of the V1 cluster in human and macaque.
 
-![Comparative anatomical sizes of maps and clusters [ @meyer2025-clusters-evolution]](images/meyer2025-comparative.png){#fig-meyer-comparative width="80%"}
+![Comparative anatomical sizes of maps and clusters [@meyer2025-clusters-evolution]](images/meyer2025-comparative.png){#fig-meyer-comparative width="80%"}
 
 ::: {#nte-comparative-organization .callout-note title="Humans and monkeys"}
 This note is an expanded commentary on the more obvious differences between human and non-human primate clusters and retinotopic maps.
@@ -189,7 +186,7 @@ This note is an expanded commentary on the more obvious differences between huma
 
 **Anatomical Location of V1:** In macaques, a large portion of the primary visual cortex (V1) is located on the operculum, extending posterior and lateral to the medial position of the calcarine sulcus. In humans, V1 is located largely within the calcarine sulcus, extending partially onto the lateral surface of the occipital pole. The human lateral extension is not as large or typical as it is in the macaque. Derived from: "Imaging retinotopic maps in the human brain" [@wandell2011-ImagingRetinotopicMaps].
 
-**Proportional Size of Area V3:** A highly salient difference between the species is the relative size of area V3. In macaques, V3 occupies a very small surface area compared to V1 and V2. In humans, V3 is proportionately much larger, meaning the scale factor difference between human and monkey V3 is even greater than the difference between their V1 maps. This difference in the V3/V1 surface area ratio likely reflects a functional divergence between the visual systems of the two species. Derived from: "Imaging retinotopic maps in the human brain" [@wandell2011-ImagingRetinotopicMaps], "Visual field representations and locations of visual areas V1/2/3 in human visual cortex" [@dougherty2003-map-sizes ; @benson2022-surface-area], and "Visual field map clusters in human cortex" (@wandell2005-visualFieldMap-clusters) and [@meyer2025-clusters-evolution].
+**Proportional Size of Area V3:** A highly salient difference between the species is the relative size of area V3. In macaques, V3 occupies a very small surface area compared to V1 and V2. In humans, V3 is proportionately much larger, meaning the scale factor difference between human and monkey V3 is even greater than the difference between their V1 maps. This difference in the V3/V1 surface area ratio likely reflects a functional divergence between the visual systems of the two species. Derived from: "Imaging retinotopic maps in the human brain" [@wandell2011-ImagingRetinotopicMaps], "Visual field representations and locations of visual areas V1/2/3 in human visual cortex" [@dougherty2003-map-sizes; @benson2022-surface-area], and "Visual field map clusters in human cortex" (@wandell2005-visualFieldMap-clusters) and [@meyer2025-clusters-evolution].
 
 **Motion Sensitivity in Area V3A:** Although the map topographies of V3A are similar between humans and macaques, their functional sensitivities are completely different. Human V3A is highly responsive to motion, whereas macaque V3A is not strongly motion-selective. Derived from: "Visual Field Maps in Human Cortex" [@tootell1997-v3a; @wandell2007-VisualFieldMaps] and "Imaging retinotopic maps in the human brain" [@wandell2011-ImagingRetinotopicMaps]
 
@@ -198,6 +195,7 @@ This note is an expanded commentary on the more obvious differences between huma
 There is considerably variability within species in both the optic nerve axon count and the surface area of the visual field maps [@stensaas1974-v1-area; @dougherty2003-map-sizes; @benson2022-surface-area].
 :::
 
+```{=html}
 <!--
 # Modeling fMRI responses:  Population receptive fields (pRF)
 
@@ -213,63 +211,63 @@ Functional specialization has become a focus of the field.  Motivates the new di
 
 Plasticity relateds to functional specializations via the Dehaene claims about 'cortical recycling'. Possibility of cortical color blindness and word blindness and face blindness.
 -->
+```
 
 # Modern summary
 
-These days, when I teach, I find the Felleman and Van Essen diagram less than helpful.  There are several reasons.  First, the diagram makes no distinction between retinoptic maps and 'visual areas', a concept I find to be fraught. Second, it omits the modern functional specializations that have been identified in the human visual cortex. Third, the map emphasizes the hierarchy concept strongly, but I not confident about the flow of information. Finally, it omits the subcortical systems which have become become increasingly important in teaching with the discovery of the ipRGCs. 
+These days, when I teach, I find the Felleman and Van Essen diagram less than helpful. There are several reasons. First, the diagram makes no distinction between retinoptic maps and 'visual areas', a concept I find to be fraught. Second, it omits the modern functional specializations that have been identified in the human visual cortex. Third, the map emphasizes the hierarchy concept strongly, but I not confident about the flow of information. Finally, it omits the subcortical systems which have become become increasingly important in teaching with the discovery of the ipRGCs.
 
-Maybe get the grill-spector and kevin weiner diagram up as a better alternative.  Or even start with the Zeki one and then get that one as the next generation.
+Maybe get the grill-spector and kevin weiner diagram up as a better alternative. Or even start with the Zeki one and then get that one as the next generation.
 
 De-emphasize the hierarchy of maps in favor of the clusters, because some of the clusters receive a very early signal from the retina. @jacques2025-non-hierarchical @markov2013-hierarchicalanatomy
 
 Incorporate pulvinar and other subcortical regions more clearly.
 
-::: {#fig-multipane layout-ncol=2}
+::: {#fig-multipane layout-ncol="2"}
 ![Zeki image](images/Slide32.png){#fig-zeki-specialization}
 
 ![Grill-spector specialization](images/Slide34.png){#fig-weiner-specialization}
 
 ![Clusters and subcortical](images/fve-updated-cluster.png){#fig-clusters-specialization}
 
-Here is the main caption that applies to the entire figure group.  Also, look at the images in this atlas from Goebel.  @rosenke2021-atlas
-
+Here is the main caption that applies to the entire figure group. Also, look at the images in this atlas from Goebel. @rosenke2021-atlas
 :::
-
 
 # Cortical plasticity
+
 The interest in cortical development and cortical plasticity has a long history, paralleling the work on understanding the organization of cortical structures and function.
 
-Even as Henschen first localized the human visual cortex, he wondered whether visual experience might have an impact on the size (surface area) of the visual cortex representation [@henschen1893-visual-center]. He reported that the size of visual cortex was smaller in blind people, but at that time very little was known about the size variation in the population. The variation in surface area is quite large, a factor 2.5 in surface area has been confirmed by a number of modern authors [@stensaas1974-v1-area; @dougherty2003-map-sizes; @benson2022-surface-area].  Thus, a case study finding a smaller V1 in a blind person than a control sighted person is not definitive proof of an experience-dependent plasticity.
+Even as Henschen first localized the human visual cortex, he wondered whether visual experience might have an impact on the size (surface area) of the visual cortex representation [@henschen1893-visual-center]. He reported that the size of visual cortex was smaller in blind people, but at that time very little was known about the size variation in the population. The variation in surface area is quite large, a factor 2.5 in surface area has been confirmed by a number of modern authors [@stensaas1974-v1-area; @dougherty2003-map-sizes; @benson2022-surface-area]. Thus, a case study finding a smaller V1 in a blind person than a control sighted person is not definitive proof of an experience-dependent plasticity.
 
-After spending years trying to find evidence of axonal regeneration in the adult brain and spinal cord, Cajal reported that his efforts were only met with failure.In a famous passage, Cajal[^Cajal-stability] referred to the anatomical stability of the brain
+After spending years trying to find evidence of axonal regeneration in the adult brain and spinal cord, Cajal reported that his efforts were only met with failure.In a famous passage, Cajal\[\^Cajal-stability\] referred to the anatomical stability of the brain
 
-> "In the adult centers, the nerve paths are something fixed, ended, and immutable. Everything may die, nothing may be regenerated. It is for the science of the future to change, if possible, this harsh decree. @cajal1928-stability." 
+> "In the adult centers, the nerve paths are something fixed, ended, and immutable. Everything may die, nothing may be regenerated. It is for the science of the future to change, if possible, this harsh decree. @cajal1928-stability."
 
-Although the adult appeared stable, There is no doubt from conception and through infance the brain undergoes a massive amount of change, developing in size and myelination or only the two most obvious and easiest to observe changes. Hubel and Wiesel observed that at very young ages cortical responses could be influenced by visual experience. They reported that this specific type of experience-dependent plasticity seemed to end, perhaps at 8 years of age in human. 
+Although the adult appeared stable, There is no doubt from conception and through infance the brain undergoes a massive amount of change, developing in size and myelination or only the two most obvious and easiest to observe changes. Hubel and Wiesel observed that at very young ages cortical responses could be influenced by visual experience. They reported that this specific type of experience-dependent plasticity seemed to end, perhaps at 8 years of age in human.
 
 ## Animal models
-The idea that during development there is a period of significant plasticity, called the *critical period*, was the dominant view from about 1970 to 1990 [@hubel1970-criticalperiod]. But beginning in the middle of the 1980s a series of papers appeared from leading groups in the US reported signifcant adult cortical plasticity, in both visual and somatosensory cortex [@merzenich1984-plasticity; @kaas1990-adult-plasticity-visual;@gilbert1992-rf-dynamics; @recanzone1992-adult-plasticity-somatosensory; @jenkins1990-adult-plasticity-somatosensory; @chino1992-rapid; @chino1995-receptive].  Those reports were very exciting to many people, leading to a flood of commercial ventures that promised to take advantage of this adult brain plasticity to keep us forever young.  Scientific Learning.  Others.
 
-Nikos Logothetis and I were beginning to collaborate using a mixture of MR and electrophysiological methods, and we thought understanding this phenomenon would be an excellent task that could matter to many people. In a project led by Stelios Smirnakis, we performed an experiment looking for significant reorganization in macaque V1 after binocular lesions in the retina. We saw very little, maybe no, reorganization, [@smirnakisLackLongtermCortical2005].  Our finding was meth with a brief rebuke [@calford2005-critique-smirnakis].  We then 
-and then we return to study the existing literature more closely to discover that it was filled with many inconsistencies raising more concerns.  We identified those in a review paper, and it remains my view that most of those concerns remain unanswered [@wandell2009-plasticity-stability]. 
+The idea that during development there is a period of significant plasticity, called the *critical period*, was the dominant view from about 1970 to 1990 [@hubel1970-criticalperiod]. But beginning in the middle of the 1980s a series of papers appeared from leading groups in the US reported signifcant adult cortical plasticity, in both visual and somatosensory cortex [@merzenich1984-plasticity; @kaas1990-adult-plasticity-visual; @gilbert1992-rf-dynamics; @recanzone1992-adult-plasticity-somatosensory; @jenkins1990-adult-plasticity-somatosensory; @chino1992-rapid; @chino1995-receptive]. Those reports were very exciting to many people, leading to a flood of commercial ventures that promised to take advantage of this adult brain plasticity to keep us forever young. Scientific Learning. Others.
+
+Nikos Logothetis and I were beginning to collaborate using a mixture of MR and electrophysiological methods, and we thought understanding this phenomenon would be an excellent task that could matter to many people. In a project led by Stelios Smirnakis, we performed an experiment looking for significant reorganization in macaque V1 after binocular lesions in the retina. We saw very little, maybe no, reorganization, [@smirnakisLackLongtermCortical2005]. Our finding was meth with a brief rebuke [@calford2005-critique-smirnakis]. We then and then we return to study the existing literature more closely to discover that it was filled with many inconsistencies raising more concerns. We identified those in a review paper, and it remains my view that most of those concerns remain unanswered [@wandell2009-plasticity-stability].
 
 ::: {.callout-note title="Unanswered biological questions"}
-Tell people in a short and compelling way how the questions of two eyes versus one eyes, the timing, and all the other stuff we raised in the review paper have nevere been answered.  Not in anaimals.  Not in humans.
+Tell people in a short and compelling way how the questions of two eyes versus one eyes, the timing, and all the other stuff we raised in the review paper have nevere been answered. Not in anaimals. Not in humans.
 
-About the exchange:  In 2005, we were debating whether the map changed. We wrote a reply to Gilbert and Kaas that, frankly, focused too much on the mechanics of the BOLD signal. But twenty years later, the molecular and modeling evidence suggests something much more profound: the primary visual cortex is structurally 'locked' to preserve the topographic blueprint, and what we once called 'plasticity' is actually the brain's ability to flexibly read out that stable map
-
+About the exchange: In 2005, we were debating whether the map changed. We wrote a reply to Gilbert and Kaas that, frankly, focused too much on the mechanics of the BOLD signal. But twenty years later, the molecular and modeling evidence suggests something much more profound: the primary visual cortex is structurally 'locked' to preserve the topographic blueprint, and what we once called 'plasticity' is actually the brain's ability to flexibly read out that stable map
 :::
 
-The point of working in macaque to discover the molecular mechanisms that governed the plasticity and to measure their impact on behavior. But the absence of an effect caused me to return to using functional MRI to study naturally occurring lesions. Heidi Baseler, Tony Morland and I had already studied one case that we found interesting - rod monochromats [@baseler2002-rod-monochromats].  
+The point of working in macaque to discover the molecular mechanisms that governed the plasticity and to measure their impact on behavior. But the absence of an effect caused me to return to using functional MRI to study naturally occurring lesions. Heidi Baseler, Tony Morland and I had already studied one case that we found interesting - rod monochromats [@baseler2002-rod-monochromats].
 
 ## Achiasmia and albinism
-There are many examples in the literature, but a particularly interesting case for the visual system is the disruption of how the retinal axons find their way to the lateral geniculate. 
 
-In a small number of people, the standard crossing pattern in which the optic nerve axons from the nasal retina cross to the opposite hemisphere does not occur.  The optic chiasm never develops, and the retinal axons stay within the same hemisphere.
+There are many examples in the literature, but a particularly interesting case for the visual system is the disruption of how the retinal axons find their way to the lateral geniculate.
 
-This arises during development.  And these people see perfectly well despite having completely atypical cortical functional responses.  
+In a small number of people, the standard crossing pattern in which the optic nerve axons from the nasal retina cross to the opposite hemisphere does not occur. The optic chiasm never develops, and the retinal axons stay within the same hemisphere.
 
-::: {#fig-chiasmic-subject layout-ncol=2}
+This arises during development. And these people see perfectly well despite having completely atypical cortical functional responses.
+
+::: {#fig-chiasmic-subject layout-ncol="2"}
 ![Typical chiasm](images/Slide59.png){#fig-chiasm}
 
 ![Missing chiasm](images/Slide60.png){#fig-achiasm}
@@ -279,92 +277,74 @@ This arises during development.  And these people see perfectly well despite hav
 ![PRF estimate](images/Slide63.png){#fig-achiasm-prf}
 
 Caption
-
 :::
 
-@victor2000-achiasma
-@prakash2010-achiasmic
-@hoffmann2012-achiasma
-> "The absence of the optic chiasm is an extraordinary and extreme abnormality in the nervous system. The abnormality produces highly atypical functional responses in the cortex, including overlapping hemifield representations and bilateral population receptive fields in both striate  znd extrastriate visual cortex. Even in the presence of these large functional abnormalities, the effect on visual perception and daily life is  not easily detected. @hoffmann2012-achiasma
+@victor2000-achiasma @prakash2010-achiasmic @hoffmann2012-achiasma \> "The absence of the optic chiasm is an extraordinary and extreme abnormality in the nervous system. The abnormality produces highly atypical functional responses in the cortex, including overlapping hemifield representations and bilateral population receptive fields in both striate znd extrastriate visual cortex. Even in the presence of these large functional abnormalities, the effect on visual perception and daily life is not easily detected. @hoffmann2012-achiasma
 
-@bao2015-achiasmic
-@daviesThompson2013-achiasmic
+@bao2015-achiasmic @daviesThompson2013-achiasmic
 
 Must be some more Morland studies
 
 @hoffmann2003-alibinism
 
 ## Reviews
+
 @hoffmann2015-TICS-review
 
 ## Achromatopsia - rod monochromats
-My group was the first to recognie that we could explore the visual field map in people who lacked functional cones.  These individuals, called rod monochromats, are rare but possible to find.  The first study we performed, led by Heidi Baseler, measured only three such individuals and none of them were carefully screened for the disease - either genetically or behaviorally.  We described this limitation as well as the basic result.  Although these individuals had only functional rods and no cones - as far as we could tell - retinal signals produced functional signals in the location of the classic foveal projection. This finding was accepted and reported in subsequent authoritative reviews [@hoffmann2015-TICS-review][^Achromatopsia-Review]
 
-[^Achromatopsia-Review]: 
-We thought acquired foveal lesions would not fill in, but developmental was different.  Alas, we were wrong for a few years until Heidi straightened us out.
->In adults [@baseler2011-LargescaleRemappingVisual], the deafferented cortical foveal representation in rod achromatopsia is not silent, but driven by parafoveal input [@baseler2002-rod-monochromats]. In essence, the visual field maps are preserved, but only represent retina covered with functional photoreceptors, that is rods [@hoffmann2015-TICS-review]."
+My group was the first to recognie that we could explore the visual field map in people who lacked functional cones. These individuals, called rod monochromats, are rare but possible to find. The first study we performed, led by Heidi Baseler, measured only three such individuals and none of them were carefully screened for the disease - either genetically or behaviorally. We described this limitation as well as the basic result. Although these individuals had only functional rods and no cones - as far as we could tell - retinal signals produced functional signals in the location of the classic foveal projection. This finding was accepted and reported in subsequent authoritative reviews [@hoffmann2015-TICS-review][^1]
 
-Twenty years on, the matter was taken up again by Baseler and colleagues, using much better screening method [@molz2023-achromatopsiavisualCortexStability2023].
-They found, contrary to our original measurement, that iindividuals who could be absolutely identified as having only rods had a silent foveal projection zone.  Thus, even in this case of development the cortical map organization - which is initiated before the retina is functional [shatz1992-developingbrain with that guy from duke who died sadly] is not altered.  The absence of foveal input does not cause the map to be reorganized. The initial map organization appears to be quite stable in the absence of any input. Quote Molz here.
+[^1]: We thought acquired foveal lesions would not fill in, but developmental was different. Alas, we were wrong for a few years until Heidi straightened us out. \>In adults [@baseler2011-LargescaleRemappingVisual], the deafferented cortical foveal representation in rod achromatopsia is not silent, but driven by parafoveal input [@baseler2002-rod-monochromats]. In essence, the visual field maps are preserved, but only represent retina covered with functional photoreceptors, that is rods [@hoffmann2015-TICS-review]."
 
-@molz2023-achromatopsiavisualCortexStability2023 
-> Remapping of the cortical representation of the central visual field is not a general feature in achromatopsia.
+Twenty years on, the matter was taken up again by Baseler and colleagues, using much better screening method [@molz2023-achromatopsiavisualCortexStability2023]. They found, contrary to our original measurement, that iindividuals who could be absolutely identified as having only rods had a silent foveal projection zone. Thus, even in this case of development the cortical map organization - which is initiated before the retina is functional \[shatz1992-developingbrain with that guy from duke who died sadly\] is not altered. The absence of foveal input does not cause the map to be reorganized. The initial map organization appears to be quite stable in the absence of any input. Quote Molz here.
+
+@molz2023-achromatopsiavisualCortexStability2023 \> Remapping of the cortical representation of the central visual field is not a general feature in achromatopsia.
 
 Gene therapy
 
-@mckytonCorticalVisualMapping2021
-Netta a co-author.  They focus on color.
-<!--
+@mckytonCorticalVisualMapping2021 Netta a co-author. They focus on color. <!--
 The possibility that the adult human brain may regain or develop function following correction of congenital deafferentation has fired the imagination of scientists over the years. In the visual domain, cases of recovery from congenital deficits are rare. Gene therapy visual restoration for congenital  CNGA3-achromatopsia, a disease caused by cone photoreceptor dysfunction, gave us the opportunity to examine cortical function, to the best of our knowledge for the first time, both before and after restorative treatment. While behaviorally only minor improvements were observed post-treatment, fMRI analysis, including size algorithms of population-receptive fields, revealed cortical changes, specifically receptive field size decrease in the treated eyes. This suggests that, at least to some degree, the adult cortex is able to encode new input.
 -->
 
-
 ## Retinal disease - natural lesions
-Further measurements of map plasticity have been made in the adult brain following the onset of different types of retinal disease.  These diseases act as naturally ocurring retinal lesions.   In the presence of significant cortical remapping, one might expect to see the maps in such individuals differ, perhaps by filling in the lesion projection zone (LPZ) corresponding to the disease.
 
-### Macular degeneration 
+Further measurements of map plasticity have been made in the adult brain following the onset of different types of retinal disease. These diseases act as naturally ocurring retinal lesions. In the presence of significant cortical remapping, one might expect to see the maps in such individuals differ, perhaps by filling in the lesion projection zone (LPZ) corresponding to the disease.
 
-Early publications in human @sunness2004-md-retinotopy found little support for cortical remapping in the adult subsequent to foveal disease.  In contrast, Baker and colleagues in the Kanwisher group [@baker2007-reorganization; @baker2008-reorganization; @dilks2007-reorganization] reported large scale reorganization.  @wandell2009-plasticity-stability reviewed the problems with these papers. 
+### Macular degeneration
 
-A thorough and authoritative analysis concluded that there was no large scale reorganization in passive viewing [@baseler2011-LargescaleRemappingVisual]. 
+Early publications in human @sunness2004-md-retinotopy found little support for cortical remapping in the adult subsequent to foveal disease. In contrast, Baker and colleagues in the Kanwisher group [@baker2007-reorganization; @baker2008-reorganization; @dilks2007-reorganization] reported large scale reorganization. @wandell2009-plasticity-stability reviewed the problems with these papers.
 
-The lesion project zone (LPZ) was silent Masuda and colleagues obsersved that a task, such as a one-back memory task, could evoke a signal in the LPZ [@masuda2008-maculardegenerationV1;@masuda2021-maculardepgeneration; @rosenau2008-feedback]. His findings suggest that the absence of the feed forward signal from the retina unmasked the cortico-cortical signal associated with task judgments. 
+A thorough and authoritative analysis concluded that there was no large scale reorganization in passive viewing [@baseler2011-LargescaleRemappingVisual].
+
+The lesion project zone (LPZ) was silent Masuda and colleagues obsersved that a task, such as a one-back memory task, could evoke a signal in the LPZ [@masuda2008-maculardegenerationV1; @masuda2021-maculardepgeneration; @rosenau2008-feedback]. His findings suggest that the absence of the feed forward signal from the retina unmasked the cortico-cortical signal associated with task judgments.
 
 ### Retinitis pigmentosa
-Masuda used the same methodology in patients with retinitis pigmentosa, a disease that spares the fovea but damages the peripheral retina [@masuda2010-retinitispigmentosa].  Once again, they found no significant reorganization in the adult cortex.
 
-It is worth noting that expansion of the cortical signals does not solve the basic problem of a retinal lesion:  no signal is acquired when the retina is damaged.  Expanding the cortical signal to deafferented cortical regions does not mean one can see the blinded portion of the visual field.  It is not really clear what purpose such an expansion of the signals would serve.
+Masuda used the same methodology in patients with retinitis pigmentosa, a disease that spares the fovea but damages the peripheral retina [@masuda2010-retinitispigmentosa]. Once again, they found no significant reorganization in the adult cortex.
+
+It is worth noting that expansion of the cortical signals does not solve the basic problem of a retinal lesion: no signal is acquired when the retina is damaged. Expanding the cortical signal to deafferented cortical regions does not mean one can see the blinded portion of the visual field. It is not really clear what purpose such an expansion of the signals would serve.
 
 ## Mike May
 
 ## Electrophysiology revisited
 
-There is a genral move towards integrating subcortical pathways as part of the computational system.  Kaas, in particular, has asserted that many of tehe changes we observe after lesions can be explained by properties of the pulvinar and subcortical pathways.  Here is some early work leading in that direction
-@collins2003-mt-v1-lesions
-@kaas2007-pulvinar-review
+There is a genral move towards integrating subcortical pathways as part of the computational system. Kaas, in particular, has asserted that many of tehe changes we observe after lesions can be explained by properties of the pulvinar and subcortical pathways. Here is some early work leading in that direction @collins2003-mt-v1-lesions @kaas2007-pulvinar-review
 
-and he has really leaned into this in recent years with Neeraj Jain, which includes specific work on PNNs using Chondroitinase.
-@jain2012-somatosensory-plasticity
-@jain2025-kaas-spinal-critical
+and he has really leaned into this in recent years with Neeraj Jain, which includes specific work on PNNs using Chondroitinase. @jain2012-somatosensory-plasticity @jain2025-kaas-spinal-critical
 
 ## Cellular advances and PNNs
+
 Parallel to the systems-level evidence for stability in the human brain, we have seen very meaningful advances in our understanding of the molecular 'brakes' that enforce it. This story brings us full circle to Camillo Golgi, who first identified a delicate 'perineuronal' coating on neurons over a century ago. Today, thanks to the work of Takao Hensch, we know that these parvalbumin-positive cells are the primary modulators of cortical plasticity. Furthermore, through the critical work of the Maffei and Fawcett labs, we can now identify the specific molecules (proteoglycans) within Golgi’s PNN that serve as the physical armor, stabilizing these inhibitory circuits and preventing the large-scale remapping that characterized the juvenile brain.
 
-Parvalbumin cell development papers 
-@hensch2014-amblyopia-critical-period
+Parvalbumin cell development papers @hensch2014-amblyopia-critical-period
 
-@yew1997-pnn-human-cerebellum 
-@grateron2003-pnn-human-entorhinal 
-@fung2010-pnn-human-dlpfc
+@yew1997-pnn-human-cerebellum @grateron2003-pnn-human-entorhinal @fung2010-pnn-human-dlpfc
 
-General review
-@sorg2016-pnn-review
+General review @sorg2016-pnn-review
 
 @morishita2010-lynx1-hensch
 
-PNN papers in human @rogers2018-pnn-epilepsy @mauney2013-pnn-schizophrenia @nakayama2025-aggrecan-pnn - "Among the PNN-related genes examined, aggrecan alone exhibited strong activity-dependent transcriptional regulation" <!--
-The Nakayama (2025) paper you asked about is the most modern measure of this process. It shows that aggrecan expression is not just a "clock" that runs out; it is activity-triggered.The Measure: Using quantitative PCR and Western blots, Nakayama showed that as neurons begin to fire in response to visual input, the Acan gene is upregulated specifically in Parvalbumin (PV) interneurons.
+PNN papers in human @rogers2018-pnn-epilepsy @mauney2013-pnn-schizophrenia @nakayama2025-aggrecan-pnn - "Among the PNN-related genes examined, aggrecan alone exhibited strong activity-dependent transcriptional regulation" \<!-- The Nakayama (2025) paper you asked about is the most modern measure of this process. It shows that aggrecan expression is not just a "clock" that runs out; it is activity-triggered.The Measure: Using quantitative PCR and Western blots, Nakayama showed that as neurons begin to fire in response to visual input, the Acan gene is upregulated specifically in Parvalbumin (PV) interneurons.
 
 The Feedback Loop: Increased activity $\rightarrow$ Increased Aggrecan $\rightarrow$ Stronger PNNs $\rightarrow$ Reduced Plasticity (Stability).
-
-
