@@ -88,7 +88,7 @@ The effort to discover and map multiple visual areas in animal models expanded e
 -   **The 1960s (V2 and V3 in monkeys and cats)**: Mapping efforts successfully extended to non-human primates when Cowey identified a second map in the squirrel monkey [@cowey1964-v2]. The following year, Hubel and Wiesel described a third map in the cat [@hubel1965-cat-v2-v3].
 -   **The 1970s–1990s (V4, MT/V5, and beyond)**: During this period, investigators focused heavily on parcellating the extrastriate cortex of non-human primates, causing the number of identified maps to grow rapidly. A major breakthrough was the discovery of V4 and the motion-sensitive MT/V5 maps in the owl monkey by Allman and Kaas in 1971.
 -   **Non-human primates** Around the same time, Semir Zeki conducted pioneering anatomical and single-unit studies that established a framework for the concentric organization of these maps in macaques [@zeki1969-multiple-maps; @zeki1974-mt]. It was during this period that he made an effort to associate specific functional (perceptual) properties to individual maps [@zeki1978-function; @zeki1993-book].
--   **Methodological challenges**: Identifying these early maps relied heavily on single-unit electrophysiology and very detailed anatomical work. Because the field of view for these technologies is relatively small, establishing the existence of a map was a notoriously difficult process that Hubel and Wiesel [@hubel1977] famously likened to "a dismaying exercise in tedium, like trying to cut the back lawn with a pair of nail scissors".
+-   **Methodological challenges**: Identifying these early maps relied heavily on single-unit electrophysiology and very detailed anatomical work. Because the field of view for these technologies is relatively small, establishing the existence of a map was a notoriously difficult process that Hubel and Wiesel [@hubel1977-ferrierlecture] famously likened to "a dismaying exercise in tedium, like trying to cut the back lawn with a pair of nail scissors".
 :::
 
 The burst of activity reporting visual areas was summarized in an important article by [@felleman1991-hierarchy]. @fig-felleman-vanessen is an iconic image from that paper, which relies on the concept of a 'visual areas'. The authors propose that visual areas are organized into a hierarchy with signals flowing from the bottom (retina, LGN, V1) to the top (peri-hippocampal regions). The data supporting the specific organization were sparse, and over the last decade the measurements have been significantly augmented by data from Henry Kennedy's lab [@markov2013-hierarchicalanatomy; @markov2014-hierarchicalanatomy2]. I discuss an update to this diagram at the end of this section.
@@ -195,7 +195,7 @@ This note is an expanded commentary on the more obvious differences between huma
 
 **V4 / hV4 and Color Processing Locations:** In the macaque, area V4 spans both the dorsal and ventral portions of the occipital lobe, and color-exchange experiments produce responses in both components. In humans, investigators have not reliably found a dorsal component for the fourth visual map; instead, the human map (hV4) and the regions critical for color vision (and those associated with cerebral achromatopsia) are confined almost entirely to the ventral surface. Derived from: "Mapping hV4 and ventral occipital cortex: The venous eclipse" [@winawer2010-venous-eclipse]. "Imaging retinotopic maps in the human brain" [@wandell2011-ImagingRetinotopicMaps], and "Visual Field Maps in Human Cortex" [@wandell2007-VisualFieldMaps].
 
-There is considerably variability within species in both the optic nerve axon count and the surface area of the visual field maps [@stensaas1974-v1-area; @dougherty2003-ob; @benson2022-surface-area].
+There is considerably variability within species in both the optic nerve axon count and the surface area of the visual field maps [@stensaas1974-v1-area; @dougherty2003-map-sizes; @benson2022-surface-area].
 :::
 
 <!--
@@ -290,14 +290,12 @@ Caption
 @bao2015-achiasmic
 @daviesThompson2013-achiasmic
 
+Must be some more Morland studies
 
-Albinism
-@hoffmann2003-albinism
+@hoffmann2003-alibinism
 
-Reviews
+## Reviews
 @hoffmann2015-TICS-review
-
-
 
 ## Achromatopsia - rod monochromats
 My group was the first to recognie that we could explore the visual field map in people who lacked functional cones.  These individuals, called rod monochromats, are rare but possible to find.  The first study we performed, led by Heidi Baseler, measured only three such individuals and none of them were carefully screened for the disease - either genetically or behaviorally.  We described this limitation as well as the basic result.  Although these individuals had only functional rods and no cones - as far as we could tell - retinal signals produced functional signals in the location of the classic foveal projection. This finding was accepted and reported in subsequent authoritative reviews [@hoffmann2015-TICS-review][^Achromatopsia-Review]
@@ -312,6 +310,8 @@ They found, contrary to our original measurement, that iindividuals who could be
 @molz2023-achromatopsiavisualCortexStability2023 
 > Remapping of the cortical representation of the central visual field is not a general feature in achromatopsia.
 
+Gene therapy
+
 @mckytonCorticalVisualMapping2021
 Netta a co-author.  They focus on color.
 <!--
@@ -324,15 +324,18 @@ Further measurements of map plasticity have been made in the adult brain followi
 
 ### Macular degeneration 
 
-Early publications in human @sunness2004-md-retinotopy found little support for cortical remapping in the adult subsequent to foveal disease.  In contrast, the Baker and colleagues in the Kanwisher group [@baker2007-reorganization; @baker2008-reorganization; @dilks2007-reorganization] reported large scale reorganization.  @wandell2009-plasticity-stability reviewed the problems with these papers. A thorough and authoritative analysis concluded that there was no large scale reorganization in passive viewing [@baseler2011-LargescaleRemappingVisual]. The lesion project zone (LPZ) was silent Masuda and colleagues obsersved that a task, such as a one-back memory task, could evoke a signal in the LPZ [@masuda2008-maculardegenerationV1;@masuda2021-maculardepgeneration; @rosenau2008-feedback]. His findings suggest that the absence of the feed forward signal from the retina unmasked the cortico-cortical signal associated with task judgments. 
+Early publications in human @sunness2004-md-retinotopy found little support for cortical remapping in the adult subsequent to foveal disease.  In contrast, Baker and colleagues in the Kanwisher group [@baker2007-reorganization; @baker2008-reorganization; @dilks2007-reorganization] reported large scale reorganization.  @wandell2009-plasticity-stability reviewed the problems with these papers. 
+
+A thorough and authoritative analysis concluded that there was no large scale reorganization in passive viewing [@baseler2011-LargescaleRemappingVisual]. 
+
+The lesion project zone (LPZ) was silent Masuda and colleagues obsersved that a task, such as a one-back memory task, could evoke a signal in the LPZ [@masuda2008-maculardegenerationV1;@masuda2021-maculardepgeneration; @rosenau2008-feedback]. His findings suggest that the absence of the feed forward signal from the retina unmasked the cortico-cortical signal associated with task judgments. 
 
 ### Retinitis pigmentosa
 Masuda used the same methodology in patients with retinitis pigmentosa, a disease that spares the fovea but damages the peripheral retina [@masuda2010-retinitispigmentosa].  Once again, they found no significant reorganization in the adult cortex.
 
 It is worth noting that expansion of the cortical signals does not solve the basic problem of a retinal lesion:  no signal is acquired when the retina is damaged.  Expanding the cortical signal to deafferented cortical regions does not mean one can see the blinded portion of the visual field.  It is not really clear what purpose such an expansion of the signals would serve.
 
-@barsingerhorn2018-symbol 
-@saber2015-saccade 
+## Mike May
 
 ## Electrophysiology revisited
 
@@ -363,5 +366,5 @@ PNN papers in human @rogers2018-pnn-epilepsy @mauney2013-pnn-schizophrenia @naka
 The Nakayama (2025) paper you asked about is the most modern measure of this process. It shows that aggrecan expression is not just a "clock" that runs out; it is activity-triggered.The Measure: Using quantitative PCR and Western blots, Nakayama showed that as neurons begin to fire in response to visual input, the Acan gene is upregulated specifically in Parvalbumin (PV) interneurons.
 
 The Feedback Loop: Increased activity $\rightarrow$ Increased Aggrecan $\rightarrow$ Stronger PNNs $\rightarrow$ Reduced Plasticity (Stability).
--->
+
 
