@@ -249,15 +249,31 @@ Although the adult appeared stable, There is no doubt from conception and throug
 
 The idea that during development there is a period of significant plasticity, called the *critical period*, was the dominant view from about 1970 to 1990 [@hubel1970-criticalperiod]. But beginning in the middle of the 1980s a series of papers appeared from leading groups in the US reported signifcant adult cortical plasticity, in both visual and somatosensory cortex [@merzenich1984-plasticity; @kaas1990-adult-plasticity-visual; @gilbert1992-rf-dynamics; @recanzone1992-adult-plasticity-somatosensory; @jenkins1990-adult-plasticity-somatosensory; @chino1992-rapid; @chino1995-receptive]. Those reports were very exciting to many people, leading to a flood of commercial ventures that promised to take advantage of this adult brain plasticity to keep us forever young. Scientific Learning. Others.
 
-Nikos Logothetis and I were beginning to collaborate using a mixture of MR and electrophysiological methods, and we thought understanding this phenomenon would be an excellent task that could matter to many people. In a project led by Stelios Smirnakis, we performed an experiment looking for significant reorganization in macaque V1 after binocular lesions in the retina. We saw very little, maybe no, reorganization, [@smirnakisLackLongtermCortical2005]. Our finding was meth with a brief rebuke [@calford2005-critique-smirnakis]. We then and then we return to study the existing literature more closely to discover that it was filled with many inconsistencies raising more concerns. We identified those in a review paper, and it remains my view that most of those concerns remain unanswered [@wandell2009-plasticity-stability].
+Nikos Logothetis and I were beginning to collaborate using a mixture of magnetic resonance and electrophysiological methods; we thought understanding adult cortical plasticity phenomenon would be an excellent task that could find useful health applications. The point of working in macaque to discover the molecular mechanisms that governed the plasticity and to measure their impact on behavior.  We were fortunate to recruit Stelios Smirnakis to lead the project, and he performed an experiment looking for significant reorganization in adult macaque V1 after binocular lesions in corresponding locations of the two retinae. 
+
+We expected to find an initial unresponsive zone in V1 that would fill-in with activation over time.  To measure this remapping, we used functional MRI, as it is less invasive and would permit many repeated measurements over time.  And, indeed, we could measure an unresponsive zone the macaque operculum following the lesions as expected.  This is the 'lesion projection zone' (LPZ).
+
+![Lesion projection zone](images/Slide65.png){#fig-lpz width="80%"}
+
+As we measured repeated over time, we expected to that the LPZ area would shrink.  But, over the months, we found very little, maybe no, remapping, [@smirnakisLackLongtermCortical2005]. Surprised by this, Stelios made measurements trying to find electrophysiological signals, but he found no significant electrical response, in agreement with the fMRI response.
+
+![The lesion projection zone size remained unchanged over many months.](images/Slide66.png){#fig-lpz-stability width="80%"}
+
+Our finding of topographic stability conflicted with reports from other labs, and when it was published it was meth with a brief rebuke [@calford2005-critique-smirnakis] from several authors who had reported significant remapping. A principal objection to our work was that fMRI was not an adequate measure.  This ignored the fact that we had used both fMRI and electrophysiology.
+
+We were puzzled about the difference, and we decided to study the existing literature more closely. Stelios and I discovered that it was filled with many inconsistencies raising more concerns. We identified those inconsistencies in a review [@wandell2009-plasticity-stability]; those concerns remain largely unanswered^[Private].
+
+^[Private]: A number of investigators spoke to me privately, reporting that they too failed to find remapping. They were not looking for a fight and decided they had simply done something wrong. These comments were well-intentioned, gave us some comfort but also were a bit disheartening about the state of scientific discourse.
+
+![This review paper [@wandell2009-plasticity-stability] describes a series of experimental conflicts in papers that found topographic remapping in adult visual cortex. These are discussed in detail in the review paper.](images/review-disputes.png){#fig-disputes}
 
 ::: {.callout-note title="Unanswered biological questions"}
-Tell people in a short and compelling way how the questions of two eyes versus one eyes, the timing, and all the other stuff we raised in the review paper have nevere been answered. Not in anaimals. Not in humans.
+But the absence of an effect caused me to return to using functional MRI to study naturally occurring lesions. Heidi Baseler, Tony Morland and I had already studied one case that we found interesting - rod monochromats [@baseler2002-rod-monochromats].
 
-About the exchange: In 2005, we were debating whether the map changed. We wrote a reply to Gilbert and Kaas that, frankly, focused too much on the mechanics of the BOLD signal. But twenty years later, the molecular and modeling evidence suggests something much more profound: the primary visual cortex is structurally 'locked' to preserve the topographic blueprint, and what we once called 'plasticity' is actually the brain's ability to flexibly read out that stable map
+In 2005, we were debating whether the map changed. We wrote a reply to Gilbert and Kaas that, frankly, focused too much on the mechanics of the BOLD signal. But twenty years later, the molecular and modeling evidence suggests something much more profound: the primary visual cortex is structurally 'locked' to preserve the topographic blueprint, and what we once called 'plasticity' may be the brain's ability to flexibly read out that stable map.
+
 :::
 
-The point of working in macaque to discover the molecular mechanisms that governed the plasticity and to measure their impact on behavior. But the absence of an effect caused me to return to using functional MRI to study naturally occurring lesions. Heidi Baseler, Tony Morland and I had already studied one case that we found interesting - rod monochromats [@baseler2002-rod-monochromats].
 
 ## Achiasmia and albinism
 
