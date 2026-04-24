@@ -233,23 +233,25 @@ Incorporate pulvinar and other subcortical regions more clearly.
 Here is the main caption that applies to the entire figure group. Also, look at the images in this atlas from Goebel. @rosenke2021-atlas
 :::
 
-# Cortical plasticity
+# Map reorganization
 
 The interest in cortical development and cortical plasticity has a long history, paralleling the work on understanding the organization of cortical structures and function.
 
 Even as Henschen first localized the human visual cortex, he wondered whether visual experience might have an impact on the size (surface area) of the visual cortex representation [@henschen1893-visual-center]. He reported that the size of visual cortex was smaller in blind people, but at that time very little was known about the size variation in the population. The variation in surface area is quite large, a factor 2.5 in surface area has been confirmed by a number of modern authors [@stensaas1974-v1-area; @dougherty2003-map-sizes; @benson2022-surface-area]. Thus, a case study finding a smaller V1 in a blind person than a control sighted person is not definitive proof of an experience-dependent plasticity.
 
-After spending years trying to find evidence of axonal regeneration in the adult brain and spinal cord, Cajal reported that his efforts were only met with failure.In a famous passage, Cajal\[\^Cajal-stability\] referred to the anatomical stability of the brain
+But the main framing of adult cortical plasticity, that spanned many decades, was from the work of Cajal.  He had spent years trying to find evidence of axonal regeneration in the adult brain and spinal cord, Cajal reported that his efforts were only met with failure.In a famous passage, Cajal\[\^Cajal-stability\] referred to the anatomical stability of the brain
 
 > "In the adult centers, the nerve paths are something fixed, ended, and immutable. Everything may die, nothing may be regenerated. It is for the science of the future to change, if possible, this harsh decree. @cajal1928-stability."
 
-Although the adult appeared stable, There is no doubt from conception and through infance the brain undergoes a massive amount of change, developing in size and myelination or only the two most obvious and easiest to observe changes. Hubel and Wiesel observed that at very young ages cortical responses could be influenced by visual experience. They reported that this specific type of experience-dependent plasticity seemed to end, perhaps at 8 years of age in human.
+Although the adult appeared stable, There is no doubt from conception and through infance the brain undergoes a massive amount of change, developing in size and myelination or only the two most obvious and easiest to observe changes. Hubel and Wiesel observed that at very young ages cortical responses could be influenced by visual experience. They reported that this specific type of experience-dependent plasticity seemed to end, perhaps at 8 years of age in human. The idea that during development there is a period of significant plasticity, called the *critical period*, was the dominant view from about 1970 to 1990 [@hubel1970-criticalperiod]. 
 
-## Animal models
+## Animal models of adult cortical plasticity
 
-The idea that during development there is a period of significant plasticity, called the *critical period*, was the dominant view from about 1970 to 1990 [@hubel1970-criticalperiod]. But beginning in the middle of the 1980s a series of papers appeared from leading groups in the US reported signifcant adult cortical plasticity, in both visual and somatosensory cortex [@merzenich1984-plasticity; @kaas1990-adult-plasticity-visual; @gilbert1992-rf-dynamics; @recanzone1992-adult-plasticity-somatosensory; @jenkins1990-adult-plasticity-somatosensory; @chino1992-rapid; @chino1995-receptive]. Those reports were very exciting to many people, leading to a flood of commercial ventures that promised to take advantage of this adult brain plasticity to keep us forever young. Scientific Learning. Others.
+In the middle of the 1980s a series of papers appeared from leading groups in the US reporting a specific type of adult cortical plasticity in both visual and somatosensory cortex [@merzenich1984-plasticity; @kaas1990-adult-plasticity-visual; @gilbert1992-rf-dynamics; @recanzone1992-adult-plasticity-somatosensory; @jenkins1990-adult-plasticity-somatosensory; @chino1992-rapid; @chino1995-receptive]. This type of plasticity described the reorganization of the visual field and somatosensory maps, at quite a large scale. Not many people would have been surprised at the idea that synapses come and go, or that they change their strength.  Or even the idea that there would be some adjustment in dendritic and axonal arbors over the extent of 100s of microns.
 
-Nikos Logothetis and I were beginning to collaborate using a mixture of magnetic resonance and electrophysiological methods; we thought understanding adult cortical plasticity phenomenon would be an excellent task that could find useful health applications. The point of working in macaque to discover the molecular mechanisms that governed the plasticity and to measure their impact on behavior.  We were fortunate to recruit Stelios Smirnakis to lead the project, and he performed an experiment looking for significant reorganization in adult macaque V1 after binocular lesions in corresponding locations of the two retinae. 
+But the possibility of a large-scale reorganization in the adult cortex, spanning many millimeters or even centimeters, was very exciting to many people.  The notion that there was large scale reorganization of somatosensory and visual maps in the adult - which we might call adult map plasticity - lead to new commercial ventures premised on the idea that adult plasticity could keep us forever young. *Find some references here*. 
+
+Nikos Logothetis and I thought understanding adult cortical plasticity of the visual maps would be an excellent target of investigation, one that could find useful health applications. By working in macaque we thought it might be possible to discover and learn to control the molecular mechanisms that governed the plasticity.  We were fortunate to recruit Stelios Smirnakis to lead the project, and he performed an experiment looking for significant reorganization in adult macaque V1 after binocular lesions in corresponding locations of the two retinae. 
 
 We expected to find an initial unresponsive zone in V1 that would fill-in with activation over time.  To measure this remapping, we used functional MRI, as it is less invasive and would permit many repeated measurements over time.  And, indeed, we could measure an unresponsive zone the macaque operculum following the lesions as expected.  This is the 'lesion projection zone' (LPZ).
 
@@ -259,9 +261,9 @@ As we measured repeated over time, we expected to that the LPZ area would shrink
 
 ![The lesion projection zone size remained unchanged over many months.](images/Slide66.png){#fig-lpz-stability width="80%"}
 
-Our finding of topographic stability conflicted with reports from other labs, and when it was published it was meth with a brief rebuke [@calford2005-critique-smirnakis] from several authors who had reported significant remapping. A principal objection to our work was that fMRI was not an adequate measure.  This ignored the fact that we had used both fMRI and electrophysiology.
+Our finding of topographic stability conflicted with reports from other labs, and when it was published it was met with a rebuke  from several authors who had reported significant remapping [@calford2005-critique-smirnakis]. A principal objection to our work was that fMRI was not an adequate measure. This was odd and it ignored the fact that we had used both fMRI and electrophysiology.
 
-We were puzzled about the difference, and we decided to study the existing literature more closely. Stelios and I discovered that it was filled with many inconsistencies raising more concerns. We identified those inconsistencies in a review [@wandell2009-plasticity-stability]; those concerns remain largely unanswered^[Private].
+We were puzzled about the difference and decided to study the literature, which we had previously accepted without much scrutiny,  more closely. Stelios and I discovered that there were many serious inconsistencies. We listed them in a review paper[@wandell2009-plasticity-stability]; those concerns remain largely unanswered^[Private], and they are summarized in @fig-disputes.
 
 ^[Private]: A number of investigators spoke to me privately, reporting that they too failed to find remapping. They were not looking for a fight and decided they had simply done something wrong. These comments were well-intentioned, gave us some comfort but also were a bit disheartening about the state of scientific discourse.
 
@@ -271,11 +273,28 @@ We were puzzled about the difference, and we decided to study the existing liter
 But the absence of an effect caused me to return to using functional MRI to study naturally occurring lesions. Heidi Baseler, Tony Morland and I had already studied one case that we found interesting - rod monochromats [@baseler2002-rod-monochromats].
 
 In 2005, we were debating whether the map changed. We wrote a reply to Gilbert and Kaas that, frankly, focused too much on the mechanics of the BOLD signal. But twenty years later, the molecular and modeling evidence suggests something much more profound: the primary visual cortex is structurally 'locked' to preserve the topographic blueprint, and what we once called 'plasticity' may be the brain's ability to flexibly read out that stable map.
-
 :::
 
+## Human measurements of map reorganization
+The ability of fMRI to measure human retinotopic maps in human also afforded the opportunity to assess map reorganization, both during developmental and in the adult.  
 
-## Achiasmia and albinism
+### Achromatopsia - rod monochromats
+
+My group was the first to recognie that we could explore the visual field map in people who lacked functional cones. These individuals, called rod monochromats, are rare but possible to find. The first study we performed, led by Heidi Baseler, measured only three such individuals and none of them were carefully screened for the disease - either genetically or behaviorally. We described this limitation as well as the basic result. Although these individuals had only functional rods and no cones - as far as we could tell - retinal signals produced functional signals in the location of the classic foveal projection. This finding was accepted and reported in subsequent authoritative reviews [@hoffmann2015-TICS-review][^1]
+
+[^1]: We thought acquired foveal lesions would not fill in, but developmental was different. Alas, we were wrong for a few years until Heidi straightened us out. \>In adults [@baseler2011-LargescaleRemappingVisual], the deafferented cortical foveal representation in rod achromatopsia is not silent, but driven by parafoveal input [@baseler2002-rod-monochromats]. In essence, the visual field maps are preserved, but only represent retina covered with functional photoreceptors, that is rods [@hoffmann2015-TICS-review]."
+
+Twenty years on, the matter was taken up again by Baseler and colleagues, using much better screening method [@molz2023-achromatopsiavisualCortexStability2023]. They found, contrary to our original measurement, that iindividuals who could be absolutely identified as having only rods had a silent foveal projection zone. Thus, even in this case of development the cortical map organization - which is initiated before the retina is functional \[shatz1992-developingbrain with that guy from duke who died sadly\] is not altered. The absence of foveal input does not cause the map to be reorganized. The initial map organization appears to be quite stable in the absence of any input. Quote Molz here.
+
+@molz2023-achromatopsiavisualCortexStability2023 \> Remapping of the cortical representation of the central visual field is not a general feature in achromatopsia.
+
+Gene therapy
+
+@mckytonCorticalVisualMapping2021 Netta a co-author. They focus on color. <!--
+The possibility that the adult human brain may regain or develop function following correction of congenital deafferentation has fired the imagination of scientists over the years. In the visual domain, cases of recovery from congenital deficits are rare. Gene therapy visual restoration for congenital  CNGA3-achromatopsia, a disease caused by cone photoreceptor dysfunction, gave us the opportunity to examine cortical function, to the best of our knowledge for the first time, both before and after restorative treatment. While behaviorally only minor improvements were observed post-treatment, fMRI analysis, including size algorithms of population-receptive fields, revealed cortical changes, specifically receptive field size decrease in the treated eyes. This suggests that, at least to some degree, the adult cortex is able to encode new input.
+-->
+
+### Achiasmia and albinism
 
 There are many examples in the literature, but a particularly interesting case for the visual system is the disruption of how the retinal axons find their way to the lateral geniculate.
 
@@ -303,27 +322,7 @@ Must be some more Morland studies
 
 @hoffmann2003-alibinism
 
-## Reviews
-
 @hoffmann2015-TICS-review
-
-## Achromatopsia - rod monochromats
-
-My group was the first to recognie that we could explore the visual field map in people who lacked functional cones. These individuals, called rod monochromats, are rare but possible to find. The first study we performed, led by Heidi Baseler, measured only three such individuals and none of them were carefully screened for the disease - either genetically or behaviorally. We described this limitation as well as the basic result. Although these individuals had only functional rods and no cones - as far as we could tell - retinal signals produced functional signals in the location of the classic foveal projection. This finding was accepted and reported in subsequent authoritative reviews [@hoffmann2015-TICS-review][^1]
-
-[^1]: We thought acquired foveal lesions would not fill in, but developmental was different. Alas, we were wrong for a few years until Heidi straightened us out. \>In adults [@baseler2011-LargescaleRemappingVisual], the deafferented cortical foveal representation in rod achromatopsia is not silent, but driven by parafoveal input [@baseler2002-rod-monochromats]. In essence, the visual field maps are preserved, but only represent retina covered with functional photoreceptors, that is rods [@hoffmann2015-TICS-review]."
-
-Twenty years on, the matter was taken up again by Baseler and colleagues, using much better screening method [@molz2023-achromatopsiavisualCortexStability2023]. They found, contrary to our original measurement, that iindividuals who could be absolutely identified as having only rods had a silent foveal projection zone. Thus, even in this case of development the cortical map organization - which is initiated before the retina is functional \[shatz1992-developingbrain with that guy from duke who died sadly\] is not altered. The absence of foveal input does not cause the map to be reorganized. The initial map organization appears to be quite stable in the absence of any input. Quote Molz here.
-
-@molz2023-achromatopsiavisualCortexStability2023 \> Remapping of the cortical representation of the central visual field is not a general feature in achromatopsia.
-
-Gene therapy
-
-@mckytonCorticalVisualMapping2021 Netta a co-author. They focus on color. <!--
-The possibility that the adult human brain may regain or develop function following correction of congenital deafferentation has fired the imagination of scientists over the years. In the visual domain, cases of recovery from congenital deficits are rare. Gene therapy visual restoration for congenital  CNGA3-achromatopsia, a disease caused by cone photoreceptor dysfunction, gave us the opportunity to examine cortical function, to the best of our knowledge for the first time, both before and after restorative treatment. While behaviorally only minor improvements were observed post-treatment, fMRI analysis, including size algorithms of population-receptive fields, revealed cortical changes, specifically receptive field size decrease in the treated eyes. This suggests that, at least to some degree, the adult cortex is able to encode new input.
--->
-
-## Retinal disease - natural lesions
 
 Further measurements of map plasticity have been made in the adult brain following the onset of different types of retinal disease. These diseases act as naturally ocurring retinal lesions. In the presence of significant cortical remapping, one might expect to see the maps in such individuals differ, perhaps by filling in the lesion projection zone (LPZ) corresponding to the disease.
 
@@ -343,11 +342,13 @@ It is worth noting that expansion of the cortical signals does not solve the bas
 
 ## Mike May
 
-## Electrophysiology revisited
-
+::: {.callout-note title="Rethinking the findings"}
 There is a genral move towards integrating subcortical pathways as part of the computational system. Kaas, in particular, has asserted that many of tehe changes we observe after lesions can be explained by properties of the pulvinar and subcortical pathways. Here is some early work leading in that direction @collins2003-mt-v1-lesions @kaas2007-pulvinar-review
 
-and he has really leaned into this in recent years with Neeraj Jain, which includes specific work on PNNs using Chondroitinase. @jain2012-somatosensory-plasticity @jain2025-kaas-spinal-critical
+Maybe mention Murray Sherman's book here.
+
+Kaas and his colleagues have leaned into this alternative explanation in recent years, particularly in work with Neeraj Jain, which includes specific work on PNNs using Chondroitinase. @jain2012-somatosensory-plasticity @jain2025-kaas-spinal-critical
+:::
 
 ## Cellular advances and PNNs
 
