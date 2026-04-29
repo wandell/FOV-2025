@@ -114,14 +114,46 @@ As we can see in @eq-rmse, the error is calculated by...
 
 ### 6. Videos
 
-Insert a local video (e.g., MP4) just like an image, but append HTML video attributes in the curly braces to control playback. Most browsers require muted autoplay for videos to load automatically.
+Insert a local video (e.g., MP4) just like an image, but append HTML video attributes in the curly braces to control playback. Most browsers require muted autoplay for videos to load automatically. To ensure PDF rendering works, use content-visible blocks to provide a static fallback.
 
+```md
 ::: {.content-visible when-format="html"}
-![Caption for the video](path/to/video.mp4){#vid-label width="80%" loop="true" :::
-autoplay="true" muted="true"}
+![Caption for the video](path/to/video.mp4){#vid-label width="80%" loop="true" autoplay="true" muted="true"}
 :::
 
-### 7. Footnotes
+::: {.content-visible when-format="pdf"}
+![Caption for the video](path/to/video.png){#vid-label width="80%"}
+:::
+```
+
+### 7. Lists
+
+Standard Markdown lists render beautifully in both HTML and PDF via Quarto. To ensure your lists format correctly and aren't accidentally merged into the preceding paragraph by the parser:
+1. Provide a **clear grammatical break** before the list, ideally ending the introductory sentence with terminal punctuation (like a colon).
+2. Always ensure there is a **blank line** before the list starts.
+3. Use 4 spaces to indent sub-items and ensure individual list items have trailing punctuation where appropriate.
+
+**Unordered (Bulleted) Lists:**
+```md
+Here is a list:
+
+- First item
+- Second item
+    - Sub-item (indented 4 spaces)
+    - Another sub-item
+- Third item
+```
+
+**Ordered (Numbered) Lists:**
+```md
+1. First item
+2. Second item
+    i) Sub-item
+    ii) Another sub-item
+3. Third item
+```
+
+### 8. Footnotes
 
 You can add footnotes either inline or by reference.
 
