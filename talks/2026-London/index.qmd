@@ -110,7 +110,13 @@ Most scientists believed that the retinotopic maps found in non-human primates w
 
 Steve Engel and I - helped by many others - developed a technique to measure eccentricity and angle maps that was widely adopted [@engel1994-fmri; @engelRetinotopicOrganizationHuman1997]. The stimulus and cortical responses (fMRI) for measuring eccentricity are shown in the @fig-eccentricity-movie. If you look at the video casually, you will see the wave from the occipital pole traveling in the anterior direction of the main map. If you look a little more closely, you will also see a secondary ripple on the ventral occippital-temporal surface. That ripple starts when the stimulus is in the fovea and then fades out as the ring expands about half way (10 deg). The VOT eccentricity map is a second eccentricity map, confined mainly to the perifoveal visual field, that is distinct from the calcarine map.
 
+::: {.content-visible when-format="html"}
 ![Eccentricity mapping using an expanding ring stimulus (20 deg) in the calcarine and ventral occipital region](../../chapters/videos/eccentricity-map-encyclopedia.mp4){#fig-eccentricity-movie width="80%" loop="true" autoplay="true" muted="true"}
+:::
+
+::: {.content-visible when-format="pdf"}
+![Eccentricity mapping using an expanding ring stimulus (20 deg) in the calcarine and ventral occipital region](../../chapters/videos/eccentricity-map-encyclopedia.png){#fig-eccentricity-movie width="80%"}
+:::
 
 We also made measurements using a rotating wedge stimulus to measure the most effective angular position for each voxel. The angular responses subdivide the eccentricity map into different visual field maps. The data from the video are summarized in two pseudo-color maps showing the most effective visual field eccentricity for each cortical location
 
@@ -138,11 +144,23 @@ Over time, it become clear to us that there were multiple distinct eccentricity 
 
 Here are two different visualizations of the clusters. In @fig-clusters-movie they are shown on a slightly inflated cortical surface.
 
+::: {.content-visible when-format="html"}
 ![The visual field map clusters shown on a the cortical surface (slightly inflated) @wandell2005-visualFieldMap-clusters](images/clusters.mp4){#fig-clusters-movie width="80%" loop="true" autoplay="true" muted="true"}
+:::
+
+::: {.content-visible when-format="pdf"}
+![The visual field map clusters shown on a the cortical surface (slightly inflated) @wandell2005-visualFieldMap-clusters]('images/clusters-mp4/Screenshot 2026-03-25 at 1.30.09 PM.png'){#fig-clusters-movie width="80%"}
+:::
 
 In @fig-clusters-flatmap the eccentricity maps of the clusters are represented on a flattened cortical surface; the video oscillates between the measured eccentricity and a cartoon overlay that emphasizes the pattern.
 
+::: {.content-visible when-format="html"}
 ![Visual field map clusters shown for emphasis on the flattened representation of the posterior cortex @wandell2005-visualFieldMap-clusters](images/clusters-flat.mp4){#fig-clusters-flatmap width="80%" loop="true" autoplay="true" muted="true"}
+:::
+
+::: {.content-visible when-format="pdf"}
+![Visual field map clusters shown for emphasis on the flattened representation of the posterior cortex @wandell2005-visualFieldMap-clusters](images/clusters-flat.png){#fig-clusters-flatmap width="80%"}
+:::
 
 ## Confirmation of clusters
 
@@ -224,11 +242,11 @@ De-emphasize the hierarchy of maps in favor of the clusters, because some of the
 Incorporate pulvinar and other subcortical regions more clearly.
 
 ::: {#fig-multipane layout-ncol="2"}
-![Zeki image](images/Slide32.png){#fig-zeki-specialization}
+![Zeki image](images/Slide32.png){#fig-zeki-specialization width="80%"}
 
-![Grill-spector specialization](images/Slide34.png){#fig-weiner-specialization}
+![Grill-spector specialization](images/Slide34.png){#fig-weiner-specialization width="80%"}
 
-![Clusters and subcortical](images/fve-updated-cluster.png){#fig-clusters-specialization}
+![Clusters and subcortical](images/fve-updated-cluster.png){#fig-clusters-specialization width="80%"}
 
 Here is the main caption that applies to the entire figure group. Also, look at the images in this atlas from Goebel. @rosenke2021-atlas
 :::
@@ -267,36 +285,15 @@ But we too were puzzled about the difference and decided to study the literature
 
 [^1]: A number of investigators spoke to me privately, reporting that they too failed to find remapping. They were not looking for a fight and decided they had simply done something wrong. These comments were well-intentioned, gave us some comfort but also were a bit disheartening about the state of scientific discourse.
 
-![This review paper [@wandell2009-plasticity-stability] describes a series of experimental conflicts in papers that found topographic remapping in adult visual cortex. These are discussed in detail in the review paper.](images/review-disputes.png){#fig-disputes}
+![This review paper [@wandell2009-plasticity-stability] describes a series of experimental conflicts in papers that found topographic remapping in adult visual cortex. These are discussed in detail in the review paper.](images/review-disputes.png){#fig-disputes width="80%"}
 
-::: {.callout-note title="Unanswered biological questions"}
-But the absence of an effect caused me to return to using functional MRI to study naturally occurring lesions. Heidi Baseler, Tony Morland and I had already studied one case that we found interesting - rod monochromats [@baseler2002-rod-monochromats].
-
-In 2005, we were debating whether the map changed. We wrote a reply to Gilbert and Kaas that, frankly, focused too much on the mechanics of the BOLD signal. But twenty years later, the molecular and modeling evidence suggests something much more profound: the primary visual cortex is structurally 'locked' to preserve the topographic blueprint, and what we once called 'plasticity' may be the brain's ability to flexibly read out that stable map.
-:::
+In recent years there has been a move towards integrating subcortical pathways as part of the computational system. Kaas, in particular, has asserted that many of the changes we observe after lesions can be explained by properties of the pulvinar and subcortical pathways. Here is some early work leading in that direction [@collins2003-mt-v1-lesions, @kaas2007-pulvinar-review]. Kaas and his colleagues have leaned into this alternative explanation in recent years, particularly in work with Neeraj Jain. That work also includes specific work on perineuronal networks (PNNs) which I will discuss further at the end [@jain2012-somatosensory-plasticity @jain2025-kaas-spinal-critical].
 
 ## Human measurements of map reorganization
-The ability of fMRI to measure human retinotopic maps in human also afforded the opportunity to assess map reorganization, both during development and in the adult.  I draw your attention to five different experimental measures here that explored map organization in different ways.
 
-A summary is this: there is a fascinating instance of a significant developmental change in the V1 map. But there has been no large-scale reorganization of the human V1 map following retinal lesions. 
+The ability to measure human retinotopic maps in human afforded the opportunity to assess map reorganization during development and in the adult. In this presentation, I will draw your attention to five different experimental measures here that explored map re-organization in different ways. A summary is this: there is a fascinating instance of a significant developmental map reorganization. Thus, fMRI measurements are capable of revealing significant deviations in the development of these maps. The predominant evidence, however, is that even very significant retinal lesions do not cause large-scale reorganization of the visual cortical maps. The main conclusion is that in the adult these maps remain stable despite disruptions of the retinal signal. I explain the basis for this summary by pointing to five different studies of developmental and adult plasticity in human.
 
-### Achromatopsia - rod monochromats
-
-My group was the first to recognie that we could explore the visual field map in people who lacked functional cones. These individuals, called rod monochromats, are rare but possible to find. The first study we performed, led by Heidi Baseler, measured only three such individuals and none of them were carefully screened for the disease - either genetically or behaviorally. We described this limitation as well as the basic result. Although these individuals had only functional rods and no cones - as far as we could tell - retinal signals produced functional signals in the location of the classic foveal projection. This finding was accepted and reported in subsequent authoritative reviews [@hoffmann2015-TICS-review][^3]
-
-[^3]: We thought acquired foveal lesions would not fill in, but developmental was different. Alas, we were wrong for a few years until Heidi straightened us out. \>In adults [@baseler2011-LargescaleRemappingVisual], the deafferented cortical foveal representation in rod achromatopsia is not silent, but driven by parafoveal input [@baseler2002-rod-monochromats]. In essence, the visual field maps are preserved, but only represent retina covered with functional photoreceptors, that is rods [@hoffmann2015-TICS-review]."
-
-Twenty years on, the matter was taken up again by Baseler and colleagues, using much better screening method [@molz2023-achromatopsiavisualCortexStability2023]. They found, contrary to our original measurement, that iindividuals who could be absolutely identified as having only rods had a silent foveal projection zone. Thus, even in this case of development the cortical map organization - which is initiated before the retina is functional \[shatz1992-developingbrain with that guy from duke who died sadly\] is not altered. The absence of foveal input does not cause the map to be reorganized. The initial map organization appears to be quite stable in the absence of any input. Quote Molz here.
-
-@molz2023-achromatopsiavisualCortexStability2023 \> Remapping of the cortical representation of the central visual field is not a general feature in achromatopsia.
-
-Gene therapy
-
-@mckytonCorticalVisualMapping2021 Netta a co-author. They focus on color. <!--
-The possibility that the adult human brain may regain or develop function following correction of congenital deafferentation has fired the imagination of scientists over the years. In the visual domain, cases of recovery from congenital deficits are rare. Gene therapy visual restoration for congenital  CNGA3-achromatopsia, a disease caused by cone photoreceptor dysfunction, gave us the opportunity to examine cortical function, to the best of our knowledge for the first time, both before and after restorative treatment. While behaviorally only minor improvements were observed post-treatment, fMRI analysis, including size algorithms of population-receptive fields, revealed cortical changes, specifically receptive field size decrease in the treated eyes. This suggests that, at least to some degree, the adult cortex is able to encode new input.
--->
-
-### Achiasmia and albinism
+### 1. Achiasmia
 
 There are many examples in the literature, but a particularly interesting case for the visual system is the disruption of how the retinal axons find their way to the lateral geniculate.
 
@@ -305,13 +302,13 @@ In a small number of people, the standard crossing pattern in which the optic ne
 This arises during development. And these people see perfectly well despite having completely atypical cortical functional responses.
 
 ::: {#fig-chiasmic-subject layout-ncol="2"}
-![Typical chiasm](images/Slide59.png){#fig-chiasm}
+![Typical chiasm](images/Slide59.png){#fig-chiasm width="80%"}
 
-![Missing chiasm](images/Slide60.png){#fig-achiasm}
+![Missing chiasm](images/Slide60.png){#fig-achiasm width="80%"}
 
-![Hemifield response](images/Slide62.png){#fig-achiasm-hemifield}
+![Hemifield response](images/Slide62.png){#fig-achiasm-hemifield width="80%"}
 
-![PRF estimate](images/Slide63.png){#fig-achiasm-prf}
+![PRF estimate](images/Slide63.png){#fig-achiasm-prf width="80%"}
 
 Caption
 :::
@@ -328,7 +325,23 @@ Must be some more Morland studies
 
 Further measurements of map plasticity have been made in the adult brain following the onset of different types of retinal disease. These diseases act as naturally ocurring retinal lesions. In the presence of significant cortical remapping, one might expect to see the maps in such individuals differ, perhaps by filling in the lesion projection zone (LPZ) corresponding to the disease.
 
-### Macular degeneration
+### 2. Achromatopsia - rod monochromats
+
+After we learned to measure maps, it became clear that we could explore the visual field remapping in people with various retinal disorders. Heidi Baseler and I were aware of the work by our colleagues at UC Berkeley studying individuals with a relatively rare condition, rod monochromacy. These individuals study we performed, led by Heidi Baseler, measured only three such individuals and none of them were carefully screened for the disease - either genetically or behaviorally. We described this limitation as well as the basic result. Although these individuals had only functional rods and no cones - as far as we could tell - retinal signals produced functional signals in the location of the classic foveal projection. This finding was accepted and reported in subsequent authoritative reviews [@hoffmann2015-TICS-review][^2]
+
+[^2]: We thought acquired foveal lesions would not fill in, but developmental was different. Alas, we were wrong for a few years until Heidi straightened us out. \>In adults [@baseler2011-LargescaleRemappingVisual], the deafferented cortical foveal representation in rod achromatopsia is not silent, but driven by parafoveal input [@baseler2002-rod-monochromats]. In essence, the visual field maps are preserved, but only represent retina covered with functional photoreceptors, that is rods [@hoffmann2015-TICS-review]."
+
+Twenty years on, the matter was taken up again by Baseler and colleagues, using much better screening method [@molz2023-achromatopsiavisualCortexStability2023]. They found, contrary to our original measurement, that iindividuals who could be absolutely identified as having only rods had a silent foveal projection zone. Thus, even in this case of development the cortical map organization - which is initiated before the retina is functional \[shatz1992-developingbrain with that guy from duke who died sadly\] is not altered. The absence of foveal input does not cause the map to be reorganized. The initial map organization appears to be quite stable in the absence of any input. Quote Molz here.
+
+@molz2023-achromatopsiavisualCortexStability2023 \> Remapping of the cortical representation of the central visual field is not a general feature in achromatopsia.
+
+Gene therapy
+
+@mckytonCorticalVisualMapping2021 Netta a co-author. They focus on color. <!--
+The possibility that the adult human brain may regain or develop function following correction of congenital deafferentation has fired the imagination of scientists over the years. In the visual domain, cases of recovery from congenital deficits are rare. Gene therapy visual restoration for congenital  CNGA3-achromatopsia, a disease caused by cone photoreceptor dysfunction, gave us the opportunity to examine cortical function, to the best of our knowledge for the first time, both before and after restorative treatment. While behaviorally only minor improvements were observed post-treatment, fMRI analysis, including size algorithms of population-receptive fields, revealed cortical changes, specifically receptive field size decrease in the treated eyes. This suggests that, at least to some degree, the adult cortex is able to encode new input.
+-->
+
+### 3. Macular degeneration
 
 Early publications in human @sunness2004-md-retinotopy found little support for cortical remapping in the adult subsequent to foveal disease. In contrast, Baker and colleagues in the Kanwisher group [@baker2007-reorganization; @baker2008-reorganization; @dilks2007-reorganization] reported large scale reorganization. @wandell2009-plasticity-stability reviewed the problems with these papers.
 
@@ -336,21 +349,15 @@ A thorough and authoritative analysis concluded that there was no large scale re
 
 The lesion project zone (LPZ) was silent Masuda and colleagues obsersved that a task, such as a one-back memory task, could evoke a signal in the LPZ [@masuda2008-maculardegenerationV1; @masuda2021-maculardepgeneration; @rosenau2008-feedback]. His findings suggest that the absence of the feed forward signal from the retina unmasked the cortico-cortical signal associated with task judgments.
 
-### Retinitis pigmentosa
+### 4. Retinitis pigmentosa
 
 Masuda used the same methodology in patients with retinitis pigmentosa, a disease that spares the fovea but damages the peripheral retina [@masuda2010-retinitispigmentosa]. Once again, they found no significant reorganization in the adult cortex.
 
 It is worth noting that expansion of the cortical signals does not solve the basic problem of a retinal lesion: no signal is acquired when the retina is damaged. Expanding the cortical signal to deafferented cortical regions does not mean one can see the blinded portion of the visual field. It is not really clear what purpose such an expansion of the signals would serve.
 
-## Mike May
+### 5. Case study:  Mike May
 
-::: {.callout-note title="Rethinking the findings"}
-There is a genral move towards integrating subcortical pathways as part of the computational system. Kaas, in particular, has asserted that many of tehe changes we observe after lesions can be explained by properties of the pulvinar and subcortical pathways. Here is some early work leading in that direction @collins2003-mt-v1-lesions @kaas2007-pulvinar-review
 
-Maybe mention Murray Sherman's book here.
-
-Kaas and his colleagues have leaned into this alternative explanation in recent years, particularly in work with Neeraj Jain, which includes specific work on PNNs using Chondroitinase. @jain2012-somatosensory-plasticity @jain2025-kaas-spinal-critical
-:::
 
 ## Cellular advances and PNNs
 
@@ -358,13 +365,14 @@ Parallel to the systems-level evidence for stability in the human brain, we have
 
 Parvalbumin cell development papers @hensch2014-amblyopia-critical-period
 
-![PNN defined.  Golgi.  Cajal](images/PNN-1.png){#fig-pnn-golgi width="80%"}
-
+![PNN defined. Golgi. Cajal](images/PNN-1.png){#fig-pnn-golgi width="80%"}
 
 @yew1997-pnn-human-cerebellum @grateron2003-pnn-human-entorhinal @fung2010-pnn-human-dlpfc
 
-General review @sorg2016-pnn-review
-![PNN aggrecan](images/PNN-2.png){#fig-pnn-molecules width="80%"}
+General review @sorg2016-pnn-review 
+
+![PNN aggrecan](images/PNN-2.png){#fig-pnn-molecules width="80%"} 
+
 @morishita2010-lynx1-hensch
 
 PNN papers in human @rogers2018-pnn-epilepsy @mauney2013-pnn-schizophrenia @nakayama2025-aggrecan-pnn - "Among the PNN-related genes examined, aggrecan alone exhibited strong activity-dependent transcriptional regulation"

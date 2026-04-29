@@ -116,9 +116,10 @@ As we can see in @eq-rmse, the error is calculated by...
 
 Insert a local video (e.g., MP4) just like an image, but append HTML video attributes in the curly braces to control playback. Most browsers require muted autoplay for videos to load automatically.
 
-```md
-![Caption for the video](path/to/video.mp4){#vid-label width="80%" loop="true" autoplay="true" muted="true"}
-```
+::: {.content-visible when-format="html"}
+![Caption for the video](path/to/video.mp4){#vid-label width="80%" loop="true" :::
+autoplay="true" muted="true"}
+:::
 
 ### 7. Footnotes
 
