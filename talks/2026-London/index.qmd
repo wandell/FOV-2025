@@ -241,6 +241,9 @@ Here is the main caption that applies to the entire figure group. Also, look at 
 :::
 
 # Map reorganization in adult
+<!--
+Separately, one of the things I learned following the London presentation is this.  Rather than refer to these phenomenon with the general term, adult cortical plasticity, I should really use the more specific phrase of adult cortical remapping, a particular type of plasticity. This will be helpful in the future as I write.  The reason is there can be experience-dependent changes in the adult cortex at various scales and of various types.  I say this in my writing - we are supposed to ask where and when it is stable and plastic.  But people always come away from my talks thinking I am dismissive of all adult cortical plasticity.  By using a more specific phrase that relates to my specific type of plasticity, people may understand me better.
+-->
 The interest in cortical development and cortical plasticity has a long history, paralleling the work on understanding the organization of cortical structures and function.
 
 As early as Henschen, who first localized the human visual cortex, scientists wondered whether visual experience might have an impact on the size (surface area) of the visual cortex representation [@henschen1893-visual-center]. He reported that the size of visual cortex was smaller in blind people, but at that time very little was known about the size variation in the population. The variation in surface area is quite large, a factor 2.5 in surface area has been confirmed by a number of modern authors [@stensaas1974-v1-area; @dougherty2003-map-sizes; @benson2022-surface-area]. Thus, a case study finding a smaller V1 in a blind person than a control sighted person is not definitive proof of an experience-dependent plasticity.
@@ -294,26 +297,21 @@ The ability to measure human retinotopic maps in human affords the opportunity t
 In summary, fMRI methods are capable of measuring and quantifying key aspects of map reorganization. The predominant finding from multiple types of measurements is that retinal lesions do not cause large-scale remapping in visual cortex. When a large portion of adult visual cortical map is deprived of input, the lesion projection zone remains unresponsive. 
 
 ### 1. Achiasmia
-
-The particularly interesting case for the visual system is the disruption of how the retinal axons find their way to the lateral geniculate.
-
-In a small number of people, the standard crossing pattern in which the optic nerve axons from the nasal retina cross to the opposite hemisphere does not occur. The optic chiasm never develops, and the retinal axons stay within the same hemisphere.
-
-This arises during development. And these people see perfectly well despite having completely atypical cortical functional responses.
+A particularly striking case of developmental plasticity in the visual system occurs when the retinal axons fail to find their way to the lateral geniculate. In most people, there is a standard crossing pattern in which the optic nerve axons from each nasal retina cross to the opposite hemisphere at the *optic chiasm* (@fig-chiasm). In a small number of people, the molecular guidance for this crossing fails and the optic chiasm never develops (@fig-achiasm). In these individuals, the retinal axons stay within the same hemisphere so that the right eye projects to the right hemisphere and the left to the left [@victor2000-achiasma; @prakash2010-achiasmic; @hoffmann2012-achiasma].
 
 ::: {#fig-chiasmic-subject layout-ncol="2"}
-![Typical chiasm](images/Slide59.png){#fig-chiasm width="80%"}
+![A. Typical chiasm](images/optic-chiasm.png){#fig-chiasm width="80%"}
 
-![Missing chiasm](images/Slide60.png){#fig-achiasm width="80%"}
+![Missing chiasm](images/optic-achiasm.png){#fig-achiasm width="80%"}
 
-![Hemifield response](images/Slide62.png){#fig-achiasm-hemifield width="80%"}
+![Hemifield response](images/optic-achiasm-hemifield.png){#fig-achiasm-hemifield width="80%"}
 
-![PRF estimate](images/Slide63.png){#fig-achiasm-prf width="80%"}
+![PRF estimate](images/optic-achiasm-prf.png){#fig-achiasm-prf width="80%"}
 
-Caption
+The optic chiasm is normally easy to find in a structural anatomical image (A).  In some rare cases, the retinal axons do not cross and each eye projects to the LGN on the its side of the brain (B).  In such individuals both the left and right sides of the visual field initiate a response in V1 (C).  If we measure the population receptive field of a voxel, it will respond to stimuli in small regions of the right and left visual field at corresponding locations. In typical development, the left hemisphere V1 voxels will only respond to stimuli in a small portion of the right visual field.
 :::
 
-@victor2000-achiasma @prakash2010-achiasmic @hoffmann2012-achiasma \> "The absence of the optic chiasm is an extraordinary and extreme abnormality in the nervous system. The abnormality produces highly atypical functional responses in the cortex, including overlapping hemifield representations and bilateral population receptive fields in both striate znd extrastriate visual cortex. Even in the presence of these large functional abnormalities, the effect on visual perception and daily life is not easily detected. @hoffmann2012-achiasma
+To me it is surprising that even in the presence of these large anatomical and corresponding functional abnormalities, the effect on visual perception and daily life is not easily detected [@hoffmann2012-achiasma].  THese individuals do not have stereovision, but many people fail to develop this skill.  These individuals tend to have optical nystagmus, but so do many others. 
 
 @bao2015-achiasmic @daviesThompson2013-achiasmic
 
