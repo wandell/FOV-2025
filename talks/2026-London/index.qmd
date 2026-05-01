@@ -311,20 +311,13 @@ A particularly striking case of developmental plasticity in the visual system oc
 The optic chiasm is normally easy to find in a structural anatomical image (a).  In some rare cases, the retinal axons do not cross and each eye projects to the LGN on the its side of the brain (b).  In such individuals both the left and right sides of the visual field initiate a response in V1 (c).  If we measure the population receptive field of a voxel, it will respond to stimuli in small regions of the right and left visual field at corresponding locations. In typical development, the left hemisphere V1 voxels will only respond to stimuli in a small portion of the right visual field (d).
 :::
 
-Even in the presence of such a large anatomical mis-wiring, and the corresponding functional abnormalities, such individuals manage their visual perception in daily life effectively [@hoffmann2012-achiasma]. These individuals can read, navigate, and even engage in sports.  They do not have stereovision and they generally have nystagmus. But many people have these disorders, and thus they are not specifically diagnostic of achiasmia. 
+Even in the presence of such a large anatomical mis-wiring, and the corresponding functional abnormalities, such individuals manage their visual perception in daily life effectively [@hoffmann2012-achiasma; @kaule2014-chiasma-downstream]. These individuals can read, navigate, and even engage in sports.  They do not have stereovision and they generally have nystagmus. But many people have these disorders, and thus they are not specifically diagnostic of achiasmia. Furthermore other individuals, with albinism, have a less extreme form of this disorder and manage to achieve reasonable visual function [@hoffmann2003-alibinism; @hoffmann2015-TICS-review].
 
 <!--
 @bao2015-achiasmic used achiasmic subject to test something about the quantitative properties of the BOLD signal.  Interesting.
 -->
 
-@daviesThompson2013-achiasmic
 
-
-@hoffmann2003-alibinism
-
-@hoffmann2015-TICS-review
-
-Further measurements of map plasticity have been made in the adult brain following the onset of different types of retinal disease. These diseases act as naturally ocurring retinal lesions. In the presence of significant cortical remapping, one might expect to see the maps in such individuals differ, perhaps by filling in the lesion projection zone (LPZ) corresponding to the disease.
 
 ### 2. Achromatopsia - rod monochromats
 
@@ -343,12 +336,13 @@ The possibility that the adult human brain may regain or develop function follow
 -->
 
 ### 3. Macular degeneration
+Further measurements of map plasticity have been made in the adult brain following the onset of different types of retinal disease that create retinal lesions. One might expect to see remapping in such individuals, perhaps by filling in the lesion projection zone (LPZ) corresponding to the disease.
 
-Early publications in human @sunness2004-md-retinotopy found little support for cortical remapping in the adult subsequent to foveal disease. In contrast, Baker and colleagues in the Kanwisher group [@baker2007-reorganization; @baker2008-reorganization; @dilks2007-reorganization] reported large scale reorganization. @wandell2009-plasticity-stability reviewed the problems with these papers.
+Yet, publications in human @sunness2004-md-retinotopy found little support for cortical remapping in the adult subsequent to foveal disease. Only one series of papers, from Baker and colleagues in the Kanwisher group [@baker2007-reorganization; @baker2008-reorganization; @dilks2007-reorganization], reported large scale reorganization. @wandell2009-plasticity-stability reviewed some of the problems with these papers. 
 
 A thorough and authoritative analysis concluded that there was no large scale reorganization in passive viewing [@baseler2011-LargescaleRemappingVisual].
 
-The lesion project zone (LPZ) was silent Masuda and colleagues obsersved that a task, such as a one-back memory task, could evoke a signal in the LPZ [@masuda2008-maculardegenerationV1; @masuda2021-maculardepgeneration; @rosenau2008-feedback]. His findings suggest that the absence of the feed forward signal from the retina unmasked the cortico-cortical signal associated with task judgments.
+The lesion project zone (LPZ) was silent Masuda and colleagues observed that a task, such as a one-back memory task, could evoke a signal in the LPZ [@masuda2008-maculardegenerationV1; @masuda2021-maculardepgeneration; @rosenau2008-feedback]. His findings suggest that the absence of the feed forward signal from the retina unmasked the cortico-cortical signal associated with task judgments.
 
 ### 4. Retinitis pigmentosa
 
