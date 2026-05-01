@@ -170,3 +170,31 @@ Here is another statement.[^1]
 
 [^1]: This is the footnote defined elsewhere.
 ```
+
+### 9. Self-Contained HTML (Single File)
+
+To generate a single, standalone HTML file that embeds all images, CSS, and JavaScript directly into the file (so no separate `_files` or `site_libs` directories are created), you have two options:
+
+**Option A (Recommended): Add to YAML**
+Add `embed-resources: true` to the HTML section of the document's YAML frontmatter:
+```yaml
+format:
+  html:
+    embed-resources: true
+```
+Then render normally:
+```bash
+quarto render index.qmd --to html
+```
+
+**Option B: Terminal Command**
+You can also force this behavior directly from the terminal without editing the file:
+```bash
+quarto render index.qmd --to html -M embed-resources:true
+```
+
+Once you have your standalone `index.html`, you can securely copy it to your Stanford web server using `scp`:
+```bash
+scp index.html wandell@cardinal.stanford.edu:~/WWW/data/papers/
+```
+Your paper/talk will then be available online as a single integrated document.
