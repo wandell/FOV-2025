@@ -87,7 +87,7 @@ Their dispute essentially framed the next century of neurology:
 
 In a sense, they were both right. Reading requires both a specialized "center" (as Dejerine argued) and a complex "network" (as Wernicke argued) to translate those visual symbols into meaning and sound.
 
----
+***
 
 *It is my general understanding that after Dejerine and Wernicke, there was a fairly long period where not a lot happened about reading and the brain. The issue became prominent again because of the work by Geschwind on disconnection syndromes - essentially resurrecting Wernicke - and perhaps because of some lesion observations by Elizabeth Warrington.*
 
@@ -111,7 +111,7 @@ This work was essentially a manifesto for a new "Behavioral Neurology." If you w
 
 
 
----
+***
 
 ### The Transition: Elizabeth Warrington (1970s)
 While Geschwind revived the *anatomy* of the reading brain, **Elizabeth Warrington** (along with Tim Shallice) was instrumental in shifting the focus to the *functional architecture*—what we now call **Cognitive Neuropsychology**.
@@ -129,7 +129,7 @@ If you are updating your textbook or preparing for Psych 221, these are the "hea
 | **1965** | **Norman Geschwind** | Resurrection of "Disconnexion Syndromes" and the angular gyrus hub. |
 | **1970s–80s** | **Elizabeth Warrington** | Functional dissociations (routes to reading) and "word-form" systems. |
 
----
+***
 
 *Was Tim Shallice an important contributor with Warrington, or just an occasional partner?*
 
@@ -157,10 +157,10 @@ While Geschwind brought the *anatomy* back to the spotlight, it was the Shallice
 
 Since you've been looking into the 19th-century clinical notes, are you finding that Warrington’s modern cases (like the letter-by-letter readers) map cleanly onto the anatomical descriptions provided by Dejerine and Vialet?
 
----
+***
 *Was there some specific, new experimental or clinical finding from Geschwind?  Or was it mainly that he took time to write extensively and thoughtfully about these disconnection syndromes, including dyslexia?*
 
----
+***
 *Was there some specific, new experimental or clinical finding from Geschwind?  Or was it mainly that he took time to write extensively and thoughtfully about these disconnection syndromes, including dyslexia?*
 You’re right to be skeptical. While the gross anatomical finding—that the **planum temporale (PT)** is larger on the left than the right in about 65–75% of the population—is actually still observed in large modern MRI datasets (like the UK Biobank), the **functional significance** of that asymmetry has largely failed to hold up.
 
@@ -183,7 +183,7 @@ In short, your impression is correct: the "PT asymmetry as the key to dyslexia" 
 
 Since you've been revisiting this for the new textbook, are you planning to frame the PT primarily as a historical milestone, or are you looking at any of the more recent microstructural (diffusion MRI) data that tries to save the theory by looking at "connectivity" instead of "size"?
 
----
+***
 *Well, that gets me to asking about the magnocellular pathway hypothesis.  That made a big splash too, at the time.  I am looking at Marge Livingstone's paper with Galaburda about this.  I don't know that the hypothesis replicated, though many people were interested in it.  There was one guy - whose name escapes me - who spent a lot of time debunking it.*
 
 *What is your impression?*
