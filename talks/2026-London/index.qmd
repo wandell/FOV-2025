@@ -32,17 +32,9 @@ I plan to incorporate the material from this presentation into the second editio
 
 The discovery of visual field maps in human cortex is a fun history to read about [@fishman1995-mistake; @glickstein1985-ferrier-mistake; @wandell2011-ImagingRetinotopicMaps]. The debates between Ferrier and Munk in the late 19th century about the location of visual cortex were heated. The disagreements were not just about the data, but also about the interpretation of the data and the implications for our understanding of brain function.
 
-![Nineteenth century neuroscientists, neurologists and opthalmologists who discovered the localization of visual signals in animal models (Ferrier, Munk) and the presence of a retinotopic map in human visual cortex (Henschen, Holmes, Inouye).](images/ferrier-munk-inouye-holmes.png){#fig-ferrier-munk-inouye-holmes width="80%"}
+![Nineteenth century neuroscientists, neurologists and opthalmologists who discovered the localization of visual signals in animal models (Ferrier, Munk) and the presence of a retinotopic map in human visual cortex (Henschen, Holmes, Inouye).](images/ferrier-munk.png){#fig-ferrier-munk width="80%"}
 
 Ferrier performed lesion studies in monkeys and proposed that primary visual cortex was located in the angular gyrus. The German physiologist, Hermann Munk, disagreed with Ferrier's anatomical localization and argued that visual cortex was in the calcarine region — a critical correction that set the stage for more accurate understanding of retinotopic organization.
-
-::: {#fig-ferrier-munk layout-ncol="2"}
-![Ferrier's location of visual cortex in the angular gyrus](images/ferrier-angular-gyrus.png){#fig-sub-ferrier-angular-gyrus width="85%"}
-
-![Munk's location of visual cortex in the occipital lobe](images/munk-occipital-lobe.png){#fig-sub-munk-occipital-lobe width="85%"}
-
-A comparison of visual cortex localization from Ferrier and Munk.
-:::
 
 ::: {#nte-ferrier-munk-james .callout-note title="Ferrier and Munk"}
 No need to wonder what Munk thought about Ferrier's work. Here are his own words.
@@ -69,14 +61,14 @@ It was the Swedish neurologist, Henschen, who first carefully observed the visua
 In fact, Henschen's observations about the organization of the visual cortex in the human were confirmed and extended by two clinicians working at opposite ends of the world: Gordon Holmes and Tatsuye Inouye. Both were studying visual field losses from soldiers injured in their countries' wars, Holmes in Europe and Inouye in Japan. In that era, the guns were not always lethal, and the helmets would permit bullets to enter and exit the posterior skull, effectively lesioning a portion of occipital cortex. Such lesions could cause a permanent but partial visual field loss. By accumulating data from a number of different cases, they deduced the retinotopic organization of the human visual cortex. In addition to the upper-lower field representation, they both reported on the eccentricity map as well as the fact that the central portion of the visual field occupied more cortical territory (per square degree) than the peripheral portion. This phenomenon is called 'cortical magnification', and though perhaps it should be called 'foveal magnification'.
 
 ::: {#fig-inouye-holmes layout-ncol="2"}
-![Inouye](images/inouye-map.png){#inouye-map width="80%"}
+![Inouye](images/inouye-map.png){#inouye-map width="90%"}
 
-![Holmes](images/holmes-map.png){#holmes-map width="80%"}
+![Holmes](images/holmes-map.png){#holmes-map width="90%"}
 :::
 
 ## Discovery of multiple maps
 
-Talbot and colleagues in Wisconsin were the first to discover a second retinotopic maps (in rabbit). Cowey was the first to report a second visual map in a non-human primate [@cowey1964-v2]; Hubel and Wiesel reported two extrastriate maps in cat [@hubel1965-cat-v2-v3]. These reports were followed by a large collection of studies, identifying additional maps but also additional patches of cortex with distinct properties. Some of this history is summarized in the book by @zeki1993-book. Anatomical regions with visually responsive neurons and distinctive properties came to be known as 'visual areas', whether or not they were retinotopically organized.
+Talbot and colleagues in Wisconsin were the first to discover a second retinotopic maps (in rabbit). Cowey was the first to report a second visual map in a non-human primate [@cowey1964-v2]; Hubel and Wiesel reported two extrastriate maps in cat [@hubel1965-cat-v2-v3]. These reports were followed by a large collection of studies, identifying additional maps but also additional patches of cortex with distinct properties. Some of this history is summarized in the book by @zeki1993-book. Anatomical regions with visually responsive neurons and distinctive response properties came to be known as 'visual areas', whether or not they were retinotopically organized.
 
 ::: {#nte-multiple-maps .callout-note title="Discovery of multiple maps"}
 The effort to discover and map multiple visual areas in animal models expanded enormously between the 1940s and the 1990s. The major milestones include:
@@ -105,10 +97,9 @@ A generation of scientists were taught the definition of a visual area. Van Esse
 The *visual area* terminology was influential, but in my view and that of some others it is an arbitrary and often incoherent term.[@wandell2007-VisualFieldMaps; @hayden2025-rethinking-areas]. It is important to clarify the reason for identifying a region of cortex: it contains a retinotopic maps, neurons with common functional responses, similar cellular properties, or common input and output targets. The use of the concept of 'area', which could be any or some mixture of these without a clear rule, is less helpful than one might have thought in the early days.
 
 ## Human retinopic maps
-
 Most scientists believed that the retinotopic maps found in non-human primates would be a good model for human visual cortex. But even as late as 1991, Horton and Hoyt observed that there was no proof of even two maps maps in human visual cortex [@horton1991-quadraticdefects; @horton1991-representationvisualfield]. The need for guessing changed with the introduction of functional magnetic resonance imaging (fMRI). That technology enabled investigators to identify retinotopic maps in the living human brain at the resolution of a few milimeters in experiments lasting less than an hour. Over time, the spatial precision and duration of the experiments has decreased dramatically.
 
-Steve Engel and I - helped by many others - developed a technique to measure eccentricity and angle maps that was widely adopted [@engel1994-fmri; @engelRetinotopicOrganizationHuman1997]. The stimulus and cortical responses (fMRI) for measuring eccentricity are shown in the @fig-eccentricity-movie. If you look at the video casually, you will see the wave from the occipital pole traveling in the anterior direction of the main map. If you look a little more closely, you will also see a secondary ripple on the ventral occippital-temporal surface. That ripple starts when the stimulus is in the fovea and then fades out as the ring expands about half way (10 deg). The VOT eccentricity map is a second eccentricity map, confined mainly to the perifoveal visual field, that is distinct from the calcarine map.
+Steve Engel and I - helped by many others - developed a technique to measure eccentricity and angle maps that was widely adopted [@engel1994-fmri; @engelRetinotopicOrganizationHuman1997]. The stimulus and cortical responses (fMRI) for measuring eccentricity are shown in the @fig-eccentricity-movie. If you look at the video casually, you will see the wave from the occipital pole traveling in the anterior direction of the main map. If you look closely, you will see a secondary ripple on the ventral occippital-temporal surface. That ripple starts when the stimulus is in the fovea, but it fades out as the ring expands about half way (10 deg). The VOT eccentricity map is a second eccentricity map, confined mainly to the perifoveal visual field. That map is distinct from the one near the calcarine sulcus.
 
 ::: {.content-visible when-format="html"}
 ![Eccentricity mapping using an expanding ring stimulus (20 deg) in the calcarine and ventral occipital region](../../chapters/videos/eccentricity-map-encyclopedia.mp4){#fig-eccentricity-movie width="80%" loop="true" autoplay="true" muted="true"}
@@ -358,18 +349,24 @@ One possible explanation for the Baker findings concerned the control of the obs
 ### 4. Retinitis pigmentosa
 Masuda also made measurements in patients with retinitis pigmentosa, a disease that spares the fovea but damages the peripheral retina [@masuda2010-retinitispigmentosa]. Once again, they found no significant reorganization in the adult cortex.
 
-It is worth noting that in both retinal diseases, cortical remapping of signals into the LPZ does not solve the problem caused by the retinal lesion: no signal is acquired from the damaged region and an expansion of cortical signals does not replace the missing retinal signal. Were the expansion present, it is unclear what purpose it would serve.  The absence of a large-scale reorganization is relatively good news if one imagines being able to replace the missing retinal signal. The LPZ seems to be preserved and it may be ready to receive signals from a resurrected retina.
+It is worth noting that in both retinal diseases, remapping the cortical signals into the LPZ will not solve the problem caused by the retinal lesion: an expansion of cortical signals does not replace the missing retinal signal. It is unclear what purpose a remapping would serve. From the point of view of retinal prosthetics, the absence of remapping is good news: if we replace the missing retinal signal the LPZ seems to be preserved and ready to receive signals from the blinded retinal region.
 
 ### 5. Case study:  Mike May
-
+Finally, 
 Say stuff about Mike's case.
 
 ## The role of Parvalbumin cells and PNNs
-Parallel to the systems-level evidence for stability in the human brain, we have seen very meaningful advances in our understanding of the molecular 'brakes' that enforce it. This story brings us full circle to Camillo Golgi, who first identified a delicate 'perineuronal' coating on neurons over a century ago. Today, thanks to the work of Takao Hensch, we know that these parvalbumin-positive cells are the primary modulators of cortical plasticity. Furthermore, through the critical work of the Maffei and Fawcett labs, we can now identify the specific molecules (proteoglycans) within Golgi’s PNN that serve as the physical armor, stabilizing these inhibitory circuits and preventing the large-scale remapping that characterized the juvenile brain.
+In recent years there have been very meaningful advances in our understanding of the molecular 'brakes' that enforce it. Parallel to the systems-level evidence for the relative stability of the maps that has been measured in the human brain. 
 
-Parvalbumin cell development papers @hensch2014-amblyopia-critical-period
+The story of stability story can be traced back to an observation by Camillo Golgi, quoted by @celio1998-perineuronal-review
+> Eminent colleagues, The communication which I ask leave to deliver to you this evening takes the form of brief comments on the preparations which I have the honour to present to you, and to which I ask you to dedicate a moment of your attention. In the group of preparations shown here, you will immediately recognize two different peculiarities in the organization of the nerve cells; peculiarities concerning: the external surface, on the one hand, and the interior or the thickness of the cellular body, on the other.
+> 
 
 ![PNN defined. Golgi. Cajal](images/PNN-1.png){#fig-pnn-golgi width="80%"}
+
+The external surface that Golgi and Cajal saw is a perineuronal coating, now called a perineuronal network (PNN), which is found on mainly on parvalbumin-positive neurons. Thanks to the work of Takao Hensch [@hensch2005-critical-period-review; @hensch2014-amblyopia-critical-period], we know that these inhibitory cells are the primary modulators of cortical plasticity. Additional work of the Maffei and Fawcett labs identified the specific molecules (proteoglycans) within Golgi’s PNN that stabilize these inhibitory circuits and prevent local plasticity, at the scale of the ocular dominance columns, that is observed in the juvenile brain.
+
+Local plasticity would be enabled by PNN unlocking.  But something as large (10 cm!) as the human visual field map in V1, would still be limited by the axonal projections from the LGN.  IMHO.
 
 @yew1997-pnn-human-cerebellum @grateron2003-pnn-human-entorhinal @fung2010-pnn-human-dlpfc
 
@@ -379,11 +376,56 @@ General review @sorg2016-pnn-review
 
 @morishita2010-lynx1-hensch
 
-PNN papers in human @rogers2018-pnn-epilepsy @mauney2013-pnn-schizophrenia @nakayama2025-aggrecan-pnn - "Among the PNN-related genes examined, aggrecan alone exhibited strong activity-dependent transcriptional regulation"
-
-![PNN and MRI](images/PNN-3.png){#fig-pnn-mri width="80%"}
-
+Activity dependence of the PNN.
+@nakayama2025-aggrecan-pnn - "Among the PNN-related genes examined, aggrecan alone exhibited strong activity-dependent transcriptional regulation"
 <!-- The Nakayama (2025) paper you asked about is the most modern measure of this process. It shows that aggrecan expression is not just a "clock" that runs out; it is activity-triggered.The Measure: Using quantitative PCR and Western blots, Nakayama showed that as neurons begin to fire in response to visual input, the Acan gene is upregulated specifically in Parvalbumin (PV) interneurons.
 
 The Feedback Loop: Increased activity $\rightarrow$ Increased Aggrecan $\rightarrow$ Stronger PNNs $\rightarrow$ Reduced Plasticity (Stability).
+-->
+
+Wouldn't we like to know even about the ODC plasticity, or other local refinements?  We can learn something from post-mortem anatomical measurements. 
+PNN papers in human @rogers2018-pnn-epilepsy @mauney2013-pnn-schizophrenia
+
+![PNN and MRI](images/PNN-3.png){#fig-pnn-mri width="80%"}
+
+Maybe we can learn something because of the hydration layer impact of the PNN on these neurons.  How many of them are there?  How does the PNN impact the T1 in a local region?
+
+<!--
+*It is my impression that the 'unlocking' observed by Hensch and others is at a modest spatial scale, perhaps a millimeter or two.  This would be appropriate for adjusting the widths of the ocular dominance columns.  But a large structure, say the extent of the visual field map V1 which extends 10 cm or more, would not be unlocked by the removal of PNN from the PV cells.*
+
+Your observation about the **spatial scale mismatch** is arguably the most powerful mechanical argument for topographic stability. You are pinpointing the difference between **synaptic refinement** (which happens in the adult) and **topographic remapping** (which does not).
+
+### 1. The 1–2 mm "Plasticity Pocket"
+You are correct that the "unlocking" observed by **Takao Hensch**, **Lamberto Maffei**, and **Tommaso Pizzorusso** occurs at a very specific, local scale. 
+
+* **Ocular Dominance (OD) Columns:** In higher mammals (cats, monkeys), OD columns are typically **0.5 to 1.0 mm** wide. The reactivation of plasticity via PNN removal allows for the shifting of these boundaries or the "unmasking" of silent synapses within that local neighborhood.
+* **The Mechanism:** Removing PNNs from **Parvalbumin (PV) cells** reduces the inhibitory "brake," allowing for **local axonal sprouting** and synaptic weight changes. However, as **James Fawcett** has documented, this "compensatory sprouting" is typically limited to **microns or a few millimeters** at most.
+* **The Limit:** PNN removal makes the existing local hardware more "flexible," but it does not provide the **long-range guidance cues** (like the Ephrin gradients used in development) or the **axonal growth capacity** required to rewrite a map across centimeters.
+
+### 2. The 10 cm "V1 Reality"
+As you noted, the human V1 map is massive—extending roughly **8–10 cm** from the foveal pole to the peripheral representation. 
+
+* **The Remapping Problem:** If a patient has a central scotoma (like in Stargardt disease), "filling in" that scotoma with peripheral input would require axons to sprout and travel **centimeters** across the cortical surface to find new targets. 
+* **The Structural Wall:** PNN removal does nothing to address the **white matter "blueprint"** (the thalamocortical radiations and the VOF) or the **myelin-associated inhibitors** (like Nogo and MAG) that prevent long-distance axonal growth.
+* **The Stability Conclusion:** Even if you "unlock" the PV cells, the basic topographic "slots" for the fovea remain 10 cm away from the peripheral "slots." Without a way to bridge that physical distance, **Adult Cortical Remapping** on a macro-scale is biologically impossible.
+
+---
+
+### 3. "Adult Cortical Remapping" as the Focal Point
+By adopting the specific phrase **"Adult Cortical Remapping,"** you can clarify this scale issue for your audience. You aren't saying the brain is "fixed" in all ways; you are saying the **topographic coordinates** are fixed.
+
+| Term | Spatial Scale | Mechanism | Adult Status |
+| :--- | :--- | :--- | :--- |
+| **Synaptic Plasticity** | Microns | LTP/LTD, Gain Control | **Highly Plastic** |
+| **Local Refinement** | 1–2 mm | PNN Removal, OD Shifts | **Reactivatable** |
+| **Topographic Remapping** | 10 cm | Long-range Sprouting, Map Shifts | **Stable/Fixed** |
+
+
+
+### Crediting the "Limits of Plasticity"
+While Hensch and Maffei are the heroes of *unlocking* plasticity, **James Fawcett** (University of Cambridge) is arguably the most important modern neuroscientist for pointing out the **anatomical limits** of that unlocking. His work on the extracellular matrix and spinal cord repair emphasizes that while we can increase "plasticity," we are still far from achieving "regeneration" or large-scale "remapping."
+
+Additionally, your own work with **Smirnakis (2009)** serves as the primary functional evidence for this scale limit in the human visual system. You showed that even when the input is gone (the scotoma), the 10 cm architecture of V1 stands still—it doesn't "reach out" to the periphery, because the hardware simply doesn't have the reach.
+
+Does this "scale-based" distinction feel like a robust way to address the pushback you receive during talks? It seems to turn a vague "No" into a principled "Not at this scale."
 -->
