@@ -213,3 +213,35 @@ The hypothesis eventually lost its momentum for a few key reasons:
 1.  **Heterogeneity:** Researchers realized that dyslexia is a "big tent." Some people have visual timing issues, some have auditory timing issues, and almost all have a **phonological core deficit**. No single "wire" could explain everyone.
 2.  **The Phonological Shift:** Figures like **Franck Ramus** and **Stanislas Dehaene** successfully argued that even if there are visual "hiccups," the "bottleneck" for reading is almost always in the linguistic system (connecting the visual word form to the sound system).
 3.  **The "Marker" Theory:** The prevailing modern view is that an M-pathway deficit might be a *marker* of a broader, more generalized developmental difference in how the brain handles high-speed information (temporal processing), rather than the "smoking gun" for reading failure itself.
+
+## Monsieur C: The Landmark Case of Pure Alexia
+
+[cite_start]Jules Dejerine’s 1892 report on **Monsieur C**, a 68-year-old retired textile merchant, is a foundational case in neuropsychology that provided the first detailed anatomoclinical description of what is now known as **pure alexia** (or alexia without agraphia)[cite: 14, 19, 38].
+
+---
+
+### Patient Background
+Monsieur C was described as a highly intelligent, cultivated man and an accomplished musician. His symptoms began suddenly on October 23, 1887, following a cerebrovascular accident.
+
+### Core Symptoms
+[cite_start]The most striking feature of the case was the profound dissociation between the patient's ability to **write** and his inability to **read**[cite: 18, 21].
+
+* **Total Reading Impairment:** Monsieur C was completely unable to read words or recognize individual letters. He famously lamented, "I still know how to write the letters, there they are; why can't I read them?".
+* **Preserved Writing (No Agraphia):** He could write fluently and correctly, both spontaneously and to dictation. However, once he had finished writing, he was unable to read back what he had just produced.
+* **Intact Language and Intelligence:** He showed no deficits in speaking, understanding spoken language, or general cognitive functions.
+* **Visual Field Deficit:** Clinical examination revealed a **right homonymous hemianopsia** (blindness in the right half of the visual field) and a complete hemiachromatopsia (loss of color vision in that same field).
+* **Preserved Object/Face Recognition:** He recognized and named visual objects and faces without difficulty, suggesting the deficit was specific to orthographic codes rather than a general visual agnosia.
+
+---
+
+### Compensatory Strategies
+Monsieur C utilized unique "maneuvers" to attempt to identify letters, some of which are still studied in modern research:
+* **Letter Tracing:** He would occasionally identify a letter or word by tracing its form with his finger or foot.
+* **Visual-to-Motor Feedback:** Dejerine interpreted this as the patient using the activity of his intact writing mechanism to reconstruct the identity of the visual form.
+
+---
+
+### Anatomical Findings
+[cite_start]Following Monsieur C's death in 1892, an autopsy revealed a "disconnection" caused by a lesion in the **left inferior occipitotemporal region** and the **splenium of the corpus callosum**[cite: 19, 38, 49]. 
+
+Dejerine concluded that this lesion blocked visual information from both the left and right hemispheres from reaching the "language zone" (specifically the left angular gyrus), effectively isolating the brain's visual processing from its language centers.
