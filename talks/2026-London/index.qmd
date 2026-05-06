@@ -219,17 +219,8 @@ Plasticity relateds to functional specializations via the Dehaene claims about '
 ## Modern summary of map clusters
 Over time, I have found the Felleman and Van Essen diagram less than helpful for several reasons. First, the diagram makes no distinction between retinoptic maps and 'visual areas'; I find the visual area terminology to be fraught. Second, the diagram omits the modern functional specializations that have been identified in the human visual cortex. Third, the map emphasizes the hierarchy concept strongly, but I am not confident about the flow of information. Finally, the diagram omits the subcortical systems which have become become increasingly important in teaching with the discovery of the ipRGCs.
 
-De-emphasize the hierarchy of maps in favor of the clusters, because some of the clusters receive a very early signal from the retina. [@jacques2025-non-hierarchical; @markov2013-hierarchicalanatomy]
-
-::: {#fig-multipane layout-ncol="2"}
-![Zeki image](images/Slide32.png){#fig-zeki-specialization width="80%"}
-
-![Grill-spector specialization](images/Slide34.png){#fig-weiner-specialization width="80%"}
-
-![Clusters and subcortical](images/fve-updated-cluster.png){#fig-clusters-specialization width="80%"}
-
-Here is the main caption that applies to the entire figure group. Also, look at the images in this atlas from Goebel. @rosenke2021-atlas
-:::
+![De-emphasize the hierarchy of maps in favor of the clusters, because some of the clusters receive a very early signal from the retina. Add subcortical and also cortical specializations [@jacques2025-non-hierarchical; @markov2013-hierarchicalanatomy]
+Also, look at the images in the atlas from Goebel. @rosenke2021-atlas](images/fve-updated-cluster.png){#fig-clusters-specialization width="80%"}
 
 # Experience-dependent map reorganization: Adult
 <!--
@@ -270,7 +261,9 @@ We too were puzzled about the difference and decided to study the literature, wh
 
 ![This review paper [@wandell2009-plasticity-stability] describes a series of experimental conflicts in papers that found topographic remapping in adult visual cortex. These are discussed in detail in the review paper.](images/review-disputes.png){#fig-disputes width="80%"}
 
-Given what is known about cortical development, the idea of large-scale adult remapping did seem like a long-shot (@nte-map-development); which is why so many people found it exciting. The anatomical infrastructure for the maps is laid down by the white matter connections and they are in place before the retina is functional. @crowley2000-early-development-od showed that even finer anatomical inputs - the basis of the ocular dominance (OD) columns - are in place before the eyes open (in ferret). They showed that even after removing the eyes before birth, the thalamocortical projections from the LGN still segregate into eye-specific cortical columns. Molecular cues that are part of the developmental program are sufficient to establish the ODC anatomy. The experience-dependent changes Hubel and Wiesel observed modulated the ODC widths by a few hundred microns, but there was nothing at the scale of remapping. 
+Given what is known about cortical development, the idea of large-scale adult remapping seemed like a long-shot (@nte-map-development); which is why so many people found it exciting. The anatomical infrastructure for the maps is laid down by the white matter connections. The axons find their target (the "correct neighborhood") early in development [@feldheim2000-map-development-molecules; @mcLaughlin2003-map-sharpening]. This is true broadly, not just for the visual maps [@agmon1993-development-maps; @huberman2008-review-maps; @mclaughlin2005-molecular-gradients-development].
+
+@crowley2000-early-development-od showed that even finer anatomical inputs - the basis of the ocular dominance (OD) columns - are in place before the eyes open (in ferret). They showed that even after removing the eyes when the retinal waves would be (postnatal days 0 to 15 in ferret; equivalent to embryonic days 42-57 in cat), the thalamocortical projections from the LGN still segregate into eye-specific cortical columns. Molecular cues that are part of the developmental program are sufficient to establish the ODC anatomy. The experience-dependent changes Hubel and Wiesel observed modulated the ODC widths by a few hundred microns, but there was nothing at the scale of remapping. 
 
 ::: {.callout-note #nte-map-development title="How maps develop"}
 To understand what would be required for remapping, it is useful to understand how the anatomy that supports the maps develop. The axonal connections develop through a series of critical stages that connect the axons carrying signals between the principal structures (retina, LGN, V1).
@@ -294,7 +287,7 @@ In summary, fMRI methods are capable of measuring and quantifying key aspects of
 ### 1. Achiasmia
 A particularly striking case of developmental plasticity in the visual system occurs when the retinal axons fail to find their way to the lateral geniculate. In most people, there is a standard crossing pattern in which the optic nerve axons from each nasal retina cross to the opposite hemisphere at the *optic chiasm* (@fig-chiasm). In a small number of people, the molecular guidance for this crossing fails and the optic chiasm never develops (@fig-achiasm). In these individuals, the retinal axons stay within the same hemisphere so that the right eye projects to the right hemisphere and the left to the left [@victor2000-achiasma; @prakash2010-achiasmic; @hoffmann2012-achiasma].
 
-::: {#fig-chiasmic-subject layout-ncol="2"}
+::: {#fig-chiasmic-subject layout-nrow="2"}
 ![Typical chiasm](images/optic-chiasm.png){#fig-chiasm width="80%"}
 
 ![Missing chiasm](images/optic-achiasm.png){#fig-achiasm width="80%"}
@@ -322,22 +315,19 @@ Even in the presence of such a large anatomical mis-wiring, and the correspondin
 -->
 
 ### 2. Achromatopsia - rod monochromats
-
-After learning how to measure human retinotopic maps, we began exploring potential cases of remapping in people. Heidi Baseler and I were aware of work by our colleagues at UC Berkeley with individuals with a relatively rare condition, rod monochromacy. Heidi made measurements in three such individuals. A problem with our original study was that only one of the subject was genetically screened to be a true rod monochromat. The other two had some minimal cone function. We reported that the foveal representation was responsive in these individuals, suggesting that a developmental loss of cone function might produce a remapping. This finding was accepted and reported in subsequent authoritative reviews [@hoffmann2015-TICS-review][^2]
+After learning how to measure human retinotopic maps, we began exploring potential cases of remapping in people. Heidi Baseler and I were aware of work by our colleagues at UC Berkeley with individuals with a relatively rare condition, rod monochromacy. Heidi made measurements in three such individuals. A problem with our original study was that only one of the subject was genetically screened to be a true rod monochromat. The other two had minimal, but some, cone function. We reported that the foveal representation was responsive in these individuals, suggesting that a developmental loss of cone function might produce a remapping. This finding was accepted and reported in subsequent authoritative reviews [@hoffmann2015-TICS-review][^2]
 
 [^2]: We thought acquired foveal lesions would not fill in, but developmental was different. Alas, we were wrong and fortunately after a few years Heidi straightened us out.  "In adults, the deafferented cortical foveal representation in rod achromatopsia is not silent, but driven by parafoveal input [@baseler2002-rod-monochromats]. In essence, the visual field maps are preserved, but only represent retina covered with functional photoreceptors, that is rods [@hoffmann2015-TICS-review]."
 
-Twenty years on, the matter was taken up again by Baseler and colleagues, using much better screening method [@molz2023-achromatopsiavisualCortexStability2023]. They found, contrary to our original measurement, that iindividuals who could be absolutely identified as having only rods had a silent foveal projection zone. Thus, even in this case of development the cortical map organization - which is initiated before the retina is functional \[shatz1992-developingbrain with that guy from duke who died sadly\] is not altered. The absence of foveal input does not cause the map to be reorganized. The initial map organization appears to be quite stable in the absence of any input. Quote Molz here.
+Twenty years on, the matter was taken up again by Baseler and colleagues, using much better screening method [@molz2023-achromatopsiavisualCortexStability2023]. Contrary to our original report, they found that individuals genetically classified as having only rods had a silent foveal projection zone. In returning to the @baseler2002-rod-monochromats paper, I could see that the one person we had securely identified as rod-only did seem different from the other two.  He had no real filling-in of the foveal projection zone, while the other two we emphasized did have filling-in.  
 
-@molz2023-achromatopsiavisualCortexStability2023 \> Remapping of the cortical representation of the central visual field is not a general feature in achromatopsia.
+In this developmental case the cortical map organization - which is initiated before the retina is functional [@molnar1995-early-map-development] is not altered. The absence of foveal input from the retina does not cause a major remapping.
 
-Gene therapy
+> Remapping of the cortical representation of the central visual field is not a general feature in achromatopsia.  [@molz2023-achromatopsiavisualCortexStability2023]
 
-@mckytonCorticalVisualMapping2021 Netta a co-author. They focus on color. 
-
-<!--
-The possibility that the adult human brain may regain or develop function following correction of congenital deafferentation has fired the imagination of scientists over the years. In the visual domain, cases of recovery from congenital deficits are rare. Gene therapy visual restoration for congenital  CNGA3-achromatopsia, a disease caused by cone photoreceptor dysfunction, gave us the opportunity to examine cortical function, to the best of our knowledge for the first time, both before and after restorative treatment. While behaviorally only minor improvements were observed post-treatment, fMRI analysis, including size algorithms of population-receptive fields, revealed cortical changes, specifically receptive field size decrease in the treated eyes. This suggests that, at least to some degree, the adult cortex is able to encode new input.
--->
+It is worth nothing that this question already has some practical, clinical interest. The possibility that the adult human brain may regain or develop function following correction of congenital deafferentation has fired the imagination of scientists over the years. In the visual domain, cases of recovery from congenital deficits are rare. Gene therapy visual restoration for congenital  CNGA3-achromatopsia, a disease caused by cone photoreceptor dysfunction, gave us the opportunity to examine cortical function, to the best of our knowledge for the first time, both before and after restorative treatment. While behaviorally only minor improvements were observed post-treatment, fMRI analysis, including size algorithms of population-receptive fields, revealed cortical changes, specifically receptive field size decrease in the treated eyes. This suggests that, at least to some degree, the adult cortex is able to encode new input.
+  
+An example comes from a paper by [@mckytonCorticalVisualMapping2021].
 
 ### 3. Macular degeneration
 Further measurements of map plasticity have been made in the adult brain following the onset of different types of retinal disease that create retinal lesions. One might expect to see remapping in such individuals, perhaps by filling in the lesion projection zone (LPZ) corresponding to the disease.
@@ -352,8 +342,11 @@ Masuda also made measurements in patients with retinitis pigmentosa, a disease t
 It is worth noting that in both retinal diseases, remapping the cortical signals into the LPZ will not solve the problem caused by the retinal lesion: an expansion of cortical signals does not replace the missing retinal signal. It is unclear what purpose a remapping would serve. From the point of view of retinal prosthetics, the absence of remapping is good news: if we replace the missing retinal signal the LPZ seems to be preserved and ready to receive signals from the blinded retinal region.
 
 ### 5. Case study:  Mike May
-Finally, 
-Say stuff about Mike's case.
+Finally, I want to draw your attention to the case of Michael May.  Much has been written about Mike, including an entire book *Crashing Through* which describes many aspects of his life including his experience with sight restoration.
+
+As a three year-old child, Mike had a serious accident.  He was in thegarage of his family's new home. He found a jar on a shelf and, with the curiosity of a three-year-old, decided to play with it—essentially trying to "clean" it or use it as a container. The jar contained a chemical commonly used in miners' lamps, calcium carbide. When it comes into contact with water, it creates a highly volatile acetylene gas. In an attempt to wash the jar or experiment with it, Mike introduced water and the resulting catastrophic explosion was very damaging. He required roughly 300 stitches in his body and face, and he spent six months in the hospital. The explosion destroyed both corneas and destroyed one of his retinae. He was left with almost no contrast vision and only minimal light perception in his remaining eye for the next 43 years.
+
+When [@levin2010-mikemay] ...
 
 ## The role of Parvalbumin cells and PNNs
 In recent years there have been very meaningful advances in our understanding of the molecular 'brakes' that enforce it. Parallel to the systems-level evidence for the relative stability of the maps that has been measured in the human brain. 
