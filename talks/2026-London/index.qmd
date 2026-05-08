@@ -342,10 +342,9 @@ Masuda also made measurements in patients with retinitis pigmentosa, a disease t
 It is worth noting that in both retinal diseases, remapping the cortical signals into the LPZ will not solve the problem caused by the retinal lesion: an expansion of cortical signals does not replace the missing retinal signal. It is unclear what purpose a remapping would serve. From the point of view of retinal prosthetics, the absence of remapping is good news: if we replace the missing retinal signal the LPZ seems to be preserved and ready to receive signals from the blinded retinal region.
 
 ### 5. Case study:  Mike May
-There is a long history of what happens to peole who have been deprived of vision from birth, usually because of cataracts or other optical distortions, but have then had their sight restored by an intervention.  The earliest case, @cheselden1728-recovered-sight, and the more recent examples, [@gregory1963-recovered-sight; @valvo1971-visualrehab; @sacks1993-recovered-sight] have been well-documented and consistent. Normal vision function is rarely restored. A more optimistic take is provided by SInha and his colleagues, who created [Project Prakash](https://www.projectprakash.org/). There are several more optimistic papers [@ostrovsky,@ostrovsky,@held]. 
+There is a long history of what happens to peole who have been deprived of vision from birth, usually because of cataracts or other optical distortions, but have then had their sight restored by an intervention.  The earliest case, @cheselden1728-recovered-sight, and the more recent examples, [@gregory1963-recovered-sight; @valvo1971-visualrehab; @sacks1993-recovered-sight] have been well-documented and consistent. Normal vision function is rarely restored. 
 
 Finally, I want to draw your attention to the case of Michael May. Much has been written about Mike, including the book *Crashing Through* which describes many aspects of his life including his experience with sight restoration.
-
 
 There were two questions.  First, would high quality vision be restored by the surgery? Second, what would the responses in visual cortex. 
 
@@ -363,7 +362,13 @@ As Elizabeth Huber, Ione Fine and their collaborators documented, there were man
 
 The second question - what is happening in cortex after so many years of no contrast vision - only became possible to measure with fMRI.  Mike May was generous with his time, and Netta Levin led a series of analyses of his visual maps and the white matter.  The loss of the second eye might have completely rewired his visual cortex, but in fact we saw the basic map with some modest deviations
 
-@pedersini2023-recovered-sigh-white-matter
+@levin2010-mikemay
+
+
+
+### Project Prakash
+A more optimistic take is provided by SInha and his colleagues, who created [Project Prakash](https://www.projectprakash.org/). There are several more optimistic papers, and these certainly may be correct for certain cases [@ostrovsky,@ostrovsky,@held]. Project Prakash has included people of with sight lost and gained at a wide range of ages and with a wide range of deficits. The measurements are mainly behavioral, but there are some neuroimaging assessments including assessments of the white matter
+@pedersini2023-recovered-sightwhite-matter
 
 <!--
 Gemini about: An Anthropologist on Mars
