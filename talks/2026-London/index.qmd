@@ -342,28 +342,25 @@ Masuda also made measurements in patients with retinitis pigmentosa, a disease t
 It is worth noting that in both retinal diseases, remapping the cortical signals into the LPZ will not solve the problem caused by the retinal lesion: an expansion of cortical signals does not replace the missing retinal signal. It is unclear what purpose a remapping would serve. From the point of view of retinal prosthetics, the absence of remapping is good news: if we replace the missing retinal signal the LPZ seems to be preserved and ready to receive signals from the blinded retinal region.
 
 ### 5. Case study:  Mike May
-There is a long history of what happens to peole who have been deprived of vision from birth, usually because of cataracts or other optical distortions, but have then had their sight restored by an intervention.  The earliest case, @cheselden1728-recovered-sight, and the more recent examples, [@gregory1963-recovered-sight; @valvo1971-visualrehab; @sacks1993-recovered-sight] have been well-documented and consistent. Normal vision function is rarely restored. 
+People who are deprived of vision from birth — most often due to cataracts or other optical distortions — and later have their sight restored provide a natural experiment on visual development. The earliest documented case is @cheselden1728-recovered-sight, and more recent cases [@gregory1963-recovered-sight; @valvo1971-visualrehab; @sacks1993-recovered-sight] tell a consistent story: restoring a clear retinal image rarely restores normal vision.
 
-Finally, I want to draw your attention to the case of Michael May. Much has been written about Mike, including the book *Crashing Through* which describes many aspects of his life including his experience with sight restoration.
+The case of Michael May is one of the most thoroughly studied. His story is told in the book *Crashing Through*, and it raises two sharp questions: Would surgery restore high-quality vision? And what would fMRI reveal about visual cortex after decades without contrast input?
 
-There were two questions.  First, would high quality vision be restored by the surgery? Second, what would the responses in visual cortex. 
+![Contrast sensitivity in recovered-sight patients over the years.](images/recovered-sight-historical.png){#fig-recovered-sight-historical width="80%"}
 
-![Recovered sight measurements over the years](images/recovered-sight-historical.png){#fig-recovered-sight-historical width="80%"}
+At age three, Mike found a jar in his family's garage. It contained calcium carbide, a chemical used in miners' lamps that releases highly volatile acetylene gas on contact with water. When he brought the jar to the sink, the resulting explosion was catastrophic. He required roughly 300 stitches and spent six months in the hospital. Both corneas were destroyed, as was one retina. For the next 43 years he had almost no contrast vision and only minimal light perception in his remaining eye.
 
-As a three year-old child, Mike had a serious accident.  He was in the garage of his family's new home, where he found a jar on a shelf. With the curiosity of a three-year-old, he decided to play with it—essentially trying to "clean" it or use it as a container. The jar contained a chemical commonly used in miners' lamps, calcium carbide. When it comes into contact with water, the chemical creates a highly volatile acetylene gas. In an attempt to wash the jar or experiment with it, Mike introduced water resulting in a very damaging explosion. Mike required roughly 300 stitches in his body and face, and he spent six months in the hospital. The explosion destroyed both corneas and destroyed one of his retinae. 
+Early attempts to replace the damaged cornea and lens failed. A new procedure developed by Dr. Holland — involving the transplantation of limbal stem cells — eventually made surgery feasible. In March 2000, corneal specialist Dr. Daniel Goodman performed the operation in San Francisco. It succeeded: the new cornea and lens delivered a clear image to the retina.
 
-Mike was left with almost no contrast vision and only minimal light perception in his remaining eye for the next 43 years. Attempts to replace his cornea and lens failed.  Then a new procedure, developed by Dr. Holland, that included implanting limbic stem cells was developed. Mike signed up for it and in March 2000 Dr. Daniel Goodman, a corneal specialist based in San Francisco, performed the surgery. The procedure succeeded and the cornea and retina provided a good image to the remaining retina. 
+![Michael May when Dr. Goodman opened his repaired eye and he saw his wife for the first time.](images/recovered-sight-mm-open.png){#fig-recovered-sight-mm-open width="80%"}
 
-![Michael May at the time Dr. Goldman opened his repaired eye and he could see his wife.](images/recovered-sight-mm-open.png){#fig-recovered-sight-mm-open width="80%"}
+Yet, as Elizabeth Huber, Ione Fine, and their collaborators documented, restoring retinal image quality did not restore normal vision @huber2015-mikemay. Consistent with the historical literature, Mike's contrast sensitivity function remained severely impaired despite years of follow-up.
 
-As Elizabeth Huber, Ione Fine and their collaborators documented, there were many aspects of Mike May's vision that remained problematic @huber2015-mikemay. Consistent with the historical literature, providing the better contrast image at the retina did not result in a better contrast sensitivity function. Examples of the measurements over the period of several years.
+![Mike's contrast sensitivity measured over the years following corneal and lens restoration.](images/recovered-sight-csf.png){#fig-recovered-sight-csf width="80%"}
 
-![Contrast sensitivity measured in Mike in the years following the restoration of his cornea and lens.](images/recovered-sight-csf.png){#fig-recovered-sight-csf width="80%"}
-
-The second question - what is happening in cortex after so many years of no contrast vision - only became possible to measure with fMRI.  Mike May was generous with his time, and Netta Levin led a series of analyses of his visual maps and the white matter.  The loss of the second eye might have completely rewired his visual cortex, but in fact we saw the basic map with some modest deviations
+The second question — what had happened to visual cortex after 43 years without contrast input? — required fMRI to answer. Mike generously gave his time for scanning, and Netta Levin led the analyses of his visual field maps and white matter pathways. Despite the long deprivation and the loss of one eye, the basic retinotopic map was preserved, with only modest deviations from normal.
 
 @levin2010-mikemay
-
 
 
 ### Project Prakash
