@@ -1,4 +1,4 @@
-![](front-isetbio-notext.png){fig-align="center" width="80%"}
+![](chapters/front-isetbio-notext.png){fig-align="center" width="80%"}
 
 # How to study vision 
 
