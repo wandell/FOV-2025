@@ -389,50 +389,48 @@ The main graph shows MM’s estimated population receptive field sizes as a func
 Levin's paper also examined various structural aspects of the white matter, suggesting that there is a significant change in the inter-hemispheric callosal fibers from the occipital lobe [@levin2010-mikemay].
 
 ### Sacks' report on Virigl:  To see or not to see
-In an essay ('To see or not to see') that is included in his book, *An Anthropologist on Mars*, Oliver Sacks describes a case much like that of Michael May [@sacks1993-recovered-sight; @sacks1995-anthropologist-mars].  The experience of the subject of his essay, Virgil, is described as a catastrophe rather than a miracle. Virgil could see colors and movement, but he could not make sense of objects or faces — Virgil was "blind" to meaning.  This caused great distress, just as Valvo reported @valvo reported for many of the patients in another 'miracle cures' exploration of recovered sight. Sacks suggests that Virgil's visual cortex had stabilized in a non-visual state, and the 45-year gap meant the critical period, which he called the "instructional window" for building functional maps had long since closed.
+In an essay ('To see or not to see') that is included in his book, *An Anthropologist on Mars*, Oliver Sacks describes a case much like that of Michael May [@sacks1993-recovered-sight; @sacks1995-anthropologist-mars].  The experience of the subject of his essay, Virgil, is described as a catastrophe rather than a miracle. Virgil could see colors and movement, but he could not make sense of objects or faces — Virgil was "blind" to meaning.  This caused great distress, just as Valvo reported @valvo1971-visualrehab reported for many of the patients in another 'miracle cures' exploration of recovered sight. Sacks suggests that Virgil's visual cortex had stabilized in a non-visual state, and the 45-year gap meant the critical period, which he called the "instructional window" for building functional maps had long since closed.
 
 ### Project Prakash
-A different take is provided by SInha and his colleagues, who created [Project Prakash](https://www.projectprakash.org/). They emphasize a likely case of behavioral improvements and perhaps adult cortical plasticity for certain cases [@ostrovsky2009-recovered-sight-parsing; @ostrovsky2009-recovered-sight; @gandhi2017-recovered-sight-face]. In particular, Project Prakash includes people who lost and gained sight over a wide range of ages, and who have a wide range of deficits. 
+A different take is provided by SInha and his colleagues, who created [Project Prakash](https://www.projectprakash.org/). They emphasize a likely case of behavioral improvements and perhaps adult cortical plasticity for certain cases [@ostrovsky2006-recovered-sight; @ostrovsky2009-recovered-sight-parsing; @gandhi2017-recovered-sight-face]. In particular, Project Prakash includes people who lost and gained sight over a wide range of ages, and who have a wide range of deficits. 
 
 Most of the published reports concern behavioral improvements, the authors initially found that prominent figural cues of grouping, such as good continuation and junction structure, were largely ineffective for image parsing. By contrast, motion cues were of profound significance in that they enabled intraobject integration and facilitated the development of object representations that permitted recognition in static images. Following 10 to 18 months of visual experience, the individuals' performance improved, and they were able to use the previously ineffective static figural cues to correctly parse many static scenes. These results suggest that motion information plays a fundamental role in organizing early visual experience and that parsing skills can be acquired even late in life.
 
 The measurements are mainly behavioral, but there are some neuroimaging assessments including assessments of the white matter [@pedersini2023-recovered-sight-white-matter].
 
-
 ## The role of Parvalbumin cells and PNNs
-In recent years there have been very meaningful advances in our understanding of the molecular 'brakes' that enforce it. Parallel to the systems-level evidence for the relative stability of the maps that has been measured in the human brain. 
+In recent years there have been substantial advances in our understanding of the molecular mechanisms that enforce local stability. These findings provide an understanding of why there may be relative stability of the relative fine resolution features, such as ocular dominance columns and receptive field properties. 
 
-The story of stability story can be traced back to an observation by Camillo Golgi, quoted by @celio1998-perineuronal-review
+The stability mechanisms can be traced back to an observation by Camillo Golgi, quoted by @celio1998-perineuronal-review
+
 > Eminent colleagues, The communication which I ask leave to deliver to you this evening takes the form of brief comments on the preparations which I have the honour to present to you, and to which I ask you to dedicate a moment of your attention. In the group of preparations shown here, you will immediately recognize two different peculiarities in the organization of the nerve cells; peculiarities concerning: the external surface, on the one hand, and the interior or the thickness of the cellular body, on the other.
-> 
+
+The external surface that Golgi and Cajal saw is a perineuronal coating, now called a perineuronal network (PNN), which is found on mainly on parvalbumin-positive neurons (@fig-pnn-golgi). 
 
 ![PNN defined. Golgi. Cajal](images/PNN-1.png){#fig-pnn-golgi width="80%"}
 
-The external surface that Golgi and Cajal saw is a perineuronal coating, now called a perineuronal network (PNN), which is found on mainly on parvalbumin-positive neurons. Thanks to the work of Takao Hensch [@hensch2005-critical-period-review; @hensch2014-amblyopia-critical-period], we know that these inhibitory cells are the primary modulators of cortical plasticity. Additional work of the Maffei and Fawcett labs identified the specific molecules (proteoglycans) within Golgi’s PNN that stabilize these inhibitory circuits and prevent local plasticity, at the scale of the ocular dominance columns, that is observed in the juvenile brain.
-
-Local plasticity would be enabled by PNN unlocking.  But something as large (10 cm!) as the human visual field map in V1, would still be limited by the axonal projections from the LGN.  IMHO.
-
-@yew1997-pnn-human-cerebellum @grateron2003-pnn-human-entorhinal @fung2010-pnn-human-dlpfc
-
-General review @sorg2016-pnn-review 
+ We know that these inhibitory cells are the primary modulators of cortical plasticity [@hensch2005-critical-period-review; @morishita2010-lynx1-hensch; 
+@hensch2014-amblyopia-critical-period]. Additional work from Maffei and Fawcett labs identified the specific molecules (proteoglycans) within Golgi’s PNN that stabilize these inhibitory circuits and prevent local plasticity that is observed in the juvenile brain [@sorg2016-pnn-review].  Various post-mortem analyses of the human brain reveal that the PNNs are established at different times in different locations within the brain, including some that stabilize at the age of 8 years old or so, coincident with Hubel and Wiesel's critical period [@rogers2018-pnn-epilepsy; @mauney2013-pnn-schizophrenia; @yew1997-pnn-human-cerebellum; @grateron2003-pnn-human-entorhinal; @fung2010-pnn-human-dlpfc].
 
 ![PNN aggrecan](images/PNN-2.png){#fig-pnn-molecules width="80%"} 
 
-@morishita2010-lynx1-hensch
+Finally, very recently, we are learning more about the causal mechanisms for building the stability.  Specifically, there is some activity dependence of the PNN development, and that "Among the PNN-related genes examined, aggrecan alone exhibited strong activity-dependent transcriptional regulation [@nakayama2025-aggrecan-pnn]".
 
-Activity dependence of the PNN.
-@nakayama2025-aggrecan-pnn - "Among the PNN-related genes examined, aggrecan alone exhibited strong activity-dependent transcriptional regulation"
 <!-- The Nakayama (2025) paper you asked about is the most modern measure of this process. It shows that aggrecan expression is not just a "clock" that runs out; it is activity-triggered.The Measure: Using quantitative PCR and Western blots, Nakayama showed that as neurons begin to fire in response to visual input, the Acan gene is upregulated specifically in Parvalbumin (PV) interneurons.
 
 The Feedback Loop: Increased activity $\rightarrow$ Increased Aggrecan $\rightarrow$ Stronger PNNs $\rightarrow$ Reduced Plasticity (Stability).
 -->
 
-Wouldn't we like to know even about the ODC plasticity, or other local refinements?  We can learn something from post-mortem anatomical measurements. 
-PNN papers in human @rogers2018-pnn-epilepsy @mauney2013-pnn-schizophrenia
+## Summary
+A working hypothesis, then, looks something like this. Regularities at the relatively large scale, say multiple centimeters such as the human visual field map in V1, is largely settled by the long-range axonal projections.  These are mainly established during the earliest stages of development - except when they are not (e.g., achiasmia).
+
+The fine tuning of the neural networks is activity dependent, coming into shape to establish features such as receptive fields and local architecture (layers, ocular dominance columns). The activity dependence is reduced over time, as the PNNs form to stabilize the neurons. 
+
+An interesting question for those of us who study the human brain is this:  Can we help establish or contradict this role of the PNNs using non-invasive methods, such as MRI? 
 
 ![PNN and MRI](images/PNN-3.png){#fig-pnn-mri width="80%"}
 
-Maybe we can learn something because of the hydration layer impact of the PNN on these neurons.  How many of them are there?  How does the PNN impact the T1 in a local region?
+It seems that we might be able to learn something about the PNNs because of their location, covering the surface membranes of critical neurons. The surface - referred to as the hydration layer - is a site that strongly impacts the T1 property measured in magnetic resonance.  Perhaps through some careful study, we might be able to make in vivo measurements that inform us about the PNN in different locations and different times in development. This development might inform us about healthy development, plasticity, and stability.
 
 <!--
 *It is my impression that the 'unlocking' observed by Hensch and others is at a modest spatial scale, perhaps a millimeter or two.  This would be appropriate for adjusting the widths of the ocular dominance columns.  But a large structure, say the extent of the visual field map V1 which extends 10 cm or more, would not be unlocked by the removal of PNN from the PV cells.*
