@@ -274,6 +274,8 @@ To understand what would be required for remapping, it is useful to understand h
 
 After the axons are in place, @mcLaughlin2003-map-sharpening showed that this rough draft might be fine-tuned by spontaneous waves of activity in the retina that sharpen the retinotopic map, before the rods and cones are even connected to the ganglion cells. And, of course, Hubel and Wiesel showed that aspects of the functional organization is experience-dependent as well [@hubel1970-criticalperiod].
 
+@striem-amit2015-blind-functionalconnectivity studied the functional connectivity of fMRI signals in adult human cortex of the blind. Their findings support the idea that the large scale organization remains fixed, despite drastically different experience. The functional connectivity of early visual cortex in the blind - individuals with no retinal input to cortex - matches the connectivity in sighted controls.
+
 More will be required to understand the full range of possible functional changes. Vision scientists have become increasingly aware that subcortical pathways are also part of the computational system, and some of the functional changes observed in cortex can be explained by changes in the signals in these structures. @kaas2007-pulvinar-review suggests that some of the changes we observe after lesions can be explained by properties of the pulvinar and subcortical pathways. Any hope of understanding the functional changes will require a computational model, which is a main point in our review @wandell2009-plasticity-stability.
 
 Finally, Hensch, Fawcett and others have leaned into the modern ideas concerning the stabilizing impact of inhibitory parvalbumin neurons and their *perineuronal networks* (PNNs) [@hensch2005-critical-period-review; @kwok2011-pnn; @fawcett2022-perineuronal-review; @nakayama2025-aggrecan-pnn; @jain2012-somatosensory-plasticity @jain2025-kaas-spinal-critical]. I will speculate (wildly) about PNNs, and opportunities for human research in the living brain, at the end of this presentation.
@@ -334,7 +336,23 @@ Further measurements of map plasticity have been made in the adult brain followi
 
 Yet, publications in human found little support for cortical remapping in the adult subsequent to foveal disease [@sunness2004-md-retinotopy; @masuda2008-maculardegenerationV1; @masuda2021-maculardepgeneration; @rosenau2008-feedback; @baseler2011-LargescaleRemappingVisual]. The human literature contains one series of papers, from Baker and colleagues,reported large scale reorganization [@baker2007-reorganization; @baker2008-reorganization; @dilks2007-reorganization]. @wandell2009-plasticity-stability reviewed some of the problems with these papers. 
 
-One possible explanation for the Baker findings concerned the control of the observer's attention.  The lesion project zone (LPZ) was silent in passive viewing according to [@masuda2008-maculardegenerationV1]; but when the subjects engaged in a one-back memory task, a small signal could be detected in the LPZ [@rosenau2008-feedback; @masuda2021-maculardepgeneration]. These findings suggest that there may typically be cortico-cortical signals present in V1 that are associated with task judgments. In sighted individuals these feedback signals are masked by the retinal signal.  If we remove the retinal signal, but still have a task, we can measure the feedback signal.
+One possible explanation for the Baker findings concerned the control of the observer's attention.  The lesion project zone (LPZ) was silent in passive viewing according to [@masuda2008-maculardegenerationV1].
+
+![Masuda JMD passive.](images/masuda-jmd-passive.png){#fig-masuda-passive width="80%"}
+
+ but when the subjects engaged in a one-back memory task, a small signal could be detected in the LPZ [@rosenau2008-feedback; @masuda2021-maculardepgeneration]. 
+
+![Masuda JMD OBT.](images/masuda-jmd-obt.png){#fig-masuda-jmd-obt width="80%"}
+
+These findings suggest that there may typically be cortico-cortical signals present in V1 that are associated with task judgments. In sighted individuals these feedback signals are masked by the retinal signal.  If we remove the retinal signal, but still have a task, we can measure the feedback signal. @fig-masuda-model is a black diagram showing the concept. 
+
+![Masuda  model.](images/masuda-model.png){#fig-masuda-model width="80%"}
+
+@masuda2021-maculardepgeneration show that V1 lesion projection zone of JMD patients responds to tactile and auditory stimuli; but, only in the one-back memory task, not in the passive condition. The modality independent, task-dependent V1 LPZ responses suggest that V1 LPZ responses reflect task-related feedback signals rather than reorganized feedforward signals. They are now performing these experiments in blind subjects
+
+![Masuda  RP.](images/masuda-rp){#fig-masuda-rp width="80%"}
+
+I hear that Masuda has found the same kind of signals in blind individuals, supporting the idea.
 
 ### 4. Retinitis pigmentosa
 Masuda also made measurements in patients with retinitis pigmentosa, a disease that spares the fovea but damages the peripheral retina [@masuda2010-retinitispigmentosa]. Once again, they found no significant reorganization in the adult cortex.
@@ -358,21 +376,28 @@ Yet, as Elizabeth Huber, Ione Fine, and their collaborators documented, restorin
 
 ![Mike's contrast sensitivity measured over the years following corneal and lens restoration.](images/recovered-sight-csf.png){#fig-recovered-sight-csf width="80%"}
 
-The second question — what had happened to visual cortex after 43 years without contrast input? — required fMRI to answer. Mike generously gave his time for scanning, and Netta Levin led the analyses of his visual field maps and white matter pathways. Despite the long deprivation and the loss of one eye, the basic retinotopic map was preserved, with only modest deviations from normal.
+The second question — what had happened to visual cortex after 43 years without contrast input? — required fMRI to answer. Mike generously gave his time for scanning, and Netta Levin led the analyses of his visual field maps and white matter pathways [@levin2010-mikemay]. Despite the long period of visual deprivation, and the complete loss of one eye, the basic retinotopic map was preserved in Mike's visual cortex, with a notable deviation from normal. The central (foveal) region of his visual field, a region in which the retinal ganglion cells carry relatively high resolution signals, seems to have been disrupted.  
 
-@levin2010-mikemay
+![Michael May's V1 eccentricity map did not include a significant signal from the fovea.  ](images/recovered-sight-V1-map.png){#fig-recovered-sight-V1 width="80%"}.  
 
+We interpreted these measurements as suggesting that the foveal receptive fields were larger than normal and thus their centers were more peripheral (green) than found in the typical case.  This hypothesis was supported by measurements of the relationship between eccentricity and pRF Size in V1–V3. 
+
+![Michael May's V1 eccentricity map did not include a significant signal from the fovea. Color inset upper left: the angular representation. ](images/recovered-sight-prf-size.png){#fig-recovered-sight-prf-size width="80%"}.  
+
+The main graph shows MM’s estimated population receptive field sizes as a function of eccentricity. Different symbols indicate estimates from V1, V2, and V3. For comparison, average pRFsize estimates from three control subjects are shown in the inset. Solid lines are fit to the points from each map. In controls and MM, pRF-size increases systematically from V1 to V3. MM’s estimated receptive field sizes at eccentricities from 8-10 deg are larger than those in controls. The pRF sizes beyond 10 deg are similar or smaller compared to controls. 
+
+Levin's paper also examined various structural aspects of the white matter, suggesting that there is a significant change in the inter-hemispheric callosal fibers from the occipital lobe [@levin2010-mikemay].
+
+### Sacks' report on Virigl:  To see or not to see
+In an essay ('To see or not to see') that is included in his book, *An Anthropologist on Mars*, Oliver Sacks describes a case much like that of Michael May [@sacks1993-recovered-sight; @sacks1995-anthropologist-mars].  The experience of the subject of his essay, Virgil, is described as a catastrophe rather than a miracle. Virgil could see colors and movement, but he could not make sense of objects or faces — Virgil was "blind" to meaning.  This caused great distress, just as Valvo reported @valvo reported for many of the patients in another 'miracle cures' exploration of recovered sight. Sacks suggests that Virgil's visual cortex had stabilized in a non-visual state, and the 45-year gap meant the critical period, which he called the "instructional window" for building functional maps had long since closed.
 
 ### Project Prakash
-A more optimistic take is provided by SInha and his colleagues, who created [Project Prakash](https://www.projectprakash.org/). There are several more optimistic papers, and these certainly may be correct for certain cases [@ostrovsky,@ostrovsky,@held]. Project Prakash has included people of with sight lost and gained at a wide range of ages and with a wide range of deficits. The measurements are mainly behavioral, but there are some neuroimaging assessments including assessments of the white matter
-@pedersini2023-recovered-sightwhite-matter
+A different take is provided by SInha and his colleagues, who created [Project Prakash](https://www.projectprakash.org/). They emphasize a likely case of behavioral improvements and perhaps adult cortical plasticity for certain cases [@ostrovsky2009-recovered-sight-parsing; @ostrovsky2009-recovered-sight; @gandhi2017-recovered-sight-face]. In particular, Project Prakash includes people who lost and gained sight over a wide range of ages, and who have a wide range of deficits. 
 
-<!--
-Gemini about: An Anthropologist on Mars
-Sacks describes Virgil’s "recovery" as a catastrophe rather than a miracle. Virgil could see colors and movement, but he could not make sense of objects or faces—he was "blind" to meaning. This aligns perfectly with your "Stability" argument: Virgil's visual cortex had stabilized in a non-visual state, and the 45-year gap meant the "instructional window" for building functional maps had long since closed.
--->
+Most of the published reports concern behavioral improvements, the authors initially found that prominent figural cues of grouping, such as good continuation and junction structure, were largely ineffective for image parsing. By contrast, motion cues were of profound significance in that they enabled intraobject integration and facilitated the development of object representations that permitted recognition in static images. Following 10 to 18 months of visual experience, the individuals' performance improved, and they were able to use the previously ineffective static figural cues to correctly parse many static scenes. These results suggest that motion information plays a fundamental role in organizing early visual experience and that parsing skills can be acquired even late in life.
 
-When [@levin2010-mikemay] ...
+The measurements are mainly behavioral, but there are some neuroimaging assessments including assessments of the white matter [@pedersini2023-recovered-sight-white-matter].
+
 
 ## The role of Parvalbumin cells and PNNs
 In recent years there have been very meaningful advances in our understanding of the molecular 'brakes' that enforce it. Parallel to the systems-level evidence for the relative stability of the maps that has been measured in the human brain. 
