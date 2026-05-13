@@ -1,42 +1,39 @@
 
+Rather than refer to these plasticity claims with the general term, adult cortical plasticity, I should really use the more specific phrase of adult cortical remapping or experience-dependent remapping, a particular type of plasticity. The reason is there can be experience-dependent changes in the adult cortex at various scales and of various types.  I acknowledge the existence of plasticity in my writing - we are supposed to ask where and when it is stable and plastic.  But people come away from my talks thinking I am dismissive of all adult cortical plasticity. By using a specific phrase that relates to my specific measurements, people may understand me better.
+
+# Modeling fMRI responses:  Population receptive fields (pRF)
+Not for London
+Needed in the future to explain the achiasma results.  Also pRFs are now standard methodology and thus need explanation.
+# Functional specializations
+Not for London.
+Functional specialization has become a focus of the field.  Motivates the new diagram.  Still controversial.
+Plasticity relateds to functional specializations via the Dehaene claims about 'cortical recycling'. Possibility of cortical color blindness and word blindness and face blindness.
 
 *It is my impression that the 'unlocking' observed by Hensch and others is at a modest spatial scale, perhaps a millimeter or two.  This would be appropriate for adjusting the widths of the ocular dominance columns.  But a large structure, say the extent of the visual field map V1 which extends 10 cm or more, would not be unlocked by the removal of PNN from the PV cells.*
 
-
 Your observation about the **spatial scale mismatch** is arguably the most powerful mechanical argument for topographic stability. You are pinpointing the difference between **synaptic refinement** (which happens in the adult) and **topographic remapping** (which does not).
-
 
 ### 1. The 1–2 mm "Plasticity Pocket"
 
-You are correct that the "unlocking" observed by **Takao Hensch**, **Lamberto Maffei**, and **Tommaso Pizzorusso** occurs at a very specific, local scale. 
-
+You are correct that the "unlocking" observed by **Takao Hensch**, **Lamberto Maffei**, and **Tommaso Pizzorusso** occurs at a very specific, local scale.
 
 * **Ocular Dominance (OD) Columns:** In higher mammals (cats, monkeys), OD columns are typically **0.5 to 1.0 mm** wide. The reactivation of plasticity via PNN removal allows for the shifting of these boundaries or the "unmasking" of silent synapses within that local neighborhood.
-
 * **The Mechanism:** Removing PNNs from **Parvalbumin (PV) cells** reduces the inhibitory "brake," allowing for **local axonal sprouting** and synaptic weight changes. However, as **James Fawcett** has documented, this "compensatory sprouting" is typically limited to **microns or a few millimeters** at most.
-
 * **The Limit:** PNN removal makes the existing local hardware more "flexible," but it does not provide the **long-range guidance cues** (like the Ephrin gradients used in development) or the **axonal growth capacity** required to rewrite a map across centimeters.
-
 
 ### 2. The 10 cm "V1 Reality"
 
-As you noted, the human V1 map is massive—extending roughly **8–10 cm** from the foveal pole to the peripheral representation. 
+As you noted, the human V1 map is massive—extending roughly **8–10 cm** from the foveal pole to the peripheral representation.
 
-
-* **The Remapping Problem:** If a patient has a central scotoma (like in Stargardt disease), "filling in" that scotoma with peripheral input would require axons to sprout and travel **centimeters** across the cortical surface to find new targets. 
-
+* **The Remapping Problem:** If a patient has a central scotoma (like in Stargardt disease), "filling in" that scotoma with peripheral input would require axons to sprout and travel **centimeters** across the cortical surface to find new targets.
 * **The Structural Wall:** PNN removal does nothing to address the **white matter "blueprint"** (the thalamocortical radiations and the VOF) or the **myelin-associated inhibitors** (like Nogo and MAG) that prevent long-distance axonal growth.
-
 * **The Stability Conclusion:** Even if you "unlock" the PV cells, the basic topographic "slots" for the fovea remain 10 cm away from the peripheral "slots." Without a way to bridge that physical distance, **Adult Cortical Remapping** on a macro-scale is biologically impossible.
 
-
 ---
-
 
 ### 3. "Adult Cortical Remapping" as the Focal Point
 
 By adopting the specific phrase **"Adult Cortical Remapping,"** you can clarify this scale issue for your audience. You aren't saying the brain is "fixed" in all ways; you are saying the **topographic coordinates** are fixed.
-
 
 | Term | Spatial Scale | Mechanism | Adult Status |
 
@@ -48,16 +45,11 @@ By adopting the specific phrase **"Adult Cortical Remapping,"** you can clarify 
 
 | **Topographic Remapping** | 10 cm | Long-range Sprouting, Map Shifts | **Stable/Fixed** |
 
-
-
-
 ### Crediting the "Limits of Plasticity"
 
 While Hensch and Maffei are the heroes of *unlocking* plasticity, **James Fawcett** (University of Cambridge) is arguably the most important modern neuroscientist for pointing out the **anatomical limits** of that unlocking. His work on the extracellular matrix and spinal cord repair emphasizes that while we can increase "plasticity," we are still far from achieving "regeneration" or large-scale "remapping."
 
-
 Additionally, your own work with **Smirnakis (2009)** serves as the primary functional evidence for this scale limit in the human visual system. You showed that even when the input is gone (the scotoma), the 10 cm architecture of V1 stands still—it doesn't "reach out" to the periphery, because the hardware simply doesn't have the reach.
-
 
 Does this "scale-based" distinction feel like a robust way to address the pushback you receive during talks? It seems to turn a vague "No" into a principled "Not at this scale."
 
