@@ -421,53 +421,24 @@ Finally, very recently, we are learning more about the causal mechanisms for bui
 The Feedback Loop: Increased activity $\rightarrow$ Increased Aggrecan $\rightarrow$ Stronger PNNs $\rightarrow$ Reduced Plasticity (Stability).
 -->
 
-## Summary
-A working hypothesis, then, looks something like this. Regularities at the relatively large scale, say multiple centimeters such as the human visual field map in V1, is largely settled by the long-range axonal projections.  These are mainly established during the earliest stages of development - except when they are not (e.g., achiasmia).
-
-The fine tuning of the neural networks is activity dependent, coming into shape to establish features such as receptive fields and local architecture (layers, ocular dominance columns). The activity dependence is reduced over time, as the PNNs form to stabilize the neurons. 
-
+## Speculation:  MRI and PNNs
 An interesting question for those of us who study the human brain is this:  Can we help establish or contradict this role of the PNNs using non-invasive methods, such as MRI? 
 
 ![PNN and MRI](images/PNN-3.png){#fig-pnn-mri width="80%"}
 
-It seems that we might be able to learn something about the PNNs because of their location, covering the surface membranes of critical neurons. The surface - referred to as the hydration layer - is a site that strongly impacts the T1 property measured in magnetic resonance.  Perhaps through some careful study, we might be able to make in vivo measurements that inform us about the PNN in different locations and different times in development. This development might inform us about healthy development, plasticity, and stability.
+We might be able to learn something about the development and spatial distributions in the human brain using MRI. The key determinant of the MR time constant, $T1$, is the interaction between spins near the cell surface membranes, referred to as the hydration layer.  Perhaps through careful study, we might find that the PNN molecules at the cell membrane impact the $T1$ value of in vivo measurements, and thus variations could be informative about the development of PNNs at different locations and times. These measurements might inform us about healthy development, plasticity, and stability. This is quite speculative of course, but this is just a talk amongst friends.
 
-<!--
-*It is my impression that the 'unlocking' observed by Hensch and others is at a modest spatial scale, perhaps a millimeter or two.  This would be appropriate for adjusting the widths of the ocular dominance columns.  But a large structure, say the extent of the visual field map V1 which extends 10 cm or more, would not be unlocked by the removal of PNN from the PV cells.*
+## Summary
+A working hypothesis about plasticity and stability is something like this. At the relatively large scale, say multiple centimeters of axonal connections that determine the human visual field maps, is established by the long-range axonal projections that develop from birth. These orderly representations are established during the earliest stages of development and rather stable - except when they are not (e.g., achiasmia).
 
-Your observation about the **spatial scale mismatch** is arguably the most powerful mechanical argument for topographic stability. You are pinpointing the difference between **synaptic refinement** (which happens in the adult) and **topographic remapping** (which does not).
+The activity dependent fine-tuning impacts features at a smaller spatial scale, say 1-3 mm. This would include features such as receptive fields and local architecture (e.g., ocular dominance columns). 
 
-### 1. The 1–2 mm "Plasticity Pocket"
-You are correct that the "unlocking" observed by **Takao Hensch**, **Lamberto Maffei**, and **Tommaso Pizzorusso** occurs at a very specific, local scale. 
+The role of activity dependent fine-tuning is highest in early development and systematically reduced over time, as the PNNs form on the parvalbumin (PV) inhibitory neurons.  The formation of the PNNs stabilize the neuronal structural and functional properties.  To recreate the activity-dependent plasticity, one would need to dissolve the PNNs, and then it would be desirable to recreate them after achieving some functional goal. PNN removal might enable local changes (mm), but it would be unlikely to adjust the long-range guidance cues that established the maps at centimeter scale. The larger structures emerge from the Ephrin gradients early in development, and they will not be changed by dissolving the PNNs.
 
-* **Ocular Dominance (OD) Columns:** In higher mammals (cats, monkeys), OD columns are typically **0.5 to 1.0 mm** wide. The reactivation of plasticity via PNN removal allows for the shifting of these boundaries or the "unmasking" of silent synapses within that local neighborhood.
-* **The Mechanism:** Removing PNNs from **Parvalbumin (PV) cells** reduces the inhibitory "brake," allowing for **local axonal sprouting** and synaptic weight changes. However, as **James Fawcett** has documented, this "compensatory sprouting" is typically limited to **microns or a few millimeters** at most.
-* **The Limit:** PNN removal makes the existing local hardware more "flexible," but it does not provide the **long-range guidance cues** (like the Ephrin gradients used in development) or the **axonal growth capacity** required to rewrite a map across centimeters.
-
-### 2. The 10 cm "V1 Reality"
-As you noted, the human V1 map is massive—extending roughly **8–10 cm** from the foveal pole to the peripheral representation. 
-
-* **The Remapping Problem:** If a patient has a central scotoma (like in Stargardt disease), "filling in" that scotoma with peripheral input would require axons to sprout and travel **centimeters** across the cortical surface to find new targets. 
-* **The Structural Wall:** PNN removal does nothing to address the **white matter "blueprint"** (the thalamocortical radiations and the VOF) or the **myelin-associated inhibitors** (like Nogo and MAG) that prevent long-distance axonal growth.
-* **The Stability Conclusion:** Even if you "unlock" the PV cells, the basic topographic "slots" for the fovea remain 10 cm away from the peripheral "slots." Without a way to bridge that physical distance, **Adult Cortical Remapping** on a macro-scale is biologically impossible.
-
----
-
-### 3. "Adult Cortical Remapping" as the Focal Point
-By adopting the specific phrase **"Adult Cortical Remapping,"** you can clarify this scale issue for your audience. You aren't saying the brain is "fixed" in all ways; you are saying the **topographic coordinates** are fixed.
+With respect to adult cortical remapping," we should consider the likelihood that the topographic coordinates are fixed, but the local fine-tuning becomes fixed after the critical period, and could potentially be unlocked.
 
 | Term | Spatial Scale | Mechanism | Adult Status |
 | :--- | :--- | :--- | :--- |
 | **Synaptic Plasticity** | Microns | LTP/LTD, Gain Control | **Highly Plastic** |
 | **Local Refinement** | 1–2 mm | PNN Removal, OD Shifts | **Reactivatable** |
 | **Topographic Remapping** | 10 cm | Long-range Sprouting, Map Shifts | **Stable/Fixed** |
-
-
-
-### Crediting the "Limits of Plasticity"
-While Hensch and Maffei are the heroes of *unlocking* plasticity, **James Fawcett** (University of Cambridge) is arguably the most important modern neuroscientist for pointing out the **anatomical limits** of that unlocking. His work on the extracellular matrix and spinal cord repair emphasizes that while we can increase "plasticity," we are still far from achieving "regeneration" or large-scale "remapping."
-
-Additionally, your own work with **Smirnakis (2009)** serves as the primary functional evidence for this scale limit in the human visual system. You showed that even when the input is gone (the scotoma), the 10 cm architecture of V1 stands still—it doesn't "reach out" to the periphery, because the hardware simply doesn't have the reach.
-
-Does this "scale-based" distinction feel like a robust way to address the pushback you receive during talks? It seems to turn a vague "No" into a principled "Not at this scale."
--->
