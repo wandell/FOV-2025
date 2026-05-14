@@ -32,7 +32,7 @@ I plan to incorporate the material from this presentation into the second editio
 
 The discovery of visual field maps in the cortex is a fascinating history [@fishman1995-mistake; @glickstein1985-ferrier-mistake; @wandell2011-ImagingRetinotopicMaps]. The debates between Ferrier and Munk in the late 19th century about the location of visual cortex were heated. The disagreements were not just about the data, but also about the interpretation of the data and the implications for our understanding of brain function.
 
-![Nineteenth-century neuroscientists, neurologists, and ophthalmologists who discovered the localization of visual signals in animal models (Ferrier, Munk) and the presence of a retinotopic map in human visual cortex (Henschen, Holmes, Inouye).](images/ferrier-munk.png){#fig-ferrier-munk width="80%"}
+![Nineteenth-century neuroscientists, neurologists, and ophthalmologists who discovered the localization of visual signals in animal models (Ferrier, Munk) and the presence of a retinotopic map in human visual cortex (Henschen, Holmes, Inouye).](images/ferrier-munk.png){#fig-ferrier-munk width="100%"}
 
 Ferrier performed lesion studies in monkeys and proposed that primary visual cortex was located in the angular gyrus. The German physiologist Hermann Munk disagreed with Ferrier's anatomical localization and argued that visual cortex was in the occipital region — a critical correction that set the stage for a more accurate understanding of retinotopic organization.
 
@@ -82,7 +82,9 @@ The effort to discover and map multiple visual areas in animal models expanded e
 
 The burst of activity identifying new visual regions was summarized in an influential article by Felleman and Van Essen [@felleman1991-hierarchy]. @fig-felleman-vanessen shows an iconic diagram from that paper, illustrating the proposed hierarchy of visual areas with signals flowing from the bottom (retina, LGN, V1) to the top (peri-hippocampal regions). Although the data supporting this specific hierarchy were initially sparse, the underlying measurements have been significantly augmented over the last decade, particularly by work from Henry Kennedy's lab [@markov2013-hierarchicalanatomy; @markov2014-hierarchicalanatomy2]. I will discuss a proposed update to this diagram at the end of this section.
 
-![Felleman and Van Essen's hierarchical representation of areas in visual cortex. This image is still widely used in teaching and by speakers who wish to introduce visual cortex to a general audience. It might be time for an update.](images/felleman-vanessen.png){#fig-felleman-vanessen width="80%"}
+::: {.column-margin}
+![Felleman and Van Essen's hierarchical representation of areas in visual cortex. This image is still widely used in teaching and by speakers who wish to introduce visual cortex to a general audience. It might be time for an update.](images/felleman-vanessen.png){#fig-felleman-vanessen}
+:::
 
 ::: {#nte-FACT .callout-note title="FACT: Definitions"}
 An entire generation of scientists was taught a specific definition for a "visual area." Van Essen proposed that a cortical visual area is a region that can be distinguished from its neighbors by a convergence of evidence across four criteria (FACT), rather than by any single criterion alone:
