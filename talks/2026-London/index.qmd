@@ -56,16 +56,20 @@ Many of us have enjoyed Charles Gross's book, which is filled with interesting h
 
 It was the Swedish neurologist, Henschen, who first carefully observed the visual loss in **human** patients with occipital lesions. He concluded that at least part of the visual field, the upper and lower portions, were represented in cortex in an orderly map with the lower visual field in the dorsal occipital lobe and upper visual field in the ventral occipital lobe. His findings were met with objections by many, and subsequently confirmed by many more. He expresses his feelings on the matter in the opening of a 1923 review paper [@henschen1923-review].
 
-![Henschen's findings on the upper and lower field representations.](images/henschen.png){#fig-henschen width="80%"}
+::: {.column-margin}
+![Henschen's findings mapping the upper and lower visual field representations onto the human visual cortex.](images/henschen.png){#fig-henschen}
+:::
 
 In fact, Henschen's observations about the organization of the visual cortex in the human were confirmed and extended by two clinicians working at opposite ends of the world: Gordon Holmes and Tatsuye Inouye. Both were studying visual field losses from soldiers injured in their countries' wars, Holmes in Europe and Inouye in Japan. In that era, the guns were not always lethal, and the helmets would permit bullets to enter and exit the posterior skull, effectively lesioning a portion of occipital cortex. Such lesions could cause a permanent but partial visual field loss. By accumulating data from a number of different cases, they deduced the retinotopic organization of the human visual cortex. In addition to the upper-lower field representation, they both reported on the eccentricity map as well as the fact that the central portion of the visual field occupied more cortical territory (per square degree) than the peripheral portion. This phenomenon is called 'cortical magnification' (though perhaps it should be called 'foveal magnification').
 
 Building on these early observations, modern measurements have since shown that the total surface area of V1, as well as the magnification factor, vary greatly between people with typical vision—by as much as a factor of 2.5 [@dougherty2003-map-sizes; @benson2022-surface-area].
 
 ::: {#fig-inouye-holmes layout-ncol="2"}
-![Inouye](images/inouye-map.png){#fig-inouye-map width="90%"}
+![Inouye's map](images/inouye-map.png){#fig-inouye-map width="100%"}
 
-![Holmes](images/holmes-map.png){#fig-holmes-map width="90%"}
+![Holmes's map](images/holmes-map.png){#fig-holmes-map width="100%"}
+
+Early maps of human visual cortex by Inouye and Holmes, demonstrating foveal magnification and topological organization.
 :::
 
 ## Discovery of multiple maps
@@ -103,30 +107,30 @@ Most scientists assumed that the retinotopic maps found in non-human primates wo
 Steve Engel and I—helped by many others—developed a technique to measure eccentricity and angle maps that was widely adopted [@engel1994-fmri; @engelRetinotopicOrganizationHuman1997]. The stimulus and cortical responses (fMRI) for measuring eccentricity are shown in @fig-eccentricity-movie. If you look at the video casually, you will see the wave from the occipital pole traveling in the anterior direction of the main map. If you look closely, you will see a secondary ripple on the ventral occipital-temporal surface. That ripple starts when the stimulus is in the fovea, but it fades out as the ring expands about halfway (10 deg). The VOT eccentricity map is a second eccentricity map, confined mainly to the perifoveal visual field. That map is distinct from the one near the calcarine sulcus.
 
 ::: {.content-visible when-format="html"}
-![Eccentricity mapping using an expanding ring stimulus (20 deg) in the calcarine and ventral occipital region](../../chapters/videos/eccentricity-map-encyclopedia.mp4){#fig-eccentricity-movie width="80%" loop="true" autoplay="true" muted="true"}
+![Eccentricity mapping using an expanding ring stimulus (20 deg) in the calcarine and ventral occipital region.](../../chapters/videos/eccentricity-map-encyclopedia.mp4){#fig-eccentricity-movie width="80%" loop="true" autoplay="true" muted="true"}
 :::
 
 ::: {.content-visible when-format="pdf"}
-![Eccentricity mapping using an expanding ring stimulus (20 deg) in the calcarine and ventral occipital region](images/eccentricity-map-encyclopedia.png){#fig-eccentricity-movie width="80%"}
+![Eccentricity mapping using an expanding ring stimulus (20 deg) in the calcarine and ventral occipital region.](images/eccentricity-map-encyclopedia.png){#fig-eccentricity-movie width="80%"}
 :::
 
 We also made measurements using a rotating wedge stimulus to measure the most effective angular position for each voxel. The angular responses subdivide the eccentricity map into different visual field maps. The data from the video are summarized in two pseudo-color maps showing the most effective visual field eccentricity for each cortical location
 
 ::: {#fig-maps layout-ncol="2"}
-![Eccentricity map shows the most effective visual eccentricity (deg) for each location.](images/Slide23.png){#fig-eccentricity-map width="85%"}
+![The eccentricity map displays the preferred distance from the fovea (in degrees) for each cortical location.](images/maps-eccentricity.png){#fig-eccentricity-map width="100%"}
 
-![Angle map shows the most effective wedge angle for each location.](images/Slide24.png){#fig-angle-map width="85%"}
+![The angle map displays the preferred polar angle (wedge position) for each cortical location.](images/maps-angle.png){#fig-angle-map width="100%"}
 
 Eccentricity and angle measurements, combined, are used to define a retinotopic map.
 :::
 
-Summarizing the information from the maps, we can label an entire retinotopic map using a single color, as in @fig-areas-magnification. Notice that these maps are not simply adjacent to one another. Rather, the V2 map surrounds V1, and it is surrounded, in turn, by the V3 map. Thus, the dorsal and ventral portions of the V2 and V3 maps—which represent the lower and upper visual fields, respectively—are well-separated from one another.
+Summarizing the information from the maps, we can label an entire retinotopic map using a single color, as in @fig-maps-overview. Notice that these maps are not simply adjacent to one another. Rather, the V2 map surrounds V1, and it is surrounded, in turn, by the V3 map. Thus, the dorsal and ventral portions of the V2 and V3 maps—which represent the lower and upper visual fields, respectively—are well-separated from one another.
 
-![A medial view of the locations of three visual field maps, V1-V3 on the calcarine. The eccentricity map is overlaid to emphasize the relatively large portion of cortex devoted to the central visual field (cortical magnification). This magnification matches fairly closely the larger number of cone photoreceptors in the fovea compared to the visual periphery.](images/Slide25.png){#fig-areas-magnification width="80%"}
+![A medial view of the locations of three visual field maps (V1-V3) on the calcarine sulcus. The eccentricity map is overlaid to emphasize the large portion of cortex devoted to the central visual field (cortical magnification). This magnification roughly matches the higher density of cone photoreceptors in the fovea compared to the visual periphery.](images/maps-overview.png){#fig-maps-overview width="100%"}
 
 Alyssa Brewer noticed the secondary foveal representation on the ventral occipital surface and decided to explore it further [@brewer2005-visualFieldMaps-clusters]. To see the two clusters distinctly, she used a much smaller field of view for the expanding rings, moving them slowly through the central 3 deg. You can see the two eccentricity maps—plainly distinct from one another—in @fig-vo-cluster.
 
-![Eccentricity map emphasizing the central 3 deg. This shows the two different eccentricity maps, one in calcarine and a second on the VOT. From @brewer2005-visualFieldMaps-clusters.](images/Slide26.png){#fig-vo-cluster width="80%"}
+![Eccentricity map emphasizing the central 3 deg. This highlights two different confluent foveal representations: one in the calcarine, and a second on the ventral occipito-temporal (VOT) surface. From @brewer2005-visualFieldMaps-clusters.](images/maps-vo-cluster.png){#fig-vo-cluster width="70%"}
 
 ## Map Clusters
 
@@ -135,21 +139,21 @@ Over time, it became clear to us that there were multiple distinct eccentricity 
 Here are two different visualizations of the clusters. In @fig-clusters-movie they are shown on a slightly inflated cortical surface.
 
 ::: {.content-visible when-format="html"}
-![The visual field map clusters shown on a the cortical surface (slightly inflated) @wandell2005-visualFieldMap-clusters](images/clusters.mp4){#fig-clusters-movie width="80%" loop="true" autoplay="true" muted="true"}
+![The visual field map clusters shown on the cortical surface (slightly inflated) [@wandell2005-visualFieldMap-clusters].](images/clusters.mp4){#fig-clusters-movie width="80%" loop="true" autoplay="true" muted="true"}
 :::
 
 ::: {.content-visible when-format="pdf"}
-![The visual field map clusters shown on a the cortical surface (slightly inflated) @wandell2005-visualFieldMap-clusters](images/clusters-mp4.png){#fig-clusters-movie width="80%"}
+![The visual field map clusters shown on the cortical surface (slightly inflated) [@wandell2005-visualFieldMap-clusters].](images/clusters-mp4.png){#fig-clusters-movie width="80%"}
 :::
 
 In @fig-clusters-flatmap the eccentricity maps of the clusters are represented on a flattened cortical surface; the video oscillates between the measured eccentricity and a cartoon overlay that emphasizes the pattern.
 
 ::: {.content-visible when-format="html"}
-![Visual field map clusters shown for emphasis on the flattened representation of the posterior cortex @wandell2005-visualFieldMap-clusters](images/clusters-flat.mp4){#fig-clusters-flatmap width="80%" loop="true" autoplay="true" muted="true"}
+![Visual field map clusters emphasized on a flattened representation of the posterior cortex [@wandell2005-visualFieldMap-clusters].](images/clusters-flat.mp4){#fig-clusters-flatmap width="80%" loop="true" autoplay="true" muted="true"}
 :::
 
 ::: {.content-visible when-format="pdf"}
-![Visual field map clusters shown for emphasis on the flattened representation of the posterior cortex @wandell2005-visualFieldMap-clusters](images/clusters-flat.png){#fig-clusters-flatmap width="80%"}
+![Visual field map clusters emphasized on a flattened representation of the posterior cortex [@wandell2005-visualFieldMap-clusters].](images/clusters-flat.png){#fig-clusters-flatmap width="80%"}
 :::
 
 The clustering of cortical retinotopic maps has been confirmed by multiple groups. The clusters have been identified in posterior and anterior cortex [@mackey2017-clusters], non-human primates [@kolster2009-clusters; @kolster2014-macaque-mt; @barton2017-sts-cluster; @meyer2025-clusters-evolution], and also in the pulvinar [@arcaro2015-pulvinar-cluster]. The retinotopic map cluster appears to be a basic functional organizational principle that may have implications for development and plasticity.
@@ -172,13 +176,13 @@ Initially, human fMRI groups relied on the macaque model—almost slavishly—to
 Here are some of the agreed-upon differences:
 
 * Human visual cortex contains a much larger number of neurons and a greater overall surface area, even though the human optic nerve contains roughly the same number of axons as the macaque's.
-* The ratio of the surface area of human V2/V3/hV4 relative to V1 is much larger than the similar ratio in macaque (@fig-meyer-comparative); in general, the visual cortical maps and clusters are all larger in humans.
+* The ratio of the surface area of human V2/V3/hV4 relative to V1 is much larger than the similar ratio in macaque (@fig-clusters-evolution); in general, the visual cortical maps and clusters are all larger in humans.
 * The position of the nominal fourth visual map differs substantially between human and macaque—sufficiently so that I named it hV4 rather than V4, and spent years arguing this point with others.
 * The functional responses to motion in human and macaque V3 and V3A do not match.
 
-A recent paper used fMRI for a comparative anatomical analysis of human and macaque visual cortex [@meyer2025-clusters-evolution]. They report that the number of maps and their cluster-like organization are strikingly similar across species, suggesting that the cluster is an evolutionarily preserved unit. This figure from @meyer2025-clusters-evolution shows a measurement of the relative sizes of the V2/V3 portion of the V1 cluster in human and macaque.
+A recent paper used fMRI for a comparative anatomical analysis of human and macaque visual cortex [@meyer2025-clusters-evolution]. They report that the number of maps and their cluster-like organization are strikingly similar across species, suggesting that the cluster is an evolutionarily preserved unit. @fig-clusters-evolution shows a measurement of the relative sizes of the V2/V3 portion of the V1 cluster in human and macaque.
 
-![Comparative anatomical sizes of maps and clusters [@meyer2025-clusters-evolution]](images/meyer2025-comparative.png){#fig-meyer-comparative width="80%"}
+![Comparative anatomical sizes of maps and clusters [@meyer2025-clusters-evolution]. Note the expanded relative size of V2 and V3 in humans.](images/meyer2025-comparative.png){#fig-clusters-evolution width="100%"}
 
 ::: {#nte-comparative-organization .callout-note title="Humans and monkeys"}
 This is an expanded commentary on the more obvious differences between human and non-human primate clusters and retinotopic maps.
@@ -197,12 +201,19 @@ There is considerable variability within species in both the optic nerve axon co
 :::
 
 ## Modern summary of map clusters
-Over time, I have found the Felleman and Van Essen diagram less helpful for several reasons. First, the diagram makes no distinction between retinotopic maps and "visual areas"—a terminology I find to be fraught. Second, the diagram omits the modern functional specializations that have since been identified in human visual cortex. Third, the map strongly emphasizes the hierarchy concept, but I am not confident about the implied flow of information. Finally, the diagram omits the subcortical systems, which have become increasingly important in teaching, particularly with the discovery of ipRGCs.
+Over time, I have found the Felleman and Van Essen diagram less helpful for four reasons. The diagram
 
-![De-emphasize the hierarchy of maps in favor of clusters, as some clusters receive a very early signal directly from the retina. Add subcortical and cortical specializations [@jacques2025-non-hierarchical; @markov2013-hierarchicalanatomy]. Also, refer to the images in the atlas by Goebel [@rosenke2021-atlas].](images/fve-updated-cluster.png){#fig-clusters-specialization width="80%"}
+* makes no distinction between retinotopic maps and "visual areas"—a terminology I find to be fraught. 
+* omits the modern functional specializations that have since been identified in human visual cortex. 
+* emphasizes the hierarchy concept, but I am not confident about the implied flow of information. 
+* omits the subcortical systems, which have become increasingly important in teaching, particularly with the discovery of ipRGCs.
 
-# Experience-dependent map reorganization: Adult
-As early as Henschen, who first localized the human visual cortex, scientists wondered whether visual experience might impact the size (surface area) of the visual cortex representation [@henschen1893-visual-center]. He reported that the size of visual cortex was smaller in blind people, but at that time, very little was known about the natural size variation in the population. We now know that the variation in surface area in the sighted population is quite large; a factor of 2.5 in surface area has been confirmed by a number of modern authors [@stensaas1974-v1-area; @dougherty2003-map-sizes; @benson2022-surface-area]. Thus, a case study finding a smaller V1 in a blind person than in a sighted control is not definitive proof of experience-dependent plasticity.
+![A proposed update to the Felleman and Van Essen diagram, reorganized around map clusters and including subcortical connections, based on human data. The sketch separates retinotopic maps from functional specializations , suggests a coarse hierarchy from subcortical to cortical clusters without implying strict feedforward flow . Finally, it incorporates subcortical pathways.](images/fve-updated-cluster.png){#fig-updated-cluster width="80%"}
+
+In @fig-updated-cluster I try to address these four issues.  I separated the retinotopic maps from the functional specializations [@rosenke2021-atlas], relying entirely on human data. The diagram suggests a coarse hierarchy, from sub-cortical to cortical clusters, to specializations but does not imply a strict hierarchy [@jacques2025-non-hierarchical; @markov2013-hierarchicalanatomy].  Finally, the sketch includes subcortical connections to remind the reader of their importance.
+
+# Cortical remapping
+As early as Henschen, who first localized the human visual cortex, scientists wondered what factors might impact the size (surface area) of the visual cortex representation @henschen1893-visual-center reported that the size of visual cortex was smaller in blind people, but at that time, very little was known about the natural size variation in the population. We now know that the variation in surface area in the sighted population is quite large; a factor of 2.5 in surface area has been confirmed by a number of modern authors [@stensaas1974-v1-area; @dougherty2003-map-sizes; @benson2022-surface-area]. Thus, a case study finding a smaller V1 in a blind person than in a sighted control is not definitive proof of experience-dependent plasticity.
 
 Another framing on the general issue of adult cortical plasticity—a framing that influenced many decades of science—came from Cajal. He spent years trying to find evidence of axonal regeneration in the adult brain and spinal cord, famously reporting that his efforts were met only with failure [@cajal1928-stability]:
 
@@ -223,19 +234,17 @@ We were fortunate to recruit Stelios Smirnakis to lead the project. He performed
 
 We easily measured both the typical retinotopic maps and the expected unresponsive zone in macaque V1 following the lesions (@fig-lpz). This unresponsive zone is called the *lesion projection zone* (LPZ). 
 
-![Lesion projection zone](images/plasticity-maps-macaque-1.png){#fig-lpz width="80%"}
+![Initial functional MRI and electrophysiological measurements define the lesion projection zone (LPZ), an unresponsive area in macaque V1 matching the induced binocular retinal lesions.](images/plasticity-maps-macaque-1.png){#fig-lpz width="100%"}
 
 We expected that the area of the LPZ would shrink as we measured it over time. But over the ensuing months, we found very little—or perhaps no—remapping [@smirnakisLackLongtermCortical2005]. Surprised by this, Stelios made targeted electrophysiological measurements to find neural signals, but again he found no significant electrical response, mirroring the lack of fMRI response.
 
-![The lesion projection zone size remained unchanged over many months.](images/plasticity-maps-macaque-2.png){#fig-lpz-stability width="80%"}
+![Over a period of 7.5 months, the boundaries of the lesion projection zone remained remarkably stable without significant functional filling-in.](images/plasticity-maps-macaque-2.png){#fig-lpz-stability width="100%"}
 
 Our finding of map stability conflicted with prior reports, and its publication was met with a rebuke by several of the authors who had previously reported significant remapping [@calford2005-critique-smirnakis]. A principal objection to our work was that fMRI was a poor measure of neural activity, which simply ignored the fact that we had also used electrophysiology.
 
-We too were puzzled by the discrepancy and decided to restudy the literature, which we had previously accepted without intense scrutiny. Upon closer review, Stelios and I discovered many serious inconsistencies in the animal literature, which we then summarized in a review paper [@wandell2009-plasticity-stability]. Those concerns remain largely unanswered[^1] and are outlined in @fig-disputes.
+We too were puzzled by the discrepancy and decided to restudy the literature, which we had previously accepted without intense scrutiny. Upon closer review, Stelios and I discovered many serious inconsistencies in the animal literature, which we then summarized in a review paper [@wandell2009-plasticity-stability]. The concerns raised in that review remain unanswered to this day — none of the groups that reported large-scale remapping have provided a satisfactory resolution of the experimental conflicts we identified. A number of investigators told us privately that they too had failed to find remapping, attributing this to their own error rather than seeking a public reckoning. The scientific community has largely moved on without settling the question, which I find deeply unsatisfying.
 
-[^1]: A number of investigators spoke to me privately, reporting that they too had failed to find remapping. They were not looking for a fight and decided they had simply done something wrong. These comments were well-intentioned and gave us some comfort, but were also a bit disheartening regarding the state of scientific discourse.
-
-![This review paper [@wandell2009-plasticity-stability] describes a series of experimental conflicts in papers that found topographic remapping in adult visual cortex. These are discussed in detail in the review paper.](images/review-disputes.png){#fig-disputes width="80%"}
+![@wandell2009-plasticity-stability describes a series of experimental conflicts in papers that found topographic remapping in adult visual cortex. These are discussed in detail in the review.](images/review-disputes.png){#fig-disputes width="80%"}
 
 Given what is known about cortical development, the idea of large-scale adult remapping seemed like a long shot (see @nte-map-development)—which is exactly why so many people found it exciting. The anatomical infrastructure for the maps is laid down by white matter connections. The axons find their targets (the "correct neighborhood") early in development [@feldheim2000-map-development-molecules; @mcLaughlin2003-map-sharpening]. This principle is broadly true across the brain, not just for visual maps [@agmon1993-development-maps; @huberman2008-review-maps; @mclaughlin2005-molecular-gradients-development].
 
@@ -253,8 +262,6 @@ After the axons are in place, @mcLaughlin2003-map-sharpening showed that this ro
 @striem-amit2015-blind-functionalconnectivity studied the functional connectivity of fMRI signals in the adult human cortex of the blind. Their findings support the idea that the large-scale organization remains fixed, despite drastically different life experiences. The functional connectivity of early visual cortex in the blind—individuals with no retinal input to the cortex—matches the connectivity in sighted controls.
 
 More will be required to understand the full range of possible functional changes. Vision scientists have become increasingly aware that subcortical pathways are also part of the computational system, and some of the functional changes observed in cortex can be explained by changes in the signals within these structures. @kaas2007-pulvinar-review suggests that some of the changes we observe after lesions can be explained by properties of the pulvinar and subcortical pathways. Any hope of understanding the functional changes will require a computational model, which is a main point in our review [@wandell2009-plasticity-stability].
-
-Finally, Hensch, Fawcett, and others have leaned into modern ideas concerning the stabilizing impact of inhibitory parvalbumin neurons and their *perineuronal nets* (PNNs) [@hensch2005-critical-period-review; @kwok2011-pnn; @fawcett2022-perineuronal-review; @nakayama2025-aggrecan-pnn; @jain2012-somatosensory-plasticity; @jain2025-kaas-spinal-critical]. I will speculate (wildly) about PNNs, and opportunities for human research in the living brain, at the end of this presentation.
 :::
 
 ## Human measurements of map reorganization
@@ -303,9 +310,9 @@ In this developmental case, the cortical map organization—which is initiated b
 
 > Remapping of the cortical representation of the central visual field is not a general feature in achromatopsia. [@molz2023-achromatopsiavisualCortexStability2023]
 
-It is worth noting that this question already has practical clinical interest. The possibility that the adult human brain may regain or develop function following the correction of congenital deafferentation has fired the imagination of scientists over the years. In the visual domain, cases of recovery from congenital deficits are rare. Gene therapy for visual restoration of congenital *CNGA3*-achromatopsia, a disease caused by cone photoreceptor dysfunction, gave us the opportunity to examine cortical function—to the best of our knowledge, for the first time—both before and after restorative treatment. While behaviorally only minor improvements were observed post-treatment, fMRI analysis (including population receptive field algorithms) revealed cortical changes, specifically a decrease in receptive field size in the treated eyes. This suggests that the adult cortex retains some capacity to encode new input. Importantly, these findings illustrate how plasticity can differ by spatial scale: while the large-scale map representation (centimeters) remains stable, localized functional fine-tuning (e.g., millimeter-scale changes in receptive field size) remains possible.
-  
-TODO:  Describe the paper by McKyton and colleagues [@mckytonCorticalVisualMapping2021].
+It is worth noting that this question already has practical clinical interest. The possibility that the adult human brain may regain or develop function following the correction of congenital deafferentation has fired the imagination of scientists over the years. In the visual domain, cases of recovery from congenital deficits are rare. Gene therapy for visual restoration of congenital *CNGA3*-achromatopsia, a disease caused by cone photoreceptor dysfunction, provided an opportunity to examine cortical function—to the best of our knowledge, for the first time—both before and after restorative treatment [@mckytonCorticalVisualMapping2021]. 
+
+Behaviorally only minor improvements were observed post-treatment. FMRI analysis (including population receptive field algorithms) revealed cortical changes, specifically a decrease in receptive field size in the treated eyes. This suggests that the adult cortex retains some capacity to encode new input. Importantly, these findings illustrate how plasticity can differ by spatial scale: while the large-scale map representation (centimeters) remains stable, localized functional fine-tuning (e.g., millimeter-scale changes in receptive field size) remains possible.
 
 ### 3. Macular degeneration
 Further measurements of map plasticity have been made in the adult brain following the onset of different types of retinal disease that create retinal lesions. One might expect to see remapping in such individuals, perhaps by filling in the lesion projection zone (LPZ) corresponding to the disease.
@@ -314,22 +321,22 @@ Yet, publications on humans have found little support for cortical remapping in 
 
 One possible explanation for the Baker findings concerned the control of the observer's attention. According to Masuda et al. [@masuda2008-maculardegenerationV1], the lesion projection zone (LPZ) was silent during passive viewing (@fig-masuda-passive).
 
-![Masuda JMD passive.](images/masuda-jmd-passive.png){#fig-masuda-passive width="80%"}
+![During passive viewing, the primary visual cortex lesion projection zone (LPZ) in JMD patients remains entirely unresponsive to visual input.](images/masuda-jmd-passive.png){#fig-masuda-passive width="100%"}
 
 However, when the subjects engaged in a one-back memory task, a small signal could be detected in the LPZ [@rosenau2008-feedback; @masuda2021-maculardepgeneration]. 
 
-![Masuda JMD OBT.](images/masuda-jmd-obt.png){#fig-masuda-jmd-obt width="80%"}
+![When JMD patients perform a cognitively demanding one-back memory task, a measurable fMRI signal emerges in the otherwise silent LPZ, exposing task-dependent cortico-cortical feedback. Conversely, this task does not elicit a signal in the corresponding region of healthy controls when the stimulus is restricted to their peripheral vision.](images/masuda-jmd-obt.png){#fig-masuda-jmd-obt width="100%"}
 
 These findings suggest that there may typically be cortico-cortical signals present in V1 that are associated with task judgments. In sighted individuals, these feedback signals are masked by the retinal signal. If we remove the retinal signal but still maintain a task, we can measure the feedback signal. @fig-masuda-model is a block diagram showing the concept. 
 
-![Masuda model.](images/masuda-model.png){#fig-masuda-model width="80%"}
+![A conceptual diagram illustrating how strong feedforward retinal signals typically mask task-related feedback in healthy vision, whereas retinal lesions unmask these cortico-cortical projections.](images/masuda-model.png){#fig-masuda-model width="100%"}
 
 A later study showed that the V1 lesion projection zone of JMD patients responds to tactile and auditory stimuli, but only in the one-back memory task, not in the passive condition [@masuda2021-maculardepgeneration]. The modality-independent, task-dependent LPZ responses suggest they reflect task-related feedback signals rather than reorganized feedforward signals. Masuda is currently performing these experiments in blind subjects, and preliminary reports suggest he has found the same kind of signals, further supporting the idea.
 
 ### 4. Retinitis pigmentosa
 Masuda also made measurements in patients with retinitis pigmentosa, a disease that spares the fovea but damages the peripheral retina [@masuda2010-retinitispigmentosa]. Once again, they found no significant reorganization in the adult cortex (@fig-masuda-rp).
 
-![Masuda RP.](images/masuda-rp.png){#fig-masuda-rp width="80%"}
+![In retinitis pigmentosa, which damages the peripheral retina rather than the fovea, fMRI mapping matches the features in JMD.  There is no significant feedforward remapping into the peripheral lesion projection zone, but there is a task-based signal that is not present in controls.](images/masuda-rp.png){#fig-masuda-rp width="100%"}
 
 It is worth noting that in both retinal diseases, remapping cortical signals into the LPZ would not solve the problem caused by the retinal lesion: an expansion of cortical signals does not replace the missing retinal signal. It is unclear what functional purpose a remapping would serve. From the point of view of retinal prosthetics, the absence of remapping is good news: if we replace the missing retinal signal, the LPZ seems to be preserved and ready to receive signals from the blinded retinal region.
 
@@ -338,56 +345,49 @@ People who are deprived of vision from birth—most often due to cataracts or ot
 
 The case of Michael May is one of the most thoroughly studied. His story is told in the book *Crashing Through*, and it raises two sharp questions: Would surgery restore high-quality vision? And what would fMRI reveal about visual cortex after decades without contrast input?
 
-![Contrast sensitivity in recovered-sight patients over the years.](images/recovered-sight-historical.png){#fig-recovered-sight-historical width="80%"}
+![Measurements of contrast sensitivity in MM following his sight restoration surgery showed a severe and persistent contrast sensitivity deficit at high spatial frequencies, despite the restored optical clarity.](images/recovered-sight-historical.png){#fig-recovered-sight-historical width="100%"}
 
 At age three, Mike found a jar in his family's garage. It contained calcium carbide, a chemical used in miners' lamps that releases highly volatile acetylene gas on contact with water. When he brought the jar to the sink, the resulting explosion was catastrophic. He required roughly 300 stitches and spent six months in the hospital. Both corneas were destroyed, as was one retina. For the next 43 years, he had almost no contrast vision and only minimal light perception in his remaining eye.
 
 Early attempts to replace the damaged cornea and lens failed. A new procedure developed by Dr. Holland—involving the transplantation of limbal stem cells—eventually made surgery feasible. In March 2000, corneal specialist Dr. Daniel Goodman performed the operation in San Francisco. It succeeded: the new cornea and lens delivered a clear image to the retina.
 
-![Michael May when Dr. Goodman opened his repaired eye and he saw his wife for the first time.](images/recovered-sight-mm-open.png){#fig-recovered-sight-mm-open width="80%"}
+![Following 43 years of blindness, Michael May's vision was partially restored using a limbal stem cell transplant that repaired his damaged cornea. This image was captured at the moment MM opened the repaired eye and 'saw' his wife for the first time.](images/recovered-sight-mm-open.png){#fig-recovered-sight-mm-open width="100%"}
 
 Yet, as Elizabeth Huber, Ione Fine, and their collaborators documented, restoring retinal image quality did not restore normal vision [@huber2015-mikemay]. Consistent with the historical literature, Mike's contrast sensitivity function remained severely impaired despite years of follow-up.
 
-![Mike's contrast sensitivity measured over the years following corneal and lens restoration.](images/recovered-sight-csf.png){#fig-recovered-sight-csf width="80%"}
+![Even nearly a decade after surgery, Michael May's contrast sensitivity function remained highly attenuated compared to typical vision, consistent with phenomena seen in historical cases.](images/recovered-sight-csf.png){#fig-recovered-sight-csf width="100%"}
 
 The second question—what had happened to visual cortex after 43 years without contrast input?—required fMRI to answer. Mike generously gave his time for scanning, and Netta Levin led the analyses of his visual field maps and white matter pathways [@levin2010-mikemay]. Despite the long period of visual deprivation and the complete loss of one eye, the basic retinotopic map was preserved in Mike's visual cortex, with a notable deviation from normal. The central (foveal) region of his visual field, a region in which the retinal ganglion cells typically carry relatively high-resolution signals, seems to have been disrupted.  
 
-![Michael May's V1 eccentricity map did not include a significant signal from the fovea.](images/recovered-sight-V1-map.png){#fig-recovered-sight-V1 width="80%"}
+![Functional MRI retinotopic mapping in Michael May shows a robust representation of the peripheral visual field, but reveals an extensive loss of coherent signals within the typically expansive foveal confluence.](images/recovered-sight-V1-map.png){#fig-recovered-sight-V1 width="100%"}
 
 We interpreted these measurements as suggesting that the foveal receptive fields were larger than normal, and thus their centers were more peripheral (green) than what is found in the typical case. This hypothesis was supported by measurements of the relationship between eccentricity and pRF size in V1–V3. 
 
-![Measurements of the relationship between eccentricity and pRF size in Michael May's V1–V3. Color inset upper left: the angular representation.](images/recovered-sight-prf-size.png){#fig-recovered-sight-prf-size width="80%"}  
+![In controls, the population receptive field sizes measured across V1–V3 are systematically enlarged, particularly in the central visual field where the classical small-pRF foveal representation has deteriorated (inset). In MM, however, the ordering between V1-V3 is maintained but the increase in size with eccentricity is absent or perhaps reversed.](images/recovered-sight-prf-size.png){#fig-recovered-sight-prf-size width="100%"}  
 
 The main graph shows MM’s estimated population receptive field sizes as a function of eccentricity. Different symbols indicate estimates from V1, V2, and V3. For comparison, average pRFsize estimates from three control subjects are shown in the inset. Solid lines are fit to the points from each map. In controls and MM, pRF-size increases systematically from V1 to V3. MM’s estimated receptive field sizes at eccentricities from 8-10 deg are larger than those in controls. The pRF sizes beyond 10 deg are similar or smaller compared to controls. 
 
 Levin's paper also examined various structural aspects of the white matter, suggesting that there is a significant change in the inter-hemispheric callosal fibers from the occipital lobe [@levin2010-mikemay].
 
-### Sacks' report on Virgil: To see or not to see
-In an essay ('To see or not to see') that is included in his book, *An Anthropologist on Mars*, Oliver Sacks describes a case much like that of Michael May [@sacks1993-recovered-sight; @sacks1995-anthropologist-mars]. The experience of the subject of his essay, Virgil, is described as a catastrophe rather than a miracle. Virgil could see colors and movement, but he could not make sense of objects or faces—Virgil was "blind" to meaning. This caused great distress, just as Valvo [@valvo1971-visualrehab] reported for many of the patients in another 'miracle cures' exploration of recovered sight. Sacks suggests that Virgil's visual cortex had stabilized in a non-visual state, and the 45-year gap meant the critical period, which he called the "instructional window" for building functional maps, had long since closed.
+Mike's experience echoes other well-documented cases of recovered sight. In his essay 'To see or not to see', Oliver Sacks describes a strikingly similar trajectory in his subject Virgil [@sacks1993-recovered-sight; @sacks1995-anthropologist-mars]: Virgil could perceive colors and movement but could not make sense of objects or faces, experiencing the restoration of sight as a catastrophe rather than a miracle. Sacks attributed this to the visual cortex having stabilized in a non-visual state over decades — its "instructional window" for building functional maps long since closed.
 
-### Project Prakash
-A different take is provided by Sinha and his colleagues, who created [Project Prakash](https://www.projectprakash.org/). They emphasize a likely case of behavioral improvements and perhaps adult cortical plasticity for certain cases [@ostrovsky2006-recovered-sight; @ostrovsky2009-recovered-sight-parsing; @gandhi2017-recovered-sight-face]. In particular, Project Prakash includes people who lost and gained sight over a wide range of ages, and who have a wide range of deficits. 
-
-Most of the published reports concern behavioral improvements; the authors initially found that prominent figural cues of grouping, such as good continuation and junction structure, were largely ineffective for image parsing. By contrast, motion cues were of profound significance in that they enabled intra-object integration and facilitated the development of object representations that permitted recognition in static images. Following 10 to 18 months of visual experience, the individuals' performance improved, and they were able to use the previously ineffective static figural cues to correctly parse many static scenes. These results suggest that motion information plays a fundamental role in organizing early visual experience and that parsing skills can be acquired even late in life.
-
-The measurements are mainly behavioral, but there are some neuroimaging assessments including assessments of the white matter [@pedersini2023-recovered-sight-white-matter].
 
 ## The role of parvalbumin cells and PNNs
-In recent years there have been substantial advances in our understanding of the molecular mechanisms that enforce local stability. These findings provide an understanding of why there may be relative stability of the relatively fine-resolution features, such as ocular dominance columns and receptive field properties. 
+In recent years there have been substantial advances in our understanding of the molecular mechanisms that enforce local stability. There are two main principles.
 
-The stability mechanisms can be traced back to an observation by Camillo Golgi, quoted by Celio et al. [@celio1998-perineuronal-review]:
+First, Hensch showed that inhibitory parvalbumin interneurons are the primary modulators of cortical plasticity [@hensch2005-critical-period-review; @morishita2010-lynx1-hensch; @hensch2014-amblyopia-critical-period].
 
-> Eminent colleagues, The communication which I ask leave to deliver to you this evening takes the form of brief comments on the preparations which I have the honour to present to you, and to which I ask you to dedicate a moment of your attention. In the group of preparations shown here, you will immediately recognize two different peculiarities in the organization of the nerve cells; peculiarities concerning: the external surface, on the one hand, and the interior or the thickness of the cellular body, on the other.
+Second, Maffei, Fawcett, and others identified the molecular structures called *perineuronal nets* (PNNs) — dense extracellular matrix coatings on the surface of parvalbumin neurons — as the physical substrate that stabilizes these circuits [@kwok2011-pnn; @fawcett2022-perineuronal-review; @jain2012-somatosensory-plasticity; @jain2025-kaas-spinal-critical]. The existence of this external coating was first noted by Camillo Golgi (@fig-pnn-golgi), quoted by Celio et al. [@celio1998-perineuronal-review]:
 
-The external surface that Golgi and Cajal saw is a perineuronal coating, now called a perineuronal network (PNN), which is found mainly on parvalbumin-positive neurons (@fig-pnn-golgi). 
+> Eminent colleagues, ... In the group of preparations shown here, you will immediately recognize two different peculiarities in the organization of the nerve cells; peculiarities concerning: the external surface, on the one hand, and the interior or the thickness of the cellular body, on the other.
 
-![PNN defined. Golgi. Cajal](images/PNN-1.png){#fig-pnn-golgi width="80%"}
+![The perineuronal net (PNN) is a specialized extracellular matrix structure that surrounds the cell body and proximal dendrites of certain neurons, classically observed by Golgi and Cajal.](images/PNN-1.png){#fig-pnn-golgi width="100%"}
 
-We know that these inhibitory cells are the primary modulators of cortical plasticity [@hensch2005-critical-period-review; @morishita2010-lynx1-hensch; @hensch2014-amblyopia-critical-period]. Additional work from the Maffei and Fawcett labs identified the specific molecules (proteoglycans) within Golgi’s PNN that stabilize these inhibitory circuits and prevent local plasticity that is observed in the juvenile brain [@sorg2016-pnn-review]. Various post-mortem analyses of the human brain reveal that the PNNs are established at different times in different locations within the brain, including some that stabilize around 8 years of age, coincident with Hubel and Wiesel's critical period [@rogers2018-pnn-epilepsy; @mauney2013-pnn-schizophrenia; @yew1997-pnn-human-cerebellum; @grateron2003-pnn-human-entorhinal; @fung2010-pnn-human-dlpfc].
+The specific molecules responsible — chondroitin sulfate proteoglycans including aggrecan — were later identified and shown to stabilize inhibitory circuits and suppress the local plasticity seen in the juvenile brain [@sorg2016-pnn-review]. Post-mortem analyses of the human brain reveal that PNNs are established at different times in different brain regions, with some stabilizing around 8 years of age, coincident with Hubel and Wiesel’s critical period [@rogers2018-pnn-epilepsy; @mauney2013-pnn-schizophrenia; @yew1997-pnn-human-cerebellum; @grateron2003-pnn-human-entorhinal; @fung2010-pnn-human-dlpfc].
 
-![PNN aggrecan](images/PNN-2.png){#fig-pnn-molecules width="80%"} 
+![Aggrecan and other chondroitin sulfate proteoglycans form the structural core of perineuronal nets, which stabilize inhibitory circuits and restrict local plasticity after the critical period closes.](images/PNN-2.png){#fig-pnn-molecules width="100%"}
 
-Finally, very recently, we are learning more about the causal mechanisms for building this stability. Specifically, there is some activity-dependence for PNN development, and "Among the PNN-related genes examined, aggrecan alone exhibited strong activity-dependent transcriptional regulation" [@nakayama2025-aggrecan-pnn].
+More recently, we have learned that PNN formation is not simply a developmental clock running out, but is also activity-dependent: Nakayama et al. found that among PNN-related genes, aggrecan alone showed strong activity-dependent transcriptional regulation [@nakayama2025-aggrecan-pnn]. This suggests a feedback loop in which neural activity drives PNN formation, which in turn reduces plasticity — a mechanism that may help explain why the critical period closes gradually rather than abruptly.
 
 <!-- The Nakayama (2025) paper you asked about is the most modern measure of this process. It shows that aggrecan expression is not just a "clock" that runs out; it is activity-triggered.The Measure: Using quantitative PCR and Western blots, Nakayama showed that as neurons begin to fire in response to visual input, the Acan gene is upregulated specifically in Parvalbumin (PV) interneurons.
 
@@ -397,22 +397,22 @@ The Feedback Loop: Increased activity $\rightarrow$ Increased Aggrecan $\rightar
 ## Speculation: MRI and PNNs
 An interesting question for those of us who study the human brain is this: Can we help establish or contradict this role of the PNNs using non-invasive methods, such as MRI? 
 
-![PNN and MRI](images/PNN-3.png){#fig-pnn-mri width="80%"}
+![Could specialized quantitative MRI protocols, such as precise measurements of $T_1$ relaxation, detect the hydration layers associated with PNNs to map cortical plasticity and stability non-invasively?](images/PNN-3.png){#fig-pnn-mri width="100%"}
 
 We might be able to learn something about their development and spatial distributions in the human brain using MRI. The key determinant of the MR time constant, $T_1$, is the interaction between spins near the cell surface membranes, referred to as the hydration layer. Perhaps through careful study, we might find that the PNN molecules at the cell membrane impact the $T_1$ value of in vivo measurements, and thus variations could be informative about the development of PNNs at different locations and times. These measurements might inform us about healthy development, plasticity, and stability. This is quite speculative of course, but this is just a talk amongst friends.
 
-<!--
-Notes for future discussion with Stanford MR physicists:
+::: {.callout-note title="Why MRI?"}
+Even a speculation requires some justification.  Here are some thoughts about why an attempt to map PNN distributions over space and time might work.
 
-1. The Molecular Composition of PNNs:
-PNNs are dense extracellular matrix (ECM) structures composed heavily of chondroitin sulfate proteoglycans (CSPGs), hyaluronic acid, and link proteins. These macromolecules are highly negatively charged and bind massive amounts of structured water (forming the hydration layers).
+1. **The Molecular Composition of PNNs:**
+PNNs are dense extracellular matrix (ECM) structures.  They are composed heavily of chondroitin sulfate proteoglycans (CSPGs), hyaluronic acid, and link proteins. These macromolecules are highly negatively charged and bind massive amounts of structured water (forming the hydration layers). It is plausible that the hydration layer formed by the PNN has an MR signature that differs from the hydration layer in cells without such an ECM.
 
-2. Precedents in MRI (Cartilage & MSK Imaging):
-In musculoskeletal MRI, we already image these exact same molecules. Techniques like gagCEST (Glycosaminoglycan Chemical Exchange Saturation Transfer), T1-rho imaging, and Magnetization Transfer (MT) are used specifically to quantify proteoglycan concentration in cartilage by measuring the interaction between the macromolecular hydration layer and bulk water.
+2. **Precedents in MRI (Cartilage & MSK Imaging):**
+Musculoskeletal MRI images these molecules. Techniques like gagCEST (Glycosaminoglycan Chemical Exchange Saturation Transfer), $T_{1 \rho}$ imaging, and Magnetization Transfer (MT) are used specifically to quantify proteoglycan concentration in cartilage by measuring the interaction between the macromolecular hydration layer and bulk water.  If the MSK people can do it, why not the Neuro people?
 
-3. Application to the Cortex:
-In neuroimaging, myelin has historically dominated the conversation around T1 and MT because it is so highly concentrated in white matter. However, the ECM makes up roughly 20% of the brain's volume. As PNNs condense during development (wrapping around PV+ interneurons and locking in stability), the local density of proteoglycans and structured water must change. This would alter local macromolecular tissue volume (MTV) and change the relaxation times (T1, T2, and especially T1-rho or CEST contrast) in those specific cortical layers.
--->
+3. **Application to the Cortex:**
+In neuroimaging, myelin has historically dominated the conversation around T1 and MT because it is so highly concentrated in white matter. However, the ECM makes up roughly 20% of the brain's volume! [@nicholson1998-review-extracellular-space; @bonneh-barkay2009-ecm-neurodegeneration]. As PNNs condense during development (wrapping around PV+ interneurons and locking in stability), the local density of proteoglycans and structured water must change. This would alter local macromolecular tissue volume (MTV, [@mezer2013-mtv; @mezer2016-mtv]) and change the relaxation times (T1, T2, and especially T1-rho or CEST contrast) in those specific cortical layers.
+:::
 
 ## Summary
 A working hypothesis about plasticity and stability is something like this: The relatively large scale (say, multiple centimeters) of axonal connections that determine the human visual field maps is established by the long-range axonal projections that develop from birth. These orderly representations are established during the earliest stages of development and are rather stable—except when they are not (e.g., achiasmia).

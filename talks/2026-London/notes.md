@@ -307,3 +307,13 @@ The literature largely supports your view that developmental plasticity manages 
 If you are summarizing this for your London talk, emphasizing that **nystagmus is a standard diagnostic sign that can sometimes resolve** (likely due to successful management of associated conditions like hydrocephalus) would be a very insightful point for the neuroimaging community.
 
 Is there a specific slide from the 2010 VACTERL case or the original 2004 MM/Hoffman subjects you're planning to contrast?
+
+## Project Prakash (removed from main text)
+
+A different perspective is provided by Sinha and his colleagues, using work done in the context of [Project Prakash](https://www.projectprakash.org/). They describe cases of behavioral improvements and perhaps adult cortical plasticity for certain cases [@ostrovsky2006-recovered-sight; @ostrovsky2009-recovered-sight-parsing; @gandhi2017-recovered-sight-face].
+
+The patients in Project Prakash include people who lost and gained sight over a wide range of ages, and who have a wide range of deficits. Most of the published reports concern behavioral improvements; the authors initially found that prominent figural cues of grouping, such as good continuation and junction structure, were largely ineffective for image parsing.
+
+Motion cues, however, were of profound significance in that they enabled intra-object integration and facilitated the development of object representations that permitted recognition in static images. Following 10 to 18 months of visual experience, the individuals' performance improved, and they were able to use the previously ineffective static figural cues to correctly parse many static scenes. These results suggest that motion information plays a fundamental role in organizing early visual experience and that parsing skills can be acquired even late in life.
+
+The measurements are mainly behavioral, but there are some neuroimaging assessments including assessments of the white matter [@pedersini2023-recovered-sight-white-matter].
