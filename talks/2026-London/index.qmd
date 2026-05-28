@@ -5,10 +5,12 @@ author: "Brian Wandell"
 date: "today"
 format:
   html:
+    output-file: "2026-london.html"
     theme: cosmo
     toc: true
     embed-resources: true
   pdf:
+    output-file: "2026-london.pdf"
     keep-tex: false
     number-sections: true
     colorlinks: true
@@ -56,9 +58,7 @@ Many of us have enjoyed Charles Gross's book, which is filled with interesting h
 
 It was the Swedish neurologist, Henschen, who first carefully observed the visual loss in **human** patients with occipital lesions. He concluded that at least part of the visual field, the upper and lower portions, were represented in cortex in an orderly map with the lower visual field in the dorsal occipital lobe and upper visual field in the ventral occipital lobe. His findings were met with objections by many, and subsequently confirmed by many more. He expresses his feelings on the matter in the opening of a 1923 review paper [@henschen1923-review].
 
-::: {.column-margin}
-![Henschen's findings mapping the upper and lower visual field representations onto the human visual cortex.](images/henschen.png){#fig-henschen}
-:::
+![Henschen's findings mapping the upper and lower visual field representations onto the human visual cortex.](images/henschen.png){#fig-henschen .column-margin}
 
 In fact, Henschen's observations about the organization of the visual cortex in the human were confirmed and extended by two clinicians working at opposite ends of the world: Gordon Holmes and Tatsuye Inouye. Both were studying visual field losses from soldiers injured in their countries' wars, Holmes in Europe and Inouye in Japan. In that era, the guns were not always lethal, and the helmets would permit bullets to enter and exit the posterior skull, effectively lesioning a portion of occipital cortex. Such lesions could cause a permanent but partial visual field loss. By accumulating data from a number of different cases, they deduced the retinotopic organization of the human visual cortex. In addition to the upper-lower field representation, they both reported on the eccentricity map as well as the fact that the central portion of the visual field occupied more cortical territory (per square degree) than the peripheral portion. This phenomenon is called 'cortical magnification' (though perhaps it should be called 'foveal magnification').
 
@@ -86,9 +86,7 @@ The effort to discover and map multiple visual areas in animal models expanded e
 
 The burst of activity identifying new visual regions was summarized in an influential article by Felleman and Van Essen [@felleman1991-hierarchy]. @fig-felleman-vanessen shows an iconic diagram from that paper, illustrating the proposed hierarchy of visual areas with signals flowing from the bottom (retina, LGN, V1) to the top (peri-hippocampal regions). Although the data supporting this specific hierarchy were initially sparse, the underlying measurements have been significantly augmented over the last decade, particularly by work from Henry Kennedy's lab [@markov2013-hierarchicalanatomy; @markov2014-hierarchicalanatomy2]. I will discuss a proposed update to this diagram at the end of this section.
 
-::: {.column-margin}
-![Felleman and Van Essen's hierarchical representation of areas in visual cortex. This image is still widely used in teaching and by speakers who wish to introduce visual cortex to a general audience. It might be time for an update.](images/felleman-vanessen.png){#fig-felleman-vanessen}
-:::
+![Felleman and Van Essen's hierarchical representation of areas in visual cortex. This image is still widely used in teaching and by speakers who wish to introduce visual cortex to a general audience. It might be time for an update.](images/felleman-vanessen.png){#fig-felleman-vanessen .column-margin}
 
 ::: {#nte-FACT .callout-note title="FACT: Definitions"}
 An entire generation of scientists was taught a specific definition for a "visual area." Van Essen proposed that a cortical visual area is a region that can be distinguished from its neighbors by a convergence of evidence across four criteria (FACT), rather than by any single criterion alone:
