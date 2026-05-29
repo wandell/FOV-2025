@@ -36,6 +36,7 @@ book:
        - chapters/appendix-mri-methods-v2.qmd
        - chapters/appendix-computational-examples-v2.qmd
        - chapters/appendix-adaptive-optics-v2.qmd
+       - chapters/appendix-calculations-v2.qmd
        - chapters/appendix-online-teaching-resources-v2.qmd
 
 bibliography: paperpile.bib

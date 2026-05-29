@@ -1,0 +1,93 @@
+---
+date: last-modified
+---
+
+# Useful Calculations {#sec-appendix-calculations}
+
+{{< include "includes/WIP-callout.qmd" >}}
+
+# Useful Calculations Overview {#sec-appendix-calculations-overview}
+
+I am not sure how much goes here and how much goes in the main text.
+
+I think explaining beta weights should go somehwere, probably mri methods
+
+Here I am thinking a bit about flattening, meshes, segmentation, Hilbert transform, maybe statistical calculations.
+
+## Hilbert Transform - Where it is used and why
+
+[Gemini conversation](https://gemini.google.com/share/c35f6d1c6409)
+
+You have captured the essence perfectly. Your summary identifies the critical transition from viewing a signal as a **1D oscillation** to viewing it as a **complex trajectory**.
+
+To reinforce your synthesis, here is a breakdown of why your summary is spot-on:
+
+-   **The Quadrature Foundation:** You are exactly right that the Hilbert transform is used to construct that missing "imaginary" component. By creating this quadrature partner, you effectively double the information content of the signal at every time point, allowing for a complete representation of the signal's state.
+-   **The Analytic Signal as a "Summary":** You hit the mark by calling it a summary. While the original real signal $x(t)$ only tells you where the wave is at a given moment, the analytic signal $z(t) = A(t)e^{j\phi(t)}$ explicitly provides the **Envelope** $A(t)$ and the **Instantaneous Phase** $\phi(t)$ as separate, time-varying functions.
+-   **Geometric Insight:** It helps to think of the real signal $x(t)$ as the projection of a point moving around a circle in the complex plane. If the envelope $A(t)$ is changing, that circle is "breathing" (expanding and contracting). If the frequency is changing, the point is speeding up or slowing down its rotation. The Hilbert transform allows you to "watch" that rotation directly.
+
+### A Small Technical Caveat
+
+While your summary is excellent, it is worth noting one constraint to keep in the back of your mind for your research in visual computing and neuroimaging: **The Broad-band Problem.**
+
+The definition of "instantaneous frequency" as $\frac{d\phi}{dt}$ only behaves intuitively if the signal is **narrow-band** (i.e., its spectral content is clustered around a single dominant frequency). If your signal is truly broad-band (like white noise or a complex impulse train), the "envelope" and "instantaneous frequency" derived from the Hilbert transform can become physically ambiguous or difficult to interpret because the phase derivative can oscillate wildly.
+
+You have correctly identified the "why" and the "how"—the "when" (narrow-band signals) is the final piece of that intuition.
+
+You have captured the essence perfectly. Your summary identifies the critical transition from viewing a signal as a **1D oscillation** to viewing it as a **complex trajectory**.
+
+To reinforce your synthesis, here is a breakdown of why your summary is spot-on:
+
+-   **The Quadrature Foundation:** You are exactly right that the Hilbert transform is used to construct that missing "imaginary" component. By creating this quadrature partner, you effectively double the information content of the signal at every time point, allowing for a complete representation of the signal's state.
+-   **The Analytic Signal as a "Summary":** You hit the mark by calling it a summary. While the original real signal $x(t)$ only tells you where the wave is at a given moment, the analytic signal $z(t) = A(t)e^{j\phi(t)}$ explicitly provides the **Envelope** $A(t)$ and the **Instantaneous Phase** $\phi(t)$ as separate, time-varying functions.
+-   **Geometric Insight:** It helps to think of the real signal $x(t)$ as the projection of a point moving around a circle in the complex plane. If the envelope $A(t)$ is changing, that circle is "breathing" (expanding and contracting). If the frequency is changing, the point is speeding up or slowing down its rotation. The Hilbert transform allows you to "watch" that rotation directly.
+
+### A Small Technical Caveat
+
+While your summary is excellent, it is worth noting one constraint to keep in the back of your mind for your research in visual computing and neuroimaging: **The Broad-band Problem.**
+
+The definition of "instantaneous frequency" as $\frac{d\phi}{dt}$ only behaves intuitively if the signal is **narrow-band** (i.e., its spectral content is clustered around a single dominant frequency). If your signal is truly broad-band (like white noise or a complex impulse train), the "envelope" and "instantaneous frequency" derived from the Hilbert transform can become physically ambiguous or difficult to interpret because the phase derivative can oscillate wildly.
+
+You have correctly identified the "why" and the "how"—the "when" (narrow-band signals) is the final piece of that intuition.
+
+Does this interpretation align well with the types of signals you are currently analyzing in your work?
+
+Your intuition is spot on. There is indeed an implicit relationship between the frequency of the signal and the "window" of time that influences the Hilbert transform at any given point.
+
+### 1. The Global Nature of the Transform
+
+Mathematically, the Hilbert transform is defined by the convolution of the signal $x(t)$ with the impulse response $h(t) = 1/(\pi t)$.
+
+Unlike a Short-Time Fourier Transform (STFT), where you explicitly define a window (e.g., a Gaussian or Hamming window) to isolate a time slice, the Hilbert transform is **theoretically global**. Because the kernel $1/t$ decays very slowly, the output at any time $t$ technically depends on the *entire* history and future of the signal.
+
+### 2. The Frequency-Dependent "Effective" Window
+
+While the math is global, the *physical influence* is effectively local, and that locality is strictly scaled by the signal's frequency (or wavelength).
+
+-   **Higher frequencies:** Have shorter periods. Their oscillations complete cycles rapidly, meaning the "memory" of the signal—the time it takes for the wave to undergo a significant change—is short.
+-   **Lower frequencies:** Have longer periods. To get a stable estimate of an envelope or instantaneous phase for a low-frequency signal, you need a much longer "look" at the data.
+
+If you are looking at a signal component at frequency $f$, the "characteristic time" you are effectively integrating over is proportional to $1/f$. If you try to calculate the instantaneous amplitude of a 1 Hz signal, you need to observe it over a time scale related to that 1-second period. If you try to do this on a sub-second scale, the result will be unstable and likely physically meaningless.
+
+### 3. Why this matters for "Summary" Statistics
+
+When you use the Hilbert transform to derive the instantaneous amplitude (envelope) and phase, you are effectively applying an adaptive filter. The "window" is not a fixed number of seconds, but rather a **fixed number of cycles**.
+
+This is why, in neuroimaging or engineering, we almost always **pre-filter** signals into specific frequency bands (e.g., using a band-pass filter) before applying the Hilbert transform. By restricting the signal to a specific frequency band, you are essentially constraining the "effective window" of the Hilbert transform to a predictable range.
+
+-   **Band-pass filtering:** Forces the signal to be "narrow-band."
+-   **Hilbert transform:** Then extracts the envelope/phase of that specific band.
+
+If you skip the band-pass step, the Hilbert transform tries to compute "instantaneous" values across a wide range of frequencies simultaneously, which leads to the "oscillatory" or "unstable" behavior we discussed earlier.
+
+------------------------------------------------------------------------
+
+### Summary for your work
+
+You can think of the Hilbert transform not as having a single window, but as having a **multi-scale resolution** that matches the frequency of the components present. The lower the frequency you are trying to analyze, the longer the temporal "history" you must provide to get a stable estimate.
+
+Does this help clarify why band-pass filtering is such a critical prerequisite when you're preparing your data for Hilbert analysis?
+
+[Understanding the Hilbert Transform in the Time Domain](https://www.youtube.com/watch?v=J3iiIogQTDc)
+
+This video provides a clear, visual explanation of the Hilbert transform's operation in the time domain, which directly reinforces the connection between the convolution kernel and how the signal is processed.
