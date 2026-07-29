@@ -50,10 +50,4 @@ ffmpeg -loop 1 -t 3 -i 1.png \
 
 ## 3. Quarto Insertion
 
-After creating the `.mp4` video, embed it in a `.qmd` file with the standard Quarto-style image syntax mapping. Append the attributes to force the video to behave like a GIF (invisibly re-looping and automatically autoplaying).
-
-```markdown
-![Video Caption Here](path/to/output.mp4){#vid-unique-label width="80%" loop="true" autoplay="true" muted="true"}
-```
-
-**Important:** Nearly all modern browsers enforce strict autoplay policies. A video will only respect `autoplay="true"` if `muted="true"` is also explicitly defined.
+For the Quarto embedding syntax (including the HTML/PDF `content-visible` fallback pattern), see `.github/skills/figure-and-image-conventions/SKILL.md` — this workflow covers producing the `.mp4`; that skill covers embedding it.

@@ -1,98 +1,60 @@
-# Quarto + VSCode Agent Rules for *Foundations of Image Systems Engineering* (FOV-2025)
+# Agent Instructions for *Foundations of Vision* (2nd Edition)
 
-You are assisting with a Quarto book project stored in a GitHub repository. Your job is to help with **formatting, cross-references, figures, citations, layout, and build/debug issues** in `.qmd` files (and associated assets like CSS/JS), in a way that keeps the project maintainable.
+You are assisting with a Quarto book project (`project: type: book` in `_quarto.yml`) authored by Brian Wandell, stored in this GitHub repository. Work here means editing `.qmd` chapter files and their supporting assets (CSS/JS, images, bibliography) in a way that keeps the project maintainable, consistent with its established conventions, and correct in both the HTML and PDF build targets.
 
-## Working assumptions
-- Project type: **Quarto book** (`_quarto.yml` at repo root or book root).
-- Author writes and edits in **VSCode**.
-- Outputs: at least **HTML**, often **PDF** too. Assume cross-format compatibility matters unless told otherwise.
-- Citations: **BibTeX** is used (not CSL-only), and references are curated using bibtex-tidy and often imported from paperpile or google scholar.
-- Workspace instruction entrypoint: keep shared Copilot instructions in `.github/copilot-instructions.md`; supporting task-specific guidance lives in `.agent/workflows/`.
-- The repo includes supplemental materials and shared resources in several folders:
-  - `FOV-2025-Quarto/chapters/resources` (supplementary material in md, html, or qmd format)
-  - `FOV-2025-Quarto/code` (Matlab tutorials)
-  - `FOV-2025-Quarto/chapters/images`
-  - `FOV-2025-Quarto/styles` (includes CSL and JS files)
-  - `FOV-2025-Quarto/local` (local drafts and characterization files)
+## Start here: `.github/skills/`
+
+Detailed, topic-specific guidance — formatting mechanics, notation standards, editorial voice, and per-domain (optics/retina/cortex/color/pattern-vision/motion-depth) scientific conventions — lives in `.github/skills/<skill-name>/SKILL.md`, one directory per skill, following the Agent Skills format. **Read the relevant skill(s) before editing chapter content.** Each `SKILL.md` has a `description` stating exactly when it applies.
+
+**Formatting, mechanics, and editorial (apply across the whole book):**
+- `quarto-publishing-mechanics` — callouts, cross-references, BibTeX citations, footnotes, quotations, equation labels, standalone HTML export.
+- `figure-and-image-conventions` — file format/storage/naming, caption style (captions render in the HTML margin), sizing, margin figures, multi-panel figures, video embedding.
+- `reproducible-computational-examples` — why this book has no live code chunks, and how to link out to the ISETCam/ISETBio MATLAB toolboxes instead.
+- `editorial-voice-and-pedagogy` — authorial voice, audience level, the motivate-then-formalize argument structure, how technical terms are defined.
+- `notation-and-units-standards` — vector/matrix/scalar typesetting, unit typesetting, symbol-reuse checks, cross-format superscripts.
+- `chapter-section-structure` — file naming, required opening block, the Overview-section scaffold, appendix/part structure, label-prefix taxonomy.
+
+**Substantive domain skills (apply when editing content in that subject area):**
+- `optics` — image formation, linespread/pointspread functions, Snell's law, accommodation, adaptive optics.
+- `retina` — photoreceptor mosaic, sampling/aliasing, ganglion cell receptive fields, contrast.
+- `visual-cortex` — V1 anatomy, retinotopy, LGN pathways, fMRI/PET methods, plasticity.
+- `color` — wavelength encoding, scotopic/photopic matching, color-matching functions, color appearance/constancy.
+- `spatial-and-pattern-vision` — contrast sensitivity, the neural image, multiresolution/pyramid representations.
+- `seeing-motion-and-depth` — motion flow fields, the gradient constraint equation, binocular disparity, illusions, perceptual integration.
+
+When a task spans multiple domains or mixes formatting with substance (e.g. "add a new figure explaining cone sampling"), consult all the relevant skills — they cross-reference each other via "See also" sections.
+
+## Repository layout (verify before trusting — this drifts)
+
+- `chapters/*.qmd` — canonical chapter content; only files listed in `_quarto.yml`'s `chapters:` are part of the built book.
+- `chapters/images/NN/` — per-chapter image assets, numbered to match the chapter.
+- `chapters/includes/` — shared includes (e.g. `WIP-callout.qmd`).
+- `resources/` — supplementary material (md/html/qmd) not part of the main chapter sequence.
+- `styles/` — CSL bibliography styles and custom JS/CSS.
+- `local/` — local drafts and characterization files (not for general reference).
+- `scripts/` — Python/shell utilities (citation checking, bibliography key normalization, image reorganization).
+- `paperpile.bib` — the bibliography, managed via `bibtex-tidy` (see `.github/workflows-reference/bibliography.md`).
+- `deprecate/` — superseded/draft material, including the full 1995 first-edition text; useful for historical terminology comparison, not for citing as current content.
 
 ## Non-negotiables
-1. **Do not invent file paths, filenames, labels, or configuration keys.**
-   - If you need to refer to a file, first locate it by reading existing project structure (or ask the user to paste relevant snippets).
-2. **Do not propose “big rewrites” unless explicitly asked.**
-   - Prefer minimal diffs and localized fixes.
-3. **Always preserve existing conventions** (IDs, label prefixes, directory layout, naming style) unless there is a strong reason to change—and if so, explain why and propose a safe migration.
-4. **Be explicit about HTML vs PDF behavior.**
-   - If a technique only works in HTML (e.g., text wrap around figures), say so and provide a PDF-safe fallback.
 
-## Quarto cross-references (book-scale)
-- Use Quarto’s native crossref system (commonly `@sec-*` and `@fig-*`).
-- For detailed layout instructions, including margin figures and sizing, see [.agent/workflows/layout.md](.agent/workflows/layout.md).
-- For converting image sequences into videos and looping crossfades, see [.agent/workflows/video-generation.md](.agent/workflows/video-generation.md).
-- Figure prefixes: use stable labels (`fig-...`, `tbl-...`, `eq-...`, `sec-...`).
-- When debugging refs:
-  - Confirm the label exists and is unique.
-  - Confirm the label is attached to the correct block.
-  - Confirm the output format supports the feature (HTML vs PDF differences).
-  - Refer to [.agent/workflows/debug.md](.agent/workflows/debug.md) for clean rebuild steps.
+1. **Do not invent file paths, filenames, labels, or configuration keys.** Locate them by reading the project structure first.
+2. **Do not propose "big rewrites" unless explicitly asked.** Prefer minimal diffs and localized fixes.
+3. **Always preserve existing conventions** (IDs, label prefixes, directory layout, naming style) unless there is a strong reason to change — and if so, explain why and propose a safe migration.
+4. **Be explicit about HTML vs. PDF behavior.** If a technique only works in one target, say so and provide a fallback for the other (see `quarto-publishing-mechanics` and `figure-and-image-conventions`).
+5. **Search tools**: prefer `rg` (ripgrep) over `grep` and `fd` over `find` when both are available in this environment.
 
-## VSCode workflow and debugging
-- Suggestions should be actionable in VSCode (specific files and minimal diffs).
-- **CRITICAL - Tool Preferences:** When searching files in the terminal, **AI agents MUST use `rg` (ripgrep) instead of `grep`**, and **use `fd` instead of `find`**. These are faster and natively installed/preferred in this environment.
-- Debug approach:
-  - Refer to [.agent/workflows/debug.md](.agent/workflows/debug.md) for diagnostic procedures (`quarto check`, cleaning `_book/`, etc.).
-  - Ask for exact error text and minimal reproducible snippets.
+## Operational workflows (tool setup, debugging, media generation)
 
-## Citations and bibliography
-- Managed via `paperpile.bib`. Refer to [.agent/workflows/bibliography.md](.agent/workflows/bibliography.md) for setup and formatting workflows.
-
-## YAML and project configuration
-- Be conservative editing `_quarto.yml`:
-  - Only propose changes that you can justify in terms of the symptom.
-  - When recommending resource inclusion (CSS/JS), prefer Quarto-supported fields (`format: html: include-in-header`, `resources`, etc.) and match existing patterns.
-- Don’t introduce new dependencies unless necessary.
-
-## Output-format-aware guidance
-Whenever you propose formatting/layout:
-- State whether it applies to:
-  - HTML only,
-  - PDF only,
-  - both.
-- Provide a fallback if the primary method is format-specific.
+These remain in `.github/workflows-reference/` because they're procedural/tool-setup reference, not content-writing judgment:
+- `.github/workflows-reference/bibliography.md` — installing/configuring `bibtex-tidy`, troubleshooting silent formatting failures.
+- `.github/workflows-reference/debug.md` — `quarto check`, clean rebuilds, diagnosing stale/broken crossrefs.
+- `.github/workflows-reference/video-generation.md` — `ffmpeg` recipes for turning image sequences into looping/crossfade `.mp4` files (pair with the video-embedding syntax in `figure-and-image-conventions`).
 
 ## Style and communication rules
+
 - Be concise and technical; avoid generic advice.
-- Always include:
-  1) **Diagnosis hypothesis** (what you think is happening),
-  2) **One best fix** (minimal change),
-  3) **How to verify** (what to render/check),
-  4) **If it fails** (next most likely cause).
+- When proposing a fix, structure the response as: (1) diagnosis hypothesis, (2) one best fix (minimal change), (3) how to verify (what to render/check), (4) if it fails, the next most likely cause.
 - Use code fences for snippets, and keep them minimal.
-
-## Common “known project facts” (treat as defaults)
-- The project uses:
-  - Quarto book crossrefs
-  - `@sec-*` section references
-  - `.column-margin` for margin figures
-  - BibTeX citations
-  - VSCode as primary editor
-- Respect these defaults unless the user says otherwise.
-
-## Safety rails for debugging
-- If a build error occurs, do not guess wildly:
-  - Request the relevant file header + failing block + full error text.
-  - If the error includes line numbers, use them.
-- Don’t suggest switching tools or frameworks (e.g., “move to WordPress”)—this repo is Quarto-based.
-
---- 
-
-### What I’m best at
-- Fixing Quarto markdown formatting issues
-- Crossref and numbering problems
-- Figure placement, margin content, and layout tweaks
-- BibTeX citation troubleshooting in Quarto
-- VSCode-centric debugging workflows for Quarto books
-
-### What I should avoid
-- Large-scale refactors without request
-- Unverifiable claims about the repo structure
-- Format-specific hacks without clearly labeling them as such
+- When debugging a build error, ask for the exact error text and the smallest reproducible snippet (YAML header + failing block) rather than guessing.
+- Don't suggest switching tools or frameworks — this repo is Quarto-based, permanently.

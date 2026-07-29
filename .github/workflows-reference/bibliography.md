@@ -27,7 +27,7 @@ Install the `Bibtex Tidy` extension for VS Code:
 We use a workspace setting file (`.vscode/settings.json`) to force VS Code to use `bibtex-tidy` as the default formatter for BibTeX files and trigger formatting on save.
 
 1. Create or update `.vscode/settings.json` in your workspace root.
-2. Add the following configuration (see `.agent/workflows/settings-backup.json` for reference):
+2. Add the following configuration (see `.github/workflows-reference/settings-backup.json` for reference):
 
 ```json
 {
