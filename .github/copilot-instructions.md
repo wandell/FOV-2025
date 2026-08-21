@@ -8,6 +8,7 @@ Detailed, topic-specific guidance — formatting mechanics, notation standards, 
 
 **Formatting, mechanics, and editorial (apply across the whole book):**
 - `quarto-publishing-mechanics` — callouts, cross-references, BibTeX citations, footnotes, quotations, equation labels, standalone HTML export.
+- `bib-crossref-indexing` — where `paperpile.bib`/`local.bib` come from and how they're synced with the shared master library across the FISE-2025-Quarto / FOV-2025-Quarto / MRI-2026 projects.
 - `figure-and-image-conventions` — file format/storage/naming, caption style (captions render in the HTML margin), sizing, margin figures, multi-panel figures, video embedding.
 - `reproducible-computational-examples` — why this book has no live code chunks, and how to link out to the ISETCam/ISETBio MATLAB toolboxes instead.
 - `editorial-voice-and-pedagogy` — authorial voice, audience level, the motivate-then-formalize argument structure, how technical terms are defined.

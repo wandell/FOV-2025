@@ -39,7 +39,9 @@ book:
        - chapters/appendix-calculations-v2.qmd
        - chapters/appendix-online-teaching-resources-v2.qmd
 
-bibliography: paperpile.bib
+bibliography:
+  - paperpile.bib
+  - local.bib
 
 crossref:
   chapters: true

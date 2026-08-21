@@ -69,6 +69,7 @@ Suppress-cite: \nocite{RushtonAlligatorSciAm}
 - After adding citations, run `python3 scripts/check_citations.py` to catch keys used in `.qmd` files but missing (or case-mismatched) in `paperpile.bib`.
 - Never invent a citation key. If you're not certain a source is already in `paperpile.bib`, search it first (`grep -m1 "^@.*authorname" paperpile.bib`) rather than guessing a plausible-looking key.
 - Full CLI/VS Code setup for `bibtex-tidy` lives in `.github/workflows-reference/bibliography.md` — this skill covers *when/how to cite*, that workflow covers *tool installation*.
+- For where `paperpile.bib` and `local.bib` come from and how they're kept in sync with the shared master library across projects, see `bib-crossref-indexing`.
 
 ## Footnotes
 
@@ -139,5 +140,6 @@ Outside the main book build, this repo also uses Quarto to produce one-off, full
 
 ## See also
 
+- `bib-crossref-indexing` — cross-project bibliography sync: where `paperpile.bib`/`local.bib` come from and how they're kept in step with the shared master library.
 - `.github/workflows-reference/bibliography.md` — `bibtex-tidy` CLI/VS Code install and troubleshooting.
 - `.github/workflows-reference/debug.md` — `quarto check`, clean rebuilds, stale-crossref diagnosis.
