@@ -6,7 +6,21 @@ date: last-modified
 {{< include "includes/WIP-callout.qmd" >}}
 
 ---
+<!--
+Butterflies and the illusion of motion.
+@ARTICLE{Petric-Howe2026-uh,
+  title    = "These optical illusions are why butterflies are so hard to catch",
+  author   = "Petrić Howe, Nick",
+  journal  = "Nature",
+  month    =  sep,
+  year     =  2026,
+  url      = "http://dx.doi.org/10.1038/d41586-026-03124-w",
+  keywords = "Evolution; Zoology",
+  language = "en"
+}
 
+https://www.nature.com/articles/d41586-026-03124-w?utm_source=Live+Audience&utm_campaign=e6131d1654-nature-briefing-daily-20261002&utm_medium=email&utm_term=0_-33f35e09ea-49658492
+-->
 ## Motion and Depth Overview {#sec-motion-depth-overview}
 
 The perception of motion, like the perception of color, is a visual inference. The images encoded by the photoreceptors are merely changing two-dimensional patterns of light intensity. Our visual pathways *interpret* these two-dimensional images to create our perception of objects moving in a three-dimensional world. How it is possible, even in principle, to infer three-dimensional motion from the two-dimensional retinal image is one important puzzle of motion; how our visual pathways actually make this inference is a second.
