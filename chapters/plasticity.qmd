@@ -22,7 +22,7 @@ Many of the ophthalmology papers with Masuda and Ogawa.  The sequence with Yoich
 
 ## Deafness and remapping
 Also deaf and remapping?
-@levine-2020-retinotopicRemappingVisual
+@levine-2020-deaf-retinotopic-remapping
 
 ## Rod monochromats and remapping
 This one is for the rod monochromats, and called achromatopsia. It shows very little remapping.

@@ -21,7 +21,7 @@ The discovery of the location of primary visual cortex - the locations where the
 ::: {.callout-note collapse="false" title="Historical note: Munk vs. Ferrier"}
 Munk quotation about Ferrier here. Ferrier's rebuttal.
 
-@gross-1998brain-book is the source of the Munk quotation; Chapter 2, titled "The Discovery of the Visual Cortex."
+@gross1998-brain-book is the source of the Munk quotation; Chapter 2, titled "The Discovery of the Visual Cortex."
 
 Munk: "In my first communication on the physiology of the cortex which I made iii March of last year I did not say anything about Ferrier’s work on the monkey because there was nothing good to be said about it. But asked in the subsequent session I had to say that Mr. Ferrier's declarations that the visual center in the monkey was situated in the angular gyrus \[… and other claims …\] that all these statements and what followed from them as far as the character and restitution of disturbances set by the operation are concerned, are worthless and gratuitous constructions since the operated animals were examined by Mr. Ferrier in quite an insufficient manner and only at the time of general depression of brain function.
 
