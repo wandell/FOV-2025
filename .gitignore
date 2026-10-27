@@ -3,6 +3,9 @@
 /.quarto/
 /_site/
 site_libs/
+# quarto preview writes rendered pages next to the chapter sources
+chapters/*.html
+chapters/*_files/
 
 
 FOV-1995/*
