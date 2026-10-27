@@ -29,7 +29,7 @@ We are at the beginning stages of discovering the neural mechanisms of color app
 
 ### Motion and Depth
 
-Many of the same issues arise in [Chapter 10](/chapter-10-motion-and-depth/) as I discuss motion and depth perception. I have grouped motion and depth because estimating motion and depth are closely related computational tasks. Image changes arising from an observer’s motion yield a rich source of information about depth.
+Many of the same issues arise in [Chapter @sec-motion-depth] as I discuss motion and depth perception. I have grouped motion and depth because estimating motion and depth are closely related computational tasks. Image changes arising from an observer’s motion yield a rich source of information about depth.
 
 It will also become clear that just as color is not a direct representation of wavelength, perceived motion is not a direct representation of physical motion. Rather, motion perception is a mental inference that relies on computations implemented in the visual pathways.
 
