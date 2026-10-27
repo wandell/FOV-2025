@@ -51,6 +51,13 @@ bib file. They complement, but don't replace, the cross-repo scripts below —
 those keep this repo's `paperpile.bib` in step with the shared master; these
 check this repo's own citations against whatever bib files it currently has.
 
+`scripts/find_renamed_citations.py` goes one step further for keys that no longer
+resolve: it reads the chapter list and both bib files from `_quarto.yml`, reports
+every unresolved `@key`, and suggests the current key (matching first author +
+year, and title when given `--old-bib`, e.g. the 1st-edition `paperpile.bib`).
+`--apply` rewrites only unambiguous title matches in the `.qmd` files; keys with no
+candidate are printed as entries to add to `local.bib`. Run it after every sync.
+
 `bibtex-tidy` formatting setup lives in `.github/workflows-reference/bibliography.md`.
 If `paperpile.bib` was just synced in from the shared master, review the
 formatter's diff carefully — it will touch every entry the sync just brought in.
