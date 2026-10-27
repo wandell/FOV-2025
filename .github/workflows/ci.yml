@@ -1,49 +1,39 @@
-# Render the book (HTML only) and publish it to the gh-pages branch
-# on every push to main. Build the PDF locally when you want it.
+# Check the book on every push to main (and on pull requests).
+# This workflow does NOT publish; run `quarto publish gh-pages` locally
+# when a set of updates is ready to go live.
 name: CI
 
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:   # allows a manual run from the Actions tab
 
 permissions:
-  contents: write      # needed to push the gh-pages branch
+  contents: read
 
 concurrency:
-  group: publish-gh-pages
+  group: ci-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  build-deploy:
+  check:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Check citations resolve
+        run: python3 scripts/check_citations.py
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
-          version: 1.8.25
+          version: "1.8.25"
 
-      - name: Create gh-pages branch if it does not exist yet
-        run: |
-          if ! git ls-remote --exit-code --heads origin gh-pages > /dev/null; then
-            git config user.name  "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git switch --orphan gh-pages
-            git commit --allow-empty -m "Initialize gh-pages"
-            git push origin gh-pages
-            git switch main
-          fi
-
-      - name: Render book (HTML)
+      - name: Render book (HTML only; PDF is built locally)
         run: quarto render --to html
 
-      - name: Publish to gh-pages
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
-          render: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Check internal links
+        run: python3 scripts/check_internal_links.py _book
