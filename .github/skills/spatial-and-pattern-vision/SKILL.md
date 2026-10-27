@@ -1,11 +1,11 @@
 ---
 name: spatial-and-pattern-vision
-description: Trigger when drafting, editing, or reviewing content about contrast sensitivity, spatial/temporal frequency, the neural image, shift-invariant/convolution models of pattern detection, image compression, or multiresolution (pyramid) representations — enforces the notation and the detection-theory framing shared by chapter-07-pattern-sensitivity-v2.qmd and chapter-08-multiresolution-image-representations-v2.qmd.
+description: Trigger when drafting, editing, or reviewing content about contrast sensitivity, spatial/temporal frequency, the neural image, shift-invariant/convolution models of pattern detection, image compression, or multiresolution (pyramid) representations — enforces the notation and the detection-theory framing shared by pattern-sensitivity.qmd and multiresolution.qmd.
 ---
 
 # Spatial and Pattern Vision (Contrast Sensitivity and Multiresolution Representations)
 
-Grounded in `chapters/chapter-07-pattern-sensitivity-v2.qmd` and `chapters/chapter-08-multiresolution-image-representations-v2.qmd`.
+Grounded in `chapters/pattern-sensitivity.qmd` and `chapters/multiresolution.qmd`.
 
 ## Canonical notation and variables
 

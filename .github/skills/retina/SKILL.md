@@ -1,11 +1,11 @@
 ---
 name: retina
-description: Trigger when drafting, editing, or reviewing content about photoreceptors, the rod/cone mosaic, spatial sampling and aliasing, retinal ganglion cell receptive fields, contrast, or center-surround/space-time separability — enforces this book's notation and flags a real L/M/S-vs-R/G/B cone-naming inconsistency already present between chapter-03 and chapter-05.
+description: Trigger when drafting, editing, or reviewing content about photoreceptors, the rod/cone mosaic, spatial sampling and aliasing, retinal ganglion cell receptive fields, contrast, or center-surround/space-time separability — enforces this book's notation and flags a real L/M/S-vs-R/G/B cone-naming inconsistency already present between photoreceptors and retina.
 ---
 
 # Retina (Photoreceptor Mosaic and Retinal Representation)
 
-Grounded in `chapters/chapter-03-the-photoreceptor-mosaic-v2.qmd` and `chapters/chapter-05-the-retinal-representation-v2.qmd`.
+Grounded in `chapters/photoreceptors.qmd` and `chapters/retina.qmd`.
 
 ## Canonical notation and variables
 
@@ -24,7 +24,7 @@ Grounded in `chapters/chapter-03-the-photoreceptor-mosaic-v2.qmd` and `chapters/
 ## Core scientific models and assumptions
 
 1. **Sampling logic drives mosaic organization.** The chapter frames rod/cone spatial arrangement as a sampling-theory problem (matching Campbell & Gubisch's own linespread sampling logic from `optics`): sample too sparsely and you alias/miss real image variation; sample too densely and the encoding is wasteful. Apply this framing to any new mosaic-density discussion — don't describe density purely anatomically without the sampling-adequacy argument.
-2. **Nyquist/aliasing governs S-cone (and generally, undersampled) analysis.** The S-cone mosaic sampling sections (`chapter-03`) are built on the Nyquist limit and aliasing — use these terms precisely: *aliasing* is the specific consequence of sampling below the Nyquist rate, not a generic synonym for "blur" or "distortion."
+2. **Nyquist/aliasing governs S-cone (and generally, undersampled) analysis.** The S-cone mosaic sampling sections (`photoreceptors`) are built on the Nyquist limit and aliasing — use these terms precisely: *aliasing* is the specific consequence of sampling below the Nyquist rate, not a generic synonym for "blur" or "distortion."
 3. **Contrast, not intensity, is the input variable for linear receptive-field models.** This is stated as a deliberate methodological choice, not an incidental detail: "If we wish to apply linear methods to characterizing the responses of retinal ganglion cells, it is important to fix the mean level, and to treat the stimulus contrast, $c$, as the input." Any new receptive-field derivation should follow this — define $I = [1+c]\mu$ before writing a linear response equation.
 4. **Center-surround receptive fields** (on-center/off-surround or off-center/on-surround) are established via superposition tests (spot + annulus = predicted sum), following the same homogeneity/superposition logic as `optics` and `color` — re-derive linearity empirically before invoking a system matrix, per `editorial-voice-and-pedagogy`.
 5. **Space-time separability** ($\mathbf{R}(x,t) = S(x)T(t)$) is a testable property, not an assumption — state explicitly when a receptive field is or isn't shown to be separable before treating its spatial and temporal receptive fields as independently well-defined.
@@ -45,7 +45,7 @@ Space-time separability:          $$\mathbf{R}(x,t) = S(x)\,T(t)$$ {#eq-retina-s
 
 | Do use | Don't use | Why |
 |---|---|---|
-| **L, M, S cones** | R, G, B cones | `chapter-03-the-photoreceptor-mosaic-v2.qmd` explicitly commits to this: *"Throughout this book I will refer to the three types of photoreceptors as the L, M and S cones."* **`chapter-05-the-retinal-representation-v2.qmd` currently violates this**, using $R$/$G$/$B$ for cone type in the parvocellular/bistratified pathway discussion (e.g. "center response that is either an $R$ or $G$ cone"). Treat this as a known inconsistency to fix when editing that section, not a second valid convention — don't propagate R/G/B into new material. |
+| **L, M, S cones** | R, G, B cones | `photoreceptors.qmd` explicitly commits to this: *"Throughout this book I will refer to the three types of photoreceptors as the L, M and S cones."* **`retina.qmd` currently violates this**, using $R$/$G$/$B$ for cone type in the parvocellular/bistratified pathway discussion (e.g. "center response that is either an $R$ or $G$ cone"). Treat this as a known inconsistency to fix when editing that section, not a second valid convention — don't propagate R/G/B into new material. |
 | **eccentricity** | "distance from the fovea" (as the technical axis label) | Eccentricity (in degrees of visual angle) is the standard independent variable for cone/rod density and receptive-field-size plots throughout this book and `visual-cortex`. |
 | **aliasing** | "sampling error" / "distortion" | Aliasing is the specific, defined consequence of undersampling relative to the Nyquist limit — don't use it loosely for other kinds of encoding error. |
 | **contrast** ($c$) as the linear-systems input variable | raw **intensity** ($I$) as the input to a "linear" receptive-field model | The chapter explicitly warns: "In early studies... the stimulus intensity... was treated as the input variable. In this case, the linear systems methods fail severely." |

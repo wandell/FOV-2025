@@ -75,7 +75,7 @@ Suppress-cite: \nocite{RushtonAlligatorSciAm}
 
 This book uses **descriptive reference-style footnotes**, not numbered ones — the label doubles as a mnemonic when scanning a long chapter's source:
 
-**Good** (actual convention, e.g. `chapter-09-color-v2.qmd`):
+**Good** (actual convention, e.g. `color.qmd`):
 ```md
 ...well, we all have off days[^land-off-days].
 

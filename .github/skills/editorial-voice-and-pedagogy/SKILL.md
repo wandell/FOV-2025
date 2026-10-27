@@ -41,7 +41,7 @@ Nearly every major topic in this book follows the same arc — reuse it for new 
 4. **Formal (matrix/vector) treatment**, once the empirical test justifies it — never introduce the linear-algebra machinery before establishing, empirically, that the system is linear.
 5. **Biological or physical grounding** that connects the abstract result back to a mechanism (a photopigment, a cortical area, a receptive field).
 
-**Good** — question-driven opening from `chapter-04-wavelength-encoding-v2.qmd`:
+**Good** — question-driven opening from `wavelength-encoding.qmd`:
 ```md
 What information do we encode about the spectral power distribution when rods initiate
 vision, under *scotopic* conditions? We can answer this question by an experiment designed

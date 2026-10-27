@@ -1,11 +1,11 @@
 ---
 name: color
-description: Trigger when drafting, editing, or reviewing content about wavelength encoding, scotopic/photopic matching, color-matching functions, the XYZ system, surface reflectance, color constancy, or color appearance — enforces the system-matrix notation and empirical (match-first, formalize-second) argument structure shared by chapter-04-wavelength-encoding-v2.qmd and chapter-09-color-v2.qmd.
+description: Trigger when drafting, editing, or reviewing content about wavelength encoding, scotopic/photopic matching, color-matching functions, the XYZ system, surface reflectance, color constancy, or color appearance — enforces the system-matrix notation and empirical (match-first, formalize-second) argument structure shared by wavelength-encoding.qmd and color.qmd.
 ---
 
 # Color (Wavelength Encoding and Color Appearance)
 
-Grounded in `chapters/chapter-04-wavelength-encoding-v2.qmd` (encoding) and `chapters/chapter-09-color-v2.qmd` (appearance) — these are two halves of one domain: chapter-04 establishes what wavelength information the cones physically encode; chapter-09 asks how that encoding is *interpreted* as color appearance. Keep that division of labor when adding content — a color-matching/photopigment claim belongs in the chapter-04 register, a lightness/constancy/appearance claim belongs in the chapter-09 register.
+Grounded in `chapters/wavelength-encoding.qmd` (encoding) and `chapters/color.qmd` (appearance) — these are two halves of one domain: wavelength-encoding establishes what wavelength information the cones physically encode; color asks how that encoding is *interpreted* as color appearance. Keep that division of labor when adding content — a color-matching/photopigment claim belongs in the wavelength-encoding register, a lightness/constancy/appearance claim belongs in the color register.
 
 ## Canonical notation and variables
 
@@ -18,7 +18,7 @@ Grounded in `chapters/chapter-04-wavelength-encoding-v2.qmd` (encoding) and `cha
 | $\mathbf{A}$ | the photopigment absorption system matrix |
 | $\bar{x}(\lambda),\bar{y}(\lambda),\bar{z}(\lambda)$ | the standard CIE 1931 XYZ color-matching functions — always overbar notation, always this variable trio, never generic $f_1,f_2,f_3$ |
 | $e$, $\mathbf{e}$ | scotopic primary intensity (scalar) / photopic primary intensities (3-vector) |
-| $L$, $M$, $S$ | cone types, per the `retina` skill's naming convention (not R/G/B — see that skill for the known chapter-05 inconsistency to avoid repeating here) |
+| $L$, $M$, $S$ | cone types, per the `retina` skill's naming convention (not R/G/B — see that skill for the known retina inconsistency to avoid repeating here) |
 
 Before introducing a new bold-capital matrix symbol in a color derivation, check it doesn't collide with $\mathbf{R}$, $\mathbf{C}$, $\mathbf{P}$, or $\mathbf{A}$ above — see `notation-and-units-standards` for the general rule.
 
@@ -29,7 +29,7 @@ Before introducing a new bold-capital matrix symbol in a color derivation, check
 3. **Uniqueness up to a linear transformation, not absolute uniqueness.** Both the scotopic system matrix (unique up to a scalar $k$) and the photopic color-matching functions (unique up to a free $3\times3$ linear transformation, when primaries change) are explicitly *non-unique* — never present a specific set of color-matching functions (e.g. CIE XYZ) as *the* correct one; present it as *a* standardized choice with a stated rationale (non-negativity, rough luminance correspondence of $\bar{y}$).
 4. **Metamers**: physically different spectral power distributions that are visually indistinguishable — the direct consequence of the matching system being a rank-reduction (3-dimensional for photopic, 1-dimensional for scotopic) of an $n_\lambda$-dimensional input. Use "metamer"/"metameric" precisely for this appearance-matches-but-physically-differs relationship, not loosely for "similar colors."
 5. **Spectral image formation is multiplicative**: color signal ≈ illuminant SPD × surface reflectance function, before cone absorption. Any color-constancy or surface-inference discussion should be explicit about which of these two factors (illuminant vs. reflectance) is being estimated or held fixed.
-6. **Color appearance depends on relative/local cone absorptions, not absolute rates** — this is the load-bearing claim of the entire `chapter-09` color-constancy argument (contrast illusion, indoor/outdoor reading-a-book thought experiment). A new appearance claim should trace back to this relative/contrast framing, matching the "contrast as input variable" convention already established for retinal receptive fields (see `retina`).
+6. **Color appearance depends on relative/local cone absorptions, not absolute rates** — this is the load-bearing claim of the entire `color` color-constancy argument (contrast illusion, indoor/outdoor reading-a-book thought experiment). A new appearance claim should trace back to this relative/contrast framing, matching the "contrast as input variable" convention already established for retinal receptive fields (see `retina`).
 7. **The dichromatic reflection model** decomposes reflected light into **interface (specular)** reflection (angularly concentrated, mirror-like) and **body** reflection (diffuse, roughly equal in all directions) — use this two-term decomposition, not a single generic "reflectance," whenever glossy/specular appearance is discussed.
 
 ## Key equations (canonical LaTeX)

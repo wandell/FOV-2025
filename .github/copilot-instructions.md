@@ -28,7 +28,7 @@ When a task spans multiple domains or mixes formatting with substance (e.g. "add
 ## Repository layout (verify before trusting — this drifts)
 
 - `chapters/*.qmd` — canonical chapter content; only files listed in `_quarto.yml`'s `chapters:` are part of the built book.
-- `chapters/images/NN/` — per-chapter image assets, numbered to match the chapter.
+- `chapters/images/<slug>/` — per-chapter image assets; `<slug>` matches the chapter filename (`color.qmd` → `images/color/`). Chapter filenames carry no numbers; order comes only from `_quarto.yml`.
 - `chapters/includes/` — shared includes (e.g. `WIP-callout.qmd`).
 - `resources/` — supplementary material (md/html/qmd) not part of the main chapter sequence.
 - `styles/` — CSL bibliography styles and custom JS/CSS.

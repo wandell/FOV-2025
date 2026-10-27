@@ -8,51 +8,49 @@ description: Use whenever adding, moving, resizing, or captioning a figure/image
 ## File format and storage
 
 - **PNG is the format** — 286 of ~296 files under `chapters/images/` are `.png`. Export figures as PNG unless there's a specific reason not to (e.g. a source PDF diagram kept for reference). Avoid `.ps`, stray `.jpeg`/`.jpg` mixed with `.png` siblings, and never commit `.DS_Store`.
-- Images live in **per-chapter subfolders numbered to match the chapter**: `chapters/images/02/`, `chapters/images/04/`, etc. A chapter-9 figure belongs in `chapters/images/09/`, not `chapters/images/` root.
-- Reference images with the **relative path from the chapter file**: `images/09/surfR1.png` — not an absolute path, not `chapters/images/09/...` (the `chapters/` prefix is already the working directory of the `.qmd` file).
+- Images live in **per-chapter subfolders named with the chapter's slug** (the chapter filename without `.qmd`): `chapters/images/image-formation/`, `chapters/images/wavelength-encoding/`, etc. A figure for `color.qmd` belongs in `chapters/images/color/`, not the `chapters/images/` root. Appendix images go under `chapters/images/appendix/<topic>/`.
+- Reference images with the **relative path from the chapter file**: `images/color/surfR1.png` — not an absolute path, not `chapters/images/color/...` (the `chapters/` prefix is already the working directory of the `.qmd` file).
 
 ## Filenames — no spaces, ever
 
-Two real examples currently in the repo are the pattern to *avoid* when adding new files:
+A real example currently in the repo is the pattern to *avoid* when adding new files:
 
 **Bad** (actually in the repo — don't replicate):
 ```
-chapters/chapter-05a-the retinal representation-v2.qmd
 chapters/images/cortexLayers copy.png
 ```
 
 **Good**:
 ```
-chapters/chapter-05a-the-retinal-representation-v2.qmd
-chapters/images/06/cortex-layers.png
+chapters/images/cortex/cortex-layers.png
 ```
 Spaces in filenames break shell scripts (`scripts/move_images_*.py`, `ffmpeg` pipelines in `.github/workflows-reference/video-generation.md`), require manual quoting in every path, and a stray `copy` suffix signals an accidental duplicate rather than a deliberate name — resolve which file is canonical before adding new references to it.
 
 ## Figure syntax and labels
 
 ```md
-![Caption text.](images/09/surfR1.png){width="70%" #fig-surface-reflectance}
+![Caption text.](images/color/surfR1.png){width="70%" #fig-surface-reflectance}
 ```
 
 - Always include a `#fig-` label, even if nothing currently cross-references it — the crossref numbering (`fig-cap-location: margin`, `number-sections: true` in `_quarto.yml`) depends on it, and it's cheap to add now versus retrofitting later.
 - `width` is set as a percentage; observed range across the book is **50%–90%**, most commonly 60–80%. Full-bleed (100%/unset) is rare and reserved for wide multi-panel schematics.
-- Add `fig-alt` for accessibility — this is currently used in only 2 of ~150 figures (`chapter-07-pattern-sensitivity-v2.qmd`), i.e. it's the right practice going forward, not yet the established norm, so don't be surprised most existing figures lack it:
+- Add `fig-alt` for accessibility — this is currently used in only 2 of ~150 figures (`pattern-sensitivity.qmd`), i.e. it's the right practice going forward, not yet the established norm, so don't be surprised most existing figures lack it:
   ```md
-  ![...](images/07/schade.overview.png){width="60%" fig-alt="Schade's computational model of human vision" #fig-schade-overview}
+  ![...](images/pattern-sensitivity/schade.overview.png){width="60%" fig-alt="Schade's computational model of human vision" #fig-schade-overview}
   ```
 
 ## Captions are read in the margin — write them to stand alone
 
 `_quarto.yml` sets `fig-cap-location: margin` for HTML. In the rendered book, the caption is **visually separated from the figure** (floated to the margin), so a caption that says "as shown above" or depends on being read immediately next to the image will confuse the reader. This book's captions are consistently full, self-contained descriptive sentences — often a mini-paragraph — that explain what the figure shows without requiring the surrounding prose:
 
-**Good** (actual caption, `chapter-04-wavelength-encoding-v2.qmd`):
+**Good** (actual caption, `wavelength-encoding.qmd`):
 ```md
-![Matrix tableau of the scotopic matching experiment. The primary light intensity, e, equals the product of the $1 \times n_{\lambda}$ scotopic matching system matrix and the $n_{\lambda} \times 1$ vector representing the test light spectral power distribution.](images/04/Scotopic-Tableau.png){#fig-scotopic-tableau width="50%"}
+![Matrix tableau of the scotopic matching experiment. The primary light intensity, e, equals the product of the $1 \times n_{\lambda}$ scotopic matching system matrix and the $n_{\lambda} \times 1$ vector representing the test light spectral power distribution.](images/wavelength-encoding/Scotopic-Tableau.png){#fig-scotopic-tableau width="50%"}
 ```
 
 **Bad** — terse label caption that only makes sense read inline, which breaks once it's floated to the margin:
 ```md
-![Tableau above.](images/04/Scotopic-Tableau.png){#fig-scotopic-tableau width="50%"}
+![Tableau above.](images/wavelength-encoding/Scotopic-Tableau.png){#fig-scotopic-tableau width="50%"}
 ```
 
 For multi-panel figures, describe each panel in the caption using `(a)`, `(b)`, `(c)` — the book composites panels into a single PNG and labels them in the caption prose (as above), rather than using Quarto's native multi-panel layout below. Match the existing pattern unless you have a specific reason to switch.

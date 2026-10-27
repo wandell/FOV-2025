@@ -7,20 +7,26 @@ description: Use whenever creating a new chapter/appendix/part file, or restruct
 
 ## File naming
 
-Pattern observed across every canonical file in `_quarto.yml`: `chapter-NN-topic-slug-v2.qmd`, `appendix-topic-slug-v2.qmd`, `part-N-topic-slug-v2.qmd`. Two real files in the repo violate this and are the pattern to avoid:
+Chapter files are named by a **short topic slug, with no chapter number and no `chapter-` prefix** — every file in `chapters/` is a chapter, and chapter order is set only by `_quarto.yml`, so numbers in filenames go stale as material is reordered or inserted. Patterns:
 
-**Bad** (in the repo — don't replicate; also not referenced by `_quarto.yml`, i.e. drafts, not canonical chapters):
+- Chapters: `<slug>.qmd` — e.g. `color.qmd`, `retina.qmd`, `motion-depth.qmd`, `eye-movements.qmd`.
+- Part intros: `part-<slug>.qmd` — `part-encoding.qmd`, `part-representation.qmd`, `part-interpretation.qmd`.
+- Appendices: `appendix-<slug>.qmd` — `appendix-math.qmd`, `appendix-mri.qmd`.
+- Drafts not yet in the build: `<slug>-draft.qmd` (e.g. `retina-draft.qmd`).
+
+**Bad**:
 ```
-chapters/chapter-05a-the retinal representation-v2.qmd
-chapters/chapter-05b-retinal-representation.qmd
+chapters/chapter-14-new-topic-v2.qmd     # number + prefix + edition suffix
+chapters/chapter-05b-retinal-representation.qmd   # legacy scratch file, not in _quarto.yml
 ```
 
 **Good**:
 ```
-chapters/chapter-14-new-topic-v2.qmd
+chapters/new-topic.qmd
+chapters/images/new-topic/
 ```
 
-Rules: lowercase, hyphens only (no spaces, no underscores), no version suffix drift (`-v2` is this edition's marker — don't invent a `-v3` informally), and the chapter number should match its `chapters/images/NN/` folder (see `figure-and-image-conventions` skill).
+Rules: lowercase, hyphens only (no spaces, no underscores), short (1–3 words), and the slug **matches the chapter's image folder** `chapters/images/<slug>/` (see `figure-and-image-conventions` skill). Renaming a chapter file changes its published URL (`chapters/<slug>.html`), so pick a durable slug.
 
 **A new chapter file is inert until it's added to the `chapters:` list in `_quarto.yml`** under the correct `part:` — creating the `.qmd` file alone will not build or link it. Always make both edits together.
 
@@ -75,7 +81,7 @@ Sub-sections within a multi-topic appendix keep the `#sec-appendix-<topic>` nami
 
 ## Part-intro files
 
-A `part:` entry's first chapter (`part-N-topic-v2.qmd`) is an unnumbered scene-setter for the whole part, not a numbered chapter:
+A `part:` entry's first chapter (`part-<slug>.qmd`) is an unnumbered scene-setter for the whole part, not a numbered chapter:
 
 ```md
 # Introduction to Image Encoding {.unnumbered}

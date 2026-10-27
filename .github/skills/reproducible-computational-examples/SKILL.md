@@ -17,7 +17,7 @@ description: Use whenever a chapter needs to reference computation, simulation, 
 
 ## The established link-out pattern
 
-`chapters/appendix-computational-examples-v2.qmd` is the canonical home for pointers to runnable material:
+`chapters/appendix-simulations.qmd` is the canonical home for pointers to runnable material:
 
 ```md
 The simulations, written in Matlab, rely on two toolboxes. The base toolbox is
@@ -33,7 +33,7 @@ When you introduce a new computational pointer:
 1. Name the toolbox and link its GitHub repo (and wiki, if the specific page exists) — don't just say "code is available."
 2. State explicitly that it's open-source and free, matching the book's consistent framing.
 3. If the companion engineering book has a matching appendix, cross-link it rather than duplicating the explanation.
-4. Prefer linking from the main chapter text to `chapters/appendix-computational-examples-v2.qmd` (via `@sec-appendix-computational-examples` if a label exists, or a relative link) rather than re-explaining toolbox setup inline in the chapter.
+4. Prefer linking from the main chapter text to `chapters/appendix-simulations.qmd` (via `@sec-appendix-computational-examples` if a label exists, or a relative link) rather than re-explaining toolbox setup inline in the chapter.
 
 ## In-chapter framing language
 

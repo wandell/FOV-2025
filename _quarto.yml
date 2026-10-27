@@ -9,35 +9,35 @@ book:
     - index.qmd
     - part: "Image Encoding"
       chapters:
-       - chapters/part-1-image-encoding-v2.qmd
-       - chapters/chapter-02-image-formation-v2.qmd
-       - chapters/chapter-03-the-photoreceptor-mosaic-v2.qmd
-       - chapters/chapter-04-wavelength-encoding-v2.qmd
-       - chapters/chapter-12-eyemovements-v2.qmd
+       - chapters/part-encoding.qmd
+       - chapters/image-formation.qmd
+       - chapters/photoreceptors.qmd
+       - chapters/wavelength-encoding.qmd
+       - chapters/eye-movements.qmd
     - part:  "Image Representation"
       chapters:
-      - chapters/part-2-image-representation-v2.qmd
-      - chapters/chapter-05-the-retinal-representation-v2.qmd
-      - chapters/chapter-06-the-cortical-representation-v2.qmd
-      - chapters/chapter-06a-mri-cortex-v2.qmd
-      - chapters/chapter-13-plasticity-v2.qmd
-      - chapters/chapter-07-pattern-sensitivity-v2.qmd
-      - chapters/chapter-08-multiresolution-image-representations-v2.qmd
+      - chapters/part-representation.qmd
+      - chapters/retina.qmd
+      - chapters/cortex.qmd
+      - chapters/cortex-mri.qmd
+      - chapters/plasticity.qmd
+      - chapters/pattern-sensitivity.qmd
+      - chapters/multiresolution.qmd
     - part: "Image Interpretation"
       chapters:
-       - chapters/part-3-image-interpretation-v2.qmd
-       - chapters/chapter-09-color-v2.qmd
-       - chapters/chapter-10-motion-and-depth-v2.qmd
-       - chapters/chapter-11-seeing-v2.qmd
+       - chapters/part-interpretation.qmd
+       - chapters/color.qmd
+       - chapters/motion-depth.qmd
+       - chapters/seeing.qmd
     - references.qmd
     - part: "Appendix"
       chapters:
-       - chapters/appendix-v2.qmd
-       - chapters/appendix-mri-methods-v2.qmd
-       - chapters/appendix-computational-examples-v2.qmd
-       - chapters/appendix-adaptive-optics-v2.qmd
-       - chapters/appendix-calculations-v2.qmd
-       - chapters/appendix-online-teaching-resources-v2.qmd
+       - chapters/appendix-math.qmd
+       - chapters/appendix-mri.qmd
+       - chapters/appendix-simulations.qmd
+       - chapters/appendix-adaptive-optics.qmd
+       - chapters/appendix-calculations.qmd
+       - chapters/appendix-teaching-resources.qmd
 
 bibliography:
   - paperpile.bib
