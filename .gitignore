@@ -46,3 +46,6 @@ talks/2026-London/2026-London-Dai.pptx
 # Local workspace files
 local/
 FOV-2025-Quarto.code-workspace
+
+# macOS Finder metadata
+.DS_Store
