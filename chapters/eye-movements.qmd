@@ -7,13 +7,345 @@ date: last-modified
 
 ---
 
-## Eye movements Overview {#sec-eye-movements-overview}
+---
+date: last-modified
+---
 
-This will be a new chapter on principles, and computations of eye movement.  The strong foveation of the retina makes eye movements a critical component of vision.  We will review the different types of eye movements, and their functions.  We will also consider the computational principles that underlie eye movement control.  Finally, we will consider how eye movements interact with visual perception.  The last bit might go mainly in the Seeing chapter.
+# Eye movements {#sec-eye-movements}
+{{< include "includes/WIP-callout.qmd" >}}
 
-I regret not having included this chapter in the first edition.  Eye movements are so central to vision that it seems a glaring omission.
+---
 
+## Chapter Overview & Motivation {#sec-eye-movements-overview}
 
-* Richard Gregory Eye and Brain
-* David Hubel's book is called Eye, Brain and Vision.
-* Zeki's book?  A Vision of the Brain
+Eye movements are an absolute computational necessity for a foveated visual system. In earlier chapters, we saw that the human retina does not sample the visual field uniformly: cone photoreceptor packing density drops precipitously within just 1–2 degrees of eccentricity, and retinal ganglion cell density declines even more steeply (see @sec-photoreceptor-mosaic). Acuity, color discrimination, and high-frequency spatial sensitivity are concentrated in the tiny central fovea—a biological "peep-hole" encompassing less than $0.1\%$ of the total visual field.
+
+If our eyes remained stationary, our perception of the high-resolution world would be severely restricted, and stationary images would fade rapidly due to neural adaptation. Instead, vision is fundamentally an **active, sequential sensorimotor process**: our visual system continuously gathers information by executing high-speed ballistic re-orienting movements (saccades), stabilizing images during self-motion (vestibulo-ocular and optokinetic reflexes), aligning both eyes in depth (vergence), and continuously modulating retinal input during fixation (drift, tremor, and microsaccades).
+
+### Active Foveated Sampling: Perceptual and Visual Spans in Reading {#sec-perceptual-span}
+
+The computational necessity of eye movements is nowhere more intuitive than in **reading**, where high-resolution foveal identification and low-resolution peripheral guidance must be tightly synchronized in time and space.
+
+#### 1. The Perceptual Span (Keith Rayner)
+
+In a classic series of experiments, **Keith Rayner** developed the gaze-contingent *moving-window paradigm* to measure the spatial extent of visual information acquired during a single fixation—termed the **perceptual span** [@rayner1975-perceptualspan; @rayner1998-eyemovements]:
+
+* **Asymmetric Sampling Window:** For readers of English, the perceptual span is markedly asymmetric: it extends only 3–4 letter spaces to the left of fixation, but reaches 14–15 letter spaces to the right (ahead of the reading direction).
+* **Division of Labor Across Eccentricities:**
+  * **Fovea (Central $\sim 1\text{--}2^\circ$):** Dedicated to high-acuity lexical identification, recognizing letter features and word identities.
+  * **Parafovea (Out to $\sim 5^\circ$):** Although acuity is too low for full word identification, parafoveal vision extracts word boundaries (spaces), word lengths, and initial letter sequences.
+* **Targeting the Next Saccade:** This parafoveal "preview" is essential: it enables the oculomotor system to compute the landing target for the subsequent saccade (typically 7–9 letter spaces ahead), frequently skipping short grammatical words (e.g., "a", "the").
+
+#### 2. The Visual Span and Crowding (Gordon Legge)
+
+Complementing Rayner's cognitive framework, **Gordon Legge** and colleagues analyzed reading through rigorous psychophysical modeling, introducing the concept of the **visual span** [@legge1997-visualspan; @legge2001-visualspan; @legge2007-psychophysics]:
+
+* **The Sensory Bottleneck:** The visual span is defined as the number of adjacent printed characters that can be recognized reliably at a single glance without moving the eyes. Legge showed that reading speed is directly proportional to the size of this visual span.
+* **Sensory Constraints Across Eccentricity:** Legge demonstrated that the size of the visual span is fundamentally limited by basic sensory properties of the visual pathways: letter acuity, contrast sensitivity, and most critically, **spatial crowding** (lateral masking from flanking letters), which grows steeply with retinal eccentricity.
+* **Central vs. Peripheral Vision:** In normal foveal vision, the visual span spans roughly 10 characters. In peripheral vision—or in clinical low vision caused by macular degeneration where patients must read using a peripheral Preferred Retinal Locus (PRL)—the visual span shrinks dramatically because crowding impairs recognition, forcing readers to execute much smaller, more frequent saccades.
+* **Ideal Observer Reading Models (*Mr. Chips*):** Legge synthesized these findings into computational ideal-observer models (*Mr. Chips*) that combine the retinal visual span, letter recognition curves, and lexical constraints to simulate human saccadic targeting and reading speeds, establishing a direct computational bridge between retinal image encoding and active oculomotor behavior.
+
+::: {.callout-note}
+### Key Reference Texts in Vision & Eye Movements
+Classic monographs that shaped the conceptual landscape of vision include:
+
+* Richard Gregory's *Eye and Brain: The Psychology of Seeing* [@gregory1990-eyeandbrain4]
+* David Hubel's *Eye, Brain, and Vision* [@hubel1988-eyebrainvisionbook]
+* Semir Zeki's *A Vision of the Brain* [@zeki1993-book]
+
+For comprehensive, encyclopedic treatises on eye movements and binocular coordination:
+
+* **Ian P. Howard** (with Brian J. Rogers): *Seeing in Depth, Volume 1: Basic Mechanisms* [@howard2002-seeingindepth1] (expanded to the 3-volume *Perceiving in Depth* [@howard2012-perceivingindepth1]; see also Howard's foundational *Human Visual Orientation* [@howard1982-humanvisualorientation]). This monumental work provides the definitive account of orbital mechanics, Listing's and Donder's laws, 3D kinematics, and binocular vergence.
+* **Iain D. Gilchrist** (edited with Simon P. Liversedge and Stefan Everling): *The Oxford Handbook of Eye Movements* [@liversedge2011-oxfordhandbook]. A 1,000+ page compendium surveying the neurobiology, psychology, modeling, and applied science of human gaze.
+* **R. H. S. Carpenter**: *Movements of the Eyes* [@carpenter1988-movements]. The classic quantitative monograph on oculomotor physiology and control theory.
+* **R. John Leigh & David S. Zee**: *The Neurology of Eye Movements* [@leigh2015-neurology]. The clinical and neuro-computational benchmark for normal and disordered ocular motor systems.
+:::
+
+---
+
+## 1. The Engineering Approach: David A. Robinson's Oculomotor Modeling {#sec-robinson-modeling}
+
+The oculomotor system holds a privileged place in computational neuroscience and systems physiology. Unlike the skeletal motor system—where moving a limb involves variable external loads, multi-joint nonlinearities, and shifting center-of-mass dynamics—the eyeball rotates around a fixed center in the orbit. Its mechanical load is constant, symmetric, and devoid of unexpected external resistance.
+
+In a landmark series of papers, **David A. Robinson** pioneered the application of linear systems analysis, transfer functions, and feedback control theory to eye movements [@robinson1964-mechanics; @robinson1968-oculomotor; @robinson1973-models; @robinson1975-signals; @robinson1981-matrices].
+
+### The Mechanics of the Orbital Plant: The Pulse-Step Generator
+
+The eyeball and surrounding orbital tissues (fascia, fat, extraocular muscles) act mechanically as a viscoelastic system:
+$$T(t) = k\,\Delta \theta(t) + r\,\frac{d\theta(t)}{dt} + J\,\frac{d^2\theta(t)}{dt^2}$$
+where $T(t)$ is the muscular torque, $k$ is orbital elasticity, $r$ is viscous friction, and $J$ is moment of inertia. Because inertia $J$ is negligible compared to the large viscous drag of the orbital tissues, the eye is overdamped.
+
+To achieve rapid movement and stable fixation, the oculomotor plant requires two distinct neural control signals:
+
+1. **The Pulse (Velocity Command):** A high-frequency, phasic burst of action potentials generated by premotor burst neurons to overcome orbital viscous drag and rapidly accelerate the eye to peak velocities exceeding $600^\circ\text{/s}$.
+2. **The Step (Position Command):** A steady, tonic discharge proportional to the new eye position that holds the extraocular muscles contracted against the elastic restoring forces of the orbit. Without this step, the eye drifts exponentially back to primary position (gaze-evoked nystagmus).
+
+### The Brainstem Neural Integrator
+
+Because burst neurons fire in proportion to eye *velocity* ($\dot{E}$), the nervous system must mathematically integrate this signal over time to generate the tonic eye *position* command ($E = \int \dot{E}\, dt$):
+
+* **Horizontal movements:** Integration is performed by the *Nucleus Prepositus Hypoglossi (NPH)* and *Medial Vestibular Nucleus (MVN)*.
+* **Vertical and torsional movements:** Integration is performed by the *Interstitial Nucleus of Cajal (INC)*.
+* In computational neuroscience, the neural integrator serves as a canonical biological realization of recurrent attractor networks (line attractors).
+
+### Robinson's Local Feedback Model
+
+Classical views assumed that saccades were purely open-loop, pre-programmed ballistic commands. Robinson [-@robinson1973-models; -@robinson1975-signals] realized that saccades accurately land on target even if perturbed mid-flight. He proposed the **internal local feedback loop**:
+
+* An internal copy of the motor command (**efference copy**) is integrated to estimate current eye displacement ($\Delta E(t)$).
+* This estimate is continuously subtracted from the desired eye displacement ($\Delta E_d$), generating an instantaneous **dynamic motor error**:
+  $$e_m(t) = \Delta E_d - \Delta E(t)$$
+* Premotor burst neurons fire in proportion to $e_m(t)$ until error reaches zero, at which point omnipause neurons (OPNs) resume firing to shut down the burst.
+
+---
+
+## 2. Binocular Coordination: Version, Vergence, and 3D Kinematics {#sec-binocular-coordination}
+
+Because human vision relies on binocular overlap for high-grade stereopsis (see @sec-motion-depth), the two eyes must be controlled simultaneously to direct both foveas at the same point in 3D space [@howard2002-seeingindepth1; @howard2012-perceivingindepth1].
+
+### Conjugate Gaze (Version) vs. Disconjugate Alignment (Vergence)
+
+Binocular movements are decomposed into two fundamental geometric components:
+
+1. **Conjugate Movements (Version):** The two eyes rotate by identical angles in the same direction (horizontal, vertical, or torsional), shifting the cyclopean direction of gaze.
+2. **Disconjugate Movements (Vergence):** The two eyes rotate in opposite directions (convergence or divergence) to align the lines of sight across different depth planes. Vergence is driven by:
+   * **Retinal disparity:** (fusional vergence) correcting binocular misalignment.
+   * **Retinal blur:** (accommodative vergence) coupled to the crystalline lens.
+   * The **Near Triad:** Simultaneous convergence, lens accommodation, and pupillary constriction when shifting gaze from far to near targets.
+
+### Hering's Law of Equal Innervation vs. Helmholtz's Independent Control
+
+* **Hering's Law (1868):** Ewald Hering postulated that the central nervous system controls binocular eye movements as if directing a single "cyclopean eye." Premotor circuits deliver an identical signal to yoke-muscle pairs (e.g., the right lateral rectus and left medial rectus for rightward gaze).
+* **Helmholtz's Perspective (1867):** Hermann von Helmholtz argued that each eye is commanded independently, with coordination learned through visual feedback and binocular calibration.
+* **Modern Synthesis:** Neurophysiology demonstrates shared conjugate burst generators in the brainstem, but premotor and motor neurons display monocular tuning and distinct vergence premotor interneurons that modulate conjugate commands.
+
+### 3D Kinematics: Donders' Law and Listing's Law
+
+Although the eye can theoretically rotate with three degrees of rotational freedom (horizontal, vertical, and torsional):
+
+* **Donders' Law (1848):** For any given 2D direction of gaze, the 3D orientation of the eye (including torsional rotation about the line of sight) is unique and invariant, regardless of the trajectory taken to reach that gaze direction.
+* **Listing's Law (1855):** When the head is stationary, all achievable 3D eye orientations starting from primary position correspond to rotations around axes that lie in a single plane orthogonal to the line of sight in primary position (**Listing's Plane**). Torsion is held to zero relative to this coordinate frame during saccades and fixations, greatly simplifying the stereoscopic correspondence problem [@howard2002-seeingindepth1; @tweed1990-geometric; @haslwanter1995-mathematics].
+
+---
+
+## 3. Taxonomy & Kinematic Characterization of Eye Movements {#sec-taxonomy}
+
+Eye movements fall into three functional divisions: stabilizing gaze against head movement, foveating and tracking targets, and fixational modulations during stationary gaze.
+
+| Functional Class | Movement Type | Kinematics & Physical Limits | Primary Neural Substrate |
+| --- | --- | --- | --- |
+| **Gaze Stabilization** | **Vestibulo-Ocular Reflex (VOR)** | Latency $<10\text{ ms}$; open-loop; angular velocities up to $400^\circ\text{/s}$ countering head acceleration. | Semicircular canals / Otoliths $\rightarrow$ Vestibular nuclei $\rightarrow$ Cranial motor nuclei III, IV, VI. |
+|  | **Optokinetic Nystagmus (OKN)** | Latency $\sim 70\text{--}100\text{ ms}$; slow tracking phase driven by full-field retinal slip, punctuated by rapid resetting phases. | Accessory optic system (NOT) $\rightarrow$ Nucleus reticularis tegmenti pontis (NRTP) $\rightarrow$ Vestibular nuclei. |
+| **Foveal Targeting & Tracking** | **Saccades** | Ballistic; peak velocity up to $700\text{--}900^\circ\text{/s}$; duration $20\text{--}100\text{ ms}$; latency $150\text{--}250\text{ ms}$. | Superior colliculus, PPRF / riMLF, FEF, Basal Ganglia. |
+|  | **Smooth Pursuit** | Continuous tracking of moving targets up to $30\text{--}50^\circ\text{/s}$; latency $\sim 100\text{--}125\text{ ms}$. Requires visual target [@lisberger1987-pursuit; @krauzlis2004-pursuit]. | MT / MST $\rightarrow$ Pontine nuclei $\rightarrow$ Cerebellar flocculus/paraflocculus $\rightarrow$ Motor nuclei. |
+|  | **Vergence** | Slow ($20\text{--}40^\circ\text{/s}$) disconjugate alignment to depth disparities and blur; latency $\sim 150\text{--}200\text{ ms}$. | Midbrain near-response cells, supraoculomotor area, MT/MST. |
+| **Fixational Eye Movements (FEMs)** | **Ocular Microtremor** | High-frequency ($40\text{--}100\text{ Hz}$), tiny amplitude ($<1\text{ arcmin}$, sub-cone scale); continuous oscillation. | Brainstem oculomotor motor unit firing noise. |
+|  | **Ocular Drift** | Slow ($0.2\text{--}0.5^\circ\text{/s}$), erratic Brownian random walk occurring between saccades. | Cerebellar and brainstem integrator noise / Active control. |
+|  | **Microsaccades** | Involuntary, miniature saccades ($1\text{--}60\text{ arcmin}$) occurring $1\text{--}3\text{ times/s}$; follow the saccadic main sequence. | Rostral Superior Colliculus and PPRF/riMLF burst neurons. |
+
+: Classification of human eye movements. {#tbl-eye-movements-taxonomy}
+
+### Saccades, Kinematics, and Contrast Reduction {#sec-saccades-kinematics}
+
+Saccades are among the fastest movements produced by the human body. Saccadic kinematics exhibit an invariant, stereotyped relationship known as the **Main Sequence** [first parameterized quantitatively by Bahill, Clark, and Stark in -@bahill1975-mainsequence]:
+
+1. **Duration:** Scales approximately linearly with amplitude $A$:
+   $$D \approx D_0 + k \cdot A$$
+2. **Peak Velocity:** Increases steeply for small amplitudes and asymptotically saturates at large amplitudes ($>20^\circ$) due to muscle force saturation:
+   $$V_{\text{max}} = \frac{V_{\infty} \cdot A}{A_0 + A}$$
+3. **Reduction of Contrast Visibility During Saccades:**
+   During a saccade, the eye sweeps across the world at up to $700\text{--}900^\circ\text{/s}$. Why do we not experience debilitating motion smear or a gray-out? The visual system relies on two complementary mechanisms:
+   * **Saccadic Suppression (Neural Attenuation):** Visual contrast sensitivity is actively attenuated by $0.5\text{--}1.0\text{ log units}$ during saccades [@volkmann1978-saccadic]. Burr, Morrone, and Ross [-@burr1994-saccadic] demonstrated that this suppression is selective: it strongly dampens low-spatial-frequency luminance pathways (the magnocellular system), while largely sparing chromatic and high-spatial-frequency parvocellular signals.
+   * **Saccadic Omission (Visual Masking):** In a seminal study, Campbell and Wurtz [-@campbell1978-saccadicomission] proved that neural suppression alone is too weak to extinguish the intense motion blur of a $900^\circ\text{/s}$ image sweep. Instead, **visual masking** is the primary mechanism: the high-contrast, stationary retinal images immediately *before* (backward masking) and *after* (forward masking) the saccade visually mask the weak motion smear occurring during transit. When pre- and post-saccadic visual structure is removed (e.g., executing a saccade in total darkness against a brief flash, or inside a featureless Ganzfeld), the motion streak becomes clearly visible.
+4. **Saccadic Adaptation:** When intrasaccadic target displacements systematically cause landing errors, the oculomotor system recalibrates saccadic amplitude within tens of trials [@mclaughlin1967-adaptation], demonstrating cerebellar-dependent motor learning.
+
+### Fixational Eye Movements & Michele Rucci's Active Vision Framework {#sec-rucci-active-vision}
+
+When an observer fixates a stationary point, the eyes never come to a standstill. Instead, the retinal image undergoes continuous, miniature fluctuations composed of three distinct kinematics: high-frequency **microtremor**, slow wandering **ocular drift**, and rapid miniature **microsaccades** (see @tbl-eye-movements-taxonomy; @martinezconde2004-role).
+
+#### 1. Beyond Perceptual Fading
+
+In early stabilized-retinal-image experiments [@ditchburn1952-stabilized; @riggs1953-disappearance; @yarbus1967-eyemovements], researchers attached tiny mirrors or suction cups to the cornea to cancel retinal motion. Under complete optical stabilization, stationary scenes fade from perception within a few seconds because photoreceptors and retinal ganglion cells adapt rapidly to unchanging luminance.
+
+For decades, fixational eye movements were therefore viewed through a passive lens: either as unavoidable motor noise ("plant jitter") or as a blunt physiological trick to refresh adapting photoreceptors.
+
+#### 2. The Space-to-Time Transformation (Rucci et al.)
+
+Work by **Michele Rucci** and colleagues has fundamentally redefined this view, demonstrating that fixational eye movements are an integral component of retinal encoding [@rucci2007-nature; @rucci2015-et; @rucci2015-trends]. The visual system does not sample static spatial images; it samples a dynamic spatiotemporal stream:
+
+$$s(\mathbf{x}, t) = I\bigl(\mathbf{x} - \boldsymbol{\xi}(t)\bigr)$$
+
+where $I(\mathbf{x})$ is the static scene and $\boldsymbol{\xi}(t)$ represents the instantaneous trajectory of ocular drift.
+
+* **Converting Space into Time:** As the fovea drifts across a scene, spatial patterns are transformed into temporal modulations at the photoreceptor mosaic. Spatial frequency $\mathbf{f}_s$ is translated into temporal frequency $f_t$:
+  $$f_t \approx \mathbf{v}_{\text{drift}}(t) \cdot \mathbf{f}_s$$
+  High spatial frequencies (fine details) that are difficult to resolve statically are converted into higher temporal frequencies that match the temporal passband of early visual neurons.
+* **Spatiotemporal Whitening of Natural Scenes:** Natural images possess an invariant scale-free property: their power spectrum drops off as $1/f_s^2$, heavily favoring low spatial frequencies. The Brownian-like trajectory of ocular drift counterbalances this drop-off with an inverted temporal modulation spectrum. The result is an effective **whitening** of visual input, boosting the contrast of high spatial frequencies at the level of retinal ganglion cells [@rucci2015-et].
+* **Causal Demonstration of Acuity Enhancement:** Rucci et al. [-@rucci2007-nature] proved this causal link using gaze-contingent retinal stabilization. Selectively canceling the retinal motion of ocular drift severely degraded human performance on fine high-spatial-frequency discrimination tasks, while leaving low-spatial-frequency perception completely intact.
+
+#### 3. Active Control of Drift and Foveolar Exploration
+
+Recent findings reveal that fixational eye movements are neither passive nor random:
+
+* **Task-Dependent Drift Control:** Intoy and Rucci [-@intoyFinelyTunedEye2020] demonstrated that ocular drift is actively tuned by the central nervous system. When observers perform high-acuity tasks, drift velocity, diffusion rate, and directional curvature adaptively adjust to optimize spatiotemporal energy for the specific spatial frequencies required by the task.
+* **Precision Foveolar Targeting via Microsaccades:** Within the central $0.5^\circ$ (the foveola), photoreceptor density and neural pooling vary across tens of arcminutes. Poletti, Listorti, and Rucci [-@poletti2013-microsaccades] showed that microsaccades act as precision relocation mechanisms within this sub-degree zone. Rather than random re-centering jerks, microsaccades deliberately steer the peak-sensitivity center of the foveola across fine target features during demanding visual tasks.
+
+#### 4. Computational Observer Modeling of FEMs: The ISETBio Pipeline (Cottaris et al.)
+
+To understand how fixational eye movements interact with the biophysics of the early visual pathways, **Cottaris, Wandell, Rieke, and Brainard** [-@cottarisComputationalObserverModel2020] developed an end-to-end computational observer framework using the **ISETBio** simulation architecture (see also @cottarisComputationalObserverModel2019):
+
+* **The Integrated Biophysical Pipeline:** The model traces visual signals from calibrated spectral scenes through individual wavefront optics, photon absorption in the anatomically realistic cone mosaic, and the continuous temporal dynamics of phototransduction:
+  $$\text{Scene Radiances} \xrightarrow{\text{Optics}} \text{Retinal Irradiance} \xrightarrow{\text{FEMs}} \text{Spatiotemporal Absorptions} \xrightarrow{\text{Rieke Model}} \text{Cone Photocurrents}$$
+* **Simulating Drift Trajectories:** Fixational eye movement paths are generated using empirical random-walk statistics parameterized from human eye-tracking data, continuously displacing the retinal image over the discrete cone apertures during stimulus presentation.
+* **Interaction with Phototransduction Kinetics:** Because phototransduction is not instantaneous—the physiological conversion from photon isomerizations to outer-segment photocurrent takes tens of milliseconds (governed by the Rieke biophysical differential equation model)—eye movements displace the image while the cone is still integrating light.
+* **Computational Decision Engines:** By evaluating performance with ideal observers and linear support vector machine (SVM) classifiers, Cottaris et al. demonstrated how fixational eye movements modulate spatial contrast sensitivity functions (CSFs). In the absence of an efference copy or precise retinal motion knowledge, drift causes high-spatial-frequency motion blur across photoreceptors, attenuating sensitivity at fine spatial scales. However, when downstream mechanisms can exploit temporal modulations, the combination of phototransduction dynamics and fixational eye movements reshapes the spatiotemporal signal available to cortex.
+* **Bridging Theory and Physiology:** This computational observer approach provides a quantitative link between the physiological mechanisms introduced in earlier chapters—optical point spread (@sec-image-formation), cone mosaic sampling (@sec-photoreceptor-mosaic), and phototransduction kinetics—and active sensorimotor vision.
+
+---
+
+## 4. Neural Circuits: The Superior Colliculus and Cortical Loops {#sec-neural-substrates}
+
+The oculomotor circuit spans from the brainstem final common pathway up through the midbrain, basal ganglia, and cerebral cortex.
+
+### The Superior Colliculus: Wurtz & Goldberg's Pioneer Discoveries
+
+The primate **Superior Colliculus (SC)** is the central hub for translating sensory targets into motor saccade vectors. In an influential series of studies in the early 1970s, **Robert H. Wurtz** and **Michael E. Goldberg** decrypted its functional architecture in behaving non-human primates:
+
+1. **Laminar Segregation [@wurtz1971-science; @goldberg1972-rf]:**
+   * **Superficial layers (stratum opticum and above):** Exclusively visual sensory neurons organized in a retinotopic map of the contralateral visual field. Receptive fields expand with eccentricity.
+   * **Intermediate and deep layers:** Motor and visuomotor neurons organized in an aligned motor map. Electrical microstimulation evokes a saccade of fixed vector (direction and amplitude) matching the overlying retinotopic coordinates.
+2. **Presaccadic Burst Neurons [@wurtz1972-movement]:** Neurons in the intermediate layers discharge a burst of action potentials $\sim 20\text{ ms}$ before saccade initiation. The amplitude and direction of the saccade are decoded from the **population vector** across the collicular map [@lee1988-population; @sparks2002-brainstem; @scudder2002-burstgenerator].
+3. **Visual Enhancement and Attention [@goldberg1972-attention]:** Neurons in the SC fire more vigorously to a visual stimulus if that stimulus is the designated target for a subsequent saccade, providing early cellular evidence linking spatial attention to motor preparation.
+4. **Collicular Lesions [@wurtz1972-lesions]:** Collicular ablation impairs short-latency "express saccades" and saccadic accuracy, while sparing slow pursuit and basic fixation.
+5. **Rostral Fixation Zone:** Neurons in the anterior pole (representing the fovea) fire tonically during fixation and pause during saccades; activating them triggers microsaccades or aborts ongoing saccades.
+
+### Basal Ganglia Gating: Hikosaka & Wurtz
+
+Saccades are gated by a tonic double-inhibitory loop through the basal ganglia [@hikosaka1983-snr]:
+
+$$\text{Caudate Nucleus} \xrightarrow{\text{GABA (transient)}} \text{Substantia Nigra pars reticulata (SNr)} \xrightarrow{\text{GABA (tonic)}} \text{Superior Colliculus}$$
+
+The SNr tonically inhibits the intermediate layers of the SC, preventing erratic unwanted saccades. When the caudate nucleus is activated by cortical inputs, it transiently silences the SNr, **disinhibiting** the collicular motor burst neurons and permitting the saccade to execute.
+
+### Cortical Oculomotor Networks
+
+* **Frontal Eye Fields (FEF):** Located in prearcuate cortex; projects directly to the SC and brainstem burst generators [@bruce1985-fef]. FEF is essential for voluntary, memory-guided, and rule-based saccades, and sends top-down feedback that modulates visual gain in extrastriate visual areas [@moore2003-selective].
+* **Lateral Intraparietal Area (LIP):** Forms a topographical map of behavioral salience and priority, integrating bottom-up sensory salience with top-down behavioral relevance [@bisley2010-attention].
+* **Supplementary Eye Fields (SEF) & Dorsolateral PFC:** Govern complex saccade sequences, task-switching, and antisaccade suppression (suppressing reflexive glances toward sudden visual onsets).
+
+### Coordinated Eye and Head Gaze Shifts: David Sparks' Contributions {#sec-eye-head-coordination}
+
+In natural behavior, gaze shifts are rarely confined to the eyes alone. When shifting gaze to targets beyond $\sim 15\text{--}20^\circ$, humans and non-human primates recruit coordinated movements of both the eyes and the head [@sparks1999-head; @sparks2001-gaze].
+
+* **Gaze Decomposition:** The net change in gaze ($\Delta G$, orientation of the line of sight in space) is the vector sum of eye rotation in the orbit ($\Delta E$) and head rotation in space ($\Delta H$):
+  $$\Delta G = \Delta E + \Delta H$$
+* **The VOR Paradox and Dynamic Suppression:** Under stationary fixation, the Vestibulo-Ocular Reflex (VOR) counter-rotates the eyes in the opposite direction of head motion to stabilize the retinal image. However, during a rapid voluntary gaze shift, an active VOR would oppose the intended movement! David Sparks and colleagues demonstrated that the brainstem temporarily suppresses or overrides the VOR during the gaze saccade. Near the end of the saccade, the VOR is smoothly re-engaged: as the higher-inertia head continues to turn toward the target, the eye counter-rotates in the orbit, maintaining stable foveation on the target [@freedman1997-gaze; @sparks2001-gaze].
+* **Superior Colliculus Encodes Gaze Displacement:** Freedman and Sparks [-@freedman1997-gaze] made the fundamental discovery that intermediate and deep collicular neurons encode **gaze displacement vectors** ($\Delta G$) in motor coordinates, rather than an eye-in-head command ($\Delta E$). When the head is immobilized, the collicular burst drives an eye saccade; when the head is free to move, the identical collicular command drives a coordinated eye-head gaze shift. Downstream brainstem circuits dynamically decompose this collicular gaze error into separate premotor drives for extraocular and neck muscles.
+
+### Perceptual Stability: The Helmholtz vs. Sherrington Debate & Corollary Discharge {#sec-corollary-discharge}
+
+Each saccade sweeps the retinal image across photoreceptors at velocities exceeding $600^\circ\text{/s}$, yet we perceive a rock-solid, stable visual environment. How does the visual system distinguish retinal image shifts caused by our own eye movements from actual movements in the external world?
+
+#### 1. The Classic Debate: Inflow vs. Outflow (Richard Gregory's Framework)
+
+In *Eye and Brain: The Psychology of Seeing*, Richard Gregory [@gregory1990-eyeandbrain4] framed this fundamental problem through the historic debate between two competing theories of visual stability:
+
+* **Sherrington's Inflow Theory:** Sir Charles Sherrington [-@sherrington1918-muscular] proposed that sensory stretch receptors (muscle spindles) in the extraocular muscles send proprioceptive feedback signals *inward* to the brain. This inflow signal reports that the eye has turned, allowing visual cortex to cancel the concurrent retinal slip.
+* **Helmholtz's Outflow Theory:** Hermann von Helmholtz argued that cancellation relies on feedforward motor commands rather than muscle proprioception. When the brain issues a motor command to rotate the eye (*Willensanstrengung* or effort of will), an internal copy of this command flows *outward* to the visual sensory centers—termed an **efference copy** [@vonholst1950-reafference] or **corollary discharge** [@sperry1950-corollary]—predicting the sensory consequence of the impending movement.
+
+#### 2. Richard Gregory's Classic Experiments & Demonstrations
+
+Gregory highlighted several simple, elegant psychophysical tests that decisively favor Helmholtz's Outflow theory over Sherrington's Inflow theory:
+
+* **Passive Eye Displacement (Poking the Eye):** If you gently push your eyeball from the side through the eyelid with your finger, the visual world appears to jump and sway violently. Under Sherrington's Inflow theory, the eye muscles are stretched, so proprioceptive feedback should inform the brain that the eye moved and keep the visual world stationary. Under Helmholtz's Outflow theory, because no central motor command was generated to move the eye, no corollary discharge is sent to cancel retinal motion; consequently, the uncancelled retinal displacement is perceived as real world motion.
+* **Paralyzed Eye Muscles (The Curare / Paretic Eye Experiment):** When an observer with temporarily paralyzed extraocular muscles (e.g., via retrobulbar block or curariform drugs) or a paretic muscle attempts to look to the right, the eye cannot physically move. Yet, the observer perceives the entire visual scene jumping to the right! Under Inflow theory, the eye muscles did not move or stretch, so nothing should be perceived as moving. Under Outflow theory, the brain issued the motor command and generated its corollary discharge copy; because the eye failed to move and the retinal image remained static, the mismatch leads the brain to infer that the world moved.
+* **Afterimages in Darkness:** If an intense flash produces a persistent retinal afterimage and the observer moves their eyes in total darkness, the afterimage appears to dart across space with gaze. The afterimage is fixed on the retina ($\Delta \text{retina} = 0$), but the outflow command informs the brain that the eye turned, causing the illusory perception of spatial displacement. Conversely, if you push your eye with a finger in the dark, the afterimage remains stationary!
+
+#### 3. Computational Comparator Models & Neurobiological Circuits
+
+* **The Algebraic Comparator Model:**
+  $$\text{Perceived Motion} = \text{Retinal Slip} - \text{Corollary Discharge}$$
+  When an eye movement is voluntary, the internal corollary discharge perfectly cancels the sensory retinal slip, yielding zero perceived external motion. When an external object moves while the eye is stationary, corollary discharge is zero, and retinal slip is perceived directly as object motion.
+* **The Primate Neurobiological Pathway (Sommer & Wurtz):** Marc Sommer and Robert Wurtz [-@sommer2002-corollary; -@sommer2008-monitoring] identified a direct corollary discharge pathway in non-human primates running from presaccadic burst neurons in the intermediate layers of the **Superior Colliculus (SC)** through the **mediodorsal (MD) thalamus** up to the **Frontal Eye Fields (FEF)**. Inactivating MD thalamus selectively disrupts internal monitoring, impairing the animal's ability to plan rapid sequential double-step saccades without visual feedback.
+* **Predictive Receptive Field Remapping (Goldberg et al.):** Jean-René Duhamel, Carol Colby, and Michael Goldberg [-@duhamel1992-remapping] discovered that this corollary discharge drives predictive remapping in area LIP and FEF: neurons shift their sensitivity to the future retinal coordinates of visual targets milliseconds *before* the saccade actually launches, actively maintaining coordinate stability across eye movements.
+
+---
+
+## 5. Predicting Fixations and Active Vision: From Yarbus to DeepGaze {#sec-predicting-fixations}
+
+Where do humans direct their gaze, and can computational models predict scanpaths across natural scenes?
+
+### A. The Cognitive Foundation: Alfred Yarbus (1967)
+
+In *Eye Movements and Vision*, Alfred Yarbus [-@yarbus1967-eyemovements] made the seminal observation that human scanpaths are not driven solely by low-level image contrast. Recording gaze trajectories over Ilya Repin's painting *The Unexpected Visitor*, Yarbus showed that the exact same visual image yields drastically different fixation patterns depending on the observer's cognitive task (e.g., estimating family wealth, remembering people's ages, or judging clothing). Modern research in natural behavioral tasks reinforces that gaze operates as a **just-in-time sensor**, acquiring task-relevant information moments before physical action [@land2001-everyday; @hayhoe2005-natural; @tatler2010-yarbus].
+
+### B. Classical Bottom-Up Saliency: Koch, Ullman, & Itti
+
+* **Koch & Ullman (1985) & Itti, Koch, & Niebur (1998):** Formalized bottom-up feature-contrast saliency [@koch1985-shifts; @ittiModelSaliencybasedVisual1998; @itti2001-ev].
+* Input images are filtered into multiscale Gaussian/Laplacian pyramids computing:
+  * Luminance intensity contrast
+  * Red-green and blue-yellow color opponency
+  * Multi-angle spatial orientation (Gabor filters)
+* Center-surround feature differences are combined into conspicuity maps, non-linearly normalized, and summed into a 2D scalar **Saliency Map**.
+* A Winner-Take-All neural network selects the highest peak, followed by **Inhibition of Return (IOR)** to suppress recently visited regions and drive a sequential scanpath.
+* **Information Maximization (AIM):** Bruce and Tsotsos [-@bruce2005-saliency] proposed an alternative information-theoretic formulation defining local salience as Shannon self-information ($-\log P(\mathbf{f})$) over independent components learned from natural images.
+
+### C. Foveated Ideal Observers: Najemnik & Geisler (2005)
+
+Connecting psychophysics directly to eye movements, Jiri Najemnik and Wilson Geisler [-@najemnik2005-visualsearch] developed an **ideal searcher model**:
+
+* Human visibility ($d'$) declines sharply with retinal eccentricity away from the fovea.
+* Given this foveated sensitivity map, an optimal Bayesian observer chooses the next saccadic fixation location *not* necessarily at the single highest-probability target location, but at the position that **maximizes expected information gain** (minimizing posterior uncertainty across the entire visual field).
+* Human eye movements in visual search tasks closely match this Bayesian information-maximization strategy, often fixating between multiple target candidates ("center-of-gravity" saccades).
+
+### D. Concept-Guided Visual Search: Beyond Local Image Statistics {#sec-concept-guided-search}
+
+A fundamental principle of human oculomotor control is that visual search is guided by **high-level semantic concepts**, rather than merely bottom-up image statistics or local feature contrasts:
+
+* **Gabriel Kreiman's "Waldo" Models & Invariant Search:**
+  * When looking for a specific object—epitomized by the challenging search dynamics in *Where's Waldo?* puzzles—humans do not wander randomly or get captured by salient visual distractors.
+  * Miconi, Groomes, and Kreiman [-@miconi2016-waldo] developed a biologically inspired cortical normalization model of visual search (*"There's Waldo!"*). They showed that top-down target representations dynamically modulate neuronal tuning in early and intermediate visual cortex via divisive normalization, successfully predicting human fixations on single object-search trials.
+  * In *Finding any Waldo: Zero-Shot Invariant and Efficient Visual Search*, Zhang, Tseng, and Kreiman [-@zhang2018-waldo] demonstrated that humans perform **zero-shot invariant visual search**: given an arbitrary, never-before-seen target object, the brain instantly computes a top-down priority map that generalizes across transformations in scale, rotation, and illumination. Their Invariant Visual Search Network (IVSN) models how top-down target templates in ventral temporal cortex project backward through the visual hierarchy to steer saccades directly toward target candidates in dense visual clutter.
+* **Scene Grammar and Contextual Priors:**
+  * Conceptual knowledge also dictates *where* objects are expected to be found within a scene ("scene grammar"). Torralba, Oliva, Castelhano, and Henderson [-@torralba2006-contextual] demonstrated that global scene features immediately constrain the spatial distribution of fixations (e.g., searching for a portrait directs saccades to eye-level walls; searching for a mug directs gaze to horizontal tabletops, completely bypassing ceilings or floors regardless of their local contrast).
+  * Jeremy Wolfe's **Guided Search** framework [@wolfe2021-guidedsearch] formalizes how these top-down conceptual representations, categorical feature guidance, and scene context combine to pre-attentively restrict the spatial candidate locations evaluated by high-resolution foveal vision.
+
+### E. Probabilistic Benchmarking and Deep Learning: Bethge, Kümmerer, & DeepGaze
+
+Over the past decade, Matthias Bethge, Matthias Kümmerer, and colleagues have transformed fixation prediction from heuristic saliency maps into rigorous probabilistic density modeling [@kummerer2015-pnas; @kummerer2016-ik; @kummerer2022-vz; @kummerer2023-av]:
+
+1. **Benchmark Datasets & Metric Conflicts:** Judd et al. [-@judd2009-learning] and Bylinskii et al. [-@bylinskii2018-metrics] established large eye-tracking benchmarks (MIT Saliency Benchmark), formalizing metric comparisons and uncovering pervasive **center biases** and semantic attractors (faces, text, people).
+2. **Information-Theoretic Metric Unification [@kummerer2015-pnas]:**
+   * Traditional saliency metrics (AUC, NSS, CC, Earth Mover's Distance) often conflict and are corrupted by photographer center-bias (the tendency of photographers to place interesting subjects in image centers, and observers to look near the center of a display).
+   * Kümmerer, Wallis, and Bethge demonstrated that gaze prediction is properly formulated as **spatial point-process density estimation**. Models are evaluated by log-likelihood, measuring **information gain** in **bits per fixation** above a baseline model (such as a 2D Gaussian center-prior).
+3. **DeepGaze I & II [@kummerer2016-ik]:**
+   * Early saliency models relied exclusively on low-level hand-crafted filters (edges, contrast).
+   * DeepGaze demonstrated that feature maps extracted from deep convolutional neural networks trained on object classification (e.g., VGG, ResNet) contain rich representations of high-level semantic attractors (faces, eyes, heads, text, hands, objects).
+   * Deep features account for over $85\text{--}90\%$ of the explainable variance in static human free-viewing fixations on benchmark datasets (MIT Saliency Benchmark).
+4. **Scanpath Modeling: DeepGaze III [@kummerer2022-vz; @kummerer2023-av]:**
+   * Free viewing is a dynamic spatiotemporal process, not a static heatmap.
+   * DeepGaze III models conditional probability distributions over future fixations given past scanpath history:
+     $$P(x_t, y_t \mid x_{1:t-1}, y_{1:t-1}, I)$$
+   * Incorporates spatial priors (saccade amplitude decay distributions, horizontal/vertical cardinal biases) and short-term sequential dynamics (inhibition of return and return saccades), providing state-of-the-art predictive generative modeling of human eye movements across complex scenes.
+
+---
+
+## 6. Proposed Chapter Roadmap & Integration {#sec-chapter-roadmap}
+
+This chapter connects Part I (*Image Encoding*) to Part II (*Image Representation*) and Part III (*Image Interpretation*):
+
+1. **Section 1 (@sec-eye-movements-overview):** The ecological necessity of eye movements in foveated visual systems, illustrated by the perceptual span in reading (@sec-perceptual-span).
+2. **Section 2 (@sec-robinson-modeling):** The engineering plant—Robinson's linear systems model, pulse-step signals, the neural integrator, and local feedback control.
+3. **Section 3 (@sec-binocular-coordination):** Binocular vision—conjugate version, disconjugate vergence, Hering's law vs. Helmholtz, and 3D rotational kinematics (Listing's and Donders' laws).
+4. **Section 4 (@sec-taxonomy):** Kinematic taxonomy—saccades (the main sequence, saccadic suppression vs. visual masking omission), fixational eye movements (microtremor, drift as spatial-temporal whitening, microsaccades, and Cottaris et al. computational observers), and tracking/stabilization (smooth pursuit, VOR, OKN).
+5. **Section 5 (@sec-neural-substrates):** The neural substrate—Wurtz & Goldberg's mapping of the superior colliculus, David Sparks' eye-head gaze decomposition (@sec-eye-head-coordination), cortical control (FEF, LIP), and corollary discharge circuits mediating perceptual stability (@sec-corollary-discharge).
+6. **Section 6 (@sec-predicting-fixations):** Active vision and fixation modeling—Yarbus scanpaths, Itti-Koch saliency, Najemnik-Geisler ideal searchers, Kreiman's concept-guided Waldo search models, and Bethge's DeepGaze framework for spatial-temporal gaze prediction.
+
+::: {.callout-note}
+### Author Note: Scope & Material to Consider Condensing
+The current outline captures the complete computational, physiological, and cognitive landscape of eye movements. All material is currently retained in full. However, when drafting the final text for *Foundations of Vision*, the following sections are candidate areas that could be streamlined:
+
+1. **Detailed Brainstem Nuclei:** The catalog of pontine and midbrain reticular nuclei (PPRF, riMLF, NPH, MVN, INC, OPNs) in @sec-robinson-modeling can be tightened to emphasize the core *computational principles* (the pulse-step viscoelastic compensation and the mathematical neural integrator $\int \dot{E}\, dt$) rather than clinical neuroanatomy.
+2. **Subcortical Basal Ganglia Loops:** The tonic GABAergic gating circuit (Caudate $\rightarrow$ SNr $\rightarrow$ SC) and prefrontal antisaccade rules could be shortened to keep the primary focus on image encoding and coordinate transformations.
+3. **High-Level Scene Perception & Search Models:** The cognitive visual search frameworks in @sec-predicting-fixations (Yarbus scanpaths, Kreiman's Waldo search, and DeepGaze III) provide a compelling demonstration of active vision, but they represent a substantial excursion into cognitive scene interpretation. As the text develops, these topics can either be summarized concisely here or migrated to Chapter 13 (*Seeing*), keeping Chapter 5 strictly focused on foveated sampling and spatiotemporal image encoding.
+:::
