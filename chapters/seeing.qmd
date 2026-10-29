@@ -56,6 +56,30 @@ Illusions are fun. They draw people into our discipline, they inspire new algori
 
 Of the many illusions known to vision scientists, only a fraction are suitable for the printed page. Of that portion, I have included mainly illusions to make some points about how we see objects. To understand seeing we must understand how we integrate all of the different inferences concerning pattern, color, motion and depth into a single description of the world.
 
+::: {.callout-note}
+### Author Note: Illusions and Phenomena Connected to Eye and Head Movements
+Seeing is not a passive reception of static retinal snapshots; it is an active inferential process embedded in continuous motor action. A major category of visual illusions and perceptual phenomena arises directly from the dynamics of **eye movements** and **head movements**, and the brain's internal sensorimotor models (efferent copy and corollary discharge) that predict or compensate for them:
+
+1. **Fixational Eye Movements & Apparent Motion:**
+   - **Troxler Fading vs. Fixational Drift:** In the absence of microscopic eye movements (or under artificial retinal image stabilization), static peripheral patterns fade from awareness within seconds. Ocular drift and microsaccades constantly refresh photoreceptor signals across space and time.
+   - **Anomalous Motion from Fixational Movements:** Static repetitive geometric patterns (such as the *Ouchi illusion*, Leviant's *Enigma*, or Kitaoka's *Rotating Snakes*) evoke vivid sensations of motion. These illusions are directly driven by the interaction between involuntary fixational eye movements (microsaccades and drifts) and multi-directional, high-contrast spatial geometries.
+   - **The Autokinetic Effect:** A single stationary pinpoint of light observed in total darkness appears to drift erratically, reflecting unmonitored slow fixational drift in the absence of an external spatial reference frame.
+
+2. **Smooth Pursuit & Extraretinal Motion Subtraction:**
+   - **The Filehne Illusion:** When tracking a moving target with smooth pursuit across a textured, stationary background, the background appears to move in the direction opposite to pursuit. The visual system slightly underestimates the eye velocity signal (corollary discharge), leaving an uncompensated retinal slip vector.
+   - **The Aubert-Fleischl Effect:** A target moving at a constant physical velocity is perceived to move noticeably slower when actively tracked with smooth pursuit than when fixating a stationary point while the target sweeps across the retina.
+
+3. **Saccadic Spatiotemporal Distortions:**
+   - **Saccadic Chronostasis (The "Stopped-Clock" Illusion):** Upon making a saccade to an analogue clock or a digital counter, the first second often appears noticeably longer than subsequent seconds. The visual system bridges the perisaccadic perceptual gap by antedating the post-saccadic image to the onset of the saccade.
+   - **Perisaccadic Spatial Mislocalization & Compression:** Brief stimuli flashed immediately before or during a saccade are systematically mislocalized and compressed toward the saccadic landing site, revealing the dynamic remapping of receptive fields coordinated by corollary discharge pathways.
+
+4. **Head Movements, Motion Parallax, and Kinetic Depth:**
+   - **Active Motion Parallax:** Monocular lateral translation of the head creates a velocity gradient on the retina (near objects move faster and opposite to head motion relative to distant objects). As demonstrated by Helmholtz and expanded by Rogers & Graham, this self-generated shear produces an unambiguous perception of 3D depth and surface curvature without binocular disparity.
+   - **Depth Inversions with Head Motion:** In concave-convex illusions (such as the *Hollow Face* or *Ames Window*), the perceptual system's strong prior for convexity overrides parallax cues. As the observer translates their head from side to side, the perceived convex face appears to pivot and rotate unnaturally to follow the viewer, because the physical motion parallax is inverted relative to the inferred 3D geometry.
+   - **Vestibulo-Ocular Stability & Oscillopsia:** When the vestibulo-ocular reflex (VOR) fails (e.g., in bilateral vestibular hypofunction), observers experience *oscillopsia*—the visual world violently bounces with every step or head turn, demonstrating that perceptual stability is not an intrinsic property of the visual cortex alone, but depends on precise sensorimotor integration between vestibular head signals and oculomotor control.
+   - **Vection and Sensorimotor Conflicts:** Large-field optical flow simulates self-motion (circular or linear vection). When visual motion signals conflict with vestibular and proprioceptive cues from the head and neck, observers experience disorientation, postural sway, or simulator sickness.
+:::
+
 ### Seeing the Three-Dimensional World
 
 ![We assume two-dimensional shapes describe three dimensional objects. Drawn on the two-dimensional page, the table tops are the same except for a rotation. Convince yourself that the shapes are the same on the page by making a cut-out equal in size to one of the tables. Then, rotate the cut-out and place it on the other table. (Source: @shepard1990-mingsightsbook).](images/seeing/tables1.png){#fig-shepard-tables width="70%"}
